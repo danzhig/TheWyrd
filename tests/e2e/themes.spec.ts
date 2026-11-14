@@ -169,6 +169,42 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
   });
 
+  test('the reader’s back arrow returns to the sub-theme, in a visit and on a fresh load', async ({
+    page,
+  }) => {
+    // In a visit: open a passage from Mercy, then go up — back in Themes at Mercy.
+    await openVault(page);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    await page.locator('[data-constellation="mercy"]').click({ force: true });
+    const passages = page.locator('[data-passage^="mercy-"]');
+    await expect(passages.first()).toBeAttached({ timeout: 6000 });
+    const href = (await passages.first().getAttribute('href'))!;
+    const section = href.split('/')[2]!;
+    await passages.first().dispatchEvent('click');
+    await expect(page.locator('html')).toHaveAttribute('data-reader', section);
+    await page.getByRole('link', { name: 'Back to the theme' }).click();
+    await page.waitForURL((u) => u.pathname === '/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
+    await expect(passages.first()).toBeAttached({ timeout: 6000 });
+
+    // A fresh load of a passage opened from a theme: Esc goes to the Vault, which switches to
+    // Themes and flies to that sub-theme, close enough to show its passages.
+    await page.goto(`/read/${section}/?theme=mercy-forgiveness`);
+    await expect(page.locator('html')).toHaveAttribute('data-reader', section);
+    await page.keyboard.press('Escape');
+    await page.waitForURL((u) => u.pathname === '/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 8000,
+    });
+    await expect(page.locator('[data-passage^="mercy-forgiveness:"]').first()).toBeAttached({
+      timeout: 6000,
+    });
+    expect(new URL(page.url()).search).toBe('');
+  });
+
   test('reduced motion cross-fades instead of flying', async ({ browser }) => {
     const context = await browser.newContext({ reducedMotion: 'reduce' });
     const page = await context.newPage();

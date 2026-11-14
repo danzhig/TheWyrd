@@ -388,6 +388,32 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [flyTo, target],
   );
 
+  // When the themes arrive (after the camera was placed, e.g. coming back to the Vault in
+  // Themes), work out the constellation in view so its passage links appear.
+  useEffect(() => {
+    if (themeLayout) apply(camRef.current);
+  }, [themeLayout, apply]);
+
+  // Back from a passage opened in a constellation (`/?theme=<sub-theme>`, the reader's up link):
+  // show that sub-theme again, close enough to pick another of its passages. Within a visit the
+  // Vault is already in Themes where the reader left it; on a fresh load it switches and flies.
+  const themeReturn = useRef(false);
+  useEffect(() => {
+    if (!ready || themeReturn.current) return;
+    themeReturn.current = true;
+    const sub = new URLSearchParams(window.location.search).get('theme');
+    if (!sub) return;
+    window.history.replaceState(window.history.state, '', '/');
+    if (themeView === 'themes') return;
+    void (async () => {
+      await switchThemes('themes');
+      const s = themesLayout.current?.constellations
+        .flatMap((c) => c.subs)
+        .find((x) => x.id === sub);
+      if (s) void flyTo(target(s, Math.min(K_MAX_THEMES, 3)), 900);
+    })();
+  }, [ready, themeView, switchThemes, flyTo, target]);
+
   // Parallax against the pointer (off under reduced motion).
   useEffect(() => {
     const view = viewRef.current;
@@ -811,8 +837,10 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                           style={at(s)}
                           data-passage={s.key}
                           onClick={(e) => {
-                            // A client navigation keeps the Vault's memory (Themes, the camera).
+                            // A client navigation keeps the Vault's memory (Themes, the camera);
+                            // remember exactly where the camera is, even mid-flight, to come back to.
                             e.preventDefault();
+                            camera.last = { ...camRef.current };
                             router.push(passageHref(p.sectionId, p.ref, s.subId));
                           }}
                           onPointerEnter={() => setLit(s.subId)}
