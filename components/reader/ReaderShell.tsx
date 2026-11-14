@@ -2,12 +2,29 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type ReactNode,
+} from 'react';
 import { SettingsSheet } from '@/components/ui/SettingsSheet';
 import { CHANGE_EVENT, markRead, markUnread, readProgress, writeLast } from '@/lib/store';
 import { animationsOn, paperCover, reveal, transition } from '@/lib/transition';
 import type { PageNav } from '@/lib/nav';
 import styles from './reader.module.css';
+
+/** The sub-theme a passage was opened from (`?theme=`), read from the address on the client. */
+function themeInAddress(): string | null {
+  const sub = new URLSearchParams(window.location.search).get('theme');
+  return sub && /^[a-z]+-[a-z]+$/.test(sub) ? sub : null;
+}
+function subscribeToAddress(cb: () => void) {
+  window.addEventListener('popstate', cb);
+  return () => window.removeEventListener('popstate', cb);
+}
 
 /** One brief haptic tick where the device supports it (Android; iOS Safari has no vibration). */
 function tick() {
@@ -56,12 +73,15 @@ export function ReaderShell({
   const tracked = stop || library;
   const ledger = library ? 'library' : 'progress';
   const router = useRouter();
-  // Up a level: a section returns to its book's map; a bridge to all books.
-  const upHref = bookId ? `/book/${bookId}/` : '/';
+  // Opened from a constellation (`?theme=<sub-theme>`): up leads back to that sub-theme in the
+  // Vault's Themes view, to pick another passage from it (owner, 2026-11-14).
+  const fromTheme = useSyncExternalStore(subscribeToAddress, themeInAddress, () => null);
+  // Up a level: a section returns to its book's map (or its theme); a bridge to all books.
+  const upHref = fromTheme ? `/?theme=${fromTheme}` : bookId ? `/book/${bookId}/` : '/';
   // Up to the book's map: the page shrinks back into its station there (see BookMap).
   const goUp = useCallback(
     (e?: { preventDefault: () => void }) => {
-      if (!bookId || !animationsOn()) {
+      if (!bookId || fromTheme || !animationsOn()) {
         if (!e) router.push(upHref);
         return;
       }
@@ -69,7 +89,7 @@ export function ReaderShell({
       paperCover(id, getComputedStyle(document.body).backgroundColor);
       router.push(upHref);
     },
-    [bookId, id, router, upHref],
+    [bookId, fromTheme, id, router, upHref],
   );
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(0);
@@ -198,7 +218,9 @@ export function ReaderShell({
           href={upHref}
           onClick={goUp}
           className={styles.up}
-          aria-label={bookId ? `${bookName ?? 'Book'} map` : 'All books'}
+          aria-label={
+            fromTheme ? 'Back to the theme' : bookId ? `${bookName ?? 'Book'} map` : 'All books'
+          }
         >
           <span aria-hidden="true">←</span>
         </Link>
@@ -299,7 +321,11 @@ export function ReaderShell({
               : ''}
           </Link>
         ) : null}
-        {bookName ? <p className={styles.keys}>Keys: ← previous · → next · Esc book map</p> : null}
+        {bookName ? (
+          <p className={styles.keys}>
+            Keys: ← previous · → next · Esc {fromTheme ? 'theme' : 'book map'}
+          </p>
+        ) : null}
       </nav>
     </>
   );
