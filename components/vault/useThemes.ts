@@ -10,7 +10,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } fro
 import { camera, prefersReducedMotion } from '@/lib/camera';
 import { FLY_FROM, FLY_TO, layoutThemes, starAt, type ThemesLayout } from './constellations';
 import type { Point } from './layout';
-import { StarField, type Cam } from './starfield';
+import type { Cam, StarField } from './starfield';
 
 export type ThemesView = 'spiral' | 'to-themes' | 'themes' | 'to-spiral';
 
@@ -36,6 +36,7 @@ const FADE_MS = 350;
 
 let themesPromise: Promise<ThemesData> | null = null;
 export function loadThemes(): Promise<ThemesData> {
+  void loadStarfield();
   themesPromise ??= fetch('/data/themes.json')
     .then((r) => {
       if (!r.ok) throw new Error(`themes.json ${r.status}`);
@@ -46,6 +47,15 @@ export function loadThemes(): Promise<ThemesData> {
       throw err;
     });
   return themesPromise;
+}
+
+// The star field's code is only needed for Themes: it loads with the themes' data, not with
+// the Vault (which keeps the Vault's first-load JavaScript in budget).
+let starfield: typeof import('./starfield') | null = null;
+let starfieldPromise: Promise<typeof import('./starfield')> | null = null;
+export function loadStarfield(): Promise<typeof import('./starfield')> {
+  starfieldPromise ??= import('./starfield').then((m) => (starfield = m));
+  return starfieldPromise;
 }
 
 const smooth = (a: number, b: number, x: number) => {
@@ -121,14 +131,23 @@ export function useThemes(opts: {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!layout || !canvas) return;
-    field.current = new StarField(canvas, layout);
-    draw();
+    let alive = true;
+    const make = (m: typeof import('./starfield')) => {
+      if (!alive) return;
+      field.current = new m.StarField(canvas, layout);
+      draw();
+    };
+    if (starfield) make(starfield);
+    else void loadStarfield().then(make);
     const onResize = () => {
       field.current?.resize();
       draw();
     };
     window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    return () => {
+      alive = false;
+      window.removeEventListener('resize', onResize);
+    };
   }, [layout, draw]);
 
   // Coming back to the Vault in Themes: load the stars and show them where they are.
@@ -146,6 +165,7 @@ export function useThemes(opts: {
         p: p.current,
         fade: fade.current,
         stars: l.stars.map((s) => ({
+          key: s.key,
           home: s.home,
           end: { x: s.x, y: s.y },
           now: fade.current ? { x: s.x, y: s.y } : starAt(s, p.current),
@@ -163,7 +183,9 @@ export function useThemes(opts: {
       if (from === to) return;
       busy.current = true;
       try {
-        if (!data) setData(await loadThemes());
+        // The data and the star field's code, both before the flight starts.
+        const [loaded] = await Promise.all([data ?? loadThemes(), loadStarfield()]);
+        if (!data) setData(loaded);
         fade.current = prefersReducedMotion();
         setView(target === 'themes' ? 'to-themes' : 'to-spiral');
         // Let the layers for the flight mount (and the star field be created) before it starts.

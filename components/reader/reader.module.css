@@ -45,6 +45,42 @@
   color: var(--link);
 }
 
+/* The sub-themes this passage belongs to (Phase 6), each a link to its constellation. */
+.themes {
+  margin: 0.6em 0 0;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.themes a {
+  color: var(--link);
+}
+
+/* Arrived from a constellation: Themes › theme › sub-theme (a link back to it). Sits in the
+   top padding of the page, above the book label. */
+.crumb {
+  position: absolute;
+  top: 3.6rem;
+  left: 0;
+  right: 0;
+  max-width: calc(var(--measure) + 2rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.crumb a {
+  color: var(--link);
+}
+
+@media (min-width: 72rem) {
+  .crumb {
+    max-width: calc(var(--measure) + 21rem);
+    padding: 0 calc(16rem + 3rem) 0 3rem;
+  }
+}
+
 .badges {
   display: flex;
   flex-wrap: wrap;

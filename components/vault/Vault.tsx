@@ -21,6 +21,7 @@ import { CHANGE_EVENT, readLast, readProgress } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
 import { nearestConstellation, type Constellation } from './constellations';
 import { layoutVault, type Medallion, type Point } from './layout';
+import { ThemeTree } from './ThemeTree';
 import { useThemes } from './useThemes';
 import styles from './vault.module.css';
 
@@ -387,6 +388,22 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     },
     [flyTo, target],
   );
+
+  // The theme tree (P6.4): focusing a passage lights its sub-theme and, on the map, flies the
+  // camera to its star; opening one remembers where the camera is, to come back to.
+  const onTreeFocus = useCallback(
+    (key: string | null) => {
+      setLit(key ? key.split(':')[0]! : null);
+      if (!key || mode !== 'map') return;
+      const s = themesLayout.current?.stars.find((x) => x.key === key);
+      if (s && viewRef.current)
+        void flyTo(target(s, Math.max(camRef.current.k, Math.min(K_MAX_THEMES, 3))), 450);
+    },
+    [mode, setLit, flyTo, target],
+  );
+  const onTreeOpen = useCallback(() => {
+    camera.last = { ...camRef.current };
+  }, []);
 
   // When the themes arrive (after the camera was placed, e.g. coming back to the Vault in
   // Themes), work out the constellation in view so its passage links appear.
@@ -925,10 +942,21 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
         </div>
       ) : null}
 
+      {/* In Themes, the accessible structure is the theme tree (shown by List). */}
+      {themeView !== 'spiral' && themeData ? (
+        <ThemeTree
+          data={themeData}
+          visible={mode === 'list'}
+          onFocusPassage={onTreeFocus}
+          onOpen={onTreeOpen}
+          hrefFor={passageHref}
+        />
+      ) : null}
       {/* The same content as an ordered list (PLAN §9 accessibility). Visible in List mode. */}
       <section
         className={mode === 'list' ? styles.list : 'visually-hidden'}
         aria-label="The path, as a list"
+        hidden={themeView !== 'spiral' && !!themeData}
       >
         <ol ref={listRef} onKeyDown={onListKey} className={styles.pathList}>
           {data.path.map((p) => {

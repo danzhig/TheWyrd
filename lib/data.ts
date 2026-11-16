@@ -66,3 +66,36 @@ export function getSection(id: string): SectionFile {
     fs.readFileSync(path.join(DATA, 'sections', `${id}.json`), 'utf8'),
   ) as SectionFile;
 }
+
+/** A sub-theme a section belongs to (Phase 6): for the reader's "Themes" line and breadcrumb. */
+export interface SectionTheme {
+  id: string; // sub-theme id, e.g. "mercy-forgiveness"
+  title: string; // "Forgiveness"
+  themeTitle: string; // "Mercy and forgiveness"
+}
+
+let themesBySection: Map<string, SectionTheme[]> | null = null;
+/** The sub-themes whose passages start in this section, in theme order (from public/data/themes.json). */
+export function getSectionThemes(sectionId: string): SectionTheme[] {
+  if (!themesBySection) {
+    themesBySection = new Map();
+    const file = path.join(DATA, 'themes.json');
+    if (fs.existsSync(file)) {
+      const data = JSON.parse(fs.readFileSync(file, 'utf8')) as {
+        themes: {
+          title: string;
+          subthemes: { id: string; title: string; passages: { sectionId: string }[] }[];
+        }[];
+      };
+      for (const t of data.themes)
+        for (const s of t.subthemes)
+          for (const sec of new Set(s.passages.map((p) => p.sectionId))) {
+            const list = themesBySection.get(sec) ?? [];
+            if (!list.some((x) => x.id === s.id))
+              list.push({ id: s.id, title: s.title, themeTitle: t.title });
+            themesBySection.set(sec, list);
+          }
+    }
+  }
+  return themesBySection.get(sectionId) ?? [];
+}

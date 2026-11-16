@@ -13,6 +13,7 @@ import {
 import { SettingsSheet } from '@/components/ui/SettingsSheet';
 import { CHANGE_EVENT, markRead, markUnread, readProgress, writeLast } from '@/lib/store';
 import { animationsOn, paperCover, reveal, transition } from '@/lib/transition';
+import type { SectionTheme } from '@/lib/data';
 import type { PageNav } from '@/lib/nav';
 import styles from './reader.module.css';
 
@@ -51,6 +52,8 @@ export interface ReaderShellProps {
    * on the path and never the path's "Continue" place.
    */
   library?: boolean;
+  /** The sub-themes this section belongs to (Phase 6), for the breadcrumb back to a theme. */
+  themes?: SectionTheme[];
   nav: PageNav;
   children: ReactNode;
 }
@@ -64,6 +67,7 @@ export function ReaderShell({
   stop,
   readOnOpen,
   library = false,
+  themes = [],
   nav,
   children,
 }: ReaderShellProps) {
@@ -77,6 +81,7 @@ export function ReaderShell({
   // Vault's Themes view, to pick another passage from it (owner, 2026-11-14).
   const fromTheme = useSyncExternalStore(subscribeToAddress, themeInAddress, () => null);
   // Up a level: a section returns to its book's map (or its theme); a bridge to all books.
+  const crumb = fromTheme ? (themes.find((t) => t.id === fromTheme) ?? null) : null;
   const upHref = fromTheme ? `/?theme=${fromTheme}` : bookId ? `/book/${bookId}/` : '/';
   // Up to the book's map: the page shrinks back into its station there (see BookMap).
   const goUp = useCallback(
@@ -244,6 +249,18 @@ export function ReaderShell({
         {copied}
       </p>
 
+      {/* Opened from a constellation: where it came from, and the way back to it. */}
+      {crumb ? (
+        <nav className={styles.crumb} aria-label="Breadcrumb" data-testid="theme-breadcrumb">
+          <span className="label">Themes</span>
+          <span aria-hidden="true"> › </span>
+          <span>{crumb.themeTitle}</span>
+          <span aria-hidden="true"> › </span>
+          <Link href={upHref} data-testid="breadcrumb-subtheme">
+            {crumb.title}
+          </Link>
+        </nav>
+      ) : null}
       {children}
 
       <div ref={endRef} className={styles.end} aria-hidden="true" />

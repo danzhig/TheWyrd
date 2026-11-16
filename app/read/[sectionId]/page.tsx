@@ -4,7 +4,7 @@ import { ReaderShell } from '@/components/reader/ReaderShell';
 import { SectionBody } from '@/components/reader/SectionBody';
 import styles from '@/components/reader/reader.module.css';
 import Link from 'next/link';
-import { getFullManifest, getSection } from '@/lib/data';
+import { getFullManifest, getSection, getSectionThemes } from '@/lib/data';
 import { prettyRange } from '@/lib/format';
 import { canBeStop, defaultNav, libraryNav, pathPosition } from '@/lib/nav';
 
@@ -36,6 +36,8 @@ export default async function ReadPage({ params }: Params) {
   const s = getSection(sectionId);
   const statusLabel = STATUS_LABEL[s.status];
   const library = isLibrary(s.id);
+  // The sub-themes this section's passages belong to (Phase 6), linked to their constellations.
+  const themes = getSectionThemes(s.id);
   const article = (
     <article
       className={styles.page}
@@ -72,6 +74,19 @@ export default async function ReadPage({ params }: Params) {
             <Link href="/path/">Back to the path</Link>
           </p>
         ) : null}
+        {themes.length ? (
+          <p className={styles.themes} data-testid="section-themes" data-pagefind-ignore="all">
+            <span className="label">Themes</span>{' '}
+            {themes.map((t, i) => (
+              <span key={t.id}>
+                {i ? ' · ' : ''}
+                <Link href={`/?theme=${t.id}`} title={t.themeTitle} data-theme-link={t.id}>
+                  {t.title}
+                </Link>
+              </span>
+            ))}
+          </p>
+        ) : null}
         {statusLabel || s.highlight ? (
           <p className={styles.badges}>
             {statusLabel ? <span className={styles.badge}>{statusLabel}</span> : null}
@@ -103,6 +118,7 @@ export default async function ReadPage({ params }: Params) {
       stop={!library && canBeStop(s.id)}
       readOnOpen={s.status === 'skim'}
       library={library}
+      themes={themes}
       nav={library ? libraryNav(s.id) : defaultNav(s.id)}
     >
       {article}
