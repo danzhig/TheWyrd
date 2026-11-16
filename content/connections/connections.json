@@ -2706,6 +2706,3647 @@
         "date": "2026-11-16",
         "fingerprint": "9e46114b8ba22b97"
       }
+    },
+    {
+      "id": "job01",
+      "from": "Job.5.12-Job.5.13",
+      "to": "1Cor.3.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "He takes the wise in their craftiness",
+      "explanation": "Eliphaz tells Job that God takes the wise in their own craftiness and frustrates the plans of the cunning. Paul quotes the line as written Scripture to show that the wisdom of this world is foolishness with God; in Greek both have the same word for the wise (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.5.13",
+          "wordIndex": 3,
+          "form": "σοφοὺς",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.3.19",
+          "wordIndex": 17,
+          "form": "σοφοὺς",
+          "row": "TAGNT Act-Rev:45584"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296921"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L100301"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.5.13",
+          "words": ["wise", "craftiness"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.3.19",
+          "words": ["written", "wise", "craftiness", "foolishness"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "747f55cada1b9c7b"
+      }
+    },
+    {
+      "id": "job02",
+      "from": "Job.1.20-Job.1.22",
+      "to": "Jas.5.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The endurance of Job",
+      "explanation": "Having lost his children and everything he owned, Job blesses the name of the LORD, and Job 1 notes that in all this he did not sin. James names Job as the example of perseverance and of the Lord's compassion in the outcome; it is the only place the New Testament names him (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.1.20",
+          "wordIndex": 3,
+          "form": "Ἰὼβ",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jas.5.11",
+          "wordIndex": 7,
+          "form": "Ἰὼβ",
+          "row": "TAGNT Act-Rev:98811"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L331678"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.1.21",
+          "words": ["LORD", "Blessed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.1.22",
+          "words": ["Job", "sin"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jas.5.11",
+          "words": ["Job", "perseverance", "compassion"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a5c34c3f35b6bc91"
+      }
+    },
+    {
+      "id": "job03",
+      "from": "Job.9.10",
+      "to": "Rom.11.33",
+      "type": "echo",
+      "strength": 2,
+      "label": "Ways past tracing out",
+      "explanation": "Job says that God does great things past finding out and wonders without number. Paul ends his long argument in Romans with praise of God's unsearchable judgements and ways past tracing out, using the Septuagint's adjective from Job 9:10, which the New Testament has only twice (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.9.10",
+          "wordIndex": 5,
+          "form": "ἀνεξιχνίαστα",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.11.33",
+          "wordIndex": 15,
+          "form": "ἀνεξιχνίαστοι",
+          "row": "TAGNT Act-Rev:40331"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L101200"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293693"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.9.10",
+          "words": ["great", "finding"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.11.33",
+          "words": ["unsearchable", "tracing"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "10b2f9c3e836eff9"
+      }
+    },
+    {
+      "id": "job04",
+      "from": "Job.41.11",
+      "to": "Rom.11.35",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Who has first given to him?",
+      "explanation": "At the end of the LORD's speeches from the whirlwind, God asks who has first given to him that he should repay. Paul closes the same hymn of praise in Romans with the question who has first given to God and will be repaid, close to the wording WEBC gives Job 41:11.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293707"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L108634"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.41.11",
+          "words": ["first", "given", "repay"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.11.35",
+          "words": ["first", "given", "repaid"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "075b17bd1bdb6bc0"
+      }
+    },
+    {
+      "id": "job05",
+      "from": "Job.13.16",
+      "to": "Phil.1.19",
+      "type": "echo",
+      "strength": 2,
+      "label": "This will turn out for my salvation",
+      "explanation": "Job, defending himself before God, says that this will be his salvation. Writing from prison, Paul says he knows that this will turn out for his salvation; in Greek his words are the Septuagint's in Job 13:16, with a verb the New Testament has only four times (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.13.16",
+          "wordIndex": 4,
+          "form": "ἀποβήσεται",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Php.1.19",
+          "wordIndex": 6,
+          "form": "ἀποβήσεται",
+          "row": "TAGNT Act-Rev:71780"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Job.13.16",
+          "wordIndex": 6,
+          "form": "σωτηρίαν",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Php.1.19",
+          "wordIndex": 8,
+          "form": "σωτηρίαν",
+          "row": "TAGNT Act-Rev:71782"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Job.13.16",
+          "words": ["salvation"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Phil.1.19",
+          "words": ["salvation", "prayers"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "90ee562744ac90b6"
+      }
+    },
+    {
+      "id": "job06",
+      "from": "Job.1.21",
+      "to": "1Tim.6.7",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Naked I came, naked I return",
+      "explanation": "On losing everything, Job says that he came naked from his mother's womb and will return there naked, and blesses the LORD's name. First Timothy makes the same observation about possessions, that we brought nothing into the world and can carry nothing out, as a ground for contentment.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L99591"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L320906"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.1.21",
+          "words": ["Naked", "womb"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Tim.6.7",
+          "words": ["brought", "nothing", "world"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6ba1d615bab6e3be"
+      }
+    },
+    {
+      "id": "job07",
+      "from": "Job.1.6-Job.2.7",
+      "to": "1Pet.5.8",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The adversary walking the earth",
+      "explanation": "In Job the adversary, Satan, comes before the LORD from going back and forth on the earth and walking up and down in it, and then strikes Job. First Peter warns that the adversary, the devil, walks around like a roaring lion; the Septuagint of Job calls Satan by the same Greek name, the devil (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.1.6",
+          "wordIndex": 20,
+          "form": "διάβολος",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Pe.5.8",
+          "wordIndex": 7,
+          "form": "διάβολος",
+          "row": "TAGNT Act-Rev:101860"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334239"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334222"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L99405"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.1.7",
+          "words": ["Satan", "earth", "walking"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Pet.5.8",
+          "words": ["adversary", "devil", "walks"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c4559c17e20ba888"
+      }
+    },
+    {
+      "id": "job08",
+      "from": "Job.5.11",
+      "to": "Luke.1.52",
+      "type": "echo",
+      "strength": 1,
+      "label": "The lowly lifted up",
+      "explanation": "Eliphaz praises the God who sets on high those who are low. Mary's song praises God for exalting the lowly, and the Greek for the lowly is the same word in Luke and in the Septuagint of Job 5:11 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Job.5.11",
+          "wordIndex": 3,
+          "form": "ταπεινοὺς",
+          "row": "LXX 028-Job"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.52",
+          "wordIndex": 7,
+          "form": "ταπεινούς·",
+          "row": "TAGNT Mat-Jhn:52979"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L251101"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L100277"
+        },
+        {
+          "kind": "verse",
+          "ref": "Job.5.11",
+          "words": ["high", "low"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.52",
+          "words": ["exalted", "lowly"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "60d4cd7acca7310c"
+      }
+    },
+    {
+      "id": "exo01",
+      "from": "Exod.3.2-Exod.3.6",
+      "to": "Luke.20.37",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Moses at the bush",
+      "explanation": "Answering the Sadducees about the resurrection, Jesus points to the passage about the bush, where God calls himself the God of Abraham, Isaac and Jacob long after their deaths. Luke's Greek word for the bush is the Septuagint's in Exodus 3 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.3.2",
+          "wordIndex": 11,
+          "form": "βάτου",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.20.37",
+          "wordIndex": 11,
+          "form": "βάτου",
+          "row": "TAGNT Mat-Jhn:79195"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13792"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13743"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L260770"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.3.2",
+          "words": ["bush"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.3.6",
+          "words": ["Abraham", "Isaac", "Jacob"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.37",
+          "words": ["Moses", "bush", "raised"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f9115b776419d84c"
+      }
+    },
+    {
+      "id": "exo02",
+      "from": "Exod.3.2-Exod.3.10",
+      "to": "Acts.7.30-Acts.7.34",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Stephen retells the burning bush",
+      "explanation": "In his speech before the council Stephen retells the call of Moses: the angel in the flame of fire in a bush, the God of the fathers, the command to take off his sandals, and God's word that he has seen his people's affliction in Egypt. The last of these follows Exodus 3:7 closely, with the Septuagint's rare word for affliction (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.3.7",
+          "wordIndex": 9,
+          "form": "κάκωσιν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.7.34",
+          "wordIndex": 4,
+          "form": "κάκωσιν",
+          "row": "TAGNT Act-Rev:7171"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13738"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13768"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278058"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.3.2",
+          "words": ["flame", "bush"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.3.7",
+          "words": ["affliction", "Egypt"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.30",
+          "words": ["flame", "bush"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.34",
+          "words": ["affliction", "Egypt"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c2eeb5becb289071"
+      }
+    },
+    {
+      "id": "exo03",
+      "from": "Exod.32.1-Exod.32.6",
+      "to": "Acts.7.40-Acts.7.41",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Stephen recalls the golden calf",
+      "explanation": "While Moses delays on the mountain, the people ask Aaron to make them gods to go before them, and he makes a calf. Stephen quotes their demand to Aaron nearly word for word and tells how they sacrificed to the idol and rejoiced in the works of their hands.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.32.1",
+          "wordIndex": 16,
+          "form": "Ἀαρὼν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.7.40",
+          "wordIndex": 3,
+          "form": "Ἀαρών·",
+          "row": "TAGNT Act-Rev:7399"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21322"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21361"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278180"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.32.1",
+          "words": ["Aaron", "gods"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.32.4",
+          "words": ["calf"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.40",
+          "words": ["Aaron", "gods", "Moses"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.41",
+          "words": ["calf", "idol"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "2962e5562c8a8b5f"
+      }
+    },
+    {
+      "id": "exo04",
+      "from": "Exod.13.2",
+      "to": "Luke.2.22-Luke.2.23",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Every firstborn male holy to the Lord",
+      "explanation": "Exodus commands that every firstborn that opens the womb be set apart for the LORD. When Mary and Joseph present Jesus in the temple, Luke cites this as written in the law of the Lord, in the Septuagint's words for opening the womb (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.13.2",
+          "wordIndex": 8,
+          "form": "μήτραν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.2.23",
+          "wordIndex": 10,
+          "form": "μήτραν",
+          "row": "TAGNT Mat-Jhn:54293"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.13.2",
+          "wordIndex": 6,
+          "form": "διανοῖγον",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.2.23",
+          "wordIndex": 9,
+          "form": "διανοῖγον",
+          "row": "TAGNT Mat-Jhn:54292"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16173"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L251730"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.13.2",
+          "words": ["firstborn", "womb"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.2.22",
+          "words": ["law", "present"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.2.23",
+          "words": ["written", "womb", "holy"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c882082528a42578"
+      }
+    },
+    {
+      "id": "exo05",
+      "from": "Exod.12.46",
+      "to": "John.19.36",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Not a bone broken",
+      "explanation": "Among the rules for the Passover lamb, Exodus says that none of its bones may be broken. John says that the soldiers did not break the legs of Jesus so that this Scripture would be fulfilled, and his Greek has the Septuagint's words for bone and breaking (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.12.46",
+          "wordIndex": 15,
+          "form": "ὀστοῦν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.19.36",
+          "wordIndex": 8,
+          "form": "ὀστοῦν",
+          "row": "TAGNT Mat-Jhn:109885"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.12.46",
+          "wordIndex": 17,
+          "form": "συντρίψετε",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.19.36",
+          "wordIndex": 10,
+          "form": "συντριβήσεται",
+          "row": "TAGNT Mat-Jhn:109887"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274006"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16130"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.12.46",
+          "words": ["break", "bones"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.19.36",
+          "words": ["Scripture", "fulfilled", "bone", "broken"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5887ff2b697664fb"
+      }
+    },
+    {
+      "id": "exo06",
+      "from": "Exod.20.12-Exod.20.16",
+      "to": "Luke.18.20",
+      "type": "quotation",
+      "strength": 3,
+      "label": "You know the commandments",
+      "explanation": "When a ruler asks what he must do to inherit eternal life, Jesus lists commandments from the Decalogue: adultery, murder, theft, false testimony, and honouring father and mother. The Greek verbs for murder and theft are the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.20.15",
+          "wordIndex": 2,
+          "form": "φονεύσεις",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.18.20",
+          "wordIndex": 7,
+          "form": "φονεύσῃς,",
+          "row": "TAGNT Mat-Jhn:76296"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.20.14",
+          "wordIndex": 2,
+          "form": "κλέψεις",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.18.20",
+          "wordIndex": 9,
+          "form": "κλέψῃς,",
+          "row": "TAGNT Mat-Jhn:76298"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18283"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L259780"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.20.12",
+          "words": ["Honor", "father", "mother"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.20.16",
+          "words": ["false", "testimony"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.18.20",
+          "words": ["commandments", "murder", "steal", "false"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9139d88bcb3ca3b8"
+      }
+    },
+    {
+      "id": "exo07",
+      "from": "Exod.20.12",
+      "to": "Eph.6.2-Eph.6.3",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The first commandment with a promise",
+      "explanation": "Exodus gives the command to honour father and mother with a promise of long days in the land. Ephesians quotes it, calls it the first commandment with a promise, and keeps the Septuagint's wording for the promise, including a word for long life found nowhere else in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.20.12",
+          "wordIndex": 14,
+          "form": "μακροχρόνιος",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Eph.6.3",
+          "wordIndex": 7,
+          "form": "μακροχρόνιος",
+          "row": "TAGNT Act-Rev:70653"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.20.12",
+          "wordIndex": 9,
+          "form": "εὖ",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Eph.6.3",
+          "wordIndex": 2,
+          "form": "εὖ",
+          "row": "TAGNT Act-Rev:70648"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311255"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.20.12",
+          "words": ["Honor", "father", "mother", "long"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Eph.6.2",
+          "words": ["Honor", "promise"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Eph.6.3",
+          "words": ["well", "long"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f483825319d26190"
+      }
+    },
+    {
+      "id": "exo08",
+      "from": "Exod.9.16",
+      "to": "Rom.9.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "For this purpose I raised you up",
+      "explanation": "Before the plague of hail, God tells Pharaoh that he has made him stand in order to show his power and have his name declared in all the earth. Paul quotes the words as what Scripture says to Pharaoh, with the Septuagint's verb for proclaiming the name (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.9.16",
+          "wordIndex": 14,
+          "form": "διαγγελῇ",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.17",
+          "wordIndex": 22,
+          "form": "διαγγελῇ",
+          "row": "TAGNT Act-Rev:38344"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292640"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L15255"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.9.16",
+          "words": ["power", "name", "earth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.9.17",
+          "words": ["Scripture", "Pharaoh", "power", "name"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f1a5bfa0ffb6b97f"
+      }
+    },
+    {
+      "id": "exo09",
+      "from": "Exod.33.19",
+      "to": "Rom.9.15",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I will have mercy on whom I have mercy",
+      "explanation": "When Moses asks to see God's glory, the LORD says he will be gracious to whom he will be gracious and show mercy to whom he will show mercy. Paul quotes the saying as spoken to Moses, in the Septuagint's words for compassion (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.33.19",
+          "wordIndex": 27,
+          "form": "οἰκτείρω",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.15",
+          "wordIndex": 10,
+          "form": "οἰκτιρήσω",
+          "row": "TAGNT Act-Rev:38281"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.15",
+          "wordIndex": 13,
+          "form": "οἰκτίρω.",
+          "row": "TAGNT Act-Rev:38284"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292610"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21895"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.33.19",
+          "words": ["gracious", "mercy"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.9.15",
+          "words": ["Moses", "mercy", "compassion"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "3cf774ec47d5483a"
+      }
+    },
+    {
+      "id": "exo10",
+      "from": "Exod.32.6",
+      "to": "1Cor.10.7",
+      "type": "quotation",
+      "strength": 3,
+      "label": "They sat down to eat and rose up to play",
+      "explanation": "At the golden calf the people offer sacrifices, sit down to eat and drink, and rise up to play. Paul quotes the verse as a warning against idolatry, and his verb for playing, found nowhere else in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.32.6",
+          "wordIndex": 20,
+          "form": "παίζειν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.10.7",
+          "wordIndex": 17,
+          "form": "παίζειν.",
+          "row": "TAGNT Act-Rev:49750"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L298876"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21385"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.32.6",
+          "words": ["eat", "drink", "play"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.10.7",
+          "words": ["idolaters", "written", "play"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ad87ae173b304e45"
+      }
+    },
+    {
+      "id": "exo11",
+      "from": "Exod.34.29-Exod.34.35",
+      "to": "2Cor.3.7-2Cor.3.13",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The veil over Moses' face",
+      "explanation": "Coming down from Sinai, Moses' face shines, and he puts a veil over it when he has finished speaking to the people. Paul retells the scene, naming Moses and the veil, and contrasts that fading glory with the ministry of the Spirit; his word for the veil is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.34.33",
+          "wordIndex": 13,
+          "form": "κάλυμμα",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "2Co.3.13",
+          "wordIndex": 6,
+          "form": "κάλυμμα",
+          "row": "TAGNT Act-Rev:57226"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L302263"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L22275"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L22278"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.34.33",
+          "words": ["Moses", "veil"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.34.35",
+          "words": ["face", "shone"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Cor.3.7",
+          "words": ["Moses", "glory"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Cor.3.13",
+          "words": ["Moses", "veil"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5ca3d0d476d8a4f8"
+      }
+    },
+    {
+      "id": "exo12",
+      "from": "Exod.19.5-Exod.19.6",
+      "to": "1Pet.2.9",
+      "type": "echo",
+      "strength": 2,
+      "label": "A royal priesthood, a holy nation",
+      "explanation": "At Sinai God tells Israel that if they keep his covenant they will be his own possession, a kingdom of priests and a holy nation. First Peter gives these titles to its readers, and its word for a priesthood, which the New Testament has only twice, is the Septuagint's in Exodus 19:6 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.19.6",
+          "wordIndex": 6,
+          "form": "ἱεράτευμα",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Pe.2.9",
+          "wordIndex": 6,
+          "form": "ἱεράτευμα,",
+          "row": "TAGNT Act-Rev:100030"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332800"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17863"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.19.5",
+          "words": ["possession"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.19.6",
+          "words": ["priests", "holy", "nation"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Pet.2.9",
+          "words": ["royal", "priesthood", "holy", "nation", "possession"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "62981eec8bf7c25a"
+      }
+    },
+    {
+      "id": "exo13",
+      "from": "Exod.25.40",
+      "to": "Heb.8.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The pattern shown on the mountain",
+      "explanation": "God tells Moses to make the tabernacle and its furnishings after the pattern shown to him on the mountain. Hebrews quotes the instruction and says the earthly sanctuary is a copy and shadow of the heavenly things.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326542"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L19837"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.25.40",
+          "words": ["pattern", "mountain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.8.5",
+          "words": ["Moses", "tabernacle", "pattern", "mountain"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6d1dd8a233e7eec9"
+      }
+    },
+    {
+      "id": "exo14",
+      "from": "Exod.24.8",
+      "to": "Heb.9.19-Heb.9.20",
+      "type": "quotation",
+      "strength": 3,
+      "label": "This is the blood of the covenant",
+      "explanation": "At Sinai Moses sprinkles the people with blood and calls it the blood of the covenant. Hebrews retells the rite, adding the book and the hyssop, and quotes Moses' words to show that the first covenant too was dedicated with blood.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L327066"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.24.8",
+          "words": ["Moses", "blood", "covenant"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.9.19",
+          "words": ["Moses", "sprinkled"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.9.20",
+          "words": ["blood", "covenant"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ceb04913c00bc4ae"
+      }
+    },
+    {
+      "id": "exo15",
+      "from": "Exod.16.4-Exod.16.31",
+      "to": "John.6.31-John.6.32",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Manna in the wilderness",
+      "explanation": "In the wilderness God rains bread from heaven, and Israel calls it manna. After the feeding of the crowd, people remind Jesus that their fathers ate the manna in the wilderness; he answers that it was not Moses who gave them the bread from heaven, but his Father gives the true bread.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L266126"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17194"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17096"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.16.15",
+          "words": ["bread"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.16.31",
+          "words": ["Manna"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.6.31",
+          "words": ["manna", "wilderness"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.6.32",
+          "words": ["Moses", "bread", "heaven"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "543397e30e9b67ec"
+      }
+    },
+    {
+      "id": "exo16",
+      "from": "Exod.2.1-Exod.2.15",
+      "to": "Heb.11.23-Heb.11.27",
+      "type": "allusion",
+      "strength": 3,
+      "label": "By faith Moses",
+      "explanation": "Exodus 2 tells how Moses was hidden as a baby, raised as the son of Pharaoh's daughter, and fled after siding with his own people. Hebrews retells the same steps as acts of faith: his parents hid him, he refused to be called the son of Pharaoh's daughter, and he left Egypt.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.2.5",
+          "wordIndex": 5,
+          "form": "Φαραὼ",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.24",
+          "wordIndex": 9,
+          "form": "Φαραώ,",
+          "row": "TAGNT Act-Rev:94193"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13515"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13563"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328214"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.2.2",
+          "words": ["hid"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.2.10",
+          "words": ["Pharaoh", "daughter", "Moses"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.23",
+          "words": ["Moses", "hidden"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.24",
+          "words": ["Pharaoh", "daughter"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "d7f6b34a81707ca4"
+      }
+    },
+    {
+      "id": "exo17",
+      "from": "Exod.15.1-Exod.15.11",
+      "to": "Rev.15.3-Rev.15.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The song of Moses",
+      "explanation": "After the crossing of the sea, Moses and Israel sing to the LORD, who is glorious and does wonders. In Revelation those who have conquered sing the song of Moses and of the Lamb, praising God's marvellous works; Revelation's words for the song and for marvellous are the Septuagint's in Exodus 15 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.15.11",
+          "wordIndex": 13,
+          "form": "θαυμαστὸς",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.15.3",
+          "wordIndex": 18,
+          "form": "θαυμαστὰ",
+          "row": "TAGNT Act-Rev:119200"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.15.1",
+          "wordIndex": 9,
+          "form": "ᾠδὴν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.15.3",
+          "wordIndex": 4,
+          "form": "ᾠδὴν",
+          "row": "TAGNT Act-Rev:119186"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.15.3",
+          "wordIndex": 12,
+          "form": "ᾠδὴν",
+          "row": "TAGNT Act-Rev:119194"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16861"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L342552"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16678"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.15.1",
+          "words": ["Moses", "song"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.15.11",
+          "words": ["wonders"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rev.15.3",
+          "words": ["song", "Moses", "marvelous"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "996f4760c3a8d1be"
+      }
+    },
+    {
+      "id": "num01",
+      "from": "Num.21.6-Num.21.9",
+      "to": "John.3.14-John.3.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As Moses lifted up the serpent",
+      "explanation": "When snakes bite the people in the wilderness, the LORD tells Moses to set a bronze serpent on a pole, and whoever looks at it lives. Speaking to Nicodemus, Jesus names this act of Moses and says the Son of Man must be lifted up in the same way; the serpent is the Septuagint's word (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.21.6",
+          "wordIndex": 8,
+          "form": "ὄφεις",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.3.14",
+          "wordIndex": 6,
+          "form": "ὄφιν",
+          "row": "TAGNT Mat-Jhn:87923"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L264206"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34987"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34995"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.21.8",
+          "words": ["pole", "live"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.21.9",
+          "words": ["Moses", "serpent", "bronze"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.3.14",
+          "words": ["Moses", "serpent", "lifted"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "449d59898571c961"
+      }
+    },
+    {
+      "id": "num02",
+      "from": "Num.14.26-Num.14.35",
+      "to": "Heb.3.16-Heb.3.19",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Bodies that fell in the wilderness",
+      "explanation": "After the spies' report, the LORD says that the bodies of the generation that grumbled will fall in the wilderness over forty years. Hebrews recalls those who came out of Egypt with Moses and whose bodies fell in the wilderness, with the Septuagint's word for their bodies, found nowhere else in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.14.29",
+          "wordIndex": 7,
+          "form": "κῶλα",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.3.17",
+          "wordIndex": 11,
+          "form": "κῶλα",
+          "row": "TAGNT Act-Rev:88996"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325172"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325178"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325159"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.14.29",
+          "words": ["bodies", "wilderness"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.3.17",
+          "words": ["forty", "bodies", "wilderness"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0e1381b0caeb6106"
+      }
+    },
+    {
+      "id": "num03",
+      "from": "Num.19.1-Num.19.10",
+      "to": "Heb.9.13",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The ashes of a heifer",
+      "explanation": "Numbers 19 prescribes a red heifer, burned outside the camp, whose ashes in water cleanse those made unclean. Hebrews names the ashes of a heifer that sanctify for the cleansing of the flesh, and its word for the heifer, found nowhere else in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.19.2",
+          "wordIndex": 17,
+          "form": "δάμαλιν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.9.13",
+          "wordIndex": 10,
+          "form": "δαμάλεως",
+          "row": "TAGNT Act-Rev:92080"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Num.19.9",
+          "wordIndex": 6,
+          "form": "σποδὸν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.9.13",
+          "wordIndex": 9,
+          "form": "σποδὸς",
+          "row": "TAGNT Act-Rev:92079"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326914"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34522"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34497"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.19.9",
+          "words": ["ashes", "heifer"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.9.13",
+          "words": ["ashes", "heifer", "sprinkling"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "fb1de430946e066a"
+      }
+    },
+    {
+      "id": "num04",
+      "from": "Num.12.7",
+      "to": "Heb.3.2-Heb.3.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Faithful in all his house",
+      "explanation": "When Miriam and Aaron speak against Moses, the LORD says that his servant Moses is faithful in all his house. Hebrews takes up the phrase twice, comparing Jesus with Moses, and keeps the Septuagint's word for a servant, which the New Testament has only here (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.12.7",
+          "wordIndex": 4,
+          "form": "θεράπων",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.3.5",
+          "wordIndex": 11,
+          "form": "θεράπων",
+          "row": "TAGNT Act-Rev:88664"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Num.12.7",
+          "wordIndex": 10,
+          "form": "πιστός",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.3.2",
+          "wordIndex": 1,
+          "form": "πιστὸν",
+          "row": "TAGNT Act-Rev:88579"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.3.5",
+          "wordIndex": 4,
+          "form": "πιστὸς",
+          "row": "TAGNT Act-Rev:88657"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324933"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L32793"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324906"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.12.7",
+          "words": ["servant", "Moses", "faithful"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.3.5",
+          "words": ["Moses", "faithful", "servant"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ae4d80aa2f8c7015"
+      }
+    },
+    {
+      "id": "num05",
+      "from": "Num.17.8-Num.17.10",
+      "to": "Heb.9.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Aaron's rod that budded",
+      "explanation": "To end the people's grumbling, Aaron's rod sprouts, buds and blossoms overnight in the tent, and the LORD tells Moses to keep it before the testimony. Hebrews lists Aaron's rod that budded among the things kept in the ark, with the Septuagint's verb for budding (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.17.8",
+          "wordIndex": 17,
+          "form": "ἐβλάστησεν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.9.4",
+          "wordIndex": 24,
+          "form": "βλαστήσασα",
+          "row": "TAGNT Act-Rev:91805"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Num.17.8",
+          "wordIndex": 9,
+          "form": "Ἀαρὼν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.9.4",
+          "wordIndex": 22,
+          "form": "Ἀαρὼν",
+          "row": "TAGNT Act-Rev:91803"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Num.17.8",
+          "wordIndex": 19,
+          "form": "ῥάβδος",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.9.4",
+          "wordIndex": 21,
+          "form": "ῥάβδος",
+          "row": "TAGNT Act-Rev:91802"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326749"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34185"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326761"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.17.8",
+          "words": ["Aaron", "rod", "budded"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.9.4",
+          "words": ["Aaron", "rod", "budded"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "da4c0e007651dc20"
+      }
+    },
+    {
+      "id": "num06",
+      "from": "Num.25.1-Num.25.3",
+      "to": "Rev.2.14",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The teaching of Balaam",
+      "explanation": "At Shittim Israel is drawn into immorality and the worship of the Baal of Peor, and Numbers later blames the counsel of Balaam for it. The letter to Pergamum in Revelation names Balaam, who taught Balak to put a stumbling block before Israel, to eat food sacrificed to idols and commit sexual immorality.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338968"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L36009"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L36019"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.25.1",
+          "words": ["Moab"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.31.16",
+          "words": ["Balaam", "Peor"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rev.2.14",
+          "words": ["Balaam", "Balak", "idols"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "87d5c82d661d2e39"
+      }
+    },
+    {
+      "id": "num07",
+      "from": "Num.22.21-Num.22.33",
+      "to": "2Pet.2.15-2Pet.2.16",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Balaam's donkey",
+      "explanation": "Riding to curse Israel for Balak, Balaam is stopped by his donkey, whose mouth the LORD opens to speak to him. Second Peter names Balaam the son of Beor, who loved the wages of wrongdoing, and recalls the speechless donkey that spoke with a human voice; Balaam's name is spelled as in the Septuagint (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.22.21",
+          "wordIndex": 3,
+          "form": "Βαλαὰμ",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "2Pe.2.15",
+          "wordIndex": 10,
+          "form": "Βαλαὰμ",
+          "row": "TAGNT Act-Rev:103098"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335150"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35362"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35371"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.22.28",
+          "words": ["donkey", "Balaam"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Pet.2.15",
+          "words": ["Balaam", "Beor"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Pet.2.16",
+          "words": ["donkey", "spoke"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b51cde2b9ff1ed9e"
+      }
+    },
+    {
+      "id": "num08",
+      "from": "Num.16.1-Num.16.35",
+      "to": "Jude.1.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Korah's rebellion",
+      "explanation": "Korah and his followers rise against Moses and Aaron, and the earth opens and swallows them. Jude names Korah's rebellion, with the way of Cain and the error of Balaam, as the fate of those he warns against.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33747"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338012"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34010"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.16.32",
+          "words": ["Korah", "swallowed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jude.1.11",
+          "words": ["Korah", "Balaam", "Cain"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0f75b9e0875d65d0"
+      }
+    },
+    {
+      "id": "num09",
+      "from": "Num.11.4-Num.11.34",
+      "to": "1Cor.10.6-1Cor.10.10",
+      "type": "allusion",
+      "strength": 2,
+      "label": "They craved evil things",
+      "explanation": "In the wilderness the people crave meat and complain, and the place where those who craved were buried is named for their craving. Paul says these things happened as examples so that we would not crave evil things as they did; his word for those who crave, found nowhere else in the New Testament, is the Septuagint's in Numbers 11:34 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.11.34",
+          "wordIndex": 16,
+          "form": "ἐπιθυμητήν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.10.6",
+          "wordIndex": 11,
+          "form": "ἐπιθυμητὰς",
+          "row": "TAGNT Act-Rev:49718"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Num.11.4",
+          "wordIndex": 7,
+          "form": "ἐπεθύμησεν",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.10.6",
+          "wordIndex": 15,
+          "form": "ἐπεθύμησαν.",
+          "row": "TAGNT Act-Rev:49722"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L32453"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L298870"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L298864"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.11.4",
+          "words": ["lusted", "meat"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.10.6",
+          "words": ["examples", "lust"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.10.10",
+          "words": ["grumble"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "dd12a16475fec53e"
+      }
+    },
+    {
+      "id": "num10",
+      "from": "Num.11.16-Num.11.25",
+      "to": "Luke.10.1",
+      "type": "parallel",
+      "strength": 1,
+      "label": "Seventy sent out",
+      "explanation": "Moses is told to gather seventy elders, and the LORD puts on them some of the Spirit that was on Moses. Luke tells how the Lord appointed seventy others and sent them out two by two; the number in Greek is the Septuagint's in Numbers 11 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Num.11.24",
+          "wordIndex": 14,
+          "form": "ἑβδομήκοντα",
+          "row": "LXX 004-Num"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.10.1",
+          "wordIndex": 9,
+          "form": "ἑβδομήκοντα",
+          "row": "TAGNT Mat-Jhn:65730"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255820"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L32540"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255819"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.11.25",
+          "words": ["Spirit", "seventy", "elders"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.10.1",
+          "words": ["appointed", "seventy"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b67b0357c83aa80e"
+      }
+    },
+    {
+      "id": "deu01",
+      "from": "Deut.8.3",
+      "to": "Luke.4.4",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Not by bread alone",
+      "explanation": "Moses reminds Israel that God fed them with manna in the wilderness to teach them that a person does not live by bread alone. Tempted in the wilderness to turn a stone into bread, Jesus answers with this verse as what is written.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252391"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L40208"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.8.3",
+          "words": ["manna", "bread"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.4",
+          "words": ["written", "bread"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "4a2fa82a014ebfb6"
+      }
+    },
+    {
+      "id": "deu02",
+      "from": "Deut.6.13",
+      "to": "Luke.4.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Worship the Lord your God",
+      "explanation": "Deuteronomy tells Israel to fear the LORD and serve him. When the devil offers Jesus the kingdoms of the world in return for worship, Jesus answers with this command as what is written; the verb for serving is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.6.13",
+          "wordIndex": 8,
+          "form": "λατρεύσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.4.8",
+          "wordIndex": 21,
+          "form": "λατρεύσεις.¶",
+          "row": "TAGNT Mat-Jhn:56363"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252444"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39702"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.6.13",
+          "words": ["fear", "serve"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.8",
+          "words": ["written", "worship", "serve"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "4d8c199ffd6679be"
+      }
+    },
+    {
+      "id": "deu03",
+      "from": "Deut.6.16",
+      "to": "Luke.4.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Do not put the Lord your God to the test",
+      "explanation": "Moses warns Israel not to test the LORD as they did at Massah. When the devil sets Jesus on the pinnacle of the temple and invites him to throw himself down, Jesus answers with this command, in the Septuagint's verb for testing (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.6.16",
+          "wordIndex": 2,
+          "form": "ἐκπειράσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.4.12",
+          "wordIndex": 10,
+          "form": "ἐκπειράσεις",
+          "row": "TAGNT Mat-Jhn:56473"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252463"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39738"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.6.16",
+          "words": ["tempt", "Massah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.12",
+          "words": ["tempt"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0afa275af87f2038"
+      }
+    },
+    {
+      "id": "deu04",
+      "from": "Deut.18.15-Deut.18.19",
+      "to": "Acts.3.22-Acts.3.23",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A prophet like me",
+      "explanation": "Moses promises that the LORD will raise up a prophet like him from among the people, and that they must listen to him. Peter quotes the promise to the crowd at the temple as Moses' own words and applies it to Jesus.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.18.15",
+          "wordIndex": 8,
+          "form": "ἀναστήσει",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.3.22",
+          "wordIndex": 11,
+          "form": "ἀναστήσει",
+          "row": "TAGNT Act-Rev:3043"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.18.15",
+          "wordIndex": 1,
+          "form": "Προφήτην",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.3.22",
+          "wordIndex": 9,
+          "form": "προφήτην",
+          "row": "TAGNT Act-Rev:3041"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276324"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L42572"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276329"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.18.15",
+          "words": ["prophet", "listen"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.3.22",
+          "words": ["Moses", "prophet", "listen"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "21e6545f307189a1"
+      }
+    },
+    {
+      "id": "deu05",
+      "from": "Deut.18.15",
+      "to": "Acts.7.37",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Stephen recalls the promised prophet",
+      "explanation": "In his speech to the council Stephen recalls that the same Moses who led the people out of Egypt told them God would raise up a prophet like him. He quotes the promise from Deuteronomy as part of his account of how the people rejected those God sent.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.18.15",
+          "wordIndex": 1,
+          "form": "Προφήτην",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.7.37",
+          "wordIndex": 10,
+          "form": "προφήτην",
+          "row": "TAGNT Act-Rev:7293"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L42575"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278131"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.18.15",
+          "words": ["prophet"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.37",
+          "words": ["Moses", "prophet"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "7cc441de0caec56e"
+      }
+    },
+    {
+      "id": "deu06",
+      "from": "Deut.25.4",
+      "to": "1Cor.9.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Do not muzzle the ox",
+      "explanation": "Among the laws of Deuteronomy is that an ox treading grain must not be muzzled. Paul quotes it as written in the law of Moses to argue that those who work for the gospel may live by it, and asks whether God's concern is really for oxen.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.25.4",
+          "wordIndex": 4,
+          "form": "ἀλοῶντα",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.9.9",
+          "wordIndex": 10,
+          "form": "ἀλοῶντα.",
+          "row": "TAGNT Act-Rev:49026"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.25.4",
+          "wordIndex": 2,
+          "form": "φιμώσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.9.9",
+          "wordIndex": 8,
+          "form": "κημώσεις",
+          "row": "TAGNT Act-Rev:49024"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.25.4",
+          "wordIndex": 3,
+          "form": "βοῦν",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.9.9",
+          "wordIndex": 9,
+          "form": "βοῦν",
+          "row": "TAGNT Act-Rev:49025"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.9.9",
+          "wordIndex": 13,
+          "form": "βοῶν",
+          "row": "TAGNT Act-Rev:49029"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L298529"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L43667"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.25.4",
+          "words": ["muzzle", "ox", "grain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.9.9",
+          "words": ["written", "Moses", "muzzle", "ox"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "8a7ad377df95ecc2"
+      }
+    },
+    {
+      "id": "deu07",
+      "from": "Deut.27.26",
+      "to": "Gal.3.10",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Cursed is everyone who does not keep the law",
+      "explanation": "The curses spoken from Mount Ebal end with a curse on whoever does not uphold the words of the law by doing them. Paul quotes it as written to argue that those who rely on the works of the law are under a curse; the words for cursed and for abiding are the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.27.26",
+          "wordIndex": 1,
+          "form": "Ἐπικατάρατος",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.3.10",
+          "wordIndex": 13,
+          "form": "ἐπικατάρατος",
+          "row": "TAGNT Act-Rev:64659"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.27.26",
+          "wordIndex": 6,
+          "form": "ἐμμένει",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.3.10",
+          "wordIndex": 17,
+          "form": "ἐμμένει",
+          "row": "TAGNT Act-Rev:64663"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306633"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L44218"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.27.26",
+          "words": ["Cursed", "law"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.3.10",
+          "words": ["curse", "written", "law"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0eefbb097434451f"
+      }
+    },
+    {
+      "id": "deu08",
+      "from": "Deut.30.11-Deut.30.14",
+      "to": "Rom.10.6-Rom.10.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The word is near you",
+      "explanation": "Moses tells Israel that the commandment is not in heaven or beyond the sea, but very near, in their mouth and in their heart. Paul quotes these lines, interpreting the going up to heaven and down to the abyss as about Christ, and calls the near word the word of faith.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.30.14",
+          "wordIndex": 3,
+          "form": "ἐγγὺς",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.10.8",
+          "wordIndex": 4,
+          "form": "ἐγγύς",
+          "row": "TAGNT Act-Rev:39002"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293013"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292987"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45364"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.30.12",
+          "words": ["heaven"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.30.14",
+          "words": ["near", "mouth", "heart"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.10.6",
+          "words": ["heaven", "Christ"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.10.8",
+          "words": ["near", "mouth", "heart", "faith"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "325c6347883338b6"
+      }
+    },
+    {
+      "id": "deu09",
+      "from": "Deut.32.21",
+      "to": "Rom.10.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Provoked to jealousy by a no-people",
+      "explanation": "In the Song of Moses God says that as Israel provoked him with what is not God, he will provoke them with those who are not a people. Paul quotes it, introducing it with First Moses says, and uses the Septuagint's two verbs (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.32.21",
+          "wordIndex": 22,
+          "form": "παροργιῶ",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.10.19",
+          "wordIndex": 19,
+          "form": "παροργιῶ",
+          "row": "TAGNT Act-Rev:39324"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.32.21",
+          "wordIndex": 2,
+          "form": "παρεζήλωσάν",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.10.19",
+          "wordIndex": 11,
+          "form": "παραζηλώσω",
+          "row": "TAGNT Act-Rev:39316"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293200"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L46122"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.32.21",
+          "words": ["jealousy", "anger"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.10.19",
+          "words": ["Moses", "jealousy", "angry"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a5af2bf762da75d2"
+      }
+    },
+    {
+      "id": "deu10",
+      "from": "Deut.32.35",
+      "to": "Rom.12.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Vengeance is mine",
+      "explanation": "In the Song of Moses God declares that vengeance and recompense are his. Paul quotes the saying as written to tell the Romans not to avenge themselves but to leave room for God's wrath.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294318"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L46308"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.32.35",
+          "words": ["Vengeance"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.12.19",
+          "words": ["revenge", "written", "Vengeance"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "143c834faf80f759"
+      }
+    },
+    {
+      "id": "deu11",
+      "from": "Deut.31.6-Deut.31.8",
+      "to": "Heb.13.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I will never leave you",
+      "explanation": "As Moses hands over to Joshua, he tells Israel and Joshua that the LORD will not fail them or forsake them. Hebrews quotes the promise to urge contentment instead of love of money, with the Septuagint's verb for leaving (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.31.6",
+          "wordIndex": 27,
+          "form": "ἀνῇ",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.13.5",
+          "wordIndex": 13,
+          "form": "ἀνῶ,",
+          "row": "TAGNT Act-Rev:95533"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L329273"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L329277"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45499"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.31.6",
+          "words": ["fail", "forsake"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.13.5",
+          "words": ["money", "leave", "forsake"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ae972023097cd878"
+      }
+    },
+    {
+      "id": "deu12",
+      "from": "Deut.17.7",
+      "to": "1Cor.5.13",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Remove the evil from among you",
+      "explanation": "Deuteronomy repeats the formula that Israel must remove the evil from among them. Paul closes his instruction about a case of immorality in Corinth with these words, and his verb, found nowhere else in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.17.7",
+          "wordIndex": 22,
+          "form": "ἐξαρεῖς",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.5.13",
+          "wordIndex": 8,
+          "form": "ἐξάρατε",
+          "row": "TAGNT Act-Rev:46637"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L297573"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L42290"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.17.7",
+          "words": ["remove", "evil"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.5.13",
+          "words": ["judges", "wicked"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "973d3b020c48ea3c"
+      }
+    },
+    {
+      "id": "deu13",
+      "from": "Deut.4.24",
+      "to": "Heb.12.29",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A consuming fire",
+      "explanation": "Moses warns Israel not to make images, because the LORD their God is a devouring fire, a jealous God. Hebrews ends its warning with the same words, our God is a consuming fire, and its participle, found nowhere else in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.4.24",
+          "wordIndex": 7,
+          "form": "καταναλίσκον",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.12.29",
+          "wordIndex": 7,
+          "form": "καταναλίσκον.¶",
+          "row": "TAGNT Act-Rev:95426"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L329171"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L38982"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.4.24",
+          "words": ["devouring", "fire"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.12.29",
+          "words": ["consuming", "fire"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c462a23a56dbe086"
+      }
+    },
+    {
+      "id": "deu14",
+      "from": "Deut.5.16-Deut.5.21",
+      "to": "Rom.13.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The commandments summed up",
+      "explanation": "Deuteronomy repeats the Ten Commandments, including those against adultery, murder, theft, false witness and coveting. Paul lists these commandments and says they are summed up in loving one's neighbour as oneself; his verbs are the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.5.20",
+          "wordIndex": 2,
+          "form": "ψευδομαρτυρήσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.13.9",
+          "wordIndex": 10,
+          "form": "ψευδομαρτυρήσεις,",
+          "row": "TAGNT Act-Rev:41211"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.5.18",
+          "wordIndex": 2,
+          "form": "φονεύσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.13.9",
+          "wordIndex": 6,
+          "form": "φονεύσεις,",
+          "row": "TAGNT Act-Rev:41207"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.5.19",
+          "wordIndex": 2,
+          "form": "κλέψεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.13.9",
+          "wordIndex": 8,
+          "form": "κλέψεις",
+          "row": "TAGNT Act-Rev:41209"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Deut.5.17",
+          "wordIndex": 2,
+          "form": "μοιχεύσεις",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.13.9",
+          "wordIndex": 4,
+          "form": "μοιχεύσεις,",
+          "row": "TAGNT Act-Rev:41205"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294462"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39439"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39411"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.5.17",
+          "words": ["murder"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.5.21",
+          "words": ["covet"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.13.9",
+          "words": ["commandments", "murder", "covet", "neighbor"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "07711fbda4ea32c5"
+      }
+    },
+    {
+      "id": "deu15",
+      "from": "Deut.21.22-Deut.21.23",
+      "to": "Gal.3.13",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Cursed is anyone hanged on a tree",
+      "explanation": "Deuteronomy rules that the body of an executed man hung on a tree must not remain overnight, for he who is hanged is accursed of God. Paul quotes it to say that Christ redeemed us from the curse of the law by becoming a curse for us.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306668"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L43110"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.21.23",
+          "words": ["tree", "accursed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.3.13",
+          "words": ["Christ", "curse", "tree"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "caf5fd96dc769f03"
+      }
+    },
+    {
+      "id": "deu16",
+      "from": "Deut.19.15",
+      "to": "2Cor.13.1",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Two or three witnesses",
+      "explanation": "Deuteronomy requires that a matter be established by the mouth of two or three witnesses. Paul quotes the rule as he prepares for his third visit to Corinth; the word for witnesses is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Deut.19.15",
+          "wordIndex": 3,
+          "form": "μάρτυς",
+          "row": "LXX 005-Deut"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "2Co.13.1",
+          "wordIndex": 9,
+          "form": "μαρτύρων",
+          "row": "TAGNT Act-Rev:62764"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L305461"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L42723"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.19.15",
+          "words": ["witnesses", "established"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Cor.13.1",
+          "words": ["third", "witnesses", "established"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "fc992111c8a80efb"
+      }
+    },
+    {
+      "id": "jos01",
+      "from": "Josh.6.1-Josh.6.20",
+      "to": "Heb.11.30",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The walls of Jericho",
+      "explanation": "Israel marches around Jericho for seven days, the priests blow the trumpets, the people shout and the wall falls down flat. Hebrews counts this among the acts of faith, saying the walls fell after they had been encircled for seven days, with the Septuagint's verb for going around (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Josh.6.7",
+          "wordIndex": 10,
+          "form": "κυκλῶσαι",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.30",
+          "wordIndex": 6,
+          "form": "κυκλωθέντα",
+          "row": "TAGNT Act-Rev:94336"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48065"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328319"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47945"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.6.20",
+          "words": ["trumpets", "wall"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.30",
+          "words": ["Jericho", "walls", "seven"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b26afd6c7bd1afe1"
+      }
+    },
+    {
+      "id": "jos02",
+      "from": "Josh.6.22-Josh.6.25",
+      "to": "Heb.11.31",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Rahab spared at Jericho",
+      "explanation": "When Jericho falls, Joshua saves Rahab the prostitute and her household because she hid the spies. Hebrews names Rahab the prostitute among the examples of faith: she did not perish with the disobedient, because she had received the spies in peace (her name below as in the Septuagint).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Josh.6.23",
+          "wordIndex": 17,
+          "form": "Ῥαὰβ",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.31",
+          "wordIndex": 2,
+          "form": "Ῥαὰβ",
+          "row": "TAGNT Act-Rev:94352"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328321"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48091"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48113"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.6.25",
+          "words": ["Rahab", "prostitute", "messengers"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.31",
+          "words": ["Rahab", "prostitute", "spies"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0dd5a0cbc0f0ad39"
+      }
+    },
+    {
+      "id": "jos03",
+      "from": "Josh.2.1-Josh.2.21",
+      "to": "Jas.2.25",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Rahab and the messengers",
+      "explanation": "Rahab hides Joshua's two spies in Jericho and lets them down by a cord through her window so that they escape another way. James names her as justified by her works, for welcoming the messengers and sending them off by a different road.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Josh.2.3",
+          "wordIndex": 9,
+          "form": "Ῥαὰβ",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jas.2.25",
+          "wordIndex": 4,
+          "form": "Ῥαὰβ",
+          "row": "TAGNT Act-Rev:97476"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47220"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L330722"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L330724"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.2.1",
+          "words": ["Rahab", "prostitute"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.2.15",
+          "words": ["window", "wall"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jas.2.25",
+          "words": ["Rahab", "messengers", "justified"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "d386487929a0a798"
+      }
+    },
+    {
+      "id": "jos04",
+      "from": "Josh.1.13-Josh.1.15",
+      "to": "Heb.4.8",
+      "type": "allusion",
+      "strength": 3,
+      "label": "If Joshua had given them rest",
+      "explanation": "Joshua reminds the tribes that the LORD is giving them rest and this land. Hebrews names Joshua and argues that if he had given the people rest, God would not have spoken later of another day, so a rest still remains; the verb is the Septuagint's in Joshua 1:13 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Josh.1.13",
+          "wordIndex": 15,
+          "form": "κατέπαυσεν",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.4.8",
+          "wordIndex": 5,
+          "form": "κατέπαυσεν,",
+          "row": "TAGNT Act-Rev:89273"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325280"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.1.13",
+          "words": ["rest", "land"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.4.8",
+          "words": ["Joshua", "rest"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9a35339093a0420f"
+      }
+    },
+    {
+      "id": "jos05",
+      "from": "Josh.14.1-Josh.14.2",
+      "to": "Acts.13.19",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The land given as an inheritance",
+      "explanation": "Joshua 14 begins the account of how Israel's tribes received their inheritances in Canaan by lot. In the synagogue at Pisidian Antioch Paul retells Israel's story and says God destroyed seven nations in Canaan and gave the people their land as an inheritance.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L281318"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.14.1",
+          "words": ["inheritances", "Canaan", "Joshua"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.19",
+          "words": ["Canaan", "inheritance"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "3c3c63634b2b4a17"
+      }
+    },
+    {
+      "id": "jos06",
+      "from": "Josh.24.32",
+      "to": "John.4.5",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The ground Jacob gave to Joseph",
+      "explanation": "The book of Joshua ends with Joseph's bones buried at Shechem, in the parcel of ground Jacob had bought. John places the meeting with the Samaritan woman at Sychar, beside the plot of land Jacob had given Joseph; the names are as in the Septuagint (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Josh.24.32",
+          "wordIndex": 22,
+          "form": "Ἰακὼβ",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.4.5",
+          "wordIndex": 14,
+          "form": "Ἰακὼβ",
+          "row": "TAGNT Mat-Jhn:88716"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Josh.24.32",
+          "wordIndex": 4,
+          "form": "Ἰωσὴφ",
+          "row": "LXX 006-Josh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.4.5",
+          "wordIndex": 16,
+          "form": "Ἰωσὴφ",
+          "row": "TAGNT Mat-Jhn:88718"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L264655"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L51622"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.24.32",
+          "words": ["Joseph", "Jacob", "Shechem", "parcel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.4.5",
+          "words": ["Jacob", "Joseph", "parcel"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c8ece0ceac49a322"
+      }
+    },
+    {
+      "id": "jos07",
+      "from": "Josh.24.32",
+      "to": "Acts.7.16",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Buried at Shechem",
+      "explanation": "Joshua records that the bones of Joseph, brought up from Egypt, were buried at Shechem in ground bought from the sons of Hamor. Stephen tells the council that the fathers were brought back to Shechem and laid in the tomb bought from the children of Hamor.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L277903"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L51621"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.24.32",
+          "words": ["Joseph", "Shechem", "Hamor"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.16",
+          "words": ["Shechem", "Hamor"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "71abc54bd6bbb0b4"
+      }
+    },
+    {
+      "id": "jdg01",
+      "from": "Judg.13.2-Judg.13.7",
+      "to": "Luke.1.7-Luke.1.15",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A son promised to a barren wife",
+      "explanation": "The LORD's angel tells Manoah's wife, barren and childless, that she will bear a son who will be set apart from the womb and that she must drink no wine nor strong drink. Gabriel tells Zechariah that his barren wife Elizabeth will bear a son who will drink no wine nor strong drink and be filled with the Holy Spirit from his mother's womb. Luke's word for barren is the Septuagint's in Judges 13 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Judg.13.2",
+          "wordIndex": 19,
+          "form": "στεῖρα",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.7",
+          "wordIndex": 10,
+          "form": "στεῖρα",
+          "row": "TAGNT Mat-Jhn:51732"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Judg.13.5",
+          "wordIndex": 25,
+          "form": "κοιλίας",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.15",
+          "wordIndex": 20,
+          "form": "κοιλίας",
+          "row": "TAGNT Mat-Jhn:51956"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L54219"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250656"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L54209"
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.13.3",
+          "words": ["angel", "barren", "son"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.13.4",
+          "words": ["wine", "strong"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.7",
+          "words": ["barren"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.15",
+          "words": ["wine", "strong", "womb"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "bf2b073a40a4718c"
+      }
+    },
+    {
+      "id": "jdg02",
+      "from": "Judg.6.11-Judg.7.25",
+      "to": "Heb.11.32-Heb.11.34",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Gideon",
+      "explanation": "The LORD's angel finds Gideon threshing wheat in hiding and sends him against Midian, which he routs with three hundred men and trumpets. Hebrews names Gideon first among those it has no time to tell of, who through faith became mighty in war; the name is spelled as in the Septuagint (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Judg.6.11",
+          "wordIndex": 20,
+          "form": "Γεδεὼν",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.32",
+          "wordIndex": 12,
+          "form": "Γεδεών,",
+          "row": "TAGNT Act-Rev:94390"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52914"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52881"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52915"
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.6.11",
+          "words": ["Gideon", "angel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.7.22",
+          "words": ["trumpets"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.32",
+          "words": ["Gideon"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "7808ebf8e6d1998b"
+      }
+    },
+    {
+      "id": "jdg03",
+      "from": "Judg.11.1-Judg.11.33",
+      "to": "Heb.11.32-Heb.11.34",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jephthah",
+      "explanation": "Jephthah the Gileadite, son of a prostitute and driven out by his brothers, is called back to lead Israel and defeats the Ammonites. Hebrews names Jephthah among the judges whose faith it has no time to recount (his name below as in the Septuagint).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Judg.11.1",
+          "wordIndex": 17,
+          "form": "Ἰεφθάε",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.32",
+          "wordIndex": 18,
+          "form": "Ἰεφθάε,",
+          "row": "TAGNT Act-Rev:94396"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53883"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328333"
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.11.1",
+          "words": ["Jephthah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.11.32",
+          "words": ["Ammon"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.32",
+          "words": ["Jephthah"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "61dc9d08c8136d3c"
+      }
+    },
+    {
+      "id": "jdg04",
+      "from": "Judg.13.24-Judg.16.31",
+      "to": "Heb.11.32-Heb.11.34",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Samson",
+      "explanation": "Samson, promised before his birth, tears a lion apart when the Spirit comes on him and fights the Philistines to his death. Hebrews names Samson among those who through faith stopped the mouths of lions and out of weakness were made strong; name and lion are the Septuagint's words (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Judg.13.24",
+          "wordIndex": 11,
+          "form": "Σαμψών",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.32",
+          "wordIndex": 16,
+          "form": "Σαμψών,",
+          "row": "TAGNT Act-Rev:94394"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Judg.14.5",
+          "wordIndex": 23,
+          "form": "λέοντος",
+          "row": "LXX 007-Judg"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.33",
+          "wordIndex": 12,
+          "form": "λεόντων,",
+          "row": "TAGNT Act-Rev:94426"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L54321"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328392"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328366"
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.13.24",
+          "words": ["Samson"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Judg.14.6",
+          "words": ["Spirit"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.32",
+          "words": ["Samson"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.33",
+          "words": ["lions"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "37dffbb3d65df480"
+      }
+    },
+    {
+      "id": "rut01",
+      "from": "Ruth.4.13-Ruth.4.22",
+      "to": "Matt.1.5-Matt.1.6",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Boaz, Ruth and the line of David",
+      "explanation": "Ruth ends with Boaz marrying Ruth, the birth of Obed, and a short genealogy down to David. Matthew's genealogy of Jesus names Boaz as the father of Obed by Ruth, then Obed, Jesse and King David, one of the few women named in it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56233"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230288"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56265"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.13",
+          "words": ["Boaz", "Ruth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.22",
+          "words": ["Obed", "Jesse", "David"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.1.5",
+          "words": ["Boaz", "Obed", "Ruth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.1.6",
+          "words": ["Jesse", "David"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "926a5e866673004c"
+      }
+    },
+    {
+      "id": "rut02",
+      "from": "Ruth.4.18-Ruth.4.22",
+      "to": "Luke.3.31-Luke.3.33",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The generations from Perez to David",
+      "explanation": "Ruth closes with the generations from Perez to David: Hezron, Ram, Amminadab, Nahshon, Salmon, Boaz, Obed and Jesse. Luke's genealogy of Jesus, read in the other direction, passes through the same names, with the Septuagint's spelling of Nahshon (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Ruth.4.20",
+          "wordIndex": 5,
+          "form": "Ναασσών",
+          "row": "LXX 008-Ruth"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.3.32",
+          "wordIndex": 10,
+          "form": "Ναασσὼν",
+          "row": "TAGNT Mat-Jhn:56014"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252306"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56254"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56264"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.21",
+          "words": ["Salmon", "Boaz", "Obed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.22",
+          "words": ["Jesse", "David"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.3.32",
+          "words": ["Jesse", "Obed", "Boaz", "Nahshon"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e616a3922f596161"
+      }
+    },
+    {
+      "id": "rut03",
+      "from": "Ruth.2.12",
+      "to": "Luke.13.34",
+      "type": "echo",
+      "strength": 1,
+      "label": "Under his wings",
+      "explanation": "Boaz blesses Ruth in the name of the God of Israel, under whose wings she has come to take refuge. Lamenting over Jerusalem, Jesus says he longed to gather its children as a hen gathers her brood under her wings; the word for wings is the Septuagint's in Ruth 2:12 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Ruth.2.12",
+          "wordIndex": 21,
+          "form": "πτέρυγας",
+          "row": "LXX 008-Ruth"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.13.34",
+          "wordIndex": 27,
+          "form": "πτέρυγας,",
+          "row": "TAGNT Mat-Jhn:71629"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L257932"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.2.12",
+          "words": ["wings", "refuge"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.13.34",
+          "words": ["Jerusalem", "wings"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "81ed75ea49fa25ee"
+      }
     }
   ]
 }

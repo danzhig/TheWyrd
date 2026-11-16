@@ -34,6 +34,7 @@
     "connections:echo": "tsx scripts/connections-echo.ts",
     "connections:verify": "tsx scripts/connections-verify.ts",
     "connections:propose": "tsx scripts/connections-propose.ts",
+    "connections:draft": "tsx scripts/connections-draft.ts",
     "tokens": "tsx scripts/gen-tokens.ts",
     "fonts": "tsx scripts/fetch-fonts.ts",
     "textures": "tsx scripts/render-textures.ts"
