@@ -18,7 +18,9 @@ export async function fetchTerms(): Promise<Record<string, string>> {
  * Download and verify every source of one side pipeline (`terms`, `themes`) into sources/raw.
  * Zips (eBible USFM, the SWORD module, OpenBible's data) are unpacked beside themselves.
  */
-export async function fetchPipeline(pipeline: 'terms' | 'themes'): Promise<Record<string, string>> {
+export async function fetchPipeline(
+  pipeline: 'terms' | 'themes' | 'connections',
+): Promise<Record<string, string>> {
   fs.mkdirSync(RAW_DIR, { recursive: true });
   const out: Record<string, string> = {};
   for (const src of readSourcesManifest().filter((s) => s.pipeline === pipeline)) {

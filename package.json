@@ -29,6 +29,8 @@
     "themes:topics": "tsx scripts/themes-topics.ts",
     "themes:taxonomy": "tsx scripts/themes-taxonomy.ts",
     "themes:build": "tsx scripts/themes-build.ts",
+    "connections:fetch": "tsx scripts/fetch-connections.ts",
+    "connections:candidates": "tsx scripts/connections-candidates.ts",
     "tokens": "tsx scripts/gen-tokens.ts",
     "fonts": "tsx scripts/fetch-fonts.ts",
     "textures": "tsx scripts/render-textures.ts"
