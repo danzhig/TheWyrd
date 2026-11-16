@@ -1,7 +1,7 @@
 /** The Vault's Threads mode (P4.3): connections grouped into arcs between books, and their shape. */
 import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
-import { arcPath, arcsFor, arcWidth, BOW } from '@/components/vault/threads';
+import { arcPath, arcsFor, arcWidth, BOW, nearestArc } from '@/components/vault/threads';
 import { TYPE_ORDER } from '@/lib/threads';
 import type { PublicConnection, PublicConnections, ThreadEnd } from '@/lib/types';
 
@@ -84,5 +84,17 @@ describe('Vault threads', () => {
     const all = new Map(manifest.books.map((b) => [b.id, { x: 1, y: 2, r: 1 }]));
     const arcs = arcsFor(data.connections, all, new Set(TYPE_ORDER));
     expect(arcs.reduce((n, a) => n + a.connections.length, 0)).toBe(data.connections.length);
+  });
+
+  it('matches a tap to the nearest arc within reach', () => {
+    const arcs = arcsFor(
+      [conn('a', 'Exod', 'Luke', 'echo'), conn('c', 'Gen', 'Luke', 'echo')],
+      homes,
+      new Set(TYPE_ORDER),
+    );
+    const exod = arcs.find((a) => a.key === 'Exod|Luke')!;
+    expect(nearestArc(arcs, exod.mid, 5)?.key).toBe('Exod|Luke');
+    expect(nearestArc(arcs, { x: exod.mid.x + 3, y: exod.mid.y }, 5)?.key).toBe('Exod|Luke');
+    expect(nearestArc(arcs, { x: 900, y: 900 }, 5)).toBeNull();
   });
 });

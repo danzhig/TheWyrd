@@ -12,7 +12,7 @@
   fill: none;
   stroke: var(--gold);
   stroke-linecap: round;
-  opacity: 0.78;
+  opacity: 0.6;
   /* Each arc draws itself in from end to end (pathLength = 1). */
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
@@ -30,16 +30,7 @@
   }
 }
 
-.hit {
-  fill: none;
-  stroke: transparent;
-  stroke-width: 28;
-  pointer-events: stroke;
-  cursor: pointer;
-}
-
-.arc:hover .line,
-.selected .line {
+.line.selected {
   opacity: 1;
   stroke: var(--gold-light);
 }
