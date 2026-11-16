@@ -226,3 +226,59 @@ export interface SectionFile extends SectionIndexEntry {
   notes: NoteOut[];
   versificationNote?: string;
 }
+
+// ---------------------------------------------------------------------------
+// Threads (Phase 4): connections as published in public/data/connections.json (verified only)
+// ---------------------------------------------------------------------------
+
+export type ConnectionType =
+  'quotation' | 'allusion' | 'echo' | 'typology' | 'parallel' | 'fulfilment' | 'contrast';
+
+/** One end of a connection, placed in the built section that holds its first verse. */
+export interface ThreadEnd {
+  ref: string; // OSIS, WEBC numbering ("Luke.4.25-Luke.4.26")
+  display: string; // "Luke 4:25–26"
+  sectionId: string;
+  sectionTitle: string;
+  bookId: string;
+  library: boolean;
+  /** Element id of its first verse in the section page ("v-4-25"). */
+  anchor: string;
+  /** The first verse's built text, cut at a word boundary (never typed). */
+  excerpt: string;
+}
+
+export interface ThreadEvidence {
+  dataset: 'LXX' | 'TAGNT';
+  ref: string; // "Septuagint 3 Kingdoms 17:23" style is built from this at display
+  words: string; // "11–15"
+  form: string; // the tokens at those positions
+  row: string;
+}
+
+export type ThreadCitation =
+  | { kind: 'xref'; row: string }
+  | { kind: 'verse'; display: string; words: string[] }
+  | {
+      kind: 'father';
+      author: string;
+      work: string;
+      locator: string;
+      edition: string;
+      url: string;
+    };
+
+export interface PublicConnection {
+  id: string;
+  type: ConnectionType;
+  strength: 1 | 2 | 3;
+  label: string;
+  explanation: string;
+  ends: [ThreadEnd, ThreadEnd]; // from, to
+  evidence: ThreadEvidence[];
+  sources: ThreadCitation[];
+}
+
+export interface PublicConnections {
+  connections: PublicConnection[];
+}
