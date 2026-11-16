@@ -1,5 +1,5 @@
 {
-  "$comment": "Threads (Phase 4, P4.2). The seed connections from docs/PLAN.md §14 as OSIS references in WEBC (English) numbering, each with an original explanation and its citations: OpenBible.info cross-reference rows, words the WEBC text itself carries at a verse (checked at build), shared Greek words at their Septuagint and TAGNT rows (checked by `pnpm connections:verify`), and, for every interpretive reading, a Church Father's work and section in a pinned public-domain edition with a phrase that must occur there. Where the plan names several passages, each is its own connection; the plan's 'Exodus (whole)' is anchored at Exod 19:1, where the Septuagint uses the word Luke 9:31 shares, and 'Genesis–Kings' at Abraham's call through the temple's dedication. A connection is shown on the site only once it is `verified`, with the owner's approval carrying a fingerprint of its content.",
+  "$comment": "Threads (Phase 4, P4.2). The seed connections from docs/PLAN.md §14 as OSIS references in WEBC (English) numbering, each with an original explanation and its citations: OpenBible.info cross-reference rows, words the WEBC text itself carries at a verse (checked at build), shared Greek words at their Septuagint and TAGNT rows (checked by `pnpm connections:verify`), and, for every interpretive reading, a Church Father's work and section in a pinned public-domain edition with a phrase that must occur there. Where the plan names several passages, each is its own connection; the plan's 'Exodus (whole)' is anchored at Exod 19:1, where the Septuagint uses the word Luke 9:31 shares, and 'Genesis–Kings' at Abraham's call through the temple's dedication. P4.4 adds connections book by book from the candidate pool (`pnpm connections:propose <bookId>`, docs/connections/<bookId>-candidates.md), with ids prefixed by the book. A connection is shown on the site only once it is `verified`, with the owner's approval carrying a fingerprint of its content.",
   "connections": [
     {
       "id": "s01a",
@@ -1338,6 +1338,1286 @@
         "date": "2026-11-16",
         "fingerprint": "99663a2fe876188f"
       }
+    },
+    {
+      "id": "gen01",
+      "from": "Gen.1.1",
+      "to": "John.1.1-John.1.3",
+      "type": "allusion",
+      "strength": 2,
+      "label": "In the beginning",
+      "explanation": "John's Gospel opens with the words that open Genesis, in the beginning, and then speaks of the Word who was with God. Where Genesis says God created the heavens and the earth, John says all things were made through the Word and nothing was made without him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L24"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262893"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262926"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.1.1",
+          "words": ["beginning", "created"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.1.1",
+          "words": ["beginning", "Word"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.1.3",
+          "words": ["made"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen02",
+      "from": "Gen.2.2",
+      "to": "Heb.4.4",
+      "type": "quotation",
+      "strength": 3,
+      "label": "God rested on the seventh day",
+      "explanation": "Hebrews quotes Genesis on God resting on the seventh day from all his works, as part of its argument that a Sabbath rest still remains for the people of God. The Greek of Hebrews keeps the Septuagint's verb for resting and its word for the seventh (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.2.2",
+          "wordIndex": 16,
+          "form": "κατέπαυσεν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.4.4",
+          "wordIndex": 9,
+          "form": "κατέπαυσεν",
+          "row": "TAGNT Act-Rev:89163"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.2.2",
+          "wordIndex": 20,
+          "form": "ἑβδόμῃ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.4.4",
+          "wordIndex": 6,
+          "form": "ἑβδόμης",
+          "row": "TAGNT Act-Rev:89160"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.4.4",
+          "wordIndex": 16,
+          "form": "ἑβδόμῃ",
+          "row": "TAGNT Act-Rev:89170"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L464"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.2",
+          "words": ["seventh", "rested"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.4.4",
+          "words": ["seventh", "rested"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.4.9",
+          "words": ["remains", "rest"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen03",
+      "from": "Gen.1.27-Gen.2.24",
+      "to": "Matt.19.4-Matt.19.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Male and female; the two become one flesh",
+      "explanation": "Asked about divorce, Jesus answers from the first chapters of Genesis: the Creator made them male and female, and a man leaves his father and mother and is joined to his wife, so that the two become one flesh. He draws his own conclusion from them, that no one should separate what God has joined.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.1.27",
+          "wordIndex": 14,
+          "form": "θῆλυ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.19.4",
+          "wordIndex": 15,
+          "form": "θῆλυ",
+          "row": "TAGNT Mat-Jhn:18858"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L352"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238841"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238825"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.1.27",
+          "words": ["male", "female"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.24",
+          "words": ["leave", "flesh"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.19.4",
+          "words": ["beginning", "male", "female"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.19.6",
+          "words": ["flesh", "joined"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen04",
+      "from": "Gen.2.24",
+      "to": "Eph.5.31-Eph.5.32",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The two become one flesh",
+      "explanation": "Ephesians quotes the verse from Genesis about a man leaving his father and mother to be joined to his wife, the two becoming one flesh. It then calls this a great mystery and applies it to Christ and the assembly, the Church.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311198"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.24",
+          "words": ["leave", "flesh"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Eph.5.31",
+          "words": ["leave", "flesh"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Eph.5.32",
+          "words": ["mystery", "Christ"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen05",
+      "from": "Gen.2.7",
+      "to": "1Cor.15.45",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The first man Adam became a living soul",
+      "explanation": "In Genesis the LORD God forms man from the dust and breathes life into him, and man becomes a living soul. Paul cites the verse as written Scripture, names the first man as Adam, and sets beside him a last Adam who became a life-giving spirit.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L542"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L300965"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.7",
+          "words": ["dust", "breathed", "soul"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.15.45",
+          "words": ["written", "Adam", "soul", "spirit"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen06",
+      "from": "Gen.2.7",
+      "to": "John.20.22",
+      "type": "echo",
+      "strength": 2,
+      "label": "He breathed on them",
+      "explanation": "In the Septuagint, God breathes life into the first man with the verb John uses the same rare verb when the risen Jesus breathes on his disciples and tells them to receive the Holy Spirit (both forms are below). The New Testament uses the verb nowhere else.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.2.7",
+          "wordIndex": 12,
+          "form": "ἐνεφύσησεν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.20.22",
+          "wordIndex": 4,
+          "form": "ἐνεφύσησεν",
+          "row": "TAGNT Mat-Jhn:110764"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274293"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L534"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.7",
+          "words": ["breathed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.20.22",
+          "words": ["breathed", "Spirit"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen07",
+      "from": "Gen.3.1-Gen.3.13",
+      "to": "2Cor.11.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As the serpent deceived Eve",
+      "explanation": "Genesis tells how the serpent, more subtle than any animal of the field, led the woman to eat, and how she said that the serpent had deceived her. Paul names Eve and the serpent's craftiness as the pattern he fears for the Corinthians, that their minds might be led away from Christ.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.3.1",
+          "wordIndex": 16,
+          "form": "ὄφις",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "2Co.11.3",
+          "wordIndex": 7,
+          "form": "ὄφις",
+          "row": "TAGNT Act-Rev:61270"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L727"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L862"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L304706"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.3.1",
+          "words": ["serpent"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.3.13",
+          "words": ["serpent", "deceived"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Cor.11.3",
+          "words": ["serpent", "deceived", "Eve"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen08",
+      "from": "Gen.4.8-Gen.4.10",
+      "to": "Luke.11.50-Luke.11.51",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The blood of Abel",
+      "explanation": "Cain kills his brother Abel in the field, and the LORD says that Abel's blood cries to him from the ground. Jesus names Abel as the first in the line of the righteous whose blood was shed, from Abel to Zechariah, and warns that it will be required of his generation.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L1172"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256878"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.4.8",
+          "words": ["Cain", "Abel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.4.10",
+          "words": ["blood"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.11.51",
+          "words": ["Abel", "blood", "Zachariah"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen09",
+      "from": "Gen.5.24",
+      "to": "Heb.11.5",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Enoch taken by God",
+      "explanation": "Genesis says only that Enoch walked with God and was not found, because God took him. Hebrews names Enoch among the examples of faith, saying he was taken away without seeing death and had pleased God, and like Genesis it says that he was not found.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.5.24",
+          "wordIndex": 3,
+          "form": "Ἑνὼχ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.5",
+          "wordIndex": 2,
+          "form": "Ἑνὼχ",
+          "row": "TAGNT Act-Rev:93627"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L1468"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.5.24",
+          "words": ["Enoch", "found"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.5",
+          "words": ["Enoch", "found"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen10",
+      "from": "Gen.6.13-Gen.7.24",
+      "to": "Luke.17.26-Luke.17.27",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As it was in the days of Noah",
+      "explanation": "Speaking of the day the Son of Man is revealed, Jesus compares it to the days of Noah: people ate, drank and married until Noah entered the ark and the flood came and destroyed them all. Luke's Greek uses the Septuagint's words for the ark and the flood (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.6.17",
+          "wordIndex": 6,
+          "form": "κατακλυσμὸν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.27",
+          "wordIndex": 16,
+          "form": "κατακλυσμὸς",
+          "row": "TAGNT Mat-Jhn:75440"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.6.14",
+          "wordIndex": 4,
+          "form": "κιβωτὸν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.27",
+          "wordIndex": 12,
+          "form": "κιβωτόν,",
+          "row": "TAGNT Mat-Jhn:75436"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.6.13",
+          "wordIndex": 6,
+          "form": "Νῶε",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.26",
+          "wordIndex": 8,
+          "form": "Νῶε,",
+          "row": "TAGNT Mat-Jhn:75403"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.27",
+          "wordIndex": 9,
+          "form": "Νῶε",
+          "row": "TAGNT Mat-Jhn:75433"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L1807"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L1978"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L259406"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.7.7",
+          "words": ["Noah", "ship"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.17.26",
+          "words": ["Noah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.17.27",
+          "words": ["Noah", "ship", "flood"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen11",
+      "from": "Gen.19.15-Gen.19.26",
+      "to": "Luke.17.28-Luke.17.32",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The days of Lot; remember Lot's wife",
+      "explanation": "In the same teaching Jesus recalls the days of Lot, when fire and sulfur rained on Sodom on the day Lot went out, and he tells his hearers to remember Lot's wife, who in Genesis looked back and became a pillar of salt. The warning that follows is not to turn back.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.19.15",
+          "wordIndex": 9,
+          "form": "Λὼτ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.28",
+          "wordIndex": 7,
+          "form": "Λώτ·",
+          "row": "TAGNT Mat-Jhn:75461"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.29",
+          "wordIndex": 5,
+          "form": "Λὼτ",
+          "row": "TAGNT Mat-Jhn:75483"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.32",
+          "wordIndex": 4,
+          "form": "Λώτ.",
+          "row": "TAGNT Mat-Jhn:75577"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.19.24",
+          "wordIndex": 3,
+          "form": "ἔβρεξεν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.29",
+          "wordIndex": 8,
+          "form": "ἔβρεξεν",
+          "row": "TAGNT Mat-Jhn:75486"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.19.24",
+          "wordIndex": 5,
+          "form": "Σόδομα",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.17.29",
+          "wordIndex": 7,
+          "form": "Σοδόμων,",
+          "row": "TAGNT Mat-Jhn:75485"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L259459"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4755"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4834"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.19.24",
+          "words": ["Sodom", "fire"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.19.26",
+          "words": ["Lot", "wife", "salt"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.17.29",
+          "words": ["Lot", "Sodom", "fire"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.17.32",
+          "words": ["Lot"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen12",
+      "from": "Gen.14.18-Gen.14.20",
+      "to": "Heb.7.1-Heb.7.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Melchizedek, king of Salem",
+      "explanation": "Genesis gives Melchizedek three verses: king of Salem and priest of God Most High, he brings bread and wine, blesses Abram, and receives a tenth of all. Hebrews retells the meeting, explains what his name and title mean, and describes him as without father, mother or genealogy.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.14.18",
+          "wordIndex": 4,
+          "form": "Σαλὴμ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.7.1",
+          "wordIndex": 6,
+          "form": "Σαλήμ,",
+          "row": "TAGNT Act-Rev:90456"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.7.2",
+          "wordIndex": 17,
+          "form": "Σαλήμ,",
+          "row": "TAGNT Act-Rev:90505"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.14.18",
+          "wordIndex": 2,
+          "form": "Μελχισεδὲκ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.7.1",
+          "wordIndex": 4,
+          "form": "Μελχισέδεκ,",
+          "row": "TAGNT Act-Rev:90454"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326147"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.14.18",
+          "words": ["Melchizedek", "Salem", "priest"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.14.20",
+          "words": ["tenth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.7.1",
+          "words": ["Melchizedek", "Salem", "priest"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.7.2",
+          "words": ["tenth"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen13",
+      "from": "Gen.15.6",
+      "to": "Rom.4.3",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Abraham believed God",
+      "explanation": "Genesis says that Abram believed the LORD, who counted it to him as righteousness. Paul quotes the verse as what Scripture says and makes it the centre of his argument that Abraham was counted righteous through faith; his Greek keeps the Septuagint's words for counting it and for righteousness (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.15.6",
+          "wordIndex": 7,
+          "form": "ἐλογίσθη",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.4.3",
+          "wordIndex": 12,
+          "form": "ἐλογίσθη",
+          "row": "TAGNT Act-Rev:34024"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.15.6",
+          "wordIndex": 10,
+          "form": "δικαιοσύνην",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.4.3",
+          "wordIndex": 15,
+          "form": "δικαιοσύνην.",
+          "row": "TAGNT Act-Rev:34027"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L3568"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289918"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.15.6",
+          "words": ["believed", "righteousness"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.4.3",
+          "words": ["Scripture", "Abraham", "believed", "righteousness"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen14",
+      "from": "Gen.12.3",
+      "to": "Gal.3.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "In you all the nations will be blessed",
+      "explanation": "When God calls Abram, he promises that all the families of the earth will be blessed through him. Paul quotes the promise and says that Scripture announced the good news to Abraham in advance, foreseeing that God would justify the nations by faith.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2802"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306604"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.12.3",
+          "words": ["families", "blessed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.3.8",
+          "words": ["Scripture", "Abraham", "nations", "blessed"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen15",
+      "from": "Gen.22.18",
+      "to": "Acts.3.25",
+      "type": "quotation",
+      "strength": 3,
+      "label": "All the families of the earth will be blessed",
+      "explanation": "After the binding of Isaac, God repeats his promise that all the nations of the earth will be blessed through Abraham's offspring. At the temple in Jerusalem, Peter quotes it to the crowd as the covenant God made with their fathers, and the Greek verb for the blessing is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.22.18",
+          "wordIndex": 2,
+          "form": "ἐνευλογηθήσονται",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.3.25",
+          "wordIndex": 26,
+          "form": "ἐνευλογηθήσονται",
+          "row": "TAGNT Act-Rev:3161"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5698"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276379"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.22.18",
+          "words": ["nations", "blessed", "offspring"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.3.1",
+          "words": ["temple"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.3.25",
+          "words": ["covenant", "Abraham", "blessed", "offspring"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen16",
+      "from": "Gen.18.10-Gen.18.14",
+      "to": "Luke.1.36-Luke.1.37",
+      "type": "echo",
+      "strength": 2,
+      "label": "Nothing is impossible for God",
+      "explanation": "When Sarah laughs at the promise of a son in her old age, the LORD asks whether anything is too hard for him. Gabriel tells Mary that her aged relative Elizabeth, called barren, has conceived, and that nothing spoken by God is impossible; Luke's verb is the Septuagint's in Genesis 18:14, rare in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.18.14",
+          "wordIndex": 2,
+          "form": "ἀδυνατεῖ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.37",
+          "wordIndex": 3,
+          "form": "ἀδυνατήσει",
+          "row": "TAGNT Mat-Jhn:52608"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250931"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4343"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4320"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.18.12",
+          "words": ["Sarah", "laughed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.18.14",
+          "words": ["Sarah", "hard"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.36",
+          "words": ["Elizabeth", "barren"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.37",
+          "words": ["impossible"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen17",
+      "from": "Gen.21.9-Gen.21.12",
+      "to": "Gal.4.22-Gal.4.30",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Cast out the servant and her son",
+      "explanation": "Sarah tells Abraham to cast out the servant Hagar and her son, so that he will not inherit with Isaac, and God tells Abraham to listen to her. Paul quotes her words as Scripture and reads the two women, the slave and the free, as two covenants, saying himself that these things contain an allegory.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.21.10",
+          "wordIndex": 7,
+          "form": "παιδίσκην",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.4.22",
+          "wordIndex": 11,
+          "form": "παιδίσκης",
+          "row": "TAGNT Act-Rev:65755"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.4.23",
+          "wordIndex": 6,
+          "form": "παιδίσκης",
+          "row": "TAGNT Act-Rev:65777"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.4.30",
+          "wordIndex": 8,
+          "form": "παιδίσκην",
+          "row": "TAGNT Act-Rev:65975"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.4.30",
+          "wordIndex": 20,
+          "form": "παιδίσκης",
+          "row": "TAGNT Act-Rev:65987"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.21.10",
+          "wordIndex": 16,
+          "form": "κληρονομήσει",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.4.30",
+          "wordIndex": 16,
+          "form": "κληρονομήσει",
+          "row": "TAGNT Act-Rev:65983"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307457"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5239"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307452"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.21.10",
+          "words": ["servant", "son", "Isaac"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.21.12",
+          "words": ["Sarah", "listen"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.4.24",
+          "words": ["allegory", "Hagar"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.4.30",
+          "words": ["Scripture", "servant", "inherit"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen18",
+      "from": "Gen.22.1-Gen.22.18",
+      "to": "Heb.11.17-Heb.11.19",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Abraham offers Isaac",
+      "explanation": "Genesis tells how God tested Abraham by asking him to offer Isaac, and stopped his hand. Hebrews names the test as an act of faith: Abraham offered his only son, through whom the promise was to come, reasoning that God could raise him even from the dead.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.22.2",
+          "wordIndex": 12,
+          "form": "Ἰσαάκ",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.17",
+          "wordIndex": 5,
+          "form": "Ἰσαὰκ",
+          "row": "TAGNT Act-Rev:94014"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.18",
+          "wordIndex": 6,
+          "form": "Ἰσαὰκ",
+          "row": "TAGNT Act-Rev:94036"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5489"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5503"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328171"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.22.1",
+          "words": ["tested", "Abraham"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.22.2",
+          "words": ["Isaac"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.17",
+          "words": ["Abraham", "tested", "Isaac"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.19",
+          "words": ["dead"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen19",
+      "from": "Gen.28.12",
+      "to": "John.1.51",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Angels ascending and descending",
+      "explanation": "At Bethel Jacob dreams of a stairway reaching to heaven with the angels of God ascending and descending on it. Jesus promises Nathanael a sight of heaven opened, with those same angels going up and coming down on the Son of Man; in Greek the angels and both verbs are the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.28.12",
+          "wordIndex": 21,
+          "form": "ἀνέβαινον",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.1.51",
+          "wordIndex": 19,
+          "form": "ἀναβαίνοντας",
+          "row": "TAGNT Mat-Jhn:86757"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.28.12",
+          "wordIndex": 23,
+          "form": "κατέβαινον",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.1.51",
+          "wordIndex": 21,
+          "form": "καταβαίνοντας",
+          "row": "TAGNT Mat-Jhn:86759"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Gen.28.12",
+          "wordIndex": 18,
+          "form": "ἄγγελοι",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.1.51",
+          "wordIndex": 16,
+          "form": "ἀγγέλους",
+          "row": "TAGNT Mat-Jhn:86754"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L263674"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L7344"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.28.12",
+          "words": ["heaven", "angels", "ascending", "descending"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.28.19",
+          "words": ["Bethel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.1.49",
+          "words": ["Nathanael"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.1.51",
+          "words": ["heaven", "angels", "ascending", "descending"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen20",
+      "from": "Gen.25.21-Gen.25.23",
+      "to": "Rom.9.10-Rom.9.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The elder will serve the younger",
+      "explanation": "When Rebekah's children struggle within her, the LORD tells her that two nations are in her womb and that the elder will serve the younger. Paul names Rebekah and quotes the oracle to argue that God's choice rests on his call, not on what the children had done.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.25.21",
+          "wordIndex": 22,
+          "form": "Ῥεβέκκα",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.10",
+          "wordIndex": 6,
+          "form": "Ῥεβέκκα",
+          "row": "TAGNT Act-Rev:38165"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L6643"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L6599"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292583"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.25.22",
+          "words": ["struggled"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.25.23",
+          "words": ["nations", "elder", "younger"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.9.10",
+          "words": ["Rebekah", "Isaac"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.9.12",
+          "words": ["elder", "younger"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen21",
+      "from": "Gen.30.22-Gen.30.23",
+      "to": "Luke.1.24-Luke.1.25",
+      "type": "echo",
+      "strength": 2,
+      "label": "God has taken away my reproach",
+      "explanation": "When God remembers Rachel and opens her womb, she bears a son and says that God has taken away her reproach. When Elizabeth conceives, she says the Lord has looked on her to take away her reproach among people, and Luke's word for reproach, found nowhere else in the New Testament, is the Septuagint's in Rachel's words (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.30.23",
+          "wordIndex": 14,
+          "form": "ὄνειδος",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.25",
+          "wordIndex": 13,
+          "form": "ὄνειδός",
+          "row": "TAGNT Mat-Jhn:52276"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250782"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L7901"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.30.22",
+          "words": ["Rachel", "remembered"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.30.23",
+          "words": ["reproach"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.25",
+          "words": ["reproach"]
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "gen22",
+      "from": "Gen.22.12",
+      "to": "Rom.8.32",
+      "type": "echo",
+      "strength": 2,
+      "label": "He did not spare his own son",
+      "explanation": "The angel tells Abraham that he has not withheld his only son. Paul writes that God did not spare his own Son but gave him up for us all, using the verb the Septuagint uses in the angel's words to Abraham (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.22.12",
+          "wordIndex": 25,
+          "form": "ἐφείσω",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.8.32",
+          "wordIndex": 7,
+          "form": "ἐφείσατο,",
+          "row": "TAGNT Act-Rev:37680"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5593"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292194"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.22.11",
+          "words": ["angel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.22.12",
+          "words": ["withheld", "only"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.8.32",
+          "words": ["spare", "Son"]
+        }
+      ],
+      "status": "draft"
     }
   ]
 }
