@@ -37,7 +37,11 @@
           "words": ["overshadow"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1007be3dfb30139b"
+      }
     },
     {
       "id": "s01b",
@@ -98,7 +102,11 @@
           "words": ["Moses", "enter"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3dee2af8aff87bf"
+      }
     },
     {
       "id": "s02",
@@ -138,7 +146,11 @@
           "words": ["neighbor"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "985490774e1ee6a6"
+      }
     },
     {
       "id": "s03",
@@ -208,7 +220,11 @@
           "words": ["hungry"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "7af754aeff330fb4"
+      }
     },
     {
       "id": "s04",
@@ -275,7 +291,11 @@
           "words": ["prophet"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "089fa3f869968b4a"
+      }
     },
     {
       "id": "s05a",
@@ -315,7 +335,11 @@
           "words": ["Zarephath", "Sidon", "widow"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0e4506c05196e810"
+      }
     },
     {
       "id": "s05b",
@@ -354,7 +378,11 @@
           "words": ["Jordan", "clean"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f01261ba1f9f42e5"
+      }
     },
     {
       "id": "s06",
@@ -394,7 +422,11 @@
           "words": ["Elijah", "fire", "fifty"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a4efb433878052f7"
+      }
     },
     {
       "id": "s07",
@@ -469,7 +501,11 @@
           "phrase": "that it might not be with them as it was with Elisha"
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "93f6bf0390253ff6"
+      }
     },
     {
       "id": "s08",
@@ -523,7 +559,11 @@
           "words": ["twelve", "baskets"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3870bb33a5d917b"
+      }
     },
     {
       "id": "s09",
@@ -603,7 +643,11 @@
           "phrase": "as in the time of building the tower the one tongue was divided into many"
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ec5a512089ae7e76"
+      }
     },
     {
       "id": "s10",
@@ -646,7 +690,11 @@
           "words": ["beloved"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f0cb0077e662650c"
+      }
     },
     {
       "id": "s11a",
@@ -715,7 +763,11 @@
           "phrase": "where the type is, there He puts the truth"
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "17fe3c67d87e3eb3"
+      }
     },
     {
       "id": "s11b",
@@ -755,7 +807,11 @@
           "phrase": "for that also was dedicated with blood"
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a9228e9fd4709f76"
+      }
     },
     {
       "id": "s12",
@@ -799,7 +855,11 @@
           "words": ["Nineveh"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "145f3382f0d16f53"
+      }
     },
     {
       "id": "s13",
@@ -859,7 +919,11 @@
           "words": ["forever", "Kingdom"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1669c3d7b6858d67"
+      }
     },
     {
       "id": "s14a",
@@ -917,7 +981,11 @@
           "words": ["Scriptures"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "8e2ee6a9f4675597"
+      }
     },
     {
       "id": "s14b",
@@ -959,7 +1027,11 @@
           "words": ["recognized", "vanished"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "baa4dc241a63068a"
+      }
     },
     {
       "id": "s15",
@@ -996,7 +1068,11 @@
           "words": ["dedication", "eight", "Chislev"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "50fa10881bb8ae75"
+      }
     },
     {
       "id": "s16",
@@ -1039,7 +1115,11 @@
           "words": ["Egypt", "Sinai"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "85afddca82bb04a7"
+      }
     },
     {
       "id": "s17",
@@ -1088,7 +1168,11 @@
           "words": ["vengeance"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "236e9871344c1aed"
+      }
     },
     {
       "id": "s18a",
@@ -1146,7 +1230,11 @@
           "words": ["glory", "kingdom"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ce2285ca94f24559"
+      }
     },
     {
       "id": "s18b",
@@ -1182,7 +1270,11 @@
           "words": ["right", "hand"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9badbfc81bf264f9"
+      }
     },
     {
       "id": "s19",
@@ -1241,7 +1333,11 @@
           "words": ["Solomon"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "99663a2fe876188f"
+      }
     }
   ]
 }

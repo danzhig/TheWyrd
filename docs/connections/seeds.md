@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/connections.json`
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-24 connections; 0 verified; 0 failing a check.
+24 connections; 24 verified; 0 failing a check.
 
 ## `s01a` The overshadowing cloud of glory and the overshadowing of Mary
 
-- **Exod.40.34-Exod.40.35 → Luke.1.35** · echo · strength 2 · draft · fingerprint `1007be3dfb30139b`
+- **Exod.40.34-Exod.40.35 → Luke.1.35** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `1007be3dfb30139b`
 - From: Glory Fills the Tabernacle (`exod-14`)
 - To: Two Annunciations (`luke-02`)
 
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s01b` The overshadowing cloud of glory and the cloud at the Transfiguration
 
-- **Exod.40.34-Exod.40.35 → Luke.9.34** · echo · strength 2 · draft · fingerprint `e3dee2af8aff87bf`
+- **Exod.40.34-Exod.40.35 → Luke.9.34** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `e3dee2af8aff87bf`
 - From: Glory Fills the Tabernacle (`exod-14`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
@@ -38,7 +38,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s02` The Shema as the greatest commandment
 
-- **Deut.6.4-Deut.6.5 → Luke.10.27** · quotation · strength 3 · draft · fingerprint `985490774e1ee6a6`
+- **Deut.6.4-Deut.6.5 → Luke.10.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `985490774e1ee6a6`
 - From: The Shema (`deut-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -53,7 +53,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s03` Hannah's song and the Magnificat
 
-- **1Sam.2.1-1Sam.2.10 → Luke.1.46-Luke.1.55** · parallel · strength 2 · draft · fingerprint `7af754aeff330fb4`
+- **1Sam.2.1-1Sam.2.10 → Luke.1.46-Luke.1.55** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `7af754aeff330fb4`
 - From: Hannah and the Birth of Samuel (`1sam-01`)
 - To: Two Annunciations (`luke-02`)
 
@@ -73,7 +73,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s04` A widow's son raised and given back to his mother
 
-- **1Kgs.17.17-1Kgs.17.24 → Luke.7.11-Luke.7.17** · echo · strength 2 · draft · fingerprint `089fa3f869968b4a`
+- **1Kgs.17.17-1Kgs.17.24 → Luke.7.11-Luke.7.17** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `089fa3f869968b4a`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: Healings, Forgiveness, Parables (`luke-08`)
 
@@ -92,7 +92,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s05a` Jesus cites the widow of Zarephath at Nazareth
 
-- **1Kgs.17.8-1Kgs.17.16 → Luke.4.25-Luke.4.26** · quotation · strength 3 · draft · fingerprint `0e4506c05196e810`
+- **1Kgs.17.8-1Kgs.17.16 → Luke.4.25-Luke.4.26** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `0e4506c05196e810`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -107,7 +107,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s05b` Jesus cites Naaman at Nazareth
 
-- **2Kgs.5.1-2Kgs.5.14 → Luke.4.27** · quotation · strength 3 · draft · fingerprint `f01261ba1f9f42e5`
+- **2Kgs.5.1-2Kgs.5.14 → Luke.4.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `f01261ba1f9f42e5`
 - From: Elisha's Wonders (`2kgs-02`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -122,7 +122,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s06` Fire from heaven called down, then refused
 
-- **2Kgs.1.10-2Kgs.1.12 → Luke.9.54-Luke.9.55** · contrast · strength 3 · draft · fingerprint `a4efb433878052f7`
+- **2Kgs.1.10-2Kgs.1.12 → Luke.9.54-Luke.9.55** · contrast · strength 3 · verified (approved 2026-11-16) · fingerprint `a4efb433878052f7`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -137,7 +137,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s07` A master taken up; his spirit passes to the disciples
 
-- **2Kgs.2.9-2Kgs.2.15 → Acts.1.9-Acts.2.4** · typology · strength 2 · draft · fingerprint `93f6bf0390253ff6`
+- **2Kgs.2.9-2Kgs.2.15 → Acts.1.9-Acts.2.4** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `93f6bf0390253ff6`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -158,7 +158,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s08` A crowd fed from little, with food left over
 
-- **2Kgs.4.42-2Kgs.4.44 → Luke.9.10-Luke.9.17** · parallel · strength 2 · draft · fingerprint `e3870bb33a5d917b`
+- **2Kgs.4.42-2Kgs.4.44 → Luke.9.10-Luke.9.17** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `e3870bb33a5d917b`
 - From: Elisha's Wonders (`2kgs-02`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
@@ -176,7 +176,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s09` Babel's confusion of languages undone at Pentecost
 
-- **Gen.11.1-Gen.11.9 → Acts.2.1-Acts.2.11** · contrast · strength 2 · draft · fingerprint `ec5a512089ae7e76`
+- **Gen.11.1-Gen.11.9 → Acts.2.1-Acts.2.11** · contrast · strength 2 · verified (approved 2026-11-16) · fingerprint `ec5a512089ae7e76`
 - From: The Tower of Babel (`gen-05`)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -198,7 +198,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s10` The beloved son
 
-- **Gen.22.2 → Luke.3.22** · echo · strength 2 · draft · fingerprint `f0cb0077e662650c`
+- **Gen.22.2 → Luke.3.22** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `f0cb0077e662650c`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: John the Baptist; the Baptism (`luke-05`)
 
@@ -212,7 +212,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s11a` Passover at the Last Supper
 
-- **Exod.12 → Luke.22.7-Luke.22.20** · typology · strength 3 · draft · fingerprint `17fe3c67d87e3eb3`
+- **Exod.12 → Luke.22.7-Luke.22.20** · typology · strength 3 · verified (approved 2026-11-16) · fingerprint `17fe3c67d87e3eb3`
 - From: Passover and Departure (`exod-05`)
 - To: The Last Supper and the Arrest (`luke-14`)
 
@@ -233,7 +233,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s11b` The blood of the covenant at the Last Supper
 
-- **Exod.24.8 → Luke.22.20** · typology · strength 2 · draft · fingerprint `a9228e9fd4709f76`
+- **Exod.24.8 → Luke.22.20** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `a9228e9fd4709f76`
 - From: The Covenant Sealed (`exod-10`)
 - To: The Last Supper and the Arrest (`luke-14`)
 
@@ -248,7 +248,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s12` The sign of Jonah
 
-- **Jonah.1-Jonah.3 → Luke.11.29-Luke.11.32** · quotation · strength 3 · draft · fingerprint `145f3382f0d16f53`
+- **Jonah.1-Jonah.3 → Luke.11.29-Luke.11.32** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `145f3382f0d16f53`
 - From: Flight and Storm (`jonah-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -264,7 +264,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s13` The throne of David promised to Mary's son
 
-- **2Sam.7.12-2Sam.7.16 → Luke.1.32-Luke.1.33** · fulfilment · strength 3 · draft · fingerprint `1669c3d7b6858d67`
+- **2Sam.7.12-2Sam.7.16 → Luke.1.32-Luke.1.33** · fulfilment · strength 3 · verified (approved 2026-11-16) · fingerprint `1669c3d7b6858d67`
 - From: The Promise to David (`2sam-04`)
 - To: Two Annunciations (`luke-02`)
 
@@ -282,7 +282,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s14a` A companion on the road, unrecognised (proposed)
 
-- **Tob.5 → Luke.24.13-Luke.24.35** · parallel · strength 1 · draft · fingerprint `8e2ee6a9f4675597`
+- **Tob.5 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `8e2ee6a9f4675597`
 - From: Tobiah's Journey with Raphael (`tob-03`)
 - To: Resurrection and Emmaus (`luke-16`)
 
@@ -299,7 +299,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s14b` A companion revealed, then gone (proposed)
 
-- **Tob.12 → Luke.24.13-Luke.24.35** · parallel · strength 1 · draft · fingerprint `baa4dc241a63068a`
+- **Tob.12 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `baa4dc241a63068a`
 - From: Raphael Revealed (`tob-06`)
 - To: Resurrection and Emmaus (`luke-16`)
 
@@ -314,7 +314,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s15` The feast of Dedication
 
-- **1Macc.4.36-1Macc.4.59 → John.10.22** · allusion · strength 2 · draft · fingerprint `50fa10881bb8ae75`
+- **1Macc.4.36-1Macc.4.59 → John.10.22** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `50fa10881bb8ae75`
 - From: The Temple Rededicated (`1macc-04`)
 - To: John 1–10 (`john-x1`)
 
@@ -328,7 +328,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s16` Jesus' coming exodus in Jerusalem
 
-- **Exod.19.1 → Luke.9.31** · echo · strength 2 · draft · fingerprint `85afddca82bb04a7`
+- **Exod.19.1 → Luke.9.31** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `85afddca82bb04a7`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
@@ -342,7 +342,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s17` Jesus reads his programme from Isaiah
 
-- **Isa.61.1-Isa.61.2 → Luke.4.18-Luke.4.19** · quotation · strength 3 · draft · fingerprint `236e9871344c1aed`
+- **Isa.61.1-Isa.61.2 → Luke.4.18-Luke.4.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `236e9871344c1aed`
 - From: The Glory of Zion (`isa-19`, library)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -359,7 +359,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s18a` The Son of Man on the clouds
 
-- **Dan.7.13 → Luke.21.27** · quotation · strength 2 · draft · fingerprint `ce2285ca94f24559`
+- **Dan.7.13 → Luke.21.27** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `ce2285ca94f24559`
 - From: Daniel's Visions (`dan-x1`)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
@@ -376,7 +376,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s18b` The Son of Man at the right hand of power
 
-- **Dan.7.13 → Luke.22.69** · quotation · strength 2 · draft · fingerprint `9badbfc81bf264f9`
+- **Dan.7.13 → Luke.22.69** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `9badbfc81bf264f9`
 - From: Daniel's Visions (`dan-x1`)
 - To: Trials and Crucifixion (`luke-15`)
 
@@ -390,7 +390,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s19` Stephen retells the whole story you have read
 
-- **Gen.12.1-1Kgs.8.21 → Acts.7.2-Acts.7.50** · parallel · strength 3 · draft · fingerprint `99663a2fe876188f`
+- **Gen.12.1-1Kgs.8.21 → Acts.7.2-Acts.7.50** · parallel · strength 3 · verified (approved 2026-11-16) · fingerprint `99663a2fe876188f`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Stephen (`acts-03`)
 

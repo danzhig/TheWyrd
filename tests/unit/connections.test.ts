@@ -73,7 +73,7 @@ describe('the seed connections', () => {
     const approved = { ...c, status: 'verified' as const };
     approved.approval = { date: '2026-11-16', fingerprint: connectionFingerprint(approved) };
     const edited = { ...approved, explanation: `${approved.explanation} Another sentence.` };
-    const unapproved = { ...list[1]!, status: 'verified' as const };
+    const unapproved = { ...list[1]!, status: 'verified' as const, approval: undefined };
     const tmp = path.join(os.tmpdir(), `threads-${process.pid}.json`);
     fs.writeFileSync(tmp, JSON.stringify({ $comment: '', connections: [approved] }));
     let r = buildConnections(sections, library, tmp);
