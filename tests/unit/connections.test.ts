@@ -12,6 +12,7 @@ import {
   sentenceCount,
 } from '@/scripts/connections/schema';
 import type { SectionFile } from '@/lib/types';
+import { longestRun, sharedNames } from '@/scripts/connections/signals';
 
 describe('OpenBible cross-references', () => {
   it('reads rows with their line numbers as citations, skipping the header', () => {
@@ -95,5 +96,24 @@ describe('the seed connections', () => {
     expect(hasWord('the overshadowing cloud', 'overshadow')).toBe(false);
     expect(sentenceCount('One. Two? Three! 1 Maccabees 4 tells it.')).toBe(4);
     expect(sentenceCount("Luke's Greek (below). Then the end.")).toBe(2);
+  });
+});
+
+describe('candidate signals (P4.4)', () => {
+  it('finds the longest run of shared words, in the first text’s own words', () => {
+    expect(
+      longestRun(
+        'He said, “The elder will serve the younger.”',
+        'it was said, The elder will serve the younger! Then',
+      ),
+    ).toEqual(['said,', '“The', 'elder', 'will', 'serve', 'the', 'younger.”']);
+    expect(longestRun('one two', 'three four')).toEqual([]);
+  });
+
+  it('finds names both texts carry, not ordinary words at the start of a sentence', () => {
+    const lower = new Set(['is', 'remember']);
+    expect(
+      sharedNames('Is anything too hard? Sarah laughed.', 'Is it Sarah? Remember Lot.', lower),
+    ).toEqual(['Sarah']);
   });
 });

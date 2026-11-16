@@ -15,6 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { RAW_DIR } from './lib/paths';
+import { CANON_BY_ID } from './lib/canon';
 import { readSourcesManifest } from './fetch-sources';
 import { inRange, readXrefs } from './connections/xrefs';
 import {
@@ -138,32 +139,59 @@ const cite = (c: Connection) =>
         ? `${s.ref} carries: ${s.words.join(', ')}`
         : `${s.author}, *${s.work}*, ${s.locator} (${s.edition}; \`${s.source}\`): “${s.phrase}”`,
   );
-const doc = [
+// The review documents: the plan's seeds (ids `s…`), and each book's proposals (P4.4).
+const section = (c: Connection) => [
+  `## \`${c.id}\` ${c.label}`,
+  '',
+  `- **${c.from} → ${c.to}** · ${c.type} · strength ${c.strength} · ${c.status}${c.approval ? ` (approved ${c.approval.date})` : ''} · fingerprint \`${connectionFingerprint(c)}\``,
+  `- From: ${where(c.from)}`,
+  `- To: ${where(c.to)}`,
+  '',
+  `> ${c.explanation}`,
+  '',
+  ...[...(notes.get(c.id) ?? []), ...cite(c).filter(Boolean)].map((n) => `- ${n}`),
+  ...(results.get(c.id)!.length ? results.get(c.id)!.map((p) => `- **Fails:** ${p}`) : []),
+  '',
+];
+const CHECKS =
+  'checked against the pinned sources: OpenBible.info cross-reference rows, words the WEBC text carries at a verse (also checked by `pnpm content:build`), Greek words at their Septuagint and TAGNT rows, and Church Fathers in the pinned public-domain CCEL editions, by work and section with a phrase that must occur there.';
+const APPROVAL =
+  'Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.';
+const count = (list: Connection[]) =>
+  `${list.length} connections; ${list.filter((c) => c.status === 'verified').length} verified; ${list.filter((c) => results.get(c.id)!.length).length} failing a check.`;
+const docs = new Map<string, string[]>();
+const seeds = connections.filter((c) => /^s\d/.test(c.id));
+docs.set('seeds', [
   '# Threads: the seed connections',
   '',
-  'Written by `pnpm connections:verify` from `content/connections/connections.json`. Each seed from PLAN §14 with its type, strength (3 = explicit quotation or named reference), the sections its ends fall in, its explanation (original prose; no scripture beyond a few words) and every citation, checked against the pinned sources: OpenBible.info cross-reference rows, words the WEBC text carries at a verse (also checked by `pnpm content:build`), Greek words at their Septuagint and TAGNT rows, and Church Fathers in the pinned public-domain CCEL editions, by work and section with a phrase that must occur there. Interpretive readings (typology, and the reading of Pentecost against Babel) rest on the Fathers cited; the rest describe what the texts show.',
+  `Written by \`pnpm connections:verify\` from \`content/connections/connections.json\`. Each seed from PLAN §14 with its type, strength (3 = explicit quotation or named reference), the sections its ends fall in, its explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS} Interpretive readings (typology, and the reading of Pentecost against Babel) rest on the Fathers cited; the rest describe what the texts show.`,
   '',
-  'Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.',
+  APPROVAL,
   '',
-  `${connections.length} connections; ${connections.filter((c) => c.status === 'verified').length} verified; ${failed.length} failing a check.`,
+  count(seeds),
   '',
-  ...connections.flatMap((c) => [
-    `## \`${c.id}\` ${c.label}`,
+  ...seeds.flatMap(section),
+]);
+const byBook = new Map<string, Connection[]>();
+for (const c of connections.filter((x) => !/^s\d/.test(x.id))) {
+  const b = c.from.split('.')[0]!;
+  byBook.set(b, [...(byBook.get(b) ?? []), c]);
+}
+for (const [book, list] of byBook)
+  docs.set(`${book}-connections`, [
+    `# Threads: connections from ${CANON_BY_ID.get(book)?.name ?? book}`,
     '',
-    `- **${c.from} → ${c.to}** · ${c.type} · strength ${c.strength} · ${c.status}${c.approval ? ` (approved ${c.approval.date})` : ''} · fingerprint \`${connectionFingerprint(c)}\``,
-    `- From: ${where(c.from)}`,
-    `- To: ${where(c.to)}`,
+    `Written by \`pnpm connections:verify\` from \`content/connections/connections.json\`: the connections drafted from \`docs/connections/${book}-candidates.md\` (P4.4), each with its type, strength (3 = explicit quotation or named reference), sections, explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS}`,
     '',
-    `> ${c.explanation}`,
+    APPROVAL,
     '',
-    ...[...(notes.get(c.id) ?? []), ...cite(c).filter(Boolean)].map((n) => `- ${n}`),
-    ...(results.get(c.id)!.length ? results.get(c.id)!.map((p) => `- **Fails:** ${p}`) : []),
+    count(list),
     '',
-  ]),
-];
+    ...list.flatMap(section),
+  ]);
 fs.mkdirSync('docs/connections', { recursive: true });
-fs.writeFileSync('docs/connections/seeds.md', doc.join('\n'));
+for (const [name, lines] of docs) fs.writeFileSync(`docs/connections/${name}.md`, lines.join('\n'));
 console.log(
-  `wrote docs/connections/seeds.md: ${connections.length} connections, ${failed.length} failing`,
+  `wrote ${[...docs.keys()].map((k) => `docs/connections/${k}.md`).join(', ')}: ${connections.length} connections, ${failed.length} failing`,
 );
 if (failed.length) process.exit(1);
