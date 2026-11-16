@@ -14,10 +14,13 @@ export const camera: {
   fromBook: string | null;
   /** Which way the Vault was showing the Bible: the story's spiral or the themes (Phase 6). */
   view: 'spiral' | 'themes';
+  /** Threads (Phase 4) drawn over the spiral. */
+  threads: boolean;
 } = {
   last: null,
   fromBook: null,
   view: 'spiral',
+  threads: false,
 };
 
 export function prefersReducedMotion(): boolean {

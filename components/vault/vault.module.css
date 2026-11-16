@@ -756,3 +756,12 @@
   min-height: 24px;
   display: inline-block;
 }
+
+/* Where Threads draws its arcs (Phase 4): in the scene, under the medallions. */
+.arcHost {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}

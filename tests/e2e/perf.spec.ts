@@ -42,6 +42,42 @@ test.describe('performance', () => {
     expect(long / frames.length).toBeLessThan(0.05);
   });
 
+  // PLAN §14 P4.3: with Threads' arcs drawn over the spiral, the camera still holds 60 fps.
+  test('camera moves hold 60 fps with Threads on, on a throttled mobile profile', async ({
+    page,
+  }) => {
+    await page.goto('/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+    await page.getByTestId('view-threads').click();
+    await expect(page.locator('html')).toHaveAttribute('data-threads', 'ready');
+    await page.waitForTimeout(1200); // the arcs have drawn themselves in
+    const cdp = await page.context().newCDPSession(page);
+    await cdp.send('Emulation.setCPUThrottlingRate', { rate: 4 });
+    const frames = await page.evaluate(async () => {
+      const ts: number[] = [];
+      let on = true;
+      const tick = (t: number) => {
+        ts.push(t);
+        if (on) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      document.querySelector<HTMLButtonElement>('[data-testid=continue]')!.click();
+      await new Promise((r) => setTimeout(r, 900));
+      on = false;
+      return ts.slice(1).map((t, i) => t - ts[i]!);
+    });
+    await cdp.send('Emulation.setCPUThrottlingRate', { rate: 1 });
+    const sorted = [...frames].sort((a, b) => a - b);
+    const median = sorted[sorted.length >> 1]!;
+    const long = frames.filter((f) => f > 25).length;
+    test.info().annotations.push({
+      type: 'frames',
+      description: `n=${frames.length} median=${median.toFixed(1)}ms long=${long}`,
+    });
+    expect(median).toBeLessThan(17.5); // 60 fps
+    expect(long / frames.length).toBeLessThan(0.05);
+  });
+
   // PLAN §16 P6.3: the Spiral ⇄ Themes flight holds 60 fps both ways on the same profile.
   test('the Spiral ⇄ Themes flight holds 60 fps on a throttled mobile profile', async ({
     page,

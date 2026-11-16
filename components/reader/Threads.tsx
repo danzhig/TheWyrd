@@ -11,18 +11,10 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import type { SectionThread } from '@/lib/data';
-import type { ConnectionType, ThreadCitation, ThreadEvidence } from '@/lib/types';
+import { TYPE_LABEL, threadHref } from '@/lib/threads';
+import type { ThreadCitation, ThreadEvidence } from '@/lib/types';
 import styles from './reader.module.css';
 
-export const TYPE_LABEL: Record<ConnectionType, string> = {
-  quotation: 'Quotation',
-  allusion: 'Allusion',
-  echo: 'Verbal echo',
-  typology: 'Typology',
-  parallel: 'Parallel',
-  fulfilment: 'Fulfilment',
-  contrast: 'Contrast',
-};
 const STRENGTH = { 3: 'named or quoted', 2: 'strong', 1: 'proposed' } as const;
 
 /** "3Kgdms.17.23" → "3Kgdms 17:23" (the dataset's own numbering). */
@@ -100,7 +92,7 @@ export function ThreadCard({
         </ul>
       </details>
       <Link
-        href={`/read/${there.sectionId}/?thread=${c.id}#${there.anchor}`}
+        href={threadHref(c.id, there)}
         className={styles.goThere}
         data-go-there={c.id}
         onClick={onGo}
