@@ -110,6 +110,15 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       (transition.pending?.kind === 'book-out' || (!!camera.fromBook && animationsOn())),
   );
   const [lifted, setLifted] = useState<string | null>(null);
+  // Threads (Phase 4, P4.3): arcs between books over the spiral. Their code and data load only
+  // when switched on (the Vault's first load is near its budget).
+  const [threadsOn, setThreadsOn] = useState(() => typeof window !== 'undefined' && camera.threads);
+  const [threadsMod, setThreadsMod] = useState<typeof import('./ThreadsMode') | null>(null);
+  const [arcHost, setArcHost] = useState<HTMLDivElement | null>(null);
+  useEffect(() => {
+    camera.threads = threadsOn;
+    if (threadsOn && !threadsMod) void import('./ThreadsMode').then((m) => setThreadsMod(m));
+  }, [threadsOn, threadsMod]);
 
   const readerKey = useReaderKey();
   const [lastSection, doneList, libraryList] = readerKey.split('|');
@@ -371,6 +380,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       const base = baseRef.current;
       if (Math.abs(camRef.current.k - base.k) / base.k > 0.15 || to === 'spiral')
         void flyTo(base, prefersReducedMotion() ? 0 : 1100);
+      if (to === 'themes') setThreadsOn(false);
       void switchThemes(to);
     },
     [flyTo, switchThemes],
@@ -597,6 +607,18 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                 {v === 'spiral' ? 'Spiral' : 'Themes'}
               </button>
             ))}
+            {/* Threads (Phase 4): connections between passages, drawn over the spiral. */}
+            <button
+              type="button"
+              className={styles.switchButton}
+              aria-pressed={threadsOn}
+              disabled={themeView !== 'spiral'}
+              onPointerEnter={() => void import('./ThreadsMode').then((m) => m.loadConnections())}
+              onClick={() => setThreadsOn((on) => !on)}
+              data-testid="view-threads"
+            >
+              Threads
+            </button>
           </div>
           <button
             type="button"
@@ -680,6 +702,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                   <path key={t.id} d={t.d} className={styles.detour} data-detour={t.id} />
                 ))}
               </svg>
+              {/* Threads' arcs are drawn here, under the medallions (ThreadsMode). */}
+              <div ref={setArcHost} className={styles.arcHost} />
               {layout.offpath.map((o) => {
                 const b = byId.get(o.id)!;
                 // Books outside the path open into the library (Phase 5), with the same flight.
@@ -940,6 +964,18 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             −
           </button>
         </div>
+      ) : null}
+
+      {threadsOn && threadsMod && themeView === 'spiral' ? (
+        <threadsMod.ThreadsMode
+          homes={homes}
+          arcHost={arcHost}
+          nameOf={(id) => byId.get(id)?.name ?? id}
+          listVisible={mode === 'list'}
+          onOpen={() => {
+            camera.last = { ...camRef.current };
+          }}
+        />
       ) : null}
 
       {/* In Themes, the accessible structure is the theme tree (shown by List). */}

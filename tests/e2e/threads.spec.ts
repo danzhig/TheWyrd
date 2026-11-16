@@ -69,6 +69,10 @@ test.describe('Threads', () => {
     await expect(card).toContainText(c!.label);
     await expect(card).toContainText(there.display);
     await expect(card).toContainText(there.excerpt.slice(0, 30));
+    // Measure contrast once the dialog has finished fading in.
+    await dialog.evaluate((el) =>
+      Promise.all(el.getAnimations({ subtree: true }).map((a) => a.finished)),
+    );
     expect(await seriousViolations(page, '[data-testid="thread-dialog"]')).toEqual([]);
 
     // Escape closes it and gives focus back to the glyph.
