@@ -1376,7 +1376,11 @@
           "words": ["made"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "3cf62cfce094a174"
+      }
     },
     {
       "id": "gen02",
@@ -1444,7 +1448,11 @@
           "words": ["remains", "rest"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "7c859a9550e7fdf0"
+      }
     },
     {
       "id": "gen03",
@@ -1504,7 +1512,11 @@
           "words": ["flesh", "joined"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c26d14ca3b262553"
+      }
     },
     {
       "id": "gen04",
@@ -1535,7 +1547,11 @@
           "words": ["mystery", "Christ"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5b5f4b9da65da286"
+      }
     },
     {
       "id": "gen05",
@@ -1565,7 +1581,11 @@
           "words": ["written", "Adam", "soul", "spirit"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "bc93e22220d99766"
+      }
     },
     {
       "id": "gen06",
@@ -1611,7 +1631,11 @@
           "words": ["breathed", "Spirit"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "d879bdb85f74d82a"
+      }
     },
     {
       "id": "gen07",
@@ -1666,7 +1690,11 @@
           "words": ["serpent", "deceived", "Eve"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "bfb6b4a2015058fd"
+      }
     },
     {
       "id": "gen08",
@@ -1701,7 +1729,11 @@
           "words": ["Abel", "blood", "Zachariah"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1398be594b6232d9"
+      }
     },
     {
       "id": "gen09",
@@ -1743,7 +1775,11 @@
           "words": ["Enoch", "found"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "238da7b44459751f"
+      }
     },
     {
       "id": "gen10",
@@ -1833,7 +1869,11 @@
           "words": ["Noah", "ship", "flood"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "87958dd4759085e7"
+      }
     },
     {
       "id": "gen11",
@@ -1935,7 +1975,11 @@
           "words": ["Lot"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1e11bd5d1113912f"
+      }
     },
     {
       "id": "gen12",
@@ -2008,7 +2052,11 @@
           "words": ["tenth"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0584d95ebdc74330"
+      }
     },
     {
       "id": "gen13",
@@ -2068,7 +2116,11 @@
           "words": ["Scripture", "Abraham", "believed", "righteousness"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5f18a6d74e2be144"
+      }
     },
     {
       "id": "gen14",
@@ -2098,7 +2150,11 @@
           "words": ["Scripture", "Abraham", "nations", "blessed"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "79469024868690b1"
+      }
     },
     {
       "id": "gen15",
@@ -2149,7 +2205,11 @@
           "words": ["covenant", "Abraham", "blessed", "offspring"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ef51aa51cce69704"
+      }
     },
     {
       "id": "gen16",
@@ -2209,7 +2269,11 @@
           "words": ["impossible"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "588eec9bb67fdc5c"
+      }
     },
     {
       "id": "gen17",
@@ -2304,7 +2368,11 @@
           "words": ["Scripture", "servant", "inherit"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "2348157dbcbb09ee"
+      }
     },
     {
       "id": "gen18",
@@ -2371,7 +2439,11 @@
           "words": ["dead"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "00f72491fb9d97bf"
+      }
     },
     {
       "id": "gen19",
@@ -2455,7 +2527,11 @@
           "words": ["heaven", "angels", "ascending", "descending"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "d3baee9192f817a5"
+      }
     },
     {
       "id": "gen20",
@@ -2515,7 +2591,11 @@
           "words": ["elder", "younger"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "2f411104af7fbcd8"
+      }
     },
     {
       "id": "gen21",
@@ -2566,7 +2646,11 @@
           "words": ["reproach"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b9a40b46be56806a"
+      }
     },
     {
       "id": "gen22",
@@ -2617,7 +2701,11 @@
           "words": ["spare", "Son"]
         }
       ],
-      "status": "draft"
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9e46114b8ba22b97"
+      }
     }
   ]
 }

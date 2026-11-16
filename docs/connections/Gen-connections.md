@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/connections.json`
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-22 connections; 0 verified; 0 failing a check.
+22 connections; 22 verified; 0 failing a check.
 
 ## `gen01` In the beginning
 
-- **Gen.1.1 → John.1.1-John.1.3** · allusion · strength 2 · draft · fingerprint `3cf62cfce094a174`
+- **Gen.1.1 → John.1.1-John.1.3** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `3cf62cfce094a174`
 - From: Creation (`gen-01`)
 - To: John 1–10 (`john-x1`)
 
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen02` God rested on the seventh day
 
-- **Gen.2.2 → Heb.4.4** · quotation · strength 3 · draft · fingerprint `7c859a9550e7fdf0`
+- **Gen.2.2 → Heb.4.4** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `7c859a9550e7fdf0`
 - From: Creation (`gen-01`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen03` Male and female; the two become one flesh
 
-- **Gen.1.27-Gen.2.24 → Matt.19.4-Matt.19.6** · quotation · strength 3 · draft · fingerprint `c26d14ca3b262553`
+- **Gen.1.27-Gen.2.24 → Matt.19.4-Matt.19.6** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c26d14ca3b262553`
 - From: Creation (`gen-01`)
 - To: On the Road to Jerusalem (`matt-12`, library)
 
@@ -59,7 +59,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen04` The two become one flesh
 
-- **Gen.2.24 → Eph.5.31-Eph.5.32** · quotation · strength 3 · draft · fingerprint `5b5f4b9da65da286`
+- **Gen.2.24 → Eph.5.31-Eph.5.32** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5b5f4b9da65da286`
 - From: The Garden and the Fall (`gen-02`)
 - To: Unity and the New Life; the Household; the Armour of God (`eph-02`, library)
 
@@ -72,7 +72,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen05` The first man Adam became a living soul
 
-- **Gen.2.7 → 1Cor.15.45** · quotation · strength 3 · draft · fingerprint `bc93e22220d99766`
+- **Gen.2.7 → 1Cor.15.45** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `bc93e22220d99766`
 - From: The Garden and the Fall (`gen-02`)
 - To: The Resurrection of the Dead (`1cor-06`, library)
 
@@ -85,7 +85,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen06` He breathed on them
 
-- **Gen.2.7 → John.20.22** · echo · strength 2 · draft · fingerprint `d879bdb85f74d82a`
+- **Gen.2.7 → John.20.22** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `d879bdb85f74d82a`
 - From: The Garden and the Fall (`gen-02`)
 - To: John 12–21 (`john-x2`)
 
@@ -100,7 +100,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen07` As the serpent deceived Eve
 
-- **Gen.3.1-Gen.3.13 → 2Cor.11.3** · allusion · strength 3 · draft · fingerprint `bfb6b4a2015058fd`
+- **Gen.3.1-Gen.3.13 → 2Cor.11.3** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `bfb6b4a2015058fd`
 - From: The Garden and the Fall (`gen-02`)
 - To: Paul Defends His Apostleship (`2cor-05`, library)
 
@@ -117,7 +117,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen08` The blood of Abel
 
-- **Gen.4.8-Gen.4.10 → Luke.11.50-Luke.11.51** · allusion · strength 3 · draft · fingerprint `1398be594b6232d9`
+- **Gen.4.8-Gen.4.10 → Luke.11.50-Luke.11.51** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `1398be594b6232d9`
 - From: Cain and Abel (`gen-03`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -131,7 +131,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen09` Enoch taken by God
 
-- **Gen.5.24 → Heb.11.5** · allusion · strength 3 · draft · fingerprint `238da7b44459751f`
+- **Gen.5.24 → Heb.11.5** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `238da7b44459751f`
 - From: From Adam to Noah (`gen-x1`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -145,7 +145,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen10` As it was in the days of Noah
 
-- **Gen.6.13-Gen.7.24 → Luke.17.26-Luke.17.27** · allusion · strength 3 · draft · fingerprint `87958dd4759085e7`
+- **Gen.6.13-Gen.7.24 → Luke.17.26-Luke.17.27** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `87958dd4759085e7`
 - From: The Flood (`gen-04`)
 - To: Lepers, the Widow, Zacchaeus (`luke-12`)
 
@@ -167,7 +167,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen11` The days of Lot; remember Lot's wife
 
-- **Gen.19.15-Gen.19.26 → Luke.17.28-Luke.17.32** · allusion · strength 3 · draft · fingerprint `1e11bd5d1113912f`
+- **Gen.19.15-Gen.19.26 → Luke.17.28-Luke.17.32** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `1e11bd5d1113912f`
 - From: Sodom and Gomorrah (`gen-09`)
 - To: Lepers, the Widow, Zacchaeus (`luke-12`)
 
@@ -191,7 +191,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen12` Melchizedek, king of Salem
 
-- **Gen.14.18-Gen.14.20 → Heb.7.1-Heb.7.3** · allusion · strength 3 · draft · fingerprint `0584d95ebdc74330`
+- **Gen.14.18-Gen.14.20 → Heb.7.1-Heb.7.3** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `0584d95ebdc74330`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Christ the High Priest; Melchizedek (`heb-02`, library)
 
@@ -210,7 +210,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen13` Abraham believed God
 
-- **Gen.15.6 → Rom.4.3** · quotation · strength 3 · draft · fingerprint `5f18a6d74e2be144`
+- **Gen.15.6 → Rom.4.3** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5f18a6d74e2be144`
 - From: Covenant, Hagar and Ishmael (`gen-08`)
 - To: Abraham’s Faith; Peace with God; Adam and Christ (`rom-02`, library)
 
@@ -227,7 +227,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen14` In you all the nations will be blessed
 
-- **Gen.12.3 → Gal.3.8** · quotation · strength 3 · draft · fingerprint `79469024868690b1`
+- **Gen.12.3 → Gal.3.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `79469024868690b1`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
@@ -240,7 +240,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen15` All the families of the earth will be blessed
 
-- **Gen.22.18 → Acts.3.25** · quotation · strength 3 · draft · fingerprint `ef51aa51cce69704`
+- **Gen.22.18 → Acts.3.25** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `ef51aa51cce69704`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: The Jerusalem Church (`acts-02`)
 
@@ -256,7 +256,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen16` Nothing is impossible for God
 
-- **Gen.18.10-Gen.18.14 → Luke.1.36-Luke.1.37** · echo · strength 2 · draft · fingerprint `588eec9bb67fdc5c`
+- **Gen.18.10-Gen.18.14 → Luke.1.36-Luke.1.37** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `588eec9bb67fdc5c`
 - From: Sodom and Gomorrah (`gen-09`)
 - To: Two Annunciations (`luke-02`)
 
@@ -274,7 +274,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen17` Cast out the servant and her son
 
-- **Gen.21.9-Gen.21.12 → Gal.4.22-Gal.4.30** · quotation · strength 3 · draft · fingerprint `2348157dbcbb09ee`
+- **Gen.21.9-Gen.21.12 → Gal.4.22-Gal.4.30** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `2348157dbcbb09ee`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
@@ -297,7 +297,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen18` Abraham offers Isaac
 
-- **Gen.22.1-Gen.22.18 → Heb.11.17-Heb.11.19** · allusion · strength 3 · draft · fingerprint `00f72491fb9d97bf`
+- **Gen.22.1-Gen.22.18 → Heb.11.17-Heb.11.19** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `00f72491fb9d97bf`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -316,7 +316,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen19` Angels ascending and descending
 
-- **Gen.28.12 → John.1.51** · allusion · strength 2 · draft · fingerprint `d3baee9192f817a5`
+- **Gen.28.12 → John.1.51** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `d3baee9192f817a5`
 - From: Jacob and Esau (`gen-12`)
 - To: John 1–10 (`john-x1`)
 
@@ -337,7 +337,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen20` The elder will serve the younger
 
-- **Gen.25.21-Gen.25.23 → Rom.9.10-Rom.9.12** · quotation · strength 3 · draft · fingerprint `2f411104af7fbcd8`
+- **Gen.25.21-Gen.25.23 → Rom.9.10-Rom.9.12** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `2f411104af7fbcd8`
 - From: Jacob and Esau (`gen-12`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -355,7 +355,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen21` God has taken away my reproach
 
-- **Gen.30.22-Gen.30.23 → Luke.1.24-Luke.1.25** · echo · strength 2 · draft · fingerprint `b9a40b46be56806a`
+- **Gen.30.22-Gen.30.23 → Luke.1.24-Luke.1.25** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `b9a40b46be56806a`
 - From: Jacob in Haran (`gen-13`)
 - To: Two Annunciations (`luke-02`)
 
@@ -371,7 +371,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen22` He did not spare his own son
 
-- **Gen.22.12 → Rom.8.32** · echo · strength 2 · draft · fingerprint `9e46114b8ba22b97`
+- **Gen.22.12 → Rom.8.32** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `9e46114b8ba22b97`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: Life in the Spirit (`rom-04`, library)
 
