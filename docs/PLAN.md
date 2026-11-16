@@ -897,6 +897,15 @@ interface Connection {
 | Dan 7:13 (off path) | Luke 21:27; 22:69 | Quotation | The Son of Man on the clouds |
 | Genesis–Kings | Acts 7 | Parallel | Stephen retells the whole story you have read |
 
+**Milestones** (added 2026-11-16 when Phase 4 started; the plan had none)
+
+| # | Milestone | Scope | Acceptance |
+| --- | --- | --- | --- |
+| P4.1 ✓ | Cross-references | Pin OpenBible.info cross-references; place both ends in built sections; the candidate pool of pairs touching the path, merged across directions; the seed connections checked against the data (`pnpm connections:candidates`, `docs/connections/candidates.md`) | Every seed resolves to built sections; the pool and the seeds' evidence cite data rows; nothing on the site yet |
+| P4.2 | Seed connections and margin threads | The seeds written up (type, strength, original explanation with citations, evidence rows); the reader's margin glyph and cards (excerpt from the built text, type, explanation, Go there with a return breadcrumb); drafts hidden | Every shown connection is verified, cites its sources and resolves both ends; no hand-written scripture (check 7); axe clean |
+| P4.3 | Vault Threads mode | Gold arcs between medallions weighted by connections, filter by type, tap an arc to list its connections | Under 300 nodes; 60 fps on the throttled phone; e2e opens an arc and follows a connection |
+| P4.4 | Book-by-book proposals | `docs/connections/<bookId>-candidates.md` from the pool for the owner's approval | Approved connections only on the site; each cites its rows |
+
 ## 15. Phase 5: the whole Bible
 
 **Phase 5 makes every book readable, not only the path: the 49 books in the outer ring and the parts of path books the plan skips become a library beside the story, built and checked the same way.** Added on 2026-11-10 at the owner's request. The path does not change: `reading-plan.json` stays canonical, and library books never join the gold thread.

@@ -1,0 +1,197 @@
+{
+  "$comment": "The seed connections from docs/PLAN.md §14, as OSIS references in WEBC (English) numbering. Status `candidate` until each is verified and written up (P4.2). Where the plan names several passages, each becomes its own connection; the plan's 'Exodus (whole)' is anchored at the crossing of the sea (Exod 14), and 'Genesis–Kings' at Abraham's call through the temple's dedication.",
+  "seeds": [
+    {
+      "id": "s01a",
+      "from": "Exod.40.34-Exod.40.35",
+      "to": "Luke.1.35",
+      "type": "echo",
+      "label": "The overshadowing cloud of glory and the overshadowing of Mary",
+      "status": "candidate"
+    },
+    {
+      "id": "s01b",
+      "from": "Exod.40.34-Exod.40.35",
+      "to": "Luke.9.34",
+      "type": "echo",
+      "label": "The overshadowing cloud of glory and the cloud at the Transfiguration",
+      "status": "candidate"
+    },
+    {
+      "id": "s02",
+      "from": "Deut.6.4-Deut.6.5",
+      "to": "Luke.10.27",
+      "type": "quotation",
+      "label": "The Shema as the greatest commandment",
+      "status": "candidate"
+    },
+    {
+      "id": "s03",
+      "from": "1Sam.2.1-1Sam.2.10",
+      "to": "Luke.1.46-Luke.1.55",
+      "type": "parallel",
+      "label": "Hannah's song and the Magnificat",
+      "status": "candidate"
+    },
+    {
+      "id": "s04",
+      "from": "1Kgs.17.17-1Kgs.17.24",
+      "to": "Luke.7.11-Luke.7.17",
+      "type": "echo",
+      "label": "A widow's son raised and given back to his mother",
+      "status": "candidate"
+    },
+    {
+      "id": "s05a",
+      "from": "1Kgs.17.8-1Kgs.17.16",
+      "to": "Luke.4.25-Luke.4.26",
+      "type": "quotation",
+      "label": "Jesus cites the widow of Zarephath at Nazareth",
+      "status": "candidate"
+    },
+    {
+      "id": "s05b",
+      "from": "2Kgs.5.1-2Kgs.5.14",
+      "to": "Luke.4.27",
+      "type": "quotation",
+      "label": "Jesus cites Naaman at Nazareth",
+      "status": "candidate"
+    },
+    {
+      "id": "s06",
+      "from": "2Kgs.1.10-2Kgs.1.12",
+      "to": "Luke.9.54-Luke.9.55",
+      "type": "contrast",
+      "label": "Fire from heaven called down, then refused",
+      "status": "candidate"
+    },
+    {
+      "id": "s07",
+      "from": "2Kgs.2.9-2Kgs.2.15",
+      "to": "Acts.1.9-Acts.2.4",
+      "type": "typology",
+      "label": "A master taken up; his spirit passes to the disciples",
+      "status": "candidate"
+    },
+    {
+      "id": "s08",
+      "from": "2Kgs.4.42-2Kgs.4.44",
+      "to": "Luke.9.10-Luke.9.17",
+      "type": "parallel",
+      "label": "A crowd fed from little, with food left over",
+      "status": "candidate"
+    },
+    {
+      "id": "s09",
+      "from": "Gen.11.1-Gen.11.9",
+      "to": "Acts.2.1-Acts.2.11",
+      "type": "contrast",
+      "label": "Babel's confusion of languages undone at Pentecost",
+      "status": "candidate"
+    },
+    {
+      "id": "s10",
+      "from": "Gen.22.2",
+      "to": "Luke.3.22",
+      "type": "echo",
+      "label": "The beloved son",
+      "status": "candidate"
+    },
+    {
+      "id": "s11a",
+      "from": "Exod.12",
+      "to": "Luke.22.7-Luke.22.20",
+      "type": "typology",
+      "label": "Passover at the Last Supper",
+      "status": "candidate"
+    },
+    {
+      "id": "s11b",
+      "from": "Exod.24.8",
+      "to": "Luke.22.20",
+      "type": "typology",
+      "label": "The blood of the covenant at the Last Supper",
+      "status": "candidate"
+    },
+    {
+      "id": "s12",
+      "from": "Jonah.1-Jonah.3",
+      "to": "Luke.11.29-Luke.11.32",
+      "type": "quotation",
+      "label": "The sign of Jonah",
+      "status": "candidate"
+    },
+    {
+      "id": "s13",
+      "from": "2Sam.7.12-2Sam.7.16",
+      "to": "Luke.1.32-Luke.1.33",
+      "type": "fulfilment",
+      "label": "The throne of David promised to Mary's son",
+      "status": "candidate"
+    },
+    {
+      "id": "s14a",
+      "from": "Tob.5",
+      "to": "Luke.24.13-Luke.24.35",
+      "type": "parallel",
+      "label": "A companion on the road, unrecognized, revealed, then gone (proposed)",
+      "status": "candidate"
+    },
+    {
+      "id": "s14b",
+      "from": "Tob.12",
+      "to": "Luke.24.13-Luke.24.35",
+      "type": "parallel",
+      "label": "A companion on the road, unrecognized, revealed, then gone (proposed)",
+      "status": "candidate"
+    },
+    {
+      "id": "s15",
+      "from": "1Macc.4.36-1Macc.4.59",
+      "to": "John.10.22",
+      "type": "allusion",
+      "label": "The feast of Dedication",
+      "status": "candidate"
+    },
+    {
+      "id": "s16",
+      "from": "Exod.14",
+      "to": "Luke.9.31",
+      "type": "echo",
+      "label": "Jesus' coming exodus in Jerusalem",
+      "status": "candidate"
+    },
+    {
+      "id": "s17",
+      "from": "Isa.61.1-Isa.61.2",
+      "to": "Luke.4.18-Luke.4.19",
+      "type": "quotation",
+      "label": "Jesus reads his programme from Isaiah",
+      "status": "candidate"
+    },
+    {
+      "id": "s18a",
+      "from": "Dan.7.13",
+      "to": "Luke.21.27",
+      "type": "quotation",
+      "label": "The Son of Man on the clouds",
+      "status": "candidate"
+    },
+    {
+      "id": "s18b",
+      "from": "Dan.7.13",
+      "to": "Luke.22.69",
+      "type": "quotation",
+      "label": "The Son of Man at the right hand of power",
+      "status": "candidate"
+    },
+    {
+      "id": "s19",
+      "from": "Gen.12.1-1Kgs.8.21",
+      "to": "Acts.7.2-Acts.7.50",
+      "type": "parallel",
+      "label": "Stephen retells the whole story you have read",
+      "status": "candidate"
+    }
+  ]
+}

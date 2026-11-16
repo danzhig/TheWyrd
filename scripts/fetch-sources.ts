@@ -25,10 +25,10 @@ export const SourceSchema = z.object({
   usedFor: z.string(),
   phase: z.number(),
   /**
-   * Which script downloads it: the content pipeline (default), `pnpm fonts`, `pnpm terms:fetch`
-   * or `pnpm themes:fetch`.
+   * Which script downloads it: the content pipeline (default), `pnpm fonts`, `pnpm terms:fetch`,
+   * `pnpm themes:fetch` or `pnpm connections:fetch`.
    */
-  pipeline: z.enum(['content', 'fonts', 'terms', 'themes']).optional(),
+  pipeline: z.enum(['content', 'fonts', 'terms', 'themes', 'connections']).optional(),
 });
 export type Source = z.infer<typeof SourceSchema>;
 

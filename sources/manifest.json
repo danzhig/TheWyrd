@@ -1324,6 +1324,23 @@
       "usedFor": "Themes: candidate topics and passages for the constellations, each citing its data row",
       "phase": 6,
       "pipeline": "themes"
+    },
+    {
+      "id": "openbible-xrefs",
+      "name": "OpenBible.info cross-references",
+      "layer": "Connections",
+      "url": "https://a.openbible.info/data/cross-references.zip",
+      "file": "openbible-cross-references.zip",
+      "sha256": "b54a2a381e3eb587ca4ea34ba3f1d052923c49625d857014041f3254eb7c4f1e",
+      "version": "cross_references.txt generated 2026-11-16 (regenerated upstream; re-pin deliberately)",
+      "homepage": "https://www.openbible.info/labs/cross-references/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseVerified": "2026-11-16",
+      "attribution": "Cross-reference data from OpenBible.info (drawn mainly from the public-domain Treasury of Scripture Knowledge), licensed CC BY 4.0",
+      "usedFor": "Threads: the candidate pool of connections between passages, each citing its data row",
+      "phase": 4,
+      "pipeline": "connections"
     }
   ]
 }
