@@ -176,7 +176,7 @@ export function useThemes(opts: {
 
   /** Fly every star to the other view; resolves when they have landed. */
   const switchTo = useCallback(
-    async (target: 'spiral' | 'themes') => {
+    async (target: 'spiral' | 'themes', quick = false) => {
       if (busy.current) return;
       const from = p.current;
       const to = target === 'themes' ? 1 : 0;
@@ -186,7 +186,8 @@ export function useThemes(opts: {
         // The data and the star field's code, both before the flight starts.
         const [loaded] = await Promise.all([data ?? loadThemes(), loadStarfield()]);
         if (!data) setData(loaded);
-        fade.current = prefersReducedMotion();
+        // A quick cross-fade under reduced motion, or when the sky is hidden (List mode).
+        fade.current = prefersReducedMotion() || quick;
         setView(target === 'themes' ? 'to-themes' : 'to-spiral');
         // Let the layers for the flight mount (and the star field be created) before it starts.
         await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));

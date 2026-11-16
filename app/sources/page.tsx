@@ -15,7 +15,7 @@ export default function SourcesPage() {
   return (
     <main className={styles.page} data-testid="sources">
       <nav className={styles.nav}>
-        <Link href="/">← All books</Link>
+        <Link href="/">← Home</Link>
       </nav>
       <header className={styles.header}>
         <p className="label">Scripture as Story</p>

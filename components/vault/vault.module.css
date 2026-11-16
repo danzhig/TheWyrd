@@ -339,15 +339,10 @@
     padding: 0 0.85rem;
   }
 
-  .hud .resume {
-    order: 3;
+  .actions [data-hud='continue'] {
     flex: 1 1 0;
     min-width: 0;
-    display: block;
-    line-height: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-width: none;
   }
 
   .hud .links {
@@ -382,17 +377,32 @@
   font-size: 1.2rem;
 }
 
+/* Continue (or Begin): the one way back into the reading, a gold-edged pill naming the section. */
+.continue {
+  display: inline-flex;
+  align-items: center;
+  max-width: 22rem;
+  border-color: var(--accent);
+  color: var(--text-strong);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.continue:hover,
+.continue:focus-visible {
+  background: color-mix(in srgb, var(--accent) 22%, var(--surface));
+}
+
+.continueTitle {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--accent-strong);
+}
+
 .button:disabled {
   opacity: 0.5;
   cursor: default;
-}
-
-.resume {
-  flex-basis: 100%;
-  color: var(--accent-strong);
-  min-height: 32px;
-  display: inline-flex;
-  align-items: center;
 }
 
 /* The path, About, Sources: a quiet row under Resume. */
@@ -873,5 +883,15 @@
     width: max-content;
     max-width: 8.5em;
     line-height: 1.15;
+  }
+}
+
+/* Phones, List mode: the view switch leaves the foot of the screen and joins the header, above the
+   list, so it never floats over the list's lines. */
+@media (max-width: 520px) {
+  [data-mode='list'] .actions .switch {
+    position: static;
+    order: 5;
+    margin-top: 0.25rem;
   }
 }

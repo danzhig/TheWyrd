@@ -25,7 +25,12 @@ test.describe('performance', () => {
         if (on) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
-      document.querySelector<HTMLButtonElement>('[data-testid=continue]')!.click();
+      // Focusing a book in the (hidden) list flies the camera to it.
+      document
+        .querySelector<HTMLAnchorElement>(
+          'section[aria-label="The path, as a list"] a[data-book="1Sam"]',
+        )!
+        .focus();
       await new Promise((r) => setTimeout(r, 900));
       on = false;
       return ts.slice(1).map((t, i) => t - ts[i]!);
@@ -61,7 +66,12 @@ test.describe('performance', () => {
         if (on) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
-      document.querySelector<HTMLButtonElement>('[data-testid=continue]')!.click();
+      // Focusing a book in the (hidden) list flies the camera to it.
+      document
+        .querySelector<HTMLAnchorElement>(
+          'section[aria-label="The path, as a list"] a[data-book="1Sam"]',
+        )!
+        .focus();
       await new Promise((r) => setTimeout(r, 900));
       on = false;
       return ts.slice(1).map((t, i) => t - ts[i]!);

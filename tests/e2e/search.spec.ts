@@ -66,6 +66,24 @@ test.describe('search', () => {
     await expect(results).toHaveCount(1);
   });
 
+  test('lists matching themes and threads above the sections, for Everything only', async ({
+    page,
+  }) => {
+    await page.goto('/search/?q=Lot%27s%20wife');
+    const extras = page.getByTestId('search-extras');
+    const thread = extras.locator('[data-extra-thread="gen11"]');
+    await expect(thread).toBeVisible();
+    await expect(thread).toHaveAttribute('href', /\?thread=gen11#v-\d+-\d+$/);
+    await page.goto('/search/?q=Forgiveness');
+    await expect(page.locator('[data-extra-theme="mercy-forgiveness"]')).toHaveAttribute(
+      'href',
+      '/?theme=mercy-forgiveness',
+    );
+    // Searching only the path: the sections alone.
+    await page.getByRole('radio', { name: 'The path' }).check({ force: true });
+    await expect(page.getByTestId('search-extras')).toHaveCount(0);
+  });
+
   test('has no serious accessibility issues', async ({ page }) => {
     await page.goto('/search/?q=Ruth');
     await expect(page.locator('[data-result]').first()).toBeVisible();

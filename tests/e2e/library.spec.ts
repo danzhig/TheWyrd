@@ -98,7 +98,7 @@ test.describe('the library', () => {
       `2 of ${sectionsOf('Rev').length} read`,
     );
     // The path is untouched: Genesis is unread and the reader still begins at the start.
-    await expect(page.getByTestId('resume')).toContainText('Begin');
+    await expect(page.getByTestId('continue')).toContainText('Begin');
   });
 
   test('the last library section ends the library, not the path', async ({ page }) => {
