@@ -22,6 +22,25 @@ function themeInAddress(): string | null {
   const sub = new URLSearchParams(window.location.search).get('theme');
   return sub && /^[a-z]+-[a-z]+$/.test(sub) ? sub : null;
 }
+/** The connection a passage was opened from (`?thread=`, Phase 4). */
+function threadInAddress(): string | null {
+  const id = new URLSearchParams(window.location.search).get('thread');
+  return id && /^[a-z0-9-]+$/.test(id) ? id : null;
+}
+
+/** A target inside a closed fold (a skipped or skimmed passage) is opened so it can be seen. */
+function revealTarget() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  const el = id ? document.getElementById(id) : null;
+  if (!el) return;
+  let closed = false;
+  for (let d = el.closest('details'); d; d = d.parentElement?.closest('details') ?? null)
+    if (!d.open) {
+      d.open = true;
+      closed = true;
+    }
+  if (closed) el.scrollIntoView({ block: 'start' });
+}
 function subscribeToAddress(cb: () => void) {
   window.addEventListener('popstate', cb);
   return () => window.removeEventListener('popstate', cb);
@@ -54,6 +73,8 @@ export interface ReaderShellProps {
   library?: boolean;
   /** The sub-themes this section belongs to (Phase 6), for the breadcrumb back to a theme. */
   themes?: SectionTheme[];
+  /** Connections with an end here (Phase 4), for the breadcrumb back along a thread. */
+  threads?: { id: string; label: string; href: string; display: string }[];
   nav: PageNav;
   children: ReactNode;
 }
@@ -68,6 +89,7 @@ export function ReaderShell({
   readOnOpen,
   library = false,
   themes = [],
+  threads = [],
   nav,
   children,
 }: ReaderShellProps) {
@@ -82,6 +104,9 @@ export function ReaderShell({
   const fromTheme = useSyncExternalStore(subscribeToAddress, themeInAddress, () => null);
   // Up a level: a section returns to its book's map (or its theme); a bridge to all books.
   const crumb = fromTheme ? (themes.find((t) => t.id === fromTheme) ?? null) : null;
+  // Arrived along a thread (`?thread=<id>`, Phase 4): the way back to the passage it came from.
+  const fromThread = useSyncExternalStore(subscribeToAddress, threadInAddress, () => null);
+  const threadBack = fromThread ? (threads.find((t) => t.id === fromThread) ?? null) : null;
   const upHref = fromTheme ? `/?theme=${fromTheme}` : bookId ? `/book/${bookId}/` : '/';
   // Up to the book's map: the page shrinks back into its station there (see BookMap).
   const goUp = useCallback(
@@ -107,6 +132,7 @@ export function ReaderShell({
   useEffect(() => {
     document.querySelector<HTMLElement>('#page-heading')?.focus({ preventScroll: true });
     document.documentElement.dataset.reader = id;
+    revealTarget();
     // Arriving from a book's map: the page that grew out of the station fades to show the verses.
     if (transition.pending?.kind === 'paper-in') void reveal();
   }, [id]);
@@ -138,6 +164,12 @@ export function ReaderShell({
       io?.disconnect();
     };
   }, [id, keepsPlace, tracked, ledger, readOnOpen]);
+
+  // A verse reached by its link inside a closed fold is shown (threads, themes, shared links).
+  useEffect(() => {
+    window.addEventListener('hashchange', revealTarget);
+    return () => window.removeEventListener('hashchange', revealTarget);
+  }, []);
 
   // Top bar hides while scrolling down and returns on scroll up; gold hairline tracks progress.
   useEffect(() => {
@@ -205,6 +237,8 @@ export function ReaderShell({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || settingsOpen) return;
+      // A dialog (a verse's threads) takes the keys while it is open: Esc closes it.
+      if (document.querySelector('dialog[open]')) return;
       const t = e.target as HTMLElement | null;
       if (t && (t.isContentEditable || ['INPUT', 'SELECT', 'TEXTAREA'].includes(t.tagName))) return;
       if (e.key === 'ArrowRight' && nav.next) router.push(nav.next.href);
@@ -250,7 +284,16 @@ export function ReaderShell({
       </p>
 
       {/* Opened from a constellation: where it came from, and the way back to it. */}
-      {crumb ? (
+      {/* Arrived along a thread: the way back stays in view while reading here. */}
+      {threadBack ? (
+        <nav className={styles.threadBack} aria-label="Thread" data-testid="thread-breadcrumb">
+          <Link href={threadBack.href} data-testid="thread-back">
+            <span aria-hidden="true">← </span>Back to {threadBack.display}
+          </Link>
+          <span className={styles.threadBackLabel}>{threadBack.label}</span>
+        </nav>
+      ) : null}
+      {crumb && !threadBack ? (
         <nav className={styles.crumb} aria-label="Breadcrumb" data-testid="theme-breadcrumb">
           <span className="label">Themes</span>
           <span aria-hidden="true"> › </span>

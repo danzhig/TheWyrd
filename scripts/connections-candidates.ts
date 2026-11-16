@@ -4,42 +4,20 @@
  * Reads OpenBible.info's cross-references (`pnpm connections:fetch`), places both ends of every
  * row in the built sections, and keeps the pairs that touch the path (at least one end in a path
  * section) with at least N readers' votes (default 10). Pairs in both directions are merged. It
- * also checks the seed connections (content/connections/seeds.json) against the data: both ends
+ * also checks the seed connections (content/connections/connections.json) against the data: both ends
  * must resolve, and the rows that link them are listed as evidence. Writes
  * docs/connections/candidates.md; nothing here is shown on the site.
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { z } from 'zod';
 import { RAW_DIR } from './lib/paths';
 import { inRange, readXrefs, type XrefRow } from './connections/xrefs';
+import { readConnections } from './connections/schema';
 import { readSectionIndex, sectionFor } from './themes/taxonomy';
 
 const args = process.argv.slice(2);
 const minIdx = args.indexOf('--min');
 const MIN = minIdx >= 0 ? Number(args[minIdx + 1]) : 10;
-
-const SeedsSchema = z.object({
-  $comment: z.string(),
-  seeds: z.array(
-    z.object({
-      id: z.string(),
-      from: z.string(),
-      to: z.string(),
-      type: z.enum([
-        'quotation',
-        'allusion',
-        'echo',
-        'typology',
-        'parallel',
-        'fulfilment',
-        'contrast',
-      ]),
-      label: z.string(),
-      status: z.enum(['candidate', 'draft', 'verified']),
-    }),
-  ),
-});
 
 const rows = readXrefs(path.join(RAW_DIR, 'openbible-xrefs'));
 const index = readSectionIndex();
@@ -105,9 +83,7 @@ for (const p of kept) {
 }
 
 // The seeds against the data.
-const seeds = SeedsSchema.parse(
-  JSON.parse(fs.readFileSync('content/connections/seeds.json', 'utf8')),
-).seeds;
+const seeds = readConnections() ?? [];
 const seedLines: string[] = [];
 const errors: string[] = [];
 for (const s of seeds) {

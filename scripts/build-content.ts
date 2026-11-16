@@ -39,6 +39,7 @@ import {
 import { estherDanielMap, pipelineReport, versificationLog } from './reports';
 import { readTvtmsCondensed } from './lib/tvtms';
 import { buildThemes, writeThemes } from './themes/emit-themes';
+import { buildConnections, writeConnections } from './connections/emit-connections';
 import {
   CONTENT_DIR,
   DATA_DIR,
@@ -154,6 +155,13 @@ async function main() {
   );
   const themes = sectionFiles.length ? buildThemes(sectionFiles, libraryIds) : null;
   errors.push(...(themes?.errors ?? []));
+  // Threads (Phase 4): checked against the built sections; only verified ones are published.
+  const threads = sectionFiles.length ? buildConnections(sectionFiles, libraryIds) : null;
+  errors.push(...(threads?.errors ?? []));
+  if (threads?.data)
+    console.log(
+      `threads: ${threads.data.connections.length} verified, ${threads.drafts} awaiting approval`,
+    );
   const ok = errors.length === 0;
   const sources = readSourcesManifest();
   const target = CHECK
@@ -167,6 +175,10 @@ async function main() {
     );
     if (themes?.data) {
       writeThemes(target, themes.data);
+      result.files++;
+    }
+    if (threads?.data) {
+      writeConnections(target, threads.data);
       result.files++;
     }
     console.log(`wrote ${result.files} files to ${path.relative(process.cwd(), target) || target}`);

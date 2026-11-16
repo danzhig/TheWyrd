@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { ContentNote } from '@/components/reader/ContentNote';
 import { ReaderShell } from '@/components/reader/ReaderShell';
 import { SectionBody } from '@/components/reader/SectionBody';
+import { Threads } from '@/components/reader/Threads';
 import styles from '@/components/reader/reader.module.css';
 import Link from 'next/link';
-import { getFullManifest, getSection, getSectionThemes } from '@/lib/data';
+import { getFullManifest, getSection, getSectionThemes, getSectionThreads } from '@/lib/data';
 import { prettyRange } from '@/lib/format';
 import { canBeStop, defaultNav, libraryNav, pathPosition } from '@/lib/nav';
 
@@ -38,6 +39,10 @@ export default async function ReadPage({ params }: Params) {
   const library = isLibrary(s.id);
   // The sub-themes this section's passages belong to (Phase 6), linked to their constellations.
   const themes = getSectionThemes(s.id);
+  // Verified connections with an end here (Phase 4): a glyph at each verse, cards at the end.
+  const threads = getSectionThreads(s.id);
+  const glyphs: Record<string, number> = {};
+  for (const t of threads) glyphs[t.here.anchor] = (glyphs[t.here.anchor] ?? 0) + 1;
   const article = (
     <article
       className={styles.page}
@@ -104,8 +109,9 @@ export default async function ReadPage({ params }: Params) {
         </div>
       ) : null}
       <div className={s.highlight ? styles.highlight : undefined}>
-        <SectionBody section={s} />
+        <SectionBody section={s} threads={glyphs} />
       </div>
+      <Threads threads={threads} />
     </article>
   );
   return (
@@ -119,6 +125,12 @@ export default async function ReadPage({ params }: Params) {
       readOnOpen={s.status === 'skim'}
       library={library}
       themes={themes}
+      threads={threads.map((t) => ({
+        id: t.connection.id,
+        label: t.connection.label,
+        href: `/read/${t.there.sectionId}/#${t.there.anchor}`,
+        display: t.there.display,
+      }))}
       nav={library ? libraryNav(s.id) : defaultNav(s.id)}
     >
       {article}

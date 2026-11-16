@@ -66,7 +66,14 @@ function FootnoteList({
 }
 
 /** The text of a section with its folds and notes; whole-section skim and skip wrap it in a card. */
-export function SectionBody({ section }: { section: SectionFile }) {
+export function SectionBody({
+  section,
+  threads,
+}: {
+  section: SectionFile;
+  /** Verses where threads start (Phase 4): verse anchor (`v-4-25`) → number of connections. */
+  threads?: Record<string, number>;
+}) {
   const numbers = new Map<string, number>();
   let n = 0;
   for (const v of section.verses)
@@ -93,6 +100,7 @@ export function SectionBody({ section }: { section: SectionFile }) {
           dropCap={si === 0 && section.status !== 'skip'}
           before={before}
           numberOf={numberOf}
+          threads={threads}
         />,
       );
     } else {
@@ -106,7 +114,7 @@ export function SectionBody({ section }: { section: SectionFile }) {
               Read it anyway
             </span>
           </summary>
-          <VerseText verses={seg.verses} before={before} numberOf={numberOf} />
+          <VerseText verses={seg.verses} before={before} numberOf={numberOf} threads={threads} />
         </details>,
       );
     }

@@ -1,0 +1,1343 @@
+{
+  "$comment": "Threads (Phase 4, P4.2). The seed connections from docs/PLAN.md §14 as OSIS references in WEBC (English) numbering, each with an original explanation and its citations: OpenBible.info cross-reference rows, words the WEBC text itself carries at a verse (checked at build), shared Greek words at their Septuagint and TAGNT rows (checked by `pnpm connections:verify`), and, for every interpretive reading, a Church Father's work and section in a pinned public-domain edition with a phrase that must occur there. Where the plan names several passages, each is its own connection; the plan's 'Exodus (whole)' is anchored at Exod 19:1, where the Septuagint uses the word Luke 9:31 shares, and 'Genesis–Kings' at Abraham's call through the temple's dedication. A connection is shown on the site only once it is `verified`, with the owner's approval carrying a fingerprint of its content.",
+  "connections": [
+    {
+      "id": "s01a",
+      "from": "Exod.40.34-Exod.40.35",
+      "to": "Luke.1.35",
+      "type": "echo",
+      "strength": 2,
+      "label": "The overshadowing cloud of glory and the overshadowing of Mary",
+      "explanation": "When the tabernacle is finished, the cloud covers the tent and the LORD's glory fills it, so that even Moses cannot go in. In the Septuagint the cloud overshadows the tent with the same verb Gabriel uses when he tells Mary that the power of the Most High will overshadow her (both forms are below). Luke uses the verb again for the cloud at the Transfiguration.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.40.29",
+          "wordIndex": 12,
+          "form": "ἐπεσκίαζεν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.35",
+          "wordIndex": 15,
+          "form": "ἐπισκιάσει",
+          "row": "TAGNT Mat-Jhn:52552"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Exod.40.35",
+          "words": ["Moses", "cloud", "glory"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.35",
+          "words": ["overshadow"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1007be3dfb30139b"
+      }
+    },
+    {
+      "id": "s01b",
+      "from": "Exod.40.34-Exod.40.35",
+      "to": "Luke.9.34",
+      "type": "echo",
+      "strength": 2,
+      "label": "The overshadowing cloud of glory and the cloud at the Transfiguration",
+      "explanation": "On the mountain a cloud comes and overshadows the disciples, and they are afraid as they enter it, where Moses could not enter the tent the cloud had covered. Luke's Greek has the Septuagint's noun for the cloud and its verb for the overshadowing (below). Moses himself is one of the two men speaking with Jesus.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.40.28",
+          "wordIndex": 4,
+          "form": "νεφέλη",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.9.34",
+          "wordIndex": 6,
+          "form": "νεφέλη",
+          "row": "TAGNT Mat-Jhn:64798"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Exod.40.29",
+          "wordIndex": 12,
+          "form": "ἐπεσκίαζεν",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.9.34",
+          "wordIndex": 8,
+          "form": "ἐπεσκίαζεν",
+          "row": "TAGNT Mat-Jhn:64800"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255488"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.34",
+          "words": ["cloud", "overshadowed", "afraid"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.30",
+          "words": ["Moses"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.40.35",
+          "words": ["Moses", "enter"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3dee2af8aff87bf"
+      }
+    },
+    {
+      "id": "s02",
+      "from": "Deut.6.4-Deut.6.5",
+      "to": "Luke.10.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The Shema as the greatest commandment",
+      "explanation": "Asked what is written in the law about inheriting eternal life, a lawyer answers with Deuteronomy's command to love the LORD with all one's heart, soul and strength, joined to the command from Leviticus to love one's neighbour as oneself. Jesus tells him he has answered correctly. Luke's wording adds the mind to Deuteronomy's three.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39605"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256137"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.10.26",
+          "words": ["law"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.10.27",
+          "words": ["heart", "soul", "strength", "mind", "neighbor"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.6.5",
+          "words": ["heart", "soul", "might"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Lev.19.18",
+          "words": ["neighbor"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "985490774e1ee6a6"
+      }
+    },
+    {
+      "id": "s03",
+      "from": "1Sam.2.1-1Sam.2.10",
+      "to": "Luke.1.46-Luke.1.55",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Hannah's song and the Magnificat",
+      "explanation": "Two women sing of a son God has given beyond expectation: Hannah when she brings Samuel to the LORD's house at Shiloh, Mary when she visits Elizabeth after the angel's promise. Both songs praise God for overturning the order of things, bringing down the mighty, lifting up the lowly and filling the hungry. Both WEBC texts speak of princes, and in the Greek the word is the same (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.2.8",
+          "wordIndex": 10,
+          "form": "δυναστῶν",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.52",
+          "wordIndex": 2,
+          "form": "δυνάστας",
+          "row": "TAGNT Mat-Jhn:52974"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L251000"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56529"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L251094"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.1.24",
+          "words": ["Shiloh"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.2.5",
+          "words": ["hungry"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.2.8",
+          "words": ["princes"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.40",
+          "words": ["Elizabeth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.52",
+          "words": ["princes", "lowly"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.53",
+          "words": ["hungry"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "7af754aeff330fb4"
+      }
+    },
+    {
+      "id": "s04",
+      "from": "1Kgs.17.17-1Kgs.17.24",
+      "to": "Luke.7.11-Luke.7.17",
+      "type": "echo",
+      "strength": 2,
+      "label": "A widow's son raised and given back to his mother",
+      "explanation": "Elijah meets the widow of Zarephath at the gate of her city and later raises her son; Jesus meets a widow at the gate of Nain as her only son is carried out, and raises him. Both stories close on the same act, the son handed back to his mother, and in Greek Luke's five closing words are the Septuagint's five words for Elijah's act (below). The crowd at Nain responds by calling Jesus a great prophet.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.17.23",
+          "wordIndex": 11,
+          "toWordIndex": 15,
+          "form": "ἔδωκεν αὐτὸν τῇ μητρὶ αὐτοῦ",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.7.15",
+          "wordIndex": 9,
+          "toWordIndex": 13,
+          "form": "ἔδωκεν αὐτὸν τῇ μητρὶ αὐτοῦ.",
+          "row": "TAGNT Mat-Jhn:60784"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L254111"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L72572"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L254115"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.17.10",
+          "words": ["gate", "widow"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.17.23",
+          "words": ["mother"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.7.12",
+          "words": ["gate", "widow"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.7.15",
+          "words": ["mother"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.7.16",
+          "words": ["prophet"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "089fa3f869968b4a"
+      }
+    },
+    {
+      "id": "s05a",
+      "from": "1Kgs.17.8-1Kgs.17.16",
+      "to": "Luke.4.25-Luke.4.26",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Jesus cites the widow of Zarephath at Nazareth",
+      "explanation": "In the synagogue at Nazareth Jesus recalls the famine in Elijah's days and the widow of Zarephath in Sidon, a foreigner to whom the prophet was sent while the many widows in Israel were not. He names her in answer to a town that expects him to do at home what he did at Capernaum.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L72429"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252634"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.25",
+          "words": ["Elijah", "famine", "widows"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.26",
+          "words": ["Zarephath", "Sidon"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.23",
+          "words": ["Capernaum"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.17.9",
+          "words": ["Zarephath", "Sidon", "widow"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0e4506c05196e810"
+      }
+    },
+    {
+      "id": "s05b",
+      "from": "2Kgs.5.1-2Kgs.5.14",
+      "to": "Luke.4.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Jesus cites Naaman at Nazareth",
+      "explanation": "In the same breath Jesus names Naaman the Syrian, the army commander made clean of leprosy when he dipped himself in the Jordan at Elisha's word, though there were many lepers in Israel. Both of the examples he gives at Nazareth are foreigners.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L75439"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L75592"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252642"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.27",
+          "words": ["Elisha", "Naaman", "Syrian", "lepers"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.5.1",
+          "words": ["Naaman", "Syria", "leper"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.5.14",
+          "words": ["Jordan", "clean"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f01261ba1f9f42e5"
+      }
+    },
+    {
+      "id": "s06",
+      "from": "2Kgs.1.10-2Kgs.1.12",
+      "to": "Luke.9.54-Luke.9.55",
+      "type": "contrast",
+      "strength": 3,
+      "label": "Fire from heaven called down, then refused",
+      "explanation": "When a Samaritan village will not receive Jesus, James and John offer to command fire to come down from the sky, and they name Elijah, who called it down on the king's captains and their men. Jesus turns and rebukes them. In Kings the fire falls; in Luke it is refused.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74508"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255728"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.53",
+          "words": ["receive"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.54",
+          "words": ["James", "John", "fire", "Elijah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.55",
+          "words": ["rebuked"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.1.10",
+          "words": ["Elijah", "fire", "fifty"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a4efb433878052f7"
+      }
+    },
+    {
+      "id": "s07",
+      "from": "2Kgs.2.9-2Kgs.2.15",
+      "to": "Acts.1.9-Acts.2.4",
+      "type": "typology",
+      "strength": 2,
+      "label": "A master taken up; his spirit passes to the disciples",
+      "explanation": "Elijah is taken up while Elisha watches, and the prophets at Jericho see that Elijah's spirit now rests on his disciple. In Acts Jesus is taken up while the apostles watch, and at Pentecost they are filled with the Holy Spirit. The Septuagint and Acts use the same verb for the master being taken up (below). Chrysostom sets the two partings side by side: the angels come, he says, so that the apostles will not grieve as Elisha did when he tore his clothes.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.2.10",
+          "wordIndex": 9,
+          "form": "ἀναλαμβανόμενον",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.1.11",
+          "wordIndex": 16,
+          "form": "ἀναλημφθεὶς",
+          "row": "TAGNT Act-Rev:426"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274873"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74670"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74701"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.2.10",
+          "words": ["see", "taken"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.2.12",
+          "words": ["clothes"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.2.15",
+          "words": ["spirit", "Elijah", "Elisha"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.1.9",
+          "words": ["looking", "taken"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.4",
+          "words": ["filled", "Spirit"]
+        },
+        {
+          "kind": "father",
+          "source": "ccel-npnf111",
+          "author": "John Chrysostom",
+          "work": "Homilies on the Acts of the Apostles",
+          "locator": "Homily II (on Acts 1:6–11)",
+          "edition": "NPNF, first series, vol. 11",
+          "heading": "Homily II.",
+          "phrase": "that it might not be with them as it was with Elisha"
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "93f6bf0390253ff6"
+      }
+    },
+    {
+      "id": "s08",
+      "from": "2Kgs.4.42-2Kgs.4.44",
+      "to": "Luke.9.10-Luke.9.17",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A crowd fed from little, with food left over",
+      "explanation": "A man brings Elisha twenty barley loaves; his servant asks how so little can be set before a hundred men, yet they eat and some is left over. In Luke the twelve object that they have only five loaves and two fish for about five thousand men, and after all have eaten, twelve baskets of pieces remain. Both stories turn on the same objection and end with food to spare.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L75430"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255256"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255276"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.4.42",
+          "words": ["twenty", "loaves"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.4.43",
+          "words": ["hundred"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.4.44",
+          "words": ["left"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.13",
+          "words": ["five", "loaves"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.14",
+          "words": ["thousand"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.17",
+          "words": ["twelve", "baskets"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3870bb33a5d917b"
+      }
+    },
+    {
+      "id": "s09",
+      "from": "Gen.11.1-Gen.11.9",
+      "to": "Acts.2.1-Acts.2.11",
+      "type": "contrast",
+      "strength": 2,
+      "label": "Babel's confusion of languages undone at Pentecost",
+      "explanation": "At Babel the one language is confused and its speakers are scattered over the earth; at Pentecost people from every nation gather in Jerusalem and each hears the apostles in his own language. The Septuagint's verb for the confusion at Babel is the verb Acts uses for the bewildered crowd (below). Augustine and Chrysostom both read Pentecost against Babel: for Augustine, Christ's humility gathers the tongues that pride divided.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.11.9",
+          "wordIndex": 10,
+          "form": "συνέχεεν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.2.6",
+          "wordIndex": 10,
+          "form": "συνεχύθη,",
+          "row": "TAGNT Act-Rev:1093"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2596"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2672"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275154"
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.11.7",
+          "words": ["confuse", "language"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.11.9",
+          "words": ["Babel", "scattered"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.5",
+          "words": ["nation"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.6",
+          "words": ["bewildered", "language"]
+        },
+        {
+          "kind": "father",
+          "source": "ccel-npnf107",
+          "author": "Augustine",
+          "work": "Tractates on the Gospel of John",
+          "locator": "Tractate VI, §10 (on John 1:32–33)",
+          "edition": "NPNF, first series, vol. 7",
+          "heading": "Tractate VI.",
+          "phrase": "If pride caused diversities of tongues, Christ's humility has united these diversities in one"
+        },
+        {
+          "kind": "father",
+          "source": "ccel-npnf112",
+          "author": "John Chrysostom",
+          "work": "Homilies on First Corinthians",
+          "locator": "Homily XXXV (on 1 Cor 14:1)",
+          "edition": "NPNF, first series, vol. 12",
+          "heading": "Homily XXXV.",
+          "phrase": "as in the time of building the tower the one tongue was divided into many"
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ec5a512089ae7e76"
+      }
+    },
+    {
+      "id": "s10",
+      "from": "Gen.22.2",
+      "to": "Luke.3.22",
+      "type": "echo",
+      "strength": 2,
+      "label": "The beloved son",
+      "explanation": "When God tells Abraham to offer Isaac, the Septuagint names Isaac with the adjective the voice from the sky uses at Jesus' baptism for the beloved Son (both forms are below). WEBC, translating the Hebrew, has Abraham's only son, whom he loves. The voice uses the same word again at the Transfiguration.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Gen.22.2",
+          "wordIndex": 8,
+          "form": "ἀγαπητὸν",
+          "row": "LXX 001-Gen"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.3.22",
+          "wordIndex": 25,
+          "form": "ἀγαπητός,",
+          "row": "TAGNT Mat-Jhn:55831"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Gen.22.2",
+          "words": ["Isaac", "love"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.3.22",
+          "words": ["beloved", "Son"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.35",
+          "words": ["beloved"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f0cb0077e662650c"
+      }
+    },
+    {
+      "id": "s11a",
+      "from": "Exod.12",
+      "to": "Luke.22.7-Luke.22.20",
+      "type": "typology",
+      "strength": 3,
+      "label": "Passover at the Last Supper",
+      "explanation": "Luke sets the Last Supper on the day the Passover lamb was sacrificed, and Jesus tells the twelve he has longed to eat this Passover with them before he suffers. Exodus 12 commands the lamb, its blood on the doorposts and a meal kept as a memorial through the generations; at the supper Jesus gives the bread and tells them to do this in memory of him. Tertullian notes that of all the feasts Jesus chose the Passover for his suffering, and Chrysostom says that where the type was, Christ set the truth.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261348"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261351"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L15883"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.7",
+          "words": ["Passover", "sacrificed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.15",
+          "words": ["Passover", "suffer"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.19",
+          "words": ["memory"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.12.7",
+          "words": ["blood"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.12.14",
+          "words": ["memorial"]
+        },
+        {
+          "kind": "father",
+          "source": "ccel-anf03",
+          "author": "Tertullian",
+          "work": "Against Marcion",
+          "locator": "Book IV, chapter 40",
+          "edition": "ANF, vol. 3",
+          "heading": "Chapter XL.",
+          "phrase": "of all the festal days of the Jews He chose the passover"
+        },
+        {
+          "kind": "father",
+          "source": "ccel-npnf110",
+          "author": "John Chrysostom",
+          "work": "Homilies on the Gospel of Matthew",
+          "locator": "Homily LXXXII (on Matt 26:26–28)",
+          "edition": "NPNF, first series, vol. 10",
+          "heading": "Homily LXXXII.",
+          "phrase": "where the type is, there He puts the truth"
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "17fe3c67d87e3eb3"
+      }
+    },
+    {
+      "id": "s11b",
+      "from": "Exod.24.8",
+      "to": "Luke.22.20",
+      "type": "typology",
+      "strength": 2,
+      "label": "The blood of the covenant at the Last Supper",
+      "explanation": "At Sinai Moses seals the covenant by sprinkling the people with blood and calling it the blood of the covenant. Over the cup after supper Jesus speaks of the new covenant in his blood, poured out for the disciples. Commenting on the same words in Matthew, Chrysostom says Jesus recalls the former covenant because it too was dedicated with blood.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261466"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L19470"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.24.8",
+          "words": ["Moses", "blood", "covenant"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.20",
+          "words": ["covenant", "blood"]
+        },
+        {
+          "kind": "father",
+          "source": "ccel-npnf110",
+          "author": "John Chrysostom",
+          "work": "Homilies on the Gospel of Matthew",
+          "locator": "Homily LXXXII (on Matt 26:26–28)",
+          "edition": "NPNF, first series, vol. 10",
+          "heading": "Homily LXXXII.",
+          "phrase": "for that also was dedicated with blood"
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a9228e9fd4709f76"
+      }
+    },
+    {
+      "id": "s12",
+      "from": "Jonah.1-Jonah.3",
+      "to": "Luke.11.29-Luke.11.32",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The sign of Jonah",
+      "explanation": "Asked for a sign, Jesus says his generation will be given none but the sign of Jonah: as Jonah was a sign to the Ninevites, so the Son of Man will be to them. He recalls that Nineveh repented at Jonah's preaching, as Jonah 3 tells, and says that one greater than Jonah is here.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219766"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219767"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219967"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.11.29",
+          "words": ["sign", "Jonah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.11.30",
+          "words": ["Ninevites"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.11.32",
+          "words": ["Nineveh", "repented", "greater"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.3.5",
+          "words": ["Nineveh"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "145f3382f0d16f53"
+      }
+    },
+    {
+      "id": "s13",
+      "from": "2Sam.7.12-2Sam.7.16",
+      "to": "Luke.1.32-Luke.1.33",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "The throne of David promised to Mary's son",
+      "explanation": "Through Nathan, God promises David an heir whose throne and kingdom will be established forever. Gabriel tells Mary that the Lord God will give her son the throne of his father David, and that his kingdom will have no end. The angel's message takes up the promise's own terms: throne, kingdom, forever.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.7.16",
+          "wordIndex": 15,
+          "form": "θρόνος",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.32",
+          "wordIndex": 15,
+          "form": "θρόνον",
+          "row": "TAGNT Mat-Jhn:52467"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250885"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63498"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250858"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.7.4",
+          "words": ["Nathan"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.7.16",
+          "words": ["throne", "kingdom", "forever"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.32",
+          "words": ["throne", "David"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.33",
+          "words": ["forever", "Kingdom"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1669c3d7b6858d67"
+      }
+    },
+    {
+      "id": "s14a",
+      "from": "Tob.5",
+      "to": "Luke.24.13-Luke.24.35",
+      "type": "parallel",
+      "strength": 1,
+      "label": "A companion on the road, unrecognised (proposed)",
+      "explanation": "Tobias looks for a companion for his journey and finds Raphael, an angel, without knowing it; the angel offers to go with him and knows the way. On the road to Emmaus Jesus comes near and walks with two disciples whose eyes are kept from recognising him, and he opens the Scriptures to them on the way. The Greek verb for going along with someone appears in both (below). This parallel is proposed by the plan; it is not in the cross-reference data.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Tob.5.9",
+          "wordIndex": 9,
+          "form": "συνπορεύσεταί",
+          "row": "LXX 019-Tob"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.24.15",
+          "wordIndex": 14,
+          "form": "συνεπορεύετο",
+          "row": "TAGNT Mat-Jhn:84269"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Tob.5.4",
+          "words": ["Raphael", "angel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Tob.5.5",
+          "words": ["know"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Tob.5.6",
+          "words": ["way"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.24.15",
+          "words": ["near"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.24.16",
+          "words": ["recognizing"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.24.32",
+          "words": ["Scriptures"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "8e2ee6a9f4675597"
+      }
+    },
+    {
+      "id": "s14b",
+      "from": "Tob.12",
+      "to": "Luke.24.13-Luke.24.35",
+      "type": "parallel",
+      "strength": 1,
+      "label": "A companion revealed, then gone (proposed)",
+      "explanation": "At the journey's end Raphael tells Tobit and Tobias who he is, says he is going up to the one who sent him, and they see him no more. At Emmaus the two disciples recognise Jesus as he breaks the bread, and he vanishes from their sight. In both, the companion is known only at the end and is gone at once. This parallel is proposed by the plan; it is not in the cross-reference data.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Tob.12.1",
+          "words": ["Tobit", "Tobias"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Tob.12.15",
+          "words": ["Raphael"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Tob.12.20",
+          "words": ["ascend"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Tob.12.21",
+          "words": ["saw"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.24.30",
+          "words": ["bread"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.24.31",
+          "words": ["recognized", "vanished"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "baa4dc241a63068a"
+      }
+    },
+    {
+      "id": "s15",
+      "from": "1Macc.4.36-1Macc.4.59",
+      "to": "John.10.22",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The feast of Dedication",
+      "explanation": "John places Jesus in the temple at Jerusalem in winter, at the Feast of the Dedication. 1 Maccabees 4 tells how that feast began: after the temple was profaned, Judas and his kindred cleansed it, dedicated the new altar, and ordained that the dedication be kept every year for eight days from the twenty-fifth of Chislev.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "John.10.22",
+          "words": ["Dedication", "Jerusalem"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.10.23",
+          "words": ["winter", "temple"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Macc.4.36",
+          "words": ["Judas", "cleanse"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Macc.4.54",
+          "words": ["profaned", "dedicated"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Macc.4.59",
+          "words": ["dedication", "eight", "Chislev"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "50fa10881bb8ae75"
+      }
+    },
+    {
+      "id": "s16",
+      "from": "Exod.19.1",
+      "to": "Luke.9.31",
+      "type": "echo",
+      "strength": 2,
+      "label": "Jesus' coming exodus in Jerusalem",
+      "explanation": "At the Transfiguration Moses and Elijah speak with Jesus about the departure he is about to accomplish at Jerusalem. Luke's Greek word for that departure is the noun the Septuagint uses at Sinai for Israel's going out of Egypt (below), and Moses, who led that going out, is one of the two speaking with him.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Exod.19.1",
+          "wordIndex": 7,
+          "form": "ἐξόδου",
+          "row": "LXX 002-Exod"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.9.31",
+          "wordIndex": 7,
+          "form": "ἔξοδον",
+          "row": "TAGNT Mat-Jhn:64682"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Luke.9.30",
+          "words": ["Moses", "Elijah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.9.31",
+          "words": ["departure", "Jerusalem"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.19.1",
+          "words": ["Egypt", "Sinai"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "85afddca82bb04a7"
+      }
+    },
+    {
+      "id": "s17",
+      "from": "Isa.61.1-Isa.61.2",
+      "to": "Luke.4.18-Luke.4.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Jesus reads his programme from Isaiah",
+      "explanation": "In the synagogue at Nazareth Jesus is handed the book of the prophet Isaiah and reads the passage now numbered Isaiah 61: one anointed by the Spirit to bring good news to the poor, release to captives and the year of the LORD's favour. He then tells his hearers that this Scripture has been fulfilled in their hearing. His reading stops before Isaiah's day of vengeance.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L172611"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252538"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252566"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.17",
+          "words": ["Isaiah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.18",
+          "words": ["anointed", "poor"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.21",
+          "words": ["fulfilled"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.61.1",
+          "words": ["anointed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.61.2",
+          "words": ["vengeance"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "236e9871344c1aed"
+      }
+    },
+    {
+      "id": "s18a",
+      "from": "Dan.7.13",
+      "to": "Luke.21.27",
+      "type": "quotation",
+      "strength": 2,
+      "label": "The Son of Man on the clouds",
+      "explanation": "Speaking of the end, Jesus foretells the Son of Man's coming in a cloud, with power and great glory. The words take up Daniel's night vision of one like a son of man coming with the clouds to the Ancient of Days, who is given dominion, glory and a kingdom. Both Greek versions of Daniel have the noun Luke uses for the cloud (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.7.13",
+          "wordIndex": 10,
+          "form": "νεφελῶν",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Dan.7.13",
+          "wordIndex": 10,
+          "form": "νεφελῶν",
+          "row": "LXX 052-Dan"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.21.27",
+          "wordIndex": 10,
+          "form": "νεφέλῃ",
+          "row": "TAGNT Mat-Jhn:80147"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L210846"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261188"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.21.27",
+          "words": ["cloud", "glory"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.13",
+          "words": ["clouds", "Ancient"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.14",
+          "words": ["glory", "kingdom"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ce2285ca94f24559"
+      }
+    },
+    {
+      "id": "s18b",
+      "from": "Dan.7.13",
+      "to": "Luke.22.69",
+      "type": "quotation",
+      "strength": 2,
+      "label": "The Son of Man at the right hand of power",
+      "explanation": "Before the council Jesus declares that the Son of Man will from now on be seated at the right hand of God's power. The title comes from Daniel's vision, where one like a son of man is brought before the Ancient of Days and given dominion; the seat at the right hand recalls the first verse of Psalm 110.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261905"
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.69",
+          "words": ["Son", "Man", "right"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.13",
+          "words": ["son", "man", "Ancient"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.14",
+          "words": ["Dominion"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.110.1",
+          "words": ["right", "hand"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9badbfc81bf264f9"
+      }
+    },
+    {
+      "id": "s19",
+      "from": "Gen.12.1-1Kgs.8.21",
+      "to": "Acts.7.2-Acts.7.50",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Stephen retells the whole story you have read",
+      "explanation": "Brought before the council, Stephen answers by retelling Israel's story: God's call to Abraham in Mesopotamia, Joseph sold into Egypt, Moses, the tabernacle in the wilderness, Joshua and David, and Solomon building a house for God. It is the ground the path has covered from Genesis to Kings, told as a single speech.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2763"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L10114"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L3628"
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.6.12",
+          "words": ["council"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.2",
+          "words": ["Abraham", "Mesopotamia"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.9",
+          "words": ["Joseph", "Egypt"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.20",
+          "words": ["Moses"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.44",
+          "words": ["tabernacle", "wilderness"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.45",
+          "words": ["Joshua", "David"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.47",
+          "words": ["Solomon"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "99663a2fe876188f"
+      }
+    }
+  ]
+}

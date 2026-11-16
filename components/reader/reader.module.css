@@ -506,3 +506,215 @@ a.detour:hover {
 .toast:empty {
   display: none;
 }
+
+/* Threads (Phase 4): the section's connections at its end, and a verse's cards in a dialog. */
+.threads {
+  margin: 3rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule-soft);
+}
+
+.threadsHeading {
+  font-family: var(--font-display);
+  font-variant-caps: small-caps;
+  font-weight: 500;
+  font-size: 1.35em;
+  margin: 0;
+  color: var(--text-strong);
+}
+
+.threadsIntro {
+  margin: 0.3em 0 1.2em;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.threadGroup {
+  scroll-margin-top: 5rem;
+}
+
+.threadVerse {
+  font-family: var(--font-body);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  font-size: 0.85em;
+  margin: 1.6em 0 0.4em;
+}
+
+.threadVerse a {
+  color: var(--link);
+}
+
+.threadCard {
+  margin: 0 0 1rem;
+  padding: 1rem 1.1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--rule-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 6px;
+  font-size: 0.92em;
+}
+
+.threadCard p {
+  margin: 0.5em 0 0;
+}
+
+.threadType {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.threadType :global(.label) {
+  color: var(--accent-strong);
+}
+
+.threadTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin: 0.2em 0 0;
+  color: var(--text-strong);
+}
+
+.threadThere {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.threadExcerpt {
+  margin: 0.5em 0 0;
+  padding-left: 0.8em;
+  border-left: 1px solid var(--rule);
+  font-style: italic;
+  color: var(--text);
+}
+
+.threadGreek {
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+.threadGreek [lang='grc'] {
+  color: var(--text);
+  font-style: normal;
+}
+
+.threadSources {
+  margin: 0.6em 0 0;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.threadSources summary {
+  cursor: pointer;
+  color: var(--link);
+  min-height: 24px;
+}
+
+.threadSources ul {
+  margin: 0.4em 0 0;
+  padding-left: 1.1em;
+}
+
+.threadSources a {
+  color: var(--link);
+}
+
+.goThere {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 0.4em;
+  color: var(--link);
+  font-weight: 600;
+}
+
+.threadDialog {
+  width: min(36rem, calc(100vw - 2rem));
+  max-height: min(80vh, 48rem);
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--reader-size);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 0.35);
+}
+
+.threadDialog::backdrop {
+  background: rgb(10 8 6 / 0.55);
+}
+
+.threadDialogBody {
+  padding: 0 1rem 1rem;
+}
+
+.threadDialogHead {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  margin-bottom: 0.4rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .threadDialog[open] {
+    animation: thread-in 0.22s ease-out;
+  }
+}
+
+@keyframes thread-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+}
+
+.threadClose {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+/* Arrived along a thread: a pill at the foot of the screen leads back to where it started. */
+.threadBack {
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(100vw - 2rem);
+  padding: 0.35rem 1.1rem 0.45rem;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  box-shadow: 0 0.4rem 1.5rem rgb(0 0 0 / 0.18);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.threadBack a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  color: var(--link);
+  font-weight: 600;
+}
+
+.threadBackLabel {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

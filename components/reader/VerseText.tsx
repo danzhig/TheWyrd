@@ -98,6 +98,32 @@ export interface VerseTextProps {
   before?: Record<string, ReactNode>;
   /** Running footnote numbering shared across the section (default: per verse). */
   numberOf?: (ref: string, i: number) => number;
+  /** Verses where threads start (Phase 4): verse anchor (`v-4-25`) → number of connections. */
+  threads?: Record<string, number>;
+}
+
+/** A gold thread beside a verse with connections; opens its cards (Threads), or links to them. */
+function ThreadGlyph({ verse, count }: { verse: VerseOut; count: number }) {
+  const anchor = verseAnchor(verse);
+  return (
+    <a
+      href={`#threads-${anchor}`}
+      className="thread-glyph"
+      data-thread={anchor}
+      aria-label={`Threads from verse ${verse.v}: ${count} ${count === 1 ? 'connection' : 'connections'}`}
+      data-pagefind-ignore=""
+    >
+      <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true" focusable="false">
+        <path
+          d="M1.5 9.5C4 2 7 2 8 6s4 4 6.5-3.5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        />
+      </svg>
+    </a>
+  );
 }
 
 /**
@@ -109,6 +135,7 @@ export function VerseText({
   dropCap = false,
   before = {},
   numberOf = (_r, i) => i + 1,
+  threads = {},
 }: VerseTextProps) {
   const lines = toLines(verses, new Set(Object.keys(before)));
   const useDropCap =
@@ -149,6 +176,9 @@ export function VerseText({
               {p.verse.v}
             </a>
           </sup>
+        ) : null}
+        {p.first && threads[verseAnchor(p.verse)] ? (
+          <ThreadGlyph verse={p.verse} count={threads[verseAnchor(p.verse)]!} />
         ) : null}
         {withCallers(p, numberOf)}{' '}
       </span>
