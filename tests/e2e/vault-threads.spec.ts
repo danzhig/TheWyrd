@@ -64,6 +64,10 @@ test.describe('Threads on the Vault', () => {
     const panel = page.getByTestId('arc-panel');
     await expect(panel).toBeVisible();
     await expect(panel.locator('[data-panel-connection]')).toHaveCount(n);
+    // Measure contrast once the panel has finished fading in.
+    await panel.evaluate((el) =>
+      Promise.all(el.getAnimations({ subtree: true }).map((a) => a.finished)),
+    );
     const results = await new AxeBuilder({ page }).include('[data-testid="arc-panel"]').analyze();
     expect(
       results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical'),
