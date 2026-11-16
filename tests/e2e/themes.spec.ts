@@ -254,6 +254,12 @@ test.describe('themes', () => {
     await page.goto('/read/gen-14/?theme=mercy-forgiveness');
     await expect(page.locator('html')).toHaveAttribute('data-reader', 'gen-14');
     await expect(page.getByTestId('theme-breadcrumb')).toContainText('Mercy and forgiveness');
+    // The way back also stays in view wherever the passage is scrolled to.
+    await expect(page.getByTestId('theme-back')).toBeInViewport();
+    await expect(page.getByTestId('theme-back')).toHaveAttribute(
+      'href',
+      '/?theme=mercy-forgiveness',
+    );
     const themeLinks = page.getByTestId('section-themes').locator('a[data-theme-link]');
     expect(await themeLinks.count()).toBeGreaterThan(0);
     await expect(page.locator('a[data-theme-link="mercy-forgiveness"]')).toHaveAttribute(
@@ -281,6 +287,38 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 8000,
     });
+  });
+
+  test('the wheel zooms over a star or a sub-theme name as over the open sky', async ({
+    page,
+    isMobile,
+  }) => {
+    test.skip(isMobile, 'a mouse wheel');
+    await openVault(page);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    await page.locator('[data-constellation="mercy"]').click({ force: true });
+    const star = page.locator('[data-passage^="mercy-"]').first();
+    await expect(star).toBeAttached({ timeout: 6000 });
+    await page.waitForTimeout(900); // the flight to the constellation lands
+    const k = () =>
+      page.evaluate(() =>
+        Number(
+          getComputedStyle(
+            document.querySelector('[data-testid="vault-labels"]')!,
+          ).getPropertyValue('--k'),
+        ),
+      );
+    for (const target of [star, page.locator('[data-subtheme^="mercy-"]').first()]) {
+      const before = await k();
+      const box = (await target.boundingBox())!;
+      await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+      // A star's own reference comes to the front while it is pointed at.
+      await page.mouse.wheel(0, before > 3 ? 300 : -300);
+      await expect.poll(k, { timeout: 3000 }).not.toBe(before);
+    }
   });
 
   test('reduced motion cross-fades instead of flying', async ({ browser }) => {

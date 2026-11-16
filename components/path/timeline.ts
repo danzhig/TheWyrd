@@ -1,5 +1,6 @@
 /** The whole path as timeline rows, grouped by book (PLAN §9, "The Path"). Pure, unit-tested. */
 import type { Book, Bridge, PlanStep, SectionIndexEntry } from '@/lib/types';
+import { rangeLabel } from '@/lib/format';
 import { buildSequence } from '@/lib/path';
 
 export type TimelineRow =
@@ -58,8 +59,8 @@ export function timeline(m: {
       title: s.title,
       range:
         item.detour && s.bookId !== group.id
-          ? `${name(s.bookId).replace(/(\s+\d+)?\s*\(excursion\)$/, '')} ${s.range}`
-          : s.range,
+          ? `${name(s.bookId).replace(/(\s+\d+)?\s*\(excursion\)$/, '')} ${rangeLabel(s)}`
+          : rangeLabel(s),
       minutes: s.minutes,
       status: s.status as 'read' | 'skim' | 'optional',
       detour: item.detour,

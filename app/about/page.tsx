@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GROUP_LABEL, GROUP_ORDER } from '@/components/vault/data';
-import { getManifest } from '@/lib/data';
+import { getExtrasSummary, getManifest } from '@/lib/data';
 import { ABOUT_GROUPS, aboutData } from './about';
 import styles from './about.module.css';
 
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
  */
 export default function AboutPage() {
   const m = getManifest();
+  const x = getExtrasSummary();
   const a = aboutData(m);
   const name = (id: string) => m.books.find((b) => b.id === id)?.name ?? id;
   const bookLink = (id: string) => (
@@ -156,6 +157,32 @@ export default function AboutPage() {
             </div>
           );
         })}
+      </section>
+
+      <section aria-labelledby="other-ways">
+        <h2 id="other-ways">Two other ways through</h2>
+        <p>
+          The switch at the top of the map offers two more ways to explore the same Bible. Neither
+          changes the path or your place on it.
+        </p>
+        <h3 className="label">Themes</h3>
+        <p>
+          The passages rearranged by meaning: {x.themes} themes, each a constellation of{' '}
+          {x.subthemes} smaller groups in all, holding {x.passages} passages from across the Bible.
+          Gold stars are on the path, paler ones in the library. Tap a theme to fly to it, then a
+          star to read its passage; the reader keeps a link back to the theme. The passages come
+          from two public topical indexes, Nave&rsquo;s Topical Bible and OpenBible.info, credited
+          on the <Link href="/sources/">sources</Link> page.
+        </p>
+        <h3 className="label">Threads</h3>
+        <p>
+          {x.connections} connections between passages, where one quotes, names, echoes or answers
+          another, drawn as gold arcs between {x.bookPairs} pairs of books. In the reader a small
+          gold thread beside a verse opens its cards: the other passage, what links them, and the
+          sources for it. Each connection rests on evidence that can be checked: the shared words,
+          the cross-reference data, and for readings beyond the plain text, the Church Fathers who
+          made them.
+        </p>
       </section>
 
       <p className={styles.footer}>
