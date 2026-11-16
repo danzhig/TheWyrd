@@ -28,7 +28,7 @@ export default function AboutPage() {
   return (
     <main className={styles.page} data-testid="about">
       <nav className={styles.nav}>
-        <Link href="/">← All books</Link>
+        <Link href="/">← Home</Link>
       </nav>
 
       <header className={styles.header}>
@@ -186,7 +186,7 @@ export default function AboutPage() {
       </section>
 
       <p className={styles.footer}>
-        <Link href="/">Back to all books</Link> · <Link href="/path/">The path</Link> ·{' '}
+        <Link href="/">Home</Link> · <Link href="/path/">The path</Link> ·{' '}
         <Link href="/sources/">Sources</Link>
       </p>
     </main>

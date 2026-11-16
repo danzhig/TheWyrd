@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import type { PublicConnections } from '@/lib/types';
+import { searchExtras, type ThemeHit, type ThemesFile, type ThreadHit } from './extras';
 import type { SectionFile } from '@/lib/types';
 import { firstMatch } from './match';
 import styles from './search.module.css';
@@ -42,6 +44,20 @@ function loadPagefind(): Promise<Pagefind> {
 }
 
 /** Where a result opens: its section, at the first verse that matches. */
+// Themes and threads, searched beside the text (loaded on the first search).
+let extrasData: Promise<[ThemesFile | null, PublicConnections | null]> | null = null;
+function loadExtras() {
+  const get = <T,>(u: string) =>
+    fetch(u)
+      .then((r) => (r.ok ? (r.json() as Promise<T>) : null))
+      .catch(() => null);
+  extrasData ??= Promise.all([
+    get<ThemesFile>('/data/themes.json'),
+    get<PublicConnections>('/data/connections.json'),
+  ]);
+  return extrasData;
+}
+
 async function hrefFor(url: string, query: string): Promise<string> {
   const id = url.match(/\/read\/([^/]+)\//)?.[1];
   if (!id) return url;
@@ -75,6 +91,10 @@ export function Search() {
   const [rows, setRows] = useState<Row[]>([]);
   const [busy, setBusy] = useState(false);
   const [scope, setScope] = useState<Scope>('all');
+  const [extras, setExtras] = useState<{ themes: ThemeHit[]; threads: ThreadHit[] }>({
+    themes: [],
+    threads: [],
+  });
   const scopeRef = useRef<Scope>('all');
   const input = useRef<HTMLInputElement>(null);
   const all = useRef<{ id: string; data: () => Promise<ResultData> }[]>([]);
@@ -112,8 +132,15 @@ export function Search() {
         if (!q) {
           setRows([]);
           setTotal(null);
+          setExtras({ themes: [], threads: [] });
           return;
         }
+        // Themes and threads, for Everything only (they span the path and the library).
+        if (where === 'all')
+          void loadExtras().then(([t, c]) => {
+            if (token === run.current) setExtras(searchExtras(q, t, c));
+          });
+        else setExtras({ themes: [], threads: [] });
         try {
           const pf = await loadPagefind();
           // Results in path order, then the library in canonical order: each page carries its
@@ -212,6 +239,48 @@ export function Search() {
         >
           Try again
         </button>
+      ) : null}
+      {extras.themes.length || extras.threads.length ? (
+        <div className={styles.extras} data-testid="search-extras">
+          {extras.themes.length ? (
+            <section aria-labelledby="extras-themes">
+              <h2 id="extras-themes" className="label">
+                Themes
+              </h2>
+              <ul>
+                {extras.themes.map((t) => (
+                  <li key={t.id}>
+                    <Link href={t.href} className={styles.extra} data-extra-theme={t.id}>
+                      <span className={styles.title}>{t.title}</span>
+                      <span className={styles.where}>
+                        {t.themeTitle} · {t.passages} passages
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+          {extras.threads.length ? (
+            <section aria-labelledby="extras-threads">
+              <h2 id="extras-threads" className="label">
+                Threads
+              </h2>
+              <ul>
+                {extras.threads.map((t) => (
+                  <li key={t.id}>
+                    <Link href={t.href} className={styles.extra} data-extra-thread={t.id}>
+                      <span className={styles.title}>{t.label}</span>
+                      <span className={styles.where}>
+                        {t.type} · {t.ends}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+        </div>
       ) : null}
       <ol className={styles.results} data-testid="search-results">
         {rows.map((r) => (

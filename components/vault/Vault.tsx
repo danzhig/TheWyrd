@@ -401,9 +401,9 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       if (Math.abs(camRef.current.k - base.k) / base.k > 0.15 || to === 'spiral')
         void flyTo(base, prefersReducedMotion() ? 0 : 1100);
       if (to === 'themes') setThreadsOn(false);
-      void switchThemes(to);
+      void switchThemes(to, mode === 'list');
     },
-    [flyTo, switchThemes],
+    [flyTo, switchThemes, mode],
   );
 
   const flyToConstellation = useCallback(
@@ -520,13 +520,6 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [byId, flyTo, layout.offpath, mode, placed, router, target],
   );
 
-  const continueReading = useCallback(() => {
-    const view = viewRef.current;
-    if (!view) return;
-    const k = Math.max(baseRef.current.k * 1.8, 0.9);
-    void flyTo(target(sparkAt, Math.min(k, K_MAX)));
-  }, [flyTo, sparkAt, target]);
-
   // Zoom buttons build on the previous click's target, so quick taps add up.
   const pendingK = useRef<number | null>(null);
   const zoomTap = useRef(0);
@@ -598,20 +591,21 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       <header ref={hudRef} className={styles.hud}>
         <h1 className={styles.title}>Scripture as Story</h1>
         <div className={styles.actions}>
-          <button
-            type="button"
-            className={styles.button}
-            onClick={() => {
-              // In Themes, Continue first brings the spiral back, then finds your place on it.
-              if (themeView === 'themes') void switchThemes('spiral').then(() => continueReading());
-              else continueReading();
-            }}
-            disabled={mode === 'list' || themeView === 'to-themes' || themeView === 'to-spiral'}
+          {/* One way back into the reading (owner, 2026-11-16): where you left off, or the start. */}
+          <Link
+            href={lastMedallion ? `/read/${lastSection}/` : '/read/gen-01/'}
+            className={`${styles.button} ${styles.continue}`}
+            title={lastMedallion ? `Continue reading: ${lastMedallion.title}` : 'Begin reading'}
             data-hud="continue"
             data-testid="continue"
           >
-            Continue
-          </button>
+            {lastMedallion ? 'Continue' : 'Begin'}
+            {/* Non-breaking spaces: a flex item drops ordinary ones at its edges. */}
+            <span className={styles.continueTitle}>
+              {'\u00a0·\u00a0'}
+              {lastMedallion ? lastMedallion.title : sections['gen-01']?.title}
+            </span>
+          </Link>
           {/* Two ways through the same Bible (PLAN §16): the story's spiral, or its themes. */}
           <div className={styles.switch} role="group" aria-label="View">
             {(['spiral', 'themes'] as const).map((v) => (
@@ -620,7 +614,6 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                 type="button"
                 className={styles.switchButton}
                 aria-pressed={themeView === v || themeView === `to-${v}`}
-                disabled={mode === 'list'}
                 onPointerEnter={() =>
                   v === 'themes' && void import('./useThemes').then((m) => m.loadThemes())
                 }
@@ -662,15 +655,6 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             Aa
           </button>
         </div>
-        {lastMedallion ? (
-          <Link href={`/read/${lastSection}/`} className={styles.resume} data-testid="resume">
-            Resume · {lastMedallion.title}
-          </Link>
-        ) : (
-          <Link href="/read/gen-01/" className={styles.resume} data-testid="resume">
-            Begin · {sections['gen-01']?.title}
-          </Link>
-        )}
         <nav className={styles.links} aria-label="More">
           <Link href="/search/" data-testid="search-link">
             Search

@@ -106,29 +106,41 @@ test.describe('the Vault', () => {
     await page.waitForURL(/\/book\/Exod\/$/);
   });
 
-  test('Continue flies to the reader’s place; resume opens it', async ({ page }) => {
+  test('Continue names the reader’s place and opens it; the spark marks its book', async ({
+    page,
+  }) => {
+    await openVault(page);
+    // Nothing read yet: it offers the beginning.
+    await expect(page.getByTestId('continue')).toContainText('Begin');
     await page.goto('/read/1sam-08/');
     await expect(page.locator('html')).toHaveAttribute('data-reader', '1sam-08');
     await openVault(page);
     await expect(page.getByTestId('vault-scene').locator('a[data-book="1Sam"]')).toHaveClass(
       /current/,
     );
-    const before = await scale(page);
+    const title = await page.evaluate(
+      async () =>
+        (
+          (await (await fetch('/data/manifest.json')).json()) as {
+            sections: { id: string; title: string }[];
+          }
+        ).sections.find((s) => s.id === '1sam-08')!.title,
+    );
+    await expect(page.getByTestId('continue')).toContainText(`Continue · ${title}`);
     await page.getByTestId('continue').click();
-    await expect.poll(() => scale(page)).toBeGreaterThan(before * 1.3);
-    // When the flight lands, 1 Samuel is centred.
-    const vp = page.viewportSize()!;
-    await expect
-      .poll(async () => {
-        const box = (await page
-          .getByTestId('vault-scene')
-          .locator('a[data-book="1Sam"]')
-          .boundingBox())!;
-        return Math.abs(box.x + box.width / 2 - vp.width / 2);
-      })
-      .toBeLessThan(30);
-    await page.getByTestId('resume').click();
     await page.waitForURL(/\/read\/1sam-08\/$/);
+  });
+
+  test('in List mode the view switch changes which list is shown', async ({ page }) => {
+    await openVault(page);
+    await page.getByRole('button', { name: 'List' }).click();
+    const genesis = page.locator('section[aria-label="The path, as a list"] a[data-book="Gen"]');
+    await expect(genesis).toBeVisible();
+    await page.getByTestId('view-themes').click();
+    await expect(page.getByTestId('theme-tree')).toBeVisible({ timeout: 6000 });
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
+    await page.getByTestId('view-spiral').click();
+    await expect(genesis).toBeVisible({ timeout: 6000 });
   });
 
   test('zooming in reveals names (semantic zoom) and stays within limits', async ({ page }) => {
@@ -186,7 +198,7 @@ test.describe('the Vault', () => {
     const errors: string[] = [];
     page.on('pageerror', (e) => errors.push(e.message));
     await openVault(page);
-    await page.getByTestId('continue').click();
+    await expect(page.getByTestId('continue')).toContainText('Begin');
     await page.getByRole('button', { name: 'List' }).click();
     expect(errors).toEqual([]);
     await context.close();

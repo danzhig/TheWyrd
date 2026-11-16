@@ -15,7 +15,7 @@ test.describe('About this path', () => {
     await expect(page.locator('main a[href^="/bridge/"]')).toHaveCount(4);
     await expect(page.getByRole('heading', { name: 'Why it ends with Acts' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'The detour into John 11' })).toBeVisible();
-    await page.getByRole('link', { name: '← All books' }).click();
+    await page.getByRole('link', { name: '← Home' }).click();
     await page.waitForURL(/\/$/);
   });
 
