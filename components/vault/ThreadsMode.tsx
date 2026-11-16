@@ -17,7 +17,7 @@ import { createPortal } from 'react-dom';
 import { TYPE_LABEL, TYPE_ORDER, threadHref } from '@/lib/threads';
 import type { ConnectionType, PublicConnections } from '@/lib/types';
 import type { Point } from './layout';
-import { arcsFor } from './threads';
+import { arcsFor, nearestArc } from './threads';
 import s from './threads.module.css';
 
 let dataPromise: Promise<PublicConnections> | null = null;
@@ -98,6 +98,32 @@ export function ThreadsMode({
     const a = arcs.find((x) => x.key === key);
     if (a) onShowArc?.(a.mid);
   };
+  // A tap near an arc opens it. One path per arc (the node budget), so taps are matched to the
+  // nearest arc in scene coordinates rather than by a wide hit stroke on each.
+  const svgRef = useRef<SVGSVGElement>(null);
+  const arcsRef = useRef(arcs);
+  const openRef = useRef(open);
+  useEffect(() => {
+    arcsRef.current = arcs;
+    openRef.current = open;
+  });
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const svg = svgRef.current;
+      const t = e.target as HTMLElement | null;
+      if (!svg || e.button !== 0 || !t?.closest('[data-testid="vault-view"]')) return;
+      if (t.closest('a, button')) return; // medallions, stars and names keep their own taps
+      const m = svg.getScreenCTM();
+      if (!m) return;
+      const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
+      // Within 14 screen pixels of the line, whatever the zoom.
+      const hit = nearestArc(arcsRef.current, { x: p.x, y: p.y }, 14 / m.a);
+      if (hit) openRef.current(hit.key);
+    };
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
   const close = () => {
     setSelected(null);
     if (opener.current?.isConnected) opener.current.focus();
@@ -130,32 +156,19 @@ export function ThreadsMode({
               height={R * 2}
               viewBox={`${-R} ${-R} ${R * 2} ${R * 2}`}
               style={{ left: -R, top: -R }}
+              ref={svgRef}
               data-testid="thread-arcs"
             >
               {arcs.map((a) => (
-                <g
+                <path
                   key={a.key}
-                  className={`${s.arc} ${selected === a.key ? s.selected : ''}`}
+                  d={a.d}
+                  pathLength={1}
+                  className={`${s.line} ${selected === a.key ? s.selected : ''}`}
+                  strokeWidth={selected === a.key ? a.width * 1.6 : a.width}
                   data-arc={a.key}
                   data-count={a.connections.length}
-                >
-                  <path
-                    d={a.d}
-                    pathLength={1}
-                    className={s.line}
-                    strokeWidth={selected === a.key ? a.width * 1.6 : a.width}
-                  />
-                  {/* A wide invisible stroke, so a thin arc is easy to tap. */}
-                  <path
-                    d={a.d}
-                    className={s.hit}
-                    data-arc-hit={a.key}
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      open(a.key);
-                    }}
-                  />
-                </g>
+                />
               ))}
             </svg>,
             arcHost,

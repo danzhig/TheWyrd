@@ -174,7 +174,10 @@ docs.set('seeds', [
 ]);
 const byBook = new Map<string, Connection[]>();
 for (const c of connections.filter((x) => !/^s\d/.test(x.id))) {
-  const b = c.from.split('.')[0]!;
+  // The book it was proposed for: the end whose book the id's prefix names (`luk…` → Luke), else
+  // the first end's book.
+  const ends = [c.from, c.to].map((r) => r.split('.')[0]!);
+  const b = ends.find((x) => x.toLowerCase().startsWith(c.id.slice(0, 3))) ?? ends[0]!;
   byBook.set(b, [...(byBook.get(b) ?? []), c]);
 }
 for (const [book, list] of byBook)

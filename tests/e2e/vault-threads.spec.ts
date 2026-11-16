@@ -57,10 +57,28 @@ test.describe('Threads on the Vault', () => {
     page,
   }) => {
     await threadsOn(page);
-    const [key, n] = busiest!;
-    // Tap the arc where nothing covers it: its middle.
-    const hit = page.locator(`[data-arc-hit="${key}"]`);
-    await hit.dispatchEvent('click');
+    // Tap an arc where nothing covers it: the first whose middle is open sky. (Arcs are one path
+    // each; a tap is matched to the nearest arc.)
+    const target = await page.evaluate(() => {
+      for (const path of document.querySelectorAll<SVGPathElement>('[data-arc]')) {
+        const m = path.getScreenCTM()!;
+        const pt = path.getPointAtLength(path.getTotalLength() / 2).matrixTransform(m);
+        const el = document.elementFromPoint(pt.x, pt.y);
+        if (
+          el &&
+          !el.closest('a, button') &&
+          pt.x > 0 &&
+          pt.y > 120 &&
+          pt.x < innerWidth &&
+          pt.y < innerHeight - 140
+        )
+          return { key: path.dataset.arc!, n: Number(path.dataset.count), x: pt.x, y: pt.y };
+      }
+      return null;
+    });
+    expect(target).not.toBeNull();
+    const { key, n } = target!;
+    await page.mouse.click(target!.x, target!.y);
     const panel = page.getByTestId('arc-panel');
     await expect(panel).toBeVisible();
     await expect(panel.locator('[data-panel-connection]')).toHaveCount(n);

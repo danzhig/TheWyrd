@@ -6347,6 +6347,2972 @@
         "date": "2026-11-16",
         "fingerprint": "81ed75ea49fa25ee"
       }
+    },
+    {
+      "id": "sam01",
+      "from": "1Sam.21.1-1Sam.21.6",
+      "to": "Luke.6.3-Luke.6.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "David and the consecrated bread",
+      "explanation": "Fleeing Saul, David asks the priest at Nob for bread, and the priest gives him the holy bread from before the LORD. When his disciples are criticised for plucking grain on the Sabbath, Jesus asks whether they have not read what David did when he was hungry; the Greek for the bread of the Presence is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.21.6",
+          "wordIndex": 10,
+          "form": "προθέσεως",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.6.4",
+          "wordIndex": 12,
+          "form": "προθέσεως",
+          "row": "TAGNT Mat-Jhn:58849"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L253237"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L60458"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.21.6",
+          "words": ["priest", "bread"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.6.3",
+          "words": ["David", "hungry"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.6.4",
+          "words": ["bread", "priests"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e05a6c49e5df22c6"
+      }
+    },
+    {
+      "id": "sam02",
+      "from": "1Sam.10.1",
+      "to": "Acts.13.21",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Saul the son of Kish",
+      "explanation": "Samuel anoints Saul with oil as prince over the LORD's inheritance. Retelling Israel's story at Pisidian Antioch, Paul says the people asked for a king and God gave them Saul the son of Kish, of the tribe of Benjamin.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L281328"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L58000"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.10.1",
+          "words": ["Samuel", "anointed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.21",
+          "words": ["king", "Saul", "Kish", "Benjamin"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0d61b70db17e535c"
+      }
+    },
+    {
+      "id": "sam03",
+      "from": "1Sam.13.14",
+      "to": "Acts.13.22",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A man after my heart",
+      "explanation": "When Saul disobeys, Samuel tells him that the LORD has sought a man after his own heart to lead his people. Paul, in the same sermon, says God raised up David as king and testified that he had found in David a man after his heart (the Greek for heart below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.13.14",
+          "wordIndex": 15,
+          "form": "καρδίαν",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.13.22",
+          "wordIndex": 22,
+          "form": "καρδίαν",
+          "row": "TAGNT Act-Rev:14471"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L58675"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.13.14",
+          "words": ["heart", "prince"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.22",
+          "words": ["David", "heart"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "dfa6fa7945db307a"
+      }
+    },
+    {
+      "id": "sam04",
+      "from": "1Sam.15.22",
+      "to": "Mark.12.33",
+      "type": "echo",
+      "strength": 2,
+      "label": "Better than burnt offerings",
+      "explanation": "Samuel tells Saul that the LORD delights more in obedience than in burnt offerings and sacrifices. The scribe who questions Jesus says that loving God and neighbour is more than all burnt offerings and sacrifices, with the Septuagint's rare word for whole burnt offerings (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.15.22",
+          "wordIndex": 8,
+          "form": "ὁλοκαυτώματα",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mrk.12.33",
+          "wordIndex": 35,
+          "form": "ὁλοκαυτωμάτων",
+          "row": "TAGNT Mat-Jhn:46259"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.15.22",
+          "wordIndex": 10,
+          "form": "θυσίας",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mrk.12.33",
+          "wordIndex": 38,
+          "form": "θυσιῶν.",
+          "row": "TAGNT Mat-Jhn:46262"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L59187"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248709"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.15.22",
+          "words": ["burnt", "sacrifices", "obey"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Mark.12.33",
+          "words": ["burnt", "sacrifices", "neighbor"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e319837c542c5c9b"
+      }
+    },
+    {
+      "id": "sam05",
+      "from": "1Sam.16.7",
+      "to": "John.7.24",
+      "type": "echo",
+      "strength": 2,
+      "label": "Not by appearance",
+      "explanation": "When Samuel looks at Jesse's eldest son, the LORD tells him that people look at the outward appearance but the LORD looks at the heart. Jesus tells the crowd at the Feast of Booths not to judge by appearance but with right judgement; his word for appearance is the Septuagint's in 1 Samuel 16:7 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "1Kgdms.16.7",
+          "wordIndex": 10,
+          "form": "ὄψιν",
+          "row": "LXX 009-1Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.7.24",
+          "wordIndex": 4,
+          "form": "ὄψιν,",
+          "row": "TAGNT Mat-Jhn:94446"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L59405"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.16.7",
+          "words": ["appearance", "heart"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.7.24",
+          "words": ["judge", "appearance"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ef3fb930db5be855"
+      }
+    },
+    {
+      "id": "ssa01",
+      "from": "2Sam.15.23",
+      "to": "John.18.1",
+      "type": "echo",
+      "strength": 2,
+      "label": "Across the brook Kidron",
+      "explanation": "Fleeing from Absalom, David crosses the brook Kidron toward the wilderness while all the country weeps. John says that after his last discourse Jesus went out with his disciples across the brook Kidron to a garden, with the Septuagint's word for a winter brook, found nowhere else in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.15.23",
+          "wordIndex": 15,
+          "form": "χειμάρρῳ",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.18.1",
+          "wordIndex": 12,
+          "form": "χειμάρρου",
+          "row": "TAGNT Mat-Jhn:107429"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L273272"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L64971"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.15.23",
+          "words": ["brook", "Kidron", "wept"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.18.1",
+          "words": ["brook", "Kidron", "garden"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "02fa524fa9b8c20e"
+      }
+    },
+    {
+      "id": "ssa02",
+      "from": "2Sam.17.23",
+      "to": "Matt.27.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "He went away and hanged himself",
+      "explanation": "When his counsel is not followed, Ahithophel, who had betrayed David to join Absalom, goes home and hangs himself. Matthew says Judas threw down the silver and went away and hanged himself, using the Septuagint's verb from Ahithophel's death, found nowhere else in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.17.23",
+          "wordIndex": 33,
+          "form": "ἀπήγξατο",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.27.5",
+          "wordIndex": 11,
+          "form": "ἀπήγξατο.¶",
+          "row": "TAGNT Mat-Jhn:29452"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L65464"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243291"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.17.23",
+          "words": ["Ahithophel", "hanged"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.27.5",
+          "words": ["silver", "hanged"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "053a21cb788822e0"
+      }
+    },
+    {
+      "id": "ssa03",
+      "from": "2Sam.22.50",
+      "to": "Rom.15.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Praise among the nations",
+      "explanation": "David's song of deliverance ends with his vow to give thanks to the LORD among the nations and sing praises to his name. Paul quotes it as written to show that the Gentiles too would glorify God for his mercy, in the Septuagint's words (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.22.50",
+          "wordIndex": 14,
+          "form": "ψαλῶ",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.15.9",
+          "wordIndex": 21,
+          "form": "ψαλῶ.",
+          "row": "TAGNT Act-Rev:42288"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.22.50",
+          "wordIndex": 3,
+          "form": "ἐξομολογήσομαί",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.15.9",
+          "wordIndex": 13,
+          "form": "ἐξομολογήσομαί",
+          "row": "TAGNT Act-Rev:42280"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L295032"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L66857"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.22.50",
+          "words": ["nations", "sing"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.15.9",
+          "words": ["Gentiles", "written", "sing"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a0303bd0bc7503a5"
+      }
+    },
+    {
+      "id": "ssa04",
+      "from": "2Sam.7.14",
+      "to": "Heb.1.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I will be his father",
+      "explanation": "In the promise to David, God says of David's offspring that he will be his father and the heir will be his son. Hebrews quotes the words, with a line from Psalm 2, to show that God speaks of the Son as he never spoke of any angel.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.7.14",
+          "wordIndex": 10,
+          "form": "υἱόν",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.1.5",
+          "wordIndex": 7,
+          "form": "υἱός",
+          "row": "TAGNT Act-Rev:87732"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.7.14",
+          "wordIndex": 5,
+          "form": "πατέρα",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.1.5",
+          "wordIndex": 21,
+          "form": "πατέρα,",
+          "row": "TAGNT Act-Rev:87746"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324300"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63471"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.7.14",
+          "words": ["father", "son"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.1.5",
+          "words": ["angels", "Father", "Son"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c9555da7b74a0c13"
+      }
+    },
+    {
+      "id": "ssa05",
+      "from": "2Sam.7.12-2Sam.7.13",
+      "to": "Acts.2.30",
+      "type": "allusion",
+      "strength": 3,
+      "label": "One of his line on his throne",
+      "explanation": "God promises to raise up David's offspring after him and establish the throne of his kingdom forever. At Pentecost Peter says David, as a prophet, knew God had sworn to set one of his descendants on his throne, and applies it to the risen Christ; the word for throne is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "2Kgdms.7.13",
+          "wordIndex": 11,
+          "form": "θρόνον",
+          "row": "LXX 010-2Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.2.30",
+          "wordIndex": 26,
+          "form": "θρόνον",
+          "row": "TAGNT Act-Rev:1835"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63428"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.7.12",
+          "words": ["offspring", "kingdom"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.7.13",
+          "words": ["throne"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.30",
+          "words": ["prophet", "throne", "Christ"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b9c2a8d0650808d0"
+      }
+    },
+    {
+      "id": "kgs01",
+      "from": "1Kgs.17.1-1Kgs.18.45",
+      "to": "Jas.5.17-Jas.5.18",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Elijah prayed and it did not rain",
+      "explanation": "Elijah tells Ahab there will be no dew or rain except at his word, and after the contest on Carmel the sky grows black and a great rain falls. James names Elijah as a man like us who prayed that it would not rain, and prayed again for rain; the word for rain is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.17.1",
+          "wordIndex": 34,
+          "form": "ὑετός",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jas.5.18",
+          "wordIndex": 7,
+          "form": "ὑετὸν",
+          "row": "TAGNT Act-Rev:99038"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L331829"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L72372"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L331832"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.17.1",
+          "words": ["Elijah", "rain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.18.45",
+          "words": ["rain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jas.5.17",
+          "words": ["Elijah", "prayed", "rain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jas.5.18",
+          "words": ["prayed", "rain"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a77b4efc367a0033"
+      }
+    },
+    {
+      "id": "kgs02",
+      "from": "1Kgs.19.10-1Kgs.19.18",
+      "to": "Rom.11.2-Rom.11.4",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Seven thousand who did not bow to Baal",
+      "explanation": "At Horeb Elijah complains that Israel has killed the prophets, thrown down the altars, and that he alone is left, and God answers that he has kept seven thousand who have not bowed to Baal. Paul quotes the exchange as what Scripture says about Elijah, to show that a remnant remains; his verb for being left is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.19.10",
+          "wordIndex": 27,
+          "form": "ὑπολέλειμμαι",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.11.3",
+          "wordIndex": 12,
+          "form": "ὑπελείφθην",
+          "row": "TAGNT Act-Rev:39482"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.19.18",
+          "wordIndex": 15,
+          "form": "Βάαλ",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.11.4",
+          "wordIndex": 16,
+          "form": "Βάαλ.",
+          "row": "TAGNT Act-Rev:39515"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.19.10",
+          "wordIndex": 18,
+          "form": "κατέσκαψαν",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.11.3",
+          "wordIndex": 10,
+          "form": "κατέσκαψαν,",
+          "row": "TAGNT Act-Rev:39480"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.19.10",
+          "wordIndex": 16,
+          "form": "θυσιαστήριά",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.11.3",
+          "wordIndex": 8,
+          "form": "θυσιαστήριά",
+          "row": "TAGNT Act-Rev:39478"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293274"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L73239"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293280"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.19.10",
+          "words": ["prophets", "altars"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.19.18",
+          "words": ["seven", "thousand", "Baal"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.11.2",
+          "words": ["Elijah", "Scripture"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.11.4",
+          "words": ["seven", "thousand", "Baal"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5d438cbf7da8fccf"
+      }
+    },
+    {
+      "id": "kgs03",
+      "from": "1Kgs.10.1-1Kgs.10.13",
+      "to": "Luke.11.31",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The Queen of the South",
+      "explanation": "The queen of Sheba hears of Solomon's fame and comes to test him with hard questions, and is overwhelmed by his wisdom. Jesus says that the Queen of the South will rise in judgement against his generation: she travelled from the far ends of the world for Solomon's wisdom, and something greater than Solomon is here.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.10.1",
+          "wordIndex": 2,
+          "form": "βασίλισσα",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.11.31",
+          "wordIndex": 1,
+          "form": "βασίλισσα",
+          "row": "TAGNT Mat-Jhn:68024"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70356"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256624"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70408"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.10.1",
+          "words": ["queen", "Solomon"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.11.31",
+          "words": ["Queen", "wisdom", "Solomon"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "d509934d14b48183"
+      }
+    },
+    {
+      "id": "kgs04",
+      "from": "1Kgs.6.1-1Kgs.8.27",
+      "to": "Acts.7.47-Acts.7.49",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Solomon built him a house",
+      "explanation": "Solomon builds the temple, and at its dedication he asks whether God will really dwell on earth, since heaven cannot contain him. Stephen names Solomon as the one who built God a house, then says the Most High does not dwell in temples made with hands.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278297"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L69523"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278282"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.8.27",
+          "words": ["heaven", "house"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.47",
+          "words": ["Solomon", "house"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.48",
+          "words": ["hands"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0b3fbc6abfba8d60"
+      }
+    },
+    {
+      "id": "kgs05",
+      "from": "1Kgs.17.4-1Kgs.17.6",
+      "to": "Luke.12.24",
+      "type": "echo",
+      "strength": 1,
+      "label": "God feeds the ravens",
+      "explanation": "During the drought God sends Elijah to a brook where the ravens bring him bread and meat morning and evening. Jesus tells his disciples to consider the ravens, which neither sow nor reap, yet God feeds them; his word for the ravens, found nowhere else in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.17.4",
+          "wordIndex": 10,
+          "form": "κόραξιν",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "3Kgdms.17.6",
+          "wordIndex": 3,
+          "form": "κόρακες",
+          "row": "LXX 011-3Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.12.24",
+          "wordIndex": 3,
+          "form": "κόρακας",
+          "row": "TAGNT Mat-Jhn:69502"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Kgs.17.6",
+          "words": ["ravens", "bread"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.12.24",
+          "words": ["ravens", "feeds"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b17c5be23a3c93e9"
+      }
+    },
+    {
+      "id": "kgs06",
+      "from": "2Kgs.4.42-2Kgs.4.44",
+      "to": "John.6.9-John.6.13",
+      "type": "echo",
+      "strength": 2,
+      "label": "Barley loaves",
+      "explanation": "A man brings Elisha twenty loaves of barley, and a hundred men eat with some left over. In John's account of the feeding of the five thousand the boy's five loaves are barley loaves, and the leftover pieces fill twelve baskets; the adjective, found only here in the New Testament, is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.4.42",
+          "wordIndex": 16,
+          "form": "κριθίνους",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.6.9",
+          "wordIndex": 9,
+          "form": "κριθίνους",
+          "row": "TAGNT Mat-Jhn:91841"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.6.13",
+          "wordIndex": 13,
+          "form": "κριθίνων",
+          "row": "TAGNT Mat-Jhn:91976"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.4.42",
+          "wordIndex": 15,
+          "form": "ἄρτους",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.6.9",
+          "wordIndex": 8,
+          "form": "ἄρτους",
+          "row": "TAGNT Mat-Jhn:91840"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Jhn.6.11",
+          "wordIndex": 4,
+          "form": "ἄρτους",
+          "row": "TAGNT Mat-Jhn:91907"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L265890"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L75422"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L75408"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.4.42",
+          "words": ["barley", "loaves"]
+        },
+        {
+          "kind": "verse",
+          "ref": "John.6.9",
+          "words": ["barley", "loaves"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "088a444d2e7391b8"
+      }
+    },
+    {
+      "id": "kgs07",
+      "from": "2Kgs.17.15",
+      "to": "Rom.1.21",
+      "type": "echo",
+      "strength": 1,
+      "label": "They became vain",
+      "explanation": "Kings explains the fall of the northern kingdom: the people rejected God's covenant, followed vanity and became vain. Paul says of those who knew God but did not honour him that they became vain in their reasoning, with the Septuagint's verb, found nowhere else in the New Testament (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.17.15",
+          "wordIndex": 14,
+          "form": "ἐματαιώθησαν",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.1.21",
+          "wordIndex": 12,
+          "form": "ἐματαιώθησαν",
+          "row": "TAGNT Act-Rev:32081"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L288540"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L78358"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.17.15",
+          "words": ["covenant", "vain"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.1.21",
+          "words": ["vain", "heart"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0b3237b46fd15cfe"
+      }
+    },
+    {
+      "id": "kgs08",
+      "from": "2Kgs.1.8",
+      "to": "Matt.3.4",
+      "type": "echo",
+      "strength": 2,
+      "label": "A leather belt around his waist",
+      "explanation": "The king's messengers describe the man who met them as hairy and wearing a leather belt around his waist, and the king knows it is Elijah. Matthew describes John the Baptist's clothing of camel's hair with a leather belt around his waist, in the Septuagint's words (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.1.8",
+          "wordIndex": 9,
+          "form": "δερματίνην",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.3.4",
+          "wordIndex": 14,
+          "form": "δερματίνην",
+          "row": "TAGNT Mat-Jhn:1694"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.1.8",
+          "wordIndex": 8,
+          "form": "ζώνην",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.3.4",
+          "wordIndex": 13,
+          "form": "ζώνην",
+          "row": "TAGNT Mat-Jhn:1693"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "4Kgdms.1.8",
+          "wordIndex": 12,
+          "form": "ὀσφὺν",
+          "row": "LXX 012-4Kgdms"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.3.4",
+          "wordIndex": 17,
+          "form": "ὀσφὺν",
+          "row": "TAGNT Mat-Jhn:1697"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230954"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74475"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.1.8",
+          "words": ["leather", "belt", "Elijah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.3.4",
+          "words": ["John", "leather", "belt"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3aff931c66e26dc"
+      }
+    },
+    {
+      "id": "jer01",
+      "from": "Jer.31.31-Jer.31.34",
+      "to": "Heb.8.8-Heb.8.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A new covenant",
+      "explanation": "Jeremiah announces days when the LORD will make a new covenant with Israel and Judah, writing his law on their hearts. Hebrews quotes the whole oracle and argues from it that the first covenant has been made old.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326646"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185591"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326573"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.31.31",
+          "words": ["new", "covenant", "Judah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.8.8",
+          "words": ["new", "covenant", "Judah"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "8556fb4f25aec653"
+      }
+    },
+    {
+      "id": "jer02",
+      "from": "Jer.31.15",
+      "to": "Matt.2.17-Matt.2.18",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Rachel weeping for her children",
+      "explanation": "Jeremiah hears a voice in Ramah, Rachel weeping for her children and refusing to be comforted. Matthew quotes it as spoken by Jeremiah the prophet and fulfilled when Herod killed the children of Bethlehem.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230801"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.31.15",
+          "words": ["Ramah", "Rachel", "weeping"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.2.17",
+          "words": ["Jeremiah", "fulfilled"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.2.18",
+          "words": ["Ramah", "Rachel"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0fdc0c1ae850ee3c"
+      }
+    },
+    {
+      "id": "jer03",
+      "from": "Jer.7.11",
+      "to": "Luke.19.46",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A den of robbers",
+      "explanation": "Standing in the gate of the temple, Jeremiah asks whether the house called by the LORD's name has become a den of robbers. Clearing the temple, Jesus says that it is written that his house is a house of prayer but they have made it a den of robbers, in the Septuagint's words (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jer.7.11",
+          "wordIndex": 2,
+          "form": "σπήλαιον",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.19.46",
+          "wordIndex": 15,
+          "form": "σπήλαιον",
+          "row": "TAGNT Mat-Jhn:78116"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Jer.7.11",
+          "wordIndex": 3,
+          "form": "λῃστῶν",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.19.46",
+          "wordIndex": 16,
+          "form": "λῃστῶν.",
+          "row": "TAGNT Mat-Jhn:78117"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L260418"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.7.11",
+          "words": ["house", "den", "robbers"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.19.46",
+          "words": ["written", "den", "robbers"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "972468e44e90b9f0"
+      }
+    },
+    {
+      "id": "jer04",
+      "from": "Jer.31.31",
+      "to": "Luke.22.20",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The new covenant at the supper",
+      "explanation": "Jeremiah promises a new covenant with the house of Israel and the house of Judah. Over the cup after supper Jesus calls it the new covenant in his blood, the phrase Jeremiah 31:31 introduced.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185549"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261464"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.31.31",
+          "words": ["new", "covenant"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.20",
+          "words": ["new", "covenant", "blood"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9947b7991561a371"
+      }
+    },
+    {
+      "id": "jer05",
+      "from": "Jer.9.23-Jer.9.24",
+      "to": "1Cor.1.31",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Let him who boasts boast in the Lord",
+      "explanation": "Jeremiah tells the wise, the mighty and the rich not to glory in their wisdom, strength or riches, but in knowing the LORD. Paul quotes it in short form as written, at the end of his argument that God chose the foolish things of the world; the verb is the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jer.9.23",
+          "wordIndex": 5,
+          "form": "καυχάσθω",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "1Co.1.31",
+          "wordIndex": 5,
+          "form": "καυχώμενος",
+          "row": "TAGNT Act-Rev:44585"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296318"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L178086"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.9.24",
+          "words": ["glories", "knows"]
+        },
+        {
+          "kind": "verse",
+          "ref": "1Cor.1.31",
+          "words": ["written", "boasts"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "ba2709747bbc8672"
+      }
+    },
+    {
+      "id": "jer06",
+      "from": "Jer.6.16",
+      "to": "Matt.11.29",
+      "type": "echo",
+      "strength": 2,
+      "label": "Rest for your souls",
+      "explanation": "Jeremiah tells the people to ask for the old paths and walk in the good way, and they will find rest for their souls. Jesus invites the weary to take his yoke and learn from him, promising rest for their souls in the same words.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jer.6.16",
+          "wordIndex": 31,
+          "form": "ψυχαῖς",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.11.29",
+          "wordIndex": 22,
+          "form": "ψυχαῖς",
+          "row": "TAGNT Mat-Jhn:10433"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235550"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.6.16",
+          "words": ["rest", "souls"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.11.29",
+          "words": ["yoke", "rest", "souls"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "1758c4b15fe04916"
+      }
+    },
+    {
+      "id": "jer07",
+      "from": "Jer.1.5",
+      "to": "Gal.1.15",
+      "type": "echo",
+      "strength": 2,
+      "label": "Set apart from the womb",
+      "explanation": "God tells Jeremiah that before he was formed in the womb he knew him and appointed him a prophet to the nations. Paul describes his own call in similar terms, as set apart from his mother's womb and called by grace to preach among the Gentiles.",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jer.1.5",
+          "wordIndex": 7,
+          "form": "κοιλίᾳ",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Gal.1.15",
+          "wordIndex": 10,
+          "form": "κοιλίας",
+          "row": "TAGNT Act-Rev:63563"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L174290"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L305983"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.1.5",
+          "words": ["womb", "nations"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.1.15",
+          "words": ["womb", "called"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b859ad9338ee50e1"
+      }
+    },
+    {
+      "id": "jer08",
+      "from": "Jer.18.1-Jer.18.6",
+      "to": "Rom.9.20-Rom.9.21",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The potter and the clay",
+      "explanation": "At the potter's house Jeremiah watches a vessel remade, and the LORD says Israel is in his hand as clay in the potter's hand. Paul asks whether the potter has no right over the clay to make one vessel for honour and another for dishonour, with the Septuagint's words for potter and clay (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jer.18.2",
+          "wordIndex": 7,
+          "form": "κεραμέως",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.21",
+          "wordIndex": 6,
+          "form": "κεραμεὺς",
+          "row": "TAGNT Act-Rev:38443"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Jer.18.6",
+          "wordIndex": 16,
+          "form": "πηλὸς",
+          "row": "LXX 045-Jer"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rom.9.21",
+          "wordIndex": 8,
+          "form": "πηλοῦ",
+          "row": "TAGNT Act-Rev:38445"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L180786"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L180788"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292706"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.18.6",
+          "words": ["potter", "clay"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rom.9.21",
+          "words": ["potter", "clay"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "061147dba3957ab2"
+      }
+    },
+    {
+      "id": "dan01",
+      "from": "Dan.9.27",
+      "to": "Matt.24.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The abomination of desolation",
+      "explanation": "Daniel's vision of the seventy weeks speaks of one who will make the sacrifice cease and of abominations that make desolate. Jesus warns of the abomination of desolation spoken of through Daniel the prophet, standing in the holy place; the two Greek nouns are those of the Septuagint and Theodotion's Daniel (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.9.27",
+          "wordIndex": 24,
+          "form": "ἐρημώσεων",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mat.24.15",
+          "wordIndex": 7,
+          "form": "ἐρημώσεως",
+          "row": "TAGNT Mat-Jhn:24797"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241293"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L211936"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.9.27",
+          "words": ["sacrifice", "abominations", "desolate"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.24.15",
+          "words": ["abomination", "desolation", "Daniel"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "24e51ccd28d0829e"
+      }
+    },
+    {
+      "id": "dan02",
+      "from": "Dan.7.9-Dan.7.13",
+      "to": "Rev.1.13-Rev.1.14",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Hair white as wool, like snow",
+      "explanation": "In Daniel's vision the Ancient of Days has clothing white as snow and hair like pure wool, and one like a son of man comes with the clouds. John sees one like a son of man whose head and hair are white as wool, like snow, joining the two figures of Daniel 7; the words for wool and snow are the Septuagint's (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Dan.7.9",
+          "wordIndex": 21,
+          "form": "ἔριον",
+          "row": "LXX 052-Dan"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.1.14",
+          "wordIndex": 10,
+          "form": "ἔριον",
+          "row": "TAGNT Act-Rev:109606"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.7.9",
+          "wordIndex": 15,
+          "form": "χιὼν",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.1.14",
+          "wordIndex": 13,
+          "form": "χιὼν",
+          "row": "TAGNT Act-Rev:109609"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L210788"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L210849"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338599"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.9",
+          "words": ["snow", "wool"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.13",
+          "words": ["son", "man"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rev.1.13",
+          "words": ["son", "man"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rev.1.14",
+          "words": ["wool", "snow"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e3153b485b0f8bb1"
+      }
+    },
+    {
+      "id": "dan03",
+      "from": "Dan.10.13-Dan.12.1",
+      "to": "Rev.12.7",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Michael",
+      "explanation": "In Daniel's last visions Michael is one of the chief princes, who stands up for Daniel's people in a time of trouble. In Revelation Michael and his angels make war on the dragon; the New Testament names him only here and in Jude (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Dan.10.13",
+          "wordIndex": 15,
+          "form": "Μιχαὴλ",
+          "row": "LXX 052-Dan"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Rev.12.7",
+          "wordIndex": 8,
+          "form": "Μιχαὴλ",
+          "row": "TAGNT Act-Rev:116989"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L341605"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L212123"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L341611"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.12.1",
+          "words": ["Michael", "prince"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Rev.12.7",
+          "words": ["Michael", "angels", "dragon"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "df04b2e4d57b98f0"
+      }
+    },
+    {
+      "id": "dan04",
+      "from": "Dan.6.16-Dan.6.22",
+      "to": "Heb.11.33",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Stopped the mouths of lions",
+      "explanation": "Daniel is cast into the den of lions, and in the morning he tells the king that God sent his angel and shut the lions' mouths. Hebrews counts among the deeds of faith that some stopped the mouths of lions; the word for lions is the one Theodotion's Daniel uses (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.6.16",
+          "wordIndex": 15,
+          "form": "λεόντων",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.33",
+          "wordIndex": 12,
+          "form": "λεόντων,",
+          "row": "TAGNT Act-Rev:94426"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.6.17",
+          "wordIndex": 8,
+          "form": "στόμα",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Heb.11.33",
+          "wordIndex": 11,
+          "form": "στόματα",
+          "row": "TAGNT Act-Rev:94425"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L210558"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328376"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.6.16",
+          "words": ["lions"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.6.22",
+          "words": ["angel", "lions", "mouths"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.33",
+          "words": ["faith", "mouths", "lions"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "609e0e5fbb4bd7eb"
+      }
+    },
+    {
+      "id": "dan05",
+      "from": "Dan.3.19-Dan.3.27",
+      "to": "Heb.11.34",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Quenched the power of fire",
+      "explanation": "Shadrach, Meshach and Abednego refuse to worship the golden image and are thrown bound into the burning fiery furnace, and come out alive. Hebrews counts among the deeds of faith that some quenched the power of fire.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L209428"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328393"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.3.20",
+          "words": ["furnace"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.3.23",
+          "words": ["Shadrach", "furnace"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Heb.11.34",
+          "words": ["fire"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6b4e4dbbc926c657"
+      }
+    },
+    {
+      "id": "dan06",
+      "from": "Dan.9.21",
+      "to": "Luke.1.19",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Gabriel",
+      "explanation": "While Daniel is praying at the time of the evening offering, the man Gabriel comes to him to give him understanding. In the temple at the hour of incense the angel tells Zechariah that he is Gabriel, who stands before God; in the New Testament only Luke names him, spelled as in the Septuagint (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.9.21",
+          "wordIndex": 11,
+          "form": "Γαβριὴλ",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.19",
+          "wordIndex": 9,
+          "form": "Γαβριὴλ",
+          "row": "TAGNT Mat-Jhn:52081"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L211805"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250750"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.9.21",
+          "words": ["Gabriel", "prayer", "offering"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.19",
+          "words": ["Gabriel"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0f5d4d92ab44c23f"
+      }
+    },
+    {
+      "id": "dan07",
+      "from": "Dan.7.14",
+      "to": "Luke.1.33",
+      "type": "echo",
+      "strength": 2,
+      "label": "A kingdom without end",
+      "explanation": "The one like a son of man is given a kingdom that will not pass away or be destroyed. Gabriel tells Mary that her son will reign forever and his kingdom will have no end, with the Septuagint's word for the kingdom (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "DanTh.7.14",
+          "wordIndex": 11,
+          "form": "βασιλεία",
+          "row": "LXX 053-DanTh"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.1.33",
+          "wordIndex": 12,
+          "form": "βασιλείας",
+          "row": "TAGNT Mat-Jhn:52494"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L210888"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.7.14",
+          "words": ["kingdom", "everlasting"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.33",
+          "words": ["reign", "Kingdom"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "58a826902472e8a5"
+      }
+    },
+    {
+      "id": "est01",
+      "from": "Esth.5.3",
+      "to": "Mark.6.22-Mark.6.23",
+      "type": "echo",
+      "strength": 2,
+      "label": "Up to half my kingdom",
+      "explanation": "When Esther comes before the king unbidden, he asks her request and promises it even to half his kingdom. When Herodias' daughter dances, Herod swears to give her whatever she asks, up to half his kingdom; the words are the Septuagint's in Esther 5:3 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Esth.5.3",
+          "wordIndex": 16,
+          "form": "ἡμίσους",
+          "row": "LXX 017-Esth"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mrk.6.23",
+          "wordIndex": 13,
+          "form": "ἡμίσους",
+          "row": "TAGNT Mat-Jhn:37995"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Esth.5.3",
+          "wordIndex": 18,
+          "form": "βασιλείας",
+          "row": "LXX 017-Esth"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Mrk.6.23",
+          "wordIndex": 15,
+          "form": "βασιλείας",
+          "row": "TAGNT Mat-Jhn:37997"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L98697"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246033"
+        },
+        {
+          "kind": "verse",
+          "ref": "Esth.5.3",
+          "words": ["request", "half", "kingdom"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Mark.6.23",
+          "words": ["half", "kingdom"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "e11afad229cf65a1"
+      }
+    },
+    {
+      "id": "neh01",
+      "from": "Neh.9.6",
+      "to": "Acts.4.24",
+      "type": "echo",
+      "strength": 2,
+      "label": "Maker of heaven, earth and sea",
+      "explanation": "The great prayer of Nehemiah 9 opens by confessing the LORD as maker of heaven, the earth, the seas and all that is in them. After Peter and John are released, the believers pray together to God as creator of the sky, the land and the sea and everything they hold, before asking for boldness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276702"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.9.6",
+          "words": ["heaven", "earth", "seas"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.4.24",
+          "words": ["sky", "earth", "sea"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5a9fe1612e6ad6c0"
+      }
+    },
+    {
+      "id": "jon01",
+      "from": "Jonah.1.17",
+      "to": "Matt.12.40",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Three days in the belly of the fish",
+      "explanation": "The LORD prepares a great fish to swallow Jonah, and he is in its belly three days and three nights. Jesus makes Jonah's three days and nights inside the fish the sign of the Son of Man's own three days and nights in the heart of the earth.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219962"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235984"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.17",
+          "words": ["fish", "belly", "three"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Matt.12.40",
+          "words": ["Jonah", "belly", "three"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5769e10b1018e1b5"
+      }
+    },
+    {
+      "id": "jon02",
+      "from": "Jonah.1.4-Jonah.1.5",
+      "to": "Acts.27.18-Acts.27.19",
+      "type": "echo",
+      "strength": 2,
+      "label": "Throwing the cargo overboard",
+      "explanation": "When the LORD sends a great storm, the sailors on Jonah's ship throw the cargo into the sea to lighten the ship. On Paul's voyage to Rome the crew, labouring in the storm, begin to throw things overboard, and Luke's word for this, found nowhere else in the New Testament, is the Septuagint's in Jonah 1:5 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jonah.1.5",
+          "wordIndex": 13,
+          "form": "ἐκβολὴν",
+          "row": "LXX 037-Jonah"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Act.27.18",
+          "wordIndex": 7,
+          "form": "ἐκβολὴν",
+          "row": "TAGNT Act-Rev:29698"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219834"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L287488"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L287494"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.4",
+          "words": ["storm", "ship"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.5",
+          "words": ["cargo", "lighten"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.27.18",
+          "words": ["storm", "overboard"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a17319f87adb4d29"
+      }
+    },
+    {
+      "id": "jon03",
+      "from": "Jonah.3.5-Jonah.3.8",
+      "to": "Luke.10.13",
+      "type": "echo",
+      "strength": 1,
+      "label": "Repentance in sackcloth and ashes",
+      "explanation": "When Jonah preaches, the people of Nineveh fast and put on sackcloth, and their king sits in ashes. Jesus says that if his mighty works had been done in Tyre and Sidon they would long ago have repented in sackcloth and ashes; the two words are the Septuagint's in Jonah 3 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jonah.3.6",
+          "wordIndex": 29,
+          "form": "σποδοῦ",
+          "row": "LXX 037-Jonah"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.10.13",
+          "wordIndex": 25,
+          "form": "σποδῷ",
+          "row": "TAGNT Mat-Jhn:66111"
+        },
+        {
+          "dataset": "LXX",
+          "ref": "Jonah.3.5",
+          "wordIndex": 13,
+          "form": "σάκκους",
+          "row": "LXX 037-Jonah"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.10.13",
+          "wordIndex": 23,
+          "form": "σάκκῳ",
+          "row": "TAGNT Mat-Jhn:66109"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220146"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.3.5",
+          "words": ["Nineveh", "sackcloth"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.3.6",
+          "words": ["sackcloth", "ashes"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.10.13",
+          "words": ["repented", "sackcloth", "ashes"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9712eecb6319be95"
+      }
+    },
+    {
+      "id": "jon04",
+      "from": "Jonah.1.4-Jonah.1.6",
+      "to": "Luke.8.22-Luke.8.25",
+      "type": "parallel",
+      "strength": 1,
+      "label": "Asleep in the storm",
+      "explanation": "A great storm threatens Jonah's ship while Jonah sleeps below, and the captain wakes him to call on his God. When a storm comes down on the lake while Jesus sleeps, the disciples wake him, and he rebukes the wind and the raging water; Luke's word for the raging water, which the New Testament has only twice, is the Septuagint's for the storm in Jonah 1:4 (below).",
+      "evidence": [
+        {
+          "dataset": "LXX",
+          "ref": "Jonah.1.4",
+          "wordIndex": 10,
+          "form": "κλύδων",
+          "row": "LXX 037-Jonah"
+        },
+        {
+          "dataset": "TAGNT",
+          "ref": "Luk.8.24",
+          "wordIndex": 17,
+          "form": "κλύδωνι",
+          "row": "TAGNT Mat-Jhn:62650"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.4",
+          "words": ["storm", "ship"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.6",
+          "words": ["sleeper"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.8.23",
+          "words": ["asleep", "storm"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.8.24",
+          "words": ["rebuked", "raging"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "07b113bcce8ba21d"
+      }
+    },
+    {
+      "id": "luk01",
+      "from": "Mal.4.5-Mal.4.6",
+      "to": "Luke.1.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "In the spirit and power of Elijah",
+      "explanation": "The last words of Malachi promise that God will send Elijah the prophet before the day of the LORD, to turn the hearts of the fathers to the children. Gabriel tells Zechariah that his son will go before the Lord in the spirit and power of Elijah, and takes up Malachi's words about turning hearts.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250723"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230169"
+        },
+        {
+          "kind": "verse",
+          "ref": "Mal.4.5",
+          "words": ["Elijah", "prophet"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Mal.4.6",
+          "words": ["hearts", "fathers", "children"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.17",
+          "words": ["Elijah", "hearts", "fathers"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "c3c392f9ab376f4b"
+      }
+    },
+    {
+      "id": "luk02",
+      "from": "Ps.91.11-Ps.91.12",
+      "to": "Luke.4.10-Luke.4.11",
+      "type": "quotation",
+      "strength": 3,
+      "label": "He will put his angels in charge of you",
+      "explanation": "Psalm 91 promises the one who trusts in God that angels will guard him and bear him up so that he does not strike his foot on a stone. On the pinnacle of the temple the devil quotes the psalm as written, to tempt Jesus to throw himself down.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L128212"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252457"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L128224"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.91.11",
+          "words": ["angels", "guard"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.10",
+          "words": ["written", "angels"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.4.11",
+          "words": ["stone"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6939b7512db6028f"
+      }
+    },
+    {
+      "id": "luk03",
+      "from": "Ps.118.22",
+      "to": "Luke.20.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The stone the builders rejected",
+      "explanation": "Psalm 118 sings of the stone the builders rejected that has become the cornerstone. After the parable of the tenants Jesus asks what this written word means, applying it to himself and to the leaders who are rejecting him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133982"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L260608"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.118.22",
+          "words": ["stone", "builders", "rejected"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.17",
+          "words": ["written", "stone", "rejected"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.9",
+          "words": ["parable", "vineyard"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "2be94627554fcc7c"
+      }
+    },
+    {
+      "id": "luk04",
+      "from": "Ps.22.18",
+      "to": "Luke.23.34",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Dividing his garments",
+      "explanation": "In Psalm 22 the sufferer describes his enemies dividing his garments among them and casting lots for his clothing. Luke records that at the cross the soldiers divided Jesus' garments and cast lots for them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262198"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L113141"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.22.18",
+          "words": ["garments", "lots"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.23.34",
+          "words": ["garments", "lots"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5a75b0e962346b74"
+      }
+    },
+    {
+      "id": "luk05",
+      "from": "Ps.110.1",
+      "to": "Luke.20.42-Luke.20.43",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The Lord said to my Lord",
+      "explanation": "Psalm 110 opens with the LORD telling the psalmist's lord to sit at his right hand until his enemies are made his footstool. Jesus quotes it as David's own words in the book of Psalms and asks how the Christ can then be David's son.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L132801"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L260820"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L260825"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.110.1",
+          "words": ["right", "footstool"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.42",
+          "words": ["David", "Psalms", "right"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.43",
+          "words": ["footstool"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.20.41",
+          "words": ["Christ", "David"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "17f72874e00fff88"
+      }
+    },
+    {
+      "id": "luk06",
+      "from": "Isa.53.12",
+      "to": "Luke.22.37",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Counted with the transgressors",
+      "explanation": "The fourth Servant Song ends with the servant who poured out his life to death and was counted with the transgressors. At the supper Jesus says this written word must be fulfilled in him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261641"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170426"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.53.12",
+          "words": ["counted", "transgressors"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.22.37",
+          "words": ["written", "fulfilled", "transgressors"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "b7bf4204c745b23a"
+      }
+    },
+    {
+      "id": "luk07",
+      "from": "Ps.31.5",
+      "to": "Luke.23.46",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Into your hands I commit my spirit",
+      "explanation": "Psalm 31 is the prayer of one who trusts God in distress and commends his spirit into God's hand. Luke's last words of Jesus on the cross are this line of the psalm, addressed to the Father, before he breathes his last.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262338"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L114932"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.31.5",
+          "words": ["hand", "spirit"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.23.46",
+          "words": ["Father", "hands", "spirit"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "3704ad86b00f53de"
+      }
+    },
+    {
+      "id": "act01",
+      "from": "Joel.2.28-Joel.2.32",
+      "to": "Acts.2.16-Acts.2.21",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I will pour out my Spirit on all flesh",
+      "explanation": "Joel promises that God will pour out his Spirit on all flesh, with sons and daughters prophesying and young and old seeing visions and dreams. At Pentecost Peter tells the crowd that this is what was spoken through the prophet Joel, and quotes the whole passage.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217025"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275383"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275438"
+        },
+        {
+          "kind": "verse",
+          "ref": "Joel.2.28",
+          "words": ["Spirit", "flesh", "visions"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.16",
+          "words": ["Joel"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.17",
+          "words": ["Spirit", "flesh", "visions"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "a2cc744f40f753fc"
+      }
+    },
+    {
+      "id": "act02",
+      "from": "Ps.16.8-Ps.16.11",
+      "to": "Acts.2.25-Acts.2.28",
+      "type": "quotation",
+      "strength": 3,
+      "label": "You will not let your Holy One see decay",
+      "explanation": "In Psalm 16 the psalmist trusts that God will not abandon his soul to Sheol or let his holy one see corruption. Peter quotes the psalm as David's words and argues that, since David died and was buried, it speaks of the resurrection of the Christ.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111570"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111540"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275563"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.16.10",
+          "words": ["soul", "holy"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.25",
+          "words": ["David"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.27",
+          "words": ["soul", "Holy"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.29",
+          "words": ["David", "died", "buried"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6be67ab357036c85"
+      }
+    },
+    {
+      "id": "act03",
+      "from": "Ps.110.1",
+      "to": "Acts.2.34-Acts.2.35",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Sit at my right hand",
+      "explanation": "Psalm 110 has the LORD tell the psalmist's lord to sit at his right hand. Peter points out that David did not ascend to heaven, yet says this, and concludes that God has made Jesus both Lord and Christ.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L132798"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275691"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.110.1",
+          "words": ["right", "footstool"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.34",
+          "words": ["David", "ascend", "right"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.2.36",
+          "words": ["Lord", "Christ"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "9f3764021e451e20"
+      }
+    },
+    {
+      "id": "act04",
+      "from": "Isa.66.1-Isa.66.2",
+      "to": "Acts.7.49-Acts.7.50",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Heaven is my throne",
+      "explanation": "In Isaiah's last chapter the LORD says that heaven is his throne and the earth his footstool, and asks what house could be built for him. Stephen quotes the prophet to support his claim that the Most High does not dwell in houses made with hands.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278302"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278319"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.66.1",
+          "words": ["throne", "footstool", "house"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.7.49",
+          "words": ["throne", "footstool", "house"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5b030f3299957770"
+      }
+    },
+    {
+      "id": "act05",
+      "from": "Isa.6.9-Isa.6.10",
+      "to": "Acts.28.25-Acts.28.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Hearing but not understanding",
+      "explanation": "When Isaiah is sent, God tells him to say to the people that they will hear but not understand, see but not perceive. In Rome, at the very end of Acts, Paul says the Holy Spirit spoke rightly through Isaiah and quotes the commission to the leaders of the Jews, who could not agree among themselves.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155886"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L287941"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155901"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.6.9",
+          "words": ["understand", "perceive"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.28.25",
+          "words": ["Isaiah", "prophet"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.28.26",
+          "words": ["understand", "perceive"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.28.17",
+          "words": ["leaders", "Jews"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0f1115300ad11d65"
+      }
+    },
+    {
+      "id": "act06",
+      "from": "Ps.2.1-Ps.2.2",
+      "to": "Acts.4.25-Acts.4.26",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Why do the nations rage?",
+      "explanation": "Psalm 2 asks why the nations rage and the rulers take counsel against the LORD and his Anointed. After Peter and John are let go, the believers pray, quoting the psalm as spoken by David and see it fulfilled in Herod and Pilate gathering against Jesus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109039"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276723"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L276718"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.2.1",
+          "words": ["nations", "rage"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.2.2",
+          "words": ["rulers", "Anointed"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.4.25",
+          "words": ["David", "nations", "rage"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.4.27",
+          "words": ["Herod", "Pilate"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.4.23",
+          "words": ["let"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "33db03b01e0008df"
+      }
+    },
+    {
+      "id": "act07",
+      "from": "Amos.9.11-Amos.9.12",
+      "to": "Acts.15.15-Acts.15.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Rebuilding the fallen tent of David",
+      "explanation": "Amos ends with God's promise to raise up the fallen tent of David and rebuild its ruins, so that the nations called by his name may come. At the council in Jerusalem James quotes it as the words of the prophets to support receiving Gentile believers.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282534"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219390"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219412"
+        },
+        {
+          "kind": "verse",
+          "ref": "Amos.9.11",
+          "words": ["David", "ruins"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.15.15",
+          "words": ["prophets", "written"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.15.16",
+          "words": ["David", "ruins"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.15.13",
+          "words": ["James"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "0b43f9983afe9bb9"
+      }
+    },
+    {
+      "id": "act08",
+      "from": "Ps.69.25",
+      "to": "Acts.1.20",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Let his habitation be desolate",
+      "explanation": "Psalm 69 prays that the dwelling of the psalmist's persecutors be left desolate. Before Matthias is chosen, Peter quotes it as written in the book of Psalms and applies it to Judas, with a line from Psalm 109 about another taking his office.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275048"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L123187"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.69.25",
+          "words": ["habitation", "desolate"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.1.20",
+          "words": ["written", "Psalms", "desolate"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.109.8",
+          "words": ["office"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.1.26",
+          "words": ["Matthias"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "5db803a6385892e7"
+      }
+    },
+    {
+      "id": "act09",
+      "from": "Ps.2.7",
+      "to": "Acts.13.33",
+      "type": "quotation",
+      "strength": 3,
+      "label": "You are my Son; today I have become your father",
+      "explanation": "In Psalm 2 the LORD tells his king that he is his son, begotten today. Preaching at Pisidian Antioch, Paul quotes the second psalm by name and says God has fulfilled it by raising Jesus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109120"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L281574"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.2.7",
+          "words": ["son", "father"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.33",
+          "words": ["psalm", "Son", "father"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "306eee0aeb1a98fb"
+      }
+    },
+    {
+      "id": "act10",
+      "from": "Isa.53.7-Isa.53.8",
+      "to": "Acts.8.32-Acts.8.33",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Led as a sheep to the slaughter",
+      "explanation": "Isaiah describes the servant who did not open his mouth, like a lamb led to the slaughter and a sheep silent before its shearers. The Ethiopian official is reading this passage when Philip meets him, and Philip begins from it to tell him the good news of Jesus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278926"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170301"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170309"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.53.7",
+          "words": ["lamb", "slaughter", "sheep"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.8.32",
+          "words": ["Scripture", "sheep", "slaughter"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.8.27",
+          "words": ["Ethiopia"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.8.35",
+          "words": ["Philip", "Jesus"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "6a74bb790c7b7ba3"
+      }
+    },
+    {
+      "id": "act11",
+      "from": "Isa.49.6",
+      "to": "Acts.13.47",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A light for the Gentiles",
+      "explanation": "In the second Servant Song God says it is too small a thing for the servant to restore Israel alone: he will be a light to the nations. When the synagogue at Antioch rejects their message, Paul and Barnabas quote this as the Lord's command and turn to the Gentiles.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L168913"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L281857"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.49.6",
+          "words": ["light", "nations"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.47",
+          "words": ["light", "Gentiles", "salvation"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.13.46",
+          "words": ["Paul", "Barnabas"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "42c88586ebd8b1e9"
+      }
+    },
+    {
+      "id": "act12",
+      "from": "Gal.1.13-Gal.1.17",
+      "to": "Acts.9.1-Acts.9.22",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Paul tells of his own turning",
+      "explanation": "Acts narrates how Saul, on the road to Damascus to arrest believers, is stopped by a light and a voice, and then preaches Jesus in Damascus. In Galatians Paul tells it himself: he persecuted the church beyond measure until God revealed his Son in him, and he returned to Damascus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279204"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279026"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L305995"
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.9.3",
+          "words": ["Damascus", "light"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.9.4",
+          "words": ["Saul", "persecute"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.1.13",
+          "words": ["persecuted"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.1.17",
+          "words": ["Damascus"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "f06d373b70aefcad"
+      }
+    },
+    {
+      "id": "act13",
+      "from": "Gal.2.11-Gal.2.14",
+      "to": "Acts.11.1-Acts.11.3",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Peter, the Gentiles and the circumcision party",
+      "explanation": "In Acts, those of the circumcision criticise Peter in Jerusalem for going in to uncircumcised men and eating with them. In Galatians Paul tells how Peter at Antioch ate with Gentiles until people came from James, and then drew back, fearing those of the circumcision.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306278"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L280340"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L280331"
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.11.2",
+          "words": ["Peter", "circumcision"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.11.3",
+          "words": ["ate"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.2.11",
+          "words": ["Peter"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gal.2.12",
+          "words": ["Gentiles", "circumcision"]
+        }
+      ],
+      "status": "verified",
+      "approval": {
+        "date": "2026-11-16",
+        "fingerprint": "372e92c09a51b06b"
+      }
     }
   ]
 }
