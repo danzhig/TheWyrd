@@ -703,3 +703,56 @@
 .medName[data-detail] .medTag {
   display: block;
 }
+
+/* On phones the Spiral / Themes switch is pinned at the bottom: leave the list room under it. */
+@media (max-width: 520px) {
+  .list {
+    padding-bottom: 7rem;
+  }
+}
+
+/* The theme tree (P6.4), in List mode. */
+.treeTheme {
+  margin: 1.75rem 0 0;
+}
+
+.treeThemeTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--accent-strong);
+}
+
+.treeSubs {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.treeSubs > li {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule-soft);
+}
+
+.treeSubTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.treePassages {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.treePassages a {
+  min-height: 24px;
+  display: inline-block;
+}

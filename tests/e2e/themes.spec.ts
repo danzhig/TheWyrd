@@ -205,6 +205,84 @@ test.describe('themes', () => {
     expect(new URL(page.url()).search).toBe('');
   });
 
+  test('the theme tree has a link for every star, arrow keys move along it and the camera follows', async ({
+    page,
+  }) => {
+    await openVault(page);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    // Every star has a matching tree link (PLAN P6.4).
+    const stars = await page.evaluate(() =>
+      (window as unknown as { __sasStars: () => { stars: { key: string }[] } })
+        .__sasStars()
+        .stars.map((s) => s.key),
+    );
+    const links = await page
+      .locator('[data-tree-passage]')
+      .evaluateAll((els) => els.map((e) => e.getAttribute('data-tree-passage')!));
+    expect([...links].sort()).toEqual([...stars].sort());
+    // In Themes the tree replaces the path's list as the accessible structure.
+    await expect(page.getByRole('region', { name: 'The path, as a list' })).toHaveCount(0);
+    // Focus moves along the tree with the arrow keys, and the camera flies to each star.
+    const scale = () =>
+      page
+        .getByTestId('vault-scene')
+        .evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).a);
+    const before = await scale();
+    const first = page.locator('[data-tree-passage]').first();
+    await first.focus();
+    await expect.poll(scale).toBeGreaterThan(before);
+    await page.keyboard.press('ArrowDown');
+    await expect(page.locator('[data-tree-passage]').nth(1)).toBeFocused();
+    // List shows the tree; no serious accessibility issues.
+    await page.getByRole('button', { name: 'List' }).click();
+    await expect(page.getByTestId('theme-tree')).toBeVisible();
+    const results = await new AxeBuilder({ page }).analyze();
+    const serious = results.violations.filter(
+      (v) => v.impact === 'serious' || v.impact === 'critical',
+    );
+    expect(
+      serious.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`),
+    ).toEqual([]);
+  });
+
+  test('the reader lists a passage’s themes, and the breadcrumb leads back to the one it came from', async ({
+    page,
+  }) => {
+    await page.goto('/read/gen-14/?theme=mercy-forgiveness');
+    await expect(page.locator('html')).toHaveAttribute('data-reader', 'gen-14');
+    await expect(page.getByTestId('theme-breadcrumb')).toContainText('Mercy and forgiveness');
+    const themeLinks = page.getByTestId('section-themes').locator('a[data-theme-link]');
+    expect(await themeLinks.count()).toBeGreaterThan(0);
+    await expect(page.locator('a[data-theme-link="mercy-forgiveness"]')).toHaveAttribute(
+      'href',
+      '/?theme=mercy-forgiveness',
+    );
+    // Without ?theme there is no breadcrumb, but the Themes line stays.
+    await page.goto('/read/gen-14/');
+    await expect(page.locator('html')).toHaveAttribute('data-reader', 'gen-14');
+    await expect(page.getByTestId('theme-breadcrumb')).toHaveCount(0);
+    // A Themes link opens the Vault in Themes at that sub-theme.
+    await page.locator('a[data-theme-link="mercy-forgiveness"]').click();
+    await page.waitForURL((u) => u.pathname === '/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 8000,
+    });
+    await expect(page.locator('[data-passage^="mercy-forgiveness:"]').first()).toBeAttached({
+      timeout: 6000,
+    });
+    // The breadcrumb's link is the same way back.
+    await page.goto('/read/gen-14/?theme=mercy-forgiveness');
+    await expect(page.locator('html')).toHaveAttribute('data-reader', 'gen-14');
+    await page.getByTestId('breadcrumb-subtheme').click();
+    await page.waitForURL((u) => u.pathname === '/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 8000,
+    });
+  });
+
   test('reduced motion cross-fades instead of flying', async ({ browser }) => {
     const context = await browser.newContext({ reducedMotion: 'reduce' });
     const page = await context.newPage();
