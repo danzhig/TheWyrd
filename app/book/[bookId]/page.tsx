@@ -4,7 +4,7 @@ import { BookCover } from '@/components/book-map/BookCover';
 import { BookMap, type StationData } from '@/components/book-map/BookMap';
 import styles from '@/components/book-map/book-page.module.css';
 import { getFullManifest } from '@/lib/data';
-import { prettyRange } from '@/lib/format';
+import { rangeLabel } from '@/lib/format';
 
 export const dynamicParams = false;
 
@@ -49,7 +49,7 @@ export default async function BookPage({ params }: Params) {
   const stations: StationData[] = sections.map((s) => ({
     id: s.id,
     title: s.title,
-    range: prettyRange(s.range),
+    range: rangeLabel(s),
     status: s.status,
     highlight: s.highlight,
     minutes: s.minutes,

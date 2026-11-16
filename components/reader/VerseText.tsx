@@ -110,6 +110,7 @@ function ThreadGlyph({ verse, count }: { verse: VerseOut; count: number }) {
       href={`#threads-${anchor}`}
       className="thread-glyph"
       data-thread={anchor}
+      title="Threads: passages this verse quotes, echoes or answers"
       aria-label={`Threads from verse ${verse.v}: ${count} ${count === 1 ? 'connection' : 'connections'}`}
       data-pagefind-ignore=""
     >

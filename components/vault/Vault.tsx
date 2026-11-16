@@ -88,6 +88,8 @@ function passageHref(sectionId: string, ref: string, subId: string): string {
 export function Vault({ data, books, bridges, sections }: VaultProps) {
   const router = useRouter();
   const viewRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const hudRef = useRef<HTMLElement>(null);
   const sceneRef = useRef<HTMLDivElement>(null);
   const labelLayerRef = useRef<HTMLDivElement>(null);
   const cloudRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -238,18 +240,36 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [settleLabels],
   );
 
-  const fit = useCallback((): Cam => {
+  /**
+   * The part of the screen the ceiling really shows: below the header and, on phones, above the
+   * switch and zoom buttons at the foot. Flights centre their target here, not in the window.
+   */
+  const visibleArea = useCallback(() => {
     const view = viewRef.current!;
     const w = view.clientWidth;
     const h = view.clientHeight;
-    const k = Math.min(w, h) / (2 * layout.spiralRadius + 24);
-    return { x: w / 2, y: h / 2, k };
-  }, [layout.spiralRadius]);
-
-  const target = useCallback((p: { x: number; y: number }, k: number): Cam => {
-    const view = viewRef.current!;
-    return { x: view.clientWidth / 2 - p.x * k, y: view.clientHeight / 2 - p.y * k, k };
+    // On narrow screens the header spans the whole width; on wide ones it keeps to the corners,
+    // leaving the middle of the top edge open.
+    const top =
+      w <= 720 ? Math.min(h * 0.3, hudRef.current?.getBoundingClientRect().bottom ?? 0) : 0;
+    const bottom = h - (w <= 520 ? 90 : 0);
+    return { w, h: Math.max(120, bottom - top), cx: w / 2, cy: (top + bottom) / 2 };
   }, []);
+
+  /** The whole spiral, fitted to the visible part of the screen. */
+  const fit = useCallback((): Cam => {
+    const a = visibleArea();
+    const k = Math.min(a.w, a.h) / (2 * layout.spiralRadius + 24);
+    return { x: a.cx, y: a.cy, k };
+  }, [layout.spiralRadius, visibleArea]);
+
+  const target = useCallback(
+    (p: { x: number; y: number }, k: number): Cam => {
+      const a = visibleArea();
+      return { x: a.cx - p.x * k, y: a.cy - p.y * k, k };
+    },
+    [visibleArea],
+  );
 
   /** A camera position as the zoom library's transform. */
   const toD3 = (t: Cam): ZoomTransform =>
@@ -315,7 +335,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     void import('./d3').then((d3) => {
       if (!alive) return;
       d3Ref.current = d3;
-      sel = d3.select(view);
+      sel = d3.select(stageRef.current ?? view);
       z = d3
         .zoom<HTMLDivElement, unknown>()
         .scaleExtent([minK(), K_MAX])
@@ -388,15 +408,13 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
 
   const flyToConstellation = useCallback(
     (c: Constellation) => {
-      const view = viewRef.current;
-      if (!view) return;
-      const k = Math.min(
-        K_MAX_THEMES,
-        (Math.min(view.clientWidth, view.clientHeight) * 0.46) / c.r,
-      );
-      void flyTo(target(c, k), 700);
+      if (!viewRef.current) return;
+      // Fit the constellation and its name (above it) in the visible part of the screen.
+      const a = visibleArea();
+      const k = Math.min(K_MAX_THEMES, (Math.min(a.w, a.h) * 0.42) / c.r);
+      void flyTo(target({ x: c.x, y: c.y - 8 / k }, k), 700);
     },
-    [flyTo, target],
+    [flyTo, target, visibleArea],
   );
 
   // The theme tree (P6.4): focusing a passage lights its sub-theme and, on the map, flies the
@@ -577,14 +595,19 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
 
   return (
     <div className={styles.vault} data-mode={mode}>
-      <header className={styles.hud}>
+      <header ref={hudRef} className={styles.hud}>
         <h1 className={styles.title}>Scripture as Story</h1>
         <div className={styles.actions}>
           <button
             type="button"
             className={styles.button}
-            onClick={continueReading}
-            disabled={mode === 'list' || themeView !== 'spiral'}
+            onClick={() => {
+              // In Themes, Continue first brings the spiral back, then finds your place on it.
+              if (themeView === 'themes') void switchThemes('spiral').then(() => continueReading());
+              else continueReading();
+            }}
+            disabled={mode === 'list' || themeView === 'to-themes' || themeView === 'to-spiral'}
+            data-hud="continue"
             data-testid="continue"
           >
             Continue
@@ -624,6 +647,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             type="button"
             className={styles.button}
             aria-pressed={mode === 'list'}
+            data-hud="list"
             onClick={() => setMode((m) => (m === 'map' ? 'list' : 'map'))}
           >
             {mode === 'map' ? 'List' : 'Map'}
@@ -632,6 +656,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             type="button"
             className={styles.iconButton}
             onClick={() => setSettingsOpen(true)}
+            data-hud="settings"
             aria-label="Reading settings"
           >
             Aa
@@ -663,278 +688,282 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       </header>
       <SettingsSheet open={settingsOpen} onClose={() => setSettingsOpen(false)} />
 
-      {/* The ceiling: decorative for assistive technology, which gets the list below. */}
-      <div
-        ref={viewRef}
-        className={`vault-sky ${styles.view} ${ready ? styles.ready : ''} ${dimmed ? styles.dimmed : ''}`}
-        aria-hidden="true"
-        data-testid="vault-view"
-      >
-        {[0, 1, 2].map((i) => (
-          <div
-            key={i}
-            ref={(el) => {
-              cloudRefs.current[i] = el;
-            }}
-            className={`cloud-layer ${['cloud-far', 'cloud-mid', 'cloud-near'][i]} ${styles.cloud}`}
-          />
-        ))}
-        <div ref={sceneRef} className={styles.scene} data-testid="vault-scene">
-          {/* Light falling through the oculus, turning very slowly (still under reduced motion). */}
-          <div className={styles.rays} aria-hidden="true" />
-          {themeView !== 'themes' ? (
+      {/* The stage takes every pan, pinch and wheel, whether it starts on the sky or on a name, a
+          star or a sub-theme in the label layer above it (they are siblings, so the zoom sits here). */}
+      <div ref={stageRef} className={styles.stage} data-testid="vault-stage">
+        {/* The ceiling: decorative for assistive technology, which gets the list below. */}
+        <div
+          ref={viewRef}
+          className={`vault-sky ${styles.view} ${ready ? styles.ready : ''} ${dimmed ? styles.dimmed : ''}`}
+          aria-hidden="true"
+          data-testid="vault-view"
+        >
+          {[0, 1, 2].map((i) => (
             <div
-              ref={spiralRef}
-              className={styles.spiralLayer}
-              style={themeView === 'to-spiral' ? { opacity: 0 } : undefined}
-              data-testid="spiral-layer"
-            >
-              <svg
-                className={styles.threadSvg}
-                width={layout.radius * 2}
-                height={layout.radius * 2}
-                viewBox={`${-layout.radius} ${-layout.radius} ${layout.radius * 2} ${layout.radius * 2}`}
-                style={{ left: -layout.radius, top: -layout.radius }}
+              key={i}
+              ref={(el) => {
+                cloudRefs.current[i] = el;
+              }}
+              className={`cloud-layer ${['cloud-far', 'cloud-mid', 'cloud-near'][i]} ${styles.cloud}`}
+            />
+          ))}
+          <div ref={sceneRef} className={styles.scene} data-testid="vault-scene">
+            {/* Light falling through the oculus, turning very slowly (still under reduced motion). */}
+            <div className={styles.rays} aria-hidden="true" />
+            {themeView !== 'themes' ? (
+              <div
+                ref={spiralRef}
+                className={styles.spiralLayer}
+                style={themeView === 'to-spiral' ? { opacity: 0 } : undefined}
+                data-testid="spiral-layer"
               >
-                <path d={layout.thread} className={styles.thread} />
-                <path d={layout.threadUpTo(sparkAt.along)} className={styles.threadLit} />
-                {layout.detours.map((t) => (
-                  <path key={t.id} d={t.d} className={styles.detour} data-detour={t.id} />
-                ))}
-              </svg>
-              {/* Threads' arcs are drawn here, under the medallions (ThreadsMode). */}
-              <div ref={setArcHost} className={styles.arcHost} />
-              {layout.offpath.map((o) => {
-                const b = byId.get(o.id)!;
-                // Books outside the path open into the library (Phase 5), with the same flight.
-                return (
-                  <a
-                    key={o.id}
-                    href={`/book/${o.id}/`}
-                    tabIndex={-1}
-                    className={[
-                      styles.offpath,
-                      progressOf(b) > 0 ? styles.offStarted : '',
-                      focused === o.id ? styles.focused : '',
-                      lifted === o.id ? styles.lifted : '',
-                    ].join(' ')}
-                    style={{
-                      left: o.x - o.size / 2,
-                      top: o.y - o.size / 2,
-                      width: o.size,
-                      height: o.size,
-                      ['--p' as string]: progressOf(b),
-                    }}
-                    data-book={o.id}
-                    data-offpath={o.id}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      void openBook(o.id);
-                    }}
-                  />
-                );
-              })}
-              {layout.bridges.map((br) => {
-                const b = bridges.find((x) => x.id === br.id)!;
-                return (
-                  <a
-                    key={br.id}
-                    href={`/bridge/${br.id}/`}
-                    tabIndex={-1}
-                    className={`${styles.star} ${focused === br.id ? styles.focused : ''}`}
-                    style={{ left: br.x, top: br.y }}
-                    data-bridge={br.id}
-                    title={b.title}
-                  >
-                    ✦
-                  </a>
-                );
-              })}
-              {placed.map((m) => {
-                const b = byId.get(m.id)!;
-                const screenW = m.w * k;
-                const p = progressOf(b);
-                return (
-                  <a
-                    key={m.id}
-                    href={`/book/${m.id}/`}
-                    tabIndex={-1}
-                    data-book={m.id}
-                    className={[
-                      styles.medallion,
-                      screenW >= 56 ? styles.named : '',
-                      screenW >= 150 ? styles.detailed : '',
-                      focused === m.id ? styles.focused : '',
-                      m.id === currentBook ? styles.current : '',
-                      p >= 1 ? styles.finished : '',
-                      lifted === m.id ? styles.lifted : '',
-                    ].join(' ')}
-                    style={{
-                      left: m.x - m.w / 2,
-                      top: m.y - m.h / 2,
-                      width: m.w,
-                      height: m.h,
-                      ['--p' as string]: p,
-                      ['--fs' as string]: `${Math.max(11, m.w * 0.17)}px`,
-                    }}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      void openBook(m.id);
-                    }}
-                  >
-                    {/* The name is drawn in the label layer (screen space, always sharp). */}
-                  </a>
-                );
-              })}
-              <span
-                className={styles.spark}
-                style={{ left: sparkAt.x, top: sparkAt.y - sparkAt.h / 2 - 10 }}
-              />
-            </div>
-          ) : null}
+                <svg
+                  className={styles.threadSvg}
+                  width={layout.radius * 2}
+                  height={layout.radius * 2}
+                  viewBox={`${-layout.radius} ${-layout.radius} ${layout.radius * 2} ${layout.radius * 2}`}
+                  style={{ left: -layout.radius, top: -layout.radius }}
+                >
+                  <path d={layout.thread} className={styles.thread} />
+                  <path d={layout.threadUpTo(sparkAt.along)} className={styles.threadLit} />
+                  {layout.detours.map((t) => (
+                    <path key={t.id} d={t.d} className={styles.detour} data-detour={t.id} />
+                  ))}
+                </svg>
+                {/* Threads' arcs are drawn here, under the medallions (ThreadsMode). */}
+                <div ref={setArcHost} className={styles.arcHost} />
+                {layout.offpath.map((o) => {
+                  const b = byId.get(o.id)!;
+                  // Books outside the path open into the library (Phase 5), with the same flight.
+                  return (
+                    <a
+                      key={o.id}
+                      href={`/book/${o.id}/`}
+                      tabIndex={-1}
+                      className={[
+                        styles.offpath,
+                        progressOf(b) > 0 ? styles.offStarted : '',
+                        focused === o.id ? styles.focused : '',
+                        lifted === o.id ? styles.lifted : '',
+                      ].join(' ')}
+                      style={{
+                        left: o.x - o.size / 2,
+                        top: o.y - o.size / 2,
+                        width: o.size,
+                        height: o.size,
+                        ['--p' as string]: progressOf(b),
+                      }}
+                      data-book={o.id}
+                      data-offpath={o.id}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        void openBook(o.id);
+                      }}
+                    />
+                  );
+                })}
+                {layout.bridges.map((br) => {
+                  const b = bridges.find((x) => x.id === br.id)!;
+                  return (
+                    <a
+                      key={br.id}
+                      href={`/bridge/${br.id}/`}
+                      tabIndex={-1}
+                      className={`${styles.star} ${focused === br.id ? styles.focused : ''}`}
+                      style={{ left: br.x, top: br.y }}
+                      data-bridge={br.id}
+                      title={b.title}
+                    >
+                      ✦
+                    </a>
+                  );
+                })}
+                {placed.map((m) => {
+                  const b = byId.get(m.id)!;
+                  const screenW = m.w * k;
+                  const p = progressOf(b);
+                  return (
+                    <a
+                      key={m.id}
+                      href={`/book/${m.id}/`}
+                      tabIndex={-1}
+                      data-book={m.id}
+                      className={[
+                        styles.medallion,
+                        screenW >= 56 ? styles.named : '',
+                        screenW >= 150 ? styles.detailed : '',
+                        focused === m.id ? styles.focused : '',
+                        m.id === currentBook ? styles.current : '',
+                        p >= 1 ? styles.finished : '',
+                        lifted === m.id ? styles.lifted : '',
+                      ].join(' ')}
+                      style={{
+                        left: m.x - m.w / 2,
+                        top: m.y - m.h / 2,
+                        width: m.w,
+                        height: m.h,
+                        ['--p' as string]: p,
+                        ['--fs' as string]: `${Math.max(11, m.w * 0.17)}px`,
+                      }}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        void openBook(m.id);
+                      }}
+                    >
+                      {/* The name is drawn in the label layer (screen space, always sharp). */}
+                    </a>
+                  );
+                })}
+                <span
+                  className={styles.spark}
+                  style={{ left: sparkAt.x, top: sparkAt.y - sparkAt.h / 2 - 10 }}
+                />
+              </div>
+            ) : null}
+          </div>
+          {/* The passages as stars, in screen space (pixels, not elements: see starfield.ts). */}
+          <canvas ref={starCanvas} className={styles.stars} data-testid="star-canvas" />
         </div>
-        {/* The passages as stars, in screen space (pixels, not elements: see starfield.ts). */}
-        <canvas ref={starCanvas} className={styles.stars} data-testid="star-canvas" />
-      </div>
-      {/* The names sit outside the sky, so its vignette and grain never dim them; this frame
+        {/* The names sit outside the sky, so its vignette and grain never dim them; this frame
           fades and dims with it. */}
-      <div
-        className={`${styles.labelFrame} ${ready ? styles.ready : ''} ${dimmed ? styles.dimmed : ''}`}
-        aria-hidden="true"
-        data-testid="vault-label-frame"
-      >
-        {/* Every name on the ceiling, in screen space: it follows the camera (translate and --k,
+        <div
+          className={`${styles.labelFrame} ${ready ? styles.ready : ''} ${dimmed ? styles.dimmed : ''}`}
+          aria-hidden="true"
+          data-testid="vault-label-frame"
+        >
+          {/* Every name on the ceiling, in screen space: it follows the camera (translate and --k,
               set in apply) but is never magnified, so text stays sharp at any zoom in every
               browser (Safari would otherwise stretch the scene's bitmap). */}
-        <div ref={labelLayerRef} className={styles.labelLayer} data-testid="vault-labels">
-          {themeView !== 'themes' ? (
-            <div
-              ref={spiralLabelsRef}
-              className={styles.labelGroup}
-              style={themeView === 'to-spiral' ? { opacity: 0 } : undefined}
-              data-testid="spiral-labels"
-            >
-              {layout.groups.map((g) => (
-                <span key={g.label} className={`${styles.at} ${styles.group}`} style={at(g)}>
-                  {g.label}
-                </span>
-              ))}
-              {layout.offpath.map((o) => (
-                <span
-                  key={o.id}
-                  className={`${styles.at} ${styles.offName} ${lifted === o.id ? styles.gone : ''}`}
-                  style={{ ...at(o), ['--w' as string]: o.size }}
-                  data-label-min={40 / o.size}
-                >
-                  {byId.get(o.id)!.name}
-                </span>
-              ))}
-              {placed.map((m) => {
-                // Always in the page; which names show is decided when the camera comes to rest
-                // (`settleLabels`), so a flight never re-lays them out.
-                const b = byId.get(m.id)!;
-                return (
-                  <span
-                    key={m.id}
-                    className={`${styles.at} ${styles.medName} ${lifted === m.id ? styles.gone : ''}`}
-                    data-label-min={56 / m.w}
-                    data-detail-min={150 / m.w}
-                    style={{
-                      ...at(m),
-                      ['--w' as string]: m.w,
-                      ['--fs' as string]: Math.max(11, m.w * 0.17),
-                    }}
-                    data-name={m.id}
-                  >
-                    <span className={styles.medTitle}>{b.name}</span>
-                    <span className={styles.medTag}>{b.tagline}</span>
+          <div ref={labelLayerRef} className={styles.labelLayer} data-testid="vault-labels">
+            {themeView !== 'themes' ? (
+              <div
+                ref={spiralLabelsRef}
+                className={styles.labelGroup}
+                style={themeView === 'to-spiral' ? { opacity: 0 } : undefined}
+                data-testid="spiral-labels"
+              >
+                {layout.groups.map((g) => (
+                  <span key={g.label} className={`${styles.at} ${styles.group}`} style={at(g)}>
+                    {g.label}
                   </span>
-                );
-              })}
-            </div>
-          ) : null}
-          {themeView !== 'spiral' && themeData && themeLayout ? (
-            <div
-              ref={labelsRef}
-              className={styles.themesLayer}
-              style={themeView === 'to-themes' ? { opacity: 0 } : undefined}
-              data-testid="themes-layer"
-            >
-              {/* Passages first, so the sub-theme names sit on top of their labels. */}
-              {themeView === 'themes' &&
-              (themeLayout.constellations.find((c) => c.id === focusC)?.r ?? 0) * 2 * k >=
-                PASSAGE_PX
-                ? themeLayout.stars
-                    .filter((s) => s.themeId === focusC)
-                    .map((s) => {
-                      const p = passageOf.get(s.key);
-                      if (!p) return null;
-                      return (
-                        <a
-                          key={s.key}
-                          href={passageHref(p.sectionId, p.ref, s.subId)}
-                          tabIndex={-1}
-                          className={`${styles.at} ${styles.passage} ${p.library ? styles.passageLibrary : ''}`}
-                          style={at(s)}
-                          data-passage={s.key}
-                          onClick={(e) => {
-                            // A client navigation keeps the Vault's memory (Themes, the camera);
-                            // remember exactly where the camera is, even mid-flight, to come back to.
-                            e.preventDefault();
-                            camera.last = { ...camRef.current };
-                            router.push(passageHref(p.sectionId, p.ref, s.subId));
-                          }}
-                          onPointerEnter={() => setLit(s.subId)}
-                          onPointerLeave={() => setLit(null)}
-                        >
-                          {/* The reference names the link; the section's title is its tooltip. */}
-                          <span
-                            className={`${styles.passageName} ${k >= PASSAGE_LABEL_K ? '' : styles.quiet}`}
-                            title={p.sectionTitle}
-                          >
-                            {p.display}
-                          </span>
-                        </a>
-                      );
-                    })
-                : null}
-              {themeLayout.constellations.map((c, i) => {
-                const t = themeData!.themes[i]!;
-                const open = c.r * k >= 110;
-                return (
-                  <Fragment key={c.id}>
-                    <button
-                      type="button"
-                      tabIndex={-1}
-                      className={`${styles.at} ${styles.constName}`}
-                      style={at({ x: c.x, y: c.y - c.r - 4 })}
-                      data-constellation={c.id}
-                      onClick={() => flyToConstellation(c)}
+                ))}
+                {layout.offpath.map((o) => (
+                  <span
+                    key={o.id}
+                    className={`${styles.at} ${styles.offName} ${lifted === o.id ? styles.gone : ''}`}
+                    style={{ ...at(o), ['--w' as string]: o.size }}
+                    data-label-min={40 / o.size}
+                  >
+                    {byId.get(o.id)!.name}
+                  </span>
+                ))}
+                {placed.map((m) => {
+                  // Always in the page; which names show is decided when the camera comes to rest
+                  // (`settleLabels`), so a flight never re-lays them out.
+                  const b = byId.get(m.id)!;
+                  return (
+                    <span
+                      key={m.id}
+                      className={`${styles.at} ${styles.medName} ${lifted === m.id ? styles.gone : ''}`}
+                      data-label-min={56 / m.w}
+                      data-detail-min={150 / m.w}
+                      style={{
+                        ...at(m),
+                        ['--w' as string]: m.w,
+                        ['--fs' as string]: Math.max(11, m.w * 0.17),
+                      }}
+                      data-name={m.id}
                     >
-                      {t.title}
-                    </button>
-                    {open
-                      ? c.subs.map((s, j) => (
-                          <button
-                            key={s.id}
-                            type="button"
+                      <span className={styles.medTitle}>{b.name}</span>
+                      <span className={styles.medTag}>{b.tagline}</span>
+                    </span>
+                  );
+                })}
+              </div>
+            ) : null}
+            {themeView !== 'spiral' && themeData && themeLayout ? (
+              <div
+                ref={labelsRef}
+                className={styles.themesLayer}
+                style={themeView === 'to-themes' ? { opacity: 0 } : undefined}
+                data-testid="themes-layer"
+              >
+                {/* Passages first, so the sub-theme names sit on top of their labels. */}
+                {themeView === 'themes' &&
+                (themeLayout.constellations.find((c) => c.id === focusC)?.r ?? 0) * 2 * k >=
+                  PASSAGE_PX
+                  ? themeLayout.stars
+                      .filter((s) => s.themeId === focusC)
+                      .map((s) => {
+                        const p = passageOf.get(s.key);
+                        if (!p) return null;
+                        return (
+                          <a
+                            key={s.key}
+                            href={passageHref(p.sectionId, p.ref, s.subId)}
                             tabIndex={-1}
-                            className={`${styles.at} ${styles.subName}`}
+                            className={`${styles.at} ${styles.passage} ${p.library ? styles.passageLibrary : ''}`}
                             style={at(s)}
-                            data-subtheme={s.id}
-                            onPointerEnter={() => setLit(s.id)}
+                            data-passage={s.key}
+                            onClick={(e) => {
+                              // A client navigation keeps the Vault's memory (Themes, the camera);
+                              // remember exactly where the camera is, even mid-flight, to come back to.
+                              e.preventDefault();
+                              camera.last = { ...camRef.current };
+                              router.push(passageHref(p.sectionId, p.ref, s.subId));
+                            }}
+                            onPointerEnter={() => setLit(s.subId)}
                             onPointerLeave={() => setLit(null)}
-                            onClick={() => void flyTo(target(s, K_MAX_THEMES), 600)}
                           >
-                            {t.subthemes[j]!.title}
-                          </button>
-                        ))
-                      : null}
-                  </Fragment>
-                );
-              })}
-            </div>
-          ) : null}
+                            {/* The reference names the link; the section's title is its tooltip. */}
+                            <span
+                              className={`${styles.passageName} ${k >= PASSAGE_LABEL_K ? '' : styles.quiet}`}
+                              title={p.sectionTitle}
+                            >
+                              {p.display}
+                            </span>
+                          </a>
+                        );
+                      })
+                  : null}
+                {themeLayout.constellations.map((c, i) => {
+                  const t = themeData!.themes[i]!;
+                  const open = c.r * k >= 110;
+                  return (
+                    <Fragment key={c.id}>
+                      <button
+                        type="button"
+                        tabIndex={-1}
+                        className={`${styles.at} ${styles.constName}`}
+                        style={at({ x: c.x, y: c.y - c.r - 4 })}
+                        data-constellation={c.id}
+                        onClick={() => flyToConstellation(c)}
+                      >
+                        {t.title}
+                      </button>
+                      {open
+                        ? c.subs.map((s, j) => (
+                            <button
+                              key={s.id}
+                              type="button"
+                              tabIndex={-1}
+                              className={`${styles.at} ${styles.subName}`}
+                              style={at(s)}
+                              data-subtheme={s.id}
+                              onPointerEnter={() => setLit(s.id)}
+                              onPointerLeave={() => setLit(null)}
+                              onClick={() => void flyTo(target(s, K_MAX_THEMES), 600)}
+                            >
+                              {t.subthemes[j]!.title}
+                            </button>
+                          ))
+                        : null}
+                    </Fragment>
+                  );
+                })}
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
 

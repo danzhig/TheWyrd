@@ -144,3 +144,29 @@ export function getSectionThreads(sectionId: string): SectionThread[] {
   }
   return threadsBySection.get(sectionId) ?? [];
 }
+
+/** Counts for the About page (Phases 4 and 6): the themes and the verified connections. */
+export function getExtrasSummary(): {
+  themes: number;
+  subthemes: number;
+  passages: number;
+  connections: number;
+  bookPairs: number;
+} {
+  const read = <T>(f: string): T | null =>
+    fs.existsSync(path.join(DATA, f))
+      ? (JSON.parse(fs.readFileSync(path.join(DATA, f), 'utf8')) as T)
+      : null;
+  const t = read<{ themes: { subthemes: { passages: unknown[] }[] }[] }>('themes.json');
+  const c = read<PublicConnections>('connections.json');
+  const subs = (t?.themes ?? []).flatMap((x) => x.subthemes);
+  return {
+    themes: t?.themes.length ?? 0,
+    subthemes: subs.length,
+    passages: subs.reduce((n, s) => n + s.passages.length, 0),
+    connections: c?.connections.length ?? 0,
+    bookPairs: new Set(
+      (c?.connections ?? []).map((x) => [x.ends[0].bookId, x.ends[1].bookId].sort().join('|')),
+    ).size,
+  };
+}

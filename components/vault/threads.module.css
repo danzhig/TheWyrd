@@ -244,3 +244,14 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* List mode: the filter sits in the page above the list instead of floating over it. */
+.filter.filterInline {
+  position: static;
+  transform: none;
+  margin: 1rem auto 0;
+  max-width: min(44rem, calc(100vw - 2rem));
+  width: max-content;
+  flex-wrap: wrap;
+  border-radius: 1.2rem;
+}

@@ -144,7 +144,21 @@ export function ThreadsMode({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [arc?.key]);
 
-  const label = (a: { a: string; b: string }) => `${nameOf(a.a)} ↔ ${nameOf(a.b)}`;
+  // A book's own name, as its passages show it ("John 1:1–3" → "John"), not the plan's label for
+  // the part of it the path reads ("John 11 (excursion)", "Daniel 1–6, 13–14").
+  const bookName = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const c of data?.connections ?? [])
+      for (const e of c.ends)
+        if (!m.has(e.bookId)) m.set(e.bookId, e.display.slice(0, e.display.lastIndexOf(' ')));
+    return m;
+  }, [data]);
+  const name = (id: string) => bookName.get(id) ?? nameOf(id);
+  const label = (a: { a: string; b: string }) => `${name(a.a)} ↔ ${name(a.b)}`;
+  // The list: the most-connected pairs first, then by name.
+  const listed = [...arcs].sort(
+    (x, y) => y.connections.length - x.connections.length || label(x).localeCompare(label(y)),
+  );
 
   return (
     <>
@@ -176,7 +190,12 @@ export function ThreadsMode({
         : null}
 
       {/* The filter: one chip per type of link present. */}
-      <div className={s.filter} role="group" aria-label="Types of link" data-testid="thread-filter">
+      <div
+        className={`${s.filter} ${listVisible ? s.filterInline : ''}`}
+        role="group"
+        aria-label="Types of link"
+        data-testid="thread-filter"
+      >
         {present.map(({ type, n }) => (
           <button
             key={type}
@@ -212,7 +231,7 @@ export function ThreadsMode({
             : 'Loading…'}
         </p>
         <ul className={s.pairs}>
-          {arcs.map((a) => (
+          {listed.map((a) => (
             <li key={a.key}>
               <button
                 type="button"

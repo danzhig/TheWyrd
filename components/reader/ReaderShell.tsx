@@ -286,11 +286,29 @@ export function ReaderShell({
       {/* Opened from a constellation: where it came from, and the way back to it. */}
       {/* Arrived along a thread: the way back stays in view while reading here. */}
       {threadBack ? (
-        <nav className={styles.threadBack} aria-label="Thread" data-testid="thread-breadcrumb">
+        <nav
+          className={`${styles.threadBack} ${hidden ? styles.threadBackHidden : ''}`}
+          aria-label="Thread"
+          data-testid="thread-breadcrumb"
+        >
           <Link href={threadBack.href} data-testid="thread-back">
             <span aria-hidden="true">← </span>Back to {threadBack.display}
           </Link>
           <span className={styles.threadBackLabel}>{threadBack.label}</span>
+        </nav>
+      ) : null}
+      {/* Opened from a constellation: the same pill leads back to the sub-theme, wherever the
+          passage was scrolled to (the breadcrumb above is out of sight at a verse lower down). */}
+      {fromTheme && !threadBack ? (
+        <nav
+          className={`${styles.threadBack} ${hidden ? styles.threadBackHidden : ''}`}
+          aria-label="Theme"
+          data-testid="theme-back-pill"
+        >
+          <Link href={upHref} data-testid="theme-back">
+            <span aria-hidden="true">← </span>Back to {crumb?.title ?? 'the theme'}
+          </Link>
+          {crumb ? <span className={styles.threadBackLabel}>{crumb.themeTitle}</span> : null}
         </nav>
       ) : null}
       {crumb && !threadBack ? (

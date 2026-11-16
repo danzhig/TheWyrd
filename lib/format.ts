@@ -6,6 +6,14 @@ export function prettyRange(range: string): string {
   return range.replace(/(\d|[A-F]|end)-(\d|end)/g, '$1–$2').replace(/;\s*/g, '; ');
 }
 
+/**
+ * A section's range for display. The plan writes some ranges to a chapter's end (`2:4-3:end`);
+ * those show the WEBC range instead (`2:4–3:24`), so readers never see the plan's shorthand.
+ */
+export function rangeLabel(s: { range: string; webcRange: string }): string {
+  return /end/.test(s.range) ? s.webcRange : prettyRange(s.range);
+}
+
 export interface NavTarget {
   kind: 'section' | 'bridge';
   id: string;

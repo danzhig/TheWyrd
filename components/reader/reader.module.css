@@ -718,3 +718,17 @@ a.detour:hover {
   text-overflow: ellipsis;
   max-width: 100%;
 }
+
+/* The way back steps aside while reading on down the page, and returns on a scroll up (as the top
+   bar does). */
+.threadBack {
+  transition:
+    transform var(--dur-ui) ease,
+    opacity var(--dur-ui) ease;
+}
+
+.threadBackHidden {
+  transform: translate(-50%, 150%);
+  opacity: 0;
+  pointer-events: none;
+}

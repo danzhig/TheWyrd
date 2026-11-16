@@ -6,7 +6,7 @@ import { Threads } from '@/components/reader/Threads';
 import styles from '@/components/reader/reader.module.css';
 import Link from 'next/link';
 import { getFullManifest, getSection, getSectionThemes, getSectionThreads } from '@/lib/data';
-import { prettyRange } from '@/lib/format';
+import { prettyRange, rangeLabel } from '@/lib/format';
 import { canBeStop, defaultNav, libraryNav, pathPosition } from '@/lib/nav';
 
 export const dynamicParams = false;
@@ -67,7 +67,7 @@ export default async function ReadPage({ params }: Params) {
           data-pagefind-meta={`range:${prettyRange(s.range).replace(/,/g, ';')}`}
           data-pagefind-ignore="index"
         >
-          {s.bookName} {prettyRange(s.range)}
+          {s.bookName} {rangeLabel(s)}
           {s.webcDiffers ? <> · WEBC numbers this passage {s.webcRange}</> : null}
           {' · '}
           {s.minutes} min

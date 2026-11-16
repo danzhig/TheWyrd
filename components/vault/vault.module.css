@@ -4,18 +4,29 @@
   position: relative;
 }
 
+/* Holds the sky and the label layer; the zoom listens here, so a gesture that starts on a name
+   or a star pans and zooms like one on the sky. */
+.stage {
+  position: fixed;
+  inset: 0;
+  touch-action: none;
+  cursor: grab;
+}
+
+.stage:active {
+  cursor: grabbing;
+}
+
+[data-mode='list'] .stage {
+  visibility: hidden;
+}
+
 .view {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  touch-action: none;
-  cursor: grab;
   opacity: 0;
   transition: opacity var(--dur-ui) ease;
-}
-
-.view:active {
-  cursor: grabbing;
 }
 
 .ready {
@@ -288,6 +299,70 @@
   }
 }
 
+/* A dark fade behind the header, so names on the ceiling passing under it never clash with it. */
+.hud {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--night) 88%, transparent) 0%,
+    color-mix(in srgb, var(--night) 55%, transparent) 70%,
+    transparent 100%
+  );
+  padding-bottom: 1.25rem;
+}
+
+/* Phones: a compact header in three short rows: the title with Aa, then Continue, List and where
+   you are, then the links. The buttons' own row is gone (they join the title's and Resume's). */
+@media (max-width: 520px) {
+  .hud {
+    gap: 0.35rem 0.5rem;
+    padding: 0.4rem 0.75rem 1rem;
+  }
+
+  /* The title and Aa fill the first row, so Continue and List start the second. */
+  .title {
+    flex: 1 1 calc(100% - 4rem);
+    font-size: 1.1rem;
+  }
+
+  .actions {
+    display: contents;
+  }
+
+  .actions [data-hud='settings'] {
+    order: 1;
+  }
+
+  .actions [data-hud='continue'],
+  .actions [data-hud='list'] {
+    order: 2;
+    min-height: 40px;
+    padding: 0 0.85rem;
+  }
+
+  .hud .resume {
+    order: 3;
+    flex: 1 1 0;
+    min-width: 0;
+    display: block;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hud .links {
+    order: 4;
+    flex-basis: 100%;
+    gap: 1rem;
+    margin-top: -0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .hud .links a {
+    min-height: 28px;
+  }
+}
+
 .button,
 .iconButton {
   font: inherit;
@@ -497,6 +572,7 @@
 
 .constName {
   font-size: 15px;
+  text-align: center;
   font-weight: 600;
   font-variant-caps: small-caps;
   letter-spacing: 0.08em;
@@ -524,6 +600,11 @@
   color: var(--accent-strong);
 }
 
+/* Sub-theme names sit above the passages' names, except the passage being pointed at. */
+.subName {
+  z-index: 2;
+}
+
 /* A passage of the constellation in view: a tap target over its star, its reference beside it. */
 .passage {
   width: 26px;
@@ -538,6 +619,23 @@
 .passage:hover,
 .passage:focus-visible {
   box-shadow: 0 0 0 1px var(--gold-light);
+}
+
+/* The star being pointed at (or focused): its reference comes to the front, on its own dark pill,
+   even where a sub-theme name or a neighbour covered it, and even at zooms where passage names are
+   otherwise hidden. */
+.passage:hover,
+.passage:focus-visible {
+  z-index: 3;
+}
+
+.passage:hover .passageName,
+.passage:focus-visible .passageName {
+  opacity: 1;
+  color: var(--gold-light);
+  background: color-mix(in srgb, var(--night) 85%, transparent);
+  border-radius: 999px;
+  padding: 0.1em 0.5em;
 }
 
 .passageName {
@@ -764,4 +862,16 @@
   top: 0;
   width: 0;
   height: 0;
+}
+
+/* Phones: the ten names round the oculus would run into each other on one line each, so they wrap
+   onto two short lines. */
+@media (max-width: 520px) {
+  .constName {
+    font-size: 13px;
+    white-space: normal;
+    width: max-content;
+    max-width: 8.5em;
+    line-height: 1.15;
+  }
 }
