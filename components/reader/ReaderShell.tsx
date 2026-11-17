@@ -11,6 +11,7 @@ import {
   type ReactNode,
 } from 'react';
 import { SettingsSheet } from '@/components/ui/SettingsSheet';
+import { TranslationPicker } from '@/components/ui/TranslationPicker';
 import { CHANGE_EVENT, markRead, markUnread, readProgress, writeLast } from '@/lib/store';
 import { animationsOn, paperCover, reveal, transition } from '@/lib/transition';
 import type { SectionTheme } from '@/lib/data';
@@ -279,6 +280,9 @@ export function ReaderShell({
         />
       </header>
       <SettingsSheet open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      {/* Which Bible, from anywhere in the reading (owner, 2026-11-17): a tab on the right edge,
+          clear of the text and of the pills at the foot of the screen. */}
+      <TranslationPicker className={styles.translationTab} testId="reader-translation" abbr />
       <p className={styles.toast} role="status" aria-live="polite" data-testid="copied">
         {copied}
       </p>

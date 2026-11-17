@@ -320,7 +320,8 @@
 
   /* The title and Aa fill the first row, so Continue and List start the second. */
   .title {
-    flex: 1 1 calc(100% - 4rem);
+    flex: 1 1 0;
+    min-width: 0;
     font-size: 1.1rem;
   }
 
@@ -328,8 +329,27 @@
     display: contents;
   }
 
-  .actions [data-hud='settings'] {
+  .actions [data-hud='settings'],
+  .actions .translation {
     order: 1;
+  }
+
+  /* The first row ends after Aa: Continue and List always start the second. */
+  .hud::after {
+    content: '';
+    order: 1;
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  /* The Bible picker joins the title's row, beside Aa; its name alone. */
+  .actions .translation {
+    min-height: 40px;
+    padding: 0 0.7rem;
+  }
+
+  .actions .translation :global(.translation-picker-prefix) {
+    display: none;
   }
 
   .actions [data-hud='continue'],
@@ -369,6 +389,10 @@
   background: color-mix(in srgb, var(--surface) 85%, transparent);
   color: var(--text-strong);
   cursor: pointer;
+}
+
+.translation {
+  display: inline-flex;
 }
 
 .iconButton {
@@ -481,22 +505,22 @@
    turning once every four minutes. Only transform animates. */
 .rays {
   position: absolute;
-  left: -320px;
-  top: -320px;
-  width: 640px;
-  height: 640px;
+  left: -460px;
+  top: -460px;
+  width: 920px;
+  height: 920px;
   border-radius: 50%;
   pointer-events: none;
   background: repeating-conic-gradient(
     from 0deg,
-    color-mix(in srgb, var(--gold-light) 34%, transparent) 0deg 3deg,
+    color-mix(in srgb, #fff8e6 40%, transparent) 0deg 3deg,
     transparent 7deg 21deg,
     color-mix(in srgb, var(--gold-light) 20%, transparent) 24deg 26deg,
     transparent 30deg 40deg
   );
   -webkit-mask: radial-gradient(circle, #000 0%, rgb(0 0 0 / 0.55) 28%, transparent 70%);
   mask: radial-gradient(circle, #000 0%, rgb(0 0 0 / 0.55) 28%, transparent 70%);
-  opacity: 0.32;
+  opacity: 0.45;
   will-change: transform;
   animation: rays-drift 240s linear infinite;
 }

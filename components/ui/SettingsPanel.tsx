@@ -11,6 +11,7 @@ import {
   type Translation,
 } from '@/lib/store';
 import styles from './SettingsPanel.module.css';
+import { TRANSLATIONS as BIBLES } from '@/lib/translations';
 
 const THEMES: { value: ThemeSetting; label: string }[] = [
   { value: 'default', label: 'Default' },
@@ -19,11 +20,11 @@ const THEMES: { value: ThemeSetting; label: string }[] = [
   { value: 'auto', label: 'Auto' },
 ];
 
-/** The reader's words (Phase 7): the modern WEBC, or the traditional Douay-Rheims. */
-const TRANSLATIONS: { value: Translation; label: string }[] = [
-  { value: 'webc', label: 'WEBC' },
-  { value: 'drc', label: 'Douay-Rheims' },
-];
+/** The reader's words (Phase 7): every Bible in `lib/translations.ts`. */
+const TRANSLATIONS: { value: Translation; label: string }[] = BIBLES.map((b) => ({
+  value: b.id,
+  label: b.short,
+}));
 
 /** Theme, translation, text size and verse numbers. Reused by the reader's settings sheet in M3. */
 export function SettingsPanel() {

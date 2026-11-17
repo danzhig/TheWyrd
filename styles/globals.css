@@ -64,3 +64,32 @@ svg {
     transition-duration: var(--dur-ui) !important;
   }
 }
+
+/* The Bible picker (components/ui/TranslationPicker.tsx): a pill with a native select lying
+   invisibly over it, so the platform's own menu opens. */
+.translation-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.translation-picker select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 16px; /* iOS zooms into a smaller one */
+}
+
+.translation-picker:focus-within {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+
+.translation-picker-prefix,
+.translation-picker-caret {
+  color: var(--text-muted);
+}

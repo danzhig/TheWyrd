@@ -46,6 +46,24 @@ async function midFlight(page: Page, lo: number, hi: number) {
   return between.length / stars.length;
 }
 
+/** Wait until the camera stops moving (the scene's transform holds still). */
+async function cameraAtRest(page: Page) {
+  let last = '';
+  await expect
+    .poll(
+      async () => {
+        const now = await page
+          .getByTestId('vault-scene')
+          .evaluate((el) => getComputedStyle(el).transform);
+        const still = now === last;
+        last = now;
+        return still;
+      },
+      { intervals: [300], timeout: 6000 },
+    )
+    .toBe(true);
+}
+
 test.describe('themes', () => {
   test('switching flies every star from its book to its constellation, and back', async ({
     page,
@@ -219,7 +237,7 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 6000,
     });
-    await page.waitForTimeout(1200);
+    await cameraAtRest(page);
     // Zoomed out over the whole ring: every constellation's name on screen, no sub-theme names.
     for (const name of await page.locator('[data-constellation]').all())
       await expect(name).toBeInViewport();

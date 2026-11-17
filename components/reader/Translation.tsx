@@ -7,8 +7,16 @@
  * two and shows the Douay-Rheims's own reference. Without JavaScript, or if the file cannot be
  * loaded, the WEBC stays.
  */
-import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+  type ReactNode,
+} from 'react';
 import { drcVerses, loadDrc } from '@/lib/drc';
+import { TRANSLATIONS } from '@/lib/translations';
 import { CHANGE_EVENT, readSettings, writeSettings, type Translation } from '@/lib/store';
 import type { DrcSectionFile, SectionFile } from '@/lib/types';
 import { SectionBody } from './SectionBody';
@@ -69,7 +77,51 @@ export function TranslatedBody({
 }) {
   const t = useTranslation();
   const { file, failed } = useDrc(section.id, t === 'drc');
-  if (t === 'drc' && file) {
+  const shown = t === 'drc' && file ? 'drc' : 'webc';
+  // Switching in the middle of a reading keeps the place (owner, 2026-11-17): the verse at the
+  // top of the screen as the choice changes is put back where it was once the other words are in.
+  const anchor = useRef<{ id: string; top: number } | null>(null);
+  useEffect(() => {
+    let last = readSettings().translation;
+    const onChange = () => {
+      const now = readSettings().translation;
+      if (now === last) return;
+      last = now;
+      anchor.current = topVerse();
+    };
+    window.addEventListener(CHANGE_EVENT, onChange);
+    return () => window.removeEventListener(CHANGE_EVENT, onChange);
+  }, []);
+  useLayoutEffect(() => {
+    const a = anchor.current;
+    if (!a || (t === 'drc' && !file && !failed)) return; // still loading: keep the place for later
+    anchor.current = null;
+    const fix = () => {
+      const el = document.getElementById(a.id);
+      const d = el ? el.getBoundingClientRect().top - a.top : 0;
+      if (Math.abs(d) >= 1) window.scrollBy(0, d);
+    };
+    fix();
+    // Hold the place for a moment while late changes settle (the header's Douay-Rheims reference
+    // arrives a beat after the body), unless the reader scrolls first.
+    let frame = 0;
+    const until = performance.now() + 1000;
+    const stop = () => {
+      cancelAnimationFrame(frame);
+      for (const ev of ['wheel', 'touchstart', 'keydown', 'pointerdown'])
+        window.removeEventListener(ev, stop);
+    };
+    for (const ev of ['wheel', 'touchstart', 'keydown', 'pointerdown'])
+      window.addEventListener(ev, stop, { passive: true });
+    const hold = () => {
+      fix();
+      if (performance.now() < until) frame = requestAnimationFrame(hold);
+      else stop();
+    };
+    frame = requestAnimationFrame(hold);
+    return stop;
+  }, [shown, t, file, failed]);
+  if (shown === 'drc' && file) {
     const { verses, folds } = drcVerses(file, section.folds);
     return (
       <div data-translated="drc" data-testid="drc-body">
@@ -86,26 +138,31 @@ export function TranslatedBody({
   );
 }
 
+/** The first verse anchor at or below the top bar, and where it is on screen. */
+function topVerse(): { id: string; top: number } | null {
+  for (const el of document.querySelectorAll<HTMLElement>('article [id^="v-"]')) {
+    const top = el.getBoundingClientRect().top;
+    if (top >= 64) return { id: el.id, top };
+  }
+  return null;
+}
+
 export function TranslationSwitch({ id }: { id: string }) {
   const t = useTranslation();
   const { file } = useDrc(id, t === 'drc');
   return (
     <p className={styles.translation} data-testid="translation" data-pagefind-ignore="all">
       <span className={styles.translationSwitch} role="group" aria-label="Translation">
-        {(['webc', 'drc'] as const).map((x) => (
+        {TRANSLATIONS.map((x) => (
           <button
-            key={x}
+            key={x.id}
             type="button"
-            aria-pressed={t === x}
-            onClick={() => writeSettings({ translation: x })}
-            data-testid={`translation-${x}`}
-            title={
-              x === 'webc'
-                ? 'World English Bible Catholic Edition: modern English from the Hebrew and Greek'
-                : 'Douay-Rheims (Challoner): the traditional Catholic English, from the Latin Vulgate'
-            }
+            aria-pressed={t === x.id}
+            onClick={() => writeSettings({ translation: x.id })}
+            data-testid={`translation-${x.id}`}
+            title={`${x.name}: ${x.note}`}
           >
-            {x === 'webc' ? 'WEBC' : 'Douay-Rheims'}
+            {x.short}
           </button>
         ))}
       </span>

@@ -20,7 +20,7 @@ import type { Testaments } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
 import type { Constellation, ThemesLayout as ThemesLayoutT } from './constellations';
 import { layoutVault, type Medallion, type Point } from './layout';
-import { ThemeTree } from './ThemeTree';
+import { TranslationPicker } from '@/components/ui/TranslationPicker';
 import type { StarHide } from './starfield';
 import { useThemes } from './useThemes';
 import styles from './vault.module.css';
@@ -223,6 +223,11 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     if (themeData && !Labels)
       void import('./ThemesLabels').then((m) => setLabels(() => m.ThemesLabels));
   }, [themeData, Labels]);
+  // The theme tree (the accessible structure of Themes), loaded with the themes' data too.
+  const [Tree, setTree] = useState<typeof import('./ThemeTree').ThemeTree | null>(null);
+  useEffect(() => {
+    if (themeData && !Tree) void import('./ThemeTree').then((m) => setTree(() => m.ThemeTree));
+  }, [themeData, Tree]);
   const [spreadReq, setSpreadReq] = useState<{ sub: string; n: number } | null>(null);
 
   const currentBook = lastSection ? sections[lastSection]?.[1] : undefined;
@@ -714,6 +719,12 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
               </button>
             ))}
           </div>
+          {/* Which Bible to read in, set before opening a reading (owner, 2026-11-17). */}
+          <TranslationPicker
+            className={`${styles.button} ${styles.translation}`}
+            testId="vault-translation"
+            prefix="Bible"
+          />
           <button
             type="button"
             className={styles.button}
@@ -760,6 +771,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           aria-hidden="true"
           data-testid="vault-view"
         >
+          <div className="stardust" />
+          <div className="stardust" />
           {[0, 1, 2].map((i) => (
             <div
               key={i}
@@ -1033,8 +1046,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       ) : null}
 
       {/* In Themes, the accessible structure is the theme tree (shown by List). */}
-      {themeView !== 'spiral' && themeData ? (
-        <ThemeTree
+      {themeView !== 'spiral' && themeData && Tree ? (
+        <Tree
           data={themeData}
           visible={mode === 'list'}
           hidden={hide}

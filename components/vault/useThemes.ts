@@ -112,27 +112,26 @@ export function useThemes(opts: {
   const spread = useRef<DrawOptions['spread']>(undefined);
   const busy = useRef(false);
 
-  const layout = useMemo(
-    () =>
-      data
-        ? layoutThemes(
-            data.themes.map((t) => ({
-              id: t.id,
-              subthemes: t.subthemes.map((s) => ({
-                id: s.id,
-                readings: s.readings.map((x) => ({
-                  key: x.sectionId,
-                  bookId: x.bookId,
-                  library: x.library,
-                  bright: !!x.key,
-                })),
-              })),
+  const build = useCallback(
+    (d: ThemesData) =>
+      layoutThemes(
+        d.themes.map((t) => ({
+          id: t.id,
+          subthemes: t.subthemes.map((s) => ({
+            id: s.id,
+            readings: s.readings.map((x) => ({
+              key: x.sectionId,
+              bookId: x.bookId,
+              library: x.library,
+              bright: !!x.key,
             })),
-            homes,
-          )
-        : null,
-    [data, homes],
+          })),
+        })),
+        homes,
+      ),
+    [homes],
   );
+  const layout = useMemo(() => (data ? build(data) : null), [data, build]);
   useEffect(() => {
     layoutRef.current = layout;
   }, [layout]);
@@ -220,7 +219,9 @@ export function useThemes(opts: {
         setView(target === 'themes' ? 'to-themes' : 'to-spiral');
         // Let the layers for the flight mount (and the star field be created) before it starts.
         await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-        onStart?.(layoutRef.current);
+        // The layout React builds from the data may not be committed yet on a busy device: build
+        // it here then, so the camera always frames the constellations.
+        onStart?.(layoutRef.current ?? build(loaded));
         dir.current = to > from ? 1 : -1;
         const ms = (fade.current ? FADE_MS : FLIGHT_MS) * Math.abs(to - from);
         const t0 = performance.now();
@@ -274,7 +275,7 @@ export function useThemes(opts: {
         busy.current = false;
       }
     },
-    [data, draw],
+    [data, draw, build],
   );
 
   const setSpread = useCallback(

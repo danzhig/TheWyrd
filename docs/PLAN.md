@@ -979,6 +979,9 @@ interface Theme {
 | P7.1 | Alignment: every WEBC verse paired with the Douay-Rheims verses holding the same words (`pnpm drc:align`) | Every Douay-Rheims verse placed; numbering changes from STEPBible TVTMS, each record used only where its own tests show which column each text follows; a content check on every pair, with pairs moved within four verses where the Latin divides verses differently; owner-approved maps (`content/drc/maps.json`, with fingerprints) for Tobit, Judith, Esther and the Romans doxology; the review documents `docs/drc/alignment.md` and `docs/drc/details.md` |
 | P7.2 | The toggle (done 2026-11-17) | A display setting (WEBC / Douay-Rheims) kept across visits; each section's Douay-Rheims text in its own file, loaded only when chosen; the Douay-Rheims's own verse numbers, reference and book name in its mode; thread marks and notes at the right verses; the pipeline fails on an unapproved or edited map; credited on `/sources` |
 
+
+**Choosing the Bible anywhere (owner, 2026-11-17).** The choice is global and always at hand: a "Bible" picker on the Vault's header (Spiral or Themes), so a reader sets it before opening any reading, and a small tab on the reader's right edge, clear of the text and the pills at the foot, to switch in the middle of a reading when the older English is hard going. Switching keeps the reader's place (the verse at the top of the screen stays there). The pickers read one list of Bibles, so a third translation, if one is added, appears in all of them.
+
 ## 17. Later: bookmarks, highlights and accounts
 
 **Accounts and saved annotations come only after Phases 1–6, and the earlier phases are built so they slot in without rework.**

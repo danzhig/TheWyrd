@@ -22,7 +22,9 @@
     inset 0 0 0 4px color-mix(in srgb, var(--rule) 35%, transparent);
 }
 
-/* The Vault ceiling: night at the edges, a gold oculus at the centre, cloud bands, vignette, grain. */
+/* The Vault ceiling (owner, 2026-11-17: brighter, celestial, holy): a wide glow of light falling
+   through the gold oculus, warm umber around it, deepening to a night touched with blue at the
+   edges; cloud bands, a field of faint stars, a light vignette and grain. */
 .vault-sky {
   position: relative;
   isolation: isolate;
@@ -30,11 +32,46 @@
   background:
     radial-gradient(
       circle at 50% 50%,
-      color-mix(in srgb, var(--gold-light) 55%, transparent) 0%,
-      color-mix(in srgb, var(--gold) 22%, transparent) 14%,
-      transparent 38%
+      color-mix(in srgb, #fff8e6 70%, transparent) 0%,
+      color-mix(in srgb, var(--gold-light) 50%, transparent) 9%,
+      color-mix(in srgb, var(--gold) 24%, transparent) 26%,
+      transparent 52%
     ),
-    radial-gradient(circle at 50% 50%, #3a2a1a 0%, var(--umber) 35%, var(--night) 75%);
+    radial-gradient(
+      circle at 50% 50%,
+      #5a4128 0%,
+      #3e2c1c 30%,
+      color-mix(in srgb, #241c30 60%, var(--night)) 72%,
+      #12101c 100%
+    );
+}
+
+/* A field of faint stars behind the clouds, in two layers of different spacing. Still: a
+   twinkle across the whole screen cost frames during the Spiral ⇄ Themes flight on phones. */
+.vault-sky .stardust {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1px 1px at 68% 9%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 33% 72%, #f0d48a 50%, transparent 51%),
+    radial-gradient(1px 1px at 84% 61%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1px 1px at 47% 41%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 91% 27%, #f0d48a 50%, transparent 51%),
+    radial-gradient(1px 1px at 22% 88%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1px 1px at 59% 83%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1px 1px at 5% 52%, #fff8e6 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 76% 44%, #fff8e6 50%, transparent 51%);
+  background-size: 310px 310px;
+  opacity: 0.55;
+}
+
+.vault-sky .stardust + .stardust {
+  background-size: 470px 470px;
+  background-position: 120px 60px;
+  opacity: 0.35;
 }
 
 .vault-sky .cloud-layer {
@@ -57,7 +94,7 @@
 }
 
 :root[data-textures='on'] .vault-sky .cloud-far {
-  opacity: 0.55;
+  opacity: 0.45;
 }
 
 :root[data-textures] .vault-sky .cloud-mid {
@@ -69,7 +106,7 @@
 }
 
 :root[data-textures='on'] .vault-sky .cloud-mid {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 :root[data-textures] .vault-sky .cloud-near {
@@ -81,7 +118,7 @@
 }
 
 :root[data-textures='on'] .vault-sky .cloud-near {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* Soft vignette and a faint film grain sit over everything in the Vault. */
@@ -111,8 +148,8 @@
 .vault-sky::after {
   background: radial-gradient(
     circle at 50% 50%,
-    transparent 45%,
-    color-mix(in srgb, var(--night) 85%, transparent) 100%
+    transparent 55%,
+    color-mix(in srgb, #0e0c18 70%, transparent) 100%
   );
 }
 
