@@ -964,6 +964,15 @@ interface Theme {
 | P6.3 ✓ | Constellation scene | Spiral / Themes switch, the morph, constellations, semantic zoom into sub-themes and passages | The morph runs at 60 fps in the throttled phone trace, both ways; an e2e test samples stars mid-flight and finds them between their book's medallion and their constellation place; under 300 interactive nodes at any zoom; reduced motion cross-fades |
 | P6.4 ✓ | Tree, reader links and tests | The theme tree (List and phone default), "Themes" margin links in the reader, breadcrumbs back | Every star has a matching tree link; e2e walks theme → passage → back on both viewports; axe reports no serious issues |
 
+## 16b. Phase 7: a second translation, the Douay-Rheims toggle
+
+**Added on 2026-11-17 at the owner's request: a reading setting that switches the words on a page between the WEBC and the Douay-Rheims (Challoner revision), so a reader can choose the plain modern translation or the traditional Catholic one.** The WEBC stays the site's backbone: the plan, sections, Next, progress, threads, themes and search keep its numbering, and the toggle only changes which words a page shows. The Douay-Rheims is public domain (§3) and already pinned for Phase 3.
+
+| Step | What | Acceptance |
+| --- | --- | --- |
+| P7.1 | Alignment: every WEBC verse paired with the Douay-Rheims verses holding the same words (`pnpm drc:align`) | Every Douay-Rheims verse placed; numbering changes from STEPBible TVTMS, each record used only where its own tests show which column each text follows; a content check on every pair, with pairs moved within four verses where the Latin divides verses differently; owner-approved maps (`content/drc/maps.json`, with fingerprints) for Tobit, Judith, Esther and the Romans doxology; the review documents `docs/drc/alignment.md` and `docs/drc/details.md` |
+| P7.2 | The toggle | A display setting (WEBC / Douay-Rheims) kept across visits; each section's Douay-Rheims text in its own file, loaded only when chosen; the Douay-Rheims's own verse numbers, reference and book name in its mode; thread marks and notes at the right verses; the pipeline fails on an unapproved or edited map; credited on `/sources` |
+
 ## 17. Later: bookmarks, highlights and accounts
 
 **Accounts and saved annotations come only after Phases 1–6, and the earlier phases are built so they slot in without rework.**
