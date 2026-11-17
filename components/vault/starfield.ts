@@ -181,7 +181,7 @@ export class StarField {
     // A short, thin streak behind each star while it flies.
     if (flying) {
       ctx.lineWidth = 1;
-      ctx.lineCap = 'round';
+      ctx.lineCap = 'butt';
       for (const lib of [true, false]) {
         ctx.strokeStyle = lib ? this.pale : this.gold;
         ctx.globalAlpha = lib ? 0.25 : 0.4;
@@ -198,14 +198,19 @@ export class StarField {
       }
     }
 
-    // A small soft glow under each path star, then the stars themselves.
-    this.layout.stars.forEach((s, i) => {
-      if (s.library || !shown(i)) return;
-      ctx.globalAlpha = starsAlpha * vis[i]!;
-      const open = st > 0 && s.subId === o.spread!.sub;
-      const g = open ? r * 3.5 : r * (s.subId === o.lit ? 7 : 4.5) * (s.bright ? 1.5 : 1);
-      ctx.drawImage(this.glow, xs[i]! - g / 2, ys[i]! - g / 2, g, g);
-    });
+    // A small soft glow under each path star, then the stars themselves. Glows fade out while the
+    // stars fly (a thousand stamped sprites a frame cost frames on a phone) and back as they land.
+    const glow = o.fade
+      ? 1
+      : 1 - smooth(FLY_FROM, FLY_FROM + 0.06, o.p) + smooth(FLY_TO - 0.06, FLY_TO, o.p);
+    if (glow > 0.01)
+      this.layout.stars.forEach((s, i) => {
+        if (s.library || !shown(i)) return;
+        ctx.globalAlpha = starsAlpha * vis[i]! * glow;
+        const open = st > 0 && s.subId === o.spread!.sub;
+        const g = open ? r * 3.5 : r * (s.subId === o.lit ? 7 : 4.5) * (s.bright ? 1.5 : 1);
+        ctx.drawImage(this.glow, xs[i]! - g / 2, ys[i]! - g / 2, g, g);
+      });
     for (const lib of [true, false])
       for (const level of levels) {
         ctx.fillStyle = lib ? this.pale : this.gold;
@@ -218,8 +223,13 @@ export class StarField {
           const rr = open
             ? (lib ? 0.8 : 1) * (s.bright ? 4.5 : 3)
             : (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1) * (s.bright ? 1.6 : 1);
-          ctx.moveTo(xs[i]! + rr, ys[i]!);
-          ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
+          // In flight, or under 2.5 px across, a star drawn as a square looks the same and is far
+          // cheaper to fill.
+          if (flying || rr < 1.25) ctx.rect(xs[i]! - rr, ys[i]! - rr, rr * 2, rr * 2);
+          else {
+            ctx.moveTo(xs[i]! + rr, ys[i]!);
+            ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
+          }
         });
         ctx.fill();
       }
