@@ -66,11 +66,17 @@ export async function fetchSources(): Promise<Record<string, string>> {
     console.log(`ok     ${src.id}  sha256 ${got.slice(0, 12)}…`);
     out[src.id] = dest;
   }
-  // Unpack the WEBC USFM zip next to it.
+  // Unpack the WEBC USFM zip next to it, again whenever the pinned zip changes (a re-pin), so a
+  // build never reads text from an older download.
   const webcDir = path.join(RAW_DIR, 'webc');
-  if (!fs.existsSync(webcDir)) {
+  const webcZip = path.join(RAW_DIR, 'eng-web-c_usfm.zip');
+  const stamp = path.join(webcDir, '.zip-sha256');
+  const zipSum = sha256(webcZip);
+  if (!fs.existsSync(stamp) || fs.readFileSync(stamp, 'utf8') !== zipSum) {
+    fs.rmSync(webcDir, { recursive: true, force: true });
     fs.mkdirSync(webcDir);
-    execFileSync('unzip', ['-q', '-o', path.join(RAW_DIR, 'eng-web-c_usfm.zip'), '-d', webcDir]);
+    execFileSync('unzip', ['-q', '-o', webcZip, '-d', webcDir]);
+    fs.writeFileSync(stamp, zipSum);
   }
   out.webcDir = webcDir;
   return out;
