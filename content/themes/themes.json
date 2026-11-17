@@ -34,9 +34,61 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L14181"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
                 }
               ],
-              "score": 28,
+              "score": 32,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.5.1",
+              "sectionId": "gen-x1",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.9.6",
+              "sectionId": "gen-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Job.10.8",
+              "sectionId": "job-x105",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
               "status": "approved"
             },
             {
@@ -46,9 +98,77 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L14178"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
                 }
               ],
-              "score": 6.7,
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.16.4",
+              "sectionId": "prov-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.22.2",
+              "sectionId": "prov-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Eccl.3.11",
+              "sectionId": "eccl-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#284"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Eccl.11.5",
+              "sectionId": "eccl-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#49"
+                }
+              ],
+              "score": 8,
               "status": "approved"
             },
             {
@@ -58,9 +178,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L14175"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
                 }
               ],
-              "score": 10,
+              "score": 14,
               "status": "approved"
             },
             {
@@ -70,9 +194,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L14183"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
                 }
               ],
-              "score": 6.7,
+              "score": 10.7,
               "status": "approved"
             },
             {
@@ -82,9 +210,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L14179"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#48"
                 }
               ],
-              "score": 6.7,
+              "score": 10.7,
               "status": "approved"
             }
           ]
@@ -119,27 +251,35 @@
               "status": "approved"
             },
             {
-              "ref": "Exod.19.6",
-              "sectionId": "exod-09",
+              "ref": "Lev.11.44",
+              "sectionId": "lev-06",
               "sources": [
                 {
                   "dataset": "naves",
                   "row": "Nave:HOLINESS#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
-              "score": 4,
+              "score": 8,
               "status": "approved"
             },
             {
-              "ref": "Exod.22.31",
-              "sectionId": "exod-x102",
+              "ref": "Lev.19.2",
+              "sectionId": "lev-12",
               "sources": [
                 {
                   "dataset": "naves",
                   "row": "Nave:HOLINESS#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
-              "score": 4,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -153,9 +293,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L30153"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
-              "score": 14,
+              "score": 18,
               "status": "approved"
             },
             {
@@ -165,9 +309,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L30152"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
-              "score": 10,
+              "score": 14,
               "status": "approved"
             },
             {
@@ -181,9 +329,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L30156"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
-              "score": 14,
+              "score": 18,
               "status": "approved"
             },
             {
@@ -247,16 +399,16 @@
               "status": "approved"
             },
             {
-              "ref": "1Pet.2.9",
+              "ref": "1Pet.1.15-1Pet.1.16",
               "sectionId": "1pet-01",
               "sources": [
                 {
-                  "dataset": "naves",
-                  "row": "Nave:HOLINESS#1"
+                  "dataset": "openbible",
+                  "row": "OpenBible:L30151"
                 },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L30150"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#82"
                 }
               ],
               "score": 14,
@@ -270,15 +422,19 @@
           "description": "A God who keeps his word through every generation.",
           "passages": [
             {
-              "ref": "Deut.28.1-Deut.28.68",
-              "sectionId": "deut-02",
+              "ref": "Deut.7.9",
+              "sectionId": "deut-x302",
               "sources": [
                 {
                   "dataset": "openbible",
-                  "row": "OpenBible:L21544"
+                  "row": "OpenBible:L21550"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
-              "score": 6,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -288,21 +444,29 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L21549"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
-              "score": 6,
+              "score": 10,
               "status": "approved"
             },
             {
-              "ref": "Prov.3.3-Prov.3.4",
-              "sectionId": "prov-02",
+              "ref": "Ps.111.5",
+              "sectionId": "ps-111",
               "sources": [
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L21546"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#201"
                 }
               ],
-              "score": 6,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -338,18 +502,6 @@
               "status": "approved"
             },
             {
-              "ref": "Lam.3.22-Lam.3.23",
-              "sectionId": "lam-03",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L21545"
-                }
-              ],
-              "score": 6,
-              "status": "approved"
-            },
-            {
               "ref": "Luke.16.10-Luke.16.12",
               "sectionId": "luke-11",
               "sources": [
@@ -366,31 +518,35 @@
               "status": "approved"
             },
             {
-              "ref": "1Cor.4.2",
+              "ref": "1Cor.1.9",
               "sectionId": "1cor-01",
               "sources": [
                 {
-                  "dataset": "naves",
-                  "row": "Nave:FAITHFULNESS#1"
+                  "dataset": "openbible",
+                  "row": "OpenBible:L21552"
                 },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L21556"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
               "score": 8,
               "status": "approved"
             },
             {
-              "ref": "2Cor.5.7",
-              "sectionId": "2cor-02",
+              "ref": "1Cor.10.13",
+              "sectionId": "1cor-03",
               "sources": [
                 {
                   "dataset": "openbible",
-                  "row": "OpenBible:L21543"
+                  "row": "OpenBible:L21551"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
-              "score": 6,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -400,6 +556,26 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L21541"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Heb.10.23",
+              "sectionId": "heb-03",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L21553"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
               "score": 8,
@@ -412,9 +588,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L21542"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#54"
                 }
               ],
-              "score": 8,
+              "score": 12,
               "status": "approved"
             },
             {
@@ -441,31 +621,19 @@
           "description": "The weight and splendour of God's presence, seen in the tent, the temple and the face of Christ.",
           "passages": [
             {
-              "ref": "Exod.15.1",
+              "ref": "Exod.15.6",
               "sectionId": "exod-06",
               "sources": [
                 {
                   "dataset": "naves",
                   "row": "Nave:GLORY#34"
-                }
-              ],
-              "score": 4,
-              "status": "approved"
-            },
-            {
-              "ref": "Ps.3.3",
-              "sectionId": "ps-003",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:GLORY#1"
                 },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L26146"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#142"
                 }
               ],
-              "score": 10.7,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -479,9 +647,53 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L26144"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#63"
                 }
               ],
-              "score": 10.7,
+              "score": 14.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.93.1",
+              "sectionId": "ps-093",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GLORY#33"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#142"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#259"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.113.4",
+              "sectionId": "ps-113",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GLORY#40"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#63"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#259"
+                }
+              ],
+              "score": 12,
               "status": "approved"
             },
             {
@@ -495,21 +707,33 @@
                 {
                   "dataset": "naves",
                   "row": "Nave:GLORY#44"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#63"
                 }
               ],
-              "score": 8,
+              "score": 12,
               "status": "approved"
             },
             {
-              "ref": "Matt.5.16",
-              "sectionId": "matt-03",
+              "ref": "Matt.6.13",
+              "sectionId": "matt-04",
               "sources": [
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L26141"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#63"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#142"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#259"
                 }
               ],
-              "score": 6.7,
+              "score": 12,
               "status": "approved"
             },
             {
@@ -542,18 +766,6 @@
                 }
               ],
               "score": 10.7,
-              "status": "approved"
-            },
-            {
-              "ref": "Rom.3.23",
-              "sectionId": "rom-01",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L26142"
-                }
-              ],
-              "score": 6.7,
               "status": "approved"
             },
             {
@@ -595,25 +807,37 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L26145"
-                }
-              ],
-              "score": 10.7,
-              "status": "approved"
-            },
-            {
-              "ref": "1Pet.5.10",
-              "sectionId": "1pet-02",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:GLORY#13"
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:GLORY#14"
+                  "row": "Nave:GOD#142"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#259"
                 }
               ],
-              "score": 8,
+              "score": 18.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Rev.4.11",
+              "sectionId": "rev-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#63"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#142"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#259"
+                }
+              ],
+              "score": 12,
               "status": "approved"
             }
           ]
@@ -622,7 +846,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "c60bbefcfd519dbf"
+        "fingerprint": "0e0da0da39f156c6"
       }
     },
     {
@@ -1341,18 +1565,6 @@
               "status": "approved"
             },
             {
-              "ref": "Ps.2.2",
-              "sectionId": "ps-002",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:JESUS, THE CHRIST#301"
-                }
-              ],
-              "score": 4,
-              "status": "approved"
-            },
-            {
               "ref": "Isa.7.14",
               "sectionId": "isa-03",
               "sources": [
@@ -1393,6 +1605,22 @@
               "status": "approved"
             },
             {
+              "ref": "John.1.41",
+              "sectionId": "john-x102",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JESUS, THE CHRIST#301"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41073"
+                }
+              ],
+              "score": 9,
+              "status": "approved"
+            },
+            {
               "ref": "John.4.25-John.4.26",
               "sectionId": "john-x107",
               "sources": [
@@ -1409,15 +1637,19 @@
               "status": "approved"
             },
             {
-              "ref": "John.14.6",
-              "sectionId": "john-x205",
+              "ref": "John.8.56",
+              "sectionId": "john-x114",
               "sources": [
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L41075"
+                  "dataset": "naves",
+                  "row": "Nave:JESUS, THE CHRIST#711"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JESUS, THE CHRIST#301"
                 }
               ],
-              "score": 5,
+              "score": 8,
               "status": "approved"
             }
           ]
@@ -1426,7 +1658,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "c35855ad7e3036b5"
+        "fingerprint": "3e6f844d78ac2ad4"
       }
     },
     {
@@ -2352,31 +2584,103 @@
           "description": "Compassion that goes beyond what is owed.",
           "passages": [
             {
-              "ref": "Gen.39.21-Gen.39.23",
-              "sectionId": "gen-17",
+              "ref": "Exod.33.19",
+              "sectionId": "exod-12",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:MERCY#5"
+                  "row": "Nave:GOD#124"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#66"
                 }
               ],
-              "score": 4,
+              "score": 8,
               "status": "approved"
             },
             {
-              "ref": "Mic.6.8",
-              "sectionId": "mic-03",
+              "ref": "Exod.34.6",
+              "sectionId": "exod-13",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:MERCY#1"
+                  "row": "Nave:GOD#124"
                 },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L41034"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#118"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#66"
                 }
               ],
-              "score": 7.3,
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.14.18-Num.14.20",
+              "sectionId": "num-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#118"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.16.34",
+              "sectionId": "1chr-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#66"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.5.13",
+              "sectionId": "2chr-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#66"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.69.16",
+              "sectionId": "ps-069",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#66"
+                }
+              ],
+              "score": 8,
               "status": "approved"
             },
             {
@@ -2396,18 +2700,6 @@
               "status": "approved"
             },
             {
-              "ref": "Matt.9.13",
-              "sectionId": "matt-05",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L41031"
-                }
-              ],
-              "score": 6.7,
-              "status": "approved"
-            },
-            {
               "ref": "Luke.6.36",
               "sectionId": "luke-07",
               "sources": [
@@ -2418,45 +2710,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L41027"
-                }
-              ],
-              "score": 14,
-              "status": "approved"
-            },
-            {
-              "ref": "John.17.5",
-              "sectionId": "john-x207",
-              "sources": [
+                },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L17363"
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
                 }
               ],
-              "score": 5.6,
-              "status": "approved"
-            },
-            {
-              "ref": "Rom.6.23",
-              "sectionId": "rom-03",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L17364"
-                }
-              ],
-              "score": 4.4,
-              "status": "approved"
-            },
-            {
-              "ref": "Eph.2.8",
-              "sectionId": "eph-01",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L17362"
-                }
-              ],
-              "score": 5.6,
+              "score": 18,
               "status": "approved"
             },
             {
@@ -2466,9 +2726,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L17359"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
                 }
               ],
-              "score": 10,
+              "score": 14,
               "status": "approved"
             },
             {
@@ -2478,9 +2742,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L41030"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
                 }
               ],
-              "score": 6.7,
+              "score": 10.7,
               "status": "approved"
             },
             {
@@ -2494,21 +2762,29 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L41028"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
                 }
               ],
-              "score": 12.3,
+              "score": 16.3,
               "status": "approved"
             },
             {
-              "ref": "1Pet.2.24",
+              "ref": "1Pet.1.3",
               "sectionId": "1pet-01",
               "sources": [
                 {
                   "dataset": "openbible",
-                  "row": "OpenBible:L17360"
+                  "row": "OpenBible:L41032"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#124"
                 }
               ],
-              "score": 7.8,
+              "score": 9,
               "status": "approved"
             }
           ]
@@ -2730,6 +3006,46 @@
           "description": "A gift that cannot be earned.",
           "passages": [
             {
+              "ref": "Gen.6.8",
+              "sectionId": "gen-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#71"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.15.6",
+              "sectionId": "gen-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Job.10.12",
+              "sectionId": "job-x105",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#71"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
               "ref": "John.1.16",
               "sectionId": "john-x101",
               "sources": [
@@ -2742,15 +3058,19 @@
               "status": "approved"
             },
             {
-              "ref": "Rom.3.24",
-              "sectionId": "rom-01",
+              "ref": "Rom.5.2",
+              "sectionId": "rom-02",
               "sources": [
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L27498"
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#71"
                 }
               ],
-              "score": 2.9,
+              "score": 8,
               "status": "approved"
             },
             {
@@ -2772,9 +3092,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L27490"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
                 }
               ],
-              "score": 5.7,
+              "score": 9.7,
               "status": "approved"
             },
             {
@@ -2784,9 +3108,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L27495"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
                 }
               ],
-              "score": 4.3,
+              "score": 8.3,
               "status": "approved"
             },
             {
@@ -2812,21 +3140,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L27493"
-                }
-              ],
-              "score": 14.3,
-              "status": "approved"
-            },
-            {
-              "ref": "Titus.2.11-Titus.2.14",
-              "sectionId": "titus-01",
-              "sources": [
+                },
                 {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L27497"
+                  "dataset": "naves",
+                  "row": "Nave:GRACE OF GOD#1"
                 }
               ],
-              "score": 2.9,
+              "score": 18.3,
               "status": "approved"
             },
             {
@@ -2836,9 +3156,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L27492"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#71"
                 }
               ],
-              "score": 4.3,
+              "score": 8.3,
               "status": "approved"
             },
             {
@@ -3110,7 +3434,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "56a4ca8b71e337df"
+        "fingerprint": "a493a5ccebf61e2b"
       }
     },
     {
@@ -3363,24 +3687,24 @@
               "status": "approved"
             },
             {
-              "ref": "Ps.9.18",
-              "sectionId": "ps-009",
+              "ref": "Job.11.20",
+              "sectionId": "job-x106",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:HOPE#1"
+                  "row": "Nave:HOPE#3"
                 }
               ],
               "score": 4,
               "status": "approved"
             },
             {
-              "ref": "Ps.16.9",
-              "sectionId": "ps-016",
+              "ref": "Job.27.8",
+              "sectionId": "job-x117",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:HOPE#1"
+                  "row": "Nave:HOPE#3"
                 }
               ],
               "score": 4,
@@ -3954,7 +4278,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "aa457507269c344c"
+        "fingerprint": "cc5462a838e89032"
       }
     },
     {
@@ -4422,22 +4746,6 @@
           "description": "Altar, tabernacle and temple, and the offering of oneself.",
           "passages": [
             {
-              "ref": "Gen.35.2",
-              "sectionId": "gen-14",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WORSHIP#12"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WORSHIP#59"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
               "ref": "Deut.31.11-Deut.31.13",
               "sectionId": "deut-03",
               "sources": [
@@ -4488,6 +4796,18 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L53362"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "John.3.16",
+              "sectionId": "john-x105",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L53367"
                 }
               ],
               "score": 10,
@@ -5077,7 +5397,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "3e76cab304541dab"
+        "fingerprint": "2a373886022975d9"
       }
     },
     {
@@ -5330,6 +5650,26 @@
               "status": "approved"
             },
             {
+              "ref": "Job.18.14",
+              "sectionId": "job-x110",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DEATH#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DEATH#34"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DEATH#48"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
               "ref": "Ps.23.4",
               "sectionId": "ps-023",
               "sources": [
@@ -5347,22 +5687,6 @@
                 }
               ],
               "score": 12,
-              "status": "approved"
-            },
-            {
-              "ref": "Ps.34.18",
-              "sectionId": "ps-034",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L27750"
-                },
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L42214"
-                }
-              ],
-              "score": 11.7,
               "status": "approved"
             },
             {
@@ -5549,6 +5873,22 @@
               "status": "approved"
             },
             {
+              "ref": "Jer.18.18",
+              "sectionId": "jer-x114",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PERSECUTION#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PERSECUTION#20"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
               "ref": "Matt.5.10",
               "sectionId": "matt-03",
               "sources": [
@@ -5689,22 +6029,6 @@
               "status": "approved"
             },
             {
-              "ref": "Phil.1.12-Phil.1.14",
-              "sectionId": "phil-01",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:PERSECUTION#2"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:PERSECUTION#5"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
               "ref": "2Tim.3.12",
               "sectionId": "2tim-01",
               "sources": [
@@ -5754,9 +6078,45 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L56182"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DISEASE#13"
                 }
               ],
-              "score": 10,
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.23.25",
+              "sectionId": "exod-x102",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L56185"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DISEASE#13"
+                }
+              ],
+              "score": 9,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.7.15",
+              "sectionId": "deut-x302",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DISEASE#12"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DISEASE#13"
+                }
+              ],
+              "score": 8,
               "status": "approved"
             },
             {
@@ -5802,9 +6162,13 @@
                 {
                   "dataset": "openbible",
                   "row": "OpenBible:L56178"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DISEASE#20"
                 }
               ],
-              "score": 10,
+              "score": 14,
               "status": "approved"
             },
             {
@@ -5852,18 +6216,6 @@
               "status": "approved"
             },
             {
-              "ref": "Rom.5.3-Rom.5.4",
-              "sectionId": "rom-02",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L56174"
-                }
-              ],
-              "score": 7.5,
-              "status": "approved"
-            },
-            {
               "ref": "2Cor.1.3-2Cor.1.4",
               "sectionId": "2cor-01",
               "sources": [
@@ -5873,18 +6225,6 @@
                 }
               ],
               "score": 10,
-              "status": "approved"
-            },
-            {
-              "ref": "Jas.5.14-Jas.5.15",
-              "sectionId": "jas-02",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L56175"
-                }
-              ],
-              "score": 7.5,
               "status": "approved"
             },
             {
@@ -5925,7 +6265,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "5b59ed463ec4bb99"
+        "fingerprint": "4ff2ba2a8dd9a50f"
       }
     },
     {
@@ -5939,48 +6279,32 @@
           "description": "The love God shows, and the love he commands.",
           "passages": [
             {
-              "ref": "Ps.133.1-Ps.133.3",
-              "sectionId": "ps-133",
+              "ref": "Deut.4.37",
+              "sectionId": "deut-x103",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#16"
+                  "row": "Nave:GOD#122"
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#17"
+                  "row": "Nave:GOD#123"
                 }
               ],
               "score": 8,
               "status": "approved"
             },
             {
-              "ref": "Matt.5.41-Matt.5.47",
-              "sectionId": "matt-03",
+              "ref": "Deut.7.13",
+              "sectionId": "deut-x302",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#16"
+                  "row": "Nave:GOD#122"
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#17"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
-              "ref": "Matt.10.41",
-              "sectionId": "matt-06",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:LOVE#16"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:LOVE#17"
+                  "row": "Nave:GOD#123"
                 }
               ],
               "score": 8,
@@ -6027,35 +6351,63 @@
               "status": "approved"
             },
             {
-              "ref": "Mark.12.30",
-              "sectionId": "mark-09",
+              "ref": "John.14.21",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#4"
+                  "row": "Nave:LOVE#5"
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#16"
+                  "row": "Nave:GOD#122"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#123"
                 }
               ],
-              "score": 8,
+              "score": 12,
               "status": "approved"
             },
             {
-              "ref": "Luke.23.27",
-              "sectionId": "luke-15",
+              "ref": "John.16.27",
+              "sectionId": "john-x206",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#11"
+                  "row": "Nave:LOVE#5"
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:LOVE#15"
+                  "row": "Nave:GOD#122"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#123"
                 }
               ],
-              "score": 8,
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "John.17.26",
+              "sectionId": "john-x207",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LOVE#5"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#122"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#123"
+                }
+              ],
+              "score": 12,
               "status": "approved"
             },
             {
@@ -6084,22 +6436,6 @@
                 }
               ],
               "score": 10.3,
-              "status": "approved"
-            },
-            {
-              "ref": "Gal.5.22",
-              "sectionId": "gal-03",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:LOVE#5"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:LOVE#16"
-                }
-              ],
-              "score": 8,
               "status": "approved"
             },
             {
@@ -6137,6 +6473,26 @@
                 {
                   "dataset": "naves",
                   "row": "Nave:LOVE#17"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1John.4.12",
+              "sectionId": "1john-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LOVE#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LOVE#16"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#122"
                 }
               ],
               "score": 12,
@@ -7164,7 +7520,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "3be66437ec1d2db8"
+        "fingerprint": "4351a1a249fcfb16"
       }
     },
     {
@@ -7188,6 +7544,38 @@
                 {
                   "dataset": "naves",
                   "row": "Nave:WISDOM#4"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Ezra.7.25",
+              "sectionId": "ezra-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WISDOM#11"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#281"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Job.12.16",
+              "sectionId": "job-x107",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WISDOM#16"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GOD#281"
                 }
               ],
               "score": 8,
@@ -7290,24 +7678,8 @@
               "status": "approved"
             },
             {
-              "ref": "Matt.6.23",
-              "sectionId": "matt-04",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WISDOM#16"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WISDOM#23"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
-              "ref": "Matt.11.25-Matt.11.27",
-              "sectionId": "matt-07",
+              "ref": "Dan.2.20-Dan.2.23",
+              "sectionId": "dan-02",
               "sources": [
                 {
                   "dataset": "naves",
@@ -7315,23 +7687,7 @@
                 },
                 {
                   "dataset": "naves",
-                  "row": "Nave:WISDOM#23"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
-              "ref": "John.8.32",
-              "sectionId": "john-x114",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WISDOM#16"
-                },
-                {
-                  "dataset": "naves",
-                  "row": "Nave:WISDOM#19"
+                  "row": "Nave:GOD#281"
                 }
               ],
               "score": 8,
@@ -7680,6 +8036,22 @@
               "status": "approved"
             },
             {
+              "ref": "John.14.27",
+              "sectionId": "john-x205",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PEACE#9"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L46367"
+                }
+              ],
+              "score": 11.5,
+              "status": "approved"
+            },
+            {
               "ref": "John.16.33",
               "sectionId": "john-x206",
               "sources": [
@@ -7697,22 +8069,6 @@
                 }
               ],
               "score": 18,
-              "status": "approved"
-            },
-            {
-              "ref": "Rom.12.12",
-              "sectionId": "rom-06",
-              "sources": [
-                {
-                  "dataset": "naves",
-                  "row": "Nave:JOY#3"
-                },
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L34682"
-                }
-              ],
-              "score": 11.5,
               "status": "approved"
             },
             {
@@ -8163,7 +8519,7 @@
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "e5419b81b9b57076"
+        "fingerprint": "747b0dd5afd23081"
       }
     },
     {
@@ -8189,22 +8545,6 @@
               "status": "approved"
             },
             {
-              "ref": "Matt.4.17",
-              "sectionId": "matt-02",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L35631"
-                },
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L35647"
-                }
-              ],
-              "score": 10,
-              "status": "approved"
-            },
-            {
               "ref": "Matt.6.33",
               "sectionId": "matt-04",
               "sources": [
@@ -8221,19 +8561,39 @@
               "status": "approved"
             },
             {
-              "ref": "Matt.16.19",
-              "sectionId": "matt-10",
+              "ref": "Matt.13.24-Matt.13.33",
+              "sectionId": "matt-08",
               "sources": [
                 {
                   "dataset": "naves",
-                  "row": "Nave:KINGDOM OF HEAVEN#16"
+                  "row": "Nave:KINGDOM OF HEAVEN#2"
                 },
                 {
                   "dataset": "openbible",
-                  "row": "OpenBible:L35632"
+                  "row": "OpenBible:L45568"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L45574"
                 }
               ],
-              "score": 9,
+              "score": 15.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.18.23-Matt.18.35",
+              "sectionId": "matt-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KINGDOM OF HEAVEN#8"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L45562"
+                }
+              ],
+              "score": 14,
               "status": "approved"
             },
             {
@@ -8253,6 +8613,22 @@
               "status": "approved"
             },
             {
+              "ref": "Mark.4.26-Mark.4.29",
+              "sectionId": "mark-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KINGDOM OF HEAVEN#2"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L45575"
+                }
+              ],
+              "score": 9,
+              "status": "approved"
+            },
+            {
               "ref": "Mark.10.15",
               "sectionId": "mark-08",
               "sources": [
@@ -8265,15 +8641,27 @@
               "status": "approved"
             },
             {
-              "ref": "Luke.11.20",
+              "ref": "Luke.10.30-Luke.10.37",
               "sectionId": "luke-10",
               "sources": [
                 {
                   "dataset": "openbible",
-                  "row": "OpenBible:L35648"
+                  "row": "OpenBible:L45566"
                 }
               ],
-              "score": 5,
+              "score": 6.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.15.11-Luke.15.32",
+              "sectionId": "luke-11",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L45561"
+                }
+              ],
+              "score": 10,
               "status": "approved"
             },
             {
@@ -8290,18 +8678,6 @@
                 }
               ],
               "score": 15,
-              "status": "approved"
-            },
-            {
-              "ref": "John.3.3",
-              "sectionId": "john-x105",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L35643"
-                }
-              ],
-              "score": 5,
               "status": "approved"
             },
             {
@@ -8342,18 +8718,6 @@
                 }
               ],
               "score": 14,
-              "status": "approved"
-            },
-            {
-              "ref": "Rev.21.1-Rev.21.27",
-              "sectionId": "rev-10",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L35642"
-                }
-              ],
-              "score": 5,
               "status": "approved"
             }
           ]
@@ -8437,6 +8801,22 @@
                 }
               ],
               "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "John.6.37",
+              "sectionId": "john-x111",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:SALVATION#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:SALVATION#26"
+                }
+              ],
+              "score": 8,
               "status": "approved"
             },
             {
@@ -8534,18 +8914,6 @@
                 {
                   "dataset": "naves",
                   "row": "Nave:SALVATION#26"
-                }
-              ],
-              "score": 8,
-              "status": "approved"
-            },
-            {
-              "ref": "Titus.3.5",
-              "sectionId": "titus-01",
-              "sources": [
-                {
-                  "dataset": "openbible",
-                  "row": "OpenBible:L53555"
                 }
               ],
               "score": 8,
@@ -9074,12 +9442,3325 @@
               "status": "approved"
             }
           ]
+        },
+        {
+          "id": "kingdom-mission",
+          "title": "The apostles' mission",
+          "description": "The good news carried from Jerusalem to the ends of the earth.",
+          "passages": [
+            {
+              "ref": "1Chr.16.24",
+              "sectionId": "1chr-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MISSIONS#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41466"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.10.2-Matt.10.4",
+              "sectionId": "matt-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#3"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2683"
+                }
+              ],
+              "score": 15.5,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.24.14",
+              "sectionId": "matt-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MISSIONS#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41465"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.28.19",
+              "sectionId": "matt-18",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MISSIONS#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41467"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41470"
+                }
+              ],
+              "score": 21.3,
+              "status": "approved"
+            },
+            {
+              "ref": "Mark.1.15",
+              "sectionId": "mark-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PREACHING#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PREACHING#7"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PREACHING#9"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Mark.3.13-Mark.3.19",
+              "sectionId": "mark-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#3"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2685"
+                }
+              ],
+              "score": 11.5,
+              "status": "approved"
+            },
+            {
+              "ref": "Mark.16.15",
+              "sectionId": "mark-13",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MISSIONS#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41463"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2686"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L48730"
+                }
+              ],
+              "score": 33,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.6.13",
+              "sectionId": "luke-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#3"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.9.1-Luke.9.5",
+              "sectionId": "luke-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#6"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2689"
+                }
+              ],
+              "score": 13,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.1.8",
+              "sectionId": "acts-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#11"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41464"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.5.12-Acts.5.16",
+              "sectionId": "acts-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#6"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2684"
+                }
+              ],
+              "score": 11.5,
+              "status": "approved"
+            },
+            {
+              "ref": "2Cor.12.12",
+              "sectionId": "2cor-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:APOSTLES#6"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2682"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            }
+          ]
         }
       ],
       "approval": {
         "by": "the owner",
         "date": "2026-11-17",
-        "fingerprint": "637af8b627bcd129"
+        "fingerprint": "5ed9816e37da8901"
+      }
+    },
+    {
+      "id": "story",
+      "title": "The story of God's people",
+      "description": "From Abraham to the return from exile: a people's journey with God, their ancestors, wars, kings and losses.",
+      "subthemes": [
+        {
+          "id": "story-ancestors",
+          "title": "The ancestors",
+          "description": "Abraham, Isaac, Jacob and Joseph: the family the promise runs through.",
+          "passages": [
+            {
+              "ref": "Gen.12.1-Gen.12.3",
+              "sectionId": "gen-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#7"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.35.27",
+              "sectionId": "gen-14",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#10"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ISAAC#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#27"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.37.4",
+              "sectionId": "gen-16",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#29"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JOSEPH#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JOSEPH#4"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.13.19",
+              "sectionId": "exod-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JOSEPH#27"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JOSEPH#35"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Josh.24.3",
+              "sectionId": "josh-12",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ISAAC#1"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Neh.9.7",
+              "sectionId": "neh-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#36"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Hos.12.12",
+              "sectionId": "hos-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#9"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#10"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.13.28",
+              "sectionId": "luke-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#34"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#42"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ISAAC#19"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "John.4.5",
+              "sectionId": "john-x107",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#44"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JACOB#65"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JOSEPH#3"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Gal.4.22-Gal.4.31",
+              "sectionId": "gal-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#14"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#22"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#23"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Heb.11.17",
+              "sectionId": "heb-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#38"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ISAAC#3"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Jas.2.21",
+              "sectionId": "jas-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ABRAHAM#38"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ISAAC#3"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "story-exodus",
+          "title": "Out of Egypt",
+          "description": "Slavery, deliverance and the long road through the wilderness.",
+          "passages": [
+            {
+              "ref": "Gen.37.25",
+              "sectionId": "gen-16",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#8"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#9"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.3.1",
+              "sectionId": "exod-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#8"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L69349"
+                }
+              ],
+              "score": 9,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.5.1",
+              "sectionId": "exod-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#17"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#18"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.15.24",
+              "sectionId": "exod-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#19"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#60"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.11.10-Num.11.15",
+              "sectionId": "num-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#52"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#53"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.14.12-Num.14.20",
+              "sectionId": "num-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#58"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#62"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.9.13-Deut.9.29",
+              "sectionId": "deut-x304",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#58"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#62"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.18.15-Deut.18.18",
+              "sectionId": "deut-x312",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#47"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#69"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.31.2",
+              "sectionId": "deut-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#43"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MOSES#45"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "1Kgs.10.28",
+              "sectionId": "1kgs-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#9"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#10"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.7.16",
+              "sectionId": "prov-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:EGYPT#9"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.4.1-Matt.4.25",
+              "sectionId": "matt-02",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L69346"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "story-land",
+          "title": "Land and war",
+          "description": "The promised land, its conquest, its borders and its battles.",
+          "passages": [
+            {
+              "ref": "Lev.25.23",
+              "sectionId": "lev-16",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LAND#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LAND#4"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36103"
+                }
+              ],
+              "score": 18,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.31.48",
+              "sectionId": "num-x205",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#10"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#11"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#93"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.25.5",
+              "sectionId": "2chr-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#10"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#11"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ARMIES#78"
+                }
+              ],
+              "score": 20,
+              "status": "approved"
+            },
+            {
+              "ref": "Isa.19.2",
+              "sectionId": "isa-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#8"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#17"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Jer.46.15",
+              "sectionId": "jer-x202",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#7"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#8"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#12"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.24.6",
+              "sectionId": "matt-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#19"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L67943"
+                }
+              ],
+              "score": 12.3,
+              "status": "approved"
+            },
+            {
+              "ref": "Rom.7.25",
+              "sectionId": "rom-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#64"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#81"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#84"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Cor.15.57",
+              "sectionId": "1cor-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#64"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#80"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#81"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Cor.10.5",
+              "sectionId": "2cor-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#76"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#86"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#88"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Eph.6.14",
+              "sectionId": "eph-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#55"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#66"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#67"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Tim.1.18",
+              "sectionId": "1tim-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#30"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#42"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#43"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Pet.5.8",
+              "sectionId": "1pet-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#33"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#46"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:WAR#47"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "story-kings",
+          "title": "Kings and kingdoms",
+          "description": "Israel asks for a king: the reigns, good and bad, that follow.",
+          "passages": [
+            {
+              "ref": "2Sam.5.5",
+              "sectionId": "2sam-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#49"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#56"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#119"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Sam.8.16",
+              "sectionId": "2sam-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#52"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#53"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#126"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Sam.20.24",
+              "sectionId": "2sam-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#46"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#53"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#57"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.3.4",
+              "sectionId": "1chr-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#49"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#56"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#123"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.11.1-1Chr.11.3",
+              "sectionId": "1chr-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#49"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#56"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#128"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.29.28",
+              "sectionId": "1chr-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#117"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#119"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#120"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.22",
+              "sectionId": "ps-022",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#29"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#31"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#129"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.35",
+              "sectionId": "ps-035",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#22"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:DAVID#129"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.21.1",
+              "sectionId": "prov-08",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L35650"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L35576"
+                }
+              ],
+              "score": 16.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.29.4",
+              "sectionId": "prov-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#24"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L35651"
+                }
+              ],
+              "score": 12.6,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.31.4-Prov.31.8",
+              "sectionId": "prov-13",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#22"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:KING#64"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L35652"
+                }
+              ],
+              "score": 13.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Zech.14.9",
+              "sectionId": "zech-04",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L35570"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "story-exile",
+          "title": "Exile and return",
+          "description": "Conquest by Assyria and Babylon, life in exile, and the road home.",
+          "passages": [
+            {
+              "ref": "Gen.10.10",
+              "sectionId": "gen-x2",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#13"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#14"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.11.2",
+              "sectionId": "gen-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#14"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.14.18",
+              "sectionId": "gen-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#5"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#77"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#132"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Josh.18.28",
+              "sectionId": "josh-x105",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#80"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Sam.5.7",
+              "sectionId": "2sam-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#81"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Kgs.17.24",
+              "sectionId": "2kgs-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CAPTIVITY#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#18"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ASSYRIA#6"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Kgs.25",
+              "sectionId": "2kgs-10",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CAPTIVITY#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ASSYRIA#12"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#95"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Neh.2.13",
+              "sectionId": "neh-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#29"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#30"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#100"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Neh.12.39",
+              "sectionId": "neh-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#23"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#27"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Jer.32.28",
+              "sectionId": "jer-x123",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CAPTIVITY#3"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#10"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#27"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Dan.6.1",
+              "sectionId": "dan-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:BABYLON#19"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PERSIA#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PERSIA#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PERSIA#12"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Zech.14.10",
+              "sectionId": "zech-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#25"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#28"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JERUSALEM#40"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "story-lists",
+          "title": "Genealogies and the census",
+          "description": "The family lines and counts that hold a people's memory together.",
+          "passages": [
+            {
+              "ref": "Gen.4.16-Gen.4.22",
+              "sectionId": "gen-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#3"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.5",
+              "sectionId": "gen-x1",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#3"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.10",
+              "sectionId": "gen-x2",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#6"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.1.5",
+              "sectionId": "exod-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#11"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.6.14-Exod.6.27",
+              "sectionId": "exod-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#11"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.38.26",
+              "sectionId": "exod-x302",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CENSUS#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CENSUS#4"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.1",
+              "sectionId": "num-x101",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CENSUS#2"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.26",
+              "sectionId": "num-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#11"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:CENSUS#2"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.1.1-Matt.1.25",
+              "sectionId": "matt-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#5"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#14"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L25204"
+                }
+              ],
+              "score": 13,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.3.23-Luke.3.38",
+              "sectionId": "luke-x1",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#5"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#14"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L25205"
+                }
+              ],
+              "score": 10.5,
+              "status": "approved"
+            },
+            {
+              "ref": "1Tim.1.4",
+              "sectionId": "1tim-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#2"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L25203"
+                }
+              ],
+              "score": 13.2,
+              "status": "approved"
+            },
+            {
+              "ref": "Titus.3.9",
+              "sectionId": "titus-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENEALOGY#2"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L25202"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            }
+          ]
+        }
+      ],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "9715b93dd8cdf676"
+      }
+    },
+    {
+      "id": "sanctuary",
+      "title": "Sanctuary and sacrifice",
+      "description": "God dwelling among his people: tent and temple, priests, offerings, and the holiness they guard.",
+      "subthemes": [
+        {
+          "id": "sanctuary-temple",
+          "title": "Tabernacle and Temple",
+          "description": "The tent in the wilderness and the temple in Jerusalem.",
+          "passages": [
+            {
+              "ref": "Exod.25.8-Exod.25.9",
+              "sectionId": "exod-x201",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#3"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L59725"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.7",
+              "sectionId": "num-x106",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#31"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#32"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#33"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Kgs.6.19",
+              "sectionId": "1kgs-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#40"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#44"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#47"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Kgs.8",
+              "sectionId": "1kgs-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#96"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#101"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#59"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.29.1",
+              "sectionId": "1chr-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#16"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#27"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#92"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.3.1",
+              "sectionId": "2chr-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#27"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#31"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#34"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Isa.64.11",
+              "sectionId": "isa-20",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#13"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#21"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#116"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.24.1",
+              "sectionId": "matt-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#132"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#155"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L60849"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.3.1",
+              "sectionId": "acts-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#96"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#148"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#149"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Cor.3.16-1Cor.3.17",
+              "sectionId": "1cor-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TEMPLE#158"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L60838"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L60843"
+                }
+              ],
+              "score": 13,
+              "status": "approved"
+            },
+            {
+              "ref": "1Cor.6.19-1Cor.6.20",
+              "sectionId": "1cor-02",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L60837"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L60839"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Heb.8.5",
+              "sectionId": "heb-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#10"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:TABERNACLE#60"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L59730"
+                }
+              ],
+              "score": 13,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "sanctuary-priests",
+          "title": "Priests and Levites",
+          "description": "Those set apart to serve at the altar and teach the law.",
+          "passages": [
+            {
+              "ref": "Exod.27.21",
+              "sectionId": "exod-x202",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#7"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#34"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#85"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.29.9",
+              "sectionId": "exod-x204",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#7"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#11"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.1.47-Num.1.54",
+              "sectionId": "num-x101",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#2"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#59"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#63"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.3.32",
+              "sectionId": "num-x103",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#47"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#74"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#96"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#13"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.18.7",
+              "sectionId": "num-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#6"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#37"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#80"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.18.1",
+              "sectionId": "deut-x312",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#54"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#51"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.33.10",
+              "sectionId": "deut-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#33"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#32"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Josh.13.14",
+              "sectionId": "josh-x102",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#54"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#51"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.9.20",
+              "sectionId": "1chr-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#47"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#96"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#13"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.13.11",
+              "sectionId": "2chr-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#29"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#34"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#65"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Ezra.3.8",
+              "sectionId": "ezra-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#102"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#105"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#21"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#40"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            },
+            {
+              "ref": "Mal.2.7",
+              "sectionId": "mal-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PRIEST#33"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEVITES#32"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L49074"
+                }
+              ],
+              "score": 18,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "sanctuary-offerings",
+          "title": "Offerings",
+          "description": "Gifts and sacrifices brought to God, and what they meant.",
+          "passages": [
+            {
+              "ref": "Exod.29.26-Exod.29.28",
+              "sectionId": "exod-x204",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#81"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#82"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.30.9",
+              "sectionId": "exod-x205",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#50"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Lev.5",
+              "sectionId": "lev-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#59"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#74"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Lev.7.11-Lev.7.18",
+              "sectionId": "lev-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#27"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#57"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#72"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Lev.10.14",
+              "sectionId": "lev-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#31"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#81"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#83"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.15.3-Num.15.16",
+              "sectionId": "num-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#19"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#50"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#52"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.18.9",
+              "sectionId": "num-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#50"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#51"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#75"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.29.6",
+              "sectionId": "num-x203",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#21"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#24"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#59"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.6.38",
+              "sectionId": "luke-07",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L44355"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.20.35",
+              "sectionId": "acts-11",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L44354"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "2Cor.9.6-2Cor.9.15",
+              "sectionId": "2cor-04",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L44356"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Heb.10.1-Heb.10.14",
+              "sectionId": "heb-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#48"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:OFFERINGS#60"
+                }
+              ],
+              "score": 16,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "sanctuary-purity",
+          "title": "Clean and unclean",
+          "description": "Purity, defilement and the rites that make clean again.",
+          "passages": [
+            {
+              "ref": "Lev.13.1-Lev.14.57",
+              "sectionId": "lev-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36762"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36773"
+                }
+              ],
+              "score": 20.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Lev.14.1-Lev.14.57",
+              "sectionId": "lev-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36767"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.5.2",
+              "sectionId": "num-x104",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#7"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36769"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.12.14",
+              "sectionId": "num-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#7"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#14"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            },
+            {
+              "ref": "2Kgs.5.27",
+              "sectionId": "2kgs-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#4"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#6"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36771"
+                }
+              ],
+              "score": 14.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.8.3",
+              "sectionId": "matt-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#16"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36768"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.10.8",
+              "sectionId": "matt-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#17"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36766"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.23.26",
+              "sectionId": "matt-14",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L12063"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Mark.1.40-Mark.1.42",
+              "sectionId": "mark-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#16"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36763"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.5.13",
+              "sectionId": "luke-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#16"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36772"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.17.12-Luke.17.14",
+              "sectionId": "luke-12",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:LEPROSY#16"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L36764"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "1Cor.6.19-1Cor.6.20",
+              "sectionId": "1cor-02",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L12066"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L12067"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            }
+          ]
+        }
+      ],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "0aa973587bdbbdb7"
+      }
+    },
+    {
+      "id": "prophecy",
+      "title": "Prophets, signs and visions",
+      "description": "God speaking through prophets, wonders and visions, and his word to the nations.",
+      "subthemes": [
+        {
+          "id": "prophecy-prophets",
+          "title": "Prophets and their call",
+          "description": "Men and women sent to speak God's word, and how they were received.",
+          "passages": [
+            {
+              "ref": "Num.22.18",
+              "sectionId": "num-10",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#11"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#20"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "1Kgs.17.1",
+              "sectionId": "1kgs-08",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#20"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#3"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "1Kgs.19.9",
+              "sectionId": "1kgs-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#20"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#13"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "1Chr.29.29",
+              "sectionId": "1chr-15",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#3"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.9.29",
+              "sectionId": "2chr-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#3"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.12.15",
+              "sectionId": "2chr-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#1"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#3"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Amos.3.7",
+              "sectionId": "amos-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#20"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L49471"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.7.15",
+              "sectionId": "matt-04",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L49470"
+                }
+              ],
+              "score": 6.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Luke.1.17",
+              "sectionId": "luke-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#18"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Jas.5.17",
+              "sectionId": "jas-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#15"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ELIJAH#22"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "2Pet.1.21",
+              "sectionId": "2pet-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:PROPHETS#20"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L49469"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "1John.4.1",
+              "sectionId": "1john-02",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L49468"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "prophecy-nations",
+          "title": "Judgment on the nations",
+          "description": "Oracles against the empires and neighbours of Israel.",
+          "passages": [
+            {
+              "ref": "Gen.3.14",
+              "sectionId": "gen-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#1"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.4.11-Gen.4.15",
+              "sectionId": "gen-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#4"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Gen.12.2",
+              "sectionId": "gen-07",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42938"
+                }
+              ],
+              "score": 5,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.7.14",
+              "sectionId": "exod-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#7"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.14.17",
+              "sectionId": "exod-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#42"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.20.7",
+              "sectionId": "exod-09",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#34"
+                }
+              ],
+              "score": 4,
+              "status": "approved"
+            },
+            {
+              "ref": "2Chr.7.14",
+              "sectionId": "2chr-03",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42935"
+                }
+              ],
+              "score": 6.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Ps.33.12",
+              "sectionId": "ps-033",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42933"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Prov.14.34",
+              "sectionId": "prov-06",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42937"
+                }
+              ],
+              "score": 5,
+              "status": "approved"
+            },
+            {
+              "ref": "Isa.60.12",
+              "sectionId": "isa-19",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42934"
+                }
+              ],
+              "score": 6.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Mic.4.3",
+              "sectionId": "mic-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENTILES#4"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L42941"
+                }
+              ],
+              "score": 7.3,
+              "status": "approved"
+            },
+            {
+              "ref": "Rom.9.22",
+              "sectionId": "rom-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:JUDGMENTS#42"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:GENTILES#6"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "prophecy-visions",
+          "title": "Visions and the end",
+          "description": "Dreams, visions and the hope of the last things.",
+          "passages": [
+            {
+              "ref": "Prov.29.18",
+              "sectionId": "prov-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:VISION#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L67420"
+                }
+              ],
+              "score": 11.5,
+              "status": "approved"
+            },
+            {
+              "ref": "Joel.2.28",
+              "sectionId": "joel-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:VISION#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L67422"
+                }
+              ],
+              "score": 10.3,
+              "status": "approved"
+            },
+            {
+              "ref": "Hab.2.2",
+              "sectionId": "hab-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:VISION#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L67419"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L67427"
+                }
+              ],
+              "score": 17.8,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.5.8",
+              "sectionId": "matt-03",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L52732"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.16.17",
+              "sectionId": "matt-10",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:REVELATION#4"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L52733"
+                }
+              ],
+              "score": 12.3,
+              "status": "approved"
+            },
+            {
+              "ref": "2Thess.2.3-2Thess.2.12",
+              "sectionId": "2thess-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ANTICHRIST#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2489"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2495"
+                }
+              ],
+              "score": 16.5,
+              "status": "approved"
+            },
+            {
+              "ref": "1John.2.18",
+              "sectionId": "1john-01",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ANTICHRIST#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2487"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "1John.4.3",
+              "sectionId": "1john-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:ANTICHRIST#1"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2488"
+                }
+              ],
+              "score": 11.5,
+              "status": "approved"
+            },
+            {
+              "ref": "2John.1.7",
+              "sectionId": "2john-01",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2484"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Rev.1.7",
+              "sectionId": "rev-01",
+              "sources": [
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L54165"
+                }
+              ],
+              "score": 10,
+              "status": "approved"
+            },
+            {
+              "ref": "Rev.10.1-Rev.10.11",
+              "sectionId": "rev-05",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:VISION#108"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L52734"
+                }
+              ],
+              "score": 10.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Rev.13.1-Rev.13.18",
+              "sectionId": "rev-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:VISION#120"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L2485"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L52740"
+                }
+              ],
+              "score": 17.3,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "id": "prophecy-signs",
+          "title": "Miracles and signs",
+          "description": "Wonders that show God's power and point beyond themselves.",
+          "passages": [
+            {
+              "ref": "Exod.4.30",
+              "sectionId": "exod-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#14"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#15"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.7.10",
+              "sectionId": "exod-03",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#14"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#181"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Exod.10.16",
+              "sectionId": "exod-04",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#150"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#152"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Num.16.46-Num.16.50",
+              "sectionId": "num-06",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#16"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#31"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Deut.4.33",
+              "sectionId": "deut-x103",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#27"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#152"
+                }
+              ],
+              "score": 8,
+              "status": "approved"
+            },
+            {
+              "ref": "Matt.17.20",
+              "sectionId": "matt-10",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#177"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41312"
+                }
+              ],
+              "score": 14,
+              "status": "approved"
+            },
+            {
+              "ref": "Mark.16.17",
+              "sectionId": "mark-13",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#176"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#179"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41314"
+                }
+              ],
+              "score": 18,
+              "status": "approved"
+            },
+            {
+              "ref": "John.4.48",
+              "sectionId": "john-x108",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#150"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#152"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#172"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41313"
+                }
+              ],
+              "score": 22,
+              "status": "approved"
+            },
+            {
+              "ref": "John.14.12",
+              "sectionId": "john-x205",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#133"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#177"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41315"
+                }
+              ],
+              "score": 14.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.3.16",
+              "sectionId": "acts-02",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#134"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#176"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#177"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41316"
+                }
+              ],
+              "score": 18.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Acts.19.11",
+              "sectionId": "acts-11",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#146"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#174"
+                },
+                {
+                  "dataset": "openbible",
+                  "row": "OpenBible:L41317"
+                }
+              ],
+              "score": 14.7,
+              "status": "approved"
+            },
+            {
+              "ref": "Rom.15.19",
+              "sectionId": "rom-07",
+              "sources": [
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#150"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#161"
+                },
+                {
+                  "dataset": "naves",
+                  "row": "Nave:MIRACLES#175"
+                }
+              ],
+              "score": 12,
+              "status": "approved"
+            }
+          ]
+        }
+      ],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "94cc78c958025824"
       }
     }
   ]

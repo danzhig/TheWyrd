@@ -1,6 +1,6 @@
 # Sin and turning back: passages
 
-**Status: approved by the owner on 2026-11-12** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).
+**Status: approved by the owner on 2026-11-17** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).
 
 How people turn from God, and how they find their way back.
 
@@ -71,7 +71,7 @@ Turning around: owning wrong, asking pardon, beginning again.
 | ---------- | --------------------------------------------------------------------------- | ----- | -------------------------------------------------------------- |
 | 2Chr.7.14  | The Ark, the Prayer and the Glory (`2chr-03` · library)                     | 14.7  | `Nave:REPENTANCE#7`, `Nave:REPENTANCE#11`, `OpenBible:L52164`  |
 | Prov.28.13 | Hezekiah’s Collection, Continued (`prov-11` · library)                      | 17.1  | `Nave:REPENTANCE#11`, `OpenBible:L52169`, `OpenBible:L13161`   |
-| Jer.26.3   | Jeremiah's Oracles (`jer-x1`)                                               | 12    | `Nave:REPENTANCE#2`, `Nave:REPENTANCE#6`, `Nave:REPENTANCE#11` |
+| Jer.26.3   | The Temple Sermon on Trial (`jer-x119`)                                     | 12    | `Nave:REPENTANCE#2`, `Nave:REPENTANCE#6`, `Nave:REPENTANCE#11` |
 | Matt.4.17  | John the Baptist; the Temptation; the First Disciples (`matt-02` · library) | 18    | `Nave:REPENTANCE#5`, `Nave:REPENTANCE#11`, `OpenBible:L52161`  |
 | Mark.1.15  | John, the Baptism and the First Days in Galilee (`mark-01` · library)       | 14.7  | `Nave:REPENTANCE#5`, `Nave:REPENTANCE#11`, `OpenBible:L52172`  |
 | Luke.5.32  | The Disciples Called; Sermon on the Plain (`luke-07`)                       | 10.7  | `Nave:REPENTANCE#11`, `OpenBible:L52171`                       |

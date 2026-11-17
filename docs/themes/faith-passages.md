@@ -1,6 +1,6 @@
 # Faith, hope and trust: passages
 
-**Status: approved by the owner on 2026-11-12** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).
+**Status: approved by the owner on 2026-11-17** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).
 
 Holding on to God in the dark, and acting on what he has said.
 
@@ -31,12 +31,12 @@ Looking forward to what God has promised but not yet given.
 
 | Passage    | Section                                                                       | Score | Sources                           |
 | ---------- | ----------------------------------------------------------------------------- | ----- | --------------------------------- |
-| Job.8.13   | The Great Debate (`job-x1`)                                                   | 4     | `Nave:HOPE#3`                     |
-| Ps.9.18    | Psalm 9 (`ps-009` · library)                                                  | 4     | `Nave:HOPE#1`                     |
-| Ps.16.9    | Psalm 16 (15) (`ps-016` · library)                                            | 4     | `Nave:HOPE#1`                     |
+| Job.8.13   | Bildad Speaks (`job-x104`)                                                    | 4     | `Nave:HOPE#3`                     |
+| Job.11.20  | Zophar Speaks (`job-x106`)                                                    | 4     | `Nave:HOPE#3`                     |
+| Job.27.8   | Job's Oath; Where Wisdom Is Found (`job-x117`)                                | 4     | `Nave:HOPE#3`                     |
 | Prov.10.28 | Solomon’s Proverbs: the Righteous and the Wicked (`prov-05` · library)        | 8     | `Nave:HOPE#1`, `Nave:HOPE#3`      |
 | Isa.40.31  | Comfort for the Exiles; the Servant (`isa-12` · library)                      | 6.7   | `OpenBible:L30667`                |
-| Jer.29.11  | Jeremiah's Oracles (`jer-x1`)                                                 | 10    | `OpenBible:L30666`                |
+| Jer.29.11  | The Letter to the Exiles (`jer-x121`)                                         | 10    | `OpenBible:L30666`                |
 | Rom.5.5    | Abraham’s Faith; Peace with God; Adam and Christ (`rom-02` · library)         | 6.7   | `OpenBible:L30673`                |
 | Rom.12.12  | Life in the Body; Love and the Authorities (`rom-06` · library)               | 10.7  | `Nave:HOPE#1`, `OpenBible:L30669` |
 | Rom.15.13  | The Weak and the Strong; Paul’s Plans and Greetings (`rom-07` · library)      | 14    | `Nave:HOPE#1`, `OpenBible:L30665` |
@@ -56,8 +56,8 @@ Trusting God when afraid or anxious.
 | Ps.56.3-Ps.56.4   | Psalm 56 (55) (`ps-056` · library)                                     | 16    | `OpenBible:L65554`, `OpenBible:L22437`, `OpenBible:L2533` |
 | Prov.3.5          | Trust, Discipline and the Path of Life (`prov-02` · library)           | 18.3  | `OpenBible:L65553`, `OpenBible:L65558`, `OpenBible:L2529` |
 | Isa.41.10         | Comfort for the Exiles; the Servant (`isa-12` · library)               | 15    | `OpenBible:L22430`, `OpenBible:L2530`                     |
-| Jer.29.11         | Jeremiah's Oracles (`jer-x1`)                                          | 10    | `OpenBible:L65555`, `OpenBible:L2531`                     |
-| John.14.27        | John 12–21 (`john-x2`)                                                 | 10.4  | `OpenBible:L22442`, `OpenBible:L2519`                     |
+| Jer.29.11         | The Letter to the Exiles (`jer-x121`)                                  | 10    | `OpenBible:L65555`, `OpenBible:L2531`                     |
+| John.14.27        | The Way to the Father (`john-x205`)                                    | 10.4  | `OpenBible:L22442`, `OpenBible:L2519`                     |
 | Phil.4.6-Phil.4.7 | Paul’s Goal; Peace and Thanks (`phil-02` · library)                    | 17.9  | `OpenBible:L22438`, `OpenBible:L2517`, `OpenBible:L2522`  |
 | 2Tim.1.7          | Guard the Gospel; Paul’s Last Charge (`2tim-01` · library)             | 13.6  | `OpenBible:L22431`, `OpenBible:L2520`                     |
 | 1Pet.5.7          | Suffering for Doing Good; Shepherds of the Flock (`1pet-02` · library) | 7.5   | `OpenBible:L2518`                                         |
@@ -76,7 +76,7 @@ Faith that listens, waits and keeps going.
 | Ps.119.30  | Psalm 119 (118) (`ps-119` · library)                                          | 12    | `Nave:OBEDIENCE#1`, `Nave:OBEDIENCE#7`, `OpenBible:L43973`  |
 | Matt.9.9   | Healings and the Cost of Following (`matt-05` · library)                      | 12    | `Nave:OBEDIENCE#1`, `Nave:OBEDIENCE#3`, `Nave:OBEDIENCE#50` |
 | Mark.2.14  | Controversies; the Twelve Chosen (`mark-02` · library)                        | 12    | `Nave:OBEDIENCE#1`, `Nave:OBEDIENCE#3`, `Nave:OBEDIENCE#52` |
-| John.14.15 | John 12–21 (`john-x2`)                                                        | 18    | `Nave:OBEDIENCE#1`, `Nave:OBEDIENCE#3`, `OpenBible:L43965`  |
+| John.14.15 | The Way to the Father (`john-x205`)                                           | 18    | `Nave:OBEDIENCE#1`, `Nave:OBEDIENCE#3`, `OpenBible:L43965`  |
 | Rom.8.25   | Life in the Spirit (`rom-04` · library)                                       | 11.5  | `Nave:PATIENCE#1`, `OpenBible:L46159`                       |
 | Rom.12.12  | Life in the Body; Love and the Authorities (`rom-06` · library)               | 14    | `Nave:PATIENCE#1`, `OpenBible:L46157`                       |
 | Gal.6.9    | Freedom and Life in the Spirit (`gal-03` · library)                           | 11.5  | `Nave:PATIENCE#1`, `OpenBible:L46158`                       |

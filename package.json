@@ -30,6 +30,7 @@
     "themes:topics": "tsx scripts/themes-topics.ts",
     "themes:taxonomy": "tsx scripts/themes-taxonomy.ts",
     "themes:build": "tsx scripts/themes-build.ts",
+    "themes:readings": "tsx scripts/themes-readings.ts",
     "connections:fetch": "tsx scripts/fetch-connections.ts",
     "connections:candidates": "tsx scripts/connections-candidates.ts",
     "connections:echo": "tsx scripts/connections-echo.ts",

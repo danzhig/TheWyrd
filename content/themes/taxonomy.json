@@ -3,7 +3,7 @@
   "status": "approved",
   "approval": {
     "by": "the owner",
-    "date": "2026-11-12"
+    "date": "2026-11-17"
   },
   "themes": [
     {
@@ -15,25 +15,37 @@
           "id": "creation-making",
           "title": "Creation",
           "description": "The making of the heavens, the earth and humankind, and creation's praise of its maker.",
-          "sources": ["nave:CREATION", "openbible:creation"]
+          "sources": [
+            "nave:CREATION",
+            "openbible:creation",
+            "nave:GOD#48",
+            "nave:GOD#49",
+            "nave:GOD#284"
+          ]
         },
         {
           "id": "creation-holiness",
           "title": "The holiness of God",
           "description": "God set apart from all that is not God, and the call to be holy in return.",
-          "sources": ["nave:HOLINESS", "openbible:holiness"]
+          "sources": ["nave:HOLINESS", "openbible:holiness", "nave:GOD#82"]
         },
         {
           "id": "creation-faithfulness",
           "title": "God's faithfulness",
           "description": "A God who keeps his word through every generation.",
-          "sources": ["nave:FAITHFULNESS", "openbible:faithfulness"]
+          "sources": ["nave:FAITHFULNESS", "openbible:faithfulness", "nave:GOD#54", "nave:GOD#201"]
         },
         {
           "id": "creation-glory",
           "title": "Glory",
           "description": "The weight and splendour of God's presence, seen in the tent, the temple and the face of Christ.",
-          "sources": ["nave:GLORY", "openbible:glory"]
+          "sources": [
+            "nave:GLORY",
+            "openbible:glory",
+            "nave:GOD#63",
+            "nave:GOD#142",
+            "nave:GOD#259"
+          ]
         }
       ]
     },
@@ -117,7 +129,14 @@
           "id": "mercy-mercy",
           "title": "Mercy",
           "description": "Compassion that goes beyond what is owed.",
-          "sources": ["nave:MERCY", "openbible:mercy", "openbible:divine mercy"]
+          "sources": [
+            "nave:MERCY",
+            "openbible:mercy",
+            "openbible:divine mercy",
+            "nave:GOD#124",
+            "nave:GOD#118",
+            "nave:GOD#66"
+          ]
         },
         {
           "id": "mercy-forgiveness",
@@ -133,7 +152,7 @@
           "id": "mercy-grace",
           "title": "Grace",
           "description": "A gift that cannot be earned.",
-          "sources": ["openbible:grace"]
+          "sources": ["openbible:grace", "nave:GRACE OF GOD", "nave:GOD#71"]
         },
         {
           "id": "mercy-reconciliation",
@@ -260,7 +279,12 @@
           "id": "suffering-healing",
           "title": "Healing and comfort",
           "description": "The sick restored and the grieving consoled.",
-          "sources": ["openbible:healing", "openbible:sickness", "openbible:comfort"]
+          "sources": [
+            "openbible:healing",
+            "openbible:sickness",
+            "openbible:comfort",
+            "nave:DISEASE"
+          ]
         }
       ]
     },
@@ -273,7 +297,7 @@
           "id": "love-love",
           "title": "Love",
           "description": "The love God shows, and the love he commands.",
-          "sources": ["nave:LOVE", "openbible:love"]
+          "sources": ["nave:LOVE", "openbible:love", "nave:GOD#122", "nave:GOD#123"]
         },
         {
           "id": "love-marriage",
@@ -339,7 +363,7 @@
           "id": "wisdom-wisdom",
           "title": "Wisdom",
           "description": "The fear of the Lord and the practical wisdom that follows from it.",
-          "sources": ["nave:WISDOM", "openbible:wisdom"]
+          "sources": ["nave:WISDOM", "openbible:wisdom", "nave:GOD#281"]
         },
         {
           "id": "wisdom-humility",
@@ -391,7 +415,9 @@
           "sources": [
             "nave:KINGDOM OF HEAVEN",
             "openbible:kingdom of god",
-            "openbible:kingdom of heaven"
+            "openbible:kingdom of heaven",
+            "nave:PARABLES",
+            "openbible:parables"
           ]
         },
         {
@@ -424,6 +450,151 @@
             "openbible:judgment",
             "openbible:heaven"
           ]
+        },
+        {
+          "id": "kingdom-mission",
+          "title": "The apostles' mission",
+          "description": "The good news carried from Jerusalem to the ends of the earth.",
+          "sources": [
+            "nave:APOSTLES",
+            "nave:MISSIONS",
+            "nave:PREACHING",
+            "openbible:missions",
+            "openbible:apostles",
+            "openbible:preaching"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "title": "The story of God's people",
+      "description": "From Abraham to the return from exile: a people's journey with God, their ancestors, wars, kings and losses.",
+      "subthemes": [
+        {
+          "id": "story-ancestors",
+          "title": "The ancestors",
+          "description": "Abraham, Isaac, Jacob and Joseph: the family the promise runs through.",
+          "sources": ["nave:ABRAHAM", "nave:ISAAC", "nave:JACOB", "nave:JOSEPH"]
+        },
+        {
+          "id": "story-exodus",
+          "title": "Out of Egypt",
+          "description": "Slavery, deliverance and the long road through the wilderness.",
+          "sources": ["nave:EGYPT", "nave:MOSES", "openbible:wilderness"]
+        },
+        {
+          "id": "story-land",
+          "title": "Land and war",
+          "description": "The promised land, its conquest, its borders and its battles.",
+          "sources": [
+            "nave:WAR",
+            "nave:ARMIES",
+            "nave:LAND",
+            "nave:INHERITANCE",
+            "openbible:war",
+            "openbible:land"
+          ]
+        },
+        {
+          "id": "story-kings",
+          "title": "Kings and kingdoms",
+          "description": "Israel asks for a king: the reigns, good and bad, that follow.",
+          "sources": ["nave:KING", "nave:DAVID", "openbible:kings", "openbible:king"]
+        },
+        {
+          "id": "story-exile",
+          "title": "Exile and return",
+          "description": "Conquest by Assyria and Babylon, life in exile, and the road home.",
+          "sources": [
+            "nave:CAPTIVITY",
+            "nave:BABYLON",
+            "nave:ASSYRIA",
+            "nave:PERSIA",
+            "nave:JERUSALEM"
+          ]
+        },
+        {
+          "id": "story-lists",
+          "title": "Genealogies and the census",
+          "description": "The family lines and counts that hold a people's memory together.",
+          "sources": ["nave:GENEALOGY", "nave:CENSUS", "openbible:genealogy"]
+        }
+      ]
+    },
+    {
+      "id": "sanctuary",
+      "title": "Sanctuary and sacrifice",
+      "description": "God dwelling among his people: tent and temple, priests, offerings, and the holiness they guard.",
+      "subthemes": [
+        {
+          "id": "sanctuary-temple",
+          "title": "Tabernacle and Temple",
+          "description": "The tent in the wilderness and the temple in Jerusalem.",
+          "sources": ["nave:TEMPLE", "nave:TABERNACLE", "openbible:temple", "openbible:tabernacle"]
+        },
+        {
+          "id": "sanctuary-priests",
+          "title": "Priests and Levites",
+          "description": "Those set apart to serve at the altar and teach the law.",
+          "sources": ["nave:PRIEST", "nave:LEVITES", "openbible:priest"]
+        },
+        {
+          "id": "sanctuary-offerings",
+          "title": "Offerings",
+          "description": "Gifts and sacrifices brought to God, and what they meant.",
+          "sources": ["nave:OFFERINGS", "nave:SACRIFICES", "openbible:offerings"]
+        },
+        {
+          "id": "sanctuary-purity",
+          "title": "Clean and unclean",
+          "description": "Purity, defilement and the rites that make clean again.",
+          "sources": [
+            "nave:PURIFICATION",
+            "nave:UNCLEANNESS",
+            "nave:LEPROSY",
+            "openbible:clean",
+            "openbible:leprosy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prophecy",
+      "title": "Prophets, signs and visions",
+      "description": "God speaking through prophets, wonders and visions, and his word to the nations.",
+      "subthemes": [
+        {
+          "id": "prophecy-prophets",
+          "title": "Prophets and their call",
+          "description": "Men and women sent to speak God's word, and how they were received.",
+          "sources": ["nave:PROPHETS", "nave:ELIJAH", "openbible:prophets"]
+        },
+        {
+          "id": "prophecy-nations",
+          "title": "Judgment on the nations",
+          "description": "Oracles against the empires and neighbours of Israel.",
+          "sources": ["nave:JUDGMENTS", "nave:GENTILES", "openbible:nations"]
+        },
+        {
+          "id": "prophecy-visions",
+          "title": "Visions and the end",
+          "description": "Dreams, visions and the hope of the last things.",
+          "sources": [
+            "nave:VISION",
+            "nave:REVELATION",
+            "nave:ANTICHRIST",
+            "openbible:vision",
+            "openbible:second coming",
+            "openbible:antichrist",
+            "openbible:revelation"
+          ]
+        },
+        {
+          "id": "prophecy-signs",
+          "title": "Miracles and signs",
+          "description": "Wonders that show God's power and point beyond themselves.",
+          "sources": ["nave:MIRACLES", "openbible:miracles"]
         }
       ]
     }

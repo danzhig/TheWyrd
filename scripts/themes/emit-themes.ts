@@ -8,7 +8,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { verseText, type SectionFile } from '../../lib/types';
 import { CANON_BY_ID } from '../lib/canon';
-import { readThemes, themesFingerprint } from './taxonomy';
+import { prettyRange } from '../../lib/format';
+import { readReadings, readingsFingerprint, readThemes, themesFingerprint } from './taxonomy';
 
 export interface PublicThemePassage {
   ref: string; // OSIS, WEBC numbering
@@ -20,12 +21,30 @@ export interface PublicThemePassage {
   excerpt: string;
   sources: { dataset: 'naves' | 'openbible'; row: string }[];
 }
+/** A reading in a sub-theme (P6.5): every built section has a home, some a second. */
+export interface PublicThemeReading {
+  sectionId: string;
+  title: string;
+  display: string; // "Genesis 1:1–2:3", the book's own name and the section's WEBC range
+  bookId: string;
+  library: boolean;
+  /** This is the reading's second sub-theme (its home is elsewhere). */
+  second?: boolean;
+  /** The first key passage of this sub-theme inside the reading (OSIS), if any. */
+  key?: string;
+}
 export interface PublicThemes {
   themes: {
     id: string;
     title: string;
     description: string;
-    subthemes: { id: string; title: string; description: string; passages: PublicThemePassage[] }[];
+    subthemes: {
+      id: string;
+      title: string;
+      description: string;
+      passages: PublicThemePassage[];
+      readings: PublicThemeReading[];
+    }[];
   }[];
 }
 
@@ -52,10 +71,33 @@ export function buildThemes(
   sectionFiles: SectionFile[],
   library: Set<string>,
   themesFile?: string,
+  readingsFile?: string,
 ): { data: PublicThemes | null; errors: string[] } {
   const file = readThemes(themesFile);
   if (!file) return { data: null, errors: [] };
   const errors: string[] = [];
+  // Every reading in a theme (P6.5): each built section has exactly one home, approved.
+  const readings = readReadings(readingsFile);
+  const subIds = new Set(file.themes.flatMap((t) => t.subthemes.map((s) => s.id)));
+  const placed = new Map<string, string[]>();
+  let readingsOk = false;
+  if (readings) {
+    const fp = readingsFingerprint(readings.readings);
+    if (!readings.approval) errors.push(`readings.json: not approved (fingerprint ${fp})`);
+    else if (readings.approval.fingerprint !== fp)
+      errors.push(`readings.json: edited since its approval (fingerprint ${fp})`);
+    else readingsOk = true;
+    for (const r of readings.readings) {
+      if (placed.has(r.sectionId)) errors.push(`readings.json: ${r.sectionId} is placed twice`);
+      if (!sectionFiles.some((s) => s.id === r.sectionId))
+        errors.push(`readings.json: no section ${r.sectionId}`);
+      for (const sub of r.subs)
+        if (!subIds.has(sub)) errors.push(`readings.json ${r.sectionId}: no sub-theme ${sub}`);
+      placed.set(r.sectionId, r.subs);
+    }
+    for (const s of sectionFiles)
+      if (!placed.has(s.id)) errors.push(`readings.json: ${s.id} has no theme`);
+  }
   const bySection = new Map(sectionFiles.map((s) => [s.id, s]));
   const verseSection = new Map<string, string>();
   for (const s of sectionFiles)
@@ -104,7 +146,30 @@ export function buildThemes(
           sources: p.sources,
         });
       }
-      subthemes.push({ id: s.id, title: s.title, description: s.description, passages });
+      const own: PublicThemeReading[] = [];
+      if (readingsOk)
+        for (const sec of sectionFiles) {
+          const subs = placed.get(sec.id);
+          if (!subs?.includes(s.id)) continue;
+          const key = passages.find((p) => p.sectionId === sec.id)?.ref;
+          const r: PublicThemeReading = {
+            sectionId: sec.id,
+            title: sec.title,
+            display: `${CANON_BY_ID.get(sec.bookId)?.name ?? sec.bookName} ${prettyRange(sec.webcRange)}`,
+            bookId: sec.bookId,
+            library: library.has(sec.id),
+          };
+          if (subs[0] !== s.id) r.second = true;
+          if (key) r.key = key;
+          own.push(r);
+        }
+      subthemes.push({
+        id: s.id,
+        title: s.title,
+        description: s.description,
+        passages,
+        readings: own,
+      });
     }
     data.themes.push({ id: t.id, title: t.title, description: t.description, subthemes });
   }
