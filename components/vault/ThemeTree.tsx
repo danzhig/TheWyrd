@@ -20,6 +20,9 @@ export interface ThemeTreeProps {
   /** A passage is being opened: remember where the camera is. */
   onOpen: () => void;
   hrefFor: (sectionId: string, ref: string, subId: string) => string;
+  /** The Testaments filter: passages in this testament's books are left out. */
+  hidden?: 'ot' | 'nt';
+  testamentOf: (bookId: string) => 'ot' | 'nt';
 }
 
 export const ThemeTree = memo(function ThemeTree({
@@ -28,6 +31,8 @@ export const ThemeTree = memo(function ThemeTree({
   onFocusPassage,
   onOpen,
   hrefFor,
+  hidden,
+  testamentOf,
 }: ThemeTreeProps) {
   const ref = useRef<HTMLDivElement>(null);
   const onKey = (e: React.KeyboardEvent) => {
@@ -61,28 +66,30 @@ export const ThemeTree = memo(function ThemeTree({
                   <h4 className={styles.treeSubTitle}>{s.title}</h4>
                   <p className={styles.listMeta}>{s.description}</p>
                   <ol className={styles.treePassages}>
-                    {s.passages.map((p) => {
-                      const key = `${s.id}:${p.ref}`;
-                      return (
-                        <li key={key}>
-                          <Link
-                            href={hrefFor(p.sectionId, p.ref, s.id)}
-                            prefetch={false}
-                            data-tree-passage={key}
-                            onFocus={() => onFocusPassage(key)}
-                            onBlur={() => onFocusPassage(null)}
-                            onClick={onOpen}
-                          >
-                            {p.display}
-                          </Link>
-                          <span className={styles.listMeta}>
-                            {' '}
-                            — {p.sectionTitle}
-                            {p.library ? ' · in the library' : ' · on the path'}
-                          </span>
-                        </li>
-                      );
-                    })}
+                    {s.passages
+                      .filter((p) => !hidden || testamentOf(p.bookId) !== hidden)
+                      .map((p) => {
+                        const key = `${s.id}:${p.ref}`;
+                        return (
+                          <li key={key}>
+                            <Link
+                              href={hrefFor(p.sectionId, p.ref, s.id)}
+                              prefetch={false}
+                              data-tree-passage={key}
+                              onFocus={() => onFocusPassage(key)}
+                              onBlur={() => onFocusPassage(null)}
+                              onClick={onOpen}
+                            >
+                              {p.display}
+                            </Link>
+                            <span className={styles.listMeta}>
+                              {' '}
+                              — {p.sectionTitle}
+                              {p.library ? ' · in the library' : ' · on the path'}
+                            </span>
+                          </li>
+                        );
+                      })}
                   </ol>
                 </li>
               ))}

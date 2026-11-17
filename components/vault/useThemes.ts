@@ -10,7 +10,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } fro
 import { camera, prefersReducedMotion } from '@/lib/camera';
 import { FLY_FROM, FLY_TO, layoutThemes, starAt, type ThemesLayout } from './constellations';
 import type { Point } from './layout';
-import type { Cam, StarField } from './starfield';
+import type { Cam, StarField, StarHide } from './starfield';
 
 export type ThemesView = 'spiral' | 'to-themes' | 'themes' | 'to-spiral';
 
@@ -73,8 +73,10 @@ export const labelsOpacity = (p: number, fade: boolean) => (fade ? p : smooth(FL
 export function useThemes(opts: {
   camRef: RefObject<Cam>;
   homes: Map<string, Point & { r: number }>;
+  /** The Testaments filter: which books' stars are hidden (and how far through the fade). */
+  hideRef?: RefObject<StarHide | undefined>;
 }) {
-  const { camRef, homes } = opts;
+  const { camRef, homes, hideRef } = opts;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const spiralRef = useRef<HTMLDivElement>(null);
   const spiralLabelsRef = useRef<HTMLDivElement>(null); // the spiral's names (label layer)
@@ -122,9 +124,10 @@ export function useThemes(opts: {
         fade: fade.current,
         lit: lit.current,
         dir: dir.current,
+        hide: hideRef?.current,
       });
     },
-    [camRef],
+    [camRef, hideRef],
   );
 
   // The star field follows the data and the canvas size.
