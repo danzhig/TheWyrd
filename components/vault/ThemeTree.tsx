@@ -1,11 +1,11 @@
 'use client';
 
 /**
- * The themes as a tree (PLAN §16, P6.4): theme → sub-theme → passage. It is the accessible
- * structure of the Themes view (the constellations are decorative for assistive technology),
- * visually hidden on the map and shown by List. Arrow keys move between passages; focusing one on
- * the map flies the camera to its star. Memoised: the Vault re-renders on every zoom step, and
- * this list has a link for every passage.
+ * The themes as a tree (PLAN §16, P6.4; every reading, owner 2026-11-17): theme → sub-theme →
+ * reading. It is the accessible structure of the Themes view (the constellations are decorative
+ * for assistive technology), visually hidden on the map and shown by List. Arrow keys move between
+ * readings; focusing one on the map opens its sub-theme and lights its star. Memoised: the Vault
+ * re-renders on every zoom step, and this list has a link for every reading.
  */
 import Link from 'next/link';
 import { memo, useRef } from 'react';
@@ -15,11 +15,11 @@ import type { ThemesData } from './useThemes';
 export interface ThemeTreeProps {
   data: ThemesData;
   visible: boolean;
-  /** A passage link took focus (`key` = `${subId}:${ref}`), or lost it (null). */
+  /** A reading link took focus (`key` = `${subId}:${sectionId}`), or lost it (null). */
   onFocusPassage: (key: string | null) => void;
   /** A passage is being opened: remember where the camera is. */
   onOpen: () => void;
-  hrefFor: (sectionId: string, ref: string, subId: string) => string;
+  hrefFor: (sectionId: string, subId: string, key?: string) => string;
   /** The Testaments filter: passages in this testament's books are left out. */
   hidden?: 'ot' | 'nt';
   testamentOf: (bookId: string) => 'ot' | 'nt';
@@ -66,26 +66,26 @@ export const ThemeTree = memo(function ThemeTree({
                   <h4 className={styles.treeSubTitle}>{s.title}</h4>
                   <p className={styles.listMeta}>{s.description}</p>
                   <ol className={styles.treePassages}>
-                    {s.passages
-                      .filter((p) => !hidden || testamentOf(p.bookId) !== hidden)
-                      .map((p) => {
-                        const key = `${s.id}:${p.ref}`;
+                    {s.readings
+                      .filter((r) => !hidden || testamentOf(r.bookId) !== hidden)
+                      .map((r) => {
+                        const key = `${s.id}:${r.sectionId}`;
                         return (
                           <li key={key}>
                             <Link
-                              href={hrefFor(p.sectionId, p.ref, s.id)}
+                              href={hrefFor(r.sectionId, s.id, r.key)}
                               prefetch={false}
                               data-tree-passage={key}
                               onFocus={() => onFocusPassage(key)}
                               onBlur={() => onFocusPassage(null)}
                               onClick={onOpen}
                             >
-                              {p.display}
+                              {r.title}
                             </Link>
                             <span className={styles.listMeta}>
                               {' '}
-                              — {p.sectionTitle}
-                              {p.library ? ' · in the library' : ' · on the path'}
+                              — {r.display}
+                              {r.library ? ' · in the library' : ' · on the path'}
                             </span>
                           </li>
                         );

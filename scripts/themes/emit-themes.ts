@@ -7,7 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { verseText, type SectionFile } from '../../lib/types';
-import { CANON_BY_ID } from '../lib/canon';
+import { CANON, CANON_BY_ID } from '../lib/canon';
 import { prettyRange } from '../../lib/format';
 import { readReadings, readingsFingerprint, readThemes, themesFingerprint } from './taxonomy';
 
@@ -109,6 +109,15 @@ export function buildThemes(
     const f = ref.split('-')[0]!;
     return f.split('.').length === 2 ? `${f}.1` : f;
   };
+  // A sub-theme's readings go in the Bible's order (the canon's books; within a book, as built).
+  const canonAt = new Map(CANON.map((b, i) => [b.id, i]));
+  const inBibleOrder = sectionFiles
+    .map((sec, i) => ({ sec, i }))
+    .sort(
+      (a, b) =>
+        (canonAt.get(a.sec.bookId) ?? 999) - (canonAt.get(b.sec.bookId) ?? 999) || a.i - b.i,
+    )
+    .map((x) => x.sec);
   const data: PublicThemes = { themes: [] };
   for (const t of file.themes) {
     const approved = t.approval && t.approval.fingerprint === themesFingerprint(t.subthemes);
@@ -148,7 +157,7 @@ export function buildThemes(
       }
       const own: PublicThemeReading[] = [];
       if (readingsOk)
-        for (const sec of sectionFiles) {
+        for (const sec of inBibleOrder) {
           const subs = placed.get(sec.id);
           if (!subs?.includes(s.id)) continue;
           const key = passages.find((p) => p.sectionId === sec.id)?.ref;

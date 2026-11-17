@@ -581,7 +581,7 @@
 }
 
 .constName {
-  font-size: 15px;
+  font-size: 17px;
   text-align: center;
   font-weight: 600;
   font-variant-caps: small-caps;
@@ -610,63 +610,139 @@
   color: var(--accent-strong);
 }
 
-/* Sub-theme names sit above the passages' names, except the passage being pointed at. */
+/* Sub-theme names sit above the stars' names. */
 .subName {
   z-index: 2;
 }
 
-/* A passage of the constellation in view: a tap target over its star, its reference beside it. */
-.passage {
-  width: 26px;
-  height: 26px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
+/* How many readings a sub-theme holds, beside its name. */
+.subCount {
+  margin-left: 0.3em;
+  font-size: 11px;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--gold-light);
+}
+
+/* A sub-theme opened up (owner, 2026-11-17): its theme and name above its rows, standing out
+   from the dimmed sky. */
+.spreadHead {
+  transform: translate(-6px, -100%);
+  margin: 0;
+  z-index: 3;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.15;
+  white-space: nowrap;
+  color: var(--text-strong);
+  text-shadow:
+    0 0 3px var(--night),
+    0 0 10px var(--night);
+  pointer-events: none;
+}
+
+.spreadTheme {
+  display: block;
+  font-size: 13px;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  color: var(--accent-strong);
+}
+
+/* One reading of the open sub-theme: its star at the left, its name beside it. */
+.spreadName {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45em;
+  max-width: 236px;
+  transform: translate(-7px, -50%);
+  padding: 0.2em 0.5em 0.2em 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+  overflow: hidden;
   text-decoration: none;
   color: var(--text-strong);
-  pointer-events: auto;
-}
-
-.passage:hover,
-.passage:focus-visible {
-  box-shadow: 0 0 0 1px var(--gold-light);
-}
-
-/* The star being pointed at (or focused): its reference comes to the front, on its own dark pill,
-   even where a sub-theme name or a neighbour covered it, and even at zooms where passage names are
-   otherwise hidden. */
-.passage:hover,
-.passage:focus-visible {
-  z-index: 3;
-}
-
-.passage:hover .passageName,
-.passage:focus-visible .passageName {
-  opacity: 1;
-  color: var(--gold-light);
-  background: color-mix(in srgb, var(--night) 85%, transparent);
-  border-radius: 999px;
-  padding: 0.1em 0.5em;
-}
-
-.passageName {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  white-space: nowrap;
-  font-size: 12.5px;
+  font-size: 13.5px;
+  line-height: 1.3;
   text-shadow:
     0 0 2px var(--night),
     0 0 6px var(--night);
+  pointer-events: auto;
+  animation: spread-in 0.25s ease-out both;
+}
+
+.spreadName:hover,
+.spreadName:focus-visible {
+  z-index: 4;
+  max-width: none;
+  background: color-mix(in srgb, var(--night) 88%, transparent);
+  color: var(--gold-light);
+}
+
+.spreadTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spreadRef {
+  flex: none;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* A reading that holds one of the sub-theme's key passages: its name in gold. */
+.spreadKey .spreadTitle {
+  color: var(--gold-light);
 }
 
 .passageLibrary {
   color: var(--text);
 }
 
-/* Too far out to read: the reference stays as the link's name but is not drawn. */
+/* Back out of an open sub-theme: a fixed pill, clear of the header. */
+.spreadBack {
+  position: fixed;
+  left: 50%;
+  bottom: 4.5rem;
+  z-index: 6;
+  transform: translateX(-50%);
+  font: inherit;
+  font-size: 14px;
+  color: var(--text-strong);
+  background: color-mix(in srgb, var(--night) 90%, transparent);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.45em 1.1em;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.spreadBack:hover,
+.spreadBack:focus-visible {
+  color: var(--accent-strong);
+}
+
+@media (max-width: 520px) {
+  .spreadBack {
+    bottom: 7.6rem;
+  }
+}
+
+@keyframes spread-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spreadName {
+    animation: none;
+  }
+}
+
+/* A sub-theme is open: the constellations' names step back. */
 .quiet {
-  opacity: 0;
+  opacity: 0.25;
 }
 
 /* Themes: the key to the two kinds of star. */
@@ -878,7 +954,7 @@
    onto two short lines. */
 @media (max-width: 520px) {
   .constName {
-    font-size: 13px;
+    font-size: 15px;
     white-space: normal;
     width: max-content;
     max-width: 8.5em;

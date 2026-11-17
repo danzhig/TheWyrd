@@ -24,6 +24,11 @@ export interface DrawOptions {
   dir?: 1 | -1;
   /** Books whose stars are hidden (the Testaments filter), fading from `prev` to `next` as t goes 0 → 1. */
   hide?: StarHide;
+  /**
+   * A sub-theme opened up (owner, 2026-11-17): its stars move from their cluster to `at` (world
+   * units, by star key) as t goes 0 → 1, and every other star dims.
+   */
+  spread?: { sub: string; t: number; at: Map<string, Point> };
 }
 
 export interface StarHide {
@@ -39,6 +44,9 @@ export function starVisibility(h: StarHide | undefined, bookId: string): number 
   const b = h.next?.(bookId) ? 0 : 1;
   return a + (b - a) * h.t;
 }
+
+/** The night sky's colour (--night), for the veil over an opened sub-theme. */
+const NIGHT = '#14100C';
 
 const smooth = (a: number, b: number, x: number) => {
   const t = Math.min(1, Math.max(0, (x - a) / (b - a)));
@@ -103,10 +111,32 @@ export class StarField {
     // Reduced motion: everything in place, fading. Otherwise the stars appear as the bubbles
     // shrink away (and vanish into them on the way home), and the lines draw in once they land.
     const starsAlpha = o.fade ? o.p : smooth(0.02, FLY_FROM, o.p);
-    const lines = (o.fade ? o.p : smooth(FLY_TO, 1, o.p)) * 0.75;
+    // An opened sub-theme: a veil over the sky, and every other star and line steps back.
+    const st = o.spread?.t ?? 0;
+    if (st > 0) {
+      ctx.globalAlpha = 0.5 * st;
+      ctx.fillStyle = NIGHT;
+      ctx.fillRect(0, 0, this.w, this.h);
+      ctx.globalAlpha = 1;
+    }
+    const lines = (o.fade ? o.p : smooth(FLY_TO, 1, o.p)) * 0.75 * (1 - 0.85 * st);
     const flying = !o.fade && o.p > FLY_FROM && o.p < FLY_TO;
     const dir = o.dir ?? 1;
 
+    // Where each star is now, in screen pixels.
+    const n = this.layout.stars.length;
+    const xs = new Float32Array(n);
+    const ys = new Float32Array(n);
+    this.layout.stars.forEach((s, i) => {
+      let at = o.fade ? { x: s.x, y: s.y } : starAt(s, o.p);
+      const to = o.spread && s.subId === o.spread.sub ? o.spread.at.get(s.key) : undefined;
+      if (to) {
+        const t = o.spread!.t;
+        at = { x: at.x + (to.x - at.x) * t, y: at.y + (to.y - at.y) * t };
+      }
+      xs[i] = X(at.x);
+      ys[i] = Y(at.y);
+    });
     if (lines > 0) {
       ctx.strokeStyle = this.gold;
       ctx.lineWidth = 1.4;
@@ -125,27 +155,24 @@ export class StarField {
         const subAt = new Map(
           this.layout.constellations.flatMap((c) => c.subs.map((s) => [s.id, s] as const)),
         );
-        for (const s of this.layout.stars) {
-          if (!starVisibility(o.hide, s.bookId)) continue;
+        this.layout.stars.forEach((s, i) => {
+          if (!starVisibility(o.hide, s.bookId)) return;
+          // An opened sub-theme's stars are in rows: no spokes to them.
+          if (o.spread && o.spread.t > 0 && s.subId === o.spread.sub) return;
           const c = subAt.get(s.subId)!;
           ctx.moveTo(X(c.x), Y(c.y));
-          ctx.lineTo(X(s.x), Y(s.y));
-        }
+          ctx.lineTo(xs[i]!, ys[i]!);
+        });
         ctx.stroke();
       }
     }
 
-    // Where each star is now, in screen pixels.
-    const n = this.layout.stars.length;
-    const xs = new Float32Array(n);
-    const ys = new Float32Array(n);
-    this.layout.stars.forEach((s, i) => {
-      const at = o.fade ? s : starAt(s, o.p);
-      xs[i] = X(at.x);
-      ys[i] = Y(at.y);
-    });
     // The Testaments filter: hidden stars fade out (and back in), then are skipped.
-    const vis = this.layout.stars.map((s) => starVisibility(o.hide, s.bookId));
+    // An opened sub-theme dims every other star.
+    const dim = 1 - 0.88 * st;
+    const vis = this.layout.stars.map(
+      (s) => starVisibility(o.hide, s.bookId) * (o.spread && s.subId !== o.spread.sub ? dim : 1),
+    );
     const levels = [...new Set(vis)].filter((v) => v > 0);
     const shown = (i: number) =>
       vis[i]! > 0 && xs[i]! > -20 && ys[i]! > -20 && xs[i]! < this.w + 20 && ys[i]! < this.h + 20;
@@ -175,7 +202,8 @@ export class StarField {
     this.layout.stars.forEach((s, i) => {
       if (s.library || !shown(i)) return;
       ctx.globalAlpha = starsAlpha * vis[i]!;
-      const g = r * (s.subId === o.lit ? 7 : 4.5);
+      const open = st > 0 && s.subId === o.spread!.sub;
+      const g = open ? r * 3.5 : r * (s.subId === o.lit ? 7 : 4.5) * (s.bright ? 1.5 : 1);
       ctx.drawImage(this.glow, xs[i]! - g / 2, ys[i]! - g / 2, g, g);
     });
     for (const lib of [true, false])
@@ -185,7 +213,11 @@ export class StarField {
         ctx.beginPath();
         this.layout.stars.forEach((s, i) => {
           if (s.library !== lib || vis[i] !== level || !shown(i)) return;
-          const rr = (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1);
+          // A reading that holds a key passage of its sub-theme is a bright star.
+          const open = st > 0 && s.subId === o.spread!.sub;
+          const rr = open
+            ? (lib ? 0.8 : 1) * (s.bright ? 4.5 : 3)
+            : (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1) * (s.bright ? 1.6 : 1);
           ctx.moveTo(xs[i]! + rr, ys[i]!);
           ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
         });

@@ -5,7 +5,6 @@ import type { ZoomBehavior, ZoomTransform } from 'd3-zoom';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
-  Fragment,
   useCallback,
   useEffect,
   useLayoutEffect,
@@ -19,7 +18,7 @@ import { animationsOn, bookIn, bookOut, END_EVENT, transition } from '@/lib/tran
 import { CHANGE_EVENT, readLast, readProgress, readSettings, writeSettings } from '@/lib/store';
 import type { Testaments } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
-import { nearestConstellation, type Constellation } from './constellations';
+import type { Constellation } from './constellations';
 import { layoutVault, type Medallion, type Point } from './layout';
 import { ThemeTree } from './ThemeTree';
 import type { StarHide } from './starfield';
@@ -74,19 +73,16 @@ type Cam = { x: number; y: number; k: number };
 
 const FLY_MS = 850;
 const K_MAX = 2.6; // medallion detail
-const K_MAX_THEMES = 5; // passage labels in a constellation
-// The focused constellation's passages become links once it is this wide on screen (px).
-const PASSAGE_PX = 260;
-// …and their references show beside their stars from this zoom.
-const PASSAGE_LABEL_K = 2.6;
+const K_MAX_THEMES = 5; // a sub-theme opened up (ThemesLabels) is read at 3
 
 /** A point on the ceiling, for the label layer: world units, scaled by --k in CSS. */
 const at = (p: { x: number; y: number }) =>
   ({ ['--x' as string]: p.x, ['--y' as string]: p.y }) as React.CSSProperties;
 
-/** A passage's address in the reader: its section, at its first verse (WEBC numbering). */
-function passageHref(sectionId: string, ref: string, subId: string): string {
-  const [, c, v] = ref.split('-')[0]!.split('.');
+/** A reading's address in the reader from a theme: at its key passage's first verse, if any. */
+function readingHref(sectionId: string, subId: string, key?: string): string {
+  if (!key) return `/read/${sectionId}/?theme=${subId}`;
+  const [, c, v] = key.split('-')[0]!.split('.');
   return `/read/${sectionId}/?theme=${subId}#v-${c}-${v ?? 1}`;
 }
 
@@ -191,6 +187,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     draw: drawThemes,
     switchTo: switchThemes,
     setLit,
+    setSpread,
   } = useThemes({ camRef, homes, hideRef });
   const drawStars = useRef(drawThemes);
   const themesLayout = useRef(themeLayout);
@@ -217,18 +214,14 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
   }, [hide, tOf]);
-  const [focusC, setFocusC] = useState<string | null>(null);
-  const passageOf = useMemo(
-    () =>
-      new Map(
-        (themeData?.themes ?? []).flatMap((t) =>
-          t.subthemes.flatMap((s) =>
-            s.passages.map((p) => [`${s.id}:${p.ref}` as string, p] as const),
-          ),
-        ),
-      ),
-    [themeData],
-  );
+  // The names on the Themes ceiling and a sub-theme opened up (ThemesLabels), loaded with the
+  // themes' data; requests to open a sub-theme (back from a reading, the theme tree).
+  const [Labels, setLabels] = useState<typeof import('./ThemesLabels').ThemesLabels | null>(null);
+  useEffect(() => {
+    if (themeData && !Labels)
+      void import('./ThemesLabels').then((m) => setLabels(() => m.ThemesLabels));
+  }, [themeData, Labels]);
+  const [spreadReq, setSpreadReq] = useState<{ sub: string; n: number } | null>(null);
 
   const currentBook = lastSection ? sections[lastSection]?.[1] : undefined;
   const currentMedallion = layout.medallions.find((m) => m.id === currentBook);
@@ -280,13 +273,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       });
       const q = Math.round(Math.log2(t.k) * 6) / 6;
       setKq((prev) => (prev === q ? prev : q));
-      // Themes: the stars follow the camera, and the constellation in view gets its passage links.
+      // Themes: the stars follow the camera.
       drawStars.current(t);
-      const tl = themesLayout.current;
-      if (tl) {
-        const c = nearestConstellation(tl, { x: (cx - t.x) / t.k, y: (cy - t.y) / t.k });
-        setFocusC((prev) => (prev === (c?.id ?? null) ? prev : (c?.id ?? null)));
-      }
     },
     [settleLabels],
   );
@@ -468,31 +456,24 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [flyTo, target, visibleArea],
   );
 
-  // The theme tree (P6.4): focusing a passage lights its sub-theme and, on the map, flies the
-  // camera to its star; opening one remembers where the camera is, to come back to.
+  // The theme tree (P6.4): focusing a reading lights its sub-theme and, on the map, opens that
+  // sub-theme (its readings spread out); opening one remembers where the camera is, to come back to.
   const onTreeFocus = useCallback(
     (key: string | null) => {
-      setLit(key ? key.split(':')[0]! : null);
-      if (!key || mode !== 'map') return;
-      const s = themesLayout.current?.stars.find((x) => x.key === key);
-      if (s && viewRef.current)
-        void flyTo(target(s, Math.max(camRef.current.k, Math.min(K_MAX_THEMES, 3))), 450);
+      const sub = key ? key.split(':')[0]! : null;
+      setLit(sub);
+      if (!sub || mode !== 'map') return;
+      setSpreadReq((r) => (r?.sub === sub ? r : { sub, n: (r?.n ?? 0) + 1 }));
     },
-    [mode, setLit, flyTo, target],
+    [mode, setLit],
   );
   const onTreeOpen = useCallback(() => {
     camera.last = { ...camRef.current };
   }, []);
 
-  // When the themes arrive (after the camera was placed, e.g. coming back to the Vault in
-  // Themes), work out the constellation in view so its passage links appear.
-  useEffect(() => {
-    if (themeLayout) apply(camRef.current);
-  }, [themeLayout, apply]);
-
-  // Back from a passage opened in a constellation (`/?theme=<sub-theme>`, the reader's up link):
-  // show that sub-theme again, close enough to pick another of its passages. Within a visit the
-  // Vault is already in Themes where the reader left it; on a fresh load it switches and flies.
+  // Back from a reading opened in a sub-theme (`/?theme=<sub-theme>`, the reader's up link): open
+  // that sub-theme again, to pick another of its readings. Within a visit the Vault is already in
+  // Themes where the reader left it; on a fresh load it switches first.
   const themeReturn = useRef(false);
   useEffect(() => {
     if (!ready || themeReturn.current) return;
@@ -500,15 +481,11 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     const sub = new URLSearchParams(window.location.search).get('theme');
     if (!sub) return;
     window.history.replaceState(window.history.state, '', '/');
-    if (themeView === 'themes') return;
     void (async () => {
-      await switchThemes('themes');
-      const s = themesLayout.current?.constellations
-        .flatMap((c) => c.subs)
-        .find((x) => x.id === sub);
-      if (s) void flyTo(target(s, Math.min(K_MAX_THEMES, 3)), 900);
+      if (themeView !== 'themes') await switchThemes('themes');
+      setSpreadReq((r) => ({ sub, n: (r?.n ?? 0) + 1 }));
     })();
-  }, [ready, themeView, switchThemes, flyTo, target]);
+  }, [ready, themeView, switchThemes]);
 
   // Parallax against the pointer (off under reduced motion).
   useEffect(() => {
@@ -955,80 +932,25 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                 style={themeView === 'to-themes' ? { opacity: 0 } : undefined}
                 data-testid="themes-layer"
               >
-                {/* Passages first, so the sub-theme names sit on top of their labels. */}
-                {themeView === 'themes' &&
-                (themeLayout.constellations.find((c) => c.id === focusC)?.r ?? 0) * 2 * k >=
-                  PASSAGE_PX
-                  ? themeLayout.stars
-                      .filter((s) => s.themeId === focusC)
-                      .map((s) => {
-                        const p = passageOf.get(s.key);
-                        if (!p) return null;
-                        return (
-                          <a
-                            key={s.key}
-                            href={passageHref(p.sectionId, p.ref, s.subId)}
-                            tabIndex={-1}
-                            className={`${styles.at} ${styles.passage} ${p.library ? styles.passageLibrary : ''}`}
-                            style={at(s)}
-                            data-passage={s.key}
-                            data-testament={tOf(s.bookId)}
-                            onClick={(e) => {
-                              // A client navigation keeps the Vault's memory (Themes, the camera);
-                              // remember exactly where the camera is, even mid-flight, to come back to.
-                              e.preventDefault();
-                              camera.last = { ...camRef.current };
-                              router.push(passageHref(p.sectionId, p.ref, s.subId));
-                            }}
-                            onPointerEnter={() => setLit(s.subId)}
-                            onPointerLeave={() => setLit(null)}
-                          >
-                            {/* The reference names the link; the section's title is its tooltip. */}
-                            <span
-                              className={`${styles.passageName} ${k >= PASSAGE_LABEL_K ? '' : styles.quiet}`}
-                              title={p.sectionTitle}
-                            >
-                              {p.display}
-                            </span>
-                          </a>
-                        );
-                      })
-                  : null}
-                {themeLayout.constellations.map((c, i) => {
-                  const t = themeData!.themes[i]!;
-                  const open = c.r * k >= 110;
-                  return (
-                    <Fragment key={c.id}>
-                      <button
-                        type="button"
-                        tabIndex={-1}
-                        className={`${styles.at} ${styles.constName}`}
-                        style={at({ x: c.x, y: c.y - c.r - 4 })}
-                        data-constellation={c.id}
-                        onClick={() => flyToConstellation(c)}
-                      >
-                        {t.title}
-                      </button>
-                      {open
-                        ? c.subs.map((s, j) => (
-                            <button
-                              key={s.id}
-                              type="button"
-                              tabIndex={-1}
-                              className={`${styles.at} ${styles.subName}`}
-                              style={at(s)}
-                              data-subtheme={s.id}
-                              onPointerEnter={() => setLit(s.id)}
-                              onPointerLeave={() => setLit(null)}
-                              onClick={() => void flyTo(target(s, K_MAX_THEMES), 600)}
-                            >
-                              {t.subthemes[j]!.title}
-                            </button>
-                          ))
-                        : null}
-                    </Fragment>
-                  );
-                })}
+                {Labels ? (
+                  <Labels
+                    data={themeData}
+                    layout={themeLayout}
+                    k={k}
+                    settled={themeView === 'themes'}
+                    tOf={tOf}
+                    hidden={hide}
+                    setLit={setLit}
+                    setSpread={setSpread}
+                    flyTo={(p, z, ms) => void flyTo(target(p, z), ms)}
+                    flyToConstellation={flyToConstellation}
+                    visibleArea={visibleArea}
+                    onOpen={() => {
+                      camera.last = { ...camRef.current };
+                    }}
+                    request={spreadReq}
+                  />
+                ) : null}
               </div>
             ) : null}
           </div>
@@ -1086,7 +1008,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           testamentOf={tOf}
           onFocusPassage={onTreeFocus}
           onOpen={onTreeOpen}
-          hrefFor={passageHref}
+          hrefFor={readingHref}
         />
       ) : null}
       {/* The same content as an ordered list (PLAN §9 accessibility). Visible in List mode. */}
