@@ -3,6 +3,7 @@ import { ContentNote } from '@/components/reader/ContentNote';
 import { ReaderShell } from '@/components/reader/ReaderShell';
 import { SectionBody } from '@/components/reader/SectionBody';
 import { Threads } from '@/components/reader/Threads';
+import { TranslatedBody, TranslationSwitch } from '@/components/reader/Translation';
 import styles from '@/components/reader/reader.module.css';
 import Link from 'next/link';
 import { getFullManifest, getSection, getSectionThemes, getSectionThreads } from '@/lib/data';
@@ -36,6 +37,9 @@ export default async function ReadPage({ params }: Params) {
   const { sectionId } = await params;
   const s = getSection(sectionId);
   const statusLabel = STATUS_LABEL[s.status];
+  // Everything but the WEBC verses, for the Douay-Rheims body (the client fetches its own words).
+  const meta: Omit<typeof s, 'verses'> = { ...s };
+  delete (meta as Partial<typeof s>).verses;
   const library = isLibrary(s.id);
   // The sub-themes this section's passages belong to (Phase 6), linked to their constellations.
   const themes = getSectionThemes(s.id);
@@ -73,6 +77,8 @@ export default async function ReadPage({ params }: Params) {
           {s.minutes} min
         </p>
         {s.versificationNote ? <p className={styles.ref}>{s.versificationNote}</p> : null}
+        {/* The second translation (Phase 7): WEBC or Douay-Rheims, a reading setting. */}
+        <TranslationSwitch id={s.id} />
         {library ? (
           <p className={styles.library} data-testid="library-label" data-pagefind-ignore="all">
             <span className="label">Library · not on the path</span>{' '}
@@ -109,7 +115,9 @@ export default async function ReadPage({ params }: Params) {
         </div>
       ) : null}
       <div className={s.highlight ? styles.highlight : undefined}>
-        <SectionBody section={s} threads={glyphs} />
+        <TranslatedBody section={meta} threads={glyphs}>
+          <SectionBody section={s} threads={glyphs} />
+        </TranslatedBody>
       </div>
       <Threads threads={threads} />
     </article>

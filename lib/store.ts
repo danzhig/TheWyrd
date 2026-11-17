@@ -14,7 +14,11 @@ export interface Settings {
   verseNumbers: boolean;
   /** Which testaments the Vault shows (owner, 2026-11-17): both, or only the Old or the New. */
   testaments: Testaments;
+  /** The reader's words (owner, 2026-11-17): the WEBC, or the Douay-Rheims (Challoner). */
+  translation: Translation;
 }
+
+export type Translation = 'webc' | 'drc';
 
 export type Testaments = 'both' | 'ot' | 'nt';
 
@@ -23,6 +27,7 @@ export const DEFAULT_SETTINGS: Settings = {
   textSize: 2,
   verseNumbers: true,
   testaments: 'both',
+  translation: 'webc',
 };
 
 const memory = new Map<string, string>();
@@ -68,7 +73,9 @@ export function readSettings(): Settings {
       textSize: parsed.textSize ?? DEFAULT_SETTINGS.textSize,
       verseNumbers: parsed.verseNumbers ?? DEFAULT_SETTINGS.verseNumbers,
       testaments: parsed.testaments ?? DEFAULT_SETTINGS.testaments,
+      translation: parsed.translation ?? DEFAULT_SETTINGS.translation,
     };
+    if (!['webc', 'drc'].includes(s.translation)) s.translation = 'webc';
     if (!['both', 'ot', 'nt'].includes(s.testaments)) s.testaments = 'both';
     if (!['default', 'vault', 'vellum', 'auto'].includes(s.theme)) s.theme = 'default';
     if (![1, 2, 3, 4].includes(s.textSize)) s.textSize = DEFAULT_SETTINGS.textSize;

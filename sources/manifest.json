@@ -342,19 +342,18 @@
     {
       "id": "drc",
       "name": "Douay-Rheims Bible (Challoner revision), USFM",
-      "layer": "English (comparison)",
-      "pipeline": "terms",
+      "layer": "English (second translation)",
       "url": "https://ebible.org/Scriptures/engDRA_usfm.zip",
       "file": "engDRA_usfm.zip",
-      "sha256": "fcb5de45f1f6083d56b738690e5b4b3bb6f0d87522d1d18329c57a4b09e05210",
-      "version": "eBible.org build downloaded 2026-11-10",
+      "sha256": "28147740343e44cede8c86cffb91973f934ddd892a887f621f4df816ffc86834",
+      "version": "eBible.org build re-pinned 2026-11-17 (two typo corrections: Joshua 3:14, a stray full stop removed; Jeremiah 29:13, \u201cAnd\u201d corrected to \u201cfind\u201d; otherwise only whitespace differs from the 10 Nov build)",
       "homepage": "https://ebible.org/find/details.php?id=engDRA",
       "license": "Public domain",
       "licenseUrl": "https://ebible.org/find/details.php?id=engDRA",
       "licenseVerified": "2026-11-10",
       "attribution": "Douay-Rheims Bible (Challoner revision), USFM, eBible.org. Public domain.",
-      "usedFor": "English card: the historic Catholic rendering",
-      "phase": 3
+      "usedFor": "Reader text in the Douay-Rheims setting; English card: the historic Catholic rendering",
+      "phase": 7
     },
     {
       "id": "kjv",

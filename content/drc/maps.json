@@ -1,0 +1,110 @@
+{
+  "note": "Douay-Rheims alignment (Phase 7): where the Douay-Rheims text is a different form of the book, or holds a passage elsewhere, each WEBC stretch is paired with the Douay-Rheims stretch that tells the same part. Verses inside a segment are paired by content (scripts/drc/content.ts) and every pair is listed in docs/drc/. Each book needs the owner's approval, with a fingerprint of its segments; any edit needs approval again.",
+  "books": {
+    "Esth": {
+      "why": "The WEBC translates Esther from the Greek, with the six additions woven into the story (A in 1:1, B in 3:13, C as 4:18–47, D as the expanded 5:1–2, E in 8:13, F as 10:4–14; see content/plan/structure-maps.json). The Vulgate, and so the Douay-Rheims, gives the Hebrew story as 1:1–10:3 and gathers the additions after it as 10:4–16:24.",
+      "whole": true,
+      "splits": [
+        {
+          "ref": "1:1",
+          "afterBlockEndingWith": "]",
+          "why": "As in the plan's Esther map: WEBC 1:1 holds Addition A (bracketed) and then the Hebrew 1:1."
+        }
+      ],
+      "segments": [
+        {
+          "webc": "1:1!a",
+          "drc": ["11:2-12:6"],
+          "why": "Addition A: Mordecai's dream and the eunuchs' plot."
+        },
+        {
+          "webc": "1:1!b-3:12",
+          "drc": ["1:1-3:12"],
+          "why": "The story, chapters 1–3."
+        },
+        {
+          "webc": "3:13",
+          "drc": ["3:13", "13:1-7"],
+          "why": "3:13 and Addition B, the king's decree, which the WEBC sets inside 3:13."
+        },
+        {
+          "webc": "3:14-4:17",
+          "drc": ["3:14-4:8", "15:1-3", "4:9-4:17"],
+          "why": "The story, 3:14–4:17. The Douay-Rheims' 15:1–3 (Mordecai's charge to Esther) is the Greek 4:8, so it sits after its 4:8."
+        },
+        {
+          "webc": "4:18-4:47",
+          "drc": ["13:8-14:19"],
+          "why": "Addition C: the prayers of Mordecai and Esther."
+        },
+        {
+          "webc": "5:1-5:2",
+          "drc": ["15:4-19", "5:1-5:2"],
+          "why": "Addition D, Esther before the king, which the WEBC gives as its expanded 5:1–2."
+        },
+        {
+          "webc": "5:3-8:12",
+          "drc": ["5:3-8:12"],
+          "why": "The story, 5:3–8:12."
+        },
+        {
+          "webc": "8:13",
+          "drc": ["16:1-24", "8:13"],
+          "why": "Addition E, the counter-decree, which the WEBC sets inside 8:13, and 8:13."
+        },
+        {
+          "webc": "8:14-10:3",
+          "drc": ["8:14-10:3"],
+          "why": "The story, 8:14–10:3."
+        },
+        {
+          "webc": "10:4-10:14",
+          "drc": ["10:4-10:13", "11:1"],
+          "why": "Addition F: the dream explained, and the colophon (the Douay-Rheims' 11:1)."
+        }
+      ],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "02c04d2f600bf0de"
+      }
+    },
+    "Tob": {
+      "why": "The Douay-Rheims translates the Vulgate's Tobit, a shorter and differently worded form of the book than the Greek the WEBC follows (298 verses against 244). The two keep the same fourteen chapters, so each chapter is paired with the same chapter and its verses by content.",
+      "whole": true,
+      "byChapter": true,
+      "segments": [],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "4c2e5057c3c88761"
+      }
+    },
+    "Jdt": {
+      "why": "The Douay-Rheims translates the Vulgate's Judith, a shorter form of the book than the Greek the WEBC follows. The two keep the same sixteen chapters, so each chapter is paired with the same chapter and its verses by content.",
+      "whole": true,
+      "byChapter": true,
+      "segments": [],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "d79d26c063d39b80"
+      }
+    },
+    "Rom": {
+      "why": "The WEBC follows the Majority Text, which places the closing doxology at 14:24–26; the Douay-Rheims has it at 16:25–27.",
+      "segments": [
+        {
+          "webc": "14:24-14:26",
+          "drc": ["16:25-16:27"],
+          "why": "The doxology."
+        }
+      ],
+      "approval": {
+        "by": "the owner",
+        "date": "2026-11-17",
+        "fingerprint": "82802900202fe78b"
+      }
+    }
+  }
+}
