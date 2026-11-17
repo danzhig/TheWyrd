@@ -143,3 +143,107 @@
   position: fixed;
   will-change: transform, opacity;
 }
+
+/* ---------------------------------------------------------------------------------------------
+   Page-turn books (prototype; BookCover's PAGE_TURN_BOOKS). The board and the first page share
+   the shell's 3D space: the board a hair above the page, so it lies on top when closed and
+   beneath when both have turned over to the left.
+   --------------------------------------------------------------------------------------------- */
+
+.book-shell[data-turn] .book-hinge {
+  transform: translateZ(2px);
+}
+
+/* The inside of the board: a marbled endpaper rather than plain paper. */
+.book-shell[data-turn] .book-cover-back {
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 0) 0 92%, rgb(0 0 0 / 0.35) 100%),
+    radial-gradient(ellipse 40% 22% at 30% 25%, rgb(196 160 92 / 0.35), transparent 70%),
+    radial-gradient(ellipse 35% 30% at 70% 60%, rgb(120 40 30 / 0.55), transparent 70%),
+    radial-gradient(ellipse 50% 25% at 40% 85%, rgb(40 60 70 / 0.6), transparent 70%),
+    repeating-radial-gradient(circle at 20% 40%, #3b2a2a 0 6px, #2e2230 6px 11px, #42302a 11px 15px);
+  box-shadow: inset 0 0 0 1.4cqw #2a1f16;
+}
+
+.book-leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 50%; /* the spine */
+  transform-style: preserve-3d;
+  transform: translateZ(1px);
+}
+
+.book-leaf-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* The front: a half-title, as the first page of a printed book, shaded toward the spine. */
+.book-leaf-front {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  align-content: start;
+  gap: 2cqh;
+  padding: 30cqh 10cqw 0;
+  text-align: center;
+  border-radius: 1px 4px 4px 1px;
+  background: linear-gradient(90deg, rgb(60 45 25 / 0.22), rgb(60 45 25 / 0) 7%), var(--bg);
+}
+
+.book-leaf-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.08em;
+  font-size: clamp(14px, 9cqw, 52px);
+  line-height: 1.05;
+  color: var(--text-strong);
+}
+
+.book-leaf-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(9px, 4cqw, 20px);
+  color: var(--text-muted);
+}
+
+/* The back: the left half of the map once the page has turned (a copy put here by BookCover). */
+.book-leaf-back {
+  transform: rotateY(180deg);
+  border-radius: 4px 1px 1px 4px;
+}
+
+/* Light on the turning page: dark at the spine, a bright band where the page bows toward the
+   light, darker again at the fore-edge. Invisible at rest. */
+.book-leaf-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgb(40 28 14 / 0.5),
+    rgb(40 28 14 / 0.12) 50%,
+    rgb(255 248 230 / 0.28) 80%,
+    rgb(40 28 14 / 0.18)
+  );
+}
+
+.book-leaf-back .book-leaf-shade {
+  background: linear-gradient(
+    270deg,
+    rgb(40 28 14 / 0.5),
+    rgb(40 28 14 / 0.12) 50%,
+    rgb(255 248 230 / 0.28) 80%,
+    rgb(40 28 14 / 0.18)
+  );
+}

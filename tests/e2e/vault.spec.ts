@@ -85,6 +85,30 @@ test.describe('the Vault', () => {
     await expect.poll(() => scale(page), { timeout: 3000 }).toBeCloseTo(before, 2);
   });
 
+  test('Genesis opens like a novel: the first page turns with the map, and turns back', async ({
+    page,
+  }) => {
+    await openVault(page);
+    await page.getByTestId('vault-scene').locator('a[data-book="Gen"]').click();
+    await page.waitForURL(/\/book\/Gen\/$/);
+    // On a spread the half-title page turns over carrying a copy of the map's left half.
+    if ((page.viewportSize()?.width ?? 0) >= 900) {
+      await expect(page.locator('[data-leaf-print]')).toBeAttached({ timeout: 3000 });
+    }
+    await expect(page.locator('[data-book-frame]')).toHaveAttribute('data-state', 'open', {
+      timeout: 4000,
+    });
+    // Once open, the copy is gone and the live map is whole and unique.
+    await expect(page.locator('[data-leaf-print]')).toHaveCount(0);
+    await expect(page.locator('[data-pages]')).toHaveCSS('clip-path', 'none');
+    await expect(page.locator('[data-station="gen-01"]')).toHaveCount(1);
+    await page.getByRole('link', { name: '← All books' }).click();
+    await expect(page.locator('[data-book-frame]')).toHaveAttribute('data-state', 'closing');
+    await expect(page.getByTestId('flying-book')).toBeAttached({ timeout: 4000 });
+    await page.waitForURL(/\/$/);
+    await expect(page.locator('#transition-layer > *')).toHaveCount(0, { timeout: 4000 });
+  });
+
   test('keyboard focus moves along the spiral and the camera follows', async ({ page }) => {
     await openVault(page);
     await page.locator('a[data-book="Gen"]').last().focus();
