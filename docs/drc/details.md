@@ -206,317 +206,317 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 **Segment** WEBC 1:1-1:22 ↔ Douay-Rheims 1:1-1:25 — Chapter 1.
 
-| WEBC | Douay-Rheims     | Score | WEBC opens                                     | Douay-Rheims opens                         |
-| ---- | ---------------- | ----: | ---------------------------------------------- | ------------------------------------------ |
-| 1:2  | 1:1              |  0.27 | who in the days of Enemessar king …            | Tobias of the tribe and city of …          |
-| 1:3  | 1:2, 1:3         |  0.25 | I, Tobit walked in the ways of …               | When he was made captive in the …          |
-| 1:4  | 1:4              |  0.29 | When I was in my own country, …                | And when he was younger than any …         |
-| 1:6  | 1:5              |  0.27 | I alone went often to Jerusalem at …           | Moreover when all went to the golden …     |
-| 1:7  | 1:6              |  0.22 | I gave a tenth part of all …                   | And went to Jerusalem to the temple …      |
-| 1:8  | 1:7, 1:8         |  0.20 | A third tenth I gave to them …                 | So that in the third year he …             |
-| 1:9  | 1:9, 1:10, 1:11  |  0.50 | When I became a man, I took …                  | But when he was a man, he …                |
-| 1:12 | 1:12             |  0.50 | because I remembered God with all my …         | (When all ate of the meats of …            |
-| 1:13 | 1:13, 1:14, 1:15 |  0.22 | So the Most High gave me grace …               | And because he was mindful of the …        |
-| 1:14 | 1:16, 1:17       |  0.36 | And I went into Media, and left …              | And when he was come to Rages …            |
-| 1:15 | 1:18, 1:19       |  0.55 | And when Enemessar was dead, Sennacherib his … | But after a long time, Salmanasar the …    |
-| 1:17 | 1:20             |  0.22 | and my garments to the naked. If …             | He fed the hungry, and gave clothes …      |
-| 1:18 | 1:21, 1:22       |  0.54 | If Sennacherib the king killed any, when …     | And when king Sennacherib was come back, … |
-| 1:20 | 1:23             |  0.40 | And all my goods were forcibly taken …         | But Tobias fleeing naked away with his …   |
-| 1:21 | 1:24, 1:25       |  0.33 | No more than fifty five days passed …          | But after forty-five days, the king was …  |
-| 1:1  | —                |       | The book of the words of Tobit, …              |                                            |
-| 1:5  | —                |       | All the tribes which fell away together …      |                                            |
-| 1:10 | —                |       | When I was carried away captive to …           |                                            |
-| 1:11 | —                |       | but I kept myself from eating,                 |                                            |
-| 1:16 | —                |       | In the days of Enemessar, I did …              |                                            |
-| 1:19 | —                |       | But one of the Ninevites went and …            |                                            |
-| 1:22 | —                |       | Achiacharus requested me, and I came to …      |                                            |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 1:2 | 1:1 | 0.27 | who in the days of Enemessar king … | Tobias of the tribe and city of … |
+| 1:3 | 1:2, 1:3 | 0.25 | I, Tobit walked in the ways of … | When he was made captive in the … |
+| 1:4 | 1:4 | 0.29 | When I was in my own country, … | And when he was younger than any … |
+| 1:6 | 1:5 | 0.27 | I alone went often to Jerusalem at … | Moreover when all went to the golden … |
+| 1:7 | 1:6 | 0.22 | I gave a tenth part of all … | And went to Jerusalem to the temple … |
+| 1:8 | 1:7, 1:8 | 0.20 | A third tenth I gave to them … | So that in the third year he … |
+| 1:9 | 1:9, 1:10, 1:11 | 0.50 | When I became a man, I took … | But when he was a man, he … |
+| 1:12 | 1:12 | 0.50 | because I remembered God with all my … | (When all ate of the meats of … |
+| 1:13 | 1:13, 1:14, 1:15 | 0.22 | So the Most High gave me grace … | And because he was mindful of the … |
+| 1:14 | 1:16, 1:17 | 0.36 | And I went into Media, and left … | And when he was come to Rages … |
+| 1:15 | 1:18, 1:19 | 0.55 | And when Enemessar was dead, Sennacherib his … | But after a long time, Salmanasar the … |
+| 1:17 | 1:20 | 0.22 | and my garments to the naked. If … | He fed the hungry, and gave clothes … |
+| 1:18 | 1:21, 1:22 | 0.54 | If Sennacherib the king killed any, when … | And when king Sennacherib was come back, … |
+| 1:20 | 1:23 | 0.40 | And all my goods were forcibly taken … | But Tobias fleeing naked away with his … |
+| 1:21 | 1:24, 1:25 | 0.33 | No more than fifty five days passed … | But after forty-five days, the king was … |
+| 1:1 | — | | The book of the words of Tobit, … | |
+| 1:5 | — | | All the tribes which fell away together … | |
+| 1:10 | — | | When I was carried away captive to … | |
+| 1:11 | — | | but I kept myself from eating, | |
+| 1:16 | — | | In the days of Enemessar, I did … | |
+| 1:19 | — | | But one of the Ninevites went and … | |
+| 1:22 | — | | Achiacharus requested me, and I came to … | |
 
 **Segment** WEBC 2:1-2:14 ↔ Douay-Rheims 2:1-2:23 — Chapter 2.
 
-| WEBC | Douay-Rheims                                   | Score | WEBC opens                                | Douay-Rheims opens                           |
-| ---- | ---------------------------------------------- | ----: | ----------------------------------------- | -------------------------------------------- |
-| 2:1  | 2:1                                            |  0.50 | Now when I had come home again, …         | But after this, when there was a …           |
-| 2:2  | 2:2, 2:3, 2:4                                  |  0.15 | I saw abundance of meat, and I …          | He said to his son: Go, and …                |
-| 2:5  | 2:5                                            |  0.33 | Then I returned, washed myself, ate my …  | And when he had hid the body, …              |
-| 2:6  | 2:6                                            |  0.63 | and remembered the prophecy of Amos, as … | Remembering the word which the Lord spoke …  |
-| 2:7  | 2:7                                            |  0.75 | So I wept: and when the sun …             | So when the sun was down, he …               |
-| 2:8  | 2:8, 2:9                                       |  0.36 | My neighbors mocked me, and said, “He …   | Now all his neighbours blamed him, saying: … |
-| 2:9  | 2:10                                           |  0.36 | The same night I returned from burying …  | Now it happened one day, that being …        |
-| 2:10 | 2:11, 2:12, 2:13, 2:14, 2:15, 2:16, 2:17, 2:18 |  0.15 | I didn’t know that there were sparrows …  | And as he was sleeping, hot dung …           |
-| 2:11 | 2:19, 2:20                                     |  0.33 | My wife Anna wove cloth in the …          | Now Anna his wife went daily to …            |
-| 2:13 | 2:21                                           |  0.29 | But when it came to my house, …           | And when her husband heard it bleating, …    |
-| 2:14 | 2:22, 2:23                                     |  0.13 | But she said, “It has been given …        | At these words his wife being angry …        |
-| 2:3  | —                                              |       | Then he came, and said, “Father, one …    |                                              |
-| 2:4  | —                                              |       | Before I had tasted anything, I sprang …  |                                              |
-| 2:12 | —                                              |       | and sent the work back to the …           |                                              |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 2:1 | 2:1 | 0.50 | Now when I had come home again, … | But after this, when there was a … |
+| 2:2 | 2:2, 2:3, 2:4 | 0.15 | I saw abundance of meat, and I … | He said to his son: Go, and … |
+| 2:5 | 2:5 | 0.33 | Then I returned, washed myself, ate my … | And when he had hid the body, … |
+| 2:6 | 2:6 | 0.63 | and remembered the prophecy of Amos, as … | Remembering the word which the Lord spoke … |
+| 2:7 | 2:7 | 0.75 | So I wept: and when the sun … | So when the sun was down, he … |
+| 2:8 | 2:8, 2:9 | 0.36 | My neighbors mocked me, and said, “He … | Now all his neighbours blamed him, saying: … |
+| 2:9 | 2:10 | 0.36 | The same night I returned from burying … | Now it happened one day, that being … |
+| 2:10 | 2:11, 2:12, 2:13, 2:14, 2:15, 2:16, 2:17, 2:18 | 0.15 | I didn’t know that there were sparrows … | And as he was sleeping, hot dung … |
+| 2:11 | 2:19, 2:20 | 0.33 | My wife Anna wove cloth in the … | Now Anna his wife went daily to … |
+| 2:13 | 2:21 | 0.29 | But when it came to my house, … | And when her husband heard it bleating, … |
+| 2:14 | 2:22, 2:23 | 0.13 | But she said, “It has been given … | At these words his wife being angry … |
+| 2:3 | — | | Then he came, and said, “Father, one … | |
+| 2:4 | — | | Before I had tasted anything, I sprang … | |
+| 2:12 | — | | and sent the work back to the … | |
 
 **Segment** WEBC 3:1-3:17 ↔ Douay-Rheims 3:1-3:25 — Chapter 3.
 
-| WEBC | Douay-Rheims           | Score | WEBC opens                                       | Douay-Rheims opens                             |
-| ---- | ---------------------- | ----: | ------------------------------------------------ | ---------------------------------------------- |
-| 3:1  | 3:1                    |  0.20 | I was grieved and wept, and prayed …             | Then Tobias sighed, and began to pray …        |
-| 3:2  | 3:2                    |  0.57 | “O Lord, you are righteous, and all …            | Saying: Thou art just, O Lord, and …           |
-| 3:3  | 3:3                    |  0.33 | Remember me, and look at me. Don’t …             | And now, O Lord, think of me, …                |
-| 3:4  | 3:4                    |  0.45 | For they disobeyed your commandments. You gave … | For we have not obeyed thy commandments, …     |
-| 3:5  | 3:5                    |  0.50 | Now your judgments are many and true, …          | And now, O Lord, great are thy …               |
-| 3:6  | 3:6                    |  0.67 | Now deal with me according to that …             | And now, O Lord, do with me …                  |
-| 3:7  | 3:7                    |  0.64 | The same day it happened to Sarah …              | Now it happened on the same day, …             |
-| 3:8  | 3:8                    |  0.50 | because that she had been given to …             | Because she had been given to seven …          |
-| 3:9  | 3:9, 3:10              |  0.44 | Why do you scourge us? If they …                 | So when she reproved the maid for …            |
-| 3:10 | 3:11, 3:12             |  0.08 | When she heard these things, she was …           | But continuing in prayer with tears besought … |
-| 3:11 | 3:13                   |  0.22 | Then she prayed by the window, and …             | She said: Blessed is thy name, O …             |
-| 3:12 | 3:14                   |  0.50 | And now, Lord, I have set my …                   | To thee, O Lord, I turn my …                   |
-| 3:13 | 3:15, 3:16, 3:17, 3:18 |  0.33 | Command that I be released from the …            | I beg, O Lord, that thou loose …               |
-| 3:14 | 3:19, 3:20, 3:21, 3:22 |  0.25 | You know, Lord, that I am pure …                 | And either I was unworthy of them, …           |
-| 3:15 | 3:23                   |  0.25 | and that I never polluted my name …              | Be thy name, O God of Israel, …                |
-| 3:16 | 3:24                   |  0.80 | The prayer of both was heard before …            | At that time the prayers of them …             |
-| 3:17 | 3:25                   |  0.45 | Raphael also was sent to heal them …             | And the holy angel of the Lord, …              |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 3:1 | 3:1 | 0.20 | I was grieved and wept, and prayed … | Then Tobias sighed, and began to pray … |
+| 3:2 | 3:2 | 0.57 | “O Lord, you are righteous, and all … | Saying: Thou art just, O Lord, and … |
+| 3:3 | 3:3 | 0.33 | Remember me, and look at me. Don’t … | And now, O Lord, think of me, … |
+| 3:4 | 3:4 | 0.45 | For they disobeyed your commandments. You gave … | For we have not obeyed thy commandments, … |
+| 3:5 | 3:5 | 0.50 | Now your judgments are many and true, … | And now, O Lord, great are thy … |
+| 3:6 | 3:6 | 0.67 | Now deal with me according to that … | And now, O Lord, do with me … |
+| 3:7 | 3:7 | 0.64 | The same day it happened to Sarah … | Now it happened on the same day, … |
+| 3:8 | 3:8 | 0.50 | because that she had been given to … | Because she had been given to seven … |
+| 3:9 | 3:9, 3:10 | 0.44 | Why do you scourge us? If they … | So when she reproved the maid for … |
+| 3:10 | 3:11, 3:12 | 0.08 | When she heard these things, she was … | But continuing in prayer with tears besought … |
+| 3:11 | 3:13 | 0.22 | Then she prayed by the window, and … | She said: Blessed is thy name, O … |
+| 3:12 | 3:14 | 0.50 | And now, Lord, I have set my … | To thee, O Lord, I turn my … |
+| 3:13 | 3:15, 3:16, 3:17, 3:18 | 0.33 | Command that I be released from the … | I beg, O Lord, that thou loose … |
+| 3:14 | 3:19, 3:20, 3:21, 3:22 | 0.25 | You know, Lord, that I am pure … | And either I was unworthy of them, … |
+| 3:15 | 3:23 | 0.25 | and that I never polluted my name … | Be thy name, O God of Israel, … |
+| 3:16 | 3:24 | 0.80 | The prayer of both was heard before … | At that time the prayers of them … |
+| 3:17 | 3:25 | 0.45 | Raphael also was sent to heal them … | And the holy angel of the Lord, … |
 
 **Segment** WEBC 4:1-4:21 ↔ Douay-Rheims 4:1-4:23 — Chapter 4.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                             | Douay-Rheims opens                              |
-| ---- | ------------ | ----: | ------------------------------------------------------ | ----------------------------------------------- |
-| 4:2  | 4:1, 4:2     |  0.36 | and he said to himself, I have …                       | Therefore when Tobias thought that his prayer … |
-| 4:3  | 4:3, 4:4     |  0.33 | And he called him, and said, “My …                     | When God shall take my soul, thou …             |
-| 4:4  | 4:5          |  0.25 | Remember, my child, that she has seen …                | And when she also shall have ended …            |
-| 4:5  | 4:6          |  0.50 | My child, be mindful of the Lord …                     | And all the days of thy life …                  |
-| 4:7  | 4:7          |  0.60 | Give alms from your possessions. When you …            | Give alms out of thy substance, and …           |
-| 4:8  | 4:8, 4:9     |  0.38 | As your possessions are, give alms of …                | According to thy ability be merciful.           |
-| 4:9  | 4:10         |  0.43 | for you lay up a good treasure …                       | For thus thou storest up to thyself …           |
-| 4:10 | 4:11         |  0.57 | because alms-giving delivers from death, and doesn’t … | For alms deliver from all sin, and …            |
-| 4:11 | 4:12         |  0.67 | Alms is a good gift in the …                           | Alms shall be a great confidence before …       |
-| 4:12 | 4:13, 4:14   |  0.20 | Beware, my child, of all fornication, and …            | Take heed to keep thyself, my son, …            |
-| 4:14 | 4:15         |  0.30 | Don’t let the wages of any man …                       | If any man hath done any work …                 |
-| 4:15 | 4:16         |  0.17 | And what you yourself hate, do to …                    | See thou never do to another what …             |
-| 4:16 | 4:17         |  0.57 | Give of your bread to the hungry, …                    | Eat thy bread with the hungry and …             |
-| 4:17 | 4:18         |  0.43 | Pour out your bread on the burial …                    | Lay out thy bread, and thy wine …               |
-| 4:18 | 4:19         |  0.60 | Ask counsel of every man who is …                      | Seek counsel always of a wise man.              |
-| 4:19 | 4:20         |  0.57 | Bless the Lord your God at all …                       | Bless God at all times: and desire …            |
-| 4:20 | 4:21, 4:22   |  0.46 | And now I explain to you about …                       | I tell thee also, my son, that …                |
-| 4:21 | 4:23         |  0.40 | And fear not, my child, because we …                   | Fear not, my son: we lead indeed …              |
-| 4:1  | —            |       | In that day Tobit remembered the money …               |                                                 |
-| 4:6  | —            |       | For if you do what is true, …                          |                                                 |
-| 4:13 | —            |       | And now, my child, love your kindred, …                |                                                 |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 4:2 | 4:1, 4:2 | 0.36 | and he said to himself, I have … | Therefore when Tobias thought that his prayer … |
+| 4:3 | 4:3, 4:4 | 0.33 | And he called him, and said, “My … | When God shall take my soul, thou … |
+| 4:4 | 4:5 | 0.25 | Remember, my child, that she has seen … | And when she also shall have ended … |
+| 4:5 | 4:6 | 0.50 | My child, be mindful of the Lord … | And all the days of thy life … |
+| 4:7 | 4:7 | 0.60 | Give alms from your possessions. When you … | Give alms out of thy substance, and … |
+| 4:8 | 4:8, 4:9 | 0.38 | As your possessions are, give alms of … | According to thy ability be merciful. |
+| 4:9 | 4:10 | 0.43 | for you lay up a good treasure … | For thus thou storest up to thyself … |
+| 4:10 | 4:11 | 0.57 | because alms-giving delivers from death, and doesn’t … | For alms deliver from all sin, and … |
+| 4:11 | 4:12 | 0.67 | Alms is a good gift in the … | Alms shall be a great confidence before … |
+| 4:12 | 4:13, 4:14 | 0.20 | Beware, my child, of all fornication, and … | Take heed to keep thyself, my son, … |
+| 4:14 | 4:15 | 0.30 | Don’t let the wages of any man … | If any man hath done any work … |
+| 4:15 | 4:16 | 0.17 | And what you yourself hate, do to … | See thou never do to another what … |
+| 4:16 | 4:17 | 0.57 | Give of your bread to the hungry, … | Eat thy bread with the hungry and … |
+| 4:17 | 4:18 | 0.43 | Pour out your bread on the burial … | Lay out thy bread, and thy wine … |
+| 4:18 | 4:19 | 0.60 | Ask counsel of every man who is … | Seek counsel always of a wise man. |
+| 4:19 | 4:20 | 0.57 | Bless the Lord your God at all … | Bless God at all times: and desire … |
+| 4:20 | 4:21, 4:22 | 0.46 | And now I explain to you about … | I tell thee also, my son, that … |
+| 4:21 | 4:23 | 0.40 | And fear not, my child, because we … | Fear not, my son: we lead indeed … |
+| 4:1 | — | | In that day Tobit remembered the money … | |
+| 4:6 | — | | For if you do what is true, … | |
+| 4:13 | — | | And now, my child, love your kindred, … | |
 
 **Segment** WEBC 5:1-5:22 ↔ Douay-Rheims 5:1-5:28 — Chapter 5.
 
-| WEBC | Douay-Rheims                 | Score | WEBC opens                               | Douay-Rheims opens                           |
-| ---- | ---------------------------- | ----: | ---------------------------------------- | -------------------------------------------- |
-| 5:1  | 5:1                          |  0.83 | Then Tobias answered and said to him, …  | Then Tobias answered his father, and said: … |
-| 5:2  | 5:2, 5:3                     |  0.50 | But how could I receive the money, …     | But how I shall get this money, …            |
-| 5:3  | 5:4, 5:5                     |  0.45 | He gave him the handwriting, and said …  | But go now, and seek thee out …              |
-| 5:4  | 5:6, 5:7                     |  0.33 | He went to seek a man, and …             | And not knowing that he was an …             |
-| 5:5  | 5:8                          |  0.33 | and he didn’t know it. He said …         | And he answered: I know it: and …            |
-| 5:7  | 5:9, 5:10                    |  0.75 | Tobias said to him, “Wait for me, …      | And Tobias said to him: Stay for …           |
-| 5:9  | 5:11, 5:12, 5:13, 5:14, 5:15 |  0.25 | So he called him, and he came …          | So going in he saluted him, and …            |
-| 5:10 | 5:16                         |  0.60 | And Tobit said to him, “Brother, of …    | And Tobias said to him: I pray …             |
-| 5:11 | 5:17                         |  0.36 | He said to him, “Do you seek …           | And Raphael the angel answered: Dost thou …  |
-| 5:12 | 5:18                         |  0.80 | And he said, “I am Azarias, the …        | But lest I should make thee uneasy, …        |
-| 5:13 | 5:19                         |  0.44 | And he said to him, “Welcome, brother. … | And Tobias answered: Thou art of a …         |
-| 5:15 | 5:20                         |  0.17 | And moreover, if you both return safe …  | And the angel said to him: I …               |
-| 5:16 | 5:21, 5:22                   |  0.28 | And so they agreed. And he said …        | And Tobias answering, said: May you have …   |
-| 5:17 | 5:23                         |  0.33 | But Anna his mother wept, and said …     | And when they were departed, his mother …    |
-| 5:18 | 5:24, 5:25                   |  0.14 | Don’t be greedy to add money to …        | I wish the money for which thou …            |
-| 5:20 | 5:26                         |  0.44 | Tobit said to her, “Don’t worry, my …    | And Tobias said to her: Weep not, …          |
-| 5:21 | 5:27                         |  0.43 | For a good angel will go with …          | For I believe that the good angel …          |
-| 5:22 | 5:28                         |  0.50 | So she stopped weeping.                  | At these words his mother ceased weeping, …  |
-| 5:6  | —                            |       | The angel said to him, “I will …         |                                              |
-| 5:8  | —                            |       | He said to him, “Go, and don’t …         |                                              |
-| 5:14 | —                            |       | But tell me, what wages shall I …        |                                              |
-| 5:19 | —                            |       | For what the Lord has given us …         |                                              |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 5:1 | 5:1 | 0.83 | Then Tobias answered and said to him, … | Then Tobias answered his father, and said: … |
+| 5:2 | 5:2, 5:3 | 0.50 | But how could I receive the money, … | But how I shall get this money, … |
+| 5:3 | 5:4, 5:5 | 0.45 | He gave him the handwriting, and said … | But go now, and seek thee out … |
+| 5:4 | 5:6, 5:7 | 0.33 | He went to seek a man, and … | And not knowing that he was an … |
+| 5:5 | 5:8 | 0.33 | and he didn’t know it. He said … | And he answered: I know it: and … |
+| 5:7 | 5:9, 5:10 | 0.75 | Tobias said to him, “Wait for me, … | And Tobias said to him: Stay for … |
+| 5:9 | 5:11, 5:12, 5:13, 5:14, 5:15 | 0.25 | So he called him, and he came … | So going in he saluted him, and … |
+| 5:10 | 5:16 | 0.60 | And Tobit said to him, “Brother, of … | And Tobias said to him: I pray … |
+| 5:11 | 5:17 | 0.36 | He said to him, “Do you seek … | And Raphael the angel answered: Dost thou … |
+| 5:12 | 5:18 | 0.80 | And he said, “I am Azarias, the … | But lest I should make thee uneasy, … |
+| 5:13 | 5:19 | 0.44 | And he said to him, “Welcome, brother. … | And Tobias answered: Thou art of a … |
+| 5:15 | 5:20 | 0.17 | And moreover, if you both return safe … | And the angel said to him: I … |
+| 5:16 | 5:21, 5:22 | 0.28 | And so they agreed. And he said … | And Tobias answering, said: May you have … |
+| 5:17 | 5:23 | 0.33 | But Anna his mother wept, and said … | And when they were departed, his mother … |
+| 5:18 | 5:24, 5:25 | 0.14 | Don’t be greedy to add money to … | I wish the money for which thou … |
+| 5:20 | 5:26 | 0.44 | Tobit said to her, “Don’t worry, my … | And Tobias said to her: Weep not, … |
+| 5:21 | 5:27 | 0.43 | For a good angel will go with … | For I believe that the good angel … |
+| 5:22 | 5:28 | 0.50 | So she stopped weeping. | At these words his mother ceased weeping, … |
+| 5:6 | — | | The angel said to him, “I will … | |
+| 5:8 | — | | He said to him, “Go, and don’t … | |
+| 5:14 | — | | But tell me, what wages shall I … | |
+| 5:19 | — | | For what the Lord has given us … | |
 
 **Segment** WEBC 6:1-6:17 ↔ Douay-Rheims 6:1-6:22 — Chapter 6.
 
-| WEBC | Douay-Rheims           | Score | WEBC opens                                  | Douay-Rheims opens                       |
-| ---- | ---------------------- | ----: | ------------------------------------------- | ---------------------------------------- |
-| 6:1  | 6:1                    |  0.50 | Now as they went on their journey, …        | And Tobias went forward, and the dog …   |
-| 6:2  | 6:2, 6:3               |  0.30 | But the young man went down to …            | And he went out to wash his …            |
-| 6:3  | 6:4                    |  0.22 | But the angel said to him, “Grab …          | And the angel said to him: Take …        |
-| 6:4  | 6:5                    |  0.56 | And the angel said to him, “Cut …           | Then the angel said to him: Take …       |
-| 6:5  | 6:6                    |  0.21 | And the young man did as the …              | And when he had done so, he …            |
-| 6:6  | 6:7                    |  0.40 | The young man said to the angel, …          | Then Tobias asked the angel, and said …  |
-| 6:7  | 6:8                    |  0.25 | He said to him, “About the heart …          | And the angel, answering, said to him: … |
-| 6:8  | 6:9, 6:10              |  0.50 | But as for the bile, it is …                | And the gall is good for anointing …     |
-| 6:9  | 6:11                   |  0.33 | But when they drew near to Rages,           | And the angel answering, said: Here is … |
-| 6:10 | 6:12                   |  0.20 | the angel said to the young man, …          | All his substance is due to thee, …      |
-| 6:12 | 6:13                   |  0.20 | The maid is fair and wise. And …            | Ask her therefore of her father, and …   |
-| 6:13 | 6:14                   |  0.33 | Then the young man said to the …            | Then Tobias answered, and said: I hear … |
-| 6:14 | 6:15                   |  0.38 | Now I am the only son of …                  | Now I am afraid, lest the same …         |
-| 6:15 | 6:16, 6:17, 6:18       |  0.17 | But the angel said to him, “Don’t …         | Then the angel Raphael said to him: …    |
-| 6:16 | 6:19, 6:20, 6:21, 6:22 |  0.31 | And when you come into the bride-chamber, … | And on that night lay the liver …        |
-| 6:11 | —                      |       | For her inheritance belongs to you, and …   |                                          |
-| 6:17 | —                      |       | The demon will smell it, and flee …         |                                          |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 6:1 | 6:1 | 0.50 | Now as they went on their journey, … | And Tobias went forward, and the dog … |
+| 6:2 | 6:2, 6:3 | 0.30 | But the young man went down to … | And he went out to wash his … |
+| 6:3 | 6:4 | 0.22 | But the angel said to him, “Grab … | And the angel said to him: Take … |
+| 6:4 | 6:5 | 0.56 | And the angel said to him, “Cut … | Then the angel said to him: Take … |
+| 6:5 | 6:6 | 0.21 | And the young man did as the … | And when he had done so, he … |
+| 6:6 | 6:7 | 0.40 | The young man said to the angel, … | Then Tobias asked the angel, and said … |
+| 6:7 | 6:8 | 0.25 | He said to him, “About the heart … | And the angel, answering, said to him: … |
+| 6:8 | 6:9, 6:10 | 0.50 | But as for the bile, it is … | And the gall is good for anointing … |
+| 6:9 | 6:11 | 0.33 | But when they drew near to Rages, | And the angel answering, said: Here is … |
+| 6:10 | 6:12 | 0.20 | the angel said to the young man, … | All his substance is due to thee, … |
+| 6:12 | 6:13 | 0.20 | The maid is fair and wise. And … | Ask her therefore of her father, and … |
+| 6:13 | 6:14 | 0.33 | Then the young man said to the … | Then Tobias answered, and said: I hear … |
+| 6:14 | 6:15 | 0.38 | Now I am the only son of … | Now I am afraid, lest the same … |
+| 6:15 | 6:16, 6:17, 6:18 | 0.17 | But the angel said to him, “Don’t … | Then the angel Raphael said to him: … |
+| 6:16 | 6:19, 6:20, 6:21, 6:22 | 0.31 | And when you come into the bride-chamber, … | And on that night lay the liver … |
+| 6:11 | — | | For her inheritance belongs to you, and … | |
+| 6:17 | — | | The demon will smell it, and flee … | |
 
 **Segment** WEBC 7:1-7:18 ↔ Douay-Rheims 7:1-7:20 — Chapter 7.
 
-| WEBC | Douay-Rheims                             | Score | WEBC opens                                | Douay-Rheims opens                        |
-| ---- | ---------------------------------------- | ----: | ----------------------------------------- | ----------------------------------------- |
-| 7:1  | 7:1                                      |  0.25 | They came to Ecbatana, and arrived at …   | And they went in to Raguel, and …         |
-| 7:2  | 7:2, 7:3, 7:4                            |  0.56 | Raguel said to Edna his wife, “This …     | And Raguel looking upon Tobias, said to … |
-| 7:4  | 7:5                                      |  0.50 | He said to them, “Do you know …           | And Raguel said to them: Do you …         |
-| 7:5  | 7:6                                      |  0.50 | They said, “He is both alive, and …       | And when he was speaking many good …      |
-| 7:6  | 7:7                                      |  0.50 | And Raguel sprang up, and kissed him, …   | And Raguel went to him, and kissed …      |
-| 7:8  | 7:8, 7:9                                 |  0.25 | and Edna his wife and Sarah his …         | And Anna his wife, and Sara their …       |
-| 7:9  | 7:10                                     |  0.38 | So he communicated the thing to Raguel. … | Tobias said: I will not eat nor …         |
-| 7:15 | 7:11, 7:12, 7:13, 7:14, 7:15, 7:16, 7:17 |  0.50 | Then they began to eat.                   | Now when Raguel heard this he was …       |
-| 7:16 | 7:18                                     |  0.63 | And Raguel called his wife Edna, and …    | And Raguel called to him Anna his …       |
-| 7:17 | 7:19                                     |  0.60 | She did as he asked her, and …            | And she brought Sara her daughter in …    |
-| 7:18 | 7:20                                     |  0.38 | “Be comforted, my child. May the Lord …   | And she said to her: Be of …              |
-| 7:3  | —                                        |       | And Raguel asked them, “Where are you …   |                                           |
-| 7:7  | —                                        |       | blessed him, and said to him, “You …      |                                           |
-| 7:10 | —                                        |       | for it belongs to you to take …           |                                           |
-| 7:11 | —                                        |       | I have given my child to seven …          |                                           |
-| 7:12 | —                                        |       | Raguel said, “Take her to yourself from … |                                           |
-| 7:13 | —                                        |       | And he called his daughter Sarah, and …   |                                           |
-| 7:14 | —                                        |       | He called Edna his wife, then took …      |                                           |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 7:1 | 7:1 | 0.25 | They came to Ecbatana, and arrived at … | And they went in to Raguel, and … |
+| 7:2 | 7:2, 7:3, 7:4 | 0.56 | Raguel said to Edna his wife, “This … | And Raguel looking upon Tobias, said to … |
+| 7:4 | 7:5 | 0.50 | He said to them, “Do you know … | And Raguel said to them: Do you … |
+| 7:5 | 7:6 | 0.50 | They said, “He is both alive, and … | And when he was speaking many good … |
+| 7:6 | 7:7 | 0.50 | And Raguel sprang up, and kissed him, … | And Raguel went to him, and kissed … |
+| 7:8 | 7:8, 7:9 | 0.25 | and Edna his wife and Sarah his … | And Anna his wife, and Sara their … |
+| 7:9 | 7:10 | 0.38 | So he communicated the thing to Raguel. … | Tobias said: I will not eat nor … |
+| 7:15 | 7:11, 7:12, 7:13, 7:14, 7:15, 7:16, 7:17 | 0.50 | Then they began to eat. | Now when Raguel heard this he was … |
+| 7:16 | 7:18 | 0.63 | And Raguel called his wife Edna, and … | And Raguel called to him Anna his … |
+| 7:17 | 7:19 | 0.60 | She did as he asked her, and … | And she brought Sara her daughter in … |
+| 7:18 | 7:20 | 0.38 | “Be comforted, my child. May the Lord … | And she said to her: Be of … |
+| 7:3 | — | | And Raguel asked them, “Where are you … | |
+| 7:7 | — | | blessed him, and said to him, “You … | |
+| 7:10 | — | | for it belongs to you to take … | |
+| 7:11 | — | | I have given my child to seven … | |
+| 7:12 | — | | Raguel said, “Take her to yourself from … | |
+| 7:13 | — | | And he called his daughter Sarah, and … | |
+| 7:14 | — | | He called Edna his wife, then took … | |
 
 **Segment** WEBC 8:1-8:21 ↔ Douay-Rheims 8:1-8:24 — Chapter 8.
 
-| WEBC | Douay-Rheims  | Score | WEBC opens                                      | Douay-Rheims opens                                  |
-| ---- | ------------- | ----: | ----------------------------------------------- | --------------------------------------------------- |
-| 8:1  | 8:1           |  0.25 | When they had finished their supper, they …     | And after they had supped, they brought …           |
-| 8:2  | 8:2           |  0.36 | But as he went, he remembered the …             | And Tobias remembering the angel’s word, took …     |
-| 8:3  | 8:3, 8:4, 8:5 |  0.38 | When the demon smelled that smell, it …         | Then the angel Raphael took the devil, …            |
-| 8:4  | 8:6           |  0.43 | But after they were both shut in …              | So they both arose, and prayed earnestly …          |
-| 8:5  | 8:7           |  0.56 | And Tobias began to say, “Blessed are …         | And Tobias said: Lord God of our …                  |
-| 8:6  | 8:8           |  0.43 | You made Adam, and gave him Eve …               | Thou madest Adam of the slime of …                  |
-| 8:7  | 8:9           |  0.40 | And now, O Lord, I take not …                   | And now, Lord, thou knowest, that not …             |
-| 8:8  | 8:10          |  0.25 | She said with him, “Amen.” And they …           | Sara also said: Have mercy on us, …                 |
-| 8:9  | 8:11          |  0.60 | Raguel arose, and went and dug a …              | And it came to pass about the …                     |
-| 8:10 | 8:12          |  0.33 | saying, “Lest he also should die.”              | For he said: Lest perhaps it may …                  |
-| 8:11 | 8:13          |  0.33 | And Raguel came into his house,                 | And when they had prepared the pit, …               |
-| 8:12 | 8:14          |  0.50 | and said to Edna his wife, “Send …              | Send one of thy maids, and let …                    |
-| 8:13 | 8:15          |  0.71 | So the maidservant opened the door, and …       | So she sent one of her maidservants, …              |
-| 8:15 | 8:16          |  0.25 | Then Raguel blessed God, saying, “Blessed are … | And returning she brought the good news: …          |
-| 8:16 | 8:17, 8:18    |  0.33 | Blessed are you, because you have made …        | And said: We bless thee, O Lord …                   |
-| 8:17 | 8:19          |  0.33 | Blessed are you, because you have had …         | And thou hast taken pity upon two …                 |
-| 8:18 | 8:20          |  0.75 | He commanded his servants to fill the …         | And immediately Raguel commanded his servants, to … |
-| 8:19 | 8:21, 8:22    |  0.20 | He kept the wedding feast for them …            | And he spoke to his wife to …                       |
-| 8:20 | 8:23, 8:24    |  0.10 | Before the days of the wedding feast …          | And Raguel adjured Tobias, to abide with …          |
-| 8:14 | —             |       | and came out, and told them that …              |                                                     |
-| 8:21 | —             |       | and that then he should take half …             |                                                     |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 8:1 | 8:1 | 0.25 | When they had finished their supper, they … | And after they had supped, they brought … |
+| 8:2 | 8:2 | 0.36 | But as he went, he remembered the … | And Tobias remembering the angel’s word, took … |
+| 8:3 | 8:3, 8:4, 8:5 | 0.38 | When the demon smelled that smell, it … | Then the angel Raphael took the devil, … |
+| 8:4 | 8:6 | 0.43 | But after they were both shut in … | So they both arose, and prayed earnestly … |
+| 8:5 | 8:7 | 0.56 | And Tobias began to say, “Blessed are … | And Tobias said: Lord God of our … |
+| 8:6 | 8:8 | 0.43 | You made Adam, and gave him Eve … | Thou madest Adam of the slime of … |
+| 8:7 | 8:9 | 0.40 | And now, O Lord, I take not … | And now, Lord, thou knowest, that not … |
+| 8:8 | 8:10 | 0.25 | She said with him, “Amen.” And they … | Sara also said: Have mercy on us, … |
+| 8:9 | 8:11 | 0.60 | Raguel arose, and went and dug a … | And it came to pass about the … |
+| 8:10 | 8:12 | 0.33 | saying, “Lest he also should die.” | For he said: Lest perhaps it may … |
+| 8:11 | 8:13 | 0.33 | And Raguel came into his house, | And when they had prepared the pit, … |
+| 8:12 | 8:14 | 0.50 | and said to Edna his wife, “Send … | Send one of thy maids, and let … |
+| 8:13 | 8:15 | 0.71 | So the maidservant opened the door, and … | So she sent one of her maidservants, … |
+| 8:15 | 8:16 | 0.25 | Then Raguel blessed God, saying, “Blessed are … | And returning she brought the good news: … |
+| 8:16 | 8:17, 8:18 | 0.33 | Blessed are you, because you have made … | And said: We bless thee, O Lord … |
+| 8:17 | 8:19 | 0.33 | Blessed are you, because you have had … | And thou hast taken pity upon two … |
+| 8:18 | 8:20 | 0.75 | He commanded his servants to fill the … | And immediately Raguel commanded his servants, to … |
+| 8:19 | 8:21, 8:22 | 0.20 | He kept the wedding feast for them … | And he spoke to his wife to … |
+| 8:20 | 8:23, 8:24 | 0.10 | Before the days of the wedding feast … | And Raguel adjured Tobias, to abide with … |
+| 8:14 | — | | and came out, and told them that … | |
+| 8:21 | — | | and that then he should take half … | |
 
 **Segment** WEBC 9:1-9:6 ↔ Douay-Rheims 9:1-9:12 — Chapter 9.
 
-| WEBC | Douay-Rheims       | Score | WEBC opens                                  | Douay-Rheims opens                             |
-| ---- | ------------------ | ----: | ------------------------------------------- | ---------------------------------------------- |
-| 9:1  | 9:1, 9:2           |  0.67 | And Tobias called Raphael, and said to …    | Then Tobias called the angel to him, …         |
-| 9:2  | 9:3                |  0.43 | “Brother Azarias, take with you a servant … | However, I beseech thee, to take with …        |
-| 9:4  | 9:4, 9:5           |  0.29 | My father counts the days; and if …         | For thou knowest that my father numbereth …    |
-| 9:5  | 9:6, 9:7, 9:8, 9:9 |  0.27 | So Raphael went on his way, and …           | Then Raphael took four of Raguel’s servants, … |
-| 9:6  | 9:10, 9:11, 9:12   |  0.30 | Then they rose up early in the …            | And may a blessing come upon thy …             |
-| 9:3  | —                  |       | because Raguel has sworn that I must …      |                                                |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 9:1 | 9:1, 9:2 | 0.67 | And Tobias called Raphael, and said to … | Then Tobias called the angel to him, … |
+| 9:2 | 9:3 | 0.43 | “Brother Azarias, take with you a servant … | However, I beseech thee, to take with … |
+| 9:4 | 9:4, 9:5 | 0.29 | My father counts the days; and if … | For thou knowest that my father numbereth … |
+| 9:5 | 9:6, 9:7, 9:8, 9:9 | 0.27 | So Raphael went on his way, and … | Then Raphael took four of Raguel’s servants, … |
+| 9:6 | 9:10, 9:11, 9:12 | 0.30 | Then they rose up early in the … | And may a blessing come upon thy … |
+| 9:3 | — | | because Raguel has sworn that I must … | |
 
 **Segment** WEBC 10:1-10:12 ↔ Douay-Rheims 10:1-10:13 — Chapter 10.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                 | Douay-Rheims opens                             |
-| ----- | ------------ | ----: | ------------------------------------------ | ---------------------------------------------- |
-| 10:2  | 10:1, 10:2   |  0.50 | he said, “Is he perchance detained? Or …   | But as Tobias made longer stay upon …          |
-| 10:4  | 10:3         |  0.25 | But his wife said to him, “The …           | And he began to be exceeding sad, …            |
-| 10:5  | 10:4, 10:5   |  0.29 | “I care about nothing, my child, since …   | But his mother wept and was quite …            |
-| 10:7  | 10:6, 10:7   |  0.26 | And she said to him, “Hold your …          | And Tobias said to her: Hold thy …             |
-| 10:8  | 10:8         |  0.57 | But his father-in-law said to him, “Stay … | But Raguel said to his son in …                |
-| 10:9  | 10:9         |  0.50 | Tobias said, “No. Send me away to …        | And Tobias said to him: I know …               |
-| 10:10 | 10:10        |  0.40 | Raguel arose, and gave him Sarah his …     | And when Raguel had pressed Tobias with …      |
-| 10:11 | 10:11        |  0.38 | and he blessed them, and sent them …       | Saying: The holy angel of the Lord …           |
-| 10:12 | 10:12, 10:13 |  0.32 | And he said to his daughter, “Honor …      | And the parents taking their daughter kissed … |
-| 10:1  | —            |       | Tobit his father counted every day. When … |                                                |
-| 10:3  | —            |       | He was very grieved.                       |                                                |
-| 10:6  | —            |       | Tobit said to her, “Hold your peace. …     |                                                |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 10:2 | 10:1, 10:2 | 0.50 | he said, “Is he perchance detained? Or … | But as Tobias made longer stay upon … |
+| 10:4 | 10:3 | 0.25 | But his wife said to him, “The … | And he began to be exceeding sad, … |
+| 10:5 | 10:4, 10:5 | 0.29 | “I care about nothing, my child, since … | But his mother wept and was quite … |
+| 10:7 | 10:6, 10:7 | 0.26 | And she said to him, “Hold your … | And Tobias said to her: Hold thy … |
+| 10:8 | 10:8 | 0.57 | But his father-in-law said to him, “Stay … | But Raguel said to his son in … |
+| 10:9 | 10:9 | 0.50 | Tobias said, “No. Send me away to … | And Tobias said to him: I know … |
+| 10:10 | 10:10 | 0.40 | Raguel arose, and gave him Sarah his … | And when Raguel had pressed Tobias with … |
+| 10:11 | 10:11 | 0.38 | and he blessed them, and sent them … | Saying: The holy angel of the Lord … |
+| 10:12 | 10:12, 10:13 | 0.32 | And he said to his daughter, “Honor … | And the parents taking their daughter kissed … |
+| 10:1 | — | | Tobit his father counted every day. When … | |
+| 10:3 | — | | He was very grieved. | |
+| 10:6 | — | | Tobit said to her, “Hold your peace. … | |
 
 **Segment** WEBC 11:1-11:19 ↔ Douay-Rheims 11:1-11:21 — Chapter 11.
 
-| WEBC  | Douay-Rheims        | Score | WEBC opens                                     | Douay-Rheims opens                          |
-| ----- | ------------------- | ----: | ---------------------------------------------- | ------------------------------------------- |
-| 11:2  | 11:1, 11:2          |  0.63 | Raphael said to Tobias, “Don’t you know, …     | And as they were returning they came …      |
-| 11:3  | 11:3                |  0.17 | Let’s run forward before your wife, and …      | If it please thee therefore, let us …       |
-| 11:4  | 11:4                |  0.29 | But take in your hand the bile …               | And as this their going pleased him, …      |
-| 11:5  | 11:5                |  0.29 | Anna sat looking around toward the path …      | But Anna sat beside the way daily, …        |
-| 11:6  | 11:6                |  0.57 | She saw him coming, and said to …              | And while she watched his coming from …     |
-| 11:7  | 11:7                |  0.50 | Raphael said, “I know, Tobias, that your …     | And Raphael said to Tobias: As soon …       |
-| 11:8  | 11:8, 11:9          |  0.23 | Therefore anoint his eyes with the bile, …     | And immediately anoint his eyes with this … |
-| 11:10 | 11:10, 11:11, 11:12 |  0.43 | Tobit went toward the door and stumbled; …     | And his father that was blind, rising …     |
-| 11:11 | 11:13               |  0.29 | and took hold of his father. He …              | Then Tobias taking of the gall of …         |
-| 11:12 | 11:14, 11:15, 11:16 |  0.50 | When his eyes began to hurt, he …              | And he stayed about half an hour: …         |
-| 11:15 | 11:17, 11:18, 11:19 |  0.36 | For you scourged, and had mercy on …           | And Tobias said: I bless thee, O …          |
-| 11:18 | 11:20               |  0.20 | Achiacharus and Nasbas his brother’s son came. | And Achior and Nabath the kinsmen of …      |
-| 11:19 | 11:21               |  0.67 | Tobias’ wedding feast was kept seven days …    | And for seven days they feasted and …       |
-| 11:1  | —                   |       | After these things Tobias also went his …      |                                             |
-| 11:9  | —                   |       | Anna ran to him, and fell upon …               |                                             |
-| 11:13 | —                   |       | Then the white films peeled away from …        |                                             |
-| 11:14 | —                   |       | He wept, and said, “Blessed are you, …         |                                             |
-| 11:16 | —                   |       | Tobit went out to meet his daughter-in-law …   |                                             |
-| 11:17 | —                   |       | Tobit gave thanks before them, because God …   |                                             |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 11:2 | 11:1, 11:2 | 0.63 | Raphael said to Tobias, “Don’t you know, … | And as they were returning they came … |
+| 11:3 | 11:3 | 0.17 | Let’s run forward before your wife, and … | If it please thee therefore, let us … |
+| 11:4 | 11:4 | 0.29 | But take in your hand the bile … | And as this their going pleased him, … |
+| 11:5 | 11:5 | 0.29 | Anna sat looking around toward the path … | But Anna sat beside the way daily, … |
+| 11:6 | 11:6 | 0.57 | She saw him coming, and said to … | And while she watched his coming from … |
+| 11:7 | 11:7 | 0.50 | Raphael said, “I know, Tobias, that your … | And Raphael said to Tobias: As soon … |
+| 11:8 | 11:8, 11:9 | 0.23 | Therefore anoint his eyes with the bile, … | And immediately anoint his eyes with this … |
+| 11:10 | 11:10, 11:11, 11:12 | 0.43 | Tobit went toward the door and stumbled; … | And his father that was blind, rising … |
+| 11:11 | 11:13 | 0.29 | and took hold of his father. He … | Then Tobias taking of the gall of … |
+| 11:12 | 11:14, 11:15, 11:16 | 0.50 | When his eyes began to hurt, he … | And he stayed about half an hour: … |
+| 11:15 | 11:17, 11:18, 11:19 | 0.36 | For you scourged, and had mercy on … | And Tobias said: I bless thee, O … |
+| 11:18 | 11:20 | 0.20 | Achiacharus and Nasbas his brother’s son came. | And Achior and Nabath the kinsmen of … |
+| 11:19 | 11:21 | 0.67 | Tobias’ wedding feast was kept seven days … | And for seven days they feasted and … |
+| 11:1 | — | | After these things Tobias also went his … | |
+| 11:9 | — | | Anna ran to him, and fell upon … | |
+| 11:13 | — | | Then the white films peeled away from … | |
+| 11:14 | — | | He wept, and said, “Blessed are you, … | |
+| 11:16 | — | | Tobit went out to meet his daughter-in-law … | |
+| 11:17 | — | | Tobit gave thanks before them, because God … | |
 
 **Segment** WEBC 12:1-12:22 ↔ Douay-Rheims 12:1-12:22 — Chapter 12.
 
-| WEBC  | Douay-Rheims     | Score | WEBC opens                                     | Douay-Rheims opens                          |
-| ----- | ---------------- | ----: | ---------------------------------------------- | ------------------------------------------- |
-| 12:1  | 12:1, 12:2, 12:3 |  0.64 | And Tobit called his son Tobias, and …         | Then Tobias called to him his son, …        |
-| 12:2  | 12:4             |  0.67 | And he said to him, “Father, it …              | But I beseech thee, my father, to …         |
-| 12:5  | 12:5             |  0.60 | And he called the angel, and said …            | So the father and the son, calling …        |
-| 12:6  | 12:6             |  0.44 | Then he called them both privately, and …      | Then he said to them secretly: Bless …      |
-| 12:7  | 12:7             |  0.63 | It is good to conceal the secret …             | For it is good to hide the …                |
-| 12:8  | 12:8             |  0.86 | Good is prayer with fasting, alms, and …       | Prayer is good with fasting and alms …      |
-| 12:9  | 12:9             |  0.60 | Alms delivers from death, and it purges …      | For alms delivereth from death, and the …   |
-| 12:10 | 12:10            |  0.75 | but those who sin are enemies to …             | But they that commit sin and iniquity, …    |
-| 12:11 | 12:11            |  0.25 | Surely I will conceal nothing from you. …      | I discover then the truth unto you, …       |
-| 12:13 | 12:12, 12:13     |  0.30 | And when you didn’t delay to rise …            | When thou didst pray with tears, and …      |
-| 12:14 | 12:14            |  0.50 | And now God sent me to heal …                  | And now the Lord hath sent me …             |
-| 12:15 | 12:15            |  0.75 | I am Raphael, one of the seven …               | For I am the angel Raphael, one …           |
-| 12:16 | 12:16            |  0.60 | And they were both troubled, and fell …        | And when they had heard these things, …     |
-| 12:17 | 12:17            |  0.33 | And he said to them, “Don’t be …               | And the angel said to them: Peace …         |
-| 12:18 | 12:18            |  0.33 | For I came not of any favor …                  | For when I was with you, I …                |
-| 12:19 | 12:19, 12:20     |  0.29 | All these days I appeared to you. …            | I seemed indeed to eat and to …             |
-| 12:20 | 12:21            |  0.25 | Now give God thanks, because I ascend …        | And when he had said these things, …        |
-| 12:22 | 12:22            |  0.29 | They confessed the great and wonderful works … | Then they lying prostrate for three hours … |
-| 12:3  | —                |       | for he has led me for you …                    |                                             |
-| 12:4  | —                |       | The old man said, “It is due …                 |                                             |
-| 12:12 | —                |       | And now, when you prayed, and Sarah …          |                                             |
-| 12:21 | —                |       | Then they rose up, and saw him …               |                                             |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 12:1 | 12:1, 12:2, 12:3 | 0.64 | And Tobit called his son Tobias, and … | Then Tobias called to him his son, … |
+| 12:2 | 12:4 | 0.67 | And he said to him, “Father, it … | But I beseech thee, my father, to … |
+| 12:5 | 12:5 | 0.60 | And he called the angel, and said … | So the father and the son, calling … |
+| 12:6 | 12:6 | 0.44 | Then he called them both privately, and … | Then he said to them secretly: Bless … |
+| 12:7 | 12:7 | 0.63 | It is good to conceal the secret … | For it is good to hide the … |
+| 12:8 | 12:8 | 0.86 | Good is prayer with fasting, alms, and … | Prayer is good with fasting and alms … |
+| 12:9 | 12:9 | 0.60 | Alms delivers from death, and it purges … | For alms delivereth from death, and the … |
+| 12:10 | 12:10 | 0.75 | but those who sin are enemies to … | But they that commit sin and iniquity, … |
+| 12:11 | 12:11 | 0.25 | Surely I will conceal nothing from you. … | I discover then the truth unto you, … |
+| 12:13 | 12:12, 12:13 | 0.30 | And when you didn’t delay to rise … | When thou didst pray with tears, and … |
+| 12:14 | 12:14 | 0.50 | And now God sent me to heal … | And now the Lord hath sent me … |
+| 12:15 | 12:15 | 0.75 | I am Raphael, one of the seven … | For I am the angel Raphael, one … |
+| 12:16 | 12:16 | 0.60 | And they were both troubled, and fell … | And when they had heard these things, … |
+| 12:17 | 12:17 | 0.33 | And he said to them, “Don’t be … | And the angel said to them: Peace … |
+| 12:18 | 12:18 | 0.33 | For I came not of any favor … | For when I was with you, I … |
+| 12:19 | 12:19, 12:20 | 0.29 | All these days I appeared to you. … | I seemed indeed to eat and to … |
+| 12:20 | 12:21 | 0.25 | Now give God thanks, because I ascend … | And when he had said these things, … |
+| 12:22 | 12:22 | 0.29 | They confessed the great and wonderful works … | Then they lying prostrate for three hours … |
+| 12:3 | — | | for he has led me for you … | |
+| 12:4 | — | | The old man said, “It is due … | |
+| 12:12 | — | | And now, when you prayed, and Sarah … | |
+| 12:21 | — | | Then they rose up, and saw him … | |
 
 **Segment** WEBC 13:1-13:18 ↔ Douay-Rheims 13:1-13:23 — Chapter 13.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                       | Douay-Rheims opens                              |
-| ----- | ------------ | ----: | ------------------------------------------------ | ----------------------------------------------- |
-| 13:1  | 13:1         |  0.25 | And Tobit wrote a prayer for rejoicing, …        | And Tobias the elder opening his mouth, …       |
-| 13:2  | 13:2         |  0.70 | For he scourges, and shows mercy. He …           | For thou scourgest, and thou savest: thou …     |
-| 13:3  | 13:3         |  0.57 | Give thanks to him before the Gentiles, …        | Give glory to the Lord, ye children …           |
-| 13:4  | 13:4         |  0.17 | Declare his greatness, there. Extol him before … | Because he hath therefore scattered you among … |
-| 13:5  | 13:5, 13:6   |  0.22 | He will scourge us for our iniquities, …         | He hath chastised us for our iniquities: …      |
-| 13:6  | 13:7, 13:8   |  0.40 | If you turn to him with your …                   | As for me, I will praise him …                  |
-| 13:7  | 13:9         |  0.50 | I exalt my God. My soul exalts …                 | And I and my soul will rejoice …                |
-| 13:8  | 13:10        |  0.20 | Let all men speak, and let them …                | Bless ye the Lord, all his elect, …             |
-| 13:9  | 13:11        |  0.60 | O Jerusalem, the holy city, he will …            | Jerusalem, city of God, the Lord hath …         |
-| 13:10 | 13:12, 13:13 |  0.25 | Give thanks to the Lord with goodness, …         | Give glory to the Lord for thy …                |
-| 13:11 | 13:14, 13:15 |  0.42 | Many nations will come from afar to …            | Nations from afar shall come to thee: …         |
-| 13:12 | 13:16        |  0.40 | All those who hate you are cursed. …             | They shall be cursed that shall despise …       |
-| 13:13 | 13:17        |  0.50 | Rejoice and be exceedingly glad for the …        | But thou shalt rejoice in thy children, …       |
-| 13:14 | 13:18        |  1.00 | Oh blessed are those who love you. …             | Blessed are all they that love thee, …          |
-| 13:15 | 13:19, 13:20 |  0.50 | Let my soul bless God the great …                | My soul, bless thou the Lord, because …         |
-| 13:16 | 13:21        |  0.55 | For Jerusalem will be built with sapphires, …    | The gates of Jerusalem shall be built …         |
-| 13:17 | 13:22        |  0.43 | The streets of Jerusalem will be paved …         | All its streets shall be paved with …           |
-| 13:18 | 13:23        |  0.33 | All her streets will say, “Hallelujah!” and …    | Blessed be the Lord, who hath exalted …         |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 13:1 | 13:1 | 0.25 | And Tobit wrote a prayer for rejoicing, … | And Tobias the elder opening his mouth, … |
+| 13:2 | 13:2 | 0.70 | For he scourges, and shows mercy. He … | For thou scourgest, and thou savest: thou … |
+| 13:3 | 13:3 | 0.57 | Give thanks to him before the Gentiles, … | Give glory to the Lord, ye children … |
+| 13:4 | 13:4 | 0.17 | Declare his greatness, there. Extol him before … | Because he hath therefore scattered you among … |
+| 13:5 | 13:5, 13:6 | 0.22 | He will scourge us for our iniquities, … | He hath chastised us for our iniquities: … |
+| 13:6 | 13:7, 13:8 | 0.40 | If you turn to him with your … | As for me, I will praise him … |
+| 13:7 | 13:9 | 0.50 | I exalt my God. My soul exalts … | And I and my soul will rejoice … |
+| 13:8 | 13:10 | 0.20 | Let all men speak, and let them … | Bless ye the Lord, all his elect, … |
+| 13:9 | 13:11 | 0.60 | O Jerusalem, the holy city, he will … | Jerusalem, city of God, the Lord hath … |
+| 13:10 | 13:12, 13:13 | 0.25 | Give thanks to the Lord with goodness, … | Give glory to the Lord for thy … |
+| 13:11 | 13:14, 13:15 | 0.42 | Many nations will come from afar to … | Nations from afar shall come to thee: … |
+| 13:12 | 13:16 | 0.40 | All those who hate you are cursed. … | They shall be cursed that shall despise … |
+| 13:13 | 13:17 | 0.50 | Rejoice and be exceedingly glad for the … | But thou shalt rejoice in thy children, … |
+| 13:14 | 13:18 | 1.00 | Oh blessed are those who love you. … | Blessed are all they that love thee, … |
+| 13:15 | 13:19, 13:20 | 0.50 | Let my soul bless God the great … | My soul, bless thou the Lord, because … |
+| 13:16 | 13:21 | 0.55 | For Jerusalem will be built with sapphires, … | The gates of Jerusalem shall be built … |
+| 13:17 | 13:22 | 0.43 | The streets of Jerusalem will be paved … | All its streets shall be paved with … |
+| 13:18 | 13:23 | 0.33 | All her streets will say, “Hallelujah!” and … | Blessed be the Lord, who hath exalted … |
 
 **Segment** WEBC 14:1-14:15 ↔ Douay-Rheims 14:1-14:17 — Chapter 14.
 
-| WEBC  | Douay-Rheims               | Score | WEBC opens                                 | Douay-Rheims opens                          |
-| ----- | -------------------------- | ----: | ------------------------------------------ | ------------------------------------------- |
-| 14:2  | 14:1, 14:2, 14:3           |  0.50 | He was fifty-eight years old when he …     | And the words of Tobias were ended. …       |
-| 14:3  | 14:4, 14:5                 |  0.27 | Now he grew very old; and he …             | And the rest of his life was …              |
-| 14:4  | 14:6                       |  0.17 | Go into Media, my child, for I …           | The destruction of Ninive is at hand: …     |
-| 14:5  | 14:7                       |  0.33 | God will again have mercy on them, …       | And all the land thereof that is …          |
-| 14:6  | 14:8, 14:9, 14:10          |  0.17 | And all the nations will turn to …         | And the Gentiles shall leave their idols, … |
-| 14:7  | 14:11                      |  0.22 | All the nations will bless the Lord, …     | And command your children that they do …    |
-| 14:8  | 14:12                      |  0.18 | And now, my child, depart from Nineveh, …  | And now, children, hear me, and do …        |
-| 14:10 | 14:13                      |  0.25 | Bury me decently, and your mother with …   | For I see that its iniquity will …          |
-| 14:12 | 14:14, 14:15, 14:16, 14:17 |  0.64 | When Anna died, he buried her with …       | And it came to pass that after …            |
-| 14:1  | —                          |       | Then Tobit finished giving thanks.         |                                             |
-| 14:9  | —                          |       | But you must keep the law and …            |                                             |
-| 14:11 | —                          |       | And now, my children, consider what alms … |                                             |
-| 14:13 | —                          |       | and he grew old in honor, and …            |                                             |
-| 14:14 | —                          |       | He died at Ecbatana of Media, being …      |                                             |
-| 14:15 | —                          |       | Before he died, he heard of the …          |                                             |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 14:2 | 14:1, 14:2, 14:3 | 0.50 | He was fifty-eight years old when he … | And the words of Tobias were ended. … |
+| 14:3 | 14:4, 14:5 | 0.27 | Now he grew very old; and he … | And the rest of his life was … |
+| 14:4 | 14:6 | 0.17 | Go into Media, my child, for I … | The destruction of Ninive is at hand: … |
+| 14:5 | 14:7 | 0.33 | God will again have mercy on them, … | And all the land thereof that is … |
+| 14:6 | 14:8, 14:9, 14:10 | 0.17 | And all the nations will turn to … | And the Gentiles shall leave their idols, … |
+| 14:7 | 14:11 | 0.22 | All the nations will bless the Lord, … | And command your children that they do … |
+| 14:8 | 14:12 | 0.18 | And now, my child, depart from Nineveh, … | And now, children, hear me, and do … |
+| 14:10 | 14:13 | 0.25 | Bury me decently, and your mother with … | For I see that its iniquity will … |
+| 14:12 | 14:14, 14:15, 14:16, 14:17 | 0.64 | When Anna died, he buried her with … | And it came to pass that after … |
+| 14:1 | — | | Then Tobit finished giving thanks. | |
+| 14:9 | — | | But you must keep the law and … | |
+| 14:11 | — | | And now, my children, consider what alms … | |
+| 14:13 | — | | and he grew old in honor, and … | |
+| 14:14 | — | | He died at Ecbatana of Media, being … | |
+| 14:15 | — | | Before he died, he heard of the … | |
 
 **Doubts** (1):
 
@@ -526,392 +526,392 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 **Segment** WEBC 1:1-1:16 ↔ Douay-Rheims 1:1-1:12 — Chapter 1.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                          | Douay-Rheims opens                                 |
-| ---- | ------------ | ----: | --------------------------------------------------- | -------------------------------------------------- |
-| 1:1  | 1:1          |  0.31 | In the twelfth year of the reign …                  | Now Arphaxad king of the Medes had …               |
-| 1:3  | 1:2          |  0.44 | and set its towers at its gates …                   | Of stones squared and hewed: he made …             |
-| 1:4  | 1:3, 1:4     |  0.42 | and made its gates, even gates that …               | And he made the gates thereof according …          |
-| 1:5  | 1:5          |  0.30 | in those days King Nebuchadnezzar made war …        | Now in the twelfth year of his …                   |
-| 1:6  | 1:6          |  0.36 | There came to meet him all that …                   | In the great plain which is called …               |
-| 1:7  | 1:7          |  0.40 | And Nebuchadnezzar king of the Assyrians sent …     | Then was the kingdom of Nabuchodonosor exalted, …  |
-| 1:8  | 1:8          |  0.50 | and to those among the nations that …               | And to the nations that are in …                   |
-| 1:9  | 1:9          |  0.55 | and to all who were in Samaria …                    | And to all that were in Samaria, …                 |
-| 1:11 | 1:10, 1:11   |  0.33 | All those who lived in all the …                    | To all these Nabuchodonosor king of the …          |
-| 1:12 | 1:12         |  0.42 | And Nebuchadnezzar was exceedingly angry with all … | Then king Nabuchodonosor being angry against all … |
-| 1:2  | —            |       | and built around Ecbatana walls of hewn …           |                                                    |
-| 1:10 | —            |       | until you come above Tanis and Memphis, …           |                                                    |
-| 1:13 | —            |       | And he set the battle in array …                    |                                                    |
-| 1:14 | —            |       | He took possession of his cities. He …              |                                                    |
-| 1:15 | —            |       | He took Arphaxad in the mountains of …              |                                                    |
-| 1:16 | —            |       | He returned with them to Nineveh, he …              |                                                    |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 1:1 | 1:1 | 0.31 | In the twelfth year of the reign … | Now Arphaxad king of the Medes had … |
+| 1:3 | 1:2 | 0.44 | and set its towers at its gates … | Of stones squared and hewed: he made … |
+| 1:4 | 1:3, 1:4 | 0.42 | and made its gates, even gates that … | And he made the gates thereof according … |
+| 1:5 | 1:5 | 0.30 | in those days King Nebuchadnezzar made war … | Now in the twelfth year of his … |
+| 1:6 | 1:6 | 0.36 | There came to meet him all that … | In the great plain which is called … |
+| 1:7 | 1:7 | 0.40 | And Nebuchadnezzar king of the Assyrians sent … | Then was the kingdom of Nabuchodonosor exalted, … |
+| 1:8 | 1:8 | 0.50 | and to those among the nations that … | And to the nations that are in … |
+| 1:9 | 1:9 | 0.55 | and to all who were in Samaria … | And to all that were in Samaria, … |
+| 1:11 | 1:10, 1:11 | 0.33 | All those who lived in all the … | To all these Nabuchodonosor king of the … |
+| 1:12 | 1:12 | 0.42 | And Nebuchadnezzar was exceedingly angry with all … | Then king Nabuchodonosor being angry against all … |
+| 1:2 | — | | and built around Ecbatana walls of hewn … | |
+| 1:10 | — | | until you come above Tanis and Memphis, … | |
+| 1:13 | — | | And he set the battle in array … | |
+| 1:14 | — | | He took possession of his cities. He … | |
+| 1:15 | — | | He took Arphaxad in the mountains of … | |
+| 1:16 | — | | He returned with them to Nineveh, he … | |
 
 **Segment** WEBC 2:1-2:28 ↔ Douay-Rheims 2:1-2:18 — Chapter 2.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                       | Douay-Rheims opens                                 |
-| ---- | ------------ | ----: | ------------------------------------------------ | -------------------------------------------------- |
-| 2:1  | 2:1          |  0.47 | In the eighteenth year, the twenty-second day …  | In the thirteenth year of the reign …              |
-| 2:2  | 2:2, 2:3     |  0.31 | He called together all his servants and …        | And he called all the ancients, and …              |
-| 2:4  | 2:4          |  0.38 | It came to pass, when he had …                   | And when this saying pleased them all, …           |
-| 2:6  | 2:5          |  0.50 | And you shall go out against all …               | And said to him: Go out against …                  |
-| 2:11 | 2:6          |  0.29 | As for those who resist, your eye …              | Thy eye shall not spare any kingdom, …             |
-| 2:15 | 2:7          |  0.64 | He counted chosen men for the battle, …          | Then Holofernes called the captains and officers … |
-| 2:17 | 2:8, 2:9     |  0.50 | He took camels, donkeys, and mules for …         | And he made all his warlike preparations …         |
-| 2:18 | 2:10         |  0.57 | and a large supply of rations for …              | But gold and silver he took out …                  |
-| 2:19 | 2:11         |  0.64 | He went out, he and all his …                    | And he went forth he and all …                     |
-| 2:22 | 2:12         |  0.22 | And he took all his army, his …                  | And when he had passed through the …               |
-| 2:23 | 2:13         |  0.25 | and destroyed Put and Lud, and plundered …       | And he took by assault the renowned …              |
-| 2:24 | 2:14         |  0.46 | And he went over Euphrates, and went …           | And he passed over the Euphrates and …             |
-| 2:25 | 2:15, 2:16   |  0.58 | And he took possession of the borders …          | And he took the borders thereof from …             |
-| 2:27 | 2:17         |  0.57 | He went down into the plain of …                 | And after these things he went down …              |
-| 2:28 | 2:18         |  0.40 | And the fear and the dread of …                  | And the fear of them fell upon …                   |
-| 2:3  | —            |       | They decreed to destroy all flesh which …        |                                                    |
-| 2:5  | —            |       | “The great king, the lord of all …               |                                                    |
-| 2:7  | —            |       | You shall declare to them that they …            |                                                    |
-| 2:8  | —            |       | Their slain will fill their valleys and …        |                                                    |
-| 2:9  | —            |       | I will lead them as captives to …                |                                                    |
-| 2:10 | —            |       | But you shall go forth, and take …               |                                                    |
-| 2:12 | —            |       | For as I live, and by the …                      |                                                    |
-| 2:13 | —            |       | Moreover, you shall not transgress anything of … |                                                    |
-| 2:14 | —            |       | So Holofernes went out from the presence …       |                                                    |
-| 2:16 | —            |       | He arranged them as a great multitude …          |                                                    |
-| 2:20 | —            |       | A great company of various nations went …        |                                                    |
-| 2:21 | —            |       | And they departed out of Nineveh three …         |                                                    |
-| 2:26 | —            |       | He surrounded all the children of Midian, …      |                                                    |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 2:1 | 2:1 | 0.47 | In the eighteenth year, the twenty-second day … | In the thirteenth year of the reign … |
+| 2:2 | 2:2, 2:3 | 0.31 | He called together all his servants and … | And he called all the ancients, and … |
+| 2:4 | 2:4 | 0.38 | It came to pass, when he had … | And when this saying pleased them all, … |
+| 2:6 | 2:5 | 0.50 | And you shall go out against all … | And said to him: Go out against … |
+| 2:11 | 2:6 | 0.29 | As for those who resist, your eye … | Thy eye shall not spare any kingdom, … |
+| 2:15 | 2:7 | 0.64 | He counted chosen men for the battle, … | Then Holofernes called the captains and officers … |
+| 2:17 | 2:8, 2:9 | 0.50 | He took camels, donkeys, and mules for … | And he made all his warlike preparations … |
+| 2:18 | 2:10 | 0.57 | and a large supply of rations for … | But gold and silver he took out … |
+| 2:19 | 2:11 | 0.64 | He went out, he and all his … | And he went forth he and all … |
+| 2:22 | 2:12 | 0.22 | And he took all his army, his … | And when he had passed through the … |
+| 2:23 | 2:13 | 0.25 | and destroyed Put and Lud, and plundered … | And he took by assault the renowned … |
+| 2:24 | 2:14 | 0.46 | And he went over Euphrates, and went … | And he passed over the Euphrates and … |
+| 2:25 | 2:15, 2:16 | 0.58 | And he took possession of the borders … | And he took the borders thereof from … |
+| 2:27 | 2:17 | 0.57 | He went down into the plain of … | And after these things he went down … |
+| 2:28 | 2:18 | 0.40 | And the fear and the dread of … | And the fear of them fell upon … |
+| 2:3 | — | | They decreed to destroy all flesh which … | |
+| 2:5 | — | | “The great king, the lord of all … | |
+| 2:7 | — | | You shall declare to them that they … | |
+| 2:8 | — | | Their slain will fill their valleys and … | |
+| 2:9 | — | | I will lead them as captives to … | |
+| 2:10 | — | | But you shall go forth, and take … | |
+| 2:12 | — | | For as I live, and by the … | |
+| 2:13 | — | | Moreover, you shall not transgress anything of … | |
+| 2:14 | — | | So Holofernes went out from the presence … | |
+| 2:16 | — | | He arranged them as a great multitude … | |
+| 2:20 | — | | A great company of various nations went … | |
+| 2:21 | — | | And they departed out of Nineveh three … | |
+| 2:26 | — | | He surrounded all the children of Midian, … | |
 
 **Segment** WEBC 3:1-3:10 ↔ Douay-Rheims 3:1-3:15 — Chapter 3.
 
-| WEBC | Douay-Rheims           | Score | WEBC opens                                       | Douay-Rheims opens                            |
-| ---- | ---------------------- | ----: | ------------------------------------------------ | --------------------------------------------- |
-| 3:1  | 3:1, 3:2, 3:3, 3:4     |  0.20 | And they sent to him messengers with …           | Then the kings and the princes of …           |
-| 3:2  | 3:5                    |  0.33 | “Behold, we the servants of Nebuchadnezzar the … | Both we and our children are thy …            |
-| 3:3  | 3:6                    |  0.40 | Behold, our dwellings, and all our country, …    | Come to us a peaceable lord, and …            |
-| 3:5  | 3:7                    |  0.17 | So the men came to Holofernes, and …             | Then he came down from the mountains …        |
-| 3:6  | 3:8, 3:9               |  0.29 | He came down toward the sea coast, …             | And from all the cities he took …             |
-| 3:7  | 3:10, 3:11             |  0.43 | They received him, they and all the …            | And received him with garlands, and lights, … |
-| 3:8  | 3:12, 3:13, 3:14, 3:15 |  0.50 | He cast down all their borders, and …            | For he both destroyed their cities and …      |
-| 3:4  | —                      |       | Behold, even our cities and those who …          |                                               |
-| 3:9  | —                      |       | Then he came toward Esdraelon near to …          |                                               |
-| 3:10 | —                      |       | He encamped between Geba and Scythopolis. He …   |                                               |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 3:1 | 3:1, 3:2, 3:3, 3:4 | 0.20 | And they sent to him messengers with … | Then the kings and the princes of … |
+| 3:2 | 3:5 | 0.33 | “Behold, we the servants of Nebuchadnezzar the … | Both we and our children are thy … |
+| 3:3 | 3:6 | 0.40 | Behold, our dwellings, and all our country, … | Come to us a peaceable lord, and … |
+| 3:5 | 3:7 | 0.17 | So the men came to Holofernes, and … | Then he came down from the mountains … |
+| 3:6 | 3:8, 3:9 | 0.29 | He came down toward the sea coast, … | And from all the cities he took … |
+| 3:7 | 3:10, 3:11 | 0.43 | They received him, they and all the … | And received him with garlands, and lights, … |
+| 3:8 | 3:12, 3:13, 3:14, 3:15 | 0.50 | He cast down all their borders, and … | For he both destroyed their cities and … |
+| 3:4 | — | | Behold, even our cities and those who … | |
+| 3:9 | — | | Then he came toward Esdraelon near to … | |
+| 3:10 | — | | He encamped between Geba and Scythopolis. He … | |
 
 **Segment** WEBC 4:1-4:15 ↔ Douay-Rheims 4:1-4:16 — Chapter 4.
 
-| WEBC | Douay-Rheims                       | Score | WEBC opens                                         | Douay-Rheims opens                           |
-| ---- | ---------------------------------- | ----: | -------------------------------------------------- | -------------------------------------------- |
-| 4:1  | 4:1                                |  0.22 | The children of Israel who lived in …              | Then the children of Israel, who dwelt …     |
-| 4:2  | 4:2                                |  0.33 | They were exceedingly afraid at his approach, …    | Dread and horror seized upon their minds, …  |
-| 4:4  | 4:3                                |  0.33 | And they sent into every coast of …                | And they sent into all Samaria round …       |
-| 4:5  | 4:4                                |  0.25 | and they occupied beforehand all the tops …        | And they compassed their towns with walls, … |
-| 4:6  | 4:5                                |  0.33 | Joakim the high priest, who was in …               | And Eliachim the priest wrote to all …       |
-| 4:8  | 4:6                                |  0.60 | And the children of Israel did as …                | And the children of Israel did as …          |
-| 4:9  | 4:7                                |  0.71 | And every man of Israel cried to …                 | And all the people cried to the …            |
-| 4:11 | 4:8                                |  0.55 | Every man and woman of Israel, including …         | And the priests put on haircloths, and …     |
-| 4:12 | 4:9                                |  0.56 | They cried to the God of Israel …                  | And they cried to the Lord the …             |
-| 4:14 | 4:10, 4:11, 4:12, 4:13, 4:14, 4:15 |  0.20 | And Joakim the high priest, and all …              | Then Eliachim the high priest of the …       |
-| 4:15 | 4:16                               |  0.20 | They had ashes on their turbans. They …            | And they all begged of God with …            |
-| 4:3  | —                                  |       | because they had newly come up from …              |                                              |
-| 4:7  | —                                  |       | charging them to seize upon the ascents …          |                                              |
-| 4:10 | —                                  |       | They, their wives, their children, their cattle, … |                                              |
-| 4:13 | —                                  |       | The Lord heard their voice, and looked …           |                                              |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 4:1 | 4:1 | 0.22 | The children of Israel who lived in … | Then the children of Israel, who dwelt … |
+| 4:2 | 4:2 | 0.33 | They were exceedingly afraid at his approach, … | Dread and horror seized upon their minds, … |
+| 4:4 | 4:3 | 0.33 | And they sent into every coast of … | And they sent into all Samaria round … |
+| 4:5 | 4:4 | 0.25 | and they occupied beforehand all the tops … | And they compassed their towns with walls, … |
+| 4:6 | 4:5 | 0.33 | Joakim the high priest, who was in … | And Eliachim the priest wrote to all … |
+| 4:8 | 4:6 | 0.60 | And the children of Israel did as … | And the children of Israel did as … |
+| 4:9 | 4:7 | 0.71 | And every man of Israel cried to … | And all the people cried to the … |
+| 4:11 | 4:8 | 0.55 | Every man and woman of Israel, including … | And the priests put on haircloths, and … |
+| 4:12 | 4:9 | 0.56 | They cried to the God of Israel … | And they cried to the Lord the … |
+| 4:14 | 4:10, 4:11, 4:12, 4:13, 4:14, 4:15 | 0.20 | And Joakim the high priest, and all … | Then Eliachim the high priest of the … |
+| 4:15 | 4:16 | 0.20 | They had ashes on their turbans. They … | And they all begged of God with … |
+| 4:3 | — | | because they had newly come up from … | |
+| 4:7 | — | | charging them to seize upon the ascents … | |
+| 4:10 | — | | They, their wives, their children, their cattle, … | |
+| 4:13 | — | | The Lord heard their voice, and looked … | |
 
 **Segment** WEBC 5:1-5:24 ↔ Douay-Rheims 5:1-5:29 — Chapter 5.
 
-| WEBC | Douay-Rheims           | Score | WEBC opens                                           | Douay-Rheims opens                                     |
-| ---- | ---------------------- | ----: | ---------------------------------------------------- | ------------------------------------------------------ |
-| 5:1  | 5:1                    |  0.54 | Holofernes, the chief captain of the army …          | And it was told Holofernes the general …               |
-| 5:2  | 5:2                    |  0.30 | Then he was exceedingly angry, and he …              | And he was transported with exceeding great …          |
-| 5:3  | 5:3                    |  0.54 | and he said to them, “Tell me …                      | And he said to them: Tell me …                         |
-| 5:4  | 5:4                    |  0.57 | Why have they turned their backs, that …             | And why they above all that dwell …                    |
-| 5:5  | 5:5                    |  0.63 | Then Achior, the leader of all the …                 | Then Achior captain of all the children …              |
-| 5:6  | 5:6                    |  0.67 | These people are descended from the Chaldeans.       | This people is of the offspring of …                   |
-| 5:7  | 5:7                    |  0.75 | They sojourned before this in Mesopotamia, because … | They dwelt first in Mesopotamia, because they …        |
-| 5:8  | 5:8                    |  0.38 | They departed from the way of their …                | Wherefore forsaking the ceremonies of their fathers, … |
-| 5:10 | 5:9                    |  0.31 | Then they went down into Egypt, for …                | They worshipped one God of heaven, who …               |
-| 5:12 | 5:10, 5:11, 5:12, 5:13 |  0.78 | They cried to their God, and he …                    | And when the king of Egypt oppressed …                 |
-| 5:13 | 5:14, 5:15, 5:16       |  0.67 | God dried up the Red sea before …                    | And after they came out of the …                       |
-| 5:15 | 5:17, 5:18, 5:19, 5:20 |  0.23 | They lived in the land of the …                      | And there was no one that triumphed …                  |
-| 5:17 | 5:21                   |  0.17 | And while they didn’t sin before their …             | And as long as they sinned not …                       |
-| 5:18 | 5:22                   |  0.35 | But when they departed from the way …                | And even some years ago when they …                    |
-| 5:19 | 5:23, 5:24             |  0.38 | And now they have returned to their …                | But of late returning to the Lord …                    |
-| 5:21 | 5:25                   |  0.38 | But if there is no lawlessness in …                  | But if there be no offense of …                        |
-| 5:22 | 5:26                   |  0.53 | It came to pass, when Achior had …                   | And it came to pass, when Achior …                     |
-| 5:23 | 5:27                   |  0.22 | For, they said, “We will not be …                    | Who is this, that saith the children …                 |
-| 5:24 | 5:28, 5:29             |  0.17 | Therefore now we will go up, and …                   | That Achior therefore may know that he …               |
-| 5:9  | —                      |       | Then their God commanded them to depart …            |                                                        |
-| 5:11 | —                      |       | Then the king of Egypt rose up …                     |                                                        |
-| 5:14 | —                      |       | and brought them into the way of …                   |                                                        |
-| 5:16 | —                      |       | They cast out before them the Canaanite, …           |                                                        |
-| 5:20 | —                      |       | And now, my lord and master, if …                    |                                                        |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 5:1 | 5:1 | 0.54 | Holofernes, the chief captain of the army … | And it was told Holofernes the general … |
+| 5:2 | 5:2 | 0.30 | Then he was exceedingly angry, and he … | And he was transported with exceeding great … |
+| 5:3 | 5:3 | 0.54 | and he said to them, “Tell me … | And he said to them: Tell me … |
+| 5:4 | 5:4 | 0.57 | Why have they turned their backs, that … | And why they above all that dwell … |
+| 5:5 | 5:5 | 0.63 | Then Achior, the leader of all the … | Then Achior captain of all the children … |
+| 5:6 | 5:6 | 0.67 | These people are descended from the Chaldeans. | This people is of the offspring of … |
+| 5:7 | 5:7 | 0.75 | They sojourned before this in Mesopotamia, because … | They dwelt first in Mesopotamia, because they … |
+| 5:8 | 5:8 | 0.38 | They departed from the way of their … | Wherefore forsaking the ceremonies of their fathers, … |
+| 5:10 | 5:9 | 0.31 | Then they went down into Egypt, for … | They worshipped one God of heaven, who … |
+| 5:12 | 5:10, 5:11, 5:12, 5:13 | 0.78 | They cried to their God, and he … | And when the king of Egypt oppressed … |
+| 5:13 | 5:14, 5:15, 5:16 | 0.67 | God dried up the Red sea before … | And after they came out of the … |
+| 5:15 | 5:17, 5:18, 5:19, 5:20 | 0.23 | They lived in the land of the … | And there was no one that triumphed … |
+| 5:17 | 5:21 | 0.17 | And while they didn’t sin before their … | And as long as they sinned not … |
+| 5:18 | 5:22 | 0.35 | But when they departed from the way … | And even some years ago when they … |
+| 5:19 | 5:23, 5:24 | 0.38 | And now they have returned to their … | But of late returning to the Lord … |
+| 5:21 | 5:25 | 0.38 | But if there is no lawlessness in … | But if there be no offense of … |
+| 5:22 | 5:26 | 0.53 | It came to pass, when Achior had … | And it came to pass, when Achior … |
+| 5:23 | 5:27 | 0.22 | For, they said, “We will not be … | Who is this, that saith the children … |
+| 5:24 | 5:28, 5:29 | 0.17 | Therefore now we will go up, and … | That Achior therefore may know that he … |
+| 5:9 | — | | Then their God commanded them to depart … | |
+| 5:11 | — | | Then the king of Egypt rose up … | |
+| 5:14 | — | | and brought them into the way of … | |
+| 5:16 | — | | They cast out before them the Canaanite, … | |
+| 5:20 | — | | And now, my lord and master, if … | |
 
 **Segment** WEBC 6:1-6:21 ↔ Douay-Rheims 6:1-6:21 — Chapter 6.
 
-| WEBC | Douay-Rheims     | Score | WEBC opens                                          | Douay-Rheims opens                               |
-| ---- | ---------------- | ----: | --------------------------------------------------- | ------------------------------------------------ |
-| 6:1  | 6:1              |  0.20 | And when the disturbance of the men …               | And it came to pass when they …                  |
-| 6:2  | 6:2, 6:3         |  0.25 | “And who are you, Achior, and the …                 | Because thou hast prophesied unto us, saying: …  |
-| 6:6  | 6:4              |  0.55 | And then the sword of my army, …                    | And thou shalt find that Nabuchodonosor is …     |
-| 6:9  | 6:5, 6:6         |  0.30 | And if you hope in your heart …                     | But if thou think thy prophecy true, …           |
-| 6:10 | 6:7              |  0.91 | Then Holofernes commanded his servants who waited … | Then Holofernes commanded his servants to take … |
-| 6:11 | 6:8              |  0.27 | So his servants took him, and brought …             | And the servants of Holofernes taking him, …     |
-| 6:13 | 6:9              |  0.33 | They took cover under the hill, bound …             | Then turning out of the way by …                 |
-| 6:14 | 6:10             |  0.36 | But the children of Israel descended from …         | And the children of Israel coming down …         |
-| 6:15 | 6:11             |  0.70 | which were in those days Ozias the …                | In those days the rulers there, were …           |
-| 6:16 | 6:12             |  0.33 | Then they called together all the elders …          | And Achior related in the midst of …             |
-| 6:17 | 6:13             |  0.21 | He answered and declared to them the …              | And how Holofernes himself being angry had …     |
-| 6:18 | 6:14             |  0.33 | Then the people fell down and worshiped …           | And when Achior had declared all these …         |
-| 6:19 | 6:15             |  0.45 | “O Lord God of heaven, behold their …               | Saying: O Lord God of heaven and …               |
-| 6:20 | 6:16, 6:17, 6:18 |  0.50 | They comforted Achior, and praised him exceedingly. | So when their weeping was ended, and …           |
-| 6:21 | 6:19, 6:20, 6:21 |  0.73 | Then Ozias took him out of the …                    | Then Ozias, after the assembly was broken …      |
-| 6:3  | —                |       | He will send forth his might, and …                 |                                                  |
-| 6:4  | —                |       | For with them we will burn them …                   |                                                  |
-| 6:5  | —                |       | But you, Achior, hireling of Ammon, who …           |                                                  |
-| 6:7  | —                |       | Then my servants will bring you back …              |                                                  |
-| 6:8  | —                |       | You will not perish until you are …                 |                                                  |
-| 6:12 | —                |       | When the men of the city saw …                      |                                                  |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 6:1 | 6:1 | 0.20 | And when the disturbance of the men … | And it came to pass when they … |
+| 6:2 | 6:2, 6:3 | 0.25 | “And who are you, Achior, and the … | Because thou hast prophesied unto us, saying: … |
+| 6:6 | 6:4 | 0.55 | And then the sword of my army, … | And thou shalt find that Nabuchodonosor is … |
+| 6:9 | 6:5, 6:6 | 0.30 | And if you hope in your heart … | But if thou think thy prophecy true, … |
+| 6:10 | 6:7 | 0.91 | Then Holofernes commanded his servants who waited … | Then Holofernes commanded his servants to take … |
+| 6:11 | 6:8 | 0.27 | So his servants took him, and brought … | And the servants of Holofernes taking him, … |
+| 6:13 | 6:9 | 0.33 | They took cover under the hill, bound … | Then turning out of the way by … |
+| 6:14 | 6:10 | 0.36 | But the children of Israel descended from … | And the children of Israel coming down … |
+| 6:15 | 6:11 | 0.70 | which were in those days Ozias the … | In those days the rulers there, were … |
+| 6:16 | 6:12 | 0.33 | Then they called together all the elders … | And Achior related in the midst of … |
+| 6:17 | 6:13 | 0.21 | He answered and declared to them the … | And how Holofernes himself being angry had … |
+| 6:18 | 6:14 | 0.33 | Then the people fell down and worshiped … | And when Achior had declared all these … |
+| 6:19 | 6:15 | 0.45 | “O Lord God of heaven, behold their … | Saying: O Lord God of heaven and … |
+| 6:20 | 6:16, 6:17, 6:18 | 0.50 | They comforted Achior, and praised him exceedingly. | So when their weeping was ended, and … |
+| 6:21 | 6:19, 6:20, 6:21 | 0.73 | Then Ozias took him out of the … | Then Ozias, after the assembly was broken … |
+| 6:3 | — | | He will send forth his might, and … | |
+| 6:4 | — | | For with them we will burn them … | |
+| 6:5 | — | | But you, Achior, hireling of Ammon, who … | |
+| 6:7 | — | | Then my servants will bring you back … | |
+| 6:8 | — | | You will not perish until you are … | |
+| 6:12 | — | | When the men of the city saw … | |
 
 **Segment** WEBC 7:1-7:32 ↔ Douay-Rheims 7:1-7:25 — Chapter 7.
 
-| WEBC | Douay-Rheims                 | Score | WEBC opens                                         | Douay-Rheims opens                                |
-| ---- | ---------------------------- | ----: | -------------------------------------------------- | ------------------------------------------------- |
-| 7:1  | 7:1                          |  0.75 | The next day Holofernes commanded all his …        | But Holofernes on the next day gave …             |
-| 7:2  | 7:2, 7:3                     |  0.29 | Every mighty man of them moved that …              | Now there were in his troops a …                  |
-| 7:4  | 7:4                          |  0.27 | But the children of Israel, when they …            | But the children of Israel, when they …           |
-| 7:5  | 7:5                          |  0.20 | Every man took up his weapons of …                 | And taking their arms of war, they …              |
-| 7:9  | 7:6, 7:7                     |  0.20 | “Let our lord now hear a word, …                   | Now Holofernes, in going round about, found …     |
-| 7:10 | 7:8                          |  0.42 | For this people of the children of …               | But the children of Ammon and Moab …              |
-| 7:12 | 7:9                          |  0.21 | Remain in your camp, and keep every …              | Wherefore that thou mayst overcome them without … |
-| 7:16 | 7:10                         |  0.43 | Their words were pleasing in the sight …           | And these words pleased Holofernes, and his …     |
-| 7:21 | 7:11                         |  0.50 | The cisterns were emptied, and they had …          | And when they had kept this watch …               |
-| 7:23 | 7:12                         |  0.89 | All the people, including the young men, …         | Then all the men and women, young …               |
-| 7:24 | 7:13                         |  0.30 | “God be judge between all of you …                 | Said: God be judge between us and …               |
-| 7:25 | 7:14                         |  0.22 | Now we have no helper; but God …                   | And therefore there is no one to …                |
-| 7:26 | 7:15                         |  0.44 | And now summon them, and deliver up …              | And now assemble ye all that are …                |
-| 7:27 | 7:16                         |  0.33 | For it is better for us to …                       | For it is better, that being captives …           |
-| 7:28 | 7:17                         |  0.50 | We take to witness against you the …               | We call to witness this day heaven …              |
-| 7:29 | 7:18, 7:19, 7:20, 7:21, 7:22 |  0.63 | And there was great weeping of all …               | And when they had said these things, …            |
-| 7:30 | 7:23, 7:24                   |  0.54 | And Ozias said to them, “Brethren, be …            | Ozias rising up all in tears, said: …             |
-| 7:31 | 7:25                         |  0.40 | But if these days pass, and no …                   | But if after five days be past …                  |
-| 7:3  | —                            |       | They encamped in the valley near Bethulia, …       |                                                   |
-| 7:6  | —                            |       | But on the second day Holofernes led …             |                                                   |
-| 7:7  | —                            |       | viewed the ascents to their city, and …            |                                                   |
-| 7:8  | —                            |       | All the rulers of the children of …                |                                                   |
-| 7:11 | —                            |       | And now, my lord, don’t fight against …            |                                                   |
-| 7:13 | —                            |       | because all the inhabitants of Bethulia get …      |                                                   |
-| 7:14 | —                            |       | They will be consumed with famine—they, their …    |                                                   |
-| 7:15 | —                            |       | And you will pay them back with …                  |                                                   |
-| 7:17 | —                            |       | And the army of the children of …                  |                                                   |
-| 7:18 | —                            |       | The children of Esau went up with …                |                                                   |
-| 7:19 | —                            |       | The children of Israel cried to the …              |                                                   |
-| 7:20 | —                            |       | All the army of Asshur remained around …           |                                                   |
-| 7:22 | —                            |       | Their young children were discouraged. The women … |                                                   |
-| 7:32 | —                            |       | Then he dispersed the people, every man …          |                                                   |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 7:1 | 7:1 | 0.75 | The next day Holofernes commanded all his … | But Holofernes on the next day gave … |
+| 7:2 | 7:2, 7:3 | 0.29 | Every mighty man of them moved that … | Now there were in his troops a … |
+| 7:4 | 7:4 | 0.27 | But the children of Israel, when they … | But the children of Israel, when they … |
+| 7:5 | 7:5 | 0.20 | Every man took up his weapons of … | And taking their arms of war, they … |
+| 7:9 | 7:6, 7:7 | 0.20 | “Let our lord now hear a word, … | Now Holofernes, in going round about, found … |
+| 7:10 | 7:8 | 0.42 | For this people of the children of … | But the children of Ammon and Moab … |
+| 7:12 | 7:9 | 0.21 | Remain in your camp, and keep every … | Wherefore that thou mayst overcome them without … |
+| 7:16 | 7:10 | 0.43 | Their words were pleasing in the sight … | And these words pleased Holofernes, and his … |
+| 7:21 | 7:11 | 0.50 | The cisterns were emptied, and they had … | And when they had kept this watch … |
+| 7:23 | 7:12 | 0.89 | All the people, including the young men, … | Then all the men and women, young … |
+| 7:24 | 7:13 | 0.30 | “God be judge between all of you … | Said: God be judge between us and … |
+| 7:25 | 7:14 | 0.22 | Now we have no helper; but God … | And therefore there is no one to … |
+| 7:26 | 7:15 | 0.44 | And now summon them, and deliver up … | And now assemble ye all that are … |
+| 7:27 | 7:16 | 0.33 | For it is better for us to … | For it is better, that being captives … |
+| 7:28 | 7:17 | 0.50 | We take to witness against you the … | We call to witness this day heaven … |
+| 7:29 | 7:18, 7:19, 7:20, 7:21, 7:22 | 0.63 | And there was great weeping of all … | And when they had said these things, … |
+| 7:30 | 7:23, 7:24 | 0.54 | And Ozias said to them, “Brethren, be … | Ozias rising up all in tears, said: … |
+| 7:31 | 7:25 | 0.40 | But if these days pass, and no … | But if after five days be past … |
+| 7:3 | — | | They encamped in the valley near Bethulia, … | |
+| 7:6 | — | | But on the second day Holofernes led … | |
+| 7:7 | — | | viewed the ascents to their city, and … | |
+| 7:8 | — | | All the rulers of the children of … | |
+| 7:11 | — | | And now, my lord, don’t fight against … | |
+| 7:13 | — | | because all the inhabitants of Bethulia get … | |
+| 7:14 | — | | They will be consumed with famine—they, their … | |
+| 7:15 | — | | And you will pay them back with … | |
+| 7:17 | — | | And the army of the children of … | |
+| 7:18 | — | | The children of Esau went up with … | |
+| 7:19 | — | | The children of Israel cried to the … | |
+| 7:20 | — | | All the army of Asshur remained around … | |
+| 7:22 | — | | Their young children were discouraged. The women … | |
+| 7:32 | — | | Then he dispersed the people, every man … | |
 
 **Segment** WEBC 8:1-8:36 ↔ Douay-Rheims 8:1-8:34 — Chapter 8.
 
-| WEBC | Douay-Rheims                 | Score | WEBC opens                                     | Douay-Rheims opens                           |
-| ---- | ---------------------------- | ----: | ---------------------------------------------- | -------------------------------------------- |
-| 8:1  | 8:1                          |  0.35 | In those days Judith heard about this. …       | Now it came to pass, when Judith …           |
-| 8:2  | 8:2                          |  0.83 | Her husband was Manasses, of her tribe …       | And her husband was Manasses, who died …     |
-| 8:3  | 8:3                          |  0.71 | For he stood over those who bound …            | For he was standing over them that …         |
-| 8:4  | 8:4                          |  0.71 | Judith was a widow in her house …              | And Judith his relict was a widow …          |
-| 8:5  | 8:5                          |  0.30 | She made herself a tent upon the …             | And she made herself a private chamber …     |
-| 8:6  | 8:6                          |  0.75 | And she fasted all the days of …               | And she wore haircloth upon her loins, …     |
-| 8:7  | 8:7                          |  0.21 | She was beautiful in appearance, and lovely …  | And she was exceedingly beautiful, and her … |
-| 8:9  | 8:8                          |  0.20 | She heard the evil words of the …              | And she was greatly renowned among all, …    |
-| 8:10 | 8:9                          |  0.50 | So she sent her maid, who was …                | When therefore she had heard that Ozias …    |
-| 8:11 | 8:10, 8:11, 8:12, 8:13, 8:14 |  0.29 | They came to her, and she said …               | And they came to her, and she …              |
-| 8:16 | 8:15                         |  0.67 | But don’t you pledge the counsels of …         | For God will not threaten like man, …        |
-| 8:17 | 8:16, 8:17, 8:18             |  0.10 | Therefore let’s wait for the salvation that …  | And therefore let us humble our souls …      |
-| 8:19 | 8:19                         |  0.38 | for which cause our fathers were given …       | For which crime they were given up …         |
-| 8:21 | 8:20                         |  0.29 | For if we are captured, all Judea …            | Let us humbly wait for his consolation, …    |
-| 8:24 | 8:21                         |  0.20 | And now, kindred, let’s show an example …      | And now, brethren, as you are the …          |
-| 8:25 | 8:22, 8:23, 8:24, 8:25       |  0.17 | Besides all this let’s give thanks to …        | They must remember how our father Abraham …  |
-| 8:26 | 8:26, 8:27                   |  0.14 | Remember all the things which he did …         | As for us therefore let us not …             |
-| 8:28 | 8:28                         |  0.50 | And Ozias said to her, “All that …             | And Ozias and the ancients said to …         |
-| 8:31 | 8:29                         |  0.43 | And now pray for us, because you …             | Now therefore pray for us, for thou …        |
-| 8:32 | 8:30, 8:31                   |  0.13 | Then Judith said to them, “Hear me, …          | And Judith said to them: As you …            |
-| 8:33 | 8:32, 8:33                   |  0.36 | You shall all stand at the gate …              | You shall stand at the gate this …           |
-| 8:35 | 8:34                         |  0.67 | Then Ozias and the rulers said to …            | And Ozias the prince of Juda said …          |
-| 8:8  | —                            |       | No one said anything evil about her, …         |                                              |
-| 8:12 | —                            |       | Now who are you that you have …                |                                              |
-| 8:13 | —                            |       | Now try the Lord Almighty, and you …           |                                              |
-| 8:14 | —                            |       | For you will not find the depth …              |                                              |
-| 8:15 | —                            |       | For if he has not decided to …                 |                                              |
-| 8:18 | —                            |       | For there arose none in our age, …             |                                              |
-| 8:20 | —                            |       | But we know no other god beside …              |                                              |
-| 8:22 | —                            |       | The slaughter of our kindred, the captivity …  |                                              |
-| 8:23 | —                            |       | For our bondage will not be ordered …          |                                              |
-| 8:27 | —                            |       | For he has not tried us in …                   |                                              |
-| 8:29 | —                            |       | For this is not the first day …                |                                              |
-| 8:30 | —                            |       | But the people were exceedingly thirsty, and … |                                              |
-| 8:34 | —                            |       | But you shall not inquire of my …              |                                              |
-| 8:36 | —                            |       | So they returned from the tent, and …          |                                              |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 8:1 | 8:1 | 0.35 | In those days Judith heard about this. … | Now it came to pass, when Judith … |
+| 8:2 | 8:2 | 0.83 | Her husband was Manasses, of her tribe … | And her husband was Manasses, who died … |
+| 8:3 | 8:3 | 0.71 | For he stood over those who bound … | For he was standing over them that … |
+| 8:4 | 8:4 | 0.71 | Judith was a widow in her house … | And Judith his relict was a widow … |
+| 8:5 | 8:5 | 0.30 | She made herself a tent upon the … | And she made herself a private chamber … |
+| 8:6 | 8:6 | 0.75 | And she fasted all the days of … | And she wore haircloth upon her loins, … |
+| 8:7 | 8:7 | 0.21 | She was beautiful in appearance, and lovely … | And she was exceedingly beautiful, and her … |
+| 8:9 | 8:8 | 0.20 | She heard the evil words of the … | And she was greatly renowned among all, … |
+| 8:10 | 8:9 | 0.50 | So she sent her maid, who was … | When therefore she had heard that Ozias … |
+| 8:11 | 8:10, 8:11, 8:12, 8:13, 8:14 | 0.29 | They came to her, and she said … | And they came to her, and she … |
+| 8:16 | 8:15 | 0.67 | But don’t you pledge the counsels of … | For God will not threaten like man, … |
+| 8:17 | 8:16, 8:17, 8:18 | 0.10 | Therefore let’s wait for the salvation that … | And therefore let us humble our souls … |
+| 8:19 | 8:19 | 0.38 | for which cause our fathers were given … | For which crime they were given up … |
+| 8:21 | 8:20 | 0.29 | For if we are captured, all Judea … | Let us humbly wait for his consolation, … |
+| 8:24 | 8:21 | 0.20 | And now, kindred, let’s show an example … | And now, brethren, as you are the … |
+| 8:25 | 8:22, 8:23, 8:24, 8:25 | 0.17 | Besides all this let’s give thanks to … | They must remember how our father Abraham … |
+| 8:26 | 8:26, 8:27 | 0.14 | Remember all the things which he did … | As for us therefore let us not … |
+| 8:28 | 8:28 | 0.50 | And Ozias said to her, “All that … | And Ozias and the ancients said to … |
+| 8:31 | 8:29 | 0.43 | And now pray for us, because you … | Now therefore pray for us, for thou … |
+| 8:32 | 8:30, 8:31 | 0.13 | Then Judith said to them, “Hear me, … | And Judith said to them: As you … |
+| 8:33 | 8:32, 8:33 | 0.36 | You shall all stand at the gate … | You shall stand at the gate this … |
+| 8:35 | 8:34 | 0.67 | Then Ozias and the rulers said to … | And Ozias the prince of Juda said … |
+| 8:8 | — | | No one said anything evil about her, … | |
+| 8:12 | — | | Now who are you that you have … | |
+| 8:13 | — | | Now try the Lord Almighty, and you … | |
+| 8:14 | — | | For you will not find the depth … | |
+| 8:15 | — | | For if he has not decided to … | |
+| 8:18 | — | | For there arose none in our age, … | |
+| 8:20 | — | | But we know no other god beside … | |
+| 8:22 | — | | The slaughter of our kindred, the captivity … | |
+| 8:23 | — | | For our bondage will not be ordered … | |
+| 8:27 | — | | For he has not tried us in … | |
+| 8:29 | — | | For this is not the first day … | |
+| 8:30 | — | | But the people were exceedingly thirsty, and … | |
+| 8:34 | — | | But you shall not inquire of my … | |
+| 8:36 | — | | So they returned from the tent, and … | |
 
 **Segment** WEBC 9:1-9:14 ↔ Douay-Rheims 9:1-9:19 — Chapter 9.
 
-| WEBC | Douay-Rheims       | Score | WEBC opens                                     | Douay-Rheims opens                          |
-| ---- | ------------------ | ----: | ---------------------------------------------- | ------------------------------------------- |
-| 9:1  | 9:1                |  0.29 | But Judith fell upon her face, and …           | And when they were gone, Judith went …      |
-| 9:2  | 9:2                |  0.54 | “O Lord God of my father Simeon, …             | O Lord God of my father Simeon, …           |
-| 9:4  | 9:3, 9:4           |  0.37 | and gave their wives for a prey, …             | And who gavest their wives to be …          |
-| 9:6  | 9:5, 9:6, 9:7, 9:8 |  0.30 | Yes, the things which you determined stood …   | For all thy ways are prepared, and …        |
-| 9:7  | 9:9, 9:10          |  0.36 | For, behold, the Assyrians are multiplied in … | So may it be with these also, …             |
-| 9:8  | 9:11, 9:12, 9:13   |  0.50 | Break their strength in your power, and …      | Lift up thy arm as from the …               |
-| 9:9  | 9:14               |  0.17 | Look at their pride, and send your …           | Give me constancy in my mind, that …        |
-| 9:10 | 9:15, 9:16         |  0.20 | Strike by the deceit of my lips …              | For this will be a glorious monument …      |
-| 9:12 | 9:17               |  0.42 | Please, please, God of my father, and …        | O God of the heavens, creator of …          |
-| 9:13 | 9:18               |  0.18 | Make my speech and deceit to be …              | Remember, O Lord, thy covenant, and put …   |
-| 9:14 | 9:19               |  0.40 | Make every nation and tribe of yours …         | And all nations may acknowledge that thou … |
-| 9:3  | —                  |       | Therefore you gave their rulers to be …        |                                             |
-| 9:5  | —                  |       | For you did the things that were …             |                                             |
-| 9:11 | —                  |       | For your power stands not in numbers, …        |                                             |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 9:1 | 9:1 | 0.29 | But Judith fell upon her face, and … | And when they were gone, Judith went … |
+| 9:2 | 9:2 | 0.54 | “O Lord God of my father Simeon, … | O Lord God of my father Simeon, … |
+| 9:4 | 9:3, 9:4 | 0.37 | and gave their wives for a prey, … | And who gavest their wives to be … |
+| 9:6 | 9:5, 9:6, 9:7, 9:8 | 0.30 | Yes, the things which you determined stood … | For all thy ways are prepared, and … |
+| 9:7 | 9:9, 9:10 | 0.36 | For, behold, the Assyrians are multiplied in … | So may it be with these also, … |
+| 9:8 | 9:11, 9:12, 9:13 | 0.50 | Break their strength in your power, and … | Lift up thy arm as from the … |
+| 9:9 | 9:14 | 0.17 | Look at their pride, and send your … | Give me constancy in my mind, that … |
+| 9:10 | 9:15, 9:16 | 0.20 | Strike by the deceit of my lips … | For this will be a glorious monument … |
+| 9:12 | 9:17 | 0.42 | Please, please, God of my father, and … | O God of the heavens, creator of … |
+| 9:13 | 9:18 | 0.18 | Make my speech and deceit to be … | Remember, O Lord, thy covenant, and put … |
+| 9:14 | 9:19 | 0.40 | Make every nation and tribe of yours … | And all nations may acknowledge that thou … |
+| 9:3 | — | | Therefore you gave their rulers to be … | |
+| 9:5 | — | | For you did the things that were … | |
+| 9:11 | — | | For your power stands not in numbers, … | |
 
 **Segment** WEBC 10:1-10:23 ↔ Douay-Rheims 10:1-10:20 — Chapter 10.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                      | Douay-Rheims opens                             |
-| ----- | ------------ | ----: | ----------------------------------------------- | ---------------------------------------------- |
-| 10:1  | 10:1         |  0.50 | It came to pass, when she had …                 | And it came to pass, when she …                |
-| 10:3  | 10:2         |  0.42 | She pulled off the sackcloth which she …        | And she called her maid, and going …           |
-| 10:4  | 10:3, 10:4   |  0.47 | She took sandals for her feet, and …            | And she washed her body, and anointed …        |
-| 10:5  | 10:5         |  0.50 | She gave her maid a leather container …         | And she gave to her maid a …                   |
-| 10:6  | 10:6         |  0.57 | They went out to the gate of …                  | And when they came to the gate …               |
-| 10:7  | 10:7         |  0.60 | But when they saw her, that her …               | And when they saw her they were …              |
-| 10:8  | 10:8, 10:9   |  0.36 | “May the God of our fathers give …              | But they asked her no question, only …         |
-| 10:10 | 10:10        |  0.33 | and they did so. Then Judith went …             | But Judith praying to the Lord, passed …       |
-| 10:11 | 10:11, 10:12 |  0.43 | They went straight onward in the valley. …      | And it came to pass, when she …                |
-| 10:13 | 10:13        |  0.25 | I am coming into the presence of …              | For this reason I thought with myself, …       |
-| 10:14 | 10:14        |  0.60 | Now when the men heard her words, …             | And when the men had heard her …               |
-| 10:15 | 10:15        |  0.57 | “You have saved your life, in that …            | And they said to her: Thou hast …              |
-| 10:16 | 10:16        |  0.50 | But when you stand before him, don’t …          | And be assured of this, that when …            |
-| 10:18 | 10:17        |  0.17 | And there was great excitement throughout all … | And when she was come into his …               |
-| 10:19 | 10:18        |  0.31 | They marveled at her beauty, and marveled …     | And his officers said to him: Who …            |
-| 10:21 | 10:19        |  0.82 | And Holofernes was resting upon his bed …       | And Judith seeing Holofernes sitting under a … |
-| 10:23 | 10:20        |  0.36 | But when Judith had come before him …           | After she had looked on his face …             |
-| 10:2  | —            |       | that she rose up where she had …                |                                                |
-| 10:9  | —            |       | and said to them, “Command that they …          |                                                |
-| 10:12 | —            |       | and they took her, and asked her, …             |                                                |
-| 10:17 | —            |       | They chose out of them a hundred …              |                                                |
-| 10:20 | —            |       | Then the guards of Holofernes and all …         |                                                |
-| 10:22 | —            |       | And they told him about her; and …              |                                                |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 10:1 | 10:1 | 0.50 | It came to pass, when she had … | And it came to pass, when she … |
+| 10:3 | 10:2 | 0.42 | She pulled off the sackcloth which she … | And she called her maid, and going … |
+| 10:4 | 10:3, 10:4 | 0.47 | She took sandals for her feet, and … | And she washed her body, and anointed … |
+| 10:5 | 10:5 | 0.50 | She gave her maid a leather container … | And she gave to her maid a … |
+| 10:6 | 10:6 | 0.57 | They went out to the gate of … | And when they came to the gate … |
+| 10:7 | 10:7 | 0.60 | But when they saw her, that her … | And when they saw her they were … |
+| 10:8 | 10:8, 10:9 | 0.36 | “May the God of our fathers give … | But they asked her no question, only … |
+| 10:10 | 10:10 | 0.33 | and they did so. Then Judith went … | But Judith praying to the Lord, passed … |
+| 10:11 | 10:11, 10:12 | 0.43 | They went straight onward in the valley. … | And it came to pass, when she … |
+| 10:13 | 10:13 | 0.25 | I am coming into the presence of … | For this reason I thought with myself, … |
+| 10:14 | 10:14 | 0.60 | Now when the men heard her words, … | And when the men had heard her … |
+| 10:15 | 10:15 | 0.57 | “You have saved your life, in that … | And they said to her: Thou hast … |
+| 10:16 | 10:16 | 0.50 | But when you stand before him, don’t … | And be assured of this, that when … |
+| 10:18 | 10:17 | 0.17 | And there was great excitement throughout all … | And when she was come into his … |
+| 10:19 | 10:18 | 0.31 | They marveled at her beauty, and marveled … | And his officers said to him: Who … |
+| 10:21 | 10:19 | 0.82 | And Holofernes was resting upon his bed … | And Judith seeing Holofernes sitting under a … |
+| 10:23 | 10:20 | 0.36 | But when Judith had come before him … | After she had looked on his face … |
+| 10:2 | — | | that she rose up where she had … | |
+| 10:9 | — | | and said to them, “Command that they … | |
+| 10:12 | — | | and they took her, and asked her, … | |
+| 10:17 | — | | They chose out of them a hundred … | |
+| 10:20 | — | | Then the guards of Holofernes and all … | |
+| 10:22 | — | | And they told him about her; and … | |
 
 **Segment** WEBC 11:1-11:23 ↔ Douay-Rheims 11:1-11:21 — Chapter 11.
 
-| WEBC  | Douay-Rheims            | Score | WEBC opens                                      | Douay-Rheims opens                            |
-| ----- | ----------------------- | ----: | ----------------------------------------------- | --------------------------------------------- |
-| 11:1  | 11:1                    |  0.50 | Holofernes said to her, “Woman, take courage. … | Then Holofernes said to her: Be of …          |
-| 11:2  | 11:2                    |  0.67 | And now, if your people who dwell …             | And if thy people had not despised …          |
-| 11:3  | 11:3                    |  0.50 | And now tell me why you fled …                  | But now tell me, for what cause …             |
-| 11:6  | 11:4                    |  0.50 | If you will follow the words of …               | And Judith said to him: Receive the …         |
-| 11:7  | 11:5                    |  0.60 | As Nebuchadnezzar king of all the earth …       | For as Nabuchodonosor the king of the …       |
-| 11:8  | 11:6                    |  0.19 | For we have heard of your wisdom …              | For the industry of thy mind is …             |
-| 11:9  | 11:7, 11:8, 11:9, 11:10 |  0.15 | And now as concerning the matter which …        | It is known also what Achior said, …          |
-| 11:12 | 11:11                   |  0.20 | Since their food failed them, and all …         | And they have a design even to …              |
-| 11:13 | 11:12                   |  0.22 | They are resolved to spend the first …          | And the consecrated things of the Lord …      |
-| 11:16 | 11:13                   |  0.57 | Therefore I your servant, knowing all this, …   | And I thy handmaid knowing this, am …         |
-| 11:17 | 11:14                   |  0.50 | For your servant is religious, and serves …     | For I thy handmaid worship God even …         |
-| 11:18 | 11:15                   |  0.40 | Then I will come and tell you. …                | And he will tell me when he …                 |
-| 11:19 | 11:16, 11:17            |  0.57 | And I will lead you through the …               | Because these things are told me by …         |
-| 11:20 | 11:18                   |  0.71 | Her words were pleasing in the sight …          | And all these words pleased Holofernes, and … |
-| 11:21 | 11:19                   |  0.63 | “There is not such a woman from …               | There is not such another woman upon …        |
-| 11:22 | 11:20                   |  0.50 | Holofernes said to her, “God did well …         | And Holofernes said to her: God hath …        |
-| 11:23 | 11:21                   |  0.30 | And now you are beautiful in your …             | And because thy promise is good, if …         |
-| 11:4  | —                       |       | for there is no one that will …                 |                                               |
-| 11:5  | —                       |       | And Judith said to him, “Receive the …          |                                               |
-| 11:10 | —                       |       | Therefore, O lord and master, don’t neglect …   |                                               |
-| 11:11 | —                       |       | And now, that my lord may not …                 |                                               |
-| 11:14 | —                       |       | They have sent some to Jerusalem, because …     |                                               |
-| 11:15 | —                       |       | When these instructions come to them and …      |                                               |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 11:1 | 11:1 | 0.50 | Holofernes said to her, “Woman, take courage. … | Then Holofernes said to her: Be of … |
+| 11:2 | 11:2 | 0.67 | And now, if your people who dwell … | And if thy people had not despised … |
+| 11:3 | 11:3 | 0.50 | And now tell me why you fled … | But now tell me, for what cause … |
+| 11:6 | 11:4 | 0.50 | If you will follow the words of … | And Judith said to him: Receive the … |
+| 11:7 | 11:5 | 0.60 | As Nebuchadnezzar king of all the earth … | For as Nabuchodonosor the king of the … |
+| 11:8 | 11:6 | 0.19 | For we have heard of your wisdom … | For the industry of thy mind is … |
+| 11:9 | 11:7, 11:8, 11:9, 11:10 | 0.15 | And now as concerning the matter which … | It is known also what Achior said, … |
+| 11:12 | 11:11 | 0.20 | Since their food failed them, and all … | And they have a design even to … |
+| 11:13 | 11:12 | 0.22 | They are resolved to spend the first … | And the consecrated things of the Lord … |
+| 11:16 | 11:13 | 0.57 | Therefore I your servant, knowing all this, … | And I thy handmaid knowing this, am … |
+| 11:17 | 11:14 | 0.50 | For your servant is religious, and serves … | For I thy handmaid worship God even … |
+| 11:18 | 11:15 | 0.40 | Then I will come and tell you. … | And he will tell me when he … |
+| 11:19 | 11:16, 11:17 | 0.57 | And I will lead you through the … | Because these things are told me by … |
+| 11:20 | 11:18 | 0.71 | Her words were pleasing in the sight … | And all these words pleased Holofernes, and … |
+| 11:21 | 11:19 | 0.63 | “There is not such a woman from … | There is not such another woman upon … |
+| 11:22 | 11:20 | 0.50 | Holofernes said to her, “God did well … | And Holofernes said to her: God hath … |
+| 11:23 | 11:21 | 0.30 | And now you are beautiful in your … | And because thy promise is good, if … |
+| 11:4 | — | | for there is no one that will … | |
+| 11:5 | — | | And Judith said to him, “Receive the … | |
+| 11:10 | — | | Therefore, O lord and master, don’t neglect … | |
+| 11:11 | — | | And now, that my lord may not … | |
+| 11:14 | — | | They have sent some to Jerusalem, because … | |
+| 11:15 | — | | When these instructions come to them and … | |
 
 **Segment** WEBC 12:1-12:20 ↔ Douay-Rheims 12:1-12:20 — Chapter 12.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                         | Douay-Rheims opens                            |
-| ----- | ------------ | ----: | -------------------------------------------------- | --------------------------------------------- |
-| 12:1  | 12:1         |  0.20 | He commanded that she should be brought …          | Then he ordered that she should go …          |
-| 12:2  | 12:2         |  0.50 | And Judith said, “I can’t eat of …                 | And Judith answered him and said: Now …       |
-| 12:3  | 12:3         |  0.40 | And Holofernes said to her, “But if …              | And Holofernes said to her: If these …        |
-| 12:4  | 12:4, 12:5   |  0.50 | And Judith said to him, “As your …                 | And Judith said: As thy soul liveth, …        |
-| 12:6  | 12:6         |  0.17 | and sent to Holofernes, saying, “Let my …          | And he commanded his chamberlains, that she … |
-| 12:7  | 12:7         |  1.00 | Holofernes commanded his guards that they should … | And she went out in the nights …              |
-| 12:8  | 12:8         |  0.71 | And when she came up, she implored …               | And as she came up, she prayed …              |
-| 12:9  | 12:9         |  0.44 | She came in clean and remained in …                | And going in, she remained pure in …          |
-| 12:10 | 12:10, 12:11 |  0.57 | It came to pass on the fourth …                    | And it came to pass on the …                  |
-| 12:13 | 12:12        |  0.33 | Bagoas went from the presence of Holofernes, …     | Then Vagao went in to Judith, and …           |
-| 12:14 | 12:13, 12:14 |  0.22 | Judith said to him, “Who am I, …                   | And Judith answered him: Who am I, …          |
-| 12:15 | 12:15        |  0.29 | She arose, and decked herself with her …           | And she arose and dressed herself out …       |
-| 12:16 | 12:16        |  0.40 | Judith came in and sat down, and …                 | And the heart of Holofernes was smitten, …    |
-| 12:17 | 12:17        |  1.00 | Holofernes said to her, “Drink now, and …          | And Holofernes said to her: Drink now, …      |
-| 12:18 | 12:18        |  0.86 | Judith said, “I will drink now, my …               | And Judith said: I will drink my …            |
-| 12:19 | 12:19        |  0.80 | Then she took and ate and drank …                  | And she took and ate and drank …              |
-| 12:20 | 12:20        |  0.45 | Holofernes took great delight in her, and …        | And Holofernes was made merry on her …        |
-| 12:5  | —            |       | Then Holofernes’ servants brought her into the …   |                                               |
-| 12:11 | —            |       | And he said to Bagoas the eunuch, …                |                                               |
-| 12:12 | —            |       | For behold, it would be a disgrace …               |                                               |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 12:1 | 12:1 | 0.20 | He commanded that she should be brought … | Then he ordered that she should go … |
+| 12:2 | 12:2 | 0.50 | And Judith said, “I can’t eat of … | And Judith answered him and said: Now … |
+| 12:3 | 12:3 | 0.40 | And Holofernes said to her, “But if … | And Holofernes said to her: If these … |
+| 12:4 | 12:4, 12:5 | 0.50 | And Judith said to him, “As your … | And Judith said: As thy soul liveth, … |
+| 12:6 | 12:6 | 0.17 | and sent to Holofernes, saying, “Let my … | And he commanded his chamberlains, that she … |
+| 12:7 | 12:7 | 1.00 | Holofernes commanded his guards that they should … | And she went out in the nights … |
+| 12:8 | 12:8 | 0.71 | And when she came up, she implored … | And as she came up, she prayed … |
+| 12:9 | 12:9 | 0.44 | She came in clean and remained in … | And going in, she remained pure in … |
+| 12:10 | 12:10, 12:11 | 0.57 | It came to pass on the fourth … | And it came to pass on the … |
+| 12:13 | 12:12 | 0.33 | Bagoas went from the presence of Holofernes, … | Then Vagao went in to Judith, and … |
+| 12:14 | 12:13, 12:14 | 0.22 | Judith said to him, “Who am I, … | And Judith answered him: Who am I, … |
+| 12:15 | 12:15 | 0.29 | She arose, and decked herself with her … | And she arose and dressed herself out … |
+| 12:16 | 12:16 | 0.40 | Judith came in and sat down, and … | And the heart of Holofernes was smitten, … |
+| 12:17 | 12:17 | 1.00 | Holofernes said to her, “Drink now, and … | And Holofernes said to her: Drink now, … |
+| 12:18 | 12:18 | 0.86 | Judith said, “I will drink now, my … | And Judith said: I will drink my … |
+| 12:19 | 12:19 | 0.80 | Then she took and ate and drank … | And she took and ate and drank … |
+| 12:20 | 12:20 | 0.45 | Holofernes took great delight in her, and … | And Holofernes was made merry on her … |
+| 12:5 | — | | Then Holofernes’ servants brought her into the … | |
+| 12:11 | — | | And he said to Bagoas the eunuch, … | |
+| 12:12 | — | | For behold, it would be a disgrace … | |
 
 **Segment** WEBC 13:1-13:20 ↔ Douay-Rheims 13:1-13:31 — Chapter 13.
 
-| WEBC  | Douay-Rheims                             | Score | WEBC opens                                    | Douay-Rheims opens                      |
-| ----- | ---------------------------------------- | ----: | --------------------------------------------- | --------------------------------------- |
-| 13:1  | 13:1, 13:2                               |  0.21 | But when the evening had come, his …          | And when it was grown late, his …       |
-| 13:2  | 13:3, 13:4                               |  0.50 | But Judith was left alone in the …            | And Judith was alone in the chamber.    |
-| 13:3  | 13:5, 13:6                               |  0.21 | Judith had said to her servant that …         | And Judith spoke to her maid to …       |
-| 13:4  | 13:7                                     |  0.26 | All went away from her presence, and …        | Saying: Strengthen me, O Lord God of …  |
-| 13:6  | 13:8                                     |  0.29 | She came to the bedpost which was …           | And when she had said this, she …       |
-| 13:7  | 13:9                                     |  0.67 | She drew near to the bed, took …              | And when she had drawn it out, …        |
-| 13:8  | 13:10                                    |  0.83 | She struck twice upon his neck with …         | And she struck twice upon his neck, …   |
-| 13:9  | 13:11                                    |  0.56 | tumbled his body down from the bed, …         | And after a while she went out, …       |
-| 13:10 | 13:12                                    |  0.69 | and she put it in her bag …                   | And they two went out according to …    |
-| 13:11 | 13:13                                    |  0.73 | Judith said afar off to the watchmen …        | And Judith from afar off cried to …     |
-| 13:12 | 13:14                                    |  0.88 | It came to pass, when the men …               | And it came to pass, when the …         |
-| 13:13 | 13:15, 13:16, 13:17                      |  0.25 | They all ran together, both small and …       | And all ran to meet her from …          |
-| 13:14 | 13:18                                    |  0.36 | She said to them with a loud …                | And by me his handmaid he hath …        |
-| 13:15 | 13:19, 13:20, 13:21                      |  0.47 | Then she took the head out of …               | Then she brought forth the head of …    |
-| 13:17 | 13:22, 13:23                             |  0.27 | All the people were exceedingly amazed, and … | And they all adored the Lord, and …     |
-| 13:18 | 13:24                                    |  0.80 | Ozias said to her, “Blessed are you, …        | Blessed be the Lord who made heaven …   |
-| 13:19 | 13:25                                    |  0.29 | For your hope will not depart from …          | Because he hath so magnified thy name … |
-| 13:20 | 13:26, 13:27, 13:28, 13:29, 13:30, 13:31 |  0.05 | May God turn these things to you …            | And all the people said: So be …        |
-| 13:5  | —                                        |       | For now is the time to help …                 |                                         |
-| 13:16 | —                                        |       | And as the Lord lives, who preserved …        |                                         |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 13:1 | 13:1, 13:2 | 0.21 | But when the evening had come, his … | And when it was grown late, his … |
+| 13:2 | 13:3, 13:4 | 0.50 | But Judith was left alone in the … | And Judith was alone in the chamber. |
+| 13:3 | 13:5, 13:6 | 0.21 | Judith had said to her servant that … | And Judith spoke to her maid to … |
+| 13:4 | 13:7 | 0.26 | All went away from her presence, and … | Saying: Strengthen me, O Lord God of … |
+| 13:6 | 13:8 | 0.29 | She came to the bedpost which was … | And when she had said this, she … |
+| 13:7 | 13:9 | 0.67 | She drew near to the bed, took … | And when she had drawn it out, … |
+| 13:8 | 13:10 | 0.83 | She struck twice upon his neck with … | And she struck twice upon his neck, … |
+| 13:9 | 13:11 | 0.56 | tumbled his body down from the bed, … | And after a while she went out, … |
+| 13:10 | 13:12 | 0.69 | and she put it in her bag … | And they two went out according to … |
+| 13:11 | 13:13 | 0.73 | Judith said afar off to the watchmen … | And Judith from afar off cried to … |
+| 13:12 | 13:14 | 0.88 | It came to pass, when the men … | And it came to pass, when the … |
+| 13:13 | 13:15, 13:16, 13:17 | 0.25 | They all ran together, both small and … | And all ran to meet her from … |
+| 13:14 | 13:18 | 0.36 | She said to them with a loud … | And by me his handmaid he hath … |
+| 13:15 | 13:19, 13:20, 13:21 | 0.47 | Then she took the head out of … | Then she brought forth the head of … |
+| 13:17 | 13:22, 13:23 | 0.27 | All the people were exceedingly amazed, and … | And they all adored the Lord, and … |
+| 13:18 | 13:24 | 0.80 | Ozias said to her, “Blessed are you, … | Blessed be the Lord who made heaven … |
+| 13:19 | 13:25 | 0.29 | For your hope will not depart from … | Because he hath so magnified thy name … |
+| 13:20 | 13:26, 13:27, 13:28, 13:29, 13:30, 13:31 | 0.05 | May God turn these things to you … | And all the people said: So be … |
+| 13:5 | — | | For now is the time to help … | |
+| 13:16 | — | | And as the Lord lives, who preserved … | |
 
 **Segment** WEBC 14:1-14:19 ↔ Douay-Rheims 14:1-14:18 — Chapter 14.
 
-| WEBC  | Douay-Rheims                     | Score | WEBC opens                                        | Douay-Rheims opens                          |
-| ----- | -------------------------------- | ----: | ------------------------------------------------- | ------------------------------------------- |
-| 14:1  | 14:1                             |  0.71 | Judith said to them, “Hear me now, …              | And Judith said to all the people: …        |
-| 14:2  | 14:2, 14:3                       |  0.26 | It will be, so soon as the …                      | And as soon as the sun shall …              |
-| 14:3  | 14:4                             |  0.64 | These will take up their full armor, …            | And when the captains of them shall …       |
-| 14:7  | 14:5                             |  0.17 | But when they had recovered him, he …             | And when you shall know that they …         |
-| 14:10 | 14:6                             |  0.62 | But when Achior saw all the things …              | Then Achior seeing the power that the …     |
-| 14:11 | 14:7                             |  0.36 | But as soon as the morning arose, …               | And immediately at break of day, they …     |
-| 14:13 | 14:8                             |  0.40 | They came to Holofernes’ tent, and said …         | And the watchmen seeing this, ran to …      |
-| 14:14 | 14:9, 14:10, 14:11, 14:12, 14:13 |  0.60 | Bagoas went in, and knocked at the …              | And they that were in the tent …            |
-| 14:16 | 14:14                            |  0.63 | He cried with a loud voice, with …                | But when with hearkening, he perceived no … |
-| 14:17 | 14:15                            |  0.67 | He entered into the tent where Judith …           | And he went into the tent of …              |
-| 14:18 | 14:16, 14:17                     |  0.53 | “The slaves have dealt treacherously! One woman … | And said: One Hebrew woman hath made …      |
-| 14:19 | 14:18                            |  0.60 | But when the rulers of the army …                 | And there was a very great cry …            |
-| 14:4  | —                                |       | You men, and all that inhabit every …             |                                             |
-| 14:5  | —                                |       | But before you do these things, summon …          |                                             |
-| 14:6  | —                                |       | And they called Achior out of the …               |                                             |
-| 14:8  | —                                |       | Now tell me all the things that …                 |                                             |
-| 14:9  | —                                |       | But when she finished speaking, the people …      |                                             |
-| 14:12 | —                                |       | But when the children of Asshur saw …             |                                             |
-| 14:15 | —                                |       | But when no one answered, he opened …             |                                             |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 14:1 | 14:1 | 0.71 | Judith said to them, “Hear me now, … | And Judith said to all the people: … |
+| 14:2 | 14:2, 14:3 | 0.26 | It will be, so soon as the … | And as soon as the sun shall … |
+| 14:3 | 14:4 | 0.64 | These will take up their full armor, … | And when the captains of them shall … |
+| 14:7 | 14:5 | 0.17 | But when they had recovered him, he … | And when you shall know that they … |
+| 14:10 | 14:6 | 0.62 | But when Achior saw all the things … | Then Achior seeing the power that the … |
+| 14:11 | 14:7 | 0.36 | But as soon as the morning arose, … | And immediately at break of day, they … |
+| 14:13 | 14:8 | 0.40 | They came to Holofernes’ tent, and said … | And the watchmen seeing this, ran to … |
+| 14:14 | 14:9, 14:10, 14:11, 14:12, 14:13 | 0.60 | Bagoas went in, and knocked at the … | And they that were in the tent … |
+| 14:16 | 14:14 | 0.63 | He cried with a loud voice, with … | But when with hearkening, he perceived no … |
+| 14:17 | 14:15 | 0.67 | He entered into the tent where Judith … | And he went into the tent of … |
+| 14:18 | 14:16, 14:17 | 0.53 | “The slaves have dealt treacherously! One woman … | And said: One Hebrew woman hath made … |
+| 14:19 | 14:18 | 0.60 | But when the rulers of the army … | And there was a very great cry … |
+| 14:4 | — | | You men, and all that inhabit every … | |
+| 14:5 | — | | But before you do these things, summon … | |
+| 14:6 | — | | And they called Achior out of the … | |
+| 14:8 | — | | Now tell me all the things that … | |
+| 14:9 | — | | But when she finished speaking, the people … | |
+| 14:12 | — | | But when the children of Asshur saw … | |
+| 14:15 | — | | But when no one answered, he opened … | |
 
 **Segment** WEBC 15:1-15:13 ↔ Douay-Rheims 15:1-15:15 — Chapter 15.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                       | Douay-Rheims opens                               |
-| ----- | ------------ | ----: | ------------------------------------------------ | ------------------------------------------------ |
-| 15:1  | 15:1         |  0.25 | When those who were in the tents …               | And when all the army heard that …               |
-| 15:2  | 15:2         |  0.20 | Trembling and fear fell upon them, and …         | So that no one spoke to his …                    |
-| 15:3  | 15:3, 15:4   |  0.15 | Those who had encamped in the hill …             | So the children of Israel seeing them …          |
-| 15:4  | 15:5         |  0.43 | Ozias sent to Betomasthaim, Bebai, Chobai, and … | And Ozias sent messengers through all the …      |
-| 15:5  | 15:6         |  0.29 | But when the children of Israel heard …          | And every country, and every city, sent …        |
-| 15:6  | 15:7         |  0.40 | The rest of the people who lived …               | And the rest that were in Bethulia …             |
-| 15:7  | 15:8         |  0.19 | The children of Israel returned from the …       | But they that returned conquerors to Bethulia, … |
-| 15:8  | 15:9         |  0.67 | Joakim the high priest, and the elders …         | And Joachim the high priest came from …          |
-| 15:9  | 15:10, 15:11 |  0.40 | When they came to her, they all …                | And when she was come out to …                   |
-| 15:10 | 15:12        |  1.00 | You have done all these things by …              | And all the people said: So be …                 |
-| 15:11 | 15:13, 15:14 |  0.33 | And the people plundered the camp for …          | And thirty days were scarce sufficient for …     |
-| 15:13 | 15:15        |  0.33 | Then they made themselves garlands of olive, …   | And all the people rejoiced, with the …          |
-| 15:12 | —            |       | And all the women of Israel ran …                |                                                  |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 15:1 | 15:1 | 0.25 | When those who were in the tents … | And when all the army heard that … |
+| 15:2 | 15:2 | 0.20 | Trembling and fear fell upon them, and … | So that no one spoke to his … |
+| 15:3 | 15:3, 15:4 | 0.15 | Those who had encamped in the hill … | So the children of Israel seeing them … |
+| 15:4 | 15:5 | 0.43 | Ozias sent to Betomasthaim, Bebai, Chobai, and … | And Ozias sent messengers through all the … |
+| 15:5 | 15:6 | 0.29 | But when the children of Israel heard … | And every country, and every city, sent … |
+| 15:6 | 15:7 | 0.40 | The rest of the people who lived … | And the rest that were in Bethulia … |
+| 15:7 | 15:8 | 0.19 | The children of Israel returned from the … | But they that returned conquerors to Bethulia, … |
+| 15:8 | 15:9 | 0.67 | Joakim the high priest, and the elders … | And Joachim the high priest came from … |
+| 15:9 | 15:10, 15:11 | 0.40 | When they came to her, they all … | And when she was come out to … |
+| 15:10 | 15:12 | 1.00 | You have done all these things by … | And all the people said: So be … |
+| 15:11 | 15:13, 15:14 | 0.33 | And the people plundered the camp for … | And thirty days were scarce sufficient for … |
+| 15:13 | 15:15 | 0.33 | Then they made themselves garlands of olive, … | And all the people rejoiced, with the … |
+| 15:12 | — | | And all the women of Israel ran … | |
 
 **Doubts** (2):
 
@@ -922,259 +922,259 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 **Segment** WEBC 1:1!a ↔ Douay-Rheims 11:2-12:6 — Addition A: Mordecai's dream and the eunuchs' plot.
 
-| WEBC  | Douay-Rheims                                                                                            | Score | WEBC opens                         | Douay-Rheims opens                |
-| ----- | ------------------------------------------------------------------------------------------------------- | ----: | ---------------------------------- | --------------------------------- |
-| 1:1!a | 11:2, 11:3, 11:4, 11:5, 11:6, 11:7, 11:8, 11:9, 11:10, 11:11, 11:12, 12:1, 12:2, 12:3, 12:4, 12:5, 12:6 |  0.50 | [In the second year of the reign … | In the second year of the reign … |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 1:1!a | 11:2, 11:3, 11:4, 11:5, 11:6, 11:7, 11:8, 11:9, 11:10, 11:11, 11:12, 12:1, 12:2, 12:3, 12:4, 12:5, 12:6 | 0.50 | [In the second year of the reign … | In the second year of the reign … |
 
 **Segment** WEBC 1:1!b-3:12 ↔ Douay-Rheims 1:1-3:12 — The story, chapters 1–3.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                             | Douay-Rheims opens                                 |
-| ----- | ------------ | ----: | ------------------------------------------------------ | -------------------------------------------------- |
-| 1:1!b | 1:1          |  0.80 | And it came to pass after these …                      | In the days of Assuerus, who reigned …             |
-| 1:2   | 1:2          |  0.33 | in those days, when King Ahasuerus was …               | When he sat on the throne of …                     |
-| 1:3   | 1:3          |  0.60 | in the third year of his reign, …                      | Now in the third year of his …                     |
-| 1:4   | 1:4          |  0.44 | After this—after he had shown them the …               | That he might shew the riches of …                 |
-| 1:5   | 1:5          |  0.40 | when the days of the wedding feast …                   | And when the days of the feast …                   |
-| 1:6   | 1:6          |  0.26 | which was adorned with fine linen and …                | And there were hung up on every …                  |
-| 1:7   | 1:7          |  0.25 | There were gold and silver cups, and …                 | And they that were invited, drank in …             |
-| 1:8   | 1:8          |  0.20 | This banquet was not according to the …                | Neither was there any one to compel …              |
-| 1:9   | 1:9          |  0.60 | Also Vashti the queen made a banquet …                 | Also Vasthi the queen made a feast …               |
-| 1:10  | 1:10         |  0.33 | Now on the seventh day, the king, …                    | Now on the seventh day, when the …                 |
-| 1:11  | 1:11         |  0.60 | to bring in the queen to him, …                        | To bring in queen Vasthi before the …              |
-| 1:12  | 1:12         |  0.38 | But queen Vashti refused to come with …                | But she refused, and would not come …              |
-| 1:13  | 1:13         |  0.14 | And he said to his friends, “This …                    | Baked the wise men, who according to …             |
-| 1:14  | 1:14         |  0.50 | So Arkesaeus, Sarsathaeus, and Malisear, the princes … | (Now the chief and nearest him were, …             |
-| 1:15  | 1:15         |  0.17 | and reported to him according to the …                 | What sentence ought to pass upon Vasthi …          |
-| 1:16  | 1:16         |  0.50 | And Memucan said to the king and …                     | And Mamuchan answered, in the hearing of …         |
-| 1:17  | 1:17         |  0.22 | for he has told them the words …                       | For this deed of the queen will …                  |
-| 1:18  | 1:18         |  0.42 | so this day the other wives of …                       | And by this example all the wives …                |
-| 1:19  | 1:19         |  0.50 | If then it seems good to the …                         | If it please thee, let an edict …                  |
-| 1:20  | 1:20         |  0.17 | Let the law of the king which …                        | And let this be published through all …            |
-| 1:21  | 1:21         |  0.60 | This advice pleased the king and the …                 | His counsel pleased the king, and the …            |
-| 1:22  | 1:22         |  0.36 | and sent into all his kingdom through …                | And he sent letters to all the …                   |
-| 2:1   | 2:1          |  0.13 | After this, the king’s anger was pacified, …           | After this, when the wrath of king …               |
-| 2:2   | 2:2          |  0.86 | Then the servants of the king said, …                  | And the king’s servants and his officers …         |
-| 2:3   | 2:3          |  0.38 | Let the king appoint local governors in …              | And let some persons be sent through …             |
-| 2:4   | 2:4          |  0.57 | Let the woman who pleases the king …                   | And whosoever among them all shall please …        |
-| 2:5   | 2:5          |  0.25 | Now there was a Jew in the …                           | There was a man in the city …                      |
-| 2:6   | 2:6          |  0.56 | He had been brought as a prisoner …                    | Who had been carried away from Jerusalem …         |
-| 2:7   | 2:7          |  0.53 | He had a foster child, daughter of …                   | And he had brought up his brother’s …              |
-| 2:8   | 2:8          |  0.40 | And because the king’s ordinance was published, …      | And when the king’s ordinance was noised …         |
-| 2:9   | 2:9          |  0.33 | The lady pleased him, and she found …                  | And she pleased him, and found favour …            |
-| 2:10  | 2:10         |  0.29 | But Esther didn’t reveal her family or …               | And she would not tell him her …                   |
-| 2:11  | 2:11         |  0.44 | But Mordecai used to walk every day …                  | And he walked every day before the …               |
-| 2:12  | 2:12         |  0.50 | Now this was the time for a …                          | Now when every virgin’s turn came to …             |
-| 2:13  | 2:13         |  0.30 | And then the lady goes in to …                         | And when they were going in to …                   |
-| 2:14  | 2:14         |  0.35 | She enters in the evening, and in …                    | And she that went in at evening, …                 |
-| 2:15  | 2:15         |  0.37 | And when the time was fulfilled for …                  | And as the time came orderly about, …              |
-| 2:16  | 2:16         |  0.50 | So Esther went in to King Ahasuerus …                  | So she was brought to the chamber …                |
-| 2:17  | 2:17         |  0.36 | The king loved Esther, and she found …                 | And the king loved her more than …                 |
-| 2:18  | 2:18         |  0.12 | The king made a banquet for all …                      | And he commanded a magnificent feast to …          |
-| 2:19  | 2:19         |  0.00 | Meanwhile, Mordecai served in the courtyard.           | And when the virgins were sought the …             |
-| 2:20  | 2:20         |  0.38 | Now Esther had not revealed her country, …             | Neither had Esther as yet declared her …           |
-| 2:21  | 2:21         |  0.25 | Two chamberlains of the king, the chiefs …             | At that time, therefore, when Mardochai abode …    |
-| 2:22  | 2:22         |  0.22 | And the matter was discovered by Mordecai, …           | And Mardochai had notice of it, and …              |
-| 2:23  | 2:23         |  0.20 | And the king examined the two chamberlains …           | It was inquired into, and found out: …             |
-| 3:1   | 3:1          |  0.31 | After this, King Ahasuerus highly honored Haman …      | After these things, king Assuerus advanced Aman, … |
-| 3:2   | 3:2          |  0.22 | All in the palace bowed down to …                      | And all the king’s servants, that were …           |
-| 3:3   | 3:3          |  0.50 | And they in the king’s palace said …                   | And the king’s servants that were chief …          |
-| 3:4   | 3:4          |  0.09 | They questioned him daily, but he didn’t …             | And when they were saying this often, …            |
-| 3:5   | 3:5          |  0.00 | When Haman understood that Mordecai didn’t bow …       | Now when Aman had heard this, and …                |
-| 3:6   | 3:6          |  0.29 | and plotted to utterly destroy all the …               | And he counted it nothing to lay …                 |
-| 3:7   | 3:7          |  0.44 | In the twelfth year of the reign …                     | In the first month (which is called …              |
-| 3:8   | 3:8          |  0.36 | So he spoke to King Ahasuerus, saying, …               | And Aman said to king Assuerus: There …            |
-| 3:9   | 3:9          |  0.63 | If it seem good to the king, …                         | If it please thee, decree that they …              |
-| 3:10  | 3:10         |  0.55 | So the king took off his ring, …                       | And the king took the ring that …                  |
-| 3:11  | 3:11         |  0.17 | The king said to Haman, “Keep the …                    | And he said to him: As to …                        |
-| 3:12  | 3:12         |  0.52 | So the king’s recorders were called in …               | And the king’s scribes were called in …            |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 1:1!b | 1:1 | 0.80 | And it came to pass after these … | In the days of Assuerus, who reigned … |
+| 1:2 | 1:2 | 0.33 | in those days, when King Ahasuerus was … | When he sat on the throne of … |
+| 1:3 | 1:3 | 0.60 | in the third year of his reign, … | Now in the third year of his … |
+| 1:4 | 1:4 | 0.44 | After this—after he had shown them the … | That he might shew the riches of … |
+| 1:5 | 1:5 | 0.40 | when the days of the wedding feast … | And when the days of the feast … |
+| 1:6 | 1:6 | 0.26 | which was adorned with fine linen and … | And there were hung up on every … |
+| 1:7 | 1:7 | 0.25 | There were gold and silver cups, and … | And they that were invited, drank in … |
+| 1:8 | 1:8 | 0.20 | This banquet was not according to the … | Neither was there any one to compel … |
+| 1:9 | 1:9 | 0.60 | Also Vashti the queen made a banquet … | Also Vasthi the queen made a feast … |
+| 1:10 | 1:10 | 0.33 | Now on the seventh day, the king, … | Now on the seventh day, when the … |
+| 1:11 | 1:11 | 0.60 | to bring in the queen to him, … | To bring in queen Vasthi before the … |
+| 1:12 | 1:12 | 0.38 | But queen Vashti refused to come with … | But she refused, and would not come … |
+| 1:13 | 1:13 | 0.14 | And he said to his friends, “This … | Baked the wise men, who according to … |
+| 1:14 | 1:14 | 0.50 | So Arkesaeus, Sarsathaeus, and Malisear, the princes … | (Now the chief and nearest him were, … |
+| 1:15 | 1:15 | 0.17 | and reported to him according to the … | What sentence ought to pass upon Vasthi … |
+| 1:16 | 1:16 | 0.50 | And Memucan said to the king and … | And Mamuchan answered, in the hearing of … |
+| 1:17 | 1:17 | 0.22 | for he has told them the words … | For this deed of the queen will … |
+| 1:18 | 1:18 | 0.42 | so this day the other wives of … | And by this example all the wives … |
+| 1:19 | 1:19 | 0.50 | If then it seems good to the … | If it please thee, let an edict … |
+| 1:20 | 1:20 | 0.17 | Let the law of the king which … | And let this be published through all … |
+| 1:21 | 1:21 | 0.60 | This advice pleased the king and the … | His counsel pleased the king, and the … |
+| 1:22 | 1:22 | 0.36 | and sent into all his kingdom through … | And he sent letters to all the … |
+| 2:1 | 2:1 | 0.13 | After this, the king’s anger was pacified, … | After this, when the wrath of king … |
+| 2:2 | 2:2 | 0.86 | Then the servants of the king said, … | And the king’s servants and his officers … |
+| 2:3 | 2:3 | 0.38 | Let the king appoint local governors in … | And let some persons be sent through … |
+| 2:4 | 2:4 | 0.57 | Let the woman who pleases the king … | And whosoever among them all shall please … |
+| 2:5 | 2:5 | 0.25 | Now there was a Jew in the … | There was a man in the city … |
+| 2:6 | 2:6 | 0.56 | He had been brought as a prisoner … | Who had been carried away from Jerusalem … |
+| 2:7 | 2:7 | 0.53 | He had a foster child, daughter of … | And he had brought up his brother’s … |
+| 2:8 | 2:8 | 0.40 | And because the king’s ordinance was published, … | And when the king’s ordinance was noised … |
+| 2:9 | 2:9 | 0.33 | The lady pleased him, and she found … | And she pleased him, and found favour … |
+| 2:10 | 2:10 | 0.29 | But Esther didn’t reveal her family or … | And she would not tell him her … |
+| 2:11 | 2:11 | 0.44 | But Mordecai used to walk every day … | And he walked every day before the … |
+| 2:12 | 2:12 | 0.50 | Now this was the time for a … | Now when every virgin’s turn came to … |
+| 2:13 | 2:13 | 0.30 | And then the lady goes in to … | And when they were going in to … |
+| 2:14 | 2:14 | 0.35 | She enters in the evening, and in … | And she that went in at evening, … |
+| 2:15 | 2:15 | 0.37 | And when the time was fulfilled for … | And as the time came orderly about, … |
+| 2:16 | 2:16 | 0.50 | So Esther went in to King Ahasuerus … | So she was brought to the chamber … |
+| 2:17 | 2:17 | 0.36 | The king loved Esther, and she found … | And the king loved her more than … |
+| 2:18 | 2:18 | 0.12 | The king made a banquet for all … | And he commanded a magnificent feast to … |
+| 2:19 | 2:19 | 0.00 | Meanwhile, Mordecai served in the courtyard. | And when the virgins were sought the … |
+| 2:20 | 2:20 | 0.38 | Now Esther had not revealed her country, … | Neither had Esther as yet declared her … |
+| 2:21 | 2:21 | 0.25 | Two chamberlains of the king, the chiefs … | At that time, therefore, when Mardochai abode … |
+| 2:22 | 2:22 | 0.22 | And the matter was discovered by Mordecai, … | And Mardochai had notice of it, and … |
+| 2:23 | 2:23 | 0.20 | And the king examined the two chamberlains … | It was inquired into, and found out: … |
+| 3:1 | 3:1 | 0.31 | After this, King Ahasuerus highly honored Haman … | After these things, king Assuerus advanced Aman, … |
+| 3:2 | 3:2 | 0.22 | All in the palace bowed down to … | And all the king’s servants, that were … |
+| 3:3 | 3:3 | 0.50 | And they in the king’s palace said … | And the king’s servants that were chief … |
+| 3:4 | 3:4 | 0.09 | They questioned him daily, but he didn’t … | And when they were saying this often, … |
+| 3:5 | 3:5 | 0.00 | When Haman understood that Mordecai didn’t bow … | Now when Aman had heard this, and … |
+| 3:6 | 3:6 | 0.29 | and plotted to utterly destroy all the … | And he counted it nothing to lay … |
+| 3:7 | 3:7 | 0.44 | In the twelfth year of the reign … | In the first month (which is called … |
+| 3:8 | 3:8 | 0.36 | So he spoke to King Ahasuerus, saying, … | And Aman said to king Assuerus: There … |
+| 3:9 | 3:9 | 0.63 | If it seem good to the king, … | If it please thee, decree that they … |
+| 3:10 | 3:10 | 0.55 | So the king took off his ring, … | And the king took the ring that … |
+| 3:11 | 3:11 | 0.17 | The king said to Haman, “Keep the … | And he said to him: As to … |
+| 3:12 | 3:12 | 0.52 | So the king’s recorders were called in … | And the king’s scribes were called in … |
 
 **Segment** WEBC 3:13 ↔ Douay-Rheims 3:13, 13:1-7 — 3:13 and Addition B, the king's decree, which the WEBC sets inside 3:13.
 
-| WEBC | Douay-Rheims                                   | Score | WEBC opens                                    | Douay-Rheims opens                      |
-| ---- | ---------------------------------------------- | ----: | --------------------------------------------- | --------------------------------------- |
-| 3:13 | 3:13, 13:1, 13:2, 13:3, 13:4, 13:5, 13:6, 13:7 |  0.51 | The message was sent by couriers throughout … | Were sent by the king’s messengers to … |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 3:13 | 3:13, 13:1, 13:2, 13:3, 13:4, 13:5, 13:6, 13:7 | 0.51 | The message was sent by couriers throughout … | Were sent by the king’s messengers to … |
 
 **Segment** WEBC 3:14-4:17 ↔ Douay-Rheims 3:14-4:8, 15:1-3, 4:9-4:17 — The story, 3:14–4:17. The Douay-Rheims' 15:1–3 (Mordecai's charge to Esther) is the Greek 4:8, so it sits after its 4:8.
 
-| WEBC | Douay-Rheims    | Score | WEBC opens                                      | Douay-Rheims opens                           |
-| ---- | --------------- | ----: | ----------------------------------------------- | -------------------------------------------- |
-| 3:14 | 3:14            |  0.38 | Copies of the letters were published in …       | And the contents of the letters were …       |
-| 3:15 | 3:15            |  0.22 | This business was hastened also in Susa. …      | The couriers that were sent made haste …     |
-| 4:1  | 4:1             |  0.40 | But Mordecai, having perceived what was done, … | Now when Mardochai had heard these things, … |
-| 4:2  | 4:2             |  0.60 | He came to the king’s gate, and …               | And he came lamenting in this manner …       |
-| 4:3  | 4:3             |  0.38 | And in every province where the letters …       | And in all provinces, towns, and places, …   |
-| 4:4  | 4:4             |  0.43 | The queen’s maids and chamberlains went in …    | Then Esther’s maids and her eunuchs went …   |
-| 4:5  | 4:5, 4:6        |  0.22 | So Esther called for her chamberlain Hathach, … | And she called for Athach the eunuch, …      |
-| 4:7  | 4:7, 15:1, 15:2 |  0.21 | Mordecai showed him what was done, and …        | And Mardochai told him all that had …        |
-| 4:8  | 4:8, 15:3       |  0.60 | And he gave him the copy of …                   | He gave him also a copy of …                 |
-| 4:9  | 4:9             |  0.50 | So Hathach went in and told her …               | And Athach went back and told Esther …       |
-| 4:10 | 4:10            |  0.25 | Esther said to Hathach, “Go to Mordecai, …      | She answered him, and bade him say …         |
-| 4:11 | 4:11            |  0.58 | ‘All the nations of the empire know …           | All the king’s servants, and all the …       |
-| 4:12 | 4:12            |  0.00 | So Hathach reported to Mordecai all the …       | And when Mardochai had heard this,           |
-| 4:13 | 4:13            |  0.18 | Then Mordecai said to Hathach, “Go, and …       | He sent word to Esther again, saying: …      |
-| 4:14 | 4:14            |  0.44 | For if you keep quiet on this …                 | For if thou wilt now hold thy …              |
-| 4:15 | 4:15            |  0.40 | And Esther sent the messenger who came …        | And again Esther sent to Mardochai in …      |
-| 4:16 | 4:16            |  0.53 | “Go and assemble the Jews that are …            | Go, and gather together all the Jews …       |
-| 4:17 | 4:17            |  0.75 | So Mordecai went and did all that …             | So Mardochai went, and did all that …        |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 3:14 | 3:14 | 0.38 | Copies of the letters were published in … | And the contents of the letters were … |
+| 3:15 | 3:15 | 0.22 | This business was hastened also in Susa. … | The couriers that were sent made haste … |
+| 4:1 | 4:1 | 0.40 | But Mordecai, having perceived what was done, … | Now when Mardochai had heard these things, … |
+| 4:2 | 4:2 | 0.60 | He came to the king’s gate, and … | And he came lamenting in this manner … |
+| 4:3 | 4:3 | 0.38 | And in every province where the letters … | And in all provinces, towns, and places, … |
+| 4:4 | 4:4 | 0.43 | The queen’s maids and chamberlains went in … | Then Esther’s maids and her eunuchs went … |
+| 4:5 | 4:5, 4:6 | 0.22 | So Esther called for her chamberlain Hathach, … | And she called for Athach the eunuch, … |
+| 4:7 | 4:7, 15:1, 15:2 | 0.21 | Mordecai showed him what was done, and … | And Mardochai told him all that had … |
+| 4:8 | 4:8, 15:3 | 0.60 | And he gave him the copy of … | He gave him also a copy of … |
+| 4:9 | 4:9 | 0.50 | So Hathach went in and told her … | And Athach went back and told Esther … |
+| 4:10 | 4:10 | 0.25 | Esther said to Hathach, “Go to Mordecai, … | She answered him, and bade him say … |
+| 4:11 | 4:11 | 0.58 | ‘All the nations of the empire know … | All the king’s servants, and all the … |
+| 4:12 | 4:12 | 0.00 | So Hathach reported to Mordecai all the … | And when Mardochai had heard this, |
+| 4:13 | 4:13 | 0.18 | Then Mordecai said to Hathach, “Go, and … | He sent word to Esther again, saying: … |
+| 4:14 | 4:14 | 0.44 | For if you keep quiet on this … | For if thou wilt now hold thy … |
+| 4:15 | 4:15 | 0.40 | And Esther sent the messenger who came … | And again Esther sent to Mardochai in … |
+| 4:16 | 4:16 | 0.53 | “Go and assemble the Jews that are … | Go, and gather together all the Jews … |
+| 4:17 | 4:17 | 0.75 | So Mordecai went and did all that … | So Mardochai went, and did all that … |
 
 **Segment** WEBC 4:18-4:47 ↔ Douay-Rheims 13:8-14:19 — Addition C: the prayers of Mordecai and Esther.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                     | Douay-Rheims opens                                 |
-| ---- | ------------ | ----: | ---------------------------------------------- | -------------------------------------------------- |
-| 4:18 | 13:8         |  0.25 | [He prayed to the Lord, making mention …       | But Mardochai besought the Lord, remembering all … |
-| 4:19 | 13:9         |  0.56 | He said, “Lord God, you are king …             | And said: O Lord, Lord, almighty king, …           |
-| 4:20 | 13:10        |  0.67 | for you have made the sky and …                | Thou hast made heaven and earth, and …             |
-| 4:21 | 13:11        |  1.00 | You are Lord of all, and there …               | Thou art Lord of all, and there …                  |
-| 4:22 | 13:12        |  0.30 | You know all things. You know, Lord, …         | Thou knowest all things, and thou knowest …        |
-| 4:23 | 13:13        |  0.50 | For I would gladly have kissed the …           | (For I would willingly and readily for …           |
-| 4:24 | 13:14        |  0.29 | But I have done this that I …                  | But I feared lest I should transfer …              |
-| 4:25 | 13:15        |  0.70 | And now, O Lord God, the King, …               | And now, O Lord, O king, O …                       |
-| 4:26 | 13:16        |  0.33 | Do not overlook your people, whom you …        | Despise not thy portion, which thou hast …         |
-| 4:27 | 13:17        |  0.57 | Listen to my prayer. Have mercy on …           | Hear my supplication, and be merciful to …         |
-| 4:28 | 13:18        |  0.75 | All Israel cried with all their might, …       | And all Israel with like mind and …                |
-| 4:29 | 14:1         |  0.33 | And queen Esther took refuge in the …          | Queen Esther also, fearing the danger that …       |
-| 4:30 | 14:2         |  0.50 | Having taken off her glorious apparel, she …   | And when she had laid away her …                   |
-| 4:31 | 14:3         |  0.71 | She implored the Lord God of Israel, …         | And she prayed to the Lord the …                   |
-| 4:32 | 14:4         |  1.00 | for my danger is near at hand.                 | My danger is in my hands.                          |
-| 4:33 | 14:5         |  0.55 | I have heard from my birth in …                | I have heard of my father that …                   |
-| 4:34 | 14:6         |  0.80 | And now we have sinned before you, …           | We have sinned in thy sight, and …                 |
-| 4:35 | 14:7         |  0.33 | because we honored their gods. You are …       | For we have worshipped their gods. Thou …          |
-| 4:36 | 14:8         |  0.50 | But now they have not been content …           | And now they are not content to …                  |
-| 4:37 | 14:9         |  0.58 | to abolish the decree of your mouth, …         | They design to change thy promises, and …          |
-| 4:38 | 14:10        |  0.40 | and to open the mouth of the …                 | That they may open the mouths of …                 |
-| 4:39 | 14:11        |  0.58 | O Lord, don’t surrender your sceptre to …      | Give not, O Lord, thy sceptre to …                 |
-| 4:40 | 14:12        |  0.40 | Remember us, O Lord! Manifest yourself in …    | Remember, O Lord, and shew thyself to …            |
-| 4:41 | 14:13        |  0.38 | Put harmonious speech into my mouth before …   | Give me a well ordered speech in …                 |
-| 4:42 | 14:14        |  0.75 | But deliver us by your hand, and …             | But deliver us by thy hand, and …                  |
-| 4:43 | 14:15        |  0.88 | You know all things, and know that …           | And thou knowest that I hate the …                 |
-| 4:44 | 14:16        |  0.43 | You know my necessity, for I abhor …           | Thou knowest my necessity, that I abominate …      |
-| 4:45 | 14:17        |  0.60 | Your handmaid has not eaten at Haman’s …       | And that I have not eaten at …                     |
-| 4:46 | 14:18        |  0.63 | Neither has your handmaid rejoiced since the … | And that thy handmaid hath never rejoiced, …       |
-| 4:47 | 14:19        |  0.40 | O god, who has power over all, …               | O God, who art mighty above all, …                 |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 4:18 | 13:8 | 0.25 | [He prayed to the Lord, making mention … | But Mardochai besought the Lord, remembering all … |
+| 4:19 | 13:9 | 0.56 | He said, “Lord God, you are king … | And said: O Lord, Lord, almighty king, … |
+| 4:20 | 13:10 | 0.67 | for you have made the sky and … | Thou hast made heaven and earth, and … |
+| 4:21 | 13:11 | 1.00 | You are Lord of all, and there … | Thou art Lord of all, and there … |
+| 4:22 | 13:12 | 0.30 | You know all things. You know, Lord, … | Thou knowest all things, and thou knowest … |
+| 4:23 | 13:13 | 0.50 | For I would gladly have kissed the … | (For I would willingly and readily for … |
+| 4:24 | 13:14 | 0.29 | But I have done this that I … | But I feared lest I should transfer … |
+| 4:25 | 13:15 | 0.70 | And now, O Lord God, the King, … | And now, O Lord, O king, O … |
+| 4:26 | 13:16 | 0.33 | Do not overlook your people, whom you … | Despise not thy portion, which thou hast … |
+| 4:27 | 13:17 | 0.57 | Listen to my prayer. Have mercy on … | Hear my supplication, and be merciful to … |
+| 4:28 | 13:18 | 0.75 | All Israel cried with all their might, … | And all Israel with like mind and … |
+| 4:29 | 14:1 | 0.33 | And queen Esther took refuge in the … | Queen Esther also, fearing the danger that … |
+| 4:30 | 14:2 | 0.50 | Having taken off her glorious apparel, she … | And when she had laid away her … |
+| 4:31 | 14:3 | 0.71 | She implored the Lord God of Israel, … | And she prayed to the Lord the … |
+| 4:32 | 14:4 | 1.00 | for my danger is near at hand. | My danger is in my hands. |
+| 4:33 | 14:5 | 0.55 | I have heard from my birth in … | I have heard of my father that … |
+| 4:34 | 14:6 | 0.80 | And now we have sinned before you, … | We have sinned in thy sight, and … |
+| 4:35 | 14:7 | 0.33 | because we honored their gods. You are … | For we have worshipped their gods. Thou … |
+| 4:36 | 14:8 | 0.50 | But now they have not been content … | And now they are not content to … |
+| 4:37 | 14:9 | 0.58 | to abolish the decree of your mouth, … | They design to change thy promises, and … |
+| 4:38 | 14:10 | 0.40 | and to open the mouth of the … | That they may open the mouths of … |
+| 4:39 | 14:11 | 0.58 | O Lord, don’t surrender your sceptre to … | Give not, O Lord, thy sceptre to … |
+| 4:40 | 14:12 | 0.40 | Remember us, O Lord! Manifest yourself in … | Remember, O Lord, and shew thyself to … |
+| 4:41 | 14:13 | 0.38 | Put harmonious speech into my mouth before … | Give me a well ordered speech in … |
+| 4:42 | 14:14 | 0.75 | But deliver us by your hand, and … | But deliver us by thy hand, and … |
+| 4:43 | 14:15 | 0.88 | You know all things, and know that … | And thou knowest that I hate the … |
+| 4:44 | 14:16 | 0.43 | You know my necessity, for I abhor … | Thou knowest my necessity, that I abominate … |
+| 4:45 | 14:17 | 0.60 | Your handmaid has not eaten at Haman’s … | And that I have not eaten at … |
+| 4:46 | 14:18 | 0.63 | Neither has your handmaid rejoiced since the … | And that thy handmaid hath never rejoiced, … |
+| 4:47 | 14:19 | 0.40 | O god, who has power over all, … | O God, who art mighty above all, … |
 
 **Segment** WEBC 5:1-5:2 ↔ Douay-Rheims 15:4-19, 5:1-5:2 — Addition D, Esther before the king, which the WEBC gives as its expanded 5:1–2.
 
-| WEBC | Douay-Rheims                                                                                           | Score | WEBC opens                                 | Douay-Rheims opens                   |
-| ---- | ------------------------------------------------------------------------------------------------------ | ----: | ------------------------------------------ | ------------------------------------ |
-| 5:1  | 15:4, 15:5, 15:6, 15:7, 15:8, 15:9, 15:10, 15:11, 15:12, 15:13, 15:14, 15:15, 15:16, 15:17, 15:18, 5:1 |  0.48 | It came to pass on the third …             | And on the third day she laid …      |
-| 5:2  | 15:19, 5:2                                                                                             |  0.37 | And having raised the golden sceptre, he … | But the king was troubled, and all … |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 5:1 | 15:4, 15:5, 15:6, 15:7, 15:8, 15:9, 15:10, 15:11, 15:12, 15:13, 15:14, 15:15, 15:16, 15:17, 15:18, 5:1 | 0.48 | It came to pass on the third … | And on the third day she laid … |
+| 5:2 | 15:19, 5:2 | 0.37 | And having raised the golden sceptre, he … | But the king was troubled, and all … |
 
 **Segment** WEBC 5:3-8:12 ↔ Douay-Rheims 5:3-8:12 — The story, 5:3–8:12.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                         | Douay-Rheims opens                              |
-| ---- | ------------ | ----: | -------------------------------------------------- | ----------------------------------------------- |
-| 5:3  | 5:3          |  0.75 | The king said, “What do you desire, …              | And the king said to her: What …                |
-| 5:4  | 5:4          |  0.33 | Esther said, “Today is a special day. …            | But she answered: If it please the …            |
-| 5:5  | 5:5          |  0.27 | The king said, “Hurry and bring Haman …            | And the king said forthwith: Call ye …          |
-| 5:6  | 5:6          |  0.17 | At the banquet, the king said to …                 | And the king said to her, after …               |
-| 5:7  | 5:7          |  1.00 | She said, “My request and my petition …            | And Esther answered: My petition and request …  |
-| 5:8  | 5:8          |  0.42 | if I have found favor in the …                     | If I have found favour in the …                 |
-| 5:9  | 5:9          |  0.25 | So Haman went out from the king …                  | So Aman went out that day joyful …              |
-| 5:10 | 5:10         |  0.50 | Having gone into his own house, he …               | But dissembling his anger, and returning into … |
-| 5:11 | 5:11         |  0.30 | He showed them his wealth and the …                | And he declared to them the greatness …         |
-| 5:12 | 5:12         |  0.57 | Haman said, “The queen has called no …             | And after this he said: Queen Esther …          |
-| 5:13 | 5:13         |  0.38 | But these things don’t please me while …           | And whereas I have all these things, …          |
-| 5:14 | 5:14         |  0.53 | Then Zeresh his wife and his friends …             | Then Zares his wife, and the rest …             |
-| 6:1  | 6:1          |  0.33 | The Lord removed sleep from the king …             | That night the king passed without sleep, …     |
-| 6:2  | 6:2          |  0.27 | And he found the records written concerning …      | They came to that place where it …              |
-| 6:3  | 6:3          |  0.25 | The king said, “What honor or favor …              | And when the king heard this, he …              |
-| 6:4  | 6:4          |  0.38 | And while the king was enquiring about …           | And the king said immediately: Who is …         |
-| 6:5  | 6:5          |  0.57 | The king’s servants said, “Behold, Haman stands …  | The servants answered: Aman standeth in the …   |
-| 6:6  | 6:6          |  0.38 | The king said to Haman, “What should …             | And when he was come in, he …                   |
-| 6:7  | 6:7          |  0.50 | He said to the king, “As for …                     | Answered: The man whom the king desireth …      |
-| 6:8  | 6:8          |  0.22 | let the king’s servants bring the robe …           | Ought to be clothed with the king’s …           |
-| 6:9  | 6:9          |  0.40 | and let him give it to one …                       | And let the first of the king’s …               |
-| 6:10 | 6:10         |  0.40 | Then the king said to Haman, “You …                | And the king said to him: Make …                |
-| 6:11 | 6:11         |  0.53 | So Haman took the robe and the …                   | So Aman took the robe and the …                 |
-| 6:12 | 6:12         |  0.56 | Then Mordecai returned to the palace; but …        | But Mardochai returned to the palace gate: …    |
-| 6:13 | 6:13         |  0.29 | Haman related the events that had happened …       | And he told Zares his wife, and …               |
-| 6:14 | 6:14         |  0.30 | While they were still speaking, the chamberlains … | As they were yet speaking, the king’s …         |
-| 7:1  | 7:1          |  0.80 | So the king and Haman went in …                    | So the king and Aman went in, …                 |
-| 7:2  | 7:2          |  0.73 | The king said to Esther at the …                   | And the king said to her again …                |
-| 7:3  | 7:3          |  0.70 | She answered and said, “If I have …                | Then she answered: If I have found …            |
-| 7:4  | 7:4          |  0.20 | For both I and my people are …                     | For we are given up, I and …                    |
-| 7:5  | 7:5          |  0.67 | The king said, “Who has dared to …                 | And king Assuerus answered and said: Who …      |
-| 7:6  | 7:6          |  0.56 | Esther said, “The enemy is Haman, this …           | And Esther said: It is this Aman …              |
-| 7:7  | 7:7          |  0.42 | The king rose up from the banquet …                | But the king being angry rose up, …             |
-| 7:8  | 7:8          |  0.33 | The king returned from the garden; and …           | And when the king came back out …               |
-| 7:9  | 7:9          |  0.47 | And Bugathan, one of the chamberlains, said …      | And Harbona, one of the eunuchs that …          |
-| 7:10 | 7:10         |  0.50 | So Haman was hanged on the gallows …               | So Aman was hanged on the gibbet, …             |
-| 8:1  | 8:1          |  0.33 | On that day, King Ahasuerus gave to …              | On that day king Assuerus gave the …            |
-| 8:2  | 8:2          |  0.58 | The king took the ring which he …                  | And the king took the ring which …              |
-| 8:3  | 8:3          |  0.38 | She spoke yet again to the king, …                 | And not content with these things, she …        |
-| 8:4  | 8:4          |  0.38 | Then the king extended the golden sceptre …        | But he, as the manner was, held …               |
-| 8:5  | 8:5          |  0.33 | Esther said, “If it seems good to …                | And said: If it please the king, …              |
-| 8:6  | 8:6          |  0.33 | For how could I see the affliction …               | For how call I endure the murdering …           |
-| 8:7  | 8:7          |  0.50 | Then the king said to Esther, “If …                | And king Assuerus answered Esther the queen, …  |
-| 8:8  | 8:8          |  0.42 | Write in my name whatever seems good …             | Write ye therefore to the Jews, as …            |
-| 8:9  | 8:9          |  0.61 | So the scribes were called in the …                | Then the king’s scribes and secretaries were …  |
-| 8:10 | 8:10         |  0.63 | They were written by order of the …                | And these letters which were sent in …          |
-| 8:11 | 8:11         |  0.08 | In them, he charged them to use …                  | And the king gave orders to them, …             |
-| 8:12 | 8:12         |  0.71 | on one day in all the kingdom …                    | And one day of revenge was appointed …          |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 5:3 | 5:3 | 0.75 | The king said, “What do you desire, … | And the king said to her: What … |
+| 5:4 | 5:4 | 0.33 | Esther said, “Today is a special day. … | But she answered: If it please the … |
+| 5:5 | 5:5 | 0.27 | The king said, “Hurry and bring Haman … | And the king said forthwith: Call ye … |
+| 5:6 | 5:6 | 0.17 | At the banquet, the king said to … | And the king said to her, after … |
+| 5:7 | 5:7 | 1.00 | She said, “My request and my petition … | And Esther answered: My petition and request … |
+| 5:8 | 5:8 | 0.42 | if I have found favor in the … | If I have found favour in the … |
+| 5:9 | 5:9 | 0.25 | So Haman went out from the king … | So Aman went out that day joyful … |
+| 5:10 | 5:10 | 0.50 | Having gone into his own house, he … | But dissembling his anger, and returning into … |
+| 5:11 | 5:11 | 0.30 | He showed them his wealth and the … | And he declared to them the greatness … |
+| 5:12 | 5:12 | 0.57 | Haman said, “The queen has called no … | And after this he said: Queen Esther … |
+| 5:13 | 5:13 | 0.38 | But these things don’t please me while … | And whereas I have all these things, … |
+| 5:14 | 5:14 | 0.53 | Then Zeresh his wife and his friends … | Then Zares his wife, and the rest … |
+| 6:1 | 6:1 | 0.33 | The Lord removed sleep from the king … | That night the king passed without sleep, … |
+| 6:2 | 6:2 | 0.27 | And he found the records written concerning … | They came to that place where it … |
+| 6:3 | 6:3 | 0.25 | The king said, “What honor or favor … | And when the king heard this, he … |
+| 6:4 | 6:4 | 0.38 | And while the king was enquiring about … | And the king said immediately: Who is … |
+| 6:5 | 6:5 | 0.57 | The king’s servants said, “Behold, Haman stands … | The servants answered: Aman standeth in the … |
+| 6:6 | 6:6 | 0.38 | The king said to Haman, “What should … | And when he was come in, he … |
+| 6:7 | 6:7 | 0.50 | He said to the king, “As for … | Answered: The man whom the king desireth … |
+| 6:8 | 6:8 | 0.22 | let the king’s servants bring the robe … | Ought to be clothed with the king’s … |
+| 6:9 | 6:9 | 0.40 | and let him give it to one … | And let the first of the king’s … |
+| 6:10 | 6:10 | 0.40 | Then the king said to Haman, “You … | And the king said to him: Make … |
+| 6:11 | 6:11 | 0.53 | So Haman took the robe and the … | So Aman took the robe and the … |
+| 6:12 | 6:12 | 0.56 | Then Mordecai returned to the palace; but … | But Mardochai returned to the palace gate: … |
+| 6:13 | 6:13 | 0.29 | Haman related the events that had happened … | And he told Zares his wife, and … |
+| 6:14 | 6:14 | 0.30 | While they were still speaking, the chamberlains … | As they were yet speaking, the king’s … |
+| 7:1 | 7:1 | 0.80 | So the king and Haman went in … | So the king and Aman went in, … |
+| 7:2 | 7:2 | 0.73 | The king said to Esther at the … | And the king said to her again … |
+| 7:3 | 7:3 | 0.70 | She answered and said, “If I have … | Then she answered: If I have found … |
+| 7:4 | 7:4 | 0.20 | For both I and my people are … | For we are given up, I and … |
+| 7:5 | 7:5 | 0.67 | The king said, “Who has dared to … | And king Assuerus answered and said: Who … |
+| 7:6 | 7:6 | 0.56 | Esther said, “The enemy is Haman, this … | And Esther said: It is this Aman … |
+| 7:7 | 7:7 | 0.42 | The king rose up from the banquet … | But the king being angry rose up, … |
+| 7:8 | 7:8 | 0.33 | The king returned from the garden; and … | And when the king came back out … |
+| 7:9 | 7:9 | 0.47 | And Bugathan, one of the chamberlains, said … | And Harbona, one of the eunuchs that … |
+| 7:10 | 7:10 | 0.50 | So Haman was hanged on the gallows … | So Aman was hanged on the gibbet, … |
+| 8:1 | 8:1 | 0.33 | On that day, King Ahasuerus gave to … | On that day king Assuerus gave the … |
+| 8:2 | 8:2 | 0.58 | The king took the ring which he … | And the king took the ring which … |
+| 8:3 | 8:3 | 0.38 | She spoke yet again to the king, … | And not content with these things, she … |
+| 8:4 | 8:4 | 0.38 | Then the king extended the golden sceptre … | But he, as the manner was, held … |
+| 8:5 | 8:5 | 0.33 | Esther said, “If it seems good to … | And said: If it please the king, … |
+| 8:6 | 8:6 | 0.33 | For how could I see the affliction … | For how call I endure the murdering … |
+| 8:7 | 8:7 | 0.50 | Then the king said to Esther, “If … | And king Assuerus answered Esther the queen, … |
+| 8:8 | 8:8 | 0.42 | Write in my name whatever seems good … | Write ye therefore to the Jews, as … |
+| 8:9 | 8:9 | 0.61 | So the scribes were called in the … | Then the king’s scribes and secretaries were … |
+| 8:10 | 8:10 | 0.63 | They were written by order of the … | And these letters which were sent in … |
+| 8:11 | 8:11 | 0.08 | In them, he charged them to use … | And the king gave orders to them, … |
+| 8:12 | 8:12 | 0.71 | on one day in all the kingdom … | And one day of revenge was appointed … |
 
 **Segment** WEBC 8:13 ↔ Douay-Rheims 16:1-24, 8:13 — Addition E, the counter-decree, which the WEBC sets inside 8:13, and 8:13.
 
-| WEBC | Douay-Rheims                                                                                                                                                        | Score | WEBC opens                       | Douay-Rheims opens                         |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----: | -------------------------------- | ------------------------------------------ |
-| 8:13 | 16:1, 16:2, 16:3, 16:4, 16:5, 16:6, 16:7, 16:8, 16:9, 16:10, 16:11, 16:12, 16:13, 16:14, 16:15, 16:16, 16:17, 16:18, 16:19, 16:20, 16:21, 16:22, 16:23, 16:24, 8:13 |  0.38 | The following is a copy of the … | The great king Artaxerxes, from India to … |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 8:13 | 16:1, 16:2, 16:3, 16:4, 16:5, 16:6, 16:7, 16:8, 16:9, 16:10, 16:11, 16:12, 16:13, 16:14, 16:15, 16:16, 16:17, 16:18, 16:19, 16:20, 16:21, 16:22, 16:23, 16:24, 8:13 | 0.38 | The following is a copy of the … | The great king Artaxerxes, from India to … |
 
 **Segment** WEBC 8:14-10:3 ↔ Douay-Rheims 8:14-10:3 — The story, 8:14–10:3.
 
-| WEBC | Douay-Rheims | Score | WEBC opens                                        | Douay-Rheims opens                               |
-| ---- | ------------ | ----: | ------------------------------------------------- | ------------------------------------------------ |
-| 8:14 | 8:14         |  0.22 | So the horsemen went forth with haste …           | So the swift posts went out carrying …           |
-| 8:15 | 8:15         |  0.44 | Mordecai went out robed in royal apparel, …       | And Mardochai going forth out of the …           |
-| 8:16 | 8:16         |  0.67 | The Jews had light and gladness                   | But to the Jews a new light …                    |
-| 8:17 | 8:17         |  0.16 | in every city and province where the …            | And in all peoples, cities, and provinces, …     |
-| 9:1  | 9:1          |  0.50 | Now in the twelfth month, on the …                | So on the thirteenth day of the …                |
-| 9:2  | 9:2          |  0.29 | In that day, the adversaries of the …             | And they gathered themselves together in every … |
-| 9:3  | 9:3          |  0.30 | For the chiefs of the local governors, …          | And the judges of the provinces, and …           |
-| 9:4  | 9:4, 9:5     |  0.00 | For the order of the king was …                   | For they knew him to be prince …                 |
-| 9:6  | 9:6          |  0.71 | In the city Susa the Jews killed …                | Insomuch that even in Susan they killed …        |
-| 9:7  | 9:7          |  0.33 | including Pharsannes, Delphon, Phasga,            | Pharsandatha, and Delphon, and Esphatha,         |
-| 9:8  | 9:8          |  0.00 | Pharadatha, Barea, Sarbaca,                       | And Phoratha, and Adalia, and Aridatha,          |
-| 9:9  | 9:9          |  0.00 | Marmasima, Ruphaeus, Arsaeus, and Zabuthaeus,     | And Phermesta, and Arisai, and Aridai, and …     |
-| 9:10 | 9:10         |  0.00 | the ten sons of Haman the son …                   | And when they had slain them, they …             |
-| 9:11 | 9:11         |  0.40 | The number of those who perished in …             | And presently the number of them that …          |
-| 9:12 | 9:12         |  0.57 | Then the king said to Esther, “The …              | And he said to the queen: The …                  |
-| 9:13 | 9:13         |  0.64 | Esther said to the king, “Let it …                | And she answered: If it please the …             |
-| 9:14 | 9:14         |  0.33 | He permitted it to be done; and …                 | And the king commanded that it should …          |
-| 9:15 | 9:15         |  0.67 | The Jews assembled in Susa on the …               | And on the fourteenth day of the …               |
-| 9:16 | 9:16         |  0.25 | The rest of the Jews who were …                   | Moreover through all the provinces which were …  |
-| 9:17 | 9:17         |  0.63 | They rested on the fourteenth of the …            | Now the thirteenth day of the month …            |
-| 9:18 | 9:18         |  0.55 | The Jews in the city of Susa …                    | But they that were killing in the …              |
-| 9:19 | 9:19         |  0.31 | On this account then, the Jews dispersed …        | But those Jews that dwelt in towns …             |
-| 9:20 | 9:20         |  0.46 | Mordecai wrote these things in a book …           | And Mardochai wrote all these things, and …      |
-| 9:21 | 9:21         |  0.57 | to establish these as joyful days and …           | That they should receive the fourteenth and …    |
-| 9:22 | 9:22         |  0.58 | for on these days the Jews obtained …             | Because on those days the Jews revenged …        |
-| 9:23 | 9:23         |  0.25 | And the Jews consented to this as …               | And the Jews undertook to observe with …         |
-| 9:24 | 9:24         |  0.29 | showing how Haman the son of Hammedatha …         | For Aman, the son of Amadathi of …               |
-| 9:25 | 9:25         |  0.29 | also how he went in to the …                      | And afterwards Esther went in to the …           |
-| 9:26 | 9:26         |  0.27 | Therefore these days were called Purim, because … | And since that time these days are …             |
-| 9:27 | 9:27         |  0.26 | Mordecai established it, and the Jews took …      | And the things that they suffered, and …         |
-| 9:28 | 9:28         |  0.29 | These days of Purim shall be kept …               | These are the days which shall never …           |
-| 9:29 | 9:29, 9:30   |  0.38 | Queen Esther the daughter of Aminadab and …       | And Esther the queen, the daughter of …          |
-| 9:31 | 9:31         |  0.10 | Mordecai and Esther the queen established this …  | And observe the days of lots, and …              |
-| 9:32 | 9:32         |  0.17 | And Esther established it by a command …          | And all things which are contained in …          |
-| 10:1 | 10:1         |  0.43 | The king levied a tax upon his …                  | And king Assuerus made all the land, …           |
-| 10:2 | 10:2         |  0.45 | As for his strength and valour, and …             | And his strength and his empire, and …           |
-| 10:3 | 10:3         |  0.23 | Mordecai was viceroy to King Ahasuerus, and …     | And how Mardochai of the race of …               |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 8:14 | 8:14 | 0.22 | So the horsemen went forth with haste … | So the swift posts went out carrying … |
+| 8:15 | 8:15 | 0.44 | Mordecai went out robed in royal apparel, … | And Mardochai going forth out of the … |
+| 8:16 | 8:16 | 0.67 | The Jews had light and gladness | But to the Jews a new light … |
+| 8:17 | 8:17 | 0.16 | in every city and province where the … | And in all peoples, cities, and provinces, … |
+| 9:1 | 9:1 | 0.50 | Now in the twelfth month, on the … | So on the thirteenth day of the … |
+| 9:2 | 9:2 | 0.29 | In that day, the adversaries of the … | And they gathered themselves together in every … |
+| 9:3 | 9:3 | 0.30 | For the chiefs of the local governors, … | And the judges of the provinces, and … |
+| 9:4 | 9:4, 9:5 | 0.00 | For the order of the king was … | For they knew him to be prince … |
+| 9:6 | 9:6 | 0.71 | In the city Susa the Jews killed … | Insomuch that even in Susan they killed … |
+| 9:7 | 9:7 | 0.33 | including Pharsannes, Delphon, Phasga, | Pharsandatha, and Delphon, and Esphatha, |
+| 9:8 | 9:8 | 0.00 | Pharadatha, Barea, Sarbaca, | And Phoratha, and Adalia, and Aridatha, |
+| 9:9 | 9:9 | 0.00 | Marmasima, Ruphaeus, Arsaeus, and Zabuthaeus, | And Phermesta, and Arisai, and Aridai, and … |
+| 9:10 | 9:10 | 0.00 | the ten sons of Haman the son … | And when they had slain them, they … |
+| 9:11 | 9:11 | 0.40 | The number of those who perished in … | And presently the number of them that … |
+| 9:12 | 9:12 | 0.57 | Then the king said to Esther, “The … | And he said to the queen: The … |
+| 9:13 | 9:13 | 0.64 | Esther said to the king, “Let it … | And she answered: If it please the … |
+| 9:14 | 9:14 | 0.33 | He permitted it to be done; and … | And the king commanded that it should … |
+| 9:15 | 9:15 | 0.67 | The Jews assembled in Susa on the … | And on the fourteenth day of the … |
+| 9:16 | 9:16 | 0.25 | The rest of the Jews who were … | Moreover through all the provinces which were … |
+| 9:17 | 9:17 | 0.63 | They rested on the fourteenth of the … | Now the thirteenth day of the month … |
+| 9:18 | 9:18 | 0.55 | The Jews in the city of Susa … | But they that were killing in the … |
+| 9:19 | 9:19 | 0.31 | On this account then, the Jews dispersed … | But those Jews that dwelt in towns … |
+| 9:20 | 9:20 | 0.46 | Mordecai wrote these things in a book … | And Mardochai wrote all these things, and … |
+| 9:21 | 9:21 | 0.57 | to establish these as joyful days and … | That they should receive the fourteenth and … |
+| 9:22 | 9:22 | 0.58 | for on these days the Jews obtained … | Because on those days the Jews revenged … |
+| 9:23 | 9:23 | 0.25 | And the Jews consented to this as … | And the Jews undertook to observe with … |
+| 9:24 | 9:24 | 0.29 | showing how Haman the son of Hammedatha … | For Aman, the son of Amadathi of … |
+| 9:25 | 9:25 | 0.29 | also how he went in to the … | And afterwards Esther went in to the … |
+| 9:26 | 9:26 | 0.27 | Therefore these days were called Purim, because … | And since that time these days are … |
+| 9:27 | 9:27 | 0.26 | Mordecai established it, and the Jews took … | And the things that they suffered, and … |
+| 9:28 | 9:28 | 0.29 | These days of Purim shall be kept … | These are the days which shall never … |
+| 9:29 | 9:29, 9:30 | 0.38 | Queen Esther the daughter of Aminadab and … | And Esther the queen, the daughter of … |
+| 9:31 | 9:31 | 0.10 | Mordecai and Esther the queen established this … | And observe the days of lots, and … |
+| 9:32 | 9:32 | 0.17 | And Esther established it by a command … | And all things which are contained in … |
+| 10:1 | 10:1 | 0.43 | The king levied a tax upon his … | And king Assuerus made all the land, … |
+| 10:2 | 10:2 | 0.45 | As for his strength and valour, and … | And his strength and his empire, and … |
+| 10:3 | 10:3 | 0.23 | Mordecai was viceroy to King Ahasuerus, and … | And how Mardochai of the race of … |
 
 **Segment** WEBC 10:4-10:14 ↔ Douay-Rheims 10:4-10:13, 11:1 — Addition F: the dream explained, and the colophon (the Douay-Rheims' 11:1).
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                                     | Douay-Rheims opens                         |
-| ----- | ------------ | ----: | ---------------------------------------------- | ------------------------------------------ |
-| 10:4  | 10:4         |  0.33 | [Mordecai said, “These things have come from … | Then Mardochai said: God hath done these … |
-| 10:5  | 10:5         |  0.50 | For I remember the dream which I …             | I remember a dream that I saw, …           |
-| 10:6  | 10:6         |  0.77 | There was the little spring which became …     | The little fountain which grew into a …    |
-| 10:7  | 10:7         |  0.33 | The two serpents are Haman and me.             | But the two dragons are I and …            |
-| 10:8  | 10:8         |  0.80 | The nations are those which combined to …      | The nations that were assembled are they … |
-| 10:9  | 10:9         |  0.75 | But as for my nation, this is …                | And my nation is Israel, who cried …       |
-| 10:10 | 10:10        |  0.83 | Therefore he ordained two lots. One for …      | And he commanded that there should be …    |
-| 10:11 | 10:11        |  0.63 | And these two lots came for an …               | And both lots came to the day …            |
-| 10:12 | 10:12        |  0.75 | God remembered his people and vindicated his … | And the Lord remembered his people, and …  |
-| 10:13 | 10:13        |  0.75 | They shall observe these days in the …         | And these days shall be observed in …      |
-| 10:14 | 11:1         |  0.69 | In the fourth year of the reign …              | In the fourth year of the reign …          |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 10:4 | 10:4 | 0.33 | [Mordecai said, “These things have come from … | Then Mardochai said: God hath done these … |
+| 10:5 | 10:5 | 0.50 | For I remember the dream which I … | I remember a dream that I saw, … |
+| 10:6 | 10:6 | 0.77 | There was the little spring which became … | The little fountain which grew into a … |
+| 10:7 | 10:7 | 0.33 | The two serpents are Haman and me. | But the two dragons are I and … |
+| 10:8 | 10:8 | 0.80 | The nations are those which combined to … | The nations that were assembled are they … |
+| 10:9 | 10:9 | 0.75 | But as for my nation, this is … | And my nation is Israel, who cried … |
+| 10:10 | 10:10 | 0.83 | Therefore he ordained two lots. One for … | And he commanded that there should be … |
+| 10:11 | 10:11 | 0.63 | And these two lots came for an … | And both lots came to the day … |
+| 10:12 | 10:12 | 0.75 | God remembered his people and vindicated his … | And the Lord remembered his people, and … |
+| 10:13 | 10:13 | 0.75 | They shall observe these days in the … | And these days shall be observed in … |
+| 10:14 | 11:1 | 0.69 | In the fourth year of the reign … | In the fourth year of the reign … |
 
 **Doubts** (4):
 
@@ -1438,11 +1438,11 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 **Segment** WEBC 14:24-14:26 ↔ Douay-Rheims 16:25-16:27 — The doxology.
 
-| WEBC  | Douay-Rheims | Score | WEBC opens                            | Douay-Rheims opens                    |
-| ----- | ------------ | ----: | ------------------------------------- | ------------------------------------- |
-| 14:24 | 16:25        |  0.85 | Now to him who is able to …           | Now to him that is able to …          |
-| 14:25 | 16:26        |  0.83 | but now is revealed, and by the …     | (Which now is made manifest by the …  |
-| 14:26 | 16:27        |  0.88 | to the only wise God, through Jesus … | To God the only wise, through Jesus … |
+| WEBC | Douay-Rheims | Score | WEBC opens | Douay-Rheims opens |
+| --- | --- | ---: | --- | --- |
+| 14:24 | 16:25 | 0.85 | Now to him who is able to … | Now to him that is able to … |
+| 14:25 | 16:26 | 0.83 | but now is revealed, and by the … | (Which now is made manifest by the … |
+| 14:26 | 16:27 | 0.88 | to the only wise God, through Jesus … | To God the only wise, through Jesus … |
 
 **Moved by content** (1): 16:25: 16:25 → 16:25, 16:26, 16:27
 
