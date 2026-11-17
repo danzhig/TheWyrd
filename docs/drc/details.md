@@ -202,7 +202,7 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 **WEBC verses without Douay-Rheims words of their own** (3): 3:30, 7:46, 12:33
 
-## Tobit — map awaiting approval (fingerprint `4c2e5057c3c88761`)
+## Tobit — map approved 2026-11-17 (`4c2e5057c3c88761`)
 
 **Segment** WEBC 1:1-1:22 ↔ Douay-Rheims 1:1-1:25 — Chapter 1.
 
@@ -522,7 +522,7 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 - WEBC 10:9 ↔ 10:9 (0.50), but 10:8 shares 0.75: “Tobias said, “No. Send me away to my father.”” / “And Tobias said to him: I know that my father …”
 
-## Judith — map awaiting approval (fingerprint `d79d26c063d39b80`)
+## Judith — map approved 2026-11-17 (`d79d26c063d39b80`)
 
 **Segment** WEBC 1:1-1:16 ↔ Douay-Rheims 1:1-1:12 — Chapter 1.
 
@@ -918,7 +918,7 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 - WEBC 2:22 ↔ 2:12 (0.22), but 2:11 shares 0.44: “And he took all his army, his footmen, horsemen, and …” / “And when he had passed through the borders of the …”
 - WEBC 15:11 ↔ 15:13, 15:14 (0.33), but 15:12 shares 1.00: “And the people plundered the camp for thirty days; and …” / “And thirty days were scarce sufficient for the people of …”
 
-## Esther — map awaiting approval (fingerprint `02c04d2f600bf0de`)
+## Esther — map approved 2026-11-17 (`02c04d2f600bf0de`)
 
 **Segment** WEBC 1:1!a ↔ Douay-Rheims 11:2-12:6 — Addition A: Mordecai's dream and the eunuchs' plot.
 
@@ -1432,7 +1432,7 @@ Written by `pnpm drc:align`. For each book: the TVTMS records that renumber it, 
 
 - WEBC 9:6 ↔ 9:6 (0.00), but 9:7 shares 0.60: “But rise up and enter into the city, then you …” / “And he trembling and astonished, said: Lord, what wilt thou …”
 
-## Romans — map awaiting approval (fingerprint `82802900202fe78b`)
+## Romans — map approved 2026-11-17 (`82802900202fe78b`)
 
 **TVTMS records not used** (their tests do not decide; the verses they cover keep their numbers and pass the content check unless listed below): Rom.14:22-23; 16:24-27 (line 4065: WEBC matches no column's tests)
 
