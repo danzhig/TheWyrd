@@ -158,9 +158,11 @@ export function buildThemes(
       const own: PublicThemeReading[] = [];
       if (readingsOk)
         for (const sec of inBibleOrder) {
+          // A reading belongs to its home and second, and to every sub-theme for which it holds
+          // an approved key passage (owner, 2026-11-17: a sub-theme never loses its key passages).
           const subs = placed.get(sec.id);
-          if (!subs?.includes(s.id)) continue;
           const key = passages.find((p) => p.sectionId === sec.id)?.ref;
+          if (!subs?.includes(s.id) && !key) continue;
           const r: PublicThemeReading = {
             sectionId: sec.id,
             title: sec.title,
@@ -168,7 +170,7 @@ export function buildThemes(
             bookId: sec.bookId,
             library: library.has(sec.id),
           };
-          if (subs[0] !== s.id) r.second = true;
+          if (subs?.[0] !== s.id) r.second = true;
           if (key) r.key = key;
           own.push(r);
         }

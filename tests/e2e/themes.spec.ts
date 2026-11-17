@@ -211,6 +211,51 @@ test.describe('themes', () => {
     await expect(page.locator('[data-reading]')).toHaveCount(0);
   });
 
+  test('Esc steps out one level at a time: readings, sub-theme, constellation, the whole map', async ({
+    page,
+  }) => {
+    await openVault(page);
+    const k = () =>
+      page.evaluate(() =>
+        Number(
+          getComputedStyle(
+            document.querySelector('[data-testid="vault-labels"]')!,
+          ).getPropertyValue('--k'),
+        ),
+      );
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    await page.waitForTimeout(1200); // the camera settles on the whole map
+    const whole = await k();
+    await page.locator('[data-constellation="story"]').click({ force: true });
+    const name = page.locator('[data-subtheme="story-land"]');
+    await expect(name).toBeAttached({ timeout: 6000 });
+    await page.waitForTimeout(900);
+    const constellation = await k();
+    await name.dispatchEvent('click');
+    await expect(page.locator('[data-reading^="story-land:"]').first()).toBeAttached();
+    await page.waitForTimeout(900);
+    const readings = await k();
+
+    // 1. The readings close: the sub-theme, its stars gathered again, nearer than the constellation.
+    await page.keyboard.press('Escape');
+    await expect(page.locator('[data-reading]')).toHaveCount(0);
+    await page.waitForTimeout(900);
+    const sub = await k();
+    expect(sub).toBeLessThanOrEqual(readings + 0.01);
+    // 2. Out to the constellation.
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(1200);
+    expect(Math.abs((await k()) - constellation) / constellation).toBeLessThan(0.1);
+    // 3. Out to the whole map.
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(1200);
+    expect(Math.abs((await k()) - whole) / whole).toBeLessThan(0.1);
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
+  });
+
   test('the reader’s back arrow returns to the sub-theme, in a visit and on a fresh load', async ({
     page,
   }) => {

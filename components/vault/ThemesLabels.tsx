@@ -14,7 +14,13 @@ import { useRouter } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { prefersReducedMotion } from '@/lib/camera';
-import { spreadLayout, type Constellation, type ThemesLayout } from './constellations';
+import {
+  nearestConstellation,
+  spreadLayout,
+  STAR_STEP,
+  type Constellation,
+  type ThemesLayout,
+} from './constellations';
 import type { Point } from './layout';
 import type { DrawOptions } from './starfield';
 import type { ThemesData } from './useThemes';
@@ -25,6 +31,8 @@ const CELL = { w: 250, h: 30 };
 /** The zoom a sub-theme opens at. */
 export const SPREAD_K = 3;
 const SPREAD_MS = 650;
+/** A constellation fills this share of the shorter side (as in the Vault). */
+const FIT = 0.38;
 
 export interface ThemesLabelsProps {
   data: ThemesData;
@@ -41,11 +49,19 @@ export interface ThemesLabelsProps {
   flyTo: (p: Point, k: number, ms: number) => void;
   flyToConstellation: (c: Constellation) => void;
   /** The visible part of the screen (below the header), in pixels. */
-  visibleArea: () => { w: number; h: number };
+  visibleArea: () => { w: number; h: number; cx: number; cy: number };
   /** A reading is being opened: remember the camera. */
   onOpen: () => void;
   /** Open this sub-theme (coming back from a reading, or from the theme tree). */
   request: { sub: string; n: number } | null;
+  /** Keys act on the map (not in List mode). */
+  keys: boolean;
+  /** Where the camera is now (screen = world × k + x, y). */
+  camera: () => { x: number; y: number; k: number };
+  /** Fly back to the whole map of constellations. */
+  home: () => void;
+  /** The closest zoom allowed in Themes. */
+  maxK: number;
 }
 
 const at = (p: Point) =>
@@ -71,11 +87,20 @@ export function ThemesLabels({
   visibleArea,
   onOpen,
   request,
+  keys,
+  camera,
+  home,
+  maxK,
 }: ThemesLabelsProps) {
   const router = useRouter();
   const [open, setOpen] = useState<{ sub: string; at: Map<string, Point> } | null>(null);
   const [shown, setShown] = useState(false); // names in, once the stars have spread
   const anim = useRef(0);
+  /**
+   * Where Esc last stepped out to: a sub-theme's id (its readings just closed), 'constellation',
+   * or null (the reader moved about freely, so the zoom decides).
+   */
+  const step = useRef<string | null>(null);
 
   const subOf = useMemo(() => {
     const m = new Map<string, { theme: ThemesData['themes'][number]; i: number }>();
@@ -127,6 +152,7 @@ export function ThemesLabels({
         x: left + width / 2 - cell.w * 0.1,
         y: fits ? centre.y : pts[0]!.y + (a.h / 2 - 70) / SPREAD_K,
       };
+      step.current = null;
       setShown(false);
       setOpen({ sub, at: positions });
       setLit(sub);
@@ -136,14 +162,32 @@ export function ThemesLabels({
     [subOf, subPoint, visibleArea, flyTo, run, setLit, hidden, tOf],
   );
 
-  const close = useCallback(() => {
-    if (!open) return;
-    const { sub, at } = open;
-    setShown(false);
-    setOpen(null);
-    setLit(null);
-    run(sub, at, 1, 0, () => setSpread(undefined));
-  }, [open, run, setLit, setSpread]);
+  /**
+   * Close the open sub-theme. With `back` (Esc or the Back pill) the camera also steps out to the
+   * sub-theme itself, its stars gathered round it again (owner, 2026-11-17: Esc steps out one level
+   * at a time: readings → sub-theme → constellation → all the constellations).
+   */
+  const close = useCallback(
+    (back = false) => {
+      if (!open) return;
+      const { sub, at } = open;
+      setShown(false);
+      setOpen(null);
+      setLit(null);
+      run(sub, at, 1, 0, () => setSpread(undefined));
+      const centre = subPoint.get(sub);
+      const s = subOf.get(sub);
+      if (back && centre && s) {
+        const a = visibleArea();
+        const n = s.theme.subthemes[s.i]!.readings.length;
+        const reach = STAR_STEP * Math.sqrt(n + 0.6) + 10;
+        const k = Math.min(SPREAD_K, (Math.min(a.w, a.h) * 0.3) / reach);
+        flyTo(centre, Math.min(maxK, k), 600);
+        step.current = sub;
+      }
+    },
+    [open, run, setLit, setSpread, subPoint, subOf, visibleArea, flyTo, maxK],
+  );
 
   // Requests from the Vault (back from a reading, the theme tree).
   const openRef = useRef(open);
@@ -168,21 +212,49 @@ export function ThemesLabels({
     return () => cancelAnimationFrame(id);
   }, [hidden, openSub]);
 
-  // Esc closes; zooming well out closes.
+  // Esc steps out one level at a time (owner, 2026-11-17): an open sub-theme closes to the
+  // sub-theme, a sub-theme to its constellation, a constellation to the whole map.
   useEffect(() => {
-    if (!open) return;
+    if (!keys || !settled) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.stopPropagation();
-        close();
+      if (e.key !== 'Escape' || document.querySelector('dialog[open]')) return;
+      if (open) {
+        e.preventDefault();
+        close(true);
+        return;
+      }
+      e.preventDefault();
+      const a = visibleArea();
+      const last = step.current;
+      if (last === 'constellation') {
+        step.current = null;
+        home();
+        return;
+      }
+      let c = last
+        ? layout.constellations.find((x) => x.subs.some((y) => y.id === last))
+        : undefined;
+      if (!c) {
+        // No step to retrace: the constellation in the middle of the view, if close enough to it.
+        const cam = camera();
+        const at = { x: (a.cx - cam.x) / cam.k, y: (a.cy - cam.y) / cam.k };
+        const near = nearestConstellation(layout, at);
+        if (near && cam.k > Math.min(maxK, (Math.min(a.w, a.h) * FIT) / near.r) * 1.2) c = near;
+      }
+      if (c) {
+        step.current = 'constellation';
+        flyToConstellation(c);
+      } else {
+        step.current = null;
+        home();
       }
     };
-    window.addEventListener('keydown', onKey, true);
-    return () => window.removeEventListener('keydown', onKey, true);
-  }, [open, close]);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [keys, settled, open, close, camera, visibleArea, layout, maxK, flyToConstellation, home]);
   useEffect(() => {
     if (!open || !shown || k >= SPREAD_K * 0.45) return;
-    const id = requestAnimationFrame(close);
+    const id = requestAnimationFrame(() => close());
     return () => cancelAnimationFrame(id);
   }, [k, open, shown, close]);
   // Leaving Themes clears the spread.
@@ -216,6 +288,7 @@ export function ThemesLabels({
               data-constellation={c.id}
               onClick={() => {
                 close();
+                step.current = 'constellation';
                 flyToConstellation(c);
               }}
             >
@@ -292,7 +365,7 @@ export function ThemesLabels({
             <button
               type="button"
               className={styles.spreadBack}
-              onClick={close}
+              onClick={() => close(true)}
               data-testid="spread-back"
             >
               ← {openInfo?.theme.title ?? 'Themes'}

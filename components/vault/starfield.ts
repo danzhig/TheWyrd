@@ -223,13 +223,11 @@ export class StarField {
           const rr = open
             ? (lib ? 0.8 : 1) * (s.bright ? 4.5 : 3)
             : (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1) * (s.bright ? 1.6 : 1);
-          // In flight, or under 2.5 px across, a star drawn as a square looks the same and is far
-          // cheaper to fill.
-          if (flying || rr < 1.25) ctx.rect(xs[i]! - rr, ys[i]! - rr, rr * 2, rr * 2);
-          else {
-            ctx.moveTo(xs[i]! + rr, ys[i]!);
-            ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
-          }
+          const x = xs[i]!;
+          const y = ys[i]!;
+          // Round dots, in flight too (owner, 2026-11-17: worth their cost; squares showed).
+          ctx.moveTo(x + rr, y);
+          ctx.arc(x, y, rr, 0, Math.PI * 2);
         });
         ctx.fill();
       }
