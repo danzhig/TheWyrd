@@ -1,6 +1,6 @@
 # Love, family and neighbour: passages
 
-**Status: approved by the owner on 2026-11-12** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).
+**Status: approved by the owner on 2026-11-17** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).
 
 Love of God and neighbour, lived out at home and among strangers and the poor.
 
@@ -10,20 +10,20 @@ Chosen by `pnpm themes:build`: OpenBible’s vote score (0–10 within its topic
 
 The love God shows, and the love he commands.
 
-| Passage               | Section                                                                   | Score | Sources                                       |
-| --------------------- | ------------------------------------------------------------------------- | ----- | --------------------------------------------- |
-| Ps.133.1-Ps.133.3     | Psalm 133 (132) (`ps-133` · library)                                      | 8     | `Nave:LOVE#16`, `Nave:LOVE#17`                |
-| Matt.5.41-Matt.5.47   | The Sermon on the Mount: the Beatitudes and the Law (`matt-03` · library) | 8     | `Nave:LOVE#16`, `Nave:LOVE#17`                |
-| Matt.10.41            | The Twelve Sent Out (`matt-06` · library)                                 | 8     | `Nave:LOVE#16`, `Nave:LOVE#17`                |
-| Matt.25.34-Matt.25.40 | The End of the Age (`matt-15` · library)                                  | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
-| Mark.9.41             | Peter’s Confession; the Transfiguration (`mark-07` · library)             | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
-| Mark.12.30            | Entry into Jerusalem; Questions in the Temple (`mark-09` · library)       | 8     | `Nave:LOVE#4`, `Nave:LOVE#16`                 |
-| Luke.23.27            | Trials and Crucifixion (`luke-15`)                                        | 8     | `Nave:LOVE#11`, `Nave:LOVE#15`                |
-| 1Cor.13.4-1Cor.13.8   | Gifts of the Spirit and the Way of Love (`1cor-05` · library)             | 10    | `OpenBible:L38015`                            |
-| 1Cor.16.14            | The Collection and Farewell (`1cor-07` · library)                         | 10.3  | `Nave:LOVE#16`, `OpenBible:L38016`            |
-| Gal.5.22              | Freedom and Life in the Spirit (`gal-03` · library)                       | 8     | `Nave:LOVE#5`, `Nave:LOVE#16`                 |
-| Phil.1.9              | Joy in Prison; Christ’s Humility (`phil-01` · library)                    | 12    | `Nave:LOVE#4`, `Nave:LOVE#5`, `Nave:LOVE#16`  |
-| Phlm.1.1              | Paul’s Appeal for Onesimus (`phlm-01` · library)                          | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
+| Passage               | Section                                                       | Score | Sources                                       |
+| --------------------- | ------------------------------------------------------------- | ----- | --------------------------------------------- |
+| Deut.4.37             | Do Not Forget (`deut-x103`)                                   | 8     | `Nave:GOD#122`, `Nave:GOD#123`                |
+| Deut.7.13             | A Holy People (`deut-x302`)                                   | 8     | `Nave:GOD#122`, `Nave:GOD#123`                |
+| Matt.25.34-Matt.25.40 | The End of the Age (`matt-15` · library)                      | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
+| Mark.9.41             | Peter’s Confession; the Transfiguration (`mark-07` · library) | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
+| John.14.21            | The Way to the Father (`john-x205`)                           | 12    | `Nave:LOVE#5`, `Nave:GOD#122`, `Nave:GOD#123` |
+| John.16.27            | The Vine; the Spirit Promised (`john-x206`)                   | 12    | `Nave:LOVE#5`, `Nave:GOD#122`, `Nave:GOD#123` |
+| John.17.26            | The Prayer of Jesus (`john-x207`)                             | 12    | `Nave:LOVE#5`, `Nave:GOD#122`, `Nave:GOD#123` |
+| 1Cor.13.4-1Cor.13.8   | Gifts of the Spirit and the Way of Love (`1cor-05` · library) | 10    | `OpenBible:L38015`                            |
+| 1Cor.16.14            | The Collection and Farewell (`1cor-07` · library)             | 10.3  | `Nave:LOVE#16`, `OpenBible:L38016`            |
+| Phil.1.9              | Joy in Prison; Christ’s Humility (`phil-01` · library)        | 12    | `Nave:LOVE#4`, `Nave:LOVE#5`, `Nave:LOVE#16`  |
+| Phlm.1.1              | Paul’s Appeal for Onesimus (`phlm-01` · library)              | 12    | `Nave:LOVE#5`, `Nave:LOVE#16`, `Nave:LOVE#17` |
+| 1John.4.12            | Children of God; Love and Faith (`1john-02` · library)        | 12    | `Nave:LOVE#4`, `Nave:LOVE#16`, `Nave:GOD#122` |
 
 ## Marriage (`love-marriage`)
 
@@ -33,7 +33,7 @@ Husband and wife, faithfulness and its breaking.
 | ------------------ | ------------------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------ |
 | Gen.2.24           | The Garden and the Fall (`gen-02`)                                        | 18    | `Nave:MARRIAGE#37`, `OpenBible:L39718`, `OpenBible:L17409`                     |
 | Gen.20.3           | Isaac Born, Abraham Tested (`gen-10`)                                     | 8     | `Nave:MARRIAGE#1`, `Nave:ADULTERY#1`                                           |
-| Exod.22.17         | The Book of the Covenant (`exod-x1`)                                      | 12    | `Nave:MARRIAGE#11`, `Nave:MARRIAGE#37`, `Nave:ADULTERY#10`                     |
+| Exod.22.17         | Property, Justice and the Feasts (`exod-x102`)                            | 12    | `Nave:MARRIAGE#11`, `Nave:MARRIAGE#37`, `Nave:ADULTERY#10`                     |
 | Prov.18.22         | Solomon’s Proverbs: Plans, Pride and Friendship (`prov-07` · library)     | 14    | `Nave:MARRIAGE#37`, `OpenBible:L39720`                                         |
 | Prov.21.9          | Solomon’s Proverbs: the Poor, the King and Wine (`prov-08` · library)     | 9     | `Nave:MARRIAGE#37`, `OpenBible:L39727`                                         |
 | Matt.5.32          | The Sermon on the Mount: the Beatitudes and the Law (`matt-03` · library) | 22    | `Nave:MARRIAGE#37`, `Nave:ADULTERY#1`, `Nave:DIVORCE#1`, `OpenBible:L17399`    |
@@ -52,7 +52,7 @@ Raising children, honouring parents, families blessed and broken.
 | ----------------- | ----------------------------------------------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------- |
 | Gen.18.19         | Sodom and Gomorrah (`gen-09`)                                                 | 16    | `Nave:PARENTS#41`, `Nave:FAMILY#13`, `Nave:FAMILY#30`, `Nave:FAMILY#42`                                                |
 | Exod.20.12        | Sinai and the Ten Commandments (`exod-09`)                                    | 21.5  | `Nave:CHILDREN#70`, `OpenBible:L21943`, `OpenBible:L45829`                                                             |
-| Deut.4.9          | Moses Recounts the Journey (`deut-x1`)                                        | 16    | `Nave:CHILDREN#74`, `Nave:PARENTS#41`, `Nave:FAMILY#3`, `Nave:FAMILY#42`                                               |
+| Deut.4.9          | Do Not Forget (`deut-x103`)                                                   | 16    | `Nave:CHILDREN#74`, `Nave:PARENTS#41`, `Nave:FAMILY#3`, `Nave:FAMILY#42`                                               |
 | Josh.24.15        | Covenant at Shechem (`josh-12`)                                               | 13    | `Nave:FAMILY#15`, `Nave:FAMILY#42`, `OpenBible:L21949`                                                                 |
 | Ps.127.3-Ps.127.5 | Psalm 127 (126) (`ps-127` · library)                                          | 28    | `Nave:CHILDREN#67`, `Nave:CHILDREN#69`, `OpenBible:L21951`, `OpenBible:L10823`, `OpenBible:L10824`, `OpenBible:L45834` |
 | Ps.128.3          | Psalm 128 (127) (`ps-128` · library)                                          | 13    | `Nave:CHILDREN#14`, `Nave:FAMILY#2`, `OpenBible:L21950`                                                                |
@@ -88,10 +88,10 @@ Fair dealing, and care for the poor, the widow and the orphan.
 
 | Passage               | Section                                                               | Score | Sources                                                                                                                       |
 | --------------------- | --------------------------------------------------------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Exod.22.22-Exod.22.24 | The Book of the Covenant (`exod-x1`)                                  | 28    | `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L69219`, `OpenBible:L44757`, `OpenBible:L44760`                                   |
-| Deut.14.28-Deut.14.29 | Sermons and the Law Code (`deut-x3`)                                  | 17    | `Nave:POOR#12`, `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L44759`                                                           |
+| Exod.22.22-Exod.22.24 | Property, Justice and the Feasts (`exod-x102`)                        | 28    | `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L69219`, `OpenBible:L44757`, `OpenBible:L44760`                                   |
+| Deut.14.28-Deut.14.29 | Clean Food and the Tithe (`deut-x308`)                                | 17    | `Nave:POOR#12`, `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L44759`                                                           |
 | 2Kgs.4.1-2Kgs.4.10    | Elisha's Wonders (`2kgs-02`)                                          | 17    | `Nave:POOR#29`, `Nave:POOR#45`, `Nave:WIDOW#12`, `OpenBible:L69227`                                                           |
-| Job.22.9-Job.22.11    | The Great Debate (`job-x1`)                                           | 12    | `Nave:POOR#42`, `Nave:WIDOW#7`, `Nave:ORPHAN#1`                                                                               |
+| Job.22.9-Job.22.11    | Eliphaz's Last Speech (`job-x114`)                                    | 12    | `Nave:POOR#42`, `Nave:WIDOW#7`, `Nave:ORPHAN#1`                                                                               |
 | Ps.68.5               | Psalm 68 (67) (`ps-068` · library)                                    | 21.3  | `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L69220`, `OpenBible:L44761`                                                       |
 | Ps.82.3               | Psalm 82 (81) (`ps-082` · library)                                    | 15.5  | `Nave:POOR#11`, `Nave:ORPHAN#1`, `OpenBible:L44755`                                                                           |
 | Ps.146.9              | Psalm 146 (145) (`ps-146` · library)                                  | 18.8  | `Nave:WIDOW#7`, `Nave:ORPHAN#1`, `OpenBible:L69229`, `OpenBible:L44756`                                                       |

@@ -1,7 +1,13 @@
 /** The Themes view's geometry (P6.3): constellations apart, stars inside them, flights between. */
 import fs from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { layoutThemes, starAt, STAGGER, type ThemeInput } from '@/components/vault/constellations';
+import {
+  layoutThemes,
+  spreadLayout,
+  starAt,
+  STAGGER,
+  type ThemeInput,
+} from '@/components/vault/constellations';
 import { GROUP_ORDER, vaultData } from '@/components/vault/data';
 import { layoutVault } from '@/components/vault/layout';
 import type { Point } from '@/components/vault/layout';
@@ -10,14 +16,22 @@ import { getManifest } from '@/lib/data';
 const themes = JSON.parse(fs.readFileSync('public/data/themes.json', 'utf8')) as {
   themes: {
     id: string;
-    subthemes: { id: string; passages: { ref: string; bookId: string; library: boolean }[] }[];
+    subthemes: {
+      id: string;
+      readings: { sectionId: string; bookId: string; library: boolean; key?: string }[];
+    }[];
   }[];
 };
 const input: ThemeInput[] = themes.themes.map((t) => ({
   id: t.id,
   subthemes: t.subthemes.map((s) => ({
     id: s.id,
-    passages: s.passages.map((p) => ({ key: p.ref, bookId: p.bookId, library: p.library })),
+    readings: s.readings.map((r) => ({
+      key: r.sectionId,
+      bookId: r.bookId,
+      library: r.library,
+      bright: !!r.key,
+    })),
   })),
 }));
 const d = vaultData(getManifest());
@@ -37,8 +51,9 @@ describe('constellations', () => {
     for (const c of l.constellations) expect(Math.hypot(c.x, c.y) + c.r).toBeLessThan(vault.radius);
   });
 
-  it('a star for every passage, unique, inside its constellation', () => {
-    const n = input.reduce((k, t) => k + t.subthemes.reduce((j, s) => j + s.passages.length, 0), 0);
+  it('a star for every reading in every sub-theme, unique, inside its constellation', () => {
+    const n = input.reduce((k, t) => k + t.subthemes.reduce((j, s) => j + s.readings.length, 0), 0);
+    expect(n).toBeGreaterThanOrEqual(808); // every reading has a home
     expect(l.stars).toHaveLength(n);
     expect(new Set(l.stars.map((s) => s.key)).size).toBe(n);
     const byId = new Map(l.constellations.map((c) => [c.id, c]));
@@ -72,5 +87,21 @@ describe('constellations', () => {
         Math.hypot(at.x - s.home.x, at.y - s.home.y) > 1 && Math.hypot(at.x - s.x, at.y - s.y) > 1,
     );
     expect(moving.length / mid.length).toBeGreaterThan(0.95);
+  });
+});
+
+describe('a sub-theme opened up', () => {
+  it('lays its readings in rows of slots, centred, in order', () => {
+    const pts = spreadLayout(7, { x: 100, y: 50 }, { w: 80, h: 10 }, 3);
+    expect(pts).toHaveLength(7);
+    // Three across, three rows; the middle row centred on the sub-theme's height.
+    expect(pts.slice(0, 3).map((p) => p.x)).toEqual([-20, 60, 140]);
+    expect(pts[3]!.y - pts[0]!.y).toBe(10);
+    expect(pts[3]!.y).toBe(50);
+    // Fewer readings than slots: one row, centred.
+    expect(spreadLayout(2, { x: 0, y: 0 }, { w: 80, h: 10 }, 5)).toEqual([
+      { x: -80, y: 0 },
+      { x: 0, y: 0 },
+    ]);
   });
 });

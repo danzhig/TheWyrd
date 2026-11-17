@@ -60,7 +60,10 @@ test.describe('themes', () => {
       timeout: 5000,
     });
     await expect(page.getByTestId('spiral-layer')).toHaveCount(0);
-    await expect(page.locator('[data-constellation]')).toHaveCount(10);
+    const data = (await (await page.request.get('/data/themes.json')).json()) as {
+      themes: unknown[];
+    };
+    await expect(page.locator('[data-constellation]')).toHaveCount(data.themes.length);
     expect((await sample(page))!.p).toBe(1);
 
     await page.getByTestId('view-spiral').click();
@@ -131,7 +134,7 @@ test.describe('themes', () => {
     expect(await home).toBeLessThan(0.05);
   });
 
-  test('a constellation opens to its passages; a passage opens the reader at its verse', async ({
+  test('a sub-theme opens to every reading, spread out and legible; a reading opens the reader', async ({
     page,
   }) => {
     await openVault(page);
@@ -139,59 +142,99 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 6000,
     });
-    await page.locator('[data-constellation="mercy"]').click({ force: true });
-    const passages = page.locator('[data-passage^="mercy-"]');
-    await expect(passages.first()).toBeAttached({ timeout: 6000 });
+    // The fullest sub-theme (owner, 2026-11-17: one star per reading, all of them readable).
+    const data = (await (await page.request.get('/data/themes.json')).json()) as {
+      themes: { id: string; subthemes: { id: string; readings: unknown[] }[] }[];
+    };
+    const [theme, sub] = data.themes
+      .flatMap((t) => t.subthemes.map((s) => [t, s] as const))
+      .sort((a, b) => b[1].readings.length - a[1].readings.length)[0]!;
+    await page.locator(`[data-constellation="${theme.id}"]`).click({ force: true });
+    const name = page.locator(`[data-subtheme="${sub.id}"]`);
+    await expect(name).toBeAttached({ timeout: 6000 });
+    await expect(name).toContainText(String(sub.readings.length));
+    await name.dispatchEvent('click');
+    await expect(page.getByTestId('spread-head')).toContainText(`${sub.readings.length} readings`);
+    const readings = page.locator(`[data-reading^="${sub.id}:"]`);
+    await expect(readings).toHaveCount(sub.readings.length, { timeout: 6000 });
     expect(
       await page
         .locator('[data-testid="vault-view"] *, [data-testid="vault-label-frame"] *')
         .count(),
     ).toBeLessThan(300);
-    // Zoomed all the way in, still under the budget.
-    for (let i = 0; i < 6; i++) await page.getByRole('button', { name: 'Zoom in' }).click();
-    expect(
-      await page
-        .locator('[data-testid="vault-view"] *, [data-testid="vault-label-frame"] *')
-        .count(),
-    ).toBeLessThan(300);
+    // No two names overlap, and each is at least 12 px tall on screen.
+    const boxes = await readings.evaluateAll((els) =>
+      els.map((e) => {
+        const r = e.getBoundingClientRect();
+        return { x: r.x, y: r.y, w: r.width, h: r.height };
+      }),
+    );
+    for (const [i, a] of boxes.entries()) {
+      expect(a.h).toBeGreaterThanOrEqual(12);
+      for (const b of boxes.slice(i + 1))
+        expect(
+          a.x < b.x + b.w - 1 && b.x < a.x + a.w - 1 && a.y < b.y + b.h - 1 && b.y < a.y + a.h - 1,
+        ).toBe(false);
+    }
+    // The first row is on screen.
+    await expect(readings.first()).toBeInViewport();
 
-    const href = (await passages.first().getAttribute('href'))!;
-    expect(href).toMatch(/^\/read\/[^/]+\/\?theme=mercy-[a-z]+#v-\d+-\d+$/);
-    // Click that very link (the stars are small and the camera may still be gliding, so a click
-    // by position could land on a neighbour), then wait for its own section.
-    await passages.first().dispatchEvent('click');
+    const first = readings.first();
+    const href = (await first.getAttribute('href'))!;
+    expect(href).toMatch(new RegExp(`^/read/[^/]+/\\?theme=${sub.id}(#v-\\d+-\\d+)?$`));
+    await first.dispatchEvent('click');
     const section = href.split('/')[2]!;
     await page.waitForURL(new RegExp(`/read/${section}/`));
     await expect(page.locator('html')).toHaveAttribute('data-reader', section);
-    await expect(page.locator(`[id="${href.split('#')[1]}"]`)).toBeAttached();
     // Back on the Vault, it is still showing the themes.
     await page.goBack();
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
   });
 
-  test('the reader’s back arrow returns to the sub-theme, in a visit and on a fresh load', async ({
-    page,
-  }) => {
-    // In a visit: open a passage from Mercy, then go up — back in Themes at Mercy.
+  test('back and Esc close an open sub-theme', async ({ page }) => {
     await openVault(page);
     await page.getByTestId('view-themes').click();
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 6000,
     });
     await page.locator('[data-constellation="mercy"]').click({ force: true });
-    const passages = page.locator('[data-passage^="mercy-"]');
+    const name = page.locator('[data-subtheme="mercy-grace"]');
+    await expect(name).toBeAttached({ timeout: 6000 });
+    await name.dispatchEvent('click');
+    await expect(page.locator('[data-reading^="mercy-grace:"]').first()).toBeAttached();
+    await page.getByTestId('spread-back').click();
+    await expect(page.locator('[data-reading]')).toHaveCount(0);
+    await expect(page.getByTestId('spread-back')).toHaveCount(0);
+    await name.dispatchEvent('click');
+    await expect(page.locator('[data-reading^="mercy-grace:"]').first()).toBeAttached();
+    await page.keyboard.press('Escape');
+    await expect(page.locator('[data-reading]')).toHaveCount(0);
+  });
+
+  test('the reader’s back arrow returns to the sub-theme, in a visit and on a fresh load', async ({
+    page,
+  }) => {
+    // In a visit: open a reading from Mercy, then go up — back in Themes, Mercy open.
+    await openVault(page);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    await page.locator('[data-constellation="mercy"]').click({ force: true });
+    await page.locator('[data-subtheme="mercy-mercy"]').dispatchEvent('click');
+    const passages = page.locator('[data-reading^="mercy-mercy:"]');
     await expect(passages.first()).toBeAttached({ timeout: 6000 });
     const href = (await passages.first().getAttribute('href'))!;
     const section = href.split('/')[2]!;
     await passages.first().dispatchEvent('click');
     await expect(page.locator('html')).toHaveAttribute('data-reader', section);
-    await page.getByRole('link', { name: 'Back to the theme' }).click();
+    await page.locator('a[aria-label="Back to the theme"]').click();
     await page.waitForURL((u) => u.pathname === '/');
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
     await expect(passages.first()).toBeAttached({ timeout: 6000 });
 
     // A fresh load of a passage opened from a theme: Esc goes to the Vault, which switches to
-    // Themes and flies to that sub-theme, close enough to show its passages.
+    // Themes and opens that sub-theme.
     await page.goto(`/read/${section}/?theme=mercy-forgiveness`);
     await expect(page.locator('html')).toHaveAttribute('data-reader', section);
     await page.keyboard.press('Escape');
@@ -199,7 +242,7 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 8000,
     });
-    await expect(page.locator('[data-passage^="mercy-forgiveness:"]').first()).toBeAttached({
+    await expect(page.locator('[data-reading^="mercy-forgiveness:"]').first()).toBeAttached({
       timeout: 6000,
     });
     expect(new URL(page.url()).search).toBe('');
@@ -276,7 +319,7 @@ test.describe('themes', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 8000,
     });
-    await expect(page.locator('[data-passage^="mercy-forgiveness:"]').first()).toBeAttached({
+    await expect(page.locator('[data-reading^="mercy-forgiveness:"]').first()).toBeAttached({
       timeout: 6000,
     });
     // The breadcrumb's link is the same way back.
@@ -289,7 +332,7 @@ test.describe('themes', () => {
     });
   });
 
-  test('the wheel zooms over a star or a sub-theme name as over the open sky', async ({
+  test('the wheel zooms over a sub-theme or a reading’s name as over the open sky', async ({
     page,
     isMobile,
   }) => {
@@ -300,8 +343,8 @@ test.describe('themes', () => {
       timeout: 6000,
     });
     await page.locator('[data-constellation="mercy"]').click({ force: true });
-    const star = page.locator('[data-passage^="mercy-"]').first();
-    await expect(star).toBeAttached({ timeout: 6000 });
+    const sub = page.locator('[data-subtheme^="mercy-"]').first();
+    await expect(sub).toBeAttached({ timeout: 6000 });
     await page.waitForTimeout(900); // the flight to the constellation lands
     const k = () =>
       page.evaluate(() =>
@@ -311,14 +354,21 @@ test.describe('themes', () => {
           ).getPropertyValue('--k'),
         ),
       );
-    for (const target of [star, page.locator('[data-subtheme^="mercy-"]').first()]) {
+    const wheelOver = async (target: typeof sub) => {
       const before = await k();
       const box = (await target.boundingBox())!;
       await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
-      // A star's own reference comes to the front while it is pointed at.
       await page.mouse.wheel(0, before > 3 ? 300 : -300);
       await expect.poll(k, { timeout: 3000 }).not.toBe(before);
-    }
+    };
+    await wheelOver(sub);
+    // Over a reading's name in an open sub-theme.
+    await page.waitForTimeout(600);
+    await page.locator('[data-subtheme="mercy-mercy"]').dispatchEvent('click');
+    const reading = page.locator('[data-reading^="mercy-mercy:"]').first();
+    await expect(reading).toBeAttached();
+    await page.waitForTimeout(700);
+    await wheelOver(reading);
   });
 
   test('reduced motion cross-fades instead of flying', async ({ browser }) => {

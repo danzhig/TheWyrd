@@ -166,3 +166,36 @@ export function themesFingerprint(subthemes: z.infer<typeof SubthemeSchema>[]): 
   ]);
   return createHash('sha256').update(JSON.stringify(canonical)).digest('hex').slice(0, 16);
 }
+
+// ---------------------------------------------------------------------------------------------
+// Readings (P6.5): content/themes/readings.json, written by `pnpm themes:readings`.
+// ---------------------------------------------------------------------------------------------
+
+export const READINGS_FILE = path.join(process.cwd(), 'content/themes/readings.json');
+
+export const ReadingsFileSchema = z.object({
+  $comment: z.string(),
+  approval: z.object({ by: z.string(), date: z.string(), fingerprint: z.string() }).nullable(),
+  readings: z.array(
+    z.object({
+      sectionId: z.string(),
+      /** Home sub-theme first, then a second where the reading truly sits in two. */
+      subs: z.array(z.string()).min(1).max(2),
+      method: z.enum(['evidence', 'similarity']),
+      scores: z.array(z.number()),
+      rows: z.array(z.string()),
+    }),
+  ),
+});
+export type ReadingsFile = z.infer<typeof ReadingsFileSchema>;
+
+export function readReadings(file = READINGS_FILE): ReadingsFile | null {
+  if (!fs.existsSync(file)) return null;
+  return ReadingsFileSchema.parse(JSON.parse(fs.readFileSync(file, 'utf8')));
+}
+
+/** The owner's approval covers exactly which readings sit in which sub-themes. */
+export function readingsFingerprint(readings: ReadingsFile['readings']): string {
+  const canonical = readings.map((r) => [r.sectionId, r.subs]);
+  return createHash('sha256').update(JSON.stringify(canonical)).digest('hex').slice(0, 16);
+}

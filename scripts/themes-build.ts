@@ -32,7 +32,7 @@ import {
 const PER_SUBTHEME = 12;
 const MAX_PER_BOOK = 3;
 const NAVE_WEIGHT = 4;
-const APPROVAL = { by: 'the owner', date: '2026-11-12' };
+const APPROVAL = { by: 'the owner', date: '2026-11-17' };
 
 const tax = readTaxonomy();
 if (tax.status !== 'approved') throw new Error('The taxonomy is not approved yet.');
@@ -66,7 +66,7 @@ for (const t of tax.themes) {
   const doc: string[] = [
     `# ${t.title}: passages`,
     '',
-    `**Status: approved by ${APPROVAL.by} on ${APPROVAL.date}** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).`,
+    `**Status: approved by ${APPROVAL.by} on ${APPROVAL.date}** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).`,
     '',
     `${t.description}`,
     '',

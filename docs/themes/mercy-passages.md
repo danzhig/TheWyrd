@@ -1,6 +1,6 @@
 # Mercy and forgiveness: passages
 
-**Status: approved by the owner on 2026-11-12** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).
+**Status: approved by the owner on 2026-11-17** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).
 
 God's mercy to sinners, and the forgiveness people are asked to pass on.
 
@@ -10,20 +10,20 @@ Chosen by `pnpm themes:build`: OpenBible’s vote score (0–10 within its topic
 
 Compassion that goes beyond what is owed.
 
-| Passage             | Section                                                                    | Score | Sources                            |
-| ------------------- | -------------------------------------------------------------------------- | ----- | ---------------------------------- |
-| Gen.39.21-Gen.39.23 | Joseph in Egypt (`gen-17`)                                                 | 4     | `Nave:MERCY#5`                     |
-| Mic.6.8             | The Lord’s Case; Hope after Judgment (`mic-03` · library)                  | 7.3   | `Nave:MERCY#1`, `OpenBible:L41034` |
-| Matt.5.7            | The Sermon on the Mount: the Beatitudes and the Law (`matt-03` · library)  | 12.3  | `Nave:MERCY#1`, `OpenBible:L41029` |
-| Matt.9.13           | Healings and the Cost of Following (`matt-05` · library)                   | 6.7   | `OpenBible:L41031`                 |
-| Luke.6.36           | The Disciples Called; Sermon on the Plain (`luke-07`)                      | 14    | `Nave:MERCY#1`, `OpenBible:L41027` |
-| John.17.5           | John 12–21 (`john-x2`)                                                     | 5.6   | `OpenBible:L17363`                 |
-| Rom.6.23            | Dead to Sin; the Law and the Divided Self (`rom-03` · library)             | 4.4   | `OpenBible:L17364`                 |
-| Eph.2.8             | God’s Plan and the One New People (`eph-01` · library)                     | 5.6   | `OpenBible:L17362`                 |
-| Titus.3.5           | Elders and Good Works (`titus-01` · library)                               | 10    | `OpenBible:L17359`                 |
-| Heb.4.16            | The Son above the Angels and Moses; the Promised Rest (`heb-01` · library) | 6.7   | `OpenBible:L41030`                 |
-| Jas.2.13            | Trials; Hearing and Doing; Faith and Works (`jas-01` · library)            | 12.3  | `Nave:MERCY#1`, `OpenBible:L41028` |
-| 1Pet.2.24           | New Birth and Hope; a Holy People (`1pet-01` · library)                    | 7.8   | `OpenBible:L17360`                 |
+| Passage             | Section                                                                    | Score | Sources                                            |
+| ------------------- | -------------------------------------------------------------------------- | ----- | -------------------------------------------------- |
+| Exod.33.19          | Moses Intercedes (`exod-12`)                                               | 8     | `Nave:GOD#124`, `Nave:GOD#66`                      |
+| Exod.34.6           | The Covenant Renewed (`exod-13`)                                           | 12    | `Nave:GOD#124`, `Nave:GOD#118`, `Nave:GOD#66`      |
+| Num.14.18-Num.14.20 | The Twelve Spies (`num-04`)                                                | 8     | `Nave:GOD#124`, `Nave:GOD#118`                     |
+| 1Chr.16.34          | Bringing the Ark to Jerusalem (`1chr-08` · library)                        | 8     | `Nave:GOD#124`, `Nave:GOD#66`                      |
+| 2Chr.5.13           | The Ark, the Prayer and the Glory (`2chr-03` · library)                    | 8     | `Nave:GOD#124`, `Nave:GOD#66`                      |
+| Ps.69.16            | Psalm 69 (68) (`ps-069` · library)                                         | 8     | `Nave:GOD#124`, `Nave:GOD#66`                      |
+| Matt.5.7            | The Sermon on the Mount: the Beatitudes and the Law (`matt-03` · library)  | 12.3  | `Nave:MERCY#1`, `OpenBible:L41029`                 |
+| Luke.6.36           | The Disciples Called; Sermon on the Plain (`luke-07`)                      | 18    | `Nave:MERCY#1`, `OpenBible:L41027`, `Nave:GOD#124` |
+| Titus.3.5           | Elders and Good Works (`titus-01` · library)                               | 14    | `OpenBible:L17359`, `Nave:GOD#124`                 |
+| Heb.4.16            | The Son above the Angels and Moses; the Promised Rest (`heb-01` · library) | 10.7  | `OpenBible:L41030`, `Nave:GOD#124`                 |
+| Jas.2.13            | Trials; Hearing and Doing; Faith and Works (`jas-01` · library)            | 16.3  | `Nave:MERCY#1`, `OpenBible:L41028`, `Nave:GOD#124` |
+| 1Pet.1.3            | New Birth and Hope; a Holy People (`1pet-01` · library)                    | 9     | `OpenBible:L41032`, `Nave:GOD#124`                 |
 
 ## Forgiveness (`mercy-forgiveness`)
 
@@ -48,18 +48,20 @@ Sins forgiven by God, and forgiving one another.
 
 A gift that cannot be earned.
 
-| Passage               | Section                                                                     | Score | Sources                                |
-| --------------------- | --------------------------------------------------------------------------- | ----- | -------------------------------------- |
-| John.1.16             | John 1–10 (`john-x1`)                                                       | 4.3   | `OpenBible:L27494`                     |
-| Rom.3.24              | The Gospel; All under Sin; Righteousness through Faith (`rom-01` · library) | 2.9   | `OpenBible:L27498`                     |
-| Rom.6.14              | Dead to Sin; the Law and the Divided Self (`rom-03` · library)              | 7.1   | `OpenBible:L27489`                     |
-| Rom.11.6              | Israel and the Nations in God’s Plan (`rom-05` · library)                   | 5.7   | `OpenBible:L27490`                     |
-| 1Cor.15.10            | The Resurrection of the Dead (`1cor-06` · library)                          | 4.3   | `OpenBible:L27495`                     |
-| 2Cor.12.9             | Paul Defends His Apostleship (`2cor-05` · library)                          | 8.6   | `OpenBible:L27488`                     |
-| Eph.2.8-Eph.2.9       | God’s Plan and the One New People (`eph-01` · library)                      | 14.3  | `OpenBible:L27487`, `OpenBible:L27493` |
-| Titus.2.11-Titus.2.14 | Elders and Good Works (`titus-01` · library)                                | 2.9   | `OpenBible:L27497`                     |
-| Heb.4.16              | The Son above the Angels and Moses; the Promised Rest (`heb-01` · library)  | 4.3   | `OpenBible:L27492`                     |
-| Jas.4.6               | The Tongue, Humility, the Rich, Patience and Prayer (`jas-02` · library)    | 5.7   | `OpenBible:L27491`                     |
+| Passage         | Section                                                                    | Score | Sources                                                       |
+| --------------- | -------------------------------------------------------------------------- | ----- | ------------------------------------------------------------- |
+| Gen.6.8         | The Flood (`gen-04`)                                                       | 4     | `Nave:GOD#71`                                                 |
+| Gen.15.6        | Covenant, Hagar and Ishmael (`gen-08`)                                     | 4     | `Nave:GRACE OF GOD#1`                                         |
+| Job.10.12       | Who Can Argue with God? (`job-x105`)                                       | 8     | `Nave:GRACE OF GOD#1`, `Nave:GOD#71`                          |
+| John.1.16       | The Word Became Flesh (`john-x101`)                                        | 4.3   | `OpenBible:L27494`                                            |
+| Rom.5.2         | Abraham’s Faith; Peace with God; Adam and Christ (`rom-02` · library)      | 8     | `Nave:GRACE OF GOD#1`, `Nave:GOD#71`                          |
+| Rom.6.14        | Dead to Sin; the Law and the Divided Self (`rom-03` · library)             | 7.1   | `OpenBible:L27489`                                            |
+| Rom.11.6        | Israel and the Nations in God’s Plan (`rom-05` · library)                  | 9.7   | `OpenBible:L27490`, `Nave:GRACE OF GOD#1`                     |
+| 1Cor.15.10      | The Resurrection of the Dead (`1cor-06` · library)                         | 8.3   | `OpenBible:L27495`, `Nave:GRACE OF GOD#1`                     |
+| 2Cor.12.9       | Paul Defends His Apostleship (`2cor-05` · library)                         | 8.6   | `OpenBible:L27488`                                            |
+| Eph.2.8-Eph.2.9 | God’s Plan and the One New People (`eph-01` · library)                     | 18.3  | `OpenBible:L27487`, `OpenBible:L27493`, `Nave:GRACE OF GOD#1` |
+| Heb.4.16        | The Son above the Angels and Moses; the Promised Rest (`heb-01` · library) | 8.3   | `OpenBible:L27492`, `Nave:GOD#71`                             |
+| Jas.4.6         | The Tongue, Humility, the Rich, Patience and Prayer (`jas-02` · library)   | 5.7   | `OpenBible:L27491`                                            |
 
 ## Redemption and reconciliation (`mercy-reconciliation`)
 

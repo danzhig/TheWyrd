@@ -3,10 +3,14 @@
  * (pixels at zoom 1, centred on the oculus at 0, 0).
  *
  * - Each top-level theme is a constellation on a ring around the oculus; its sub-themes sit on a
- *   small ring around the constellation's centre, joined by hairlines; each sub-theme's passages
- *   are stars spread around it (a sunflower spiral, so any number packs evenly).
- * - Each star also has a home: the medallion of the book its passage is in, on the spiral or the
+ *   ring around the constellation's centre, joined by hairlines; each sub-theme's readings are
+ *   stars spread around it (a sunflower spiral, so any number packs evenly). Every reading of the
+ *   Bible is a star (owner, 2026-11-17: one per reading, a second where it sits in two); readings
+ *   holding one of the sub-theme's key passages are bright. Sub-theme rings and the ring of
+ *   constellations grow with their stars, so nothing overlaps however full a theme is.
+ * - Each star also has a home: the medallion of the book its reading is in, on the spiral or the
  *   outer ring, scattered inside the medallion so the stars of one book do not stack.
+ * - Opening a sub-theme spreads its stars into rows (`spreadLayout`), one name beside each.
  * - The switch is a flight (owner, 2026-11-12): every star travels from home to its constellation
  *   (or back) along its own curve, starting a little after the one before, so the spiral visibly
  *   comes apart into the constellations and re-forms on the way back.
@@ -15,11 +19,16 @@ import type { Point } from './layout';
 
 export interface ThemeInput {
   id: string;
-  subthemes: { id: string; passages: { key: string; bookId: string; library: boolean }[] }[];
+  subthemes: {
+    id: string;
+    /** One per reading in the sub-theme: `key` is its section id; `bright` if it holds a key passage. */
+    readings: { key: string; bookId: string; library: boolean; bright?: boolean }[];
+  }[];
 }
 
 export interface Star extends Point {
-  key: string; // `${subthemeId}:${ref}`, unique
+  key: string; // `${subthemeId}:${sectionId}`, unique
+  bright: boolean;
   themeId: string;
   subId: string;
   bookId: string;
@@ -41,9 +50,10 @@ export interface ThemesLayout {
   stars: Star[];
 }
 
-export const RING = 400; // constellation centres from the oculus
-export const SUB_RING = 60; // sub-theme centres from their constellation's centre
-const STAR_STEP = 9; // sunflower spacing between a sub-theme's stars
+export const RING = 400; // constellation centres from the oculus (at least)
+export const SUB_RING = 60; // sub-theme centres from their constellation's centre (at least)
+export const STAR_STEP = 6; // sunflower spacing between a sub-theme's stars
+const GAP = 16; // clear space between neighbouring clusters, and between constellations
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 export const STAGGER = 0.35; // the last star leaves this far into the flight
 
@@ -76,24 +86,41 @@ export function layoutThemes(
 ): ThemesLayout {
   const constellations: Constellation[] = [];
   const stars: Star[] = [];
-  const n = themes.length;
+  // How far each sub-theme's cluster reaches, how far its constellation's sub-themes sit from the
+  // centre (far enough that neighbouring clusters clear each other), and the constellation's reach.
+  const reach = (count: number) => STAR_STEP * Math.sqrt(Math.max(count, 1) + 0.6);
+  const sizes = themes.map((t) => {
+    const m = t.subthemes.length;
+    const rs = t.subthemes.map((s) => reach(s.readings.length));
+    const widest = Math.max(...rs);
+    const d = m > 1 ? Math.max(SUB_RING, (widest * 2 + GAP) / (2 * Math.sin(Math.PI / m))) : 0;
+    return { d, r: d * 1.08 + widest };
+  });
+  // The ring of constellations: each takes a share of it as wide as itself, and the ring is long
+  // enough for all of them with a gap between neighbours (a little more, as chords are shorter
+  // than arcs).
+  const arcs = sizes.map((x) => x.r * 2 + GAP);
+  const ring = Math.max(RING, (arcs.reduce((a, b) => a + b, 0) / (2 * Math.PI)) * 1.06);
+  const starts: number[] = [];
+  arcs.reduce((at, w) => (starts.push(at + w / 2), at + w), 0);
+  const total = arcs.reduce((a, b) => a + b, 0);
   themes.forEach((t, i) => {
     // Start at the top and go round clockwise; each constellation turned a little differently.
-    const a = -Math.PI / 2 + (i / n) * Math.PI * 2;
-    const c = { x: Math.cos(a) * RING, y: Math.sin(a) * RING };
+    const a = -Math.PI / 2 + (starts[i]! / total) * Math.PI * 2;
+    const c = { x: Math.cos(a) * ring, y: Math.sin(a) * ring };
     const m = t.subthemes.length;
     const twist = hash01(t.id) * Math.PI * 2;
     const subs = t.subthemes.map((s, j) => {
       const b = twist + (j / m) * Math.PI * 2;
       // Alternate the distance a little so the shape reads as a figure, not a regular polygon.
-      const d = SUB_RING * (j % 2 ? 0.82 : 1.08);
+      const d = sizes[i]!.d * (j % 2 ? 0.92 : 1.08);
       return { id: s.id, x: c.x + Math.cos(b) * d, y: c.y + Math.sin(b) * d };
     });
     const lines: [Point, Point][] = subs.map((s, j) => [s, subs[(j + 1) % m]!]);
     let r = 0;
     t.subthemes.forEach((s, j) => {
       const sc = subs[j]!;
-      s.passages.forEach((p, k) => {
+      s.readings.forEach((p, k) => {
         const rr = STAR_STEP * Math.sqrt(k + 0.6);
         const x = sc.x + Math.cos(k * GOLDEN) * rr;
         const y = sc.y + Math.sin(k * GOLDEN) * rr;
@@ -104,6 +131,7 @@ export function layoutThemes(
         const hr = Math.sqrt(hash01(`${key}#r`)) * home.r * 0.7;
         stars.push({
           key,
+          bright: !!p.bright,
           themeId: t.id,
           subId: s.id,
           bookId: p.bookId,
@@ -169,4 +197,27 @@ export function nearestConstellation(l: ThemesLayout, p: Point): Constellation |
     }
   }
   return best;
+}
+
+/**
+ * A sub-theme opened up (owner, 2026-11-17): its readings in rows around the sub-theme's centre,
+ * in the order given (the Bible's), each with room for its name to the right of its star. `cell`
+ * is a row's slot in world units (width and height), `cols` how many slots fit across the screen.
+ * The grid's top is kept at the centre's height minus half its height, so the camera can start at
+ * the top and the reader pans down through a long sub-theme.
+ */
+export function spreadLayout(
+  count: number,
+  centre: Point,
+  cell: { w: number; h: number },
+  cols: number,
+): Point[] {
+  const c = Math.max(1, Math.min(cols, count));
+  const rows = Math.ceil(count / c);
+  const left = centre.x - (c * cell.w) / 2;
+  const top = centre.y - ((rows - 1) * cell.h) / 2;
+  return Array.from({ length: count }, (_, i) => ({
+    x: left + (i % c) * cell.w,
+    y: top + Math.floor(i / c) * cell.h,
+  }));
 }

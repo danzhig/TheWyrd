@@ -10,7 +10,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } fro
 import { camera, prefersReducedMotion } from '@/lib/camera';
 import { FLY_FROM, FLY_TO, layoutThemes, starAt, type ThemesLayout } from './constellations';
 import type { Point } from './layout';
-import type { Cam, StarField, StarHide } from './starfield';
+import type { Cam, DrawOptions, StarField, StarHide } from './starfield';
 
 export type ThemesView = 'spiral' | 'to-themes' | 'themes' | 'to-spiral';
 
@@ -22,12 +22,29 @@ export interface ThemePassage {
   bookId: string;
   library: boolean;
 }
+/** A reading in a sub-theme (P6.5): one star each. */
+export interface ThemeReading {
+  sectionId: string;
+  title: string;
+  display: string;
+  bookId: string;
+  library: boolean;
+  second?: boolean;
+  /** The sub-theme's first key passage inside this reading (OSIS), if any: a bright star. */
+  key?: string;
+}
 export interface ThemesData {
   themes: {
     id: string;
     title: string;
     description: string;
-    subthemes: { id: string; title: string; description: string; passages: ThemePassage[] }[];
+    subthemes: {
+      id: string;
+      title: string;
+      description: string;
+      passages: ThemePassage[];
+      readings: ThemeReading[];
+    }[];
   }[];
 }
 
@@ -91,6 +108,8 @@ export function useThemes(opts: {
   const fade = useRef(false);
   const dir = useRef<1 | -1>(1);
   const lit = useRef<string | null>(null);
+  // An opened sub-theme (its stars in rows), drawn on every frame until closed.
+  const spread = useRef<DrawOptions['spread']>(undefined);
   const busy = useRef(false);
 
   const layout = useMemo(
@@ -101,10 +120,11 @@ export function useThemes(opts: {
               id: t.id,
               subthemes: t.subthemes.map((s) => ({
                 id: s.id,
-                passages: s.passages.map((x) => ({
-                  key: x.ref,
+                readings: s.readings.map((x) => ({
+                  key: x.sectionId,
                   bookId: x.bookId,
                   library: x.library,
+                  bright: !!x.key,
                 })),
               })),
             })),
@@ -125,6 +145,7 @@ export function useThemes(opts: {
         lit: lit.current,
         dir: dir.current,
         hide: hideRef?.current,
+        spread: spread.current,
       });
     },
     [camRef, hideRef],
@@ -250,6 +271,14 @@ export function useThemes(opts: {
     [data, draw],
   );
 
+  const setSpread = useCallback(
+    (next: DrawOptions['spread']) => {
+      spread.current = next;
+      draw();
+    },
+    [draw],
+  );
+
   const setLit = useCallback(
     (id: string | null) => {
       lit.current = id;
@@ -269,5 +298,6 @@ export function useThemes(opts: {
     draw,
     switchTo,
     setLit,
+    setSpread,
   };
 }

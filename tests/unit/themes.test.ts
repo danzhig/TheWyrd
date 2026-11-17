@@ -7,7 +7,10 @@ import { verseText, type SectionFile } from '@/lib/types';
 import { buildThemes, displayRef, excerpt, type PublicThemes } from '@/scripts/themes/emit-themes';
 import { parseEntry } from '@/scripts/themes/naves';
 import { parseOpenBible } from '@/scripts/themes/openbible';
-import { readTaxonomy, themesFingerprint } from '@/scripts/themes/taxonomy';
+import { readingsFingerprint, readTaxonomy, themesFingerprint } from '@/scripts/themes/taxonomy';
+
+/** A readings file that does not exist: these checks are about passages alone. */
+const NO_READINGS = '/nonexistent/readings.json';
 
 describe("Nave's entries", () => {
   const rows = parseEntry('MERCY', fs.readFileSync('tests/fixtures/themes/nave-MERCY.xml', 'utf8'));
@@ -39,9 +42,10 @@ describe('OpenBible topics', () => {
 describe('the taxonomy', () => {
   const tax = readTaxonomy();
 
-  it('has 8–10 themes, each with sub-themes, all described, ids unique', () => {
+  // Ten themes (2026-11-12), and three for content that fitted none of them (2026-11-17).
+  it('has 8–14 themes, each with sub-themes, all described, ids unique', () => {
     expect(tax.themes.length).toBeGreaterThanOrEqual(8);
-    expect(tax.themes.length).toBeLessThanOrEqual(10);
+    expect(tax.themes.length).toBeLessThanOrEqual(14);
     const ids = tax.themes.flatMap((t) => [t.id, ...t.subthemes.map((s) => s.id)]);
     expect(new Set(ids).size).toBe(ids.length);
     for (const t of tax.themes) {
@@ -115,22 +119,57 @@ describe('theme passages (P6.2)', () => {
       return file;
     };
     // A draft is checked but never published.
-    const draft = buildThemes([gen], new Set(), write([sub('draft')]));
+    const draft = buildThemes([gen], new Set(), write([sub('draft')]), NO_READINGS);
     expect(draft.errors).toEqual([]);
     expect(draft.data!.themes[0]!.subthemes[0]!.passages).toEqual([]);
     // An approved passage is published with its excerpt from the built text.
-    const ok = buildThemes([gen], new Set(), write([sub('approved')]));
+    const ok = buildThemes([gen], new Set(), write([sub('approved')]), NO_READINGS);
     expect(ok.errors).toEqual([]);
     const p = ok.data!.themes[0]!.subthemes[0]!.passages[0]!;
     expect(p.display).toBe('Genesis 1:1');
     expect(p.excerpt).toBe(excerpt(verseText(gen.verses[0]!)));
     // Edited after approval: refused, nothing published.
-    const edited = buildThemes([gen], new Set(), write([sub('approved')], 'stale'));
+    const edited = buildThemes([gen], new Set(), write([sub('approved')], 'stale'), NO_READINGS);
     expect(edited.errors.join()).toMatch(/edited since its approval/);
     expect(edited.data!.themes[0]!.subthemes[0]!.passages).toEqual([]);
     // A passage whose first verse is not in its section.
-    const wrong = buildThemes([gen], new Set(), write([sub('approved', 'Exod.1.1')]));
+    const wrong = buildThemes([gen], new Set(), write([sub('approved', 'Exod.1.1')]), NO_READINGS);
     expect(wrong.errors.join()).toMatch(/not in gen-01/);
+
+    // Readings (P6.5): every section has a home; a second is flagged; an unplaced one fails.
+    const readingsFile = (readings: object[], fingerprint?: string) => {
+      const f = path.join(os.tmpdir(), `readings-${Math.random()}.json`);
+      const r = readings as Parameters<typeof readingsFingerprint>[0];
+      fs.writeFileSync(
+        f,
+        JSON.stringify({
+          $comment: 'test',
+          approval: {
+            by: 'test',
+            date: '2026-11-17',
+            fingerprint: fingerprint ?? readingsFingerprint(r),
+          },
+          readings: r,
+        }),
+      );
+      return f;
+    };
+    const one = { sectionId: 'gen-01', subs: ['x-y'], method: 'evidence', scores: [1], rows: [] };
+    const placed = buildThemes([gen], new Set(), write([sub('approved')]), readingsFile([one]));
+    expect(placed.errors).toEqual([]);
+    expect(placed.data!.themes[0]!.subthemes[0]!.readings).toMatchObject([
+      { sectionId: 'gen-01', display: 'Genesis 1:1–2:3', key: 'Gen.1.1' },
+    ]);
+    const unplaced = buildThemes([gen], new Set(), write([sub('approved')]), readingsFile([]));
+    expect(unplaced.errors.join()).toMatch(/gen-01 has no theme/);
+    const stale = buildThemes(
+      [gen],
+      new Set(),
+      write([sub('approved')]),
+      readingsFile([one], 'old'),
+    );
+    expect(stale.errors.join()).toMatch(/readings.json: edited since its approval/);
+    expect(stale.data!.themes[0]!.subthemes[0]!.readings).toEqual([]);
   });
 
   it('every published passage resolves to a built section and cites a dataset row', () => {

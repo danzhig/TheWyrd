@@ -1,6 +1,6 @@
 # Wisdom and the way of life: passages
 
-**Status: approved by the owner on 2026-11-12** (the owner approved every theme’s passages in advance; this record lists them so any can still be changed).
+**Status: approved by the owner on 2026-11-17** (the owner approved every theme’s passages in advance, on 2026-11-12 and again with the whole-Bible themes on 2026-11-17; this record lists them so any can still be changed).
 
 How to live well before God: wisdom, humility, peace and the right use of things.
 
@@ -10,20 +10,20 @@ Chosen by `pnpm themes:build`: OpenBible’s vote score (0–10 within its topic
 
 The fear of the Lord and the practical wisdom that follows from it.
 
-| Passage               | Section                                                                  | Score | Sources                              |
-| --------------------- | ------------------------------------------------------------------------ | ----- | ------------------------------------ |
-| Exod.36.1             | The Tabernacle Built (`exod-x3`)                                         | 8     | `Nave:WISDOM#3`, `Nave:WISDOM#4`     |
-| Prov.1.7              | Wisdom’s Call and a Father’s Warnings (`prov-01` · library)              | 8     | `Nave:WISDOM#16`, `OpenBible:L69522` |
-| Prov.3.13-Prov.3.18   | Trust, Discipline and the Path of Life (`prov-02` · library)             | 10    | `Nave:WISDOM#16`, `OpenBible:L69521` |
-| Prov.10.23            | Solomon’s Proverbs: the Righteous and the Wicked (`prov-05` · library)   | 8     | `Nave:WISDOM#16`, `OpenBible:L69526` |
-| Eccl.8.1              | Wisdom and Its Limits (`eccl-04` · library)                              | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#23`   |
-| Jer.9.23              | Jeremiah's Oracles (`jer-x1`)                                            | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#23`   |
-| Dan.1.17              | Exiles at Court (`dan-01`)                                               | 8     | `Nave:WISDOM#12`, `Nave:WISDOM#19`   |
-| Matt.6.23             | The Sermon on the Mount: Prayer and Trust (`matt-04` · library)          | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#23`   |
-| Matt.11.25-Matt.11.27 | John’s Question; Sabbath Controversies (`matt-07` · library)             | 8     | `Nave:WISDOM#19`, `Nave:WISDOM#23`   |
-| John.8.32             | John 1–10 (`john-x1`)                                                    | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#19`   |
-| Jas.1.5               | Trials; Hearing and Doing; Faith and Works (`jas-01` · library)          | 14    | `Nave:WISDOM#21`, `OpenBible:L69519` |
-| Jas.3.17              | The Tongue, Humility, the Rich, Patience and Prayer (`jas-02` · library) | 12    | `Nave:WISDOM#19`, `OpenBible:L69520` |
+| Passage             | Section                                                                  | Score | Sources                              |
+| ------------------- | ------------------------------------------------------------------------ | ----- | ------------------------------------ |
+| Exod.36.1           | Gifts and Craftsmen (`exod-x301`)                                        | 8     | `Nave:WISDOM#3`, `Nave:WISDOM#4`     |
+| Ezra.7.25           | Ezra Arrives (`ezra-05`)                                                 | 8     | `Nave:WISDOM#11`, `Nave:GOD#281`     |
+| Job.12.16           | Job: Man Born of Woman (`job-x107`)                                      | 8     | `Nave:WISDOM#16`, `Nave:GOD#281`     |
+| Prov.1.7            | Wisdom’s Call and a Father’s Warnings (`prov-01` · library)              | 8     | `Nave:WISDOM#16`, `OpenBible:L69522` |
+| Prov.3.13-Prov.3.18 | Trust, Discipline and the Path of Life (`prov-02` · library)             | 10    | `Nave:WISDOM#16`, `OpenBible:L69521` |
+| Prov.10.23          | Solomon’s Proverbs: the Righteous and the Wicked (`prov-05` · library)   | 8     | `Nave:WISDOM#16`, `OpenBible:L69526` |
+| Eccl.8.1            | Wisdom and Its Limits (`eccl-04` · library)                              | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#23`   |
+| Jer.9.23            | Weeping for the People (`jer-x108`)                                      | 8     | `Nave:WISDOM#16`, `Nave:WISDOM#23`   |
+| Dan.1.17            | Exiles at Court (`dan-01`)                                               | 8     | `Nave:WISDOM#12`, `Nave:WISDOM#19`   |
+| Dan.2.20-Dan.2.23   | Nebuchadnezzar's Dream (`dan-02`)                                        | 8     | `Nave:WISDOM#19`, `Nave:GOD#281`     |
+| Jas.1.5             | Trials; Hearing and Doing; Faith and Works (`jas-01` · library)          | 14    | `Nave:WISDOM#21`, `OpenBible:L69519` |
+| Jas.3.17            | The Tongue, Humility, the Rich, Patience and Prayer (`jas-02` · library) | 12    | `Nave:WISDOM#19`, `OpenBible:L69520` |
 
 ## Humility (`wisdom-humility`)
 
@@ -56,8 +56,8 @@ Peace with God and gladness of heart.
 | Matt.5.9              | The Sermon on the Mount: the Beatitudes and the Law (`matt-03` · library) | 11.5  | `Nave:PEACE#8`, `OpenBible:L46366`                                   |
 | Luke.2.14             | Two Births (`luke-03`)                                                    | 12    | `Nave:PEACE#8`, `Nave:PEACE#9`, `Nave:JOY#27`                        |
 | Luke.15.10-Luke.15.32 | The Narrow Door to the Prodigal Son (`luke-11`)                           | 12    | `Nave:JOY#2`, `Nave:JOY#3`, `Nave:JOY#33`                            |
-| John.16.33            | John 12–21 (`john-x2`)                                                    | 18    | `Nave:PEACE#9`, `Nave:JOY#3`, `OpenBible:L46363`                     |
-| Rom.12.12             | Life in the Body; Love and the Authorities (`rom-06` · library)           | 11.5  | `Nave:JOY#3`, `OpenBible:L34682`                                     |
+| John.14.27            | The Way to the Father (`john-x205`)                                       | 11.5  | `Nave:PEACE#9`, `OpenBible:L46367`                                   |
+| John.16.33            | The Vine; the Spirit Promised (`john-x206`)                               | 18    | `Nave:PEACE#9`, `Nave:JOY#3`, `OpenBible:L46363`                     |
 | Rom.15.13             | The Weak and the Strong; Paul’s Plans and Greetings (`rom-07` · library)  | 23    | `Nave:PEACE#9`, `Nave:JOY#3`, `OpenBible:L46378`, `OpenBible:L34681` |
 | Gal.5.22              | Freedom and Life in the Spirit (`gal-03` · library)                       | 13    | `Nave:PEACE#9`, `Nave:JOY#3`, `OpenBible:L34687`                     |
 | Phil.4.6              | Paul’s Goal; Peace and Thanks (`phil-02` · library)                       | 12.5  | `OpenBible:L46369`, `OpenBible:L46375`                               |
