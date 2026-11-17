@@ -22,8 +22,9 @@ export default function Home() {
       minutes: stops.reduce((n, s) => n + s.minutes, 0),
     };
   });
+  // [title, bookId] for Continue: compact, as it is inlined in the page (378 path sections).
   const sections = Object.fromEntries(
-    m.sections.map((s) => [s.id, { title: s.title, bookId: s.bookId }]),
+    m.sections.map((s) => [s.id, [s.title, s.bookId] as [string, string]]),
   );
   return (
     <Vault
