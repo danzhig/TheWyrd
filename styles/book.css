@@ -6,8 +6,8 @@
   position: absolute;
   container-type: size;
   transform-style: preserve-3d;
-  /* The height the cover's title is centred in. A page-turn book's board runs the length of its
-     pages: it sets these so the title stays where a book of one screen would have it. */
+  /* The height the cover's title is centred in. On the book page the board runs the length of its
+     pages, which sets these so the title stays where a book of one screen would have it. */
   --book-h: 100cqh;
   --below: 0px;
 }
@@ -149,7 +149,7 @@
 }
 
 /* ---------------------------------------------------------------------------------------------
-   Page-turn books (prototype; BookCover's PAGE_TURN_BOOKS). The board and the first page share
+   The book page's cover (BookCover, `data-turn`). The board and the first page share
    the shell's 3D space: the board a hair above the page, so it lies on top when closed and
    beneath when both have turned over to the left.
    --------------------------------------------------------------------------------------------- */

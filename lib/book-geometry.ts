@@ -55,15 +55,12 @@ export function currentCoverGeometry(): CoverGeometry {
 }
 
 /**
- * Prototype (owner, 2026-11-17): books that open like a novel (components/book-map/BookCover.tsx).
- * Their boards run the full length of the pages, however long the map, so the closed book that
+ * Height of the closed book in flight. Books open like a novel (components/book-map/BookCover.tsx)
+ * and their boards run the full length of the pages, however long the map, so the closed book that
  * flies in and out reaches past the bottom of the window; its title stays in the top `g.h`.
  */
-export const PAGE_TURN_BOOKS = new Set(['Gen']);
-
-/** Height of the closed book in flight: `g.h`, or past the window's foot for a page-turn book. */
-export function flightHeight(g: CoverGeometry, bookId: string, viewportHeight: number): number {
-  return PAGE_TURN_BOOKS.has(bookId) ? Math.max(g.h, viewportHeight - BOOK_TOP + 24) : g.h;
+export function flightHeight(g: CoverGeometry, viewportHeight: number): number {
+  return Math.max(g.h, viewportHeight - BOOK_TOP + 24);
 }
 
 /** Viewport rect of the closed book (page scrolled to the top). */

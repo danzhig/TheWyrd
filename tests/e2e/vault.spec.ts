@@ -85,7 +85,7 @@ test.describe('the Vault', () => {
     await expect.poll(() => scale(page), { timeout: 3000 }).toBeCloseTo(before, 2);
   });
 
-  test('Genesis opens like a novel: the first page turns with the map, and turns back', async ({
+  test('a book opens like a novel: the first page turns with the map, and turns back', async ({
     page,
   }) => {
     await openVault(page);

@@ -63,14 +63,13 @@
   }
 }
 
-.frame[data-state='closed'] .pages,
-.frame[data-state='closing']:not([data-turn]) .pages {
+.frame[data-state='closed'] .pages {
   opacity: 0;
 }
 
-/* Page-turn books (BookCover's PAGE_TURN_BOOKS): depth while the cover and first page turn, seen
-   from the middle of the visible book rather than the middle of a long map. */
-.frame[data-turn]:is([data-state='closed'], [data-state='opening'], [data-state='closing']) {
+/* Depth while the cover and first page turn (BookCover), seen from the middle of the visible book
+   rather than the middle of a long map. */
+.frame:is([data-state='closed'], [data-state='opening'], [data-state='closing']) {
   perspective: 2400px;
   perspective-origin: 50% calc((100dvh - 80px) / 2);
 }

@@ -116,7 +116,7 @@ export async function bookIn(
   const el = layer();
   if (!el || !animationsOn()) return null;
   const g = currentCoverGeometry();
-  const to = closedBookRect(g, flightHeight(g, bookId, window.innerHeight));
+  const to = closedBookRect(g, flightHeight(g, window.innerHeight));
   const book = closedBook(name, tagline, to, g.h);
   el.replaceChildren(book);
   transition.pending = { kind: 'book-in', bookId };
@@ -156,9 +156,7 @@ export async function bookOut(
   const el = layer();
   if (!el || !animationsOn()) return;
   const g = currentCoverGeometry();
-  const start = from
-    ? toRect(from)
-    : closedBookRect(g, flightHeight(g, bookId, window.innerHeight));
+  const start = from ? toRect(from) : closedBookRect(g, flightHeight(g, window.innerHeight));
   const book = closedBook(name, tagline, start, Math.min(g.h, start.h));
   el.replaceChildren(book);
   transition.pending = { kind: 'book-out', bookId };
