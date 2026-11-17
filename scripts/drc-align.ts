@@ -6,66 +6,14 @@
  * renumberings, pairs moved by content, the maps' segments with every pair, verses left without
  * words of their own, and pairs the content check doubts).
  *
- * Needs `pnpm content:fetch` (WEBC, TVTMS) and `pnpm terms:fetch` (the Douay-Rheims).
+ * Needs `pnpm content:fetch` (WEBC, TVTMS and the Douay-Rheims).
  * --approve records the owner's approval of the named books' maps in content/drc/maps.json, with a
  * fingerprint of their segments; run it only on the owner's word.
  */
-import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import { CANON } from './lib/canon';
-import { RAW_DIR } from './lib/paths';
-import { readTvtmsCondensed } from './lib/tvtms';
-import { parseAllBooks, parseUsfm, type ParsedBook } from './parse-usfm';
-import { alignBook, DRC_USFM, type DrcAlignment, type DrcBookMap } from './drc/align';
-import { readNamedRecords } from './drc/psalms';
-
-export const MAPS_FILE = path.join(process.cwd(), 'content/drc/maps.json');
-
-/** The parts of a book's map that decide where verses land. */
-export function mapFingerprint(book: string, m: DrcBookMap): string {
-  const { whole, byChapter, splits, segments } = m;
-  return createHash('sha256')
-    .update(
-      JSON.stringify({
-        book,
-        whole: !!whole,
-        byChapter: !!byChapter,
-        splits: splits ?? [],
-        segments,
-      }),
-    )
-    .digest('hex')
-    .slice(0, 16);
-}
-
-export function readDrc(dir = path.join(RAW_DIR, 'drc')): Map<string, ParsedBook> {
-  if (!fs.existsSync(dir)) throw new Error(`${dir} not found: run pnpm terms:fetch first`);
-  const files = fs.readdirSync(dir);
-  const out = new Map<string, ParsedBook>();
-  for (const b of CANON) {
-    const code = DRC_USFM[b.usfm] ?? b.usfm;
-    const f = files.find((x) => new RegExp(`^\\d+-${code}engDRA\\.usfm$`).test(x));
-    if (!f) throw new Error(`Douay-Rheims file for ${b.id} (${code}) not found in ${dir}`);
-    out.set(b.id, parseUsfm(fs.readFileSync(path.join(dir, f), 'utf8'), b, f));
-  }
-  return out;
-}
-
-export function alignAll(): { alignments: DrcAlignment[]; maps: Record<string, DrcBookMap> } {
-  const file = JSON.parse(fs.readFileSync(MAPS_FILE, 'utf8')) as {
-    books: Record<string, DrcBookMap>;
-  };
-  const webc = parseAllBooks(path.join(RAW_DIR, 'webc'));
-  const drc = readDrc();
-  const tvtms = path.join(RAW_DIR, 'TVTMS.txt');
-  const records = readTvtmsCondensed(tvtms);
-  const psalms = readNamedRecords(tvtms);
-  const alignments = CANON.map((b) =>
-    alignBook(webc.get(b.id)!, drc.get(b.id)!, records, psalms, file.books[b.id]),
-  );
-  return { alignments, maps: file.books };
-}
+import type { DrcAlignment, DrcBookMap } from './drc/align';
+import { alignAll, MAPS_FILE, mapFingerprint, readDrc } from './drc/maps';
 
 // ---------------------------------------------------------------------------------------------
 

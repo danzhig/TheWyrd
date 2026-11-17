@@ -40,6 +40,7 @@ import { estherDanielMap, pipelineReport, versificationLog } from './reports';
 import { readTvtmsCondensed } from './lib/tvtms';
 import { buildThemes, writeThemes } from './themes/emit-themes';
 import { buildConnections, writeConnections } from './connections/emit-connections';
+import { buildDrc, writeDrc } from './drc/emit-drc';
 import {
   CONTENT_DIR,
   DATA_DIR,
@@ -162,6 +163,10 @@ async function main() {
     console.log(
       `threads: ${threads.data.connections.length} verified, ${threads.drafts} awaiting approval`,
     );
+  // The Douay-Rheims (Phase 7): each section's text in the second translation, from the alignment.
+  const drc = sectionFiles.length ? buildDrc(sectionFiles, parsed) : null;
+  errors.push(...(drc?.errors ?? []));
+  if (drc) console.log(`douay-rheims: ${drc.files.length} section files`);
   const ok = errors.length === 0;
   const sources = readSourcesManifest();
   const target = CHECK
@@ -181,6 +186,7 @@ async function main() {
       writeConnections(target, threads.data);
       result.files++;
     }
+    if (drc) result.files += writeDrc(target, drc.files);
     console.log(`wrote ${result.files} files to ${path.relative(process.cwd(), target) || target}`);
     errors.push(...checkFidelity(target, mappings));
   }

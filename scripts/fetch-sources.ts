@@ -79,6 +79,18 @@ export async function fetchSources(): Promise<Record<string, string>> {
     fs.writeFileSync(stamp, zipSum);
   }
   out.webcDir = webcDir;
+  // The Douay-Rheims (Phase 7), unpacked the same way.
+  const drcDir = path.join(RAW_DIR, 'drc');
+  const drcZip = path.join(RAW_DIR, 'engDRA_usfm.zip');
+  const drcStamp = path.join(drcDir, '.zip-sha256');
+  const drcSum = sha256(drcZip);
+  if (!fs.existsSync(drcStamp) || fs.readFileSync(drcStamp, 'utf8') !== drcSum) {
+    fs.rmSync(drcDir, { recursive: true, force: true });
+    fs.mkdirSync(drcDir);
+    execFileSync('unzip', ['-q', '-o', drcZip, '-d', drcDir]);
+    fs.writeFileSync(drcStamp, drcSum);
+  }
+  out.drcDir = drcDir;
   return out;
 }
 

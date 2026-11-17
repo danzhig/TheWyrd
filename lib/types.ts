@@ -173,6 +173,10 @@ export interface Verse {
   heading?: string; // WEBC section heading immediately before this verse
   wj?: [number, number][]; // character spans of words of Jesus
   footnotes?: Footnote[];
+  /** Reader only (Phase 7): this verse's element id, where it is not `v-<c>-<v>` of its own numbers. */
+  anchor?: string;
+  /** Reader only (Phase 7): a WEBC verse with no Douay-Rheims words of its own, kept for its anchor. */
+  bare?: boolean;
 }
 
 /** A verse as stored in section files: `text` is omitted because it equals the blocks joined by spaces. */
@@ -225,6 +229,30 @@ export interface SectionFile extends SectionIndexEntry {
   folds: FoldOut[];
   notes: NoteOut[];
   versificationNote?: string;
+}
+
+// ---------------------------------------------------------------------------
+// The Douay-Rheims (Phase 7): public/data/drc/<sectionId>.json
+// ---------------------------------------------------------------------------
+
+/** A Douay-Rheims verse, in its own numbering, as the reader shows it. */
+export interface DrcVerseOut {
+  c: number;
+  v: number;
+  blocks: VerseBlock[];
+  footnotes?: Footnote[];
+  heading?: string;
+}
+
+/** A section's Douay-Rheims text: the verses that hold each WEBC verse's words. */
+export interface DrcSectionFile {
+  id: string;
+  /** The Douay-Rheims's own reference for the section, e.g. "Psalms 22:1–7". */
+  reference: string;
+  /** The section's WEBC verses in order (so the reader need not ship the WEBC text to the client). */
+  order: string[];
+  /** WEBC unit ref → its Douay-Rheims verses, in order; a unit absent here has no words of its own. */
+  units: Record<string, DrcVerseOut[]>;
 }
 
 // ---------------------------------------------------------------------------

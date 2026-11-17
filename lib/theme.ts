@@ -1,6 +1,6 @@
 /**
- * Applies the reader's display settings to <html>: data-theme (vault | vellum), data-text-size and
- * data-verse-numbers. `applyDisplaySettings` must stay self-contained: it is also serialised into an
+ * Applies the reader's display settings to <html>: data-theme (vault | vellum), data-text-size,
+ * data-verse-numbers and data-translation (webc | drc). `applyDisplaySettings` must stay self-contained: it is also serialised into an
  * inline <head> script so the theme is set before first paint. With no argument it reads
  * localStorage itself; the ThemeController passes the store's settings instead.
  */
@@ -8,6 +8,7 @@ export function applyDisplaySettings(given?: {
   theme?: string;
   textSize?: number;
   verseNumbers?: boolean;
+  translation?: string;
 }): void {
   let s = given;
   if (!s) {
@@ -28,6 +29,8 @@ export function applyDisplaySettings(given?: {
   root.setAttribute('data-theme', resolved);
   root.setAttribute('data-text-size', String(settings.textSize || 2));
   root.setAttribute('data-verse-numbers', settings.verseNumbers === false ? 'off' : 'on');
+  // The reader's translation (Phase 7): set before paint so the WEBC never flashes in its place.
+  root.setAttribute('data-translation', settings.translation === 'drc' ? 'drc' : 'webc');
 }
 
 export const THEME_SCRIPT = `(${applyDisplaySettings.toString()})();`;
