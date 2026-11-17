@@ -593,6 +593,31 @@
     0 0 12px var(--night);
 }
 
+/* A constellation's name sits beside it, on the side away from the oculus, on up to two short
+   lines (owner, 2026-11-17), so it belongs to its own figure and never runs into a neighbour. */
+.constName {
+  white-space: normal;
+  width: max-content;
+  max-width: 11em;
+  line-height: 1.15;
+}
+
+.constName[data-side='right'] {
+  /* --dy (the diagonal's vertical share) lifts or lowers the name with its constellation. */
+  transform: translate(8px, calc(-50% + var(--dy, 0) * 55%));
+  text-align: left;
+}
+
+.constName[data-side='left'] {
+  transform: translate(calc(-100% - 8px), calc(-50% + var(--dy, 0) * 55%));
+  text-align: right;
+}
+
+.constName[data-side='centre'] {
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* Sub-theme names: larger, bright, on a soft dark pill so they read over stars and lines. */
 .subName {
   transform: translate(-50%, -50%);
@@ -954,10 +979,11 @@
    onto two short lines. */
 @media (max-width: 520px) {
   .constName {
-    font-size: 15px;
+    font-size: 11px;
+    letter-spacing: 0.03em;
     white-space: normal;
     width: max-content;
-    max-width: 8.5em;
+    max-width: 6.5em;
     line-height: 1.15;
   }
 }

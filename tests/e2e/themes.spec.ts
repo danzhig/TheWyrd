@@ -211,24 +211,77 @@ test.describe('themes', () => {
     await expect(page.locator('[data-reading]')).toHaveCount(0);
   });
 
-  test('Esc steps out one level at a time: readings, sub-theme, constellation, the whole map', async ({
+  test('the whole ring first; one zoom shows every sub-theme name; a tap flies in; counts follow the testaments', async ({
     page,
   }) => {
     await openVault(page);
-    const k = () =>
-      page.evaluate(() =>
-        Number(
-          getComputedStyle(
-            document.querySelector('[data-testid="vault-labels"]')!,
-          ).getPropertyValue('--k'),
-        ),
-      );
     await page.getByTestId('view-themes').click();
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
       timeout: 6000,
     });
-    await page.waitForTimeout(1200); // the camera settles on the whole map
-    const whole = await k();
+    await page.waitForTimeout(1200);
+    // Zoomed out over the whole ring: every constellation's name on screen, no sub-theme names.
+    for (const name of await page.locator('[data-constellation]').all())
+      await expect(name).toBeInViewport();
+    await expect(page.locator('[data-subtheme]')).toHaveCount(0);
+    // A tap on the sky by a constellation (not on its name) flies into it; at that zoom every
+    // constellation's sub-theme names show, not only the large ones'.
+    const view = page.viewportSize()!;
+    const p = await page.evaluate(() => {
+      const el = document.querySelector('[data-constellation="mercy"]')!.getBoundingClientRect();
+      return { x: el.x + el.width / 2, y: el.y + el.height / 2 };
+    });
+    const centre = { x: view.width / 2, y: view.height / 2 };
+    // From the name, step toward the oculus onto the constellation's stars.
+    const t = 0.18;
+    await page.mouse.click(p.x + (centre.x - p.x) * t, p.y + (centre.y - p.y) * t);
+    await expect(page.locator('[data-subtheme="mercy-mercy"]')).toBeAttached({ timeout: 4000 });
+    const data = (await (await page.request.get('/data/themes.json')).json()) as {
+      themes: { subthemes: unknown[] }[];
+    };
+    await expect(page.locator('[data-subtheme]')).toHaveCount(
+      data.themes.reduce((n, t) => n + t.subthemes.length, 0),
+    );
+    // The counts beside the names follow the Old / New switch.
+    const count = () => page.locator('[data-subtheme="mercy-mercy"] span').innerText();
+    const both = Number(await count());
+    await page.getByTestId('testament-ot').click();
+    await expect.poll(async () => Number(await count())).toBeLessThan(both);
+    const nt = Number(await count());
+    await page.getByTestId('testament-ot').click();
+    await page.getByTestId('testament-nt').click();
+    await expect.poll(async () => Number(await count())).toBe(both - nt);
+    await page.getByTestId('testament-nt').click();
+    await expect.poll(async () => Number(await count())).toBe(both);
+  });
+
+  test('Esc steps out one level at a time: readings, sub-theme, constellation, the whole map', async ({
+    page,
+  }) => {
+    await openVault(page);
+    // The camera's zoom as it is now (the scene's transform), even mid-flight.
+    const k = () =>
+      page
+        .getByTestId('vault-scene')
+        .evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).a);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    // The camera settles on the whole map.
+    let last = -1;
+    await expect
+      .poll(
+        async () => {
+          const now = await k();
+          const still = Math.abs(now - last) < 1e-6;
+          last = now;
+          return still;
+        },
+        { intervals: [400], timeout: 5000 },
+      )
+      .toBe(true);
+    const whole = last;
     await page.locator('[data-constellation="story"]').click({ force: true });
     const name = page.locator('[data-subtheme="story-land"]');
     await expect(name).toBeAttached({ timeout: 6000 });
@@ -248,11 +301,15 @@ test.describe('themes', () => {
     // 2. Out to the constellation.
     await page.keyboard.press('Escape');
     await page.waitForTimeout(1200);
-    expect(Math.abs((await k()) - constellation) / constellation).toBeLessThan(0.1);
+    await expect
+      .poll(async () => Math.abs((await k()) - constellation) / constellation, { timeout: 4000 })
+      .toBeLessThan(0.1);
     // 3. Out to the whole map.
     await page.keyboard.press('Escape');
     await page.waitForTimeout(1200);
-    expect(Math.abs((await k()) - whole) / whole).toBeLessThan(0.1);
+    await expect
+      .poll(async () => Math.abs((await k()) - whole) / whole, { timeout: 4000 })
+      .toBeLessThan(0.1);
     await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes');
   });
 

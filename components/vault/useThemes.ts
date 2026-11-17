@@ -200,7 +200,12 @@ export function useThemes(opts: {
 
   /** Fly every star to the other view; resolves when they have landed. */
   const switchTo = useCallback(
-    async (target: 'spiral' | 'themes', quick = false) => {
+    async (
+      target: 'spiral' | 'themes',
+      quick = false,
+      /** Called as the flight starts, with the constellations' layout (to frame the camera). */
+      onStart?: (layout: ThemesLayout | null) => void,
+    ) => {
       if (busy.current) return;
       const from = p.current;
       const to = target === 'themes' ? 1 : 0;
@@ -215,6 +220,7 @@ export function useThemes(opts: {
         setView(target === 'themes' ? 'to-themes' : 'to-spiral');
         // Let the layers for the flight mount (and the star field be created) before it starts.
         await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+        onStart?.(layoutRef.current);
         dir.current = to > from ? 1 : -1;
         const ms = (fade.current ? FADE_MS : FLIGHT_MS) * Math.abs(to - from);
         const t0 = performance.now();

@@ -18,7 +18,7 @@ import { animationsOn, bookIn, bookOut, END_EVENT, transition } from '@/lib/tran
 import { CHANGE_EVENT, readLast, readProgress, readSettings, writeSettings } from '@/lib/store';
 import type { Testaments } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
-import type { Constellation } from './constellations';
+import type { Constellation, ThemesLayout as ThemesLayoutT } from './constellations';
 import { layoutVault, type Medallion, type Point } from './layout';
 import { ThemeTree } from './ThemeTree';
 import type { StarHide } from './starfield';
@@ -312,6 +312,29 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [visibleArea],
   );
 
+  /**
+   * The whole ring of constellations, fitted to the visible part of the screen with room for the
+   * names beside the outermost ones (owner, 2026-11-17: Themes opens zoomed out, every
+   * constellation and its whole name in view).
+   */
+  const themesHome = useCallback(
+    (l: ThemesLayoutT | null = themesLayout.current): Cam => {
+      if (!l) return baseRef.current;
+      const a = visibleArea();
+      const R = Math.max(...l.constellations.map((c) => Math.hypot(c.x, c.y) + c.r));
+      const wide = a.w > 720;
+      // Wide screens: room beside the ring for the names, and below the header (which keeps to
+      // the corners there, so the visible area does not leave it out).
+      const top = wide ? 64 : 0;
+      const k = Math.min(
+        (a.w - (wide ? 340 : 16)) / (2 * R),
+        (a.h - top - (wide ? 70 : 24)) / (2 * R),
+      );
+      return { x: a.cx, y: a.cy + top / 2, k };
+    },
+    [visibleArea],
+  );
+
   /** A camera position as the zoom library's transform. */
   const toD3 = (t: Cam): ZoomTransform =>
     d3Ref.current!.zoomIdentity.translate(t.x, t.y).scale(t.k);
@@ -420,7 +443,10 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     const z = zoomRef.current;
     const view = viewRef.current;
     if (!z || !view) return;
-    const minK = Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius);
+    const spiralMin = Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius);
+    // Themes may zoom out a little past the whole ring of constellations.
+    const minK =
+      themeView === 'spiral' ? spiralMin : Math.min(spiralMin, themesHome(themeLayout).k * 0.8);
     z.scaleExtent([minK, themeView === 'spiral' ? K_MAX : K_MAX_THEMES]);
     if (themeView === 'spiral' && camRef.current.k > K_MAX)
       void flyTo(
@@ -433,18 +459,19 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
         ),
         400,
       );
-  }, [themeView, ready, layout.radius, flyTo, target]);
+  }, [themeView, ready, layout.radius, flyTo, target, themesHome, themeLayout]);
 
   /** Spiral ⇄ Themes: the camera settles back to the whole ceiling while the stars fly. */
   const switchView = useCallback(
     (to: 'spiral' | 'themes') => {
-      const base = baseRef.current;
-      if (Math.abs(camRef.current.k - base.k) / base.k > 0.15 || to === 'spiral')
-        void flyTo(base, prefersReducedMotion() ? 0 : 1100);
-      if (to === 'themes') setThreadsOn(false);
-      void switchThemes(to, mode === 'list');
+      const ms = prefersReducedMotion() ? 0 : 1100;
+      if (to === 'spiral') void flyTo(baseRef.current, ms);
+      else setThreadsOn(false);
+      void switchThemes(to, mode === 'list', (l) => {
+        if (to === 'themes' && l) void flyTo(themesHome(l), ms);
+      });
     },
-    [flyTo, switchThemes, mode],
+    [flyTo, switchThemes, mode, themesHome],
   );
 
   const flyToConstellation = useCallback(
@@ -953,7 +980,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                     request={spreadReq}
                     keys={mode === 'map'}
                     camera={() => camRef.current}
-                    home={() => void flyTo(baseRef.current, prefersReducedMotion() ? 0 : 700)}
+                    home={() => void flyTo(themesHome(), prefersReducedMotion() ? 0 : 700)}
                     maxK={K_MAX_THEMES}
                   />
                 ) : null}
