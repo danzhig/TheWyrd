@@ -19,10 +19,16 @@ export interface ThemeTreeProps {
   onFocusPassage: (key: string | null) => void;
   /** A passage is being opened: remember where the camera is. */
   onOpen: () => void;
-  hrefFor: (sectionId: string, subId: string, key?: string) => string;
   /** The Testaments filter: passages in this testament's books are left out. */
   hidden?: 'ot' | 'nt';
   testamentOf: (bookId: string) => 'ot' | 'nt';
+}
+
+/** A reading opened from a sub-theme: at its key passage's verse, if it holds one. */
+function readingHref(sectionId: string, subId: string, key?: string): string {
+  if (!key) return `/read/${sectionId}/?theme=${subId}`;
+  const [, c, v] = key.split('-')[0]!.split('.');
+  return `/read/${sectionId}/?theme=${subId}#v-${c}-${v ?? 1}`;
 }
 
 export const ThemeTree = memo(function ThemeTree({
@@ -30,7 +36,6 @@ export const ThemeTree = memo(function ThemeTree({
   visible,
   onFocusPassage,
   onOpen,
-  hrefFor,
   hidden,
   testamentOf,
 }: ThemeTreeProps) {
@@ -73,7 +78,7 @@ export const ThemeTree = memo(function ThemeTree({
                         return (
                           <li key={key}>
                             <Link
-                              href={hrefFor(r.sectionId, s.id, r.key)}
+                              href={readingHref(r.sectionId, s.id, r.key)}
                               prefetch={false}
                               data-tree-passage={key}
                               onFocus={() => onFocusPassage(key)}

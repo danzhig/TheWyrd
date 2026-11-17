@@ -227,11 +227,15 @@
   transform: translate(-50%, -50%);
   font-family: var(--font-display);
   font-variant-caps: all-small-caps;
-  letter-spacing: 0.14em;
-  font-size: calc(16px * var(--k));
-  color: var(--text-muted);
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  color: var(--accent-strong);
+  opacity: 0.8;
   white-space: nowrap;
   pointer-events: none;
+  text-shadow:
+    0 0 2px var(--night),
+    0 0 6px var(--night);
 }
 
 /* Behind a flying book the ceiling dims; the medallion it lifted from is hidden. */
@@ -882,7 +886,8 @@
 
 .medName {
   transform: translate(-50%, -50%);
-  width: calc(var(--w) * var(--k) * 0.84px);
+  /* At least wide enough for a long name on two lines, even on a small bubble. */
+  width: max(calc(var(--w) * var(--k) * 0.84px), 6.2em);
   display: grid;
   justify-items: center;
   gap: 0.15em;
@@ -891,50 +896,88 @@
   font-family: var(--font-display);
   opacity: 0;
   transition: opacity var(--dur-ui) ease;
+  /* A name wider than its bubble stays readable over the sky and its neighbours. */
+  text-shadow:
+    0 0 2px var(--night),
+    0 0 5px var(--night);
 }
 
 .medTitle {
-  font-size: calc(var(--fs) * var(--k) * 1px);
+  /* Every book named at any zoom (owner, 2026-11-17), never smaller than this. */
+  font-size: max(12px, calc(var(--fs) * var(--k) * 1px));
   font-weight: 500;
   font-variant-caps: small-caps;
-  letter-spacing: 0.06em;
-  line-height: 1.1;
-}
-
-.medTag {
-  font-size: calc(var(--fs) * var(--k) * 0.55px);
-  font-style: italic;
-  color: var(--cloud);
-}
-
-.offName {
-  transform: translate(-50%, -50%);
-  width: calc(var(--w) * var(--k) * 0.9px);
-  text-align: center;
-  font-family: var(--font-display);
-  font-size: calc(8px * var(--k));
+  letter-spacing: 0.04em;
   line-height: 1.05;
-  color: var(--text-muted);
-  opacity: 0;
-  transition: opacity var(--dur-ui) ease;
-}
-
-/* A name close enough to read (set when the camera comes to rest), unless its book has lifted off. */
-.medName[data-shown],
-.offName[data-shown] {
-  opacity: 1;
-}
-
-.gone[data-shown] {
-  opacity: 0;
 }
 
 .medTag {
   display: none;
+  font-size: calc(var(--fs) * var(--k) * 0.55px);
+  font-style: italic;
+  opacity: 0.85;
+  max-width: 90%;
+}
+
+/* A book off the path: its name stands out from the ring along its radius, tilted (--rot) no
+   more than a little at the top and foot, so the whole ring reads at a glance. */
+.offName {
+  width: 0;
+  height: 0;
+  transform: rotate(var(--rot));
+  font-family: var(--font-display);
+  font-size: 12.5px;
+  line-height: 1;
+  color: var(--text);
+  opacity: 0;
+  transition: opacity var(--dur-ui) ease;
+  pointer-events: none;
+}
+
+.offName > span {
+  position: absolute;
+  top: -0.55em;
+  white-space: nowrap;
+  text-shadow:
+    0 0 2px var(--night),
+    0 0 5px var(--night);
+}
+
+.offName[data-side='right'] > span {
+  left: 5px;
+}
+
+.offName[data-side='left'] > span {
+  right: 5px;
+}
+
+/* Every name shows (set when the camera comes to rest), unless its book has lifted off. */
+.medName[data-shown],
+.offName {
+  opacity: 1;
+}
+
+.gone,
+.gone[data-shown] {
+  opacity: 0;
 }
 
 .medName[data-detail] .medTag {
   display: block;
+}
+
+@media (max-width: 520px) {
+  .medTitle {
+    font-size: max(10.5px, calc(var(--fs) * var(--k) * 1px));
+  }
+
+  .offName {
+    font-size: 10.5px;
+  }
+
+  .group {
+    font-size: 11px;
+  }
 }
 
 /* On phones the Spiral / Themes switch is pinned at the bottom: leave the list room under it. */

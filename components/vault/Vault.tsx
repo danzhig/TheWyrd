@@ -19,7 +19,7 @@ import { CHANGE_EVENT, readLast, readProgress, readSettings, writeSettings } fro
 import type { Testaments } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
 import type { Constellation, ThemesLayout as ThemesLayoutT } from './constellations';
-import { layoutVault, type Medallion, type Point } from './layout';
+import { GROUP_RADIUS as GROUP_R, layoutVault, type Medallion, type Point } from './layout';
 import { TranslationPicker } from '@/components/ui/TranslationPicker';
 import type { StarHide } from './starfield';
 import { useThemes } from './useThemes';
@@ -76,17 +76,14 @@ const K_MAX = 2.6; // medallion detail
 /** A constellation fills this share of the shorter side (its name clears the header). */
 const FIT = 0.38;
 const K_MAX_THEMES = 5; // a sub-theme opened up (ThemesLabels) is read at 3
+/** How far an outer-ring name reaches beyond its book, in screen pixels (about its length). */
+const OFF_NAME_PX = 110;
+/** The steepest an outer-ring name tilts, near the top and foot of the ring (degrees). */
+const OFF_NAME_TILT = 38;
 
 /** A point on the ceiling, for the label layer: world units, scaled by --k in CSS. */
 const at = (p: { x: number; y: number }) =>
   ({ ['--x' as string]: p.x, ['--y' as string]: p.y }) as React.CSSProperties;
-
-/** A reading's address in the reader from a theme: at its key passage's first verse, if any. */
-function readingHref(sectionId: string, subId: string, key?: string): string {
-  if (!key) return `/read/${sectionId}/?theme=${subId}`;
-  const [, c, v] = key.split('-')[0]!.split('.');
-  return `/read/${sectionId}/?theme=${subId}#v-${c}-${v ?? 1}`;
-}
 
 export function Vault({ data, books, bridges, sections }: VaultProps) {
   const router = useRouter();
@@ -302,12 +299,27 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     return { w, h: Math.max(120, bottom - top), cx: w / 2, cy: (top + bottom) / 2 };
   }, []);
 
-  /** The whole spiral, fitted to the visible part of the screen. */
+  /**
+   * The opening view. Wide screens: the whole ceiling, the outer ring and the names beside it
+   * included, so every book can be found at a glance (owner, 2026-11-17). Phones: the spiral.
+   */
   const fit = useCallback((): Cam => {
     const a = visibleArea();
+    if (a.w > 720) {
+      const ring = Math.max(...layout.offpath.map((o) => Math.hypot(o.x, o.y) + o.size / 2));
+      // Room beyond the ring for the outer names: level at the sides, tilted at the top and foot.
+      // The header keeps to the top corners, but the names at the top of the ring would run
+      // under it: leave its height above them.
+      const top = 64;
+      const k = Math.min(
+        ((a.h - top) / 2 - 12 - OFF_NAME_PX * 0.6) / ring,
+        (a.w / 2 - 24 - OFF_NAME_PX) / ring,
+      );
+      return { x: a.cx, y: a.cy + top / 2, k };
+    }
     const k = Math.min(a.w, a.h) / (2 * layout.spiralRadius + 24);
     return { x: a.cx, y: a.cy, k };
-  }, [layout.spiralRadius, visibleArea]);
+  }, [layout.spiralRadius, layout.offpath, visibleArea]);
 
   const target = useCallback(
     (p: { x: number; y: number }, k: number): Cam => {
@@ -925,23 +937,38 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                   <span
                     key={g.label}
                     className={`${styles.at} ${styles.group}`}
-                    style={at(g)}
+                    // Inside the ring, between it and the spiral (owner, 2026-11-17).
+                    style={at({ x: GROUP_R * Math.cos(g.angle), y: GROUP_R * Math.sin(g.angle) })}
                     data-testament={NT_GROUPS.has(g.label) ? 'nt' : 'ot'}
                   >
                     {g.label}
                   </span>
                 ))}
-                {layout.offpath.map((o) => (
-                  <span
-                    key={o.id}
-                    className={`${styles.at} ${styles.offName} ${lifted === o.id ? styles.gone : ''}`}
-                    style={{ ...at(o), ['--w' as string]: o.size }}
-                    data-label-min={40 / o.size}
-                    data-testament={tOf(o.id)}
-                  >
-                    {byId.get(o.id)!.name}
-                  </span>
-                ))}
+                {layout.offpath.map((o) => {
+                  // Each name stands out from its book along the ring's radius, tilted no more
+                  // than OFF_NAME_TILT so the top and foot of the ring stay readable.
+                  const d = Math.hypot(o.x, o.y) || 1;
+                  const deg = (Math.atan2(o.y, o.x) * 180) / Math.PI;
+                  const right = o.x >= 0;
+                  const tilt = right ? deg : deg > 0 ? deg - 180 : deg + 180;
+                  const rot = Math.max(-OFF_NAME_TILT, Math.min(OFF_NAME_TILT, tilt));
+                  const edge = {
+                    x: o.x + (o.x / d) * (o.size / 2),
+                    y: o.y + (o.y / d) * (o.size / 2),
+                  };
+                  return (
+                    <span
+                      key={o.id}
+                      className={`${styles.at} ${styles.offName} ${lifted === o.id ? styles.gone : ''}`}
+                      style={{ ...at(edge), ['--rot' as string]: `${rot}deg` }}
+                      data-side={right ? 'right' : 'left'}
+                      data-testament={tOf(o.id)}
+                      data-offname={o.id}
+                    >
+                      <span>{byId.get(o.id)!.name}</span>
+                    </span>
+                  );
+                })}
                 {placed.map((m) => {
                   // Always in the page; which names show is decided when the camera comes to rest
                   // (`settleLabels`), so a flight never re-lays them out.
@@ -950,7 +977,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                     <span
                       key={m.id}
                       className={`${styles.at} ${styles.medName} ${lifted === m.id ? styles.gone : ''}`}
-                      data-label-min={56 / m.w}
+                      data-label-min={0}
                       data-detail-min={150 / m.w}
                       style={{
                         ...at(m),
@@ -1054,7 +1081,6 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           testamentOf={tOf}
           onFocusPassage={onTreeFocus}
           onOpen={onTreeOpen}
-          hrefFor={readingHref}
         />
       ) : null}
       {/* The same content as an ordered list (PLAN §9 accessibility). Visible in List mode. */}
