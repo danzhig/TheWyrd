@@ -46,6 +46,8 @@ Nothing in the expansion needs a new npm dependency. Canvas, if needed, is built
 
 **Every new connection is found in the data, checked against pinned sources, written up in original prose and approved by the owner, exactly as P4.4 did for the first 170.**
 
+**The site is the Bible as a data set, not a commentary (owner, 2026-11-17).** Whether two passages are connected is itself a judgement, so a Church Father may be cited as support that a connection exists, as the typology threads already do. The Fathers are never used to add teaching: no doctrine, no account of what a passage requires of the reader, and no reading layer of their writings. A thread's explanation says what the texts and the data show about the link, and stops there.
+
 The pipeline per book, unchanged in shape:
 
 1. **Candidates.** Run `pnpm connections:propose <bookId> --scope ot|nt`. It writes `docs/connections/<bookId>-<scope>-candidates.md`: cross-reference rows grouped by the two sections they join, ranked by votes, each with what the data shows.
