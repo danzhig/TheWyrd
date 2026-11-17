@@ -96,8 +96,30 @@ export function TranslatedBody({
     const a = anchor.current;
     if (!a || (t === 'drc' && !file && !failed)) return; // still loading: keep the place for later
     anchor.current = null;
-    const el = document.getElementById(a.id);
-    if (el) window.scrollBy(0, el.getBoundingClientRect().top - a.top);
+    const fix = () => {
+      const el = document.getElementById(a.id);
+      const d = el ? el.getBoundingClientRect().top - a.top : 0;
+      if (Math.abs(d) >= 1) window.scrollBy(0, d);
+    };
+    fix();
+    // Hold the place for a moment while late changes settle (the header's Douay-Rheims reference
+    // arrives a beat after the body), unless the reader scrolls first.
+    let frame = 0;
+    const until = performance.now() + 1000;
+    const stop = () => {
+      cancelAnimationFrame(frame);
+      for (const ev of ['wheel', 'touchstart', 'keydown', 'pointerdown'])
+        window.removeEventListener(ev, stop);
+    };
+    for (const ev of ['wheel', 'touchstart', 'keydown', 'pointerdown'])
+      window.addEventListener(ev, stop, { passive: true });
+    const hold = () => {
+      fix();
+      if (performance.now() < until) frame = requestAnimationFrame(hold);
+      else stop();
+    };
+    frame = requestAnimationFrame(hold);
+    return stop;
   }, [shown, t, file, failed]);
   if (shown === 'drc' && file) {
     const { verses, folds } = drcVerses(file, section.folds);
