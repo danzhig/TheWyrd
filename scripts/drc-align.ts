@@ -132,7 +132,7 @@ function main() {
     '',
     `**Totals.** ${total((a) => a.webcVerses).toLocaleString('en')} WEBC verses and ${total((a) => a.drcVerses).toLocaleString('en')} Douay-Rheims verses in 73 books. Douay-Rheims verses left unplaced: ${total((a) => a.unmatchedDrc.length)}. WEBC verses without Douay-Rheims words of their own: ${total((a) => a.unmatchedWebc.length)}. Pairs moved by content: ${total((a) => a.moved.length)}. Doubts: ${total((a) => a.suspects.length)}.`,
     '',
-    '**Maps awaiting the owner:** ' +
+    '**Maps (owner-approved):** ' +
       (Object.keys(raw.books)
         .map((id) => `${id} — ${status(id)}`)
         .join('; ') || 'none'),

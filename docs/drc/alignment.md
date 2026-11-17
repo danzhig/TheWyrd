@@ -12,7 +12,7 @@ A Douay-Rheims verse that pairs with nothing on its own goes with the WEBC verse
 
 **Totals.** 35,409 WEBC verses and 35,811 Douay-Rheims verses in 73 books. Douay-Rheims verses left unplaced: 0. WEBC verses without Douay-Rheims words of their own: 239. Pairs moved by content: 438. Doubts: 137.
 
-**Maps awaiting the owner:** Esth — approved 2026-11-17 (`02c04d2f600bf0de`); Tob — approved 2026-11-17 (`4c2e5057c3c88761`); Jdt — approved 2026-11-17 (`d79d26c063d39b80`); Rom — approved 2026-11-17 (`82802900202fe78b`)
+**Maps (owner-approved):** Esth — approved 2026-11-17 (`02c04d2f600bf0de`); Tob — approved 2026-11-17 (`4c2e5057c3c88761`); Jdt — approved 2026-11-17 (`d79d26c063d39b80`); Rom — approved 2026-11-17 (`82802900202fe78b`)
 
 | Book            | WEBC verses | Douay-Rheims verses | Method          | TVTMS records used | Moved by content | WEBC without own words | Doubts | Mean score |
 | --------------- | ----------: | ------------------: | --------------- | -----------------: | ---------------: | ---------------------: | -----: | ---------: |
