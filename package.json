@@ -25,6 +25,7 @@
     "library:propose": "tsx scripts/library-propose.ts",
     "terms:fetch": "tsx scripts/fetch-terms.ts",
     "terms:lookup": "tsx scripts/terms-lookup.ts",
+    "drc:align": "tsx scripts/drc-align.ts",
     "themes:fetch": "tsx scripts/fetch-themes.ts",
     "themes:topics": "tsx scripts/themes-topics.ts",
     "themes:taxonomy": "tsx scripts/themes-taxonomy.ts",
