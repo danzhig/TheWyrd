@@ -1,7 +1,13 @@
 'use client';
 
 import { useLayoutEffect, useRef } from 'react';
-import { coverGeometry, SPREAD_QUERY, type CoverGeometry } from '@/lib/book-geometry';
+import {
+  coverGeometry,
+  flightHeight,
+  PAGE_TURN_BOOKS,
+  SPREAD_QUERY,
+  type CoverGeometry,
+} from '@/lib/book-geometry';
 import { camera, prefersReducedMotion } from '@/lib/camera';
 import { EASE, handoff, transition } from '@/lib/transition';
 import styles from './book-cover.module.css';
@@ -10,11 +16,11 @@ export const OPEN_MS = 900;
 const HINGE_EASE = 'cubic-bezier(0.55, 0.05, 0.25, 1)';
 
 /**
- * Prototype (owner, 2026-11-17): books that open like a novel. The cover swings to a half-title
- * page, which then turns over carrying the left half of the map; closing turns that page back over
- * the map before the cover follows. Other books keep the single swinging board.
+ * Prototype (owner, 2026-11-17): books in PAGE_TURN_BOOKS (lib/book-geometry.ts) open like a novel.
+ * The cover swings to a half-title page, which then turns over carrying the left half of the map;
+ * closing turns that page back over the map before the cover follows. Their boards run the full
+ * length of the pages. Other books keep the single swinging board.
  */
-export const PAGE_TURN_BOOKS = new Set(['Gen']);
 export const TURN_MS = 1600;
 const COVER_MS = 950; // the cover's swing within TURN_MS
 const LEAF_MS = 1050; // the page's swing within TURN_MS
@@ -67,7 +73,18 @@ export function BookCover({
         window.innerHeight,
       );
       Object.assign(shell.style, { left: `${g.offsetX}px`, width: `${g.w}px`, height: `${g.h}px` });
+      if (turn) lengthen();
     };
+    /**
+     * A page-turn book's board runs the full length of its pages (never shorter than the closed
+     * book that flew in), with the title kept in the top `g.h`, where the flying book had it.
+     */
+    function lengthen() {
+      const h = Math.max(pages!.offsetHeight, flightHeight(g, bookId, window.innerHeight));
+      shell!.style.height = `${h}px`;
+      shell!.style.setProperty('--book-h', `${g.h}px`);
+      shell!.style.setProperty('--below', `${h - g.h}px`);
+    }
     place();
 
     const timing = { duration: OPEN_MS, easing: EASE, fill: 'forwards' as const };
@@ -161,11 +178,7 @@ export function BookCover({
     /** Put a copy of the live pages on the back of the turning page (spread only). */
     const printLeaf = () => {
       if (!leaf || !leafBack) return;
-      const visible = Math.min(
-        pages.offsetHeight,
-        window.innerHeight - frame.getBoundingClientRect().top,
-      );
-      leaf.style.height = `${Math.max(g.h, visible)}px`;
+      lengthen(); // the map may have grown since the cover was placed
       leafBack.querySelector('[data-leaf-print]')?.remove();
       if (!g.spread) return;
       const copy = pages.cloneNode(true) as HTMLElement;
@@ -181,6 +194,9 @@ export function BookCover({
         top: '0',
         left: '0',
         width: `${pages.offsetWidth}px`,
+        // The live padding is a percentage of the frame; inside the half-width face it would come
+        // out smaller and the copy would sit left of the live map, then snap when it takes over.
+        padding: getComputedStyle(pages).padding,
         margin: '0',
         boxShadow: 'none',
       });
@@ -359,8 +375,14 @@ export function BookCover({
       shell.hidden = false;
       frame.dataset.state = 'closing';
       await allSettled(anims, TURN_MS);
+      // The closed book flies home at its flight height, not the full length of the map.
       const r = shell.getBoundingClientRect();
-      return r;
+      return new DOMRect(
+        r.x,
+        r.y,
+        r.width,
+        Math.min(r.height, flightHeight(g, bookId, window.innerHeight)),
+      );
     };
 
     const open = turn ? turnOpen : boardOpen;

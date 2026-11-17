@@ -6,6 +6,10 @@
   position: absolute;
   container-type: size;
   transform-style: preserve-3d;
+  /* The height the cover's title is centred in. A page-turn book's board runs the length of its
+     pages: it sets these so the title stays where a book of one screen would have it. */
+  --book-h: 100cqh;
+  --below: 0px;
 }
 
 /* Page edges along the fore-edge and foot of a closed book. */
@@ -38,8 +42,8 @@
   display: grid;
   place-content: center;
   justify-items: center;
-  gap: 2cqh;
-  padding: 0 10cqw;
+  gap: calc(var(--book-h) * 0.02);
+  padding: 0 10cqw var(--below);
   border-radius: 2px 7px 7px 2px;
   text-align: center;
   color: var(--vellum);
@@ -52,7 +56,7 @@
       rgb(0 0 0 / 0) 7%
     ),
     radial-gradient(ellipse at 50% 38%, #4a3622 0%, #2a1f16 58%, #170f09 100%);
-  box-shadow: 0 1.5cqh 4cqh rgb(0 0 0 / 0.55);
+  box-shadow: 0 calc(var(--book-h) * 0.015) calc(var(--book-h) * 0.04) rgb(0 0 0 / 0.55);
 }
 
 /* The gilt frame. */
@@ -191,8 +195,8 @@
   place-content: center;
   justify-items: center;
   align-content: start;
-  gap: 2cqh;
-  padding: 30cqh 10cqw 0;
+  gap: calc(var(--book-h) * 0.02);
+  padding: calc(var(--book-h) * 0.3) 10cqw 0;
   text-align: center;
   border-radius: 1px 4px 4px 1px;
   background: linear-gradient(90deg, rgb(60 45 25 / 0.22), rgb(60 45 25 / 0) 7%), var(--bg);

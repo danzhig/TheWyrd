@@ -8,7 +8,12 @@
  * The layer (#transition-layer, in the root layout) survives route changes, so an animation can
  * start on one page and finish on the next. `pending` tells the arriving page what to pick up.
  */
-import { closedBookRect, currentCoverGeometry, type CoverGeometry } from './book-geometry';
+import {
+  closedBookRect,
+  currentCoverGeometry,
+  flightHeight,
+  type CoverGeometry,
+} from './book-geometry';
 import { prefersReducedMotion } from './camera';
 
 export type Pending =
@@ -69,7 +74,7 @@ function fitTransform(from: Rect, to: Rect): string {
 }
 
 /** A closed book, built with the same classes as the book page's cover (styles/book.css). */
-function closedBook(name: string, tagline: string, r: Rect): HTMLElement {
+function closedBook(name: string, tagline: string, r: Rect, titleH = r.h): HTMLElement {
   const shell = document.createElement('div');
   shell.className = 'book-shell';
   Object.assign(shell.style, {
@@ -79,6 +84,11 @@ function closedBook(name: string, tagline: string, r: Rect): HTMLElement {
     height: `${r.h}px`,
     transformOrigin: '0 0',
   });
+  // A long board (page-turn books) keeps its title where a book of `titleH` would have it.
+  if (titleH < r.h) {
+    shell.style.setProperty('--book-h', `${titleH}px`);
+    shell.style.setProperty('--below', `${r.h - titleH}px`);
+  }
   shell.innerHTML =
     '<div class="book-edge"></div><div class="book-hinge"><div class="book-cover-face">' +
     '<div class="book-cover-title"></div><div class="book-cover-rule"></div><div class="book-cover-tagline"></div>' +
@@ -106,8 +116,8 @@ export async function bookIn(
   const el = layer();
   if (!el || !animationsOn()) return null;
   const g = currentCoverGeometry();
-  const to = closedBookRect(g);
-  const book = closedBook(name, tagline, to);
+  const to = closedBookRect(g, flightHeight(g, bookId, window.innerHeight));
+  const book = closedBook(name, tagline, to, g.h);
   el.replaceChildren(book);
   transition.pending = { kind: 'book-in', bookId };
   guard();
@@ -145,8 +155,11 @@ export async function bookOut(
 ): Promise<void> {
   const el = layer();
   if (!el || !animationsOn()) return;
-  const start = from ? toRect(from) : closedBookRect(currentCoverGeometry());
-  const book = closedBook(name, tagline, start);
+  const g = currentCoverGeometry();
+  const start = from
+    ? toRect(from)
+    : closedBookRect(g, flightHeight(g, bookId, window.innerHeight));
+  const book = closedBook(name, tagline, start, Math.min(g.h, start.h));
   el.replaceChildren(book);
   transition.pending = { kind: 'book-out', bookId };
   guard();
