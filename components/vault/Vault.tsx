@@ -14,14 +14,15 @@ import {
   useState,
   useSyncExternalStore,
 } from 'react';
-import { SettingsSheet } from '@/components/ui/SettingsSheet';
 import { camera, easeCamera, prefersReducedMotion } from '@/lib/camera';
 import { animationsOn, bookIn, bookOut, END_EVENT, transition } from '@/lib/transition';
-import { CHANGE_EVENT, readLast, readProgress } from '@/lib/store';
+import { CHANGE_EVENT, readLast, readProgress, readSettings, writeSettings } from '@/lib/store';
+import type { Testaments } from '@/lib/store';
 import { GROUP_ORDER, type VaultData } from './data';
 import { nearestConstellation, type Constellation } from './constellations';
 import { layoutVault, type Medallion, type Point } from './layout';
 import { ThemeTree } from './ThemeTree';
+import type { StarHide } from './starfield';
 import { useThemes } from './useThemes';
 import styles from './vault.module.css';
 
@@ -65,6 +66,9 @@ function useReaderKey(): string {
   );
 }
 
+/** Groups of the New Testament; every other book (and every bridge) is the Old. */
+const NT_GROUPS = new Set(['Gospels', 'Acts', 'Letters', 'Apocalypse']);
+
 /** A camera position: translate (x, y), then scale k. */
 type Cam = { x: number; y: number; k: number };
 
@@ -105,6 +109,15 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
   const [mode, setMode] = useState<'map' | 'list'>('map');
   const [focused, setFocused] = useState<string | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  // The settings sheet loads on first use: it is not needed for the Vault's first paint.
+  const [Sheet, setSheet] = useState<
+    typeof import('@/components/ui/SettingsSheet').SettingsSheet | null
+  >(null);
+  const openSettings = () =>
+    void import('@/components/ui/SettingsSheet').then((m) => {
+      setSheet(() => m.SettingsSheet);
+      setSettingsOpen(true);
+    });
   // Book transitions: the ceiling dims behind a flying book; the medallion it left is hidden.
   // Start dimmed when a book is on its way home (closed on its page, or via the back button).
   const [dimmed, setDimmed] = useState(
@@ -136,6 +149,24 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [data],
   );
   const byId = useMemo(() => new Map(books.map((b) => [b.id, b])), [books]);
+  // The Testaments filter (owner, 2026-11-17): show the Old, the New, or both. It filters what the
+  // Vault shows (books, names, stars, threads and the lists); the path and progress are untouched.
+  const testaments = useSyncExternalStore<Testaments>(
+    subscribe,
+    () => readSettings().testaments,
+    () => 'both',
+  );
+  const hide = testaments === 'both' ? undefined : testaments === 'ot' ? 'nt' : 'ot';
+  const tOf = useCallback(
+    (id: string) => (NT_GROUPS.has(byId.get(id)?.group ?? '') ? 'nt' : 'ot'),
+    [byId],
+  );
+  // Turning a testament off shows only the other; turning it back on shows both.
+  const toggleTestament = (t: 'ot' | 'nt') => {
+    const other = t === 'ot' ? 'nt' : 'ot';
+    writeSettings({ testaments: testaments === other ? 'both' : other });
+  };
+  const hideRef = useRef<StarHide | undefined>(undefined);
   const placed = useMemo(
     () => [...layout.medallions, ...layout.satellites] as Medallion[],
     [layout],
@@ -160,13 +191,32 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     draw: drawThemes,
     switchTo: switchThemes,
     setLit,
-  } = useThemes({ camRef, homes });
+  } = useThemes({ camRef, homes, hideRef });
   const drawStars = useRef(drawThemes);
   const themesLayout = useRef(themeLayout);
   useLayoutEffect(() => {
     drawStars.current = drawThemes;
     themesLayout.current = themeLayout;
   }, [drawThemes, themeLayout]);
+  // The stars of a testament switched off fade out (and back in), on the one canvas.
+  const shownHide = useRef(hide);
+  useEffect(() => {
+    if (shownHide.current === hide) return;
+    const by = (h: string | undefined) => (h ? (id: string) => tOf(id) === h : null);
+    const st: StarHide = { prev: by(shownHide.current), next: by(hide), t: 0 };
+    shownHide.current = hide;
+    hideRef.current = st;
+    const t0 = performance.now();
+    const ms = prefersReducedMotion() ? 0 : 450;
+    let raf = 0;
+    const step = (now: number) => {
+      st.t = ms ? Math.min(1, (now - t0) / ms) : 1;
+      drawStars.current(camRef.current);
+      if (st.t < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [hide, tOf]);
   const [focusC, setFocusC] = useState<string | null>(null);
   const passageOf = useMemo(
     () =>
@@ -554,7 +604,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     const links = [
       ...(listRef.current?.querySelectorAll<HTMLAnchorElement>('a[data-book], a[data-bridge]') ??
         []),
-    ];
+    ].filter((a) => a.getClientRects().length); // skip a testament switched off
     const i = links.indexOf(document.activeElement as HTMLAnchorElement);
     if (i < 0) return;
     e.preventDefault();
@@ -588,7 +638,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
   const lastMedallion = sections[lastSection ?? ''];
 
   return (
-    <div className={styles.vault} data-mode={mode}>
+    <div className={styles.vault} data-mode={mode} data-hide={hide}>
       <header ref={hudRef} className={styles.hud}>
         <h1 className={styles.title}>Scripture as Story</h1>
         <div className={styles.actions}>
@@ -637,6 +687,27 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
               Threads
             </button>
           </div>
+          {/* The Testaments filter: a view of either testament, or both (owner, 2026-11-17). */}
+          <div
+            className={`${styles.switch} ${styles.testaments}`}
+            role="group"
+            aria-label="Testaments"
+            data-testid="testaments"
+          >
+            {(['ot', 'nt'] as const).map((t) => (
+              <button
+                key={t}
+                type="button"
+                className={styles.switchButton}
+                aria-pressed={testaments === 'both' || testaments === t}
+                title={t === 'ot' ? 'Old Testament' : 'New Testament'}
+                onClick={() => toggleTestament(t)}
+                data-testid={`testament-${t}`}
+              >
+                {t === 'ot' ? 'Old' : 'New'}
+              </button>
+            ))}
+          </div>
           <button
             type="button"
             className={styles.button}
@@ -649,7 +720,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           <button
             type="button"
             className={styles.iconButton}
-            onClick={() => setSettingsOpen(true)}
+            onClick={openSettings}
             data-hud="settings"
             aria-label="Reading settings"
           >
@@ -671,7 +742,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           </Link>
         </nav>
       </header>
-      <SettingsSheet open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      {Sheet ? <Sheet open={settingsOpen} onClose={() => setSettingsOpen(false)} /> : null}
 
       {/* The stage takes every pan, pinch and wheel, whether it starts on the sky or on a name, a
           star or a sub-theme in the label layer above it (they are siblings, so the zoom sits here). */}
@@ -740,6 +811,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                       }}
                       data-book={o.id}
                       data-offpath={o.id}
+                      data-testament={tOf(o.id)}
                       onClick={(e) => {
                         e.preventDefault();
                         void openBook(o.id);
@@ -757,6 +829,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                       className={`${styles.star} ${focused === br.id ? styles.focused : ''}`}
                       style={{ left: br.x, top: br.y }}
                       data-bridge={br.id}
+                      data-testament="ot"
                       title={b.title}
                     >
                       ✦
@@ -773,6 +846,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                       href={`/book/${m.id}/`}
                       tabIndex={-1}
                       data-book={m.id}
+                      data-testament={tOf(m.id)}
                       className={[
                         styles.medallion,
                         screenW >= 56 ? styles.named : '',
@@ -800,6 +874,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                   );
                 })}
                 <span
+                  data-testament={tOf(sparkAt.id)}
                   className={styles.spark}
                   style={{ left: sparkAt.x, top: sparkAt.y - sparkAt.h / 2 - 10 }}
                 />
@@ -828,7 +903,12 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                 data-testid="spiral-labels"
               >
                 {layout.groups.map((g) => (
-                  <span key={g.label} className={`${styles.at} ${styles.group}`} style={at(g)}>
+                  <span
+                    key={g.label}
+                    className={`${styles.at} ${styles.group}`}
+                    style={at(g)}
+                    data-testament={NT_GROUPS.has(g.label) ? 'nt' : 'ot'}
+                  >
                     {g.label}
                   </span>
                 ))}
@@ -838,6 +918,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                     className={`${styles.at} ${styles.offName} ${lifted === o.id ? styles.gone : ''}`}
                     style={{ ...at(o), ['--w' as string]: o.size }}
                     data-label-min={40 / o.size}
+                    data-testament={tOf(o.id)}
                   >
                     {byId.get(o.id)!.name}
                   </span>
@@ -858,6 +939,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                         ['--fs' as string]: Math.max(11, m.w * 0.17),
                       }}
                       data-name={m.id}
+                      data-testament={tOf(m.id)}
                     >
                       <span className={styles.medTitle}>{b.name}</span>
                       <span className={styles.medTag}>{b.tagline}</span>
@@ -890,6 +972,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                             className={`${styles.at} ${styles.passage} ${p.library ? styles.passageLibrary : ''}`}
                             style={at(s)}
                             data-passage={s.key}
+                            data-testament={tOf(s.bookId)}
                             onClick={(e) => {
                               // A client navigation keeps the Vault's memory (Themes, the camera);
                               // remember exactly where the camera is, even mid-flight, to come back to.
@@ -986,6 +1069,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           arcHost={arcHost}
           nameOf={(id) => byId.get(id)?.name ?? id}
           listVisible={mode === 'list'}
+          hidden={hide}
+          testamentOf={tOf}
           onOpen={() => {
             camera.last = { ...camRef.current };
           }}
@@ -997,6 +1082,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
         <ThemeTree
           data={themeData}
           visible={mode === 'list'}
+          hidden={hide}
+          testamentOf={tOf}
           onFocusPassage={onTreeFocus}
           onOpen={onTreeOpen}
           hrefFor={passageHref}
@@ -1015,7 +1102,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             const sat = data.satellites.filter((s) => s.of === p.id);
             const read = readCount(b);
             return [
-              <li key={p.id}>
+              <li key={p.id} data-testament={tOf(p.id)}>
                 <Link
                   href={`/book/${p.id}/`}
                   data-book={p.id}
@@ -1036,7 +1123,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                   {p.id === currentBook ? ' · you are here' : ''}
                 </span>
                 {sat.map((s) => (
-                  <p key={s.id} className={styles.listSat}>
+                  <p key={s.id} className={styles.listSat} data-testament={tOf(s.id)}>
                     Optional detour:{' '}
                     <Link
                       href={`/book/${s.id}/`}
@@ -1050,7 +1137,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                 ))}
               </li>,
               bridge ? (
-                <li key={bridge.id} className={styles.listBridge}>
+                <li key={bridge.id} className={styles.listBridge} data-testament="ot">
                   <Link
                     href={`/bridge/${bridge.id}/`}
                     data-bridge={bridge.id}
@@ -1069,13 +1156,13 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           const members = data.offpath.filter((o) => o.group === g);
           if (!members.length) return null;
           return (
-            <div key={g}>
+            <div key={g} data-testament={NT_GROUPS.has(g) ? 'nt' : 'ot'}>
               <h3 className="label">{g}</h3>
               <ul className={styles.offList}>
                 {members.map((o) => {
                   const b = byId.get(o.id)!;
                   return (
-                    <li key={o.id} data-offpath-item={o.id}>
+                    <li key={o.id} data-offpath-item={o.id} data-testament={tOf(o.id)}>
                       <Link
                         href={`/book/${o.id}/`}
                         data-book={o.id}
