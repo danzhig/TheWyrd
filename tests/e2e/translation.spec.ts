@@ -66,11 +66,18 @@ test.describe('Translation', () => {
     await open(page, '/read/gen-04/');
     const tab = page.getByTestId('reader-translation');
     // Read down to a verse well into the chapter.
-    const verse = page.locator('[id="v-7-11"]');
-    await verse.evaluate((el) => {
+    await page.locator('[id="v-7-11"]').evaluate((el) => {
       el.scrollIntoView({ block: 'start' });
       window.scrollBy(0, -120);
     });
+    // The verse at the top of the screen (the first below the top bar): the one to keep in place.
+    const id = await page.evaluate(
+      () =>
+        [...document.querySelectorAll<HTMLElement>('article [id^="v-"]')].find(
+          (el) => el.getBoundingClientRect().top >= 64,
+        )!.id,
+    );
+    const verse = page.locator(`[id="${id}"]`);
     await expect(tab).toBeInViewport();
     const top = () => verse.evaluate((el) => el.getBoundingClientRect().top);
     const before = await top();
