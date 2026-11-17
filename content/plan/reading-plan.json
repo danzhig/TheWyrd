@@ -1,6 +1,6 @@
 {
  "$schema": "see docs/PLAN.md section 5",
- "version": "1.0.1",
+ "version": "1.1.0",
  "versification": "Catholic (Hebrew-based for protocanonical books, as in NABRE); map to WEBC via TVTMS",
  "baseText": "WEBC (World English Bible Catholic Edition)",
  "rangeNotation": "'c' whole chapter; 'c-c' chapters; 'c:v-v' verses in one chapter; 'c:v-c:v' across chapters; 'end' = last verse of that chapter; ';' joins parts. Esther letters A-F are NABRE's Greek additions.",
@@ -380,14 +380,154 @@
      "status": "read"
     },
     {
-     "id": "job-x1",
-     "title": "The Great Debate",
-     "range": "3-37",
+     "id": "job-x101",
+     "title": "Job Curses His Day",
+     "range": "3",
      "status": "skip",
-     "summary": "Job and three friends argue in poetry; they insist his suffering is punishment, he maintains his innocence. Elihu then speaks.",
+     "summary": "Job breaks his silence and wishes he had never been born.",
      "noteIds": [
       "n-job-debate"
      ]
+    },
+    {
+     "id": "job-x102",
+     "title": "Eliphaz Speaks",
+     "range": "4-5",
+     "status": "skip",
+     "summary": "The first friend urges Job to accept God's correction."
+    },
+    {
+     "id": "job-x103",
+     "title": "Job Answers Eliphaz",
+     "range": "6-7",
+     "status": "skip",
+     "summary": "Job protests that his friends have failed him and pleads with God."
+    },
+    {
+     "id": "job-x104",
+     "title": "Bildad Speaks",
+     "range": "8",
+     "status": "skip",
+     "summary": "The second friend insists that God never perverts justice."
+    },
+    {
+     "id": "job-x105",
+     "title": "Who Can Argue with God?",
+     "range": "9-10",
+     "status": "skip",
+     "summary": "Job longs for a fair hearing before God."
+    },
+    {
+     "id": "job-x106",
+     "title": "Zophar Speaks",
+     "range": "11",
+     "status": "skip",
+     "summary": "The third friend tells Job he deserves worse."
+    },
+    {
+     "id": "job-x107",
+     "title": "Job: Man Born of Woman",
+     "range": "12-14",
+     "status": "skip",
+     "summary": "Job answers all three and wonders whether a man can live again."
+    },
+    {
+     "id": "job-x108",
+     "title": "Eliphaz Again",
+     "range": "15",
+     "status": "skip",
+     "summary": "Eliphaz accuses Job of undermining reverence for God."
+    },
+    {
+     "id": "job-x109",
+     "title": "Job: A Witness in Heaven",
+     "range": "16-17",
+     "status": "skip",
+     "summary": "Job calls his friends miserable comforters and looks for a witness on high."
+    },
+    {
+     "id": "job-x110",
+     "title": "Bildad Again",
+     "range": "18",
+     "status": "skip",
+     "summary": "Bildad describes the fate of the wicked."
+    },
+    {
+     "id": "job-x111",
+     "title": "Job's Redeemer",
+     "range": "19",
+     "status": "skip",
+     "summary": "Abandoned by all, Job declares his hope in a redeemer."
+    },
+    {
+     "id": "job-x112",
+     "title": "Zophar Again",
+     "range": "20",
+     "status": "skip",
+     "summary": "Zophar insists the joy of the wicked is brief."
+    },
+    {
+     "id": "job-x113",
+     "title": "Job: The Wicked Prosper",
+     "range": "21",
+     "status": "skip",
+     "summary": "Job points out that the wicked often live long and well."
+    },
+    {
+     "id": "job-x114",
+     "title": "Eliphaz's Last Speech",
+     "range": "22",
+     "status": "skip",
+     "summary": "Eliphaz charges Job with hidden sins and urges him to return."
+    },
+    {
+     "id": "job-x115",
+     "title": "If Only I Could Find Him",
+     "range": "23-24",
+     "status": "skip",
+     "summary": "Job seeks God and lists the wrongs of the world."
+    },
+    {
+     "id": "job-x116",
+     "title": "Bildad's Last Word; Job Replies",
+     "range": "25-26",
+     "status": "skip",
+     "summary": "A short speech from Bildad and Job's answer on the greatness of God."
+    },
+    {
+     "id": "job-x117",
+     "title": "Job's Oath; Where Wisdom Is Found",
+     "range": "27-28",
+     "status": "skip",
+     "summary": "Job holds to his integrity; a poem on the hidden place of wisdom."
+    },
+    {
+     "id": "job-x118",
+     "title": "Job's Final Defence",
+     "range": "29-31",
+     "status": "skip",
+     "summary": "Job remembers his past, laments his present and swears his innocence."
+    },
+    {
+     "id": "job-x119",
+     "title": "Elihu Speaks",
+     "range": "32-33",
+     "status": "skip",
+     "summary": "A young bystander answers Job and the friends."
+    },
+    {
+     "id": "job-x120",
+     "title": "Elihu on God's Justice",
+     "range": "34-35",
+     "status": "skip",
+     "summary": "Elihu defends God's justice against Job's complaint."
+    },
+    {
+     "id": "job-x121",
+     "title": "Elihu: God Is Great",
+     "range": "36-37",
+     "status": "skip",
+     "summary": "Elihu ends with God's greatness in the storm."
     },
     {
      "id": "job-02",
@@ -552,11 +692,18 @@
      "status": "read"
     },
     {
-     "id": "exod-x1",
-     "title": "The Book of the Covenant",
-     "range": "21-23",
+     "id": "exod-x101",
+     "title": "Laws on Servants and Injury",
+     "range": "21",
      "status": "skip",
-     "summary": "Civil and religious case law: slaves, injuries, property, festivals."
+     "summary": "Case law on servants, violence and injury."
+    },
+    {
+     "id": "exod-x102",
+     "title": "Property, Justice and the Feasts",
+     "range": "22-23",
+     "status": "skip",
+     "summary": "Laws on property, the vulnerable and justice, and the three yearly feasts."
     },
     {
      "id": "exod-10",
@@ -568,11 +715,39 @@
      ]
     },
     {
-     "id": "exod-x2",
-     "title": "Instructions for the Tabernacle",
-     "range": "25-31",
+     "id": "exod-x201",
+     "title": "The Ark, the Table and the Lampstand",
+     "range": "25",
      "status": "skip",
-     "summary": "Detailed plans for the tabernacle, its furnishings, and the priests' vestments."
+     "summary": "The offering called for and the first furnishings described."
+    },
+    {
+     "id": "exod-x202",
+     "title": "The Tabernacle and Its Court",
+     "range": "26-27",
+     "status": "skip",
+     "summary": "The tent's curtains and frame, the altar and the court."
+    },
+    {
+     "id": "exod-x203",
+     "title": "The Priestly Garments",
+     "range": "28",
+     "status": "skip",
+     "summary": "The ephod, breastpiece and robes for Aaron and his sons."
+    },
+    {
+     "id": "exod-x204",
+     "title": "Ordaining the Priests",
+     "range": "29",
+     "status": "skip",
+     "summary": "The rite that consecrates the priests, and the daily offering."
+    },
+    {
+     "id": "exod-x205",
+     "title": "Incense, Oil and Sabbath",
+     "range": "30-31",
+     "status": "skip",
+     "summary": "The incense altar, anointing oil, the craftsmen and the Sabbath sign."
     },
     {
      "id": "exod-11",
@@ -593,11 +768,25 @@
      "status": "read"
     },
     {
-     "id": "exod-x3",
-     "title": "The Tabernacle Built",
-     "range": "35:1-40:33",
+     "id": "exod-x301",
+     "title": "Gifts and Craftsmen",
+     "range": "35-36",
      "status": "skip",
-     "summary": "The instructions of chapters 25–31 carried out, item by item."
+     "summary": "The people bring more than enough, and the tent is made."
+    },
+    {
+     "id": "exod-x302",
+     "title": "The Furnishings Made",
+     "range": "37-38",
+     "status": "skip",
+     "summary": "The ark, table, lampstand, altars and court are made."
+    },
+    {
+     "id": "exod-x303",
+     "title": "The Tabernacle Raised",
+     "range": "39:1-40:33",
+     "status": "skip",
+     "summary": "The garments are finished and the tabernacle set up."
     },
     {
      "id": "exod-14",
@@ -626,11 +815,53 @@
    "tagline": "Forty years in the wilderness",
    "sections": [
     {
-     "id": "num-x1",
-     "title": "Census and Camp",
-     "range": "1-9",
+     "id": "num-x101",
+     "title": "The First Census",
+     "range": "1",
      "status": "skip",
-     "summary": "The tribes counted and arranged around the tabernacle; Levite duties; purity laws; the second Passover."
+     "summary": "The fighting men of each tribe are counted."
+    },
+    {
+     "id": "num-x102",
+     "title": "The Camp in Order",
+     "range": "2",
+     "status": "skip",
+     "summary": "The tribes take their places around the tabernacle."
+    },
+    {
+     "id": "num-x103",
+     "title": "The Levites and Their Duties",
+     "range": "3-4",
+     "status": "skip",
+     "summary": "The Levites are counted and given the care of the tabernacle."
+    },
+    {
+     "id": "num-x104",
+     "title": "Purity in the Camp",
+     "range": "5",
+     "status": "skip",
+     "summary": "Laws on uncleanness, restitution and the jealousy ordeal."
+    },
+    {
+     "id": "num-x105",
+     "title": "The Nazirite; the Priestly Blessing",
+     "range": "6",
+     "status": "skip",
+     "summary": "The Nazirite vow, and the blessing the priests are to give."
+    },
+    {
+     "id": "num-x106",
+     "title": "The Leaders' Offerings",
+     "range": "7",
+     "status": "skip",
+     "summary": "Each tribe's leader brings the same gifts for the altar."
+    },
+    {
+     "id": "num-x107",
+     "title": "Lamps, Levites, Passover and the Cloud",
+     "range": "8-9",
+     "status": "skip",
+     "summary": "The lamps set up, the Levites dedicated, the second Passover and the guiding cloud."
     },
     {
      "id": "num-01",
@@ -709,11 +940,39 @@
      "status": "read"
     },
     {
-     "id": "num-x2",
-     "title": "The Second Census and Laws",
-     "range": "26-31",
+     "id": "num-x201",
+     "title": "The Second Census",
+     "range": "26",
      "status": "skip",
-     "summary": "A new generation counted; Zelophehad's daughters; Joshua appointed; offerings and vows; war on Midian."
+     "summary": "The new generation counted on the plains of Moab."
+    },
+    {
+     "id": "num-x202",
+     "title": "Zelophehad's Daughters; Joshua Appointed",
+     "range": "27",
+     "status": "skip",
+     "summary": "Daughters inherit, and Joshua is chosen to succeed Moses."
+    },
+    {
+     "id": "num-x203",
+     "title": "Offerings for Every Season",
+     "range": "28-29",
+     "status": "skip",
+     "summary": "The daily, Sabbath, monthly and festival offerings."
+    },
+    {
+     "id": "num-x204",
+     "title": "Vows",
+     "range": "30",
+     "status": "skip",
+     "summary": "When vows stand and when they may be annulled."
+    },
+    {
+     "id": "num-x205",
+     "title": "War on Midian",
+     "range": "31",
+     "status": "skip",
+     "summary": "The campaign against Midian and the division of the spoil."
     },
     {
      "id": "num-12",
@@ -725,11 +984,25 @@
      ]
     },
     {
-     "id": "num-x3",
-     "title": "Itinerary and Borders",
-     "range": "33-36",
+     "id": "num-x301",
+     "title": "The Stages of the Journey",
+     "range": "33",
      "status": "skip",
-     "summary": "The route from Egypt, the land's borders, cities of refuge, inheritance laws."
+     "summary": "Every camp from Egypt to the Jordan, in order."
+    },
+    {
+     "id": "num-x302",
+     "title": "The Borders of the Land",
+     "range": "34",
+     "status": "skip",
+     "summary": "The land's borders and the leaders who will divide it."
+    },
+    {
+     "id": "num-x303",
+     "title": "Levite Towns, Refuge and Inheritance",
+     "range": "35-36",
+     "status": "skip",
+     "summary": "Towns for the Levites, cities of refuge, and a ruling on inheritance."
     }
    ]
   },
@@ -740,11 +1013,32 @@
    "tagline": "The last words of Moses",
    "sections": [
     {
-     "id": "deut-x1",
-     "title": "Moses Recounts the Journey",
-     "range": "1-5",
+     "id": "deut-x101",
+     "title": "From Horeb to Kadesh",
+     "range": "1",
      "status": "skip",
-     "summary": "Moses retells the wilderness years and repeats the Ten Commandments."
+     "summary": "Moses recalls the judges appointed and the refusal at Kadesh."
+    },
+    {
+     "id": "deut-x102",
+     "title": "Through Edom, Moab and Ammon",
+     "range": "2-3",
+     "status": "skip",
+     "summary": "The long journey round and the conquest east of the Jordan."
+    },
+    {
+     "id": "deut-x103",
+     "title": "Do Not Forget",
+     "range": "4",
+     "status": "skip",
+     "summary": "Moses urges obedience and warns against idols."
+    },
+    {
+     "id": "deut-x104",
+     "title": "The Ten Commandments Repeated",
+     "range": "5",
+     "status": "skip",
+     "summary": "The commandments given again to the new generation."
     },
     {
      "id": "deut-x2",
@@ -778,11 +1072,123 @@
      ]
     },
     {
-     "id": "deut-x3",
-     "title": "Sermons and the Law Code",
-     "range": "6:10-27:end",
+     "id": "deut-x301",
+     "title": "When You Enter the Land",
+     "range": "6:10-25",
      "status": "skip",
-     "summary": "Exhortations, then the law code: worship, kings, prophets, war, family and justice, ending in the Shechem ceremony."
+     "summary": "A warning not to forget the LORD in prosperity."
+    },
+    {
+     "id": "deut-x302",
+     "title": "A Holy People",
+     "range": "7",
+     "status": "skip",
+     "summary": "Israel chosen out of love and told to keep apart from idolatry."
+    },
+    {
+     "id": "deut-x303",
+     "title": "Remember the Wilderness",
+     "range": "8",
+     "status": "skip",
+     "summary": "The wilderness years as a lesson in dependence."
+    },
+    {
+     "id": "deut-x304",
+     "title": "The Golden Calf Remembered",
+     "range": "9:1-10:11",
+     "status": "skip",
+     "summary": "Not for their righteousness: Moses recalls Horeb."
+    },
+    {
+     "id": "deut-x305",
+     "title": "What the LORD Asks",
+     "range": "10:12-11:end",
+     "status": "skip",
+     "summary": "Love, obedience and the choice between blessing and curse."
+    },
+    {
+     "id": "deut-x306",
+     "title": "One Place of Worship",
+     "range": "12",
+     "status": "skip",
+     "summary": "Worship at the place the LORD will choose."
+    },
+    {
+     "id": "deut-x307",
+     "title": "False Prophets",
+     "range": "13",
+     "status": "skip",
+     "summary": "Prophets and others who lead to other gods."
+    },
+    {
+     "id": "deut-x308",
+     "title": "Clean Food and the Tithe",
+     "range": "14",
+     "status": "skip",
+     "summary": "Food laws and the yearly tithe."
+    },
+    {
+     "id": "deut-x309",
+     "title": "The Year of Release",
+     "range": "15",
+     "status": "skip",
+     "summary": "Debts released, slaves freed and the firstborn set apart."
+    },
+    {
+     "id": "deut-x310",
+     "title": "The Feasts; Justice",
+     "range": "16",
+     "status": "skip",
+     "summary": "Passover, Weeks and Booths, and judges who judge fairly."
+    },
+    {
+     "id": "deut-x311",
+     "title": "Courts and the King",
+     "range": "17",
+     "status": "skip",
+     "summary": "Witnesses, the higher court, and the law of the king."
+    },
+    {
+     "id": "deut-x312",
+     "title": "Priests and a Prophet",
+     "range": "18",
+     "status": "skip",
+     "summary": "The Levites' portion and the prophet God will raise up."
+    },
+    {
+     "id": "deut-x313",
+     "title": "Refuge, Witnesses and War",
+     "range": "19-20",
+     "status": "skip",
+     "summary": "Cities of refuge, true witness, and the conduct of war."
+    },
+    {
+     "id": "deut-x314",
+     "title": "Family and Neighbour",
+     "range": "21-22",
+     "status": "skip",
+     "summary": "Laws on families, neighbours and marriage."
+    },
+    {
+     "id": "deut-x315",
+     "title": "The Assembly; the Poor",
+     "range": "23-24",
+     "status": "skip",
+     "summary": "Who may enter the assembly; protection for the poor and the stranger."
+    },
+    {
+     "id": "deut-x316",
+     "title": "Justice and First Fruits",
+     "range": "25-26",
+     "status": "skip",
+     "summary": "Fair dealing, and the offering of first fruits with a confession."
+    },
+    {
+     "id": "deut-x317",
+     "title": "Stones on Mount Ebal",
+     "range": "27",
+     "status": "skip",
+     "summary": "The law written on stones and the curses spoken at Shechem."
     },
     {
      "id": "deut-02",
@@ -910,11 +1316,46 @@
      "status": "read"
     },
     {
-     "id": "josh-x1",
-     "title": "Dividing the Land",
-     "range": "12-21",
+     "id": "josh-x101",
+     "title": "The Defeated Kings",
+     "range": "12",
      "status": "skip",
-     "summary": "Lists of defeated kings, tribal boundaries, cities of refuge and Levite towns."
+     "summary": "A list of the kings defeated east and west of the Jordan."
+    },
+    {
+     "id": "josh-x102",
+     "title": "Land Still to Be Taken; the East Bank",
+     "range": "13",
+     "status": "skip",
+     "summary": "What remains to conquer, and the land of the eastern tribes."
+    },
+    {
+     "id": "josh-x103",
+     "title": "Caleb; the Land of Judah",
+     "range": "14-15",
+     "status": "skip",
+     "summary": "Caleb receives Hebron, and Judah's borders and towns."
+    },
+    {
+     "id": "josh-x104",
+     "title": "Ephraim and Manasseh",
+     "range": "16-17",
+     "status": "skip",
+     "summary": "The land of Joseph's tribes."
+    },
+    {
+     "id": "josh-x105",
+     "title": "Shiloh; the Remaining Tribes",
+     "range": "18-19",
+     "status": "skip",
+     "summary": "The land surveyed and divided among seven tribes."
+    },
+    {
+     "id": "josh-x106",
+     "title": "Refuge and Levite Towns",
+     "range": "20-21",
+     "status": "skip",
+     "summary": "Cities of refuge and the towns given to the Levites."
     },
     {
      "id": "josh-10",
@@ -1468,11 +1909,186 @@
    "tagline": "The fall, from inside the walls",
    "sections": [
     {
-     "id": "jer-x1",
-     "title": "Jeremiah's Oracles",
-     "range": "1-36",
+     "id": "jer-x101",
+     "title": "The Call of Jeremiah",
+     "range": "1",
      "status": "skip",
-     "summary": "Sermons, laments and oracles from four decades of Jeremiah's ministry."
+     "summary": "Jeremiah is called as a prophet to the nations."
+    },
+    {
+     "id": "jer-x102",
+     "title": "Israel's Unfaithfulness",
+     "range": "2:1-3:5",
+     "status": "skip",
+     "summary": "The LORD's case against a faithless people."
+    },
+    {
+     "id": "jer-x103",
+     "title": "A Call to Return",
+     "range": "3:6-4:4",
+     "status": "skip",
+     "summary": "An appeal to turn back."
+    },
+    {
+     "id": "jer-x104",
+     "title": "Disaster from the North",
+     "range": "4:5-31",
+     "status": "skip",
+     "summary": "An invasion foreseen."
+    },
+    {
+     "id": "jer-x105",
+     "title": "Not One Who Does Justice",
+     "range": "5",
+     "status": "skip",
+     "summary": "A search of Jerusalem's streets."
+    },
+    {
+     "id": "jer-x106",
+     "title": "Jerusalem Besieged",
+     "range": "6",
+     "status": "skip",
+     "summary": "The city under siege, and the old paths refused."
+    },
+    {
+     "id": "jer-x107",
+     "title": "The Temple Sermon",
+     "range": "7:1-8:3",
+     "status": "skip",
+     "summary": "False trust in the temple condemned."
+    },
+    {
+     "id": "jer-x108",
+     "title": "Weeping for the People",
+     "range": "8:4-9:end",
+     "status": "skip",
+     "summary": "The prophet laments over his people."
+    },
+    {
+     "id": "jer-x109",
+     "title": "Idols and the Living God",
+     "range": "10",
+     "status": "skip",
+     "summary": "The emptiness of idols beside the true God."
+    },
+    {
+     "id": "jer-x110",
+     "title": "The Broken Covenant; the Prophet's Complaint",
+     "range": "11-12",
+     "status": "skip",
+     "summary": "The covenant broken, a plot against Jeremiah, and his complaint."
+    },
+    {
+     "id": "jer-x111",
+     "title": "The Linen Belt and the Wine Jars",
+     "range": "13",
+     "status": "skip",
+     "summary": "Acted signs of Judah's pride and ruin."
+    },
+    {
+     "id": "jer-x112",
+     "title": "Drought and Lament",
+     "range": "14-15",
+     "status": "skip",
+     "summary": "Drought, prayer refused, and Jeremiah's lament."
+    },
+    {
+     "id": "jer-x113",
+     "title": "Signs and the Sabbath",
+     "range": "16-17",
+     "status": "skip",
+     "summary": "Jeremiah's life as a sign; sin engraved on the heart; the Sabbath."
+    },
+    {
+     "id": "jer-x114",
+     "title": "The Potter and the Broken Jar",
+     "range": "18-19",
+     "status": "skip",
+     "summary": "Lessons at the potter's house and the valley of Hinnom."
+    },
+    {
+     "id": "jer-x115",
+     "title": "In the Stocks",
+     "range": "20",
+     "status": "skip",
+     "summary": "Jeremiah beaten and put in the stocks, and his anguish."
+    },
+    {
+     "id": "jer-x116",
+     "title": "Against the Kings of Judah",
+     "range": "21-22",
+     "status": "skip",
+     "summary": "Words to Zedekiah and the kings before him."
+    },
+    {
+     "id": "jer-x117",
+     "title": "The Righteous Branch; False Prophets",
+     "range": "23",
+     "status": "skip",
+     "summary": "A promised king, and prophets who were not sent."
+    },
+    {
+     "id": "jer-x118",
+     "title": "Two Baskets of Figs; Seventy Years",
+     "range": "24-25",
+     "status": "skip",
+     "summary": "Good and bad figs, and the cup of wrath for the nations."
+    },
+    {
+     "id": "jer-x119",
+     "title": "The Temple Sermon on Trial",
+     "range": "26",
+     "status": "skip",
+     "summary": "Jeremiah tried for his words and spared."
+    },
+    {
+     "id": "jer-x120",
+     "title": "The Yoke; Hananiah",
+     "range": "27-28",
+     "status": "skip",
+     "summary": "Submit to Babylon: a yoke worn and broken."
+    },
+    {
+     "id": "jer-x121",
+     "title": "The Letter to the Exiles",
+     "range": "29",
+     "status": "skip",
+     "summary": "Advice to the exiles in Babylon."
+    },
+    {
+     "id": "jer-x122",
+     "title": "The Book of Consolation",
+     "range": "30-31",
+     "status": "skip",
+     "summary": "Restoration promised and a new covenant."
+    },
+    {
+     "id": "jer-x123",
+     "title": "A Field Bought in Anathoth",
+     "range": "32",
+     "status": "skip",
+     "summary": "A purchase during the siege as a sign of hope."
+    },
+    {
+     "id": "jer-x124",
+     "title": "Restoration Promised",
+     "range": "33",
+     "status": "skip",
+     "summary": "Health, joy and a righteous Branch for David."
+    },
+    {
+     "id": "jer-x125",
+     "title": "Freed Slaves Taken Back; the Rechabites",
+     "range": "34-35",
+     "status": "skip",
+     "summary": "A broken promise, and a family's faithfulness."
+    },
+    {
+     "id": "jer-x126",
+     "title": "The Scroll Burned",
+     "range": "36",
+     "status": "skip",
+     "summary": "The king burns Jeremiah's scroll, and it is written again."
     },
     {
      "id": "jer-01",
@@ -1508,11 +2124,53 @@
      "status": "read"
     },
     {
-     "id": "jer-x2",
-     "title": "In Egypt; Oracles to the Nations",
-     "range": "44-52",
+     "id": "jer-x201",
+     "title": "Last Words in Egypt; a Word to Baruch",
+     "range": "44-45",
      "status": "skip",
-     "summary": "Jeremiah's last words in Egypt, oracles against the nations, and an appendix retelling Jerusalem's fall."
+     "summary": "Jeremiah's final warning in Egypt, and a word for his scribe."
+    },
+    {
+     "id": "jer-x202",
+     "title": "Against Egypt",
+     "range": "46",
+     "status": "skip",
+     "summary": "Oracles on Egypt's defeat."
+    },
+    {
+     "id": "jer-x203",
+     "title": "Against the Philistines and Moab",
+     "range": "47-48",
+     "status": "skip",
+     "summary": "Oracles on Israel's western and eastern neighbours."
+    },
+    {
+     "id": "jer-x204",
+     "title": "Against Ammon, Edom and Others",
+     "range": "49",
+     "status": "skip",
+     "summary": "Oracles on Ammon, Edom, Damascus, Kedar and Elam."
+    },
+    {
+     "id": "jer-x205",
+     "title": "Against Babylon",
+     "range": "50",
+     "status": "skip",
+     "summary": "The first oracle on Babylon's fall."
+    },
+    {
+     "id": "jer-x206",
+     "title": "Babylon's Fall",
+     "range": "51",
+     "status": "skip",
+     "summary": "The second oracle on Babylon, sent with Seraiah."
+    },
+    {
+     "id": "jer-x207",
+     "title": "The Fall of Jerusalem Retold",
+     "range": "52",
+     "status": "skip",
+     "summary": "An appendix retelling the city's capture."
     }
    ]
   },
@@ -1627,11 +2285,46 @@
      "status": "read"
     },
     {
-     "id": "dan-x1",
-     "title": "Daniel's Visions",
-     "range": "7-12",
+     "id": "dan-x101",
+     "title": "Four Beasts and the Son of Man",
+     "range": "7",
      "status": "skip",
-     "summary": "Apocalyptic visions of beasts, the Son of Man, and the kingdoms to come."
+     "summary": "Daniel's vision of four beasts and one like a son of man."
+    },
+    {
+     "id": "dan-x102",
+     "title": "The Ram and the Goat",
+     "range": "8",
+     "status": "skip",
+     "summary": "A vision of two empires and a proud horn."
+    },
+    {
+     "id": "dan-x103",
+     "title": "The Seventy Weeks",
+     "range": "9",
+     "status": "skip",
+     "summary": "Daniel's prayer and Gabriel's answer."
+    },
+    {
+     "id": "dan-x104",
+     "title": "The Man in Linen",
+     "range": "10",
+     "status": "skip",
+     "summary": "A heavenly messenger comes to Daniel."
+    },
+    {
+     "id": "dan-x105",
+     "title": "Kings of the North and South",
+     "range": "11",
+     "status": "skip",
+     "summary": "Wars of the kingdoms to come."
+    },
+    {
+     "id": "dan-x106",
+     "title": "The Time of the End",
+     "range": "12",
+     "status": "skip",
+     "summary": "Michael arises, and the book is sealed."
     },
     {
      "id": "dan-07",
@@ -2380,11 +3073,123 @@
    "tagline": "The raising of Lazarus",
    "sections": [
     {
-     "id": "john-x1",
-     "title": "John 1–10",
-     "range": "1-10",
+     "id": "john-x101",
+     "title": "The Word Became Flesh",
+     "range": "1:1-18",
      "status": "skip",
-     "summary": "Outside this reading."
+     "summary": "John's prologue."
+    },
+    {
+     "id": "john-x102",
+     "title": "John's Witness; the First Disciples",
+     "range": "1:19-51",
+     "status": "skip",
+     "summary": "John the Baptist points to Jesus, and the first disciples follow."
+    },
+    {
+     "id": "john-x103",
+     "title": "The Wedding at Cana",
+     "range": "2:1-12",
+     "status": "skip",
+     "summary": "Water turned to wine, the first of the signs."
+    },
+    {
+     "id": "john-x104",
+     "title": "Cleansing the Temple",
+     "range": "2:13-25",
+     "status": "skip",
+     "summary": "Jesus drives out the traders at Passover."
+    },
+    {
+     "id": "john-x105",
+     "title": "Nicodemus",
+     "range": "3:1-21",
+     "status": "skip",
+     "summary": "A night conversation about new birth."
+    },
+    {
+     "id": "john-x106",
+     "title": "John Points to Jesus",
+     "range": "3:22-36",
+     "status": "skip",
+     "summary": "John the Baptist's last witness."
+    },
+    {
+     "id": "john-x107",
+     "title": "The Samaritan Woman",
+     "range": "4:1-42",
+     "status": "skip",
+     "summary": "A conversation at Jacob's well."
+    },
+    {
+     "id": "john-x108",
+     "title": "The Official's Son",
+     "range": "4:43-54",
+     "status": "skip",
+     "summary": "A son healed from a distance."
+    },
+    {
+     "id": "john-x109",
+     "title": "Healing at Bethesda",
+     "range": "5",
+     "status": "skip",
+     "summary": "A Sabbath healing and the Son's authority."
+    },
+    {
+     "id": "john-x110",
+     "title": "Five Thousand Fed; Walking on the Sea",
+     "range": "6:1-21",
+     "status": "skip",
+     "summary": "The feeding by the lake and the crossing in the dark."
+    },
+    {
+     "id": "john-x111",
+     "title": "The Bread of Life",
+     "range": "6:22-71",
+     "status": "skip",
+     "summary": "The discourse at Capernaum, and many turn away."
+    },
+    {
+     "id": "john-x112",
+     "title": "At the Feast of Booths",
+     "range": "7:1-52",
+     "status": "skip",
+     "summary": "Teaching in the temple amid division."
+    },
+    {
+     "id": "john-x113",
+     "title": "The Woman Caught in Adultery",
+     "range": "7:53-8:11",
+     "status": "skip",
+     "summary": "A woman brought for judgement."
+    },
+    {
+     "id": "john-x114",
+     "title": "The Light of the World",
+     "range": "8:12-59",
+     "status": "skip",
+     "summary": "Debate in the temple about Jesus and Abraham."
+    },
+    {
+     "id": "john-x115",
+     "title": "The Man Born Blind",
+     "range": "9",
+     "status": "skip",
+     "summary": "A blind man healed and questioned."
+    },
+    {
+     "id": "john-x116",
+     "title": "The Good Shepherd",
+     "range": "10:1-21",
+     "status": "skip",
+     "summary": "The shepherd who lays down his life."
+    },
+    {
+     "id": "john-x117",
+     "title": "At the Feast of Dedication",
+     "range": "10:22-42",
+     "status": "skip",
+     "summary": "Jesus in Solomon's porch in winter."
     },
     {
      "id": "john-01",
@@ -2396,11 +3201,88 @@
      ]
     },
     {
-     "id": "john-x2",
-     "title": "John 12–21",
-     "range": "12-21",
+     "id": "john-x201",
+     "title": "Anointed at Bethany",
+     "range": "12:1-11",
      "status": "skip",
-     "summary": "Outside this reading."
+     "summary": "Mary anoints Jesus' feet."
+    },
+    {
+     "id": "john-x202",
+     "title": "The Entry into Jerusalem",
+     "range": "12:12-19",
+     "status": "skip",
+     "summary": "The crowd welcomes Jesus with palm branches."
+    },
+    {
+     "id": "john-x203",
+     "title": "The Hour Has Come",
+     "range": "12:20-50",
+     "status": "skip",
+     "summary": "Greeks seek Jesus, and he speaks of his death."
+    },
+    {
+     "id": "john-x204",
+     "title": "The Washing of the Feet",
+     "range": "13",
+     "status": "skip",
+     "summary": "Jesus washes his disciples' feet and foretells the betrayal."
+    },
+    {
+     "id": "john-x205",
+     "title": "The Way to the Father",
+     "range": "14",
+     "status": "skip",
+     "summary": "Jesus comforts his disciples and promises the Spirit."
+    },
+    {
+     "id": "john-x206",
+     "title": "The Vine; the Spirit Promised",
+     "range": "15-16",
+     "status": "skip",
+     "summary": "Abiding in Christ, the world's hatred, and the coming Spirit."
+    },
+    {
+     "id": "john-x207",
+     "title": "The Prayer of Jesus",
+     "range": "17",
+     "status": "skip",
+     "summary": "Jesus prays for his disciples and those who will believe."
+    },
+    {
+     "id": "john-x208",
+     "title": "Arrest and Trial",
+     "range": "18",
+     "status": "skip",
+     "summary": "Gethsemane, Peter's denial, and Pilate."
+    },
+    {
+     "id": "john-x209",
+     "title": "Condemned and Crucified",
+     "range": "19:1-30",
+     "status": "skip",
+     "summary": "Jesus sentenced and crucified."
+    },
+    {
+     "id": "john-x210",
+     "title": "The Burial",
+     "range": "19:31-42",
+     "status": "skip",
+     "summary": "Jesus' side pierced and his body laid in the tomb."
+    },
+    {
+     "id": "john-x211",
+     "title": "The Empty Tomb; Thomas",
+     "range": "20",
+     "status": "skip",
+     "summary": "Mary Magdalene, the disciples and Thomas see the risen Lord."
+    },
+    {
+     "id": "john-x212",
+     "title": "By the Sea of Tiberias",
+     "range": "21",
+     "status": "skip",
+     "summary": "The catch of fish and Peter restored."
     }
    ],
    "excursion": true
@@ -2584,7 +3466,7 @@
   },
   {
    "id": "n-job-debate",
-   "section": "job-x1",
+   "section": "job-x101",
    "at": "fold",
    "text": "For 35 chapters Job's friends insist his suffering must be punishment for hidden sin. Job maintains his innocence and demands that God answer him. Then God does."
   },

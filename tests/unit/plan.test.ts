@@ -8,9 +8,9 @@ const plan = ReadingPlanSchema.parse(
 );
 
 describe('reading-plan.json', () => {
-  it('matches the schema and has 252 sections in 24 books', () => {
+  it('matches the schema and has 378 sections in 24 books (252 before skip stretches were divided, 1.1.0)', () => {
     expect(plan.books).toHaveLength(24);
-    expect(plan.books.flatMap((b) => b.sections)).toHaveLength(252);
+    expect(plan.books.flatMap((b) => b.sections)).toHaveLength(378);
   });
 
   it('has consistent references between steps, sections, notes and bridges', () => {
