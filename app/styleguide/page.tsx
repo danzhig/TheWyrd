@@ -220,7 +220,8 @@ export default function Styleguide() {
           <div className={styles.skip}>
             <hr className="gilt-rule" />
             <p>
-              <span className="label">Skipped · Genesis {skip.range}</span> {skip.summary}
+              <span className="label">Skipped on the path · Genesis {skip.range}</span>{' '}
+              {skip.summary}
             </p>
           </div>
           <aside className={styles.note}>
