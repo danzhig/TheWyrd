@@ -201,6 +201,53 @@ export function ThemesLabels({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [request?.n, settled]);
 
+  // A tap on the sky (owner, 2026-11-17): on or near a constellation flies into it; once its
+  // sub-themes' names show, a tap on a sub-theme's stars opens it. Drags never count (the zoom
+  // library swallows the click after one).
+  const tapRef = useRef<(e: MouseEvent) => void>(() => {});
+  useEffect(() => {
+    tapRef.current = (e: MouseEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (!keys || !settled || open || e.button !== 0) return;
+      if (!el?.closest('[data-testid="vault-view"]') || el.closest('a, button, input, dialog'))
+        return;
+      const view = document.querySelector('[data-testid="vault-view"]')!.getBoundingClientRect();
+      const cam = camera();
+      const p = {
+        x: (e.clientX - view.left - cam.x) / cam.k,
+        y: (e.clientY - view.top - cam.y) / cam.k,
+      };
+      const a = visibleArea();
+      const subK =
+        Math.min(
+          ...layout.constellations.map((c) => Math.min(maxK, (Math.min(a.w, a.h) * FIT) / c.r)),
+        ) * 0.9;
+      if (cam.k >= subK) {
+        let best: { id: string; d: number } | null = null;
+        for (const c of layout.constellations)
+          for (const sp of c.subs) {
+            const n = subOf.get(sp.id)!.theme.subthemes[subOf.get(sp.id)!.i]!.readings.length;
+            const reach = STAR_STEP * Math.sqrt(n + 0.6) + 14 / cam.k;
+            const d = Math.hypot(p.x - sp.x, p.y - sp.y);
+            if (d <= reach && (!best || d < best.d)) best = { id: sp.id, d };
+          }
+        if (best) {
+          openSub(best.id);
+          return;
+        }
+      }
+      const c = nearestConstellation(layout, p);
+      if (!c || Math.hypot(p.x - c.x, p.y - c.y) > c.r + 30 / cam.k) return;
+      step.current = 'constellation';
+      flyToConstellation(c);
+    };
+  });
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => tapRef.current(e);
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
   // The Testaments filter changed: lay the open sub-theme out again with what is shown.
   const shownHidden = useRef(hidden);
   useEffect(() => {
@@ -273,18 +320,42 @@ export function ThemesLabels({
       )
     : [];
 
+  // Sub-theme names show at one zoom for every constellation (owner, 2026-11-17): a little before
+  // the zoom that frames the largest constellation, so flying to any of them shows its names, and
+  // a large constellation never shows its names alone while the others show none.
+  const area = visibleArea();
+  const subK =
+    Math.min(
+      ...layout.constellations.map((c) => Math.min(maxK, (Math.min(area.w, area.h) * FIT) / c.r)),
+    ) * 0.9;
+  const near = k >= subK;
+  const wide = area.w > 720;
+
   return (
     <>
       {layout.constellations.map((c, i) => {
         const t = data.themes[i]!;
-        const near = c.r * k >= 110;
+        // The name sits beside its constellation, out from the oculus along a diagonal that
+        // points back at its own figure (owner, 2026-11-17): always to one side, never straight
+        // above or below (where it would seem to belong to a neighbour), tilted at most 60° from
+        // level. On phones, where the ring fills the width, it sits small over its constellation.
+        const d = Math.hypot(c.x, c.y) || 1;
+        const sx = c.x >= 0 ? 1 : -1;
+        const vx = sx * Math.max(Math.abs(c.x / d), 0.5);
+        const vy = c.y / d;
+        const vl = Math.hypot(vx, vy);
+        const dir = { x: vx / vl, y: vy / vl };
+        const side = !wide ? 'centre' : sx > 0 ? 'right' : 'left';
+        const anchor = wide ? { x: c.x + dir.x * c.r, y: c.y + dir.y * c.r } : { x: c.x, y: c.y };
+        const tilt = { ['--dy' as string]: dir.y } as React.CSSProperties;
         return (
           <Fragment key={c.id}>
             <button
               type="button"
               tabIndex={-1}
               className={`${styles.at} ${styles.constName} ${open ? styles.quiet : ''}`}
-              style={at({ x: c.x, y: c.y - c.r - 4 })}
+              style={{ ...at(anchor), ...tilt }}
+              data-side={side}
               data-constellation={c.id}
               onClick={() => {
                 close();
@@ -308,7 +379,13 @@ export function ThemesLabels({
                     onClick={() => openSub(s.id)}
                   >
                     {t.subthemes[j]!.title}{' '}
-                    <span className={styles.subCount}>{t.subthemes[j]!.readings.length}</span>
+                    <span className={styles.subCount}>
+                      {
+                        // With a testament switched off, only the readings left (owner, 2026-11-17).
+                        t.subthemes[j]!.readings.filter((r) => !hidden || tOf(r.bookId) !== hidden)
+                          .length
+                      }
+                    </span>
                   </button>
                 ))
               : null}
