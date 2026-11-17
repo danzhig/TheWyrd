@@ -783,3 +783,23 @@ a.detour:hover {
     visibility: visible;
   }
 }
+
+/* The Bible picker's tab on the right edge (owner, 2026-11-17): always there, small, out of the
+   way of the text and of scrolling; the menu opens over it. */
+.translationTab {
+  position: fixed;
+  right: 0;
+  bottom: calc(28% + env(safe-area-inset-bottom));
+  z-index: 15;
+  min-height: 40px;
+  padding: 0 0.55rem 0 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 0.14);
+  color: var(--text-strong);
+  font-size: 0.85rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+}

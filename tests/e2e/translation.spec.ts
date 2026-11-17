@@ -42,6 +42,48 @@ test.describe('Translation', () => {
     await expect(page.locator('html')).toHaveAttribute('data-translation', 'webc');
   });
 
+  test('the Bible is chosen on the Vault, before any reading, and carried into it', async ({
+    page,
+  }) => {
+    await page.goto('/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+    const picker = page.getByTestId('vault-translation');
+    await expect(picker).toBeVisible();
+    await expect(picker).toContainText('WEBC');
+    await page.getByTestId('vault-translation-select').selectOption('drc');
+    await expect(picker).toContainText('Douay-Rheims');
+    await open(page, '/read/luke-02/');
+    await expect(page.getByTestId('drc-body')).toBeVisible();
+    await expect(page.getByTestId('reader-translation')).toContainText('DR');
+    // Back on the Vault, its picker shows the choice.
+    await page.goto('/');
+    await expect(page.getByTestId('vault-translation')).toContainText('Douay-Rheims');
+  });
+
+  test('switches in the middle of a reading from the tab at the edge, keeping the place', async ({
+    page,
+  }) => {
+    await open(page, '/read/gen-04/');
+    const tab = page.getByTestId('reader-translation');
+    // Read down to a verse well into the chapter.
+    const verse = page.locator('[id="v-7-11"]');
+    await verse.evaluate((el) => {
+      el.scrollIntoView({ block: 'start' });
+      window.scrollBy(0, -120);
+    });
+    await expect(tab).toBeInViewport();
+    const top = () => verse.evaluate((el) => el.getBoundingClientRect().top);
+    const before = await top();
+    await page.getByTestId('reader-translation-select').selectOption('drc');
+    await expect(page.getByTestId('drc-body')).toBeVisible();
+    // The verse that was in view stays where it was (within a line).
+    await expect.poll(async () => Math.abs((await top()) - before)).toBeLessThan(40);
+    await expect(tab).toBeInViewport();
+    await page.getByTestId('reader-translation-select').selectOption('webc');
+    await expect(page.getByTestId('drc-body')).toHaveCount(0);
+    await expect.poll(async () => Math.abs((await top()) - before)).toBeLessThan(40);
+  });
+
   test('keeps a section’s folds and verse links in the Douay-Rheims', async ({ page }) => {
     await page.addInitScript(() =>
       localStorage.setItem('sas:v1:settings', JSON.stringify({ translation: 'drc' })),

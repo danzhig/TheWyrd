@@ -19,6 +19,8 @@ export interface Settings {
 }
 
 export type Translation = 'webc' | 'drc';
+/** Every Bible a reader can choose (`lib/translations.ts` describes each). */
+export const TRANSLATION_IDS: Translation[] = ['webc', 'drc'];
 
 export type Testaments = 'both' | 'ot' | 'nt';
 
@@ -75,7 +77,7 @@ export function readSettings(): Settings {
       testaments: parsed.testaments ?? DEFAULT_SETTINGS.testaments,
       translation: parsed.translation ?? DEFAULT_SETTINGS.translation,
     };
-    if (!['webc', 'drc'].includes(s.translation)) s.translation = 'webc';
+    if (!TRANSLATION_IDS.includes(s.translation)) s.translation = 'webc';
     if (!['both', 'ot', 'nt'].includes(s.testaments)) s.testaments = 'both';
     if (!['default', 'vault', 'vellum', 'auto'].includes(s.theme)) s.theme = 'default';
     if (![1, 2, 3, 4].includes(s.textSize)) s.textSize = DEFAULT_SETTINGS.textSize;
