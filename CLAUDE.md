@@ -144,7 +144,7 @@ Behind an HTTPS proxy (e.g. Claude Code cloud sessions), prefix network commands
 ## Polish and budget notes (P2.5)
 
 - The zoom library (`d3-zoom`, `d3-selection`, `d3-transition`) is in `components/vault/d3.ts`, imported dynamically after first paint. The Vault places the camera itself (`Cam` = `{x, y, k}`, `camRef`) before it arrives, then hands over; `data-vault="ready"` is set once it has. Until then flights jump. Initial JS on `/` is checked under 150 KB gzipped in the perf project.
-- Light rays (`.rays` in `vault.module.css`) sit in the scene at the spiral's centre and rotate once every 240 s; still under reduced motion.
+- Light rays (`.rays` in `vault.module.css`, 920 px) sit in the scene at the spiral's centre and rotate once every 240 s; still under reduced motion. The sky (`.vault-sky` in `styles/materials.css`; owner, 2026-11-17: brighter, celestial, holy) is a wide glow of light from the oculus over warm umber, deepening to a blue-touched night at the edges, with two still layers of faint stars (`.stardust`; a whole-screen twinkle cost flight frames on phones), a light vignette and grain.
 - The cover and first page swing with `HINGE_EASE`; `.book-cover-shade` and `.book-leaf-shade` shade them mid-turn and `.book-cover-cast` (`[data-cover-shadow]`, on the book page) lifts the page's shadow off the map. Opacity only.
 - A 12 ms `navigator.vibrate` tick when a stop completes during a visit (`ReaderShell`); none under reduced motion, and iOS Safari has no vibration.
 

@@ -760,6 +760,8 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           aria-hidden="true"
           data-testid="vault-view"
         >
+          <div className="stardust" />
+          <div className="stardust" />
           {[0, 1, 2].map((i) => (
             <div
               key={i}
