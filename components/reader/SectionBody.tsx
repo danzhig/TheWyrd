@@ -143,17 +143,18 @@ export function SectionBody({
           </details>
         </div>
       ) : section.status === 'skip' ? (
-        <div className={styles.statusCard} data-status="skip">
-          <p className="label">Skipped · {ref}</p>
-          <p>{section.summary}</p>
-          {notesAt('fold').map((x) => (
-            <NoteCard key={x.id} note={x} />
-          ))}
-          <details className={styles.wholeFold} data-fold={section.verses[0]?.ref}>
-            <summary>Show the text</summary>
-            {text}
-          </details>
-        </div>
+        // A passage the path skips is still a reading of its own (plan 1.1.0): the card says why
+        // the path passes it by, and the text follows, open (owner, 2026-11-17).
+        <>
+          <div className={styles.statusCard} data-status="skip">
+            <p className="label">Skipped on the path · {ref}</p>
+            <p>{section.summary}</p>
+            {notesAt('fold').map((x) => (
+              <NoteCard key={x.id} note={x} />
+            ))}
+          </div>
+          {text}
+        </>
       ) : (
         <>
           {notesAt('fold').map((x) => (

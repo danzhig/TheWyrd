@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GROUP_LABEL, GROUP_ORDER } from '@/components/vault/data';
 import { getExtrasSummary, getManifest } from '@/lib/data';
+import { prettyRange } from '@/lib/format';
 import { ABOUT_GROUPS, aboutData } from './about';
 import styles from './about.module.css';
 
@@ -116,7 +117,7 @@ export default function AboutPage() {
       {a.detour ? (
         <section aria-labelledby="detour">
           <h2 id="detour">
-            The detour into {name(a.detour.bookId).replace(/\s*\(excursion\)$/, '')}
+            The detour into {name(a.detour.bookId)} {prettyRange(a.detour.range)}
           </h2>
           <p>
             Luke tells most of Jesus&rsquo;s life, but not the raising of Lazarus, which only John
