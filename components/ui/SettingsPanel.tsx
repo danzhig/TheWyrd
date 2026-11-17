@@ -8,6 +8,7 @@ import {
   writeSettings,
   type Settings,
   type ThemeSetting,
+  type Translation,
 } from '@/lib/store';
 import styles from './SettingsPanel.module.css';
 
@@ -18,7 +19,13 @@ const THEMES: { value: ThemeSetting; label: string }[] = [
   { value: 'auto', label: 'Auto' },
 ];
 
-/** Theme, text size and verse numbers. Reused by the reader's settings sheet in M3. */
+/** The reader's words (Phase 7): the modern WEBC, or the traditional Douay-Rheims. */
+const TRANSLATIONS: { value: Translation; label: string }[] = [
+  { value: 'webc', label: 'WEBC' },
+  { value: 'drc', label: 'Douay-Rheims' },
+];
+
+/** Theme, translation, text size and verse numbers. Reused by the reader's settings sheet in M3. */
 export function SettingsPanel() {
   const [s, setS] = useState<Settings>(DEFAULT_SETTINGS);
   useEffect(() => {
@@ -41,6 +48,23 @@ export function SettingsPanel() {
                 value={t.value}
                 checked={s.theme === t.value}
                 onChange={() => writeSettings({ theme: t.value })}
+              />
+              <span>{t.label}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset className={styles.group}>
+        <legend className="label">Translation</legend>
+        <div className={styles.segmented}>
+          {TRANSLATIONS.map((t) => (
+            <label key={t.value} className={styles.option}>
+              <input
+                type="radio"
+                name="translation"
+                value={t.value}
+                checked={s.translation === t.value}
+                onChange={() => writeSettings({ translation: t.value })}
               />
               <span>{t.label}</span>
             </label>

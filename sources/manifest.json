@@ -342,8 +342,7 @@
     {
       "id": "drc",
       "name": "Douay-Rheims Bible (Challoner revision), USFM",
-      "layer": "English (comparison)",
-      "pipeline": "terms",
+      "layer": "English (second translation)",
       "url": "https://ebible.org/Scriptures/engDRA_usfm.zip",
       "file": "engDRA_usfm.zip",
       "sha256": "fcb5de45f1f6083d56b738690e5b4b3bb6f0d87522d1d18329c57a4b09e05210",
@@ -353,8 +352,8 @@
       "licenseUrl": "https://ebible.org/find/details.php?id=engDRA",
       "licenseVerified": "2026-11-10",
       "attribution": "Douay-Rheims Bible (Challoner revision), USFM, eBible.org. Public domain.",
-      "usedFor": "English card: the historic Catholic rendering",
-      "phase": 3
+      "usedFor": "Reader text in the Douay-Rheims setting; English card: the historic Catholic rendering",
+      "phase": 7
     },
     {
       "id": "kjv",

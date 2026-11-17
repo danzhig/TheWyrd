@@ -26,7 +26,9 @@ function toLines(verses: VerseOut[], breakAt: Set<string> = new Set()): Line[] {
       // A verse WEBC prints only as a footnote (e.g. Acts 8:37): keep its number and note in place.
       const part: Part = { verse: v, text: '', start: 0, first: true, last: true };
       const last = lines.at(-1);
-      if (last && !POETRY[last.style]) last.parts.push(part);
+      // A WEBC verse with no Douay-Rheims words of its own leaves only its anchor, in the line
+      // before it.
+      if (last && (v.bare || !POETRY[last.style])) last.parts.push(part);
       else lines.push({ style: 'p', parts: [part] });
       continue;
     }
@@ -55,11 +57,11 @@ function toLines(verses: VerseOut[], breakAt: Set<string> = new Set()): Line[] {
 
 /** Stable id for a footnote: verse ref plus its index within the verse. */
 export function footnoteId(ref: string, i: number): string {
-  return `fn-${ref.replace(/[.!]/g, '-')}-${i + 1}`;
+  return `fn-${ref.replace(/[.!~]/g, '-')}-${i + 1}`;
 }
 
-export function verseAnchor(v: Pick<VerseOut, 'c' | 'v' | 'part'>): string {
-  return `v-${v.c}-${v.v}${v.part ?? ''}`;
+export function verseAnchor(v: Pick<VerseOut, 'c' | 'v' | 'part' | 'anchor'>): string {
+  return v.anchor ?? `v-${v.c}-${v.v}${v.part ?? ''}`;
 }
 
 /** Render one block's text with footnote callers at their offsets. */
@@ -168,9 +170,10 @@ export function VerseText({
       <span
         key={j}
         id={p.first ? verseAnchor(p.verse) : undefined}
-        data-verse={p.first ? p.verse.ref : undefined}
+        // The WEBC verse it belongs to (a Douay-Rheims verse's ref carries "~n" after it).
+        data-verse={p.first ? p.verse.ref.replace(/~\d+$/, '') : undefined}
       >
-        {p.first && !(i === 0 && j === 0 && useDropCap) ? (
+        {p.first && !p.verse.bare && !(i === 0 && j === 0 && useDropCap) ? (
           <sup className="verse-num" data-pagefind-ignore="">
             {/* Tapping copies a link to this verse (ReaderShell); without JS it is a plain link. */}
             <a href={`#${verseAnchor(p.verse)}`} className="verse-link">

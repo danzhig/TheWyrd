@@ -732,3 +732,54 @@ a.detour:hover {
   opacity: 0;
   pointer-events: none;
 }
+
+/* ------------------------------------------------------------------------------------------- */
+/* The second translation (Phase 7): WEBC / Douay-Rheims                                        */
+/* ------------------------------------------------------------------------------------------- */
+
+.translation {
+  margin: 0.6em 0 0;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.translationSwitch {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+.translationSwitch button {
+  font: inherit;
+  min-height: 32px;
+  padding: 0 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.translationSwitch button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  color: var(--text-strong);
+}
+
+.translationRef {
+  font-variant-numeric: lining-nums;
+}
+
+/* With the Douay-Rheims chosen, the server's WEBC text waits hidden while its words load, so the
+   other translation never flashes in its place; after three seconds it shows anyway. */
+:global(html[data-translation='drc']) [data-translated='webc']:not([data-failed]) {
+  visibility: hidden;
+  animation: drc-wait 0s linear 3s forwards;
+}
+
+@keyframes drc-wait {
+  to {
+    visibility: visible;
+  }
+}
