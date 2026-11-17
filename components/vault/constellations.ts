@@ -52,7 +52,7 @@ export interface ThemesLayout {
 
 export const RING = 400; // constellation centres from the oculus (at least)
 export const SUB_RING = 60; // sub-theme centres from their constellation's centre (at least)
-export const STAR_STEP = 6; // sunflower spacing between a sub-theme's stars
+export const STAR_STEP = 5.4; // sunflower spacing between a sub-theme's stars
 const GAP = 16; // clear space between neighbouring clusters, and between constellations
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 export const STAGGER = 0.35; // the last star leaves this far into the flight

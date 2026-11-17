@@ -16,13 +16,14 @@ import { RAW_DIR } from './lib/paths';
 import { CANON_BY_ID } from './lib/canon';
 import { readNave } from './themes/naves';
 import { readOpenBible, type OpenBibleRow } from './themes/openbible';
-import { placeReadings } from './themes/readings';
+import { placeReadings, SECOND } from './themes/readings';
 import {
   candidatesFor,
   readingsFingerprint,
   READINGS_FILE,
   readSectionIndex,
   readTaxonomy,
+  readThemes,
   sectionFor,
   type Candidate,
   type ReadingsFile,
@@ -77,19 +78,29 @@ if (approve)
 else if (old?.approval?.fingerprint === fp) file.approval = old.approval;
 fs.writeFileSync(READINGS_FILE, JSON.stringify(file, null, 2) + '\n');
 
-// The review document: each theme and sub-theme with its readings.
+// The review document: each theme and sub-theme with its readings. On the site a sub-theme also
+// shows every reading that holds one of its approved key passages (owner, 2026-11-17).
+const keys = new Map<string, Set<string>>();
+for (const t of readThemes()?.themes ?? [])
+  for (const s of t.subthemes)
+    keys.set(
+      s.id,
+      new Set(s.passages.filter((p) => p.status === 'approved').map((p) => p.sectionId)),
+    );
 const title = new Map(sections.map((s) => [s.id, s]));
 const OT = new Set([...CANON_BY_ID.values()].filter((b) => b.testament === 'OT').map((b) => b.id));
 const doc: string[] = [
   '# Themes: every reading',
   '',
-  `Written by \`pnpm themes:readings\` from \`content/themes/taxonomy.json\` and the pinned datasets (Nave's Topical Bible, OpenBible.info's topics). Each of the ${placements.length} readings has a home sub-theme, and a second where it scores at least 85% of its home; ${placements.filter((p) => p.subs.length > 1).length} have a second. ${placements.filter((p) => p.method === 'similarity').length} readings no dataset cites (mostly the deuterocanonical books, which these Protestant-tradition datasets barely index) were placed by their words, nearest to the readings already in each sub-theme. Status: ${file.approval ? `approved ${file.approval.date} (\`${fp}\`)` : `awaiting approval (fingerprint \`${fp}\`)`}.`,
+  `Written by \`pnpm themes:readings\` from \`content/themes/taxonomy.json\` and the pinned datasets (Nave's Topical Bible, OpenBible.info's topics). Each of the ${placements.length} readings has a home sub-theme, and a second where it scores at least ${Math.round(SECOND * 100)}% of its home; ${placements.filter((p) => p.subs.length > 1).length} have a second. A sub-theme also shows every reading that holds one of its approved key passages (owner, 2026-11-17), so none of its key passages is ever missing. ${placements.filter((p) => p.method === 'similarity').length} readings no dataset cites (mostly the deuterocanonical books, which these Protestant-tradition datasets barely index) were placed by their words, nearest to the readings already in each sub-theme. Status: ${file.approval ? `approved ${file.approval.date} (\`${fp}\`)` : `awaiting approval (fingerprint \`${fp}\`)`}.`,
   '',
 ];
 for (const t of tax.themes) {
   doc.push(`## ${t.title}`, '');
   for (const s of t.subthemes) {
-    const here = placements.filter((p) => p.subs.includes(s.id));
+    const here = placements.filter(
+      (p) => p.subs.includes(s.id) || keys.get(s.id)?.has(p.sectionId),
+    );
     const ot = here.filter((p) => OT.has(title.get(p.sectionId)!.bookId)).length;
     doc.push(
       `### ${s.title} (\`${s.id}\`) — ${here.length} readings (Old Testament ${ot}, New ${here.length - ot})`,
@@ -99,11 +110,13 @@ for (const t of tax.themes) {
       ...here.map((p) => {
         const sec = title.get(p.sectionId)!;
         const how =
-          p.method === 'similarity'
+          p.method === 'similarity' && p.subs.includes(s.id)
             ? `by its words (${p.scores[0]!.toFixed(2)})`
             : p.subs[0] === s.id
               ? 'home'
-              : 'second';
+              : p.subs.includes(s.id)
+                ? 'second'
+                : 'holds a key passage';
         return `| ${sec.title} (\`${p.sectionId}\`) | ${CANON_BY_ID.get(sec.bookId)?.name} ${sec.range} | ${how} | ${
           p.subs[0] === s.id
             ? p.rows

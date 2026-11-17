@@ -73,6 +73,8 @@ type Cam = { x: number; y: number; k: number };
 
 const FLY_MS = 850;
 const K_MAX = 2.6; // medallion detail
+/** A constellation fills this share of the shorter side (its name clears the header). */
+const FIT = 0.38;
 const K_MAX_THEMES = 5; // a sub-theme opened up (ThemesLabels) is read at 3
 
 /** A point on the ceiling, for the label layer: world units, scaled by --k in CSS. */
@@ -450,7 +452,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       if (!viewRef.current) return;
       // Fit the constellation and its name (above it) in the visible part of the screen.
       const a = visibleArea();
-      const k = Math.min(K_MAX_THEMES, (Math.min(a.w, a.h) * 0.42) / c.r);
+      const k = Math.min(K_MAX_THEMES, (Math.min(a.w, a.h) * FIT) / c.r);
       void flyTo(target({ x: c.x, y: c.y - 8 / k }, k), 700);
     },
     [flyTo, target, visibleArea],
@@ -949,6 +951,10 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                       camera.last = { ...camRef.current };
                     }}
                     request={spreadReq}
+                    keys={mode === 'map'}
+                    camera={() => camRef.current}
+                    home={() => void flyTo(baseRef.current, prefersReducedMotion() ? 0 : 700)}
+                    maxK={K_MAX_THEMES}
                   />
                 ) : null}
               </div>
