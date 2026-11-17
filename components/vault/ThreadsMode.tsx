@@ -45,6 +45,9 @@ export interface ThreadsModeProps {
   onOpen: () => void;
   /** An arc was chosen (from the map or the list): the camera may bring it into view. */
   onShowArc?: (mid: Point) => void;
+  /** The Testaments filter: connections with an end in this testament are left out. */
+  hidden?: 'ot' | 'nt';
+  testamentOf: (bookId: string) => 'ot' | 'nt';
 }
 
 export function ThreadsMode({
@@ -54,6 +57,8 @@ export function ThreadsMode({
   listVisible,
   onOpen,
   onShowArc,
+  hidden,
+  testamentOf,
 }: ThreadsModeProps) {
   const [data, setData] = useState<PublicConnections | null>(null);
   const [types, setTypes] = useState<Set<ConnectionType>>(() => new Set(TYPE_ORDER));
@@ -76,15 +81,20 @@ export function ThreadsMode({
     };
   }, [data]);
 
+  // Only threads with both ends in a testament on show.
+  const shown = useMemo(
+    () =>
+      (data?.connections ?? []).filter(
+        (c) => !hidden || c.ends.every((e) => testamentOf(e.bookId) !== hidden),
+      ),
+    [data, hidden, testamentOf],
+  );
   const present = useMemo(() => {
     const counts = new Map<ConnectionType, number>();
-    for (const c of data?.connections ?? []) counts.set(c.type, (counts.get(c.type) ?? 0) + 1);
+    for (const c of shown) counts.set(c.type, (counts.get(c.type) ?? 0) + 1);
     return TYPE_ORDER.filter((t) => counts.has(t)).map((t) => ({ type: t, n: counts.get(t)! }));
-  }, [data]);
-  const arcs = useMemo(
-    () => (data ? arcsFor(data.connections, homes, types) : []),
-    [data, homes, types],
-  );
+  }, [shown]);
+  const arcs = useMemo(() => arcsFor(shown, homes, types), [shown, homes, types]);
   const arc = arcs.find((a) => a.key === selected) ?? null;
   // The SVG box: every home inside it, with room for the arcs' bows.
   const R = useMemo(
@@ -227,7 +237,7 @@ export function ThreadsMode({
         <h2 className={s.listHeading}>Threads</h2>
         <p className={s.meta}>
           {data
-            ? `${data.connections.length} connections between ${new Set(arcs.flatMap((a) => [a.a, a.b])).size} books`
+            ? `${arcs.reduce((n, a) => n + a.connections.length, 0)} connections between ${new Set(arcs.flatMap((a) => [a.a, a.b])).size} books`
             : 'Loading…'}
         </p>
         <ul className={s.pairs}>

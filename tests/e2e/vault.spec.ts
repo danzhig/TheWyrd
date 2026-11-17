@@ -167,6 +167,63 @@ test.describe('the Vault', () => {
     await expect(genesis).toBeVisible({ timeout: 6000 });
   });
 
+  test('the Testaments switch shows the Old, the New or both, and is remembered', async ({
+    page,
+  }) => {
+    await openVault(page);
+    const ot = page.getByTestId('testament-ot');
+    const nt = page.getByTestId('testament-nt');
+    await expect(ot).toHaveAttribute('aria-pressed', 'true');
+    await expect(nt).toHaveAttribute('aria-pressed', 'true');
+    const gen = page.getByTestId('vault-scene').locator('a[data-book="Gen"]');
+    const luke = page.getByTestId('vault-scene').locator('a[data-book="Luke"]');
+    // Old off: only the New is shown, on the ceiling and in the list.
+    await ot.click();
+    await expect(ot).toHaveAttribute('aria-pressed', 'false');
+    await expect(gen).toHaveCSS('opacity', '0');
+    await expect(luke).not.toHaveCSS('opacity', '0');
+    await page.getByRole('button', { name: 'List' }).click();
+    const list = page.locator('section[aria-label="The path, as a list"]');
+    await expect(list.locator('a[data-book="Gen"]')).toBeHidden();
+    await expect(list.locator('a[data-book="Luke"]')).toBeVisible();
+    await expect(list.locator('[data-offpath-item="Rom"]')).toBeVisible();
+    await expect(list.locator('[data-offpath-item="Isa"]')).toBeHidden();
+    // Kept across visits.
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+    await expect(page.getByTestId('testament-ot')).toHaveAttribute('aria-pressed', 'false');
+    // The New off as well would leave nothing: it shows the Old instead; Old on again shows both.
+    await page.getByTestId('testament-nt').click();
+    await expect(page.getByTestId('testament-ot')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByTestId('testament-nt')).toHaveAttribute('aria-pressed', 'false');
+    await page.getByTestId('testament-nt').click();
+    await expect(page.getByTestId('testament-ot')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByTestId('testament-nt')).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  test('with the Old Testament off, Themes and Threads keep only the New', async ({ page }) => {
+    await openVault(page);
+    await page.getByTestId('testament-ot').click();
+    await page.getByRole('button', { name: 'List' }).click();
+    // Threads: only connections with both ends in the New Testament.
+    await page.getByTestId('view-threads').click();
+    await expect(page.locator('html')).toHaveAttribute('data-threads', 'ready');
+    const ot = ['Gen', 'Exod', 'Num', 'Deut', 'Isa', 'Ps', 'Job', 'Jer', 'Dan', '1Sam', '2Sam'];
+    const arcs = await page
+      .locator('[data-arc-item]')
+      .evaluateAll((els) => els.map((e) => e.getAttribute('data-arc-item')!));
+    for (const key of arcs) for (const b of key.split('|')) expect(ot).not.toContain(b);
+    // Themes: the tree lists no passage from an Old Testament book.
+    await page.getByTestId('view-threads').click();
+    await page.getByTestId('view-themes').click();
+    await expect(page.getByTestId('theme-tree')).toBeVisible({ timeout: 6000 });
+    const refs = await page
+      .locator('[data-tree-passage]')
+      .evaluateAll((els) => els.map((e) => e.textContent ?? ''));
+    expect(refs.length).toBeGreaterThan(0);
+    for (const r of refs) expect(r).not.toMatch(/^(Genesis|Exodus|Isaiah|Psalm|Job|Jeremiah) /);
+  });
+
   test('zooming in reveals names (semantic zoom) and stays within limits', async ({ page }) => {
     await openVault(page);
     const zoomIn = page.getByRole('button', { name: 'Zoom in' });

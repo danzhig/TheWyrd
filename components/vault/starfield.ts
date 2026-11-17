@@ -22,6 +22,22 @@ export interface DrawOptions {
   lit: string | null;
   /** Which way the flight is going: +1 out to the constellations, −1 home to the books. */
   dir?: 1 | -1;
+  /** Books whose stars are hidden (the Testaments filter), fading from `prev` to `next` as t goes 0 → 1. */
+  hide?: StarHide;
+}
+
+export interface StarHide {
+  prev: ((bookId: string) => boolean) | null;
+  next: ((bookId: string) => boolean) | null;
+  t: number;
+}
+
+/** How visible a book's stars are (0–1) under the Testaments filter. */
+export function starVisibility(h: StarHide | undefined, bookId: string): number {
+  if (!h) return 1;
+  const a = h.prev?.(bookId) ? 0 : 1;
+  const b = h.next?.(bookId) ? 0 : 1;
+  return a + (b - a) * h.t;
 }
 
 const smooth = (a: number, b: number, x: number) => {
@@ -110,6 +126,7 @@ export class StarField {
           this.layout.constellations.flatMap((c) => c.subs.map((s) => [s.id, s] as const)),
         );
         for (const s of this.layout.stars) {
+          if (!starVisibility(o.hide, s.bookId)) continue;
           const c = subAt.get(s.subId)!;
           ctx.moveTo(X(c.x), Y(c.y));
           ctx.lineTo(X(s.x), Y(s.y));
@@ -127,8 +144,11 @@ export class StarField {
       xs[i] = X(at.x);
       ys[i] = Y(at.y);
     });
+    // The Testaments filter: hidden stars fade out (and back in), then are skipped.
+    const vis = this.layout.stars.map((s) => starVisibility(o.hide, s.bookId));
+    const levels = [...new Set(vis)].filter((v) => v > 0);
     const shown = (i: number) =>
-      xs[i]! > -20 && ys[i]! > -20 && xs[i]! < this.w + 20 && ys[i]! < this.h + 20;
+      vis[i]! > 0 && xs[i]! > -20 && ys[i]! > -20 && xs[i]! < this.w + 20 && ys[i]! < this.h + 20;
     const r = Math.min(4, Math.max(1.3, 1.3 * cam.k));
 
     // A short, thin streak behind each star while it flies.
@@ -152,24 +172,25 @@ export class StarField {
     }
 
     // A small soft glow under each path star, then the stars themselves.
-    ctx.globalAlpha = starsAlpha;
     this.layout.stars.forEach((s, i) => {
       if (s.library || !shown(i)) return;
+      ctx.globalAlpha = starsAlpha * vis[i]!;
       const g = r * (s.subId === o.lit ? 7 : 4.5);
       ctx.drawImage(this.glow, xs[i]! - g / 2, ys[i]! - g / 2, g, g);
     });
-    for (const lib of [true, false]) {
-      ctx.fillStyle = lib ? this.pale : this.gold;
-      ctx.globalAlpha = starsAlpha * (lib ? 0.62 : 1);
-      ctx.beginPath();
-      this.layout.stars.forEach((s, i) => {
-        if (s.library !== lib || !shown(i)) return;
-        const rr = (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1);
-        ctx.moveTo(xs[i]! + rr, ys[i]!);
-        ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
-      });
-      ctx.fill();
-    }
+    for (const lib of [true, false])
+      for (const level of levels) {
+        ctx.fillStyle = lib ? this.pale : this.gold;
+        ctx.globalAlpha = starsAlpha * (lib ? 0.62 : 1) * level;
+        ctx.beginPath();
+        this.layout.stars.forEach((s, i) => {
+          if (s.library !== lib || vis[i] !== level || !shown(i)) return;
+          const rr = (lib ? 0.75 : 1) * r * (s.subId === o.lit ? 1.4 : 1);
+          ctx.moveTo(xs[i]! + rr, ys[i]!);
+          ctx.arc(xs[i]!, ys[i]!, rr, 0, Math.PI * 2);
+        });
+        ctx.fill();
+      }
     ctx.globalAlpha = 1;
   }
 }

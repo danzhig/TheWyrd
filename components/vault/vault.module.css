@@ -895,3 +895,49 @@
     margin-top: 0.25rem;
   }
 }
+
+/* ------------------------------------------------------------------------------------------- */
+/* The Testaments filter (owner, 2026-11-17)                                                    */
+/* ------------------------------------------------------------------------------------------- */
+
+/* What belongs to a testament switched off fades away on the ceiling and leaves the lists. */
+.vault [data-testament] {
+  transition: opacity 0.45s ease;
+}
+
+.vault[data-hide='ot'] [data-testament='ot'],
+.vault[data-hide='nt'] [data-testament='nt'] {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.vault[data-hide='ot'] :is(li, p, div)[data-testament='ot'],
+.vault[data-hide='nt'] :is(li, p, div)[data-testament='nt'] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vault [data-testament] {
+    transition: none;
+  }
+}
+
+/* The spiral's line fades too: part of the path is off the ceiling. */
+.vault[data-hide] .thread,
+.vault[data-hide] .threadLit {
+  opacity: 0.35;
+}
+
+/* Phones: the Testaments pill stays in the header's second row, beside Continue and List (the
+   view switch has the foot of the screen). */
+@media (max-width: 520px) {
+  .actions .testaments {
+    position: static;
+    order: 2;
+  }
+
+  .testaments .switchButton {
+    min-height: 36px;
+    padding: 0 0.65rem;
+  }
+}

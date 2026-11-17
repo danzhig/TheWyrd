@@ -12,12 +12,17 @@ export interface Settings {
   theme: ThemeSetting; // 'default' = Vault on the maps, Vellum in the reader
   textSize: 1 | 2 | 3 | 4;
   verseNumbers: boolean;
+  /** Which testaments the Vault shows (owner, 2026-11-17): both, or only the Old or the New. */
+  testaments: Testaments;
 }
+
+export type Testaments = 'both' | 'ot' | 'nt';
 
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'default',
   textSize: 2,
   verseNumbers: true,
+  testaments: 'both',
 };
 
 const memory = new Map<string, string>();
@@ -62,7 +67,9 @@ export function readSettings(): Settings {
       theme: parsed.theme ?? DEFAULT_SETTINGS.theme,
       textSize: parsed.textSize ?? DEFAULT_SETTINGS.textSize,
       verseNumbers: parsed.verseNumbers ?? DEFAULT_SETTINGS.verseNumbers,
+      testaments: parsed.testaments ?? DEFAULT_SETTINGS.testaments,
     };
+    if (!['both', 'ot', 'nt'].includes(s.testaments)) s.testaments = 'both';
     if (!['default', 'vault', 'vellum', 'auto'].includes(s.theme)) s.theme = 'default';
     if (![1, 2, 3, 4].includes(s.textSize)) s.textSize = DEFAULT_SETTINGS.textSize;
     return s;
