@@ -16,7 +16,12 @@ describe('About this path', () => {
   });
 
   it('describes the detour from the plan', () => {
-    expect(a.detour).toEqual({ bookId: 'John', hostId: 'Luke', afterRange: '19:27' });
+    expect(a.detour).toEqual({
+      bookId: 'John',
+      range: '11',
+      hostId: 'Luke',
+      afterRange: '19:27',
+    });
   });
 
   it('has a description for every group of books outside the path, and no others', () => {

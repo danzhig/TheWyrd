@@ -150,7 +150,7 @@ Plan verse (Hebrew numbering) → WEBC verse, with the TVTMS record that defines
 | 12:1 | 11:21 | TVTMS 2Ki.11:21--12:21 (line 692, OneToOne) |
 | 12:2–22 | 12:1–21 | TVTMS 2Ki.11:21--12:21 (line 693, OneToOne) |
 
-### Jeremiah 37–43
+### Jeremiah
 
 | Plan | WEBC | Source |
 | --- | --- | --- |

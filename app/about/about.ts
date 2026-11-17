@@ -25,7 +25,7 @@ export interface AboutData {
   first: string;
   last: string;
   bridges: { id: string; title: string; after: string }[];
-  detour: { bookId: string; hostId: string; afterRange: string } | null;
+  detour: { bookId: string; range: string; hostId: string; afterRange: string } | null;
   offpath: Book[];
   offpathCount: number;
 }
@@ -48,6 +48,7 @@ export function aboutData(m: {
     exSection && hostSection
       ? {
           bookId: exSection.bookId,
+          range: exSection.range,
           hostId: hostSection.bookId,
           afterRange: endOf(hostSection.range),
         }

@@ -58,7 +58,7 @@ Everything else has the same chapter and verse number in both.
 | structure-map:Esth | E:1 | Esth.8.13 | «copy» «letter» | ok |
 | structure-map:Esth | F:1 | Esth.10.4 | «Mordecai» | ok |
 
-## Daniel 1–6, 13–14
+## Daniel
 
 **Approved** by David on 2026-11-06 (fingerprint `41a13009e3063478`). Any change to this book's mapping fails the build until it is approved again.
 
