@@ -1,6 +1,6 @@
 {
  "$schema": "see docs/PLAN.md section 5",
- "version": "1.1.0",
+ "version": "1.1.1",
  "versification": "Catholic (Hebrew-based for protocanonical books, as in NABRE); map to WEBC via TVTMS",
  "baseText": "WEBC (World English Bible Catholic Edition)",
  "rangeNotation": "'c' whole chapter; 'c-c' chapters; 'c:v-v' verses in one chapter; 'c:v-c:v' across chapters; 'end' = last verse of that chapter; ';' joins parts. Esther letters A-F are NABRE's Greek additions.",
@@ -3068,7 +3068,7 @@
   },
   {
    "id": "John",
-   "name": "John 11 (excursion)",
+   "name": "John",
    "setting": "Bethany",
    "tagline": "The raising of Lazarus",
    "sections": [

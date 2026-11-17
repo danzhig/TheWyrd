@@ -155,7 +155,7 @@ export function ThreadsMode({
   }, [arc?.key]);
 
   // A book's own name, as its passages show it ("John 1:1–3" → "John"), not the plan's label for
-  // the part of it the path reads ("John 11 (excursion)", "Daniel 1–6, 13–14").
+  // the part of it the path reads ("Jeremiah 37–43", "Daniel 1–6, 13–14").
   const bookName = useMemo(() => {
     const m = new Map<string, string>();
     for (const c of data?.connections ?? [])
