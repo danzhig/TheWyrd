@@ -132,7 +132,7 @@
             },
             {
               "ref": "Exod.22.31",
-              "sectionId": "exod-x1",
+              "sectionId": "exod-x102",
               "sources": [
                 {
                   "dataset": "naves",
@@ -514,7 +514,7 @@
             },
             {
               "ref": "John.1.14",
-              "sectionId": "john-x1",
+              "sectionId": "john-x101",
               "sources": [
                 {
                   "dataset": "naves",
@@ -530,7 +530,7 @@
             },
             {
               "ref": "John.17.22",
-              "sectionId": "john-x2",
+              "sectionId": "john-x207",
               "sources": [
                 {
                   "dataset": "naves",
@@ -621,8 +621,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "ca96511175c02e23"
+        "date": "2026-11-17",
+        "fingerprint": "c60bbefcfd519dbf"
       }
     },
     {
@@ -669,7 +669,7 @@
             },
             {
               "ref": "Deut.5.2",
-              "sectionId": "deut-x1",
+              "sectionId": "deut-x104",
               "sources": [
                 {
                   "dataset": "naves",
@@ -769,7 +769,7 @@
             },
             {
               "ref": "Jer.34.8-Jer.34.21",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x125",
               "sources": [
                 {
                   "dataset": "naves",
@@ -840,7 +840,7 @@
           "passages": [
             {
               "ref": "Deut.4.10-Deut.4.13",
-              "sectionId": "deut-x1",
+              "sectionId": "deut-x103",
               "sources": [
                 {
                   "dataset": "naves",
@@ -856,7 +856,7 @@
             },
             {
               "ref": "Deut.9.10",
-              "sectionId": "deut-x3",
+              "sectionId": "deut-x304",
               "sources": [
                 {
                   "dataset": "naves",
@@ -928,7 +928,7 @@
             },
             {
               "ref": "John.1.17",
-              "sectionId": "john-x1",
+              "sectionId": "john-x101",
               "sources": [
                 {
                   "dataset": "naves",
@@ -1099,7 +1099,7 @@
             },
             {
               "ref": "Exod.31.13-Exod.31.17",
-              "sectionId": "exod-x2",
+              "sectionId": "exod-x205",
               "sources": [
                 {
                   "dataset": "naves",
@@ -1330,7 +1330,7 @@
             },
             {
               "ref": "Job.19.25",
-              "sectionId": "job-x1",
+              "sectionId": "job-x111",
               "sources": [
                 {
                   "dataset": "naves",
@@ -1394,7 +1394,7 @@
             },
             {
               "ref": "John.4.25-John.4.26",
-              "sectionId": "john-x1",
+              "sectionId": "john-x107",
               "sources": [
                 {
                   "dataset": "naves",
@@ -1410,7 +1410,7 @@
             },
             {
               "ref": "John.14.6",
-              "sectionId": "john-x2",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -1425,8 +1425,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "ce64df19d25ddffb"
+        "date": "2026-11-17",
+        "fingerprint": "c35855ad7e3036b5"
       }
     },
     {
@@ -2154,7 +2154,7 @@
             },
             {
               "ref": "Jer.26.3",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x119",
               "sources": [
                 {
                   "dataset": "naves",
@@ -2337,8 +2337,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "3e67301d1951493d"
+        "date": "2026-11-17",
+        "fingerprint": "0989b0d0d99a2d4c"
       }
     },
     {
@@ -2425,7 +2425,7 @@
             },
             {
               "ref": "John.17.5",
-              "sectionId": "john-x2",
+              "sectionId": "john-x207",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -2731,7 +2731,7 @@
           "passages": [
             {
               "ref": "John.1.16",
-              "sectionId": "john-x1",
+              "sectionId": "john-x101",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -3109,8 +3109,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "d6e1a4f10265382d"
+        "date": "2026-11-17",
+        "fingerprint": "56a4ca8b71e337df"
       }
     },
     {
@@ -3352,7 +3352,7 @@
           "passages": [
             {
               "ref": "Job.8.13",
-              "sectionId": "job-x1",
+              "sectionId": "job-x104",
               "sources": [
                 {
                   "dataset": "naves",
@@ -3416,7 +3416,7 @@
             },
             {
               "ref": "Jer.29.11",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x121",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -3623,7 +3623,7 @@
             },
             {
               "ref": "Jer.29.11",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x121",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -3639,7 +3639,7 @@
             },
             {
               "ref": "John.14.27",
-              "sectionId": "john-x2",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -3866,7 +3866,7 @@
             },
             {
               "ref": "John.14.15",
-              "sectionId": "john-x2",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "naves",
@@ -3953,8 +3953,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "027f88da73043c86"
+        "date": "2026-11-17",
+        "fingerprint": "aa457507269c344c"
       }
     },
     {
@@ -4053,7 +4053,7 @@
             },
             {
               "ref": "Jer.33.3",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x124",
               "sources": [
                 {
                   "dataset": "naves",
@@ -4495,7 +4495,7 @@
             },
             {
               "ref": "John.4.24",
-              "sectionId": "john-x1",
+              "sectionId": "john-x107",
               "sources": [
                 {
                   "dataset": "naves",
@@ -4511,7 +4511,7 @@
             },
             {
               "ref": "John.15.13",
-              "sectionId": "john-x2",
+              "sectionId": "john-x206",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -4626,7 +4626,7 @@
             },
             {
               "ref": "Deut.9.18",
-              "sectionId": "deut-x3",
+              "sectionId": "deut-x304",
               "sources": [
                 {
                   "dataset": "naves",
@@ -4742,7 +4742,7 @@
             },
             {
               "ref": "Dan.10.3",
-              "sectionId": "dan-x1",
+              "sectionId": "dan-x104",
               "sources": [
                 {
                   "dataset": "naves",
@@ -4945,7 +4945,7 @@
             },
             {
               "ref": "John.3.5",
-              "sectionId": "john-x1",
+              "sectionId": "john-x105",
               "sources": [
                 {
                   "dataset": "naves",
@@ -5076,8 +5076,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "8e3633f60180034f"
+        "date": "2026-11-17",
+        "fingerprint": "3e76cab304541dab"
       }
     },
     {
@@ -5108,7 +5108,7 @@
             },
             {
               "ref": "John.16.33",
-              "sectionId": "john-x2",
+              "sectionId": "john-x206",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -5311,7 +5311,7 @@
             },
             {
               "ref": "Job.14.2",
-              "sectionId": "job-x1",
+              "sectionId": "job-x107",
               "sources": [
                 {
                   "dataset": "naves",
@@ -5534,7 +5534,7 @@
           "passages": [
             {
               "ref": "Jer.15.10",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x112",
               "sources": [
                 {
                   "dataset": "naves",
@@ -5622,7 +5622,7 @@
             },
             {
               "ref": "John.15.18",
-              "sectionId": "john-x2",
+              "sectionId": "john-x206",
               "sources": [
                 {
                   "dataset": "naves",
@@ -5841,7 +5841,7 @@
             },
             {
               "ref": "Jer.17.14",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x113",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -5924,8 +5924,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "a27cb97402f1f887"
+        "date": "2026-11-17",
+        "fingerprint": "5b59ed463ec4bb99"
       }
     },
     {
@@ -6187,7 +6187,7 @@
             },
             {
               "ref": "Exod.22.17",
-              "sectionId": "exod-x1",
+              "sectionId": "exod-x102",
               "sources": [
                 {
                   "dataset": "naves",
@@ -6434,7 +6434,7 @@
             },
             {
               "ref": "Deut.4.9",
-              "sectionId": "deut-x1",
+              "sectionId": "deut-x103",
               "sources": [
                 {
                   "dataset": "naves",
@@ -6884,7 +6884,7 @@
           "passages": [
             {
               "ref": "Exod.22.22-Exod.22.24",
-              "sectionId": "exod-x1",
+              "sectionId": "exod-x102",
               "sources": [
                 {
                   "dataset": "naves",
@@ -6912,7 +6912,7 @@
             },
             {
               "ref": "Deut.14.28-Deut.14.29",
-              "sectionId": "deut-x3",
+              "sectionId": "deut-x308",
               "sources": [
                 {
                   "dataset": "naves",
@@ -6960,7 +6960,7 @@
             },
             {
               "ref": "Job.22.9-Job.22.11",
-              "sectionId": "job-x1",
+              "sectionId": "job-x114",
               "sources": [
                 {
                   "dataset": "naves",
@@ -7163,8 +7163,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "e37e3e3e8260c738"
+        "date": "2026-11-17",
+        "fingerprint": "3be66437ec1d2db8"
       }
     },
     {
@@ -7179,7 +7179,7 @@
           "passages": [
             {
               "ref": "Exod.36.1",
-              "sectionId": "exod-x3",
+              "sectionId": "exod-x301",
               "sources": [
                 {
                   "dataset": "naves",
@@ -7259,7 +7259,7 @@
             },
             {
               "ref": "Jer.9.23",
-              "sectionId": "jer-x1",
+              "sectionId": "jer-x108",
               "sources": [
                 {
                   "dataset": "naves",
@@ -7323,7 +7323,7 @@
             },
             {
               "ref": "John.8.32",
-              "sectionId": "john-x1",
+              "sectionId": "john-x114",
               "sources": [
                 {
                   "dataset": "naves",
@@ -7681,7 +7681,7 @@
             },
             {
               "ref": "John.16.33",
-              "sectionId": "john-x2",
+              "sectionId": "john-x206",
               "sources": [
                 {
                   "dataset": "naves",
@@ -8162,8 +8162,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "608cdc26a1d82deb"
+        "date": "2026-11-17",
+        "fingerprint": "e5419b81b9b57076"
       }
     },
     {
@@ -8294,7 +8294,7 @@
             },
             {
               "ref": "John.3.3",
-              "sectionId": "john-x1",
+              "sectionId": "john-x105",
               "sources": [
                 {
                   "dataset": "openbible",
@@ -8306,7 +8306,7 @@
             },
             {
               "ref": "John.18.36",
-              "sectionId": "john-x2",
+              "sectionId": "john-x208",
               "sources": [
                 {
                   "dataset": "naves",
@@ -8421,7 +8421,7 @@
             },
             {
               "ref": "John.3.14",
-              "sectionId": "john-x1",
+              "sectionId": "john-x105",
               "sources": [
                 {
                   "dataset": "naves",
@@ -8652,7 +8652,7 @@
             },
             {
               "ref": "John.14.26",
-              "sectionId": "john-x2",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "naves",
@@ -8935,7 +8935,7 @@
             },
             {
               "ref": "John.14.2",
-              "sectionId": "john-x2",
+              "sectionId": "john-x205",
               "sources": [
                 {
                   "dataset": "naves",
@@ -9078,8 +9078,8 @@
       ],
       "approval": {
         "by": "the owner",
-        "date": "2026-11-12",
-        "fingerprint": "1e2f9c94a2f55a0a"
+        "date": "2026-11-17",
+        "fingerprint": "637af8b627bcd129"
       }
     }
   ]

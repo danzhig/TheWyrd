@@ -196,7 +196,7 @@ test.describe('reader', () => {
     await context.close();
   });
 
-  for (const id of ['gen-01', 'luke-09', 'job-x1', 'judg-10', 'br-greeks']) {
+  for (const id of ['gen-01', 'luke-09', 'job-x101', 'judg-10', 'br-greeks']) {
     test(`no serious accessibility issues: ${id}`, async ({ page }) => {
       await open(page, id);
       const results = await new AxeBuilder({ page }).analyze();

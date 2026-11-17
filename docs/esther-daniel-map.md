@@ -86,7 +86,12 @@ Everything else has the same chapter and verse number in both.
 | dan-04 | The King's Madness | 4 | 4:4–37 | 4:4 “I, Nebuchadnezzar, was at rest in my house, …” | 4:37 “… walk in pride he is able to humble.” |
 | dan-05 | The Writing on the Wall | 5 | 5:1–30 | 5:1 “Belshazzar the king made a great feast to …” | 5:30 “… that night Belshazzar the Chaldean King was slain.” |
 | dan-06 | The Lions' Den | 6 | 5:31–6:28 | 5:31 “Darius the Mede received the kingdom, being about …” | 6:28 “… and in the reign of Cyrus the Persian.” |
-| dan-x1 | Daniel's Visions | 7-12 | 7:1–12:13 | 7:1 “In the first year of Belshazzar king of …” | 12:13 “… your inheritance at the end of the days.”” |
+| dan-x101 | Four Beasts and the Son of Man | 7 | 7:1–28 | 7:1 “In the first year of Belshazzar king of …” | 7:28 “… but I kept the matter in my heart.”” |
+| dan-x102 | The Ram and the Goat | 8 | 8:1–27 | 8:1 “In the third year of the reign of …” | 8:27 “… at the vision, but no one understood it.” |
+| dan-x103 | The Seventy Weeks | 9 | 9:1–27 | 9:1 “In the first year of Darius the son …” | 9:27 “… wrath will be poured out on the desolate.”” |
+| dan-x104 | The Man in Linen | 10 | 10:1–21 | 10:1 “In the third year of Cyrus king of …” | 10:21 “… supports me against these except Michael, your prince.” |
+| dan-x105 | Kings of the North and South | 11 | 11:1–45 | 11:1 ““As for me, in the first year of …” | 11:45 “… his end, and no one will help him.” |
+| dan-x106 | The Time of the End | 12 | 12:1–13 | 12:1 ““At that time Michael will stand up, the …” | 12:13 “… your inheritance at the end of the days.”” |
 | dan-07 | Susanna | 13 | 13:1–64 | 13:1 “A man lived in Babylon, and his name …” | 13:64 “… great reputation in the sight of the people.” |
 | dan-08 | Bel and the Dragon | 14 | 14:1–42 | 14:1 “King Astyages was gathered to his fathers, and …” | 14:42 “… were devoured in a moment before his face.” |
 

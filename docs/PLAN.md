@@ -183,6 +183,8 @@ interface Verse {
 
 ## 6. The reading plan
 
+**Revision 1.1.0 (owner, 2026-11-17).** Long skipped stretches are divided into short skip sections of their own, each with a title and a one-line summary, so a reader who opens one finds the passage they want without scrolling through chapters (for example, the Wedding at Cana is its own section rather than a page inside John 1–10). Skipped runs may still sit side by side. What is read, skimmed and skipped is unchanged; only the skip sections listed in the tables below as one row (`job-x1`, `exod-x1`–`x3`, `num-x1`–`x3`, `deut-x1`, `deut-x3`, `josh-x1`, `jer-x1`, `jer-x2`, `dan-x1`, `john-x1`, `john-x2`) are now several, with ids `<book>-x<stretch><NN>` (`john-x103` is the third part of `john-x1`). `reading-plan.json` holds the parts; the tables keep the original rows for reference. The path now has 378 map sections (252 before).
+
 **The path runs through 23 books and one optional chapter in 252 map sections; every chapter of every plan book is assigned exactly once, which the committed `reading-plan.json` encodes and its validator proves.** This table and the JSON must match; the JSON wins if they ever differ. References use Catholic (Hebrew-based) numbering; `end` means the chapter's last verse. Anchors are words the pipeline expects to find in that verse, to prove a boundary landed on the right content.
 
 **Order of the path:** Genesis → *Job* → Exodus → Numbers → Deuteronomy → Joshua → Judges → Ruth → 1–2 Samuel → 1–2 Kings → *bridge* → Jeremiah 37–43 → *bridge* → Tobit → Daniel → Judith → Esther → Ezra → Nehemiah → Jonah → *bridge* → 1 Maccabees → *bridge* → Luke (with John 11 offered after Luke 19:27) → Acts.
@@ -579,7 +581,7 @@ interface Verse {
 | Id | Attached to | Text |
 | --- | --- | --- |
 | n-gen-11 | gen-06 start | These six verses introduce Abram, Sarai and Lot and move the family from Ur to Haran. Note verse 30: Sarai is barren. That tension drives the whole Abraham story. |
-| n-job-debate | job-x1 (skipped fold) | For 35 chapters Job's friends insist his suffering must be punishment for hidden sin. Job maintains his innocence and demands that God answer him. Then God does. |
+| n-job-debate | job-x101 (skipped fold) | For 35 chapters Job's friends insist his suffering must be punishment for hidden sin. Job maintains his innocence and demands that God answer him. Then God does. |
 | n-job-42 | job-04 start | God's rebuke of the friends in verse 7 is a ruling on the debate you skipped: God says the friends have not spoken rightly of him, as Job has. |
 | n-exod-24 | exod-10 start | The people swear to the covenant, sealed in blood. Eight chapters later comes the golden calf, which is why it reads as betrayal. |
 | n-exod-40 | exod-14 end | Numbers picks up with this same cloud lifting to lead Israel on. The two books are one motion. |

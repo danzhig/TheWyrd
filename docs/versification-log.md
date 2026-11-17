@@ -10,7 +10,7 @@ WEBC cannot divide these verses, so each is placed by the rule shown. Every plac
 
 | WEBC verse | Kind | Plan sections that touch it | Placed in | Why | Approved |
 | --- | --- | --- | --- | --- | --- |
-| Num.26.1 | split-verse | num-11 (plan 25:19); num-x2 (plan 26:1) | **num-11** | WEBC Num.26.1 contains plan verses 25:19 + 26:1; WEBC cannot divide it, so it stays with the section holding its first part. | 2026-11-06 |
+| Num.26.1 | split-verse | num-11 (plan 25:19); num-x201 (plan 26:1) | **num-11** | WEBC Num.26.1 contains plan verses 25:19 + 26:1; WEBC cannot divide it, so it stays with the section holding its first part. | 2026-11-06 |
 | 1Sam.20.42 | split-verse | 1sam-09 (plan 20:42); 1sam-10 (plan 21:1) | **1sam-09** | WEBC 1Sam.20.42 contains plan verses 20:42 + 21:1; WEBC cannot divide it, so it stays with the section holding its first part. | 2026-11-06 |
 | Neh.7.68 | orphan-verse | neh-07 | **neh-07** | WEBC Neh.7.68 has no counterpart in Hebrew numbering (TVTMS Neh.7:68-7:73 (line 749, MergedFollVerse)); it goes with the verse before it. | 2026-11-06 |
 | Isa.64.1 | orphan-verse | isa-20 | **isa-20** | WEBC Isa.64.1 has no counterpart in Hebrew numbering (TVTMS Isa.63:19--64:12 (line 2540, MergedPrevVerse)); it goes with the verse before it. | 2026-11-12 |
@@ -23,8 +23,16 @@ If you looked up each plan range in a WEBC (English-numbered) Bible, these are t
 | --- | --- | --- | --- | --- | --- |
 | gen-13 | Jacob in Haran | Gen 29-31 | Gen 29:1–31:54 | — | 31:55 |
 | gen-14 | Jacob Returns | Gen 32-35 | Gen 31:55–35:29 | 31:55 | — |
+| exod-x101 | Laws on Servants and Injury | Exod 21 | Exod 21:1–22:1 | 22:1 | — |
+| exod-x102 | Property, Justice and the Feasts | Exod 22-23 | Exod 22:2–23:33 | — | 22:1 |
 | num-11 | Apostasy at Peor | Num 25 | Num 25:1–26:1 | 26:1 | — |
-| num-x2 | The Second Census and Laws | Num 26-31 | Num 26:2–31:54 | — | 26:1 |
+| num-x201 | The Second Census | Num 26 | Num 26:2–65 | — | 26:1 |
+| num-x203 | Offerings for Every Season | Num 28-29 | Num 28:1–29:39 | — | 29:40 |
+| num-x204 | Vows | Num 30 | Num 29:40–30:16 | 29:40 | — |
+| deut-x306 | One Place of Worship | Deut 12 | Deut 12:1–31 | — | 12:32 |
+| deut-x307 | False Prophets | Deut 13 | Deut 12:32–13:18 | 12:32 | — |
+| deut-x314 | Family and Neighbour | Deut 21-22 | Deut 21:1–22:29 | — | 22:30 |
+| deut-x315 | The Assembly; the Poor | Deut 23-24 | Deut 22:30–24:22 | 22:30 | — |
 | deut-02 | Blessings and Curses | Deut 28 | Deut 28:1–29:1 | 29:1 | — |
 | deut-x4 | The Covenant in Moab | Deut 29-30 | Deut 29:2–30:20 | — | 29:1 |
 | neh-04 | Building Under Threat | Neh 3:33-4:end (verse 3:33 does not exist in WEBC) | Neh 4:1–23 | 4:1–23 | — |

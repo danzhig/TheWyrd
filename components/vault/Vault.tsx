@@ -42,7 +42,8 @@ export interface VaultProps {
   data: VaultData;
   books: VaultBook[];
   bridges: { id: string; title: string; after: string }[];
-  sections: Record<string, { title: string; bookId: string }>;
+  /** Section id → [title, bookId] (compact: it is inlined in the page). */
+  sections: Record<string, [title: string, bookId: string]>;
 }
 
 const subscribe = (cb: () => void) => {
@@ -179,7 +180,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     [themeData],
   );
 
-  const currentBook = lastSection ? sections[lastSection]?.bookId : undefined;
+  const currentBook = lastSection ? sections[lastSection]?.[1] : undefined;
   const currentMedallion = layout.medallions.find((m) => m.id === currentBook);
   const sparkAt = currentMedallion ?? layout.medallions[0]!;
 
@@ -595,7 +596,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           <Link
             href={lastMedallion ? `/read/${lastSection}/` : '/read/gen-01/'}
             className={`${styles.button} ${styles.continue}`}
-            title={lastMedallion ? `Continue reading: ${lastMedallion.title}` : 'Begin reading'}
+            title={lastMedallion ? `Continue reading: ${lastMedallion[0]}` : 'Begin reading'}
             data-hud="continue"
             data-testid="continue"
           >
@@ -603,7 +604,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
             {/* Non-breaking spaces: a flex item drops ordinary ones at its edges. */}
             <span className={styles.continueTitle}>
               {'\u00a0·\u00a0'}
-              {lastMedallion ? lastMedallion.title : sections['gen-01']?.title}
+              {lastMedallion ? lastMedallion[0] : sections['gen-01']?.[0]}
             </span>
           </Link>
           {/* Two ways through the same Bible (PLAN §16): the story's spiral, or its themes. */}

@@ -100,10 +100,10 @@ test.describe('Threads', () => {
   });
 
   test('a passage reached inside a closed fold is opened', async ({ page }) => {
-    // John 10:22 is in John 1–10, which the path skips (the whole section is folded).
-    const c = published.find((x) => x.ends.some((e) => e.sectionId === 'john-x1'));
+    // A connection into a part of John the path skips (the whole section is folded).
+    const c = published.find((x) => x.ends.some((e) => /^john-x\d/.test(e.sectionId)));
     test.skip(!c, 'no verified connection into a folded section');
-    const end = c!.ends.find((e) => e.sectionId === 'john-x1')!;
+    const end = c!.ends.find((e) => /^john-x\d/.test(e.sectionId))!;
     await open(page, `/read/${end.sectionId}/?thread=${c!.id}#${end.anchor}`);
     await expect(page.locator(`#${end.anchor}`)).toBeVisible();
   });
