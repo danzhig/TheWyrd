@@ -803,3 +803,50 @@ a.detour:hover {
   font-variant-caps: all-small-caps;
   letter-spacing: 0.05em;
 }
+
+/* Where you are (owner, 2026-11-18): a small marker on the right edge with the chapter and verse
+   at the top of the screen; it slides down as you read, staying above the Bible tab. */
+.where {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 14;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
+  padding: 0.3rem 0.6rem 0.3rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--rule) 80%, transparent);
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 0.1);
+  color: var(--text-strong);
+  font-size: 0.85rem;
+  font-variant-numeric: lining-nums tabular-nums;
+  white-space: nowrap;
+  pointer-events: none;
+  will-change: transform;
+  transition: opacity var(--dur-ui) ease;
+}
+
+.where[data-empty] {
+  opacity: 0;
+}
+
+.whereBook {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+/* Phones: the chapter and verse alone (the book is in the top bar), so it covers less text. */
+@media (max-width: 520px) {
+  .where {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.45rem 0.25rem 0.6rem;
+  }
+
+  .whereBook {
+    display: none;
+  }
+}
