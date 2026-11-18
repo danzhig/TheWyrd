@@ -80,6 +80,28 @@ export interface ReaderShellProps {
   children: ReactNode;
 }
 
+/**
+ * The marker: the chapter and verse of the first verse below the top bar, placed down the right
+ * edge in step with the reading (above the Bible tab), hidden where the page has no verses.
+ */
+function placeWhere(el: HTMLDivElement | null, t: number) {
+  if (!el) return;
+  let cv = '';
+  for (const v of document.querySelectorAll<HTMLElement>('article [data-cv]')) {
+    const r = v.getBoundingClientRect();
+    if (r.height && r.bottom > 72) {
+      cv = v.dataset.cv!;
+      break;
+    }
+  }
+  const label = el.querySelector<HTMLElement>('[data-where-cv]');
+  if (label && label.textContent !== cv) label.textContent = cv;
+  el.toggleAttribute('data-empty', !cv);
+  const top = 64;
+  const bottom = window.innerHeight * 0.72 - 60;
+  el.style.transform = `translateY(${Math.round(top + t * Math.max(0, bottom - top))}px)`;
+}
+
 export function ReaderShell({
   id,
   kind,
@@ -127,6 +149,7 @@ export function ReaderShell({
   const [done, setDone] = useState<string | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
+  const whereRef = useRef<HTMLDivElement>(null);
 
   // Focus the page heading after every navigation (PLAN §10 accessibility), and mark the page as
   // interactive (tests wait for this before using the keyboard).
@@ -182,7 +205,9 @@ export function ReaderShell({
       frame = requestAnimationFrame(() => {
         const y = window.scrollY;
         const max = document.documentElement.scrollHeight - window.innerHeight;
-        setScrolled(max > 0 ? Math.min(1, y / max) : 1);
+        const t = max > 0 ? Math.min(1, y / max) : 1;
+        setScrolled(t);
+        placeWhere(whereRef.current, t);
         setHidden(y > lastY && y > 80);
         lastY = y;
         const now = Date.now();
@@ -196,7 +221,13 @@ export function ReaderShell({
       });
     };
     window.addEventListener('scroll', onScroll, { passive: true });
+    // The marker's first place, and again when the words change (the other Bible, a fold opened).
+    onScroll();
+    window.addEventListener(CHANGE_EVENT, onScroll);
+    document.addEventListener('toggle', onScroll, true);
     return () => {
+      window.removeEventListener(CHANGE_EVENT, onScroll);
+      document.removeEventListener('toggle', onScroll, true);
       window.removeEventListener('scroll', onScroll);
       cancelAnimationFrame(frame);
     };
@@ -280,6 +311,12 @@ export function ReaderShell({
         />
       </header>
       <SettingsSheet open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      {/* Where you are (owner, 2026-11-18): the chapter and verse at the top of the screen, on a
+          marker that slides down the right edge as you read. */}
+      <div ref={whereRef} className={styles.where} aria-hidden="true" data-testid="reader-where">
+        <span className={styles.whereBook}>{bookName?.replace(/\s*\(excursion\)$/, '')}</span>{' '}
+        <span data-where-cv />
+      </div>
       {/* Which Bible, from anywhere in the reading (owner, 2026-11-17): a tab on the right edge,
           clear of the text and of the pills at the foot of the screen. */}
       <TranslationPicker className={styles.translationTab} testId="reader-translation" abbr />

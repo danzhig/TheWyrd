@@ -172,6 +172,8 @@ export function VerseText({
         id={p.first ? verseAnchor(p.verse) : undefined}
         // The WEBC verse it belongs to (a Douay-Rheims verse's ref carries "~n" after it).
         data-verse={p.first ? p.verse.ref.replace(/~\d+$/, '') : undefined}
+        // The chapter and verse as printed (the Douay-Rheims's own in its body), for the marker.
+        data-cv={p.first && !p.verse.bare ? `${p.verse.c}:${p.verse.v}` : undefined}
       >
         {p.first && !p.verse.bare && !(i === 0 && j === 0 && useDropCap) ? (
           <sup className="verse-num" data-pagefind-ignore="">
