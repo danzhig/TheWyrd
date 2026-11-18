@@ -122,8 +122,9 @@ test.describe('performance', () => {
     });
   }
 
-  // PLAN §12: initial JavaScript on `/` (the scripts its HTML loads) under 150 KB gzipped.
-  test('initial JavaScript on / is under 150 KB gzipped', () => {
+  // PLAN §12: initial JavaScript on `/` (the scripts its HTML loads) under 160 KB gzipped (raised
+  // from 150 KB by the owner, 2026-11-17, as the whole Bible's names and pickers joined the Vault).
+  test('initial JavaScript on / is under 160 KB gzipped', () => {
     const html = fs.readFileSync('out/index.html', 'utf8');
     const srcs = [
       ...new Set(
@@ -132,7 +133,7 @@ test.describe('performance', () => {
     ];
     const kb = srcs.reduce((n, src) => n + gzipSync(fs.readFileSync(`out${src}`)).length, 0) / 1024;
     console.log(`initial JS on /: ${kb.toFixed(1)} KB gzipped`);
-    expect(kb).toBeLessThan(150);
+    expect(kb).toBeLessThan(160);
   });
 });
 

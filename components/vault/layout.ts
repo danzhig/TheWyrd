@@ -52,8 +52,8 @@ const GAP = 14;
 const BRIDGE_GAP = 30;
 const OFFPATH_RADIUS = 590;
 const OFFPATH_SIZE = 46;
-/** Where the group names sit: just inside the outer ring (owner, 2026-11-17). */
-export const GROUP_RADIUS = OFFPATH_RADIUS - OFFPATH_SIZE / 2 - 34;
+/** Where the group names sit: in the gap between the spiral and the outer ring (owner, 2026-11-17). */
+export const GROUP_RADIUS = OFFPATH_RADIUS - OFFPATH_SIZE / 2 - 38;
 
 export function medallionWidth(minutes: number, min: number, max: number): number {
   if (max <= min) return (SIZE_MIN + SIZE_MAX) / 2;

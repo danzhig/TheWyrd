@@ -750,7 +750,7 @@ Two themes: **Vault** (dark; default for the maps) and **Vellum** (light; defaul
 | P2.5 | Ambient polish: subtle light-ray drift in the oculus, cover-opening refinements, haptic tick on phone when a section completes | No frame drops in the performance trace; all effects off under reduced motion |
 | P2.6 | ~~Print stylesheet for a section~~ (dropped 2026-11-10) | Prints as clean single-column text with references |
 
-**Budgets.** Initial JavaScript on `/` under 150 KB gzipped; a section page's text arrives as its own JSON file under 60 KB gzipped; Largest Contentful Paint under 2.5 s on a throttled mobile profile.
+**Budgets.** Initial JavaScript on `/` under 160 KB gzipped (raised from 150 KB by the owner, 2026-11-17); a section page's text arrives as its own JSON file under 60 KB gzipped; Largest Contentful Paint under 2.5 s on a throttled mobile profile.
 
 ## 13. Phase 3: word depth and language flashcards (built last)
 

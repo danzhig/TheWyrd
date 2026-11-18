@@ -224,7 +224,7 @@
 }
 
 .group {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg));
   font-family: var(--font-display);
   font-variant-caps: all-small-caps;
   letter-spacing: 0.16em;

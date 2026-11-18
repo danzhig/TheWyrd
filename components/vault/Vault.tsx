@@ -81,6 +81,14 @@ const OFF_NAME_PX = 110;
 /** The steepest an outer-ring name tilts, near the top and foot of the ring (degrees). */
 const OFF_NAME_TILT = 38;
 
+/** The tangent of a circle at an angle (radians), in degrees, turned so text on it reads upright. */
+function tangentDeg(angle: number): number {
+  let t = (((((angle * 180) / Math.PI + 90) % 360) + 540) % 360) - 180; // (-180, 180]
+  if (t > 90) t -= 180;
+  else if (t <= -90) t += 180;
+  return t;
+}
+
 /** A point on the ceiling, for the label layer: world units, scaled by --k in CSS. */
 const at = (p: { x: number; y: number }) =>
   ({ ['--x' as string]: p.x, ['--y' as string]: p.y }) as React.CSSProperties;
@@ -937,8 +945,13 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
                   <span
                     key={g.label}
                     className={`${styles.at} ${styles.group}`}
-                    // Inside the ring, between it and the spiral (owner, 2026-11-17).
-                    style={at({ x: GROUP_R * Math.cos(g.angle), y: GROUP_R * Math.sin(g.angle) })}
+                    // In the gap between the spiral and the ring, running along the circle (turned
+                    // to its tangent, and kept upright) so it never crosses a book (owner,
+                    // 2026-11-17).
+                    style={{
+                      ...at({ x: GROUP_R * Math.cos(g.angle), y: GROUP_R * Math.sin(g.angle) }),
+                      ['--rot' as string]: `${tangentDeg(g.angle)}deg`,
+                    }}
                     data-testament={NT_GROUPS.has(g.label) ? 'nt' : 'ot'}
                   >
                     {g.label}
