@@ -59,4 +59,22 @@ test.describe('Where you are', () => {
     await page.waitForURL((u) => u.pathname === '/');
     await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
   });
+
+  test('a click outside the open book leads back to the Vault; a click on it does not', async ({
+    page,
+    isMobile,
+  }) => {
+    test.skip(isMobile, 'on a phone the book fills the width');
+    await page.goto('/book/Gen/');
+    await expect(page.locator('html')).toHaveAttribute('data-book-map', /.*/);
+    const frame = (await page.locator('[data-book-frame]').boundingBox())!;
+    // On the book (its header): nothing happens.
+    await page.mouse.click(frame.x + frame.width / 2, frame.y + 30);
+    await page.waitForTimeout(400);
+    expect(new URL(page.url()).pathname).toBe('/book/Gen/');
+    // Beside it: home.
+    await page.mouse.click(frame.x / 2, frame.y + frame.height / 2);
+    await page.waitForURL((u) => u.pathname === '/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+  });
 });

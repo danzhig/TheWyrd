@@ -208,9 +208,34 @@ export function ThemesLabels({
   useEffect(() => {
     tapRef.current = (e: MouseEvent) => {
       const el = e.target as HTMLElement | null;
-      if (!keys || !settled || open || e.button !== 0) return;
+      if (!keys || !settled || e.button !== 0) return;
       if (!el?.closest('[data-testid="vault-view"]') || el.closest('a, button, input, dialog'))
         return;
+      // An open sub-theme (its table of readings): a click outside the readings closes it, as Esc
+      // does (owner, 2026-11-18).
+      if (open) {
+        // The table: its heading and every reading's name, with a little room around them.
+        const parts = document.querySelectorAll('[data-reading], [data-testid="spread-head"]');
+        let l = Infinity,
+          t = Infinity,
+          r = -Infinity,
+          b = -Infinity;
+        for (const p of parts) {
+          const q = p.getBoundingClientRect();
+          l = Math.min(l, q.left);
+          t = Math.min(t, q.top);
+          r = Math.max(r, q.right);
+          b = Math.max(b, q.bottom);
+        }
+        const pad = 16;
+        const inside =
+          e.clientX >= l - pad &&
+          e.clientX <= r + pad &&
+          e.clientY >= t - pad &&
+          e.clientY <= b + pad;
+        if (!inside) close(true);
+        return;
+      }
       const view = document.querySelector('[data-testid="vault-view"]')!.getBoundingClientRect();
       const cam = camera();
       const p = {

@@ -275,6 +275,37 @@ test.describe('themes', () => {
     await expect.poll(async () => Number(await count())).toBe(both);
   });
 
+  test('a click outside an open sub-theme’s table closes it; a click inside does not', async ({
+    page,
+  }) => {
+    await openVault(page);
+    await page.getByTestId('view-themes').click();
+    await expect(page.locator('html')).toHaveAttribute('data-vault-view', 'themes', {
+      timeout: 6000,
+    });
+    await page.locator('[data-constellation="mercy"]').click({ force: true });
+    const name = page.locator('[data-subtheme="mercy-grace"]');
+    await expect(name).toBeAttached({ timeout: 6000 });
+    await name.dispatchEvent('click');
+    const readings = page.locator('[data-reading^="mercy-grace:"]');
+    await expect(readings.first()).toBeAttached();
+    await page.waitForTimeout(900);
+    // Between two of its rows: still open.
+    const a = (await readings.nth(0).boundingBox())!;
+    const b = (await readings.nth(1).boundingBox())!;
+    const between =
+      b.y > a.y + a.height
+        ? { x: a.x + 4, y: (a.y + a.height + b.y) / 2 }
+        : { x: (a.x + a.width + b.x) / 2, y: a.y + a.height / 2 };
+    await page.mouse.click(between.x, between.y);
+    await page.waitForTimeout(300);
+    await expect(readings.first()).toBeAttached();
+    // Well away from it, on the sky: closed.
+    const view = page.viewportSize()!;
+    await page.mouse.click(6, view.height / 2);
+    await expect(page.locator('[data-reading]')).toHaveCount(0);
+  });
+
   test('Esc steps out one level at a time: readings, sub-theme, constellation, the whole map', async ({
     page,
   }) => {
