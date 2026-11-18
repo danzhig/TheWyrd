@@ -16,11 +16,18 @@ export const camera: {
   view: 'spiral' | 'themes';
   /** Threads (Phase 4) drawn over the spiral. */
   threads: boolean;
+  /**
+   * The sub-theme whose table of readings is open in Themes, so that any way back to the Vault
+   * (Esc, the pill, a theme link, the browser's Back) finds it open again (2026-11-18). Cleared
+   * when the table closes or the view switches between Spiral and Themes.
+   */
+  spread: string | null;
 } = {
   last: null,
   fromBook: null,
   view: 'spiral',
   threads: false,
+  spread: null,
 };
 
 export function prefersReducedMotion(): boolean {

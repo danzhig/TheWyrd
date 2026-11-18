@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { ReactNode } from 'react';
 import type { KeyMarks, VerseOut } from '@/lib/types';
 
@@ -146,9 +147,11 @@ function KeyTag({ subs }: { subs: KeyMarks['starts'][string] }) {
         {subs.some((s) => s.whole) ? 'Key passage' : 'Key verse'}
       </span>
       {subs.map((s) => (
-        <a key={s.id} href={`/?theme=${s.id}`} data-key-theme={s.id}>
+        // A client navigation, as the reader's way back is: the Vault keeps its memory (Themes
+        // and the camera) instead of starting afresh with the Spiral and the flight.
+        <Link key={s.id} href={`/?theme=${s.id}`} prefetch={false} data-key-theme={s.id}>
           {s.title}
-        </a>
+        </Link>
       ))}
     </span>
   );
