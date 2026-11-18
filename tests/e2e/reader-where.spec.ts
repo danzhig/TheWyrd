@@ -27,6 +27,31 @@ test.describe('Where you are', () => {
     await page.getByTestId('translation-webc').click();
   });
 
+  test('key verses are marked however a reading is reached, named with their themes', async ({
+    page,
+  }) => {
+    // Along the path (no theme in the address): Jeremiah 29:11 is key to Hope and to Trust.
+    await page.goto('/read/jer-x121/');
+    await expect(page.locator('html')).toHaveAttribute('data-reader', 'jer-x121');
+    await expect(page.locator('[data-key-verse]')).toHaveCount(1);
+    await expect(page.locator('[data-key-verse]')).toHaveAttribute('data-verse', 'Jer.29.11');
+    const tag = page.getByTestId('key-tag');
+    await expect(tag).toHaveCount(1);
+    await expect(tag.locator('a[data-key-theme="faith-hope"]')).toHaveAttribute(
+      'href',
+      '/?theme=faith-hope',
+    );
+    // Opened from the theme: the same, and it opens there.
+    await page.goto('/read/jer-x121/?theme=faith-hope#v-29-11');
+    await expect(page.locator('[data-key-verse]')).toBeInViewport();
+    // Still marked in the Douay-Rheims.
+    await page.getByTestId('translation-drc').click();
+    await expect(page.getByTestId('drc-body')).toBeVisible();
+    await expect(page.locator('[data-testid=drc-body] [data-key-verse]').first()).toBeAttached();
+    await expect(page.locator('[data-testid=drc-body] [data-testid=key-tag]')).toHaveCount(1);
+    await page.getByTestId('translation-webc').click();
+  });
+
   test('Esc on a book’s map leads back to the Vault', async ({ page }) => {
     await page.goto('/book/Gen/');
     await expect(page.locator('html')).toHaveAttribute('data-book-map', /.*/);

@@ -10,6 +10,7 @@ import type {
   SectionFile,
   SectionIndexEntry,
   ThreadEnd,
+  KeyMarks,
 } from './types';
 
 const DATA = path.join(process.cwd(), 'public/data');
@@ -85,28 +86,80 @@ export interface SectionTheme {
 
 let themesBySection: Map<string, SectionTheme[]> | null = null;
 /** The sub-themes whose passages start in this section, in theme order (from public/data/themes.json). */
+interface ThemesJson {
+  themes: {
+    title: string;
+    subthemes: {
+      id: string;
+      title: string;
+      passages: { sectionId: string }[];
+      readings?: { sectionId: string; key?: string }[];
+    }[];
+  }[];
+}
+let themesJson: ThemesJson | null | undefined;
+function readThemesJson(): ThemesJson | null {
+  if (themesJson === undefined) {
+    const file = path.join(DATA, 'themes.json');
+    themesJson = fs.existsSync(file)
+      ? (JSON.parse(fs.readFileSync(file, 'utf8')) as ThemesJson)
+      : null;
+  }
+  return themesJson;
+}
+
+/** Every sub-theme a section belongs to (its readings, P6.5), linked to their constellations. */
 export function getSectionThemes(sectionId: string): SectionTheme[] {
   if (!themesBySection) {
     themesBySection = new Map();
-    const file = path.join(DATA, 'themes.json');
-    if (fs.existsSync(file)) {
-      const data = JSON.parse(fs.readFileSync(file, 'utf8')) as {
-        themes: {
-          title: string;
-          subthemes: { id: string; title: string; passages: { sectionId: string }[] }[];
-        }[];
-      };
-      for (const t of data.themes)
-        for (const s of t.subthemes)
-          for (const sec of new Set(s.passages.map((p) => p.sectionId))) {
-            const list = themesBySection.get(sec) ?? [];
-            if (!list.some((x) => x.id === s.id))
-              list.push({ id: s.id, title: s.title, themeTitle: t.title });
-            themesBySection.set(sec, list);
-          }
-    }
+    for (const t of readThemesJson()?.themes ?? [])
+      for (const s of t.subthemes) {
+        const ids = new Set([
+          ...(s.readings ?? []).map((r) => r.sectionId),
+          ...s.passages.map((p) => p.sectionId),
+        ]);
+        for (const sec of ids) {
+          const list = themesBySection.get(sec) ?? [];
+          if (!list.some((x) => x.id === s.id))
+            list.push({ id: s.id, title: s.title, themeTitle: t.title });
+          themesBySection.set(sec, list);
+        }
+      }
   }
   return themesBySection.get(sectionId) ?? [];
+}
+
+/**
+ * The section's key passages (owner, 2026-11-18): the verses each sub-theme chose here, to be
+ * marked in gold however the reading is reached, with the sub-themes named at the passage's first
+ * verse. A whole-chapter key is named at the chapter's first verse but not filled in.
+ */
+export function getSectionKeys(sectionId: string, verses: { ref: string }[]): KeyMarks {
+  const at = (r: string) => {
+    const [, c, v] = r.split('!')[0]!.split('.');
+    return Number(c) * 1000 + Number(v ?? 0);
+  };
+  const marked = new Set<string>();
+  const starts: KeyMarks['starts'] = {};
+  for (const t of readThemesJson()?.themes ?? [])
+    for (const s of t.subthemes)
+      for (const r of s.readings ?? []) {
+        if (r.sectionId !== sectionId || !r.key) continue;
+        const [from, to = from] = r.key.split('-') as [string, string?];
+        const whole = from.split('.').length === 2;
+        const lo = whole ? at(from) + 1 : at(from);
+        const hi = whole ? at(from) + 999 : at(to!);
+        const inKey = verses.filter((v) => at(v.ref) >= lo && at(v.ref) <= hi);
+        if (!inKey.length) continue;
+        if (!whole) for (const v of inKey) marked.add(v.ref);
+        const first = inKey[0]!.ref;
+        const list = (starts[first] ??= []);
+        if (!list.some((x) => x.id === s.id))
+          list.push(
+            whole ? { id: s.id, title: s.title, whole: true } : { id: s.id, title: s.title },
+          );
+      }
+  return { marked: [...marked], starts };
 }
 
 /** A connection seen from one of its ends: the verse here, and the passage it leads to. */

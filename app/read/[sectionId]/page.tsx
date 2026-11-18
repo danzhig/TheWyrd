@@ -6,7 +6,13 @@ import { Threads } from '@/components/reader/Threads';
 import { TranslatedBody, TranslationSwitch } from '@/components/reader/Translation';
 import styles from '@/components/reader/reader.module.css';
 import Link from 'next/link';
-import { getFullManifest, getSection, getSectionThemes, getSectionThreads } from '@/lib/data';
+import {
+  getFullManifest,
+  getSection,
+  getSectionKeys,
+  getSectionThemes,
+  getSectionThreads,
+} from '@/lib/data';
 import { prettyRange, rangeLabel } from '@/lib/format';
 import { canBeStop, defaultNav, libraryNav, pathPosition } from '@/lib/nav';
 
@@ -43,6 +49,8 @@ export default async function ReadPage({ params }: Params) {
   const library = isLibrary(s.id);
   // The sub-themes this section's passages belong to (Phase 6), linked to their constellations.
   const themes = getSectionThemes(s.id);
+  // Its key passages, marked in gold however it is reached (owner, 2026-11-18).
+  const keys = getSectionKeys(s.id, s.verses);
   // Verified connections with an end here (Phase 4): a glyph at each verse, cards at the end.
   const threads = getSectionThreads(s.id);
   const glyphs: Record<string, number> = {};
@@ -115,8 +123,8 @@ export default async function ReadPage({ params }: Params) {
         </div>
       ) : null}
       <div className={s.highlight ? styles.highlight : undefined}>
-        <TranslatedBody section={meta} threads={glyphs}>
-          <SectionBody section={s} threads={glyphs} />
+        <TranslatedBody section={meta} threads={glyphs} keys={keys}>
+          <SectionBody section={s} threads={glyphs} keys={keys} />
         </TranslatedBody>
       </div>
       <Threads threads={threads} />

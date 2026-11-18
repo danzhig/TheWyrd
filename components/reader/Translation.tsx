@@ -18,7 +18,7 @@ import {
 import { drcVerses, loadDrc } from '@/lib/drc';
 import { TRANSLATIONS } from '@/lib/translations';
 import { CHANGE_EVENT, readSettings, writeSettings, type Translation } from '@/lib/store';
-import type { DrcSectionFile, SectionFile } from '@/lib/types';
+import type { DrcSectionFile, KeyMarks, SectionFile } from '@/lib/types';
 import { SectionBody } from './SectionBody';
 import styles from './reader.module.css';
 
@@ -68,10 +68,12 @@ export type BodySection = Omit<SectionFile, 'verses'>;
 export function TranslatedBody({
   section,
   threads,
+  keys,
   children,
 }: {
   section: BodySection;
   threads?: Record<string, number>;
+  keys?: KeyMarks;
   /** The WEBC body, rendered on the server. */
   children: ReactNode;
 }) {
@@ -125,7 +127,7 @@ export function TranslatedBody({
     const { verses, folds } = drcVerses(file, section.folds);
     return (
       <div data-translated="drc" data-testid="drc-body">
-        <SectionBody section={{ ...section, verses, folds }} threads={threads} />
+        <SectionBody section={{ ...section, verses, folds }} threads={threads} keys={keys} />
       </div>
     );
   }

@@ -310,3 +310,13 @@ export interface PublicConnection {
 export interface PublicConnections {
   connections: PublicConnection[];
 }
+
+/**
+ * A reading's key passages (owner, 2026-11-18): the verses to mark in gold wherever the reading is
+ * opened, and at the first verse of each passage the sub-themes it is key to. Keys are WEBC verse
+ * refs as in `Verse.ref` (without a Douay-Rheims `~n`).
+ */
+export interface KeyMarks {
+  marked: string[];
+  starts: Record<string, { id: string; title: string; whole?: boolean }[]>;
+}

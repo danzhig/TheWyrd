@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { prettyRange } from '@/lib/format';
-import type { FoldOut, NoteOut, SectionFile, VerseOut } from '@/lib/types';
+import type { FoldOut, KeyMarks, NoteOut, SectionFile, VerseOut } from '@/lib/types';
 import { footnoteId, VerseText, verseAnchor } from './VerseText';
 import styles from './reader.module.css';
 
@@ -69,10 +69,13 @@ function FootnoteList({
 export function SectionBody({
   section,
   threads,
+  keys,
 }: {
   section: SectionFile;
   /** Verses where threads start (Phase 4): verse anchor (`v-4-25`) → number of connections. */
   threads?: Record<string, number>;
+  /** Its key passages (owner, 2026-11-18): verses to mark, and where each passage starts. */
+  keys?: KeyMarks;
 }) {
   const numbers = new Map<string, number>();
   let n = 0;
@@ -101,6 +104,7 @@ export function SectionBody({
           before={before}
           numberOf={numberOf}
           threads={threads}
+          keys={keys}
         />,
       );
     } else {
@@ -114,7 +118,13 @@ export function SectionBody({
               Read it anyway
             </span>
           </summary>
-          <VerseText verses={seg.verses} before={before} numberOf={numberOf} threads={threads} />
+          <VerseText
+            verses={seg.verses}
+            before={before}
+            numberOf={numberOf}
+            threads={threads}
+            keys={keys}
+          />
         </details>,
       );
     }
