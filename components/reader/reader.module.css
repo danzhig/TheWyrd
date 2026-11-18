@@ -171,35 +171,18 @@
   margin: 0;
 }
 
-/* Folds */
-.fold,
-.wholeFold {
-  margin: 0 0 1.25rem;
-}
-
+/* Folds: a passage the path skips or skims inside a reading, named above its text (always shown). */
 .fold {
+  margin: 0 0 1.25rem;
   border-top: 1px solid var(--rule);
-  border-bottom: 1px solid color-mix(in srgb, var(--rule) 40%, transparent);
 }
 
-.fold > summary,
-.wholeFold > summary {
-  cursor: pointer;
-  list-style: none;
-  min-height: 44px;
-  padding: 0.6rem 0;
-}
-
-.fold > summary::-webkit-details-marker,
-.wholeFold > summary::-webkit-details-marker {
-  display: none;
-}
-
-.fold > summary {
+.foldHead {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0.1rem 0.75rem;
   align-items: baseline;
+  padding: 0.6rem 0 0.4rem;
   font-size: 0.9em;
 }
 
@@ -210,37 +193,7 @@
 
 .foldLabel {
   grid-column: 1 / -1;
-}
-
-.foldAction {
-  grid-column: 1 / -1;
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-.fold[open] .foldAction::before {
-  content: 'Fold it away · ';
-}
-
-.fold[open] .foldAction {
-  font-size: 0;
-}
-
-.fold[open] .foldAction::before {
-  font-size: 0.9rem;
-}
-
-.wholeFold > summary {
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-.fold > summary:focus-visible,
-.wholeFold > summary:focus-visible {
-  outline: 2px solid var(--accent-strong);
-  outline-offset: 2px;
+  color: var(--text-muted);
 }
 
 /* Footnotes */

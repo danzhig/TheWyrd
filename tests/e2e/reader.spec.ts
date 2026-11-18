@@ -51,23 +51,25 @@ test.describe('reader', () => {
     await expect(page.getByTestId('path-end')).toBeVisible();
   });
 
-  test('every fold expands', async ({ page }, info) => {
+  test('every skimmed or skipped passage shows its text without a click', async ({
+    page,
+  }, info) => {
     test.skip(info.project.name !== 'desktop', 'Covered once; phone layout is checked separately.');
     test.setTimeout(5 * 60_000);
     const withFolds = allSections.filter((s) => s.inner?.length || s.status === 'skim');
-    // Skims and inner folds (whole skipped sections show their text open, owner 2026-11-17).
+    // Skims and inner folds are open, with nothing to click (owner, 2026-11-18).
     expect(withFolds.length).toBeGreaterThan(15);
     for (const s of withFolds) {
       await open(page, s.id);
-      const folds = page.locator('details[data-fold]');
+      await expect(page.locator('details[data-fold]'), s.id).toHaveCount(0);
+      const folds = page.locator('[data-fold]');
       const n = await folds.count();
       expect(n, s.id).toBeGreaterThan(0);
-      for (let i = 0; i < n; i++) {
-        const fold = folds.nth(i);
-        await fold.locator(':scope > summary').click();
-        await expect(fold, `${s.id} fold ${i}`).toHaveAttribute('open', '');
-        await expect(fold.locator('[data-verse]').first(), `${s.id} fold ${i}`).toBeVisible();
-      }
+      for (let i = 0; i < n; i++)
+        await expect(
+          folds.nth(i).locator('[data-verse]').first(),
+          `${s.id} fold ${i}`,
+        ).toBeVisible();
     }
   });
 
