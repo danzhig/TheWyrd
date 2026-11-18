@@ -93,3 +93,56 @@ svg {
 .translation-picker-caret {
   color: var(--text-muted);
 }
+
+/* A key passage of one of the reading's themes (owner, 2026-11-18): its verses in gold, however the
+   reading is reached, with a label where it begins naming the themes (VerseText's KeyTag). */
+[data-key-verse] {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.key-tag {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15em 0.45em;
+  margin-right: 0.35em;
+  padding: 0.05em 0.5em;
+  border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent);
+  border-radius: 999px;
+  font-size: 0.72em;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
+  text-indent: 0;
+  vertical-align: 0.1em;
+}
+
+.key-tag-label {
+  color: var(--text);
+}
+
+/* On the gold, text keeps its contrast in the strong text colour (verse numbers included). */
+.key-tag a,
+[data-key-verse] .verse-link {
+  color: var(--text-strong);
+  text-decoration: none;
+}
+
+.key-tag a {
+  font-weight: 600;
+}
+
+.key-tag a:hover,
+.key-tag a:focus-visible {
+  text-decoration: underline;
+}
+
+.key-tag a + a::before {
+  content: '·';
+  margin-right: 0.45em;
+  color: var(--text);
+}

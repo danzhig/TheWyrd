@@ -199,7 +199,9 @@ test.describe('themes', () => {
 
     const first = readings.first();
     const href = (await first.getAttribute('href'))!;
-    expect(href).toMatch(new RegExp(`^/read/[^/]+/\\?theme=${sub.id}(#v-\\d+-\\d+)?$`));
+    expect(href).toMatch(
+      new RegExp(`^/read/[^/]+/\\?theme=${sub.id}(&key=[\\w.-]+)?(#v-\\d+-\\d+)?$`),
+    );
     await first.dispatchEvent('click');
     const section = href.split('/')[2]!;
     await page.waitForURL(new RegExp(`/read/${section}/`));

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { VerseOut } from '@/lib/types';
+import type { KeyMarks, VerseOut } from '@/lib/types';
 
 const POETRY: Record<string, number> = { q1: 1, q2: 2, q3: 3 };
 
@@ -102,6 +102,8 @@ export interface VerseTextProps {
   numberOf?: (ref: string, i: number) => number;
   /** Verses where threads start (Phase 4): verse anchor (`v-4-25`) → number of connections. */
   threads?: Record<string, number>;
+  /** Key passages (owner, 2026-11-18): verses marked in gold, a label where each begins. */
+  keys?: KeyMarks;
 }
 
 /** A gold thread beside a verse with connections; opens its cards (Threads), or links to them. */
@@ -133,13 +135,34 @@ function ThreadGlyph({ verse, count }: { verse: VerseOut; count: number }) {
  * Renders WEBC verses as paragraphs and poetry lines. Verse numbers are WEBC's (PLAN D10). With
  * `dropCap`, an opening prose paragraph starts with a gold drop cap and its verse number is left out.
  */
+/**
+ * Where a key passage begins (owner, 2026-11-18): the themes it is key to, each a link to its
+ * constellation, so a reader who came along the path can see why these verses are marked.
+ */
+function KeyTag({ subs }: { subs: KeyMarks['starts'][string] }) {
+  return (
+    <span className="key-tag" data-pagefind-ignore="all" data-testid="key-tag">
+      <span className="key-tag-label">
+        {subs.some((s) => s.whole) ? 'Key passage' : 'Key verse'}
+      </span>
+      {subs.map((s) => (
+        <a key={s.id} href={`/?theme=${s.id}`} data-key-theme={s.id}>
+          {s.title}
+        </a>
+      ))}
+    </span>
+  );
+}
+
 export function VerseText({
   verses,
   dropCap = false,
   before = {},
   numberOf = (_r, i) => i + 1,
   threads = {},
+  keys,
 }: VerseTextProps) {
+  const marked = new Set(keys?.marked ?? []);
   const lines = toLines(verses, new Set(Object.keys(before)));
   const useDropCap =
     dropCap && lines[0] && !POETRY[lines[0].style] && !lines[0].parts[0]?.verse.heading;
@@ -172,9 +195,12 @@ export function VerseText({
         id={p.first ? verseAnchor(p.verse) : undefined}
         // The WEBC verse it belongs to (a Douay-Rheims verse's ref carries "~n" after it).
         data-verse={p.first ? p.verse.ref.replace(/~\d+$/, '') : undefined}
+        // In a key passage of one of its themes: marked in gold.
+        data-key-verse={marked.has(p.verse.ref.replace(/~\d+$/, '')) ? '' : undefined}
         // The chapter and verse as printed (the Douay-Rheims's own in its body), for the marker.
         data-cv={p.first && !p.verse.bare ? `${p.verse.c}:${p.verse.v}` : undefined}
       >
+        {p.first && keys?.starts[p.verse.ref] ? <KeyTag subs={keys.starts[p.verse.ref]!} /> : null}
         {p.first && !p.verse.bare && !(i === 0 && j === 0 && useDropCap) ? (
           <sup className="verse-num" data-pagefind-ignore="">
             {/* Tapping copies a link to this verse (ReaderShell); without JS it is a plain link. */}
