@@ -28,6 +28,8 @@ jobs:
   browsers:
     # M7: the QA sweep on Firefox, desktop Safari (WebKit) and an iPhone profile.
     runs-on: ubuntu-latest
+    # A stalled browser download once held this job for an hour (2026-11-18): fail fast instead.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -37,7 +39,21 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
-      - run: pnpm exec playwright install --with-deps firefox webkit
+      # The browsers are cached between runs (keyed on the lockfile, so a Playwright upgrade
+      # fetches new ones); each install attempt is cut off after 5 minutes and retried.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-firefox-webkit
+      - name: Install Firefox and WebKit
+        timeout-minutes: 16
+        run: |
+          for attempt in 1 2 3; do
+            timeout 300 pnpm exec playwright install --with-deps firefox webkit && exit 0
+            echo "Browser install attempt $attempt failed or stalled; retrying"
+          done
+          exit 1
       - run: pnpm exec playwright test --project=firefox --project=safari --project=iphone
         env:
           ALL_BROWSERS: '1'
