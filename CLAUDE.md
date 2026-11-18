@@ -127,7 +127,7 @@ Behind an HTTPS proxy (e.g. Claude Code cloud sessions), prefix network commands
 
 ## Phase 1 QA notes (M7)
 
-- `tests/e2e/qa.spec.ts` sweeps every page type (storage blocked, axe, reduced motion, the journey there and back). It also runs as `android` (Pixel 7) locally, and in CI's `browsers` job on Firefox, desktop Safari (WebKit) and an iPhone profile (`ALL_BROWSERS=1`). Real-device steps are in `docs/qa-checklist.md`.
+- `tests/e2e/qa.spec.ts` sweeps every page type (storage blocked, axe, reduced motion, the journey there and back). It also runs as `android` (Pixel 7) locally, and in CI's `browsers` job on Firefox, desktop Safari (WebKit) and an iPhone profile (`ALL_BROWSERS=1`). Real-device steps are in `docs/qa-checklist.md`. CI's `check` and `browsers` jobs run in Playwright's image (`mcr.microsoft.com/playwright:v<version>-noble`, which carries the browsers and their system libraries, so no download from Ubuntu's mirror can stall them; 2026-11-18); its version must match `@playwright/test` (`tests/unit/ci.test.ts`).
 - Decorative textures (clouds, grain) load only once `html[data-textures]` is set after the `load` event (`ThemeController`), at opacity 0; when decoded it becomes `data-textures="on"` and they fade in. They never delay first paint or become the LCP element.
 - Book map stations stay `visibility: hidden` until laid out (no layout shift); `<noscript>` shows them.
 - Navigation never waits on an animation that may not finish: `settle()` in `lib/transition.ts` ends each wait at the animation's end plus 300 ms.
