@@ -109,15 +109,16 @@ export function SectionBody({
       );
     } else {
       body.push(
-        <details key={`s${si}`} className={styles.fold} data-fold={seg.fold.from}>
-          <summary>
-            <span className="label">{seg.fold.status === 'skim' ? 'Skim' : 'Skipped'}</span>
+        // A passage the path skips or skims inside a reading: named, with its text always shown
+        // (owner, 2026-11-18: whoever opens a reading sees all of it).
+        <section key={`s${si}`} className={styles.fold} data-fold={seg.fold.from}>
+          <header className={styles.foldHead}>
+            <span className="label">
+              {seg.fold.status === 'skim' ? 'Skim on the path' : 'Skipped on the path'}
+            </span>
             <span className={styles.foldRange}>{prettyRange(seg.fold.webcRange)}</span>
             <span className={styles.foldLabel}>{seg.fold.label}</span>
-            <span className={styles.foldAction} aria-hidden="true">
-              Read it anyway
-            </span>
-          </summary>
+          </header>
           <VerseText
             verses={seg.verses}
             before={before}
@@ -125,7 +126,7 @@ export function SectionBody({
             threads={threads}
             keys={keys}
           />
-        </details>,
+        </section>,
       );
     }
   });
@@ -144,14 +145,15 @@ export function SectionBody({
         <NoteCard key={x.id} note={x} />
       ))}
       {section.status === 'skim' ? (
-        <div className={styles.statusCard} data-status="skim">
-          <p className="label">Skim</p>
-          <p>{section.summary}</p>
-          <details className={styles.wholeFold} data-fold={section.verses[0]?.ref}>
-            <summary>Open the text · {ref}</summary>
-            {text}
-          </details>
-        </div>
+        // A reading the path skims: the card says why, and the text follows, open (owner,
+        // 2026-11-18), as for a skipped one.
+        <>
+          <div className={styles.statusCard} data-status="skim">
+            <p className="label">Skim on the path · {ref}</p>
+            <p>{section.summary}</p>
+          </div>
+          <div data-fold={section.verses[0]?.ref}>{text}</div>
+        </>
       ) : section.status === 'skip' ? (
         // A passage the path skips is still a reading of its own (plan 1.1.0): the card says why
         // the path passes it by, and the text follows, open (owner, 2026-11-17).

@@ -702,7 +702,7 @@ Two themes: **Vault** (dark; default for the maps) and **Vellum** (light; defaul
 | Read | Normal text | Normal page |
 | Skim | A folded panel: "Skim · 46:8–27 · The names of Jacob's household" with a one-line summary and "Read it anyway" | A summary card with "Open the text"; the path counts it as read once seen |
 | Optional | — | A branch card offered at its place in the path ("Detour: Deuteronomy 28"), off by default, switchable in settings |
-| Skip | A card with "Skipped on the path · Genesis 5" and its summary, then the full text, open (owner, 2026-11-17; inner skipped passages inside a reading still fold) | Not a stop on the path; shown on the book map as a folded mark |
+| Skip | A card with "Skipped on the path · Genesis 5" and its summary, then the full text, open (owner, 2026-11-17); skimmed readings and the skipped or skimmed passages inside a reading are named and shown open too, with nothing to click (owner, 2026-11-18) | Not a stop on the path; shown on the book map as a folded mark |
 | Highlight | A thin gold bar in the margin and a "Slow down" note at the start | Same |
 | Content note | A small dismissible card before the section begins | Same |
 

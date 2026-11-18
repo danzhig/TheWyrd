@@ -97,7 +97,7 @@ test.describe('Translation', () => {
     );
     await open(page, '/read/dan-03/');
     await expect(page.getByTestId('drc-body')).toBeVisible();
-    const folds = await page.locator('[data-testid=drc-body] details[data-fold]').count();
+    const folds = await page.locator('[data-testid=drc-body] [data-fold]').count();
     expect(folds).toBeGreaterThan(0);
     // A link to a WEBC verse still lands on its place.
     const first = page.locator('[data-testid=drc-body] [id^="v-"]').first();
