@@ -7,7 +7,13 @@ on:
 
 jobs:
   check:
+    # Runs in Playwright's own image, which carries Chromium and its system libraries (as the
+    # browsers job below), so no package download from Ubuntu's mirror can stall it.
     runs-on: ubuntu-latest
+    timeout-minutes: 40
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+      options: --user 1001
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -21,7 +27,6 @@ jobs:
       - run: pnpm format:check
       - run: pnpm test
       - run: pnpm build
-      - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm e2e
       - run: pnpm lighthouse
 
