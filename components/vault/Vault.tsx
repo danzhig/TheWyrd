@@ -394,7 +394,13 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
   useLayoutEffect(() => {
     const view = viewRef.current;
     if (!view) return;
-    const minK = () => Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius);
+    // As far out as the whole ceiling, and always a little beyond the opening view (which on wide
+    // screens includes the outer names), so the wheel never jumps in from it (owner, 2026-11-18).
+    const minK = () =>
+      Math.min(
+        Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius),
+        baseRef.current.k * 0.85,
+      );
     baseRef.current = fit();
 
     // Start where the reader last left the ceiling (or fitted to the screen), placed at once,
@@ -468,7 +474,10 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
     const z = zoomRef.current;
     const view = viewRef.current;
     if (!z || !view) return;
-    const spiralMin = Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius);
+    const spiralMin = Math.min(
+      Math.min(view.clientWidth, view.clientHeight) / (2 * layout.radius),
+      baseRef.current.k * 0.85,
+    );
     // Themes may zoom out a little past the whole ring of constellations.
     const minK =
       themeView === 'spiral' ? spiralMin : Math.min(spiralMin, themesHome(themeLayout).k * 0.8);

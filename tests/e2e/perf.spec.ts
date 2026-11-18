@@ -32,7 +32,8 @@ test.describe('performance', () => {
 
   // PLAN §16 P6.3: the Spiral ⇄ Themes flight holds 60 fps both ways on the same profile: the
   // median frame. Owner, 2026-11-17: with a star for every reading in each of its sub-themes
-  // (1,406) drawn as round dots in flight, some frames may run long (under 30% here, on a 4×
+  // (1,406) drawn as round dots in flight, some frames may run long (under 35% here, raised from
+  // 30% by the owner on 2026-11-18 after the brighter sky and the zoomed-out Themes view; on a 4×
   // slowed CPU with a software canvas); the flight looked right to the owner on a real device.
   test('the Spiral ⇄ Themes flight holds 60 fps on a throttled mobile profile', async ({
     page,
@@ -89,7 +90,7 @@ test.describe('performance', () => {
     });
     expect(frames.length).toBeGreaterThan(100);
     expect(median).toBeLessThan(17.5);
-    expect(long / frames.length).toBeLessThan(0.3);
+    expect(long / frames.length).toBeLessThan(0.35);
   });
 
   // PLAN §12: Largest Contentful Paint under 2.5 s on a throttled mobile profile.
