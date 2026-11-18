@@ -13,7 +13,7 @@
 import { useRouter } from 'next/navigation';
 import { createPortal } from 'react-dom';
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { prefersReducedMotion } from '@/lib/camera';
+import { camera as memory, prefersReducedMotion } from '@/lib/camera';
 import {
   nearestConstellation,
   spreadLayout,
@@ -153,6 +153,7 @@ export function ThemesLabels({
         y: fits ? centre.y : pts[0]!.y + (a.h / 2 - 70) / SPREAD_K,
       };
       step.current = null;
+      memory.spread = sub;
       setShown(false);
       setOpen({ sub, at: positions });
       setLit(sub);
@@ -171,6 +172,7 @@ export function ThemesLabels({
     (back = false) => {
       if (!open) return;
       const { sub, at } = open;
+      memory.spread = null;
       setShown(false);
       setOpen(null);
       setLit(null);

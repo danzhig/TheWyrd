@@ -499,6 +499,10 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
   const switchView = useCallback(
     (to: 'spiral' | 'themes') => {
       const ms = prefersReducedMotion() ? 0 : 1100;
+      // Changing the general view never opens a sub-theme by itself (owner, 2026-11-18): a request
+      // left from before (back from a reading, the theme tree) is dropped.
+      setSpreadReq(null);
+      camera.spread = null;
       if (to === 'spiral') void flyTo(baseRef.current, ms);
       else setThreadsOn(false);
       void switchThemes(to, mode === 'list', (l) => {
@@ -541,9 +545,12 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
   useEffect(() => {
     if (!ready || themeReturn.current) return;
     themeReturn.current = true;
-    const sub = new URLSearchParams(window.location.search).get('theme');
+    const asked = new URLSearchParams(window.location.search).get('theme');
+    // Back in Themes with a sub-theme's table open when the Vault was left (the browser's Back,
+    // or any way home): open it again.
+    const sub = asked ?? (themeView === 'themes' ? camera.spread : null);
     if (!sub) return;
-    window.history.replaceState(window.history.state, '', '/');
+    if (asked) window.history.replaceState(window.history.state, '', '/');
     void (async () => {
       if (themeView !== 'themes') await switchThemes('themes');
       setSpreadReq((r) => ({ sub, n: (r?.n ?? 0) + 1 }));
