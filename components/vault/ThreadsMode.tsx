@@ -20,7 +20,6 @@ import type { Point } from './layout';
 import { ALL_PAIRS, pairLabel, type PairId } from '@/lib/corpora';
 import {
   arcsFor,
-  directedPath,
   bookThreads,
   directionSummary,
   nearestArc,
@@ -280,31 +279,11 @@ export function ThreadsMode({
               ref={svgRef}
               data-testid="thread-arcs"
             >
-              <defs>
-                {/* The chevron on a directed arc, sized by its stroke, pointing along it. */}
-                <marker
-                  id="thread-dir"
-                  viewBox="0 0 10 10"
-                  refX="5"
-                  refY="5"
-                  markerWidth="4"
-                  markerHeight="4"
-                  orient="auto"
-                  className={s.chevron}
-                >
-                  <path d="M2 1.5 7 5 2 8.5" />
-                </marker>
-              </defs>
               {arcs.map((a) => (
                 <path
                   key={a.key}
-                  // An arc whose threads all run one way widens toward the book that takes the
-                  // other up (threads plan §4); otherwise an even line.
-                  // An arc whose threads all run one way carries a chevron at its middle
-                  // pointing to the book that takes the other up (threads plan §4).
-                  d={a.toward && a.curve ? directedPath(a.curve, a.toward === a.b) : a.d}
+                  d={a.d}
                   pathLength={1}
-                  markerMid={a.toward && a.curve ? 'url(#thread-dir)' : undefined}
                   className={[
                     s.line,
                     selected === a.key || (book && (a.a === book || a.b === book))
@@ -316,7 +295,6 @@ export function ThreadsMode({
                   data-arc={a.key}
                   data-count={a.connections.length}
                   data-pair={a.pair}
-                  data-toward={a.toward ?? undefined}
                 />
               ))}
             </svg>,
