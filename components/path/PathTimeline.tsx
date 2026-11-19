@@ -21,7 +21,14 @@ function useProgressKey(): string {
 }
 
 /** The path as a vertical timeline: books as headings, sections and bridges as rows. */
-export function PathTimeline({ groups }: { groups: TimelineGroup[] }) {
+export function PathTimeline({
+  groups,
+  threads = {},
+}: {
+  groups: TimelineGroup[];
+  /** Threads touching each section (threads plan TD6). */
+  threads?: Record<string, number>;
+}) {
   const [doneList, current] = useProgressKey().split('|');
   const done = new Set((doneList ?? '').split(',').filter(Boolean));
   return (
@@ -58,6 +65,9 @@ export function PathTimeline({ groups }: { groups: TimelineGroup[] }) {
                         {r.range} · {r.minutes} min
                         {r.status === 'skim' ? ' · skim' : ''}
                         {r.detour ? ' · optional detour' : ''}
+                        {threads[r.id]
+                          ? ` · ${threads[r.id]} ${threads[r.id] === 1 ? 'thread' : 'threads'}`
+                          : ''}
                         {done.has(r.id) ? ' · read' : ''}
                       </span>
                     </Link>

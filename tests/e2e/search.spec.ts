@@ -74,6 +74,10 @@ test.describe('search', () => {
     const thread = extras.locator('[data-extra-thread="gen11"]');
     await expect(thread).toBeVisible();
     await expect(thread).toHaveAttribute('href', /\?thread=gen11#v-\d+-\d+$/);
+    // Its direction: the older passage, the verb, the later one.
+    await expect(thread.locator('[data-direction]')).toHaveText(
+      /^Genesis 19:15–26 alluded to in → Luke 17:28–32$/,
+    );
     await page.goto('/search/?q=Forgiveness');
     await expect(page.locator('[data-extra-theme="mercy-forgiveness"]')).toHaveAttribute(
       'href',

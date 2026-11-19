@@ -160,3 +160,16 @@
 .extra:focus-visible {
   border-color: var(--accent);
 }
+
+/* A thread's direction (threads plan TD6): the older passage, how the later one takes it up, the
+   later passage. The arrow is dotted (⋯) when no use is claimed. */
+.direction {
+  display: block;
+  font-size: 0.9em;
+  color: var(--text);
+}
+
+.verb {
+  font-style: italic;
+  color: var(--text-muted);
+}

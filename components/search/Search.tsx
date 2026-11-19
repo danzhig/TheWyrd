@@ -51,10 +51,15 @@ function loadExtras() {
     fetch(u)
       .then((r) => (r.ok ? (r.json() as Promise<T>) : null))
       .catch(() => null);
-  extrasData ??= Promise.all([
-    get<ThemesFile>('/data/themes.json'),
-    get<PublicConnections>('/data/connections.json'),
-  ]);
+  // Every published file of threads (threads plan §6): approved only, loaded only here.
+  const threads = Promise.all(
+    ['connections.json', 'connections-within-ot.json', 'connections-within-nt.json'].map((f) =>
+      get<PublicConnections>(`/data/${f}`),
+    ),
+  ).then((files) =>
+    files[0] ? { connections: files.flatMap((f) => f?.connections ?? []) } : null,
+  );
+  extrasData ??= Promise.all([get<ThemesFile>('/data/themes.json'), threads]);
   return extrasData;
 }
 
@@ -271,8 +276,10 @@ export function Search() {
                   <li key={t.id}>
                     <Link href={t.href} className={styles.extra} data-extra-thread={t.id}>
                       <span className={styles.title}>{t.label}</span>
-                      <span className={styles.where}>
-                        {t.type} · {t.ends}
+                      <span className={styles.where}>{t.type}</span>
+                      <span className={styles.direction} data-direction data-uses={t.uses}>
+                        {t.older} <span className={styles.verb}>{t.verb}</span>{' '}
+                        <span aria-hidden="true">{t.uses ? '→' : '⋯'}</span> {t.later}
                       </span>
                     </Link>
                   </li>

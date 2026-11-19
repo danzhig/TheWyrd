@@ -33,6 +33,16 @@ test.describe('the path and sources pages', () => {
     await page.waitForURL(/\/read\/exod-03\/$/);
   });
 
+  test("the timeline counts each section's threads", async ({ page }) => {
+    // Luke 1 (Two Annunciations) is the busiest reading on the path for threads.
+    const data = JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as {
+      connections: { ends: { sectionId: string }[] }[];
+    };
+    const n = data.connections.filter((c) => c.ends.some((e) => e.sectionId === 'luke-02')).length;
+    await page.goto('/path/');
+    await expect(page.locator('[data-row="luke-02"]')).toContainText(`${n} threads`);
+  });
+
   test('every pinned source appears on /sources with its license', async ({ page }) => {
     await page.goto('/sources/');
     for (const s of pinned) {
