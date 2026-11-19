@@ -63,7 +63,10 @@ export function displayRef(ref: string, bookName: string): string {
   const [, c1, v1] = a.split('.');
   if (!v1) return `${bookName} ${c1}`;
   if (!b) return `${bookName} ${c1}:${v1}`;
-  const [, c2, v2] = b.split('.');
+  const [b2, c2, v2] = b.split('.');
+  // A range into another book ("Gen.12.1-1Kgs.8.21"): "Genesis 12:1 – 1 Kings 8:21".
+  if (b2 !== a.split('.')[0])
+    return `${bookName} ${c1}:${v1} – ${CANON_BY_ID.get(b2!)?.name ?? b2} ${c2}:${v2}`;
   return c2 === c1 ? `${bookName} ${c1}:${v1}–${v2}` : `${bookName} ${c1}:${v1}–${c2}:${v2}`;
 }
 

@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa01` Across the brook Kidron
 
-- **2Sam.15.23 → John.18.1** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `02fa524fa9b8c20e`
+- **2Sam.15.23 → John.18.1** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `787e7fa64fa492b9`
 - From: Absalom's Revolt and David's Return (`2sam-08`)
-- To: John 12–21 (`john-x2`)
+- To: Arrest and Trial (`john-x208`)
 
-> Fleeing from Absalom, David crosses the brook Kidron toward the wilderness while all the country weeps. John says that after his last discourse Jesus went out with his disciples across the brook Kidron to a garden, with the Septuagint's word for a winter brook, found nowhere else in the New Testament (below).
+> John 18:1 echoes 2 Samuel 15:23: Jesus crosses the brook Kidron on the night of his arrest, as David crossed it fleeing Absalom. Fleeing from Absalom, David crosses the brook Kidron toward the wilderness while all the country weeps. John says that after his last discourse Jesus went out with his disciples across the brook Kidron to a garden, with the Septuagint's word for a winter brook, found nowhere else in the New Testament (below).
 
 - `OpenBibleXref:L273272` John.18.1 → 2Sam.15.23, 7 votes
 - `OpenBibleXref:L64971` 2Sam.15.23 → John.18.1, 3 votes
@@ -23,11 +23,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa02` He went away and hanged himself
 
-- **2Sam.17.23 → Matt.27.5** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `053a21cb788822e0`
+- **2Sam.17.23 → Matt.27.5** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `212a63094ac6d11c`
 - From: Absalom's Revolt and David's Return (`2sam-08`)
 - To: The Trial and the Crucifixion (`matt-17`, library)
 
-> When his counsel is not followed, Ahithophel, who had betrayed David to join Absalom, goes home and hangs himself. Matthew says Judas threw down the silver and went away and hanged himself, using the Septuagint's verb from Ahithophel's death, found nowhere else in the New Testament (below).
+> Matthew 27:5 echoes 2 Samuel 17:23: Judas hangs himself, as Ahithophel did after betraying David. When his counsel is not followed, Ahithophel, who had betrayed David to join Absalom, goes home and hangs himself. Matthew says Judas threw down the silver and went away and hanged himself, using the Septuagint's verb from Ahithophel's death, found nowhere else in the New Testament (below).
 
 - `OpenBibleXref:L65464` 2Sam.17.23 → Matt.27.5, 9 votes
 - `OpenBibleXref:L243291` Matt.27.5 → 2Sam.17.23, 3 votes
@@ -38,11 +38,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa03` Praise among the nations
 
-- **2Sam.22.50 → Rom.15.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a0303bd0bc7503a5`
+- **2Sam.22.50 → Rom.15.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `08b8fcb9dc48c27d`
 - From: Last Things: Famine, Song, Heroes, Census (`2sam-10`)
 - To: The Weak and the Strong; Paul’s Plans and Greetings (`rom-07`, library)
 
-> David's song of deliverance ends with his vow to give thanks to the LORD among the nations and sing praises to his name. Paul quotes it as written to show that the Gentiles too would glorify God for his mercy, in the Septuagint's words (below).
+> Romans 15:9 quotes 2 Samuel 22:50: I will give thanks to you among the nations, applied to the nations glorifying God. David's song of deliverance ends with his vow to give thanks to the LORD among the nations and sing praises to his name. Paul quotes it as written to show that the Gentiles too would glorify God for his mercy, in the Septuagint's words (below).
 
 - `OpenBibleXref:L295032` Rom.15.9 → 2Sam.22.50, 34 votes
 - `OpenBibleXref:L66857` 2Sam.22.50 → Rom.15.9, 9 votes
@@ -55,11 +55,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa04` I will be his father
 
-- **2Sam.7.14 → Heb.1.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c9555da7b74a0c13`
+- **2Sam.7.14 → Heb.1.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `735aaf2ec5ebaa15`
 - From: The Promise to David (`2sam-04`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
-> In the promise to David, God says of David's offspring that he will be his father and the heir will be his son. Hebrews quotes the words, with a line from Psalm 2, to show that God speaks of the Son as he never spoke of any angel.
+> Hebrews 1:5 quotes 2 Samuel 7:14: I will be his father and he will be my son, said of the Son above the angels. In the promise to David, God says of David's offspring that he will be his father and the heir will be his son. Hebrews quotes the words, with a line from Psalm 2, to show that God speaks of the Son as he never spoke of any angel.
 
 - `OpenBibleXref:L324300` Heb.1.5 → 2Sam.7.14, 25 votes
 - `OpenBibleXref:L63471` 2Sam.7.14 → Heb.1.5, 18 votes
@@ -72,11 +72,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa05` One of his line on his throne
 
-- **2Sam.7.12-2Sam.7.13 → Acts.2.30** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `b9c2a8d0650808d0`
+- **2Sam.7.12-2Sam.7.13 → Acts.2.30** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ca9b5d49ddf91179`
 - From: The Promise to David (`2sam-04`)
 - To: Ascension and Pentecost (`acts-01`)
 
-> God promises to raise up David's offspring after him and establish the throne of his kingdom forever. At Pentecost Peter says David, as a prophet, knew God had sworn to set one of his descendants on his throne, and applies it to the risen Christ; the word for throne is the Septuagint's (below).
+> Acts 2:30 recalls 2 Samuel 7:12–13: Peter says David knew God had sworn to set one of his offspring on his throne. God promises to raise up David's offspring after him and establish the throne of his kingdom forever. At Pentecost Peter says David, as a prophet, knew God had sworn to set one of his descendants on his throne, and applies it to the risen Christ; the word for throne is the Septuagint's (below).
 
 - `OpenBibleXref:L63428` 2Sam.7.12 → Acts.2.30, 8 votes
 - LXX 2Kgdms.7.13 word 11: θρόνον (LXX 010-2Kgdms)

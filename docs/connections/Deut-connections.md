@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu01` Not by bread alone
 
-- **Deut.8.3 → Luke.4.4** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `4a2fa82a014ebfb6`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.8.3 → Luke.4.4** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `83d3cf0371187d14`
+- From: Remember the Wilderness (`deut-x303`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> Moses reminds Israel that God fed them with manna in the wilderness to teach them that a person does not live by bread alone. Tempted in the wilderness to turn a stone into bread, Jesus answers with this verse as what is written.
+> Luke 4:4 quotes Deuteronomy 8:3: a person does not live by bread alone, Jesus' first answer to the tempter. Moses reminds Israel that God fed them with manna in the wilderness to teach them that a person does not live by bread alone. Tempted in the wilderness to turn a stone into bread, Jesus answers with this verse as what is written.
 
 - `OpenBibleXref:L252391` Luke.4.4 → Deut.8.3, 64 votes
 - `OpenBibleXref:L40208` Deut.8.3 → Luke.4.4, 47 votes
@@ -21,11 +21,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu02` Worship the Lord your God
 
-- **Deut.6.13 → Luke.4.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `4d8c199ffd6679be`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.6.13 → Luke.4.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9513531ab98439fc`
+- From: When You Enter the Land (`deut-x301`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> Deuteronomy tells Israel to fear the LORD and serve him. When the devil offers Jesus the kingdoms of the world in return for worship, Jesus answers with this command as what is written; the verb for serving is the Septuagint's (below).
+> Luke 4:8 quotes Deuteronomy 6:13: worship and serve the Lord your God alone, Jesus' answer to the tempter. Deuteronomy tells Israel to fear the LORD and serve him. When the devil offers Jesus the kingdoms of the world in return for worship, Jesus answers with this command as what is written; the verb for serving is the Septuagint's (below).
 
 - `OpenBibleXref:L252444` Luke.4.8 → Deut.6.13, 32 votes
 - `OpenBibleXref:L39702` Deut.6.13 → Luke.4.8, 14 votes
@@ -36,11 +36,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu03` Do not put the Lord your God to the test
 
-- **Deut.6.16 → Luke.4.12** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `0afa275af87f2038`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.6.16 → Luke.4.12** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c64bf0dcbb81132d`
+- From: When You Enter the Land (`deut-x301`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> Moses warns Israel not to test the LORD as they did at Massah. When the devil sets Jesus on the pinnacle of the temple and invites him to throw himself down, Jesus answers with this command, in the Septuagint's verb for testing (below).
+> Luke 4:12 quotes Deuteronomy 6:16: do not test the Lord your God, Jesus' answer to the tempter. Moses warns Israel not to test the LORD as they did at Massah. When the devil sets Jesus on the pinnacle of the temple and invites him to throw himself down, Jesus answers with this command, in the Septuagint's verb for testing (below).
 
 - `OpenBibleXref:L252463` Luke.4.12 → Deut.6.16, 31 votes
 - `OpenBibleXref:L39738` Deut.6.16 → Luke.4.12, 27 votes
@@ -51,11 +51,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu04` A prophet like me
 
-- **Deut.18.15-Deut.18.19 → Acts.3.22-Acts.3.23** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `21e6545f307189a1`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.18.15-Deut.18.19 → Acts.3.22-Acts.3.23** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5bb2ae16b0f39b94`
+- From: Priests and a Prophet (`deut-x312`)
 - To: The Jerusalem Church (`acts-02`)
 
-> Moses promises that the LORD will raise up a prophet like him from among the people, and that they must listen to him. Peter quotes the promise to the crowd at the temple as Moses' own words and applies it to Jesus.
+> Acts 3:22–23 quotes Deuteronomy 18:15–19: Peter applies Moses' promise of a prophet like him to Jesus. Moses promises that the LORD will raise up a prophet like him from among the people, and that they must listen to him. Peter quotes the promise to the crowd at the temple as Moses' own words and applies it to Jesus.
 
 - `OpenBibleXref:L276324` Acts.3.22 → Deut.18.15-Deut.18.19, 70 votes
 - `OpenBibleXref:L42572` Deut.18.15 → Acts.3.22-Acts.3.23, 41 votes
@@ -69,11 +69,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu05` Stephen recalls the promised prophet
 
-- **Deut.18.15 → Acts.7.37** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `7cc441de0caec56e`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.18.15 → Acts.7.37** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1005d11e987f17db`
+- From: Priests and a Prophet (`deut-x312`)
 - To: Stephen (`acts-03`)
 
-> In his speech to the council Stephen recalls that the same Moses who led the people out of Egypt told them God would raise up a prophet like him. He quotes the promise from Deuteronomy as part of his account of how the people rejected those God sent.
+> Acts 7:37 quotes Deuteronomy 18:15: Stephen recalls Moses' promise of a prophet like him. In his speech to the council Stephen recalls that the same Moses who led the people out of Egypt told them God would raise up a prophet like him. He quotes the promise from Deuteronomy as part of his account of how the people rejected those God sent.
 
 - `OpenBibleXref:L42575` Deut.18.15 → Acts.7.37, 37 votes
 - `OpenBibleXref:L278131` Acts.7.37 → Deut.18.15-Deut.18.19, 22 votes
@@ -84,11 +84,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu06` Do not muzzle the ox
 
-- **Deut.25.4 → 1Cor.9.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `8a7ad377df95ecc2`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.25.4 → 1Cor.9.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `df9edccbc7db7793`
+- From: Justice and First Fruits (`deut-x316`)
 - To: Food Offered to Idols; Paul’s Freedom (`1cor-03`, library)
 
-> Among the laws of Deuteronomy is that an ox treading grain must not be muzzled. Paul quotes it as written in the law of Moses to argue that those who work for the gospel may live by it, and asks whether God's concern is really for oxen.
+> 1 Corinthians 9:9 quotes Deuteronomy 25:4: do not muzzle the ox treading grain, applied to those who preach the gospel. Among the laws of Deuteronomy is that an ox treading grain must not be muzzled. Paul quotes it as written in the law of Moses to argue that those who work for the gospel may live by it, and asks whether God's concern is really for oxen.
 
 - `OpenBibleXref:L298529` 1Cor.9.9 → Deut.25.4, 24 votes
 - `OpenBibleXref:L43667` Deut.25.4 → 1Cor.9.9-1Cor.9.10, 11 votes
@@ -104,11 +104,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu07` Cursed is everyone who does not keep the law
 
-- **Deut.27.26 → Gal.3.10** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `0eefbb097434451f`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.27.26 → Gal.3.10** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `029aea4d93dc091b`
+- From: Stones on Mount Ebal (`deut-x317`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
-> The curses spoken from Mount Ebal end with a curse on whoever does not uphold the words of the law by doing them. Paul quotes it as written to argue that those who rely on the works of the law are under a curse; the words for cursed and for abiding are the Septuagint's (below).
+> Galatians 3:10 quotes Deuteronomy 27:26: cursed is everyone who does not keep all the words of the law. The curses spoken from Mount Ebal end with a curse on whoever does not uphold the words of the law by doing them. Paul quotes it as written to argue that those who rely on the works of the law are under a curse; the words for cursed and for abiding are the Septuagint's (below).
 
 - `OpenBibleXref:L306633` Gal.3.10 → Deut.27.26, 98 votes
 - `OpenBibleXref:L44218` Deut.27.26 → Gal.3.10, 12 votes
@@ -121,11 +121,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu08` The word is near you
 
-- **Deut.30.11-Deut.30.14 → Rom.10.6-Rom.10.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `325c6347883338b6`
+- **Deut.30.11-Deut.30.14 → Rom.10.6-Rom.10.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a4f524c7b3cd519a`
 - From: The Covenant in Moab (`deut-x4`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
-> Moses tells Israel that the commandment is not in heaven or beyond the sea, but very near, in their mouth and in their heart. Paul quotes these lines, interpreting the going up to heaven and down to the abyss as about Christ, and calls the near word the word of faith.
+> Romans 10:6–8 quotes Deuteronomy 30:11–14: the word is near, in your mouth and heart, applied to the word of faith. Moses tells Israel that the commandment is not in heaven or beyond the sea, but very near, in their mouth and in their heart. Paul quotes these lines, interpreting the going up to heaven and down to the abyss as about Christ, and calls the near word the word of faith.
 
 - `OpenBibleXref:L293013` Rom.10.8 → Deut.30.14, 53 votes
 - `OpenBibleXref:L292987` Rom.10.6 → Deut.30.11-Deut.30.14, 28 votes
@@ -139,11 +139,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu09` Provoked to jealousy by a no-people
 
-- **Deut.32.21 → Rom.10.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a5af2bf762da75d2`
+- **Deut.32.21 → Rom.10.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9a420df81787b0ed`
 - From: The Song of Moses (`deut-04`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
-> In the Song of Moses God says that as Israel provoked him with what is not God, he will provoke them with those who are not a people. Paul quotes it, introducing it with First Moses says, and uses the Septuagint's two verbs (below).
+> Romans 10:19 quotes Deuteronomy 32:21: God will provoke Israel to jealousy by those who are not a people. In the Song of Moses God says that as Israel provoked him with what is not God, he will provoke them with those who are not a people. Paul quotes it, introducing it with First Moses says, and uses the Septuagint's two verbs (below).
 
 - `OpenBibleXref:L293200` Rom.10.19 → Deut.32.21, 38 votes
 - `OpenBibleXref:L46122` Deut.32.21 → Rom.10.19, 36 votes
@@ -156,11 +156,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu10` Vengeance is mine
 
-- **Deut.32.35 → Rom.12.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `143c834faf80f759`
+- **Deut.32.35 → Rom.12.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `aca830596427183f`
 - From: The Song of Moses (`deut-04`)
 - To: Life in the Body; Love and the Authorities (`rom-06`, library)
 
-> In the Song of Moses God declares that vengeance and recompense are his. Paul quotes the saying as written to tell the Romans not to avenge themselves but to leave room for God's wrath.
+> Romans 12:19 quotes Deuteronomy 32:35: vengeance is God's; he will repay. In the Song of Moses God declares that vengeance and recompense are his. Paul quotes the saying as written to tell the Romans not to avenge themselves but to leave room for God's wrath.
 
 - `OpenBibleXref:L294318` Rom.12.19 → Deut.32.35, 89 votes
 - `OpenBibleXref:L46308` Deut.32.35 → Rom.12.19, 19 votes
@@ -169,11 +169,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu11` I will never leave you
 
-- **Deut.31.6-Deut.31.8 → Heb.13.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `ae972023097cd878`
+- **Deut.31.6-Deut.31.8 → Heb.13.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `277222b25655d682`
 - From: Joshua Commissioned (`deut-03`)
 - To: Endurance and Discipline; Final Exhortations (`heb-05`, library)
 
-> As Moses hands over to Joshua, he tells Israel and Joshua that the LORD will not fail them or forsake them. Hebrews quotes the promise to urge contentment instead of love of money, with the Septuagint's verb for leaving (below).
+> Hebrews 13:5 quotes Deuteronomy 31:6–8: God will never leave you nor forsake you. As Moses hands over to Joshua, he tells Israel and Joshua that the LORD will not fail them or forsake them. Hebrews quotes the promise to urge contentment instead of love of money, with the Septuagint's verb for leaving (below).
 
 - `OpenBibleXref:L329273` Heb.13.5 → Deut.31.8, 205 votes
 - `OpenBibleXref:L329277` Heb.13.5 → Deut.31.6, 140 votes
@@ -185,11 +185,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu12` Remove the evil from among you
 
-- **Deut.17.7 → 1Cor.5.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `973d3b020c48ea3c`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.17.7 → 1Cor.5.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1d4cec002fa9c72d`
+- From: Courts and the King (`deut-x311`)
 - To: Immorality, Lawsuits and Marriage (`1cor-02`, library)
 
-> Deuteronomy repeats the formula that Israel must remove the evil from among them. Paul closes his instruction about a case of immorality in Corinth with these words, and his verb, found nowhere else in the New Testament, is the Septuagint's (below).
+> 1 Corinthians 5:13 quotes Deuteronomy 17:7: remove the evil person from among you. Deuteronomy repeats the formula that Israel must remove the evil from among them. Paul closes his instruction about a case of immorality in Corinth with these words, and his verb, found nowhere else in the New Testament, is the Septuagint's (below).
 
 - `OpenBibleXref:L297573` 1Cor.5.13 → Deut.17.7, 21 votes
 - `OpenBibleXref:L42290` Deut.17.7 → 1Cor.5.13, 5 votes
@@ -200,11 +200,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu13` A consuming fire
 
-- **Deut.4.24 → Heb.12.29** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c462a23a56dbe086`
-- From: Moses Recounts the Journey (`deut-x1`)
+- **Deut.4.24 → Heb.12.29** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `802f90ccf3cc9094`
+- From: Do Not Forget (`deut-x103`)
 - To: Endurance and Discipline; Final Exhortations (`heb-05`, library)
 
-> Moses warns Israel not to make images, because the LORD their God is a devouring fire, a jealous God. Hebrews ends its warning with the same words, our God is a consuming fire, and its participle, found nowhere else in the New Testament, is the Septuagint's (below).
+> Hebrews 12:29 quotes Deuteronomy 4:24: our God is a consuming fire. Moses warns Israel not to make images, because the LORD their God is a devouring fire, a jealous God. Hebrews ends its warning with the same words, our God is a consuming fire, and its participle, found nowhere else in the New Testament, is the Septuagint's (below).
 
 - `OpenBibleXref:L329171` Heb.12.29 → Deut.4.24, 31 votes
 - `OpenBibleXref:L38982` Deut.4.24 → Heb.12.29, 16 votes
@@ -215,11 +215,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu14` The commandments summed up
 
-- **Deut.5.16-Deut.5.21 → Rom.13.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `07711fbda4ea32c5`
-- From: Moses Recounts the Journey (`deut-x1`)
+- **Deut.5.16-Deut.5.21 → Rom.13.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `65db3a75b8d6ceb6`
+- From: The Ten Commandments Repeated (`deut-x104`)
 - To: Life in the Body; Love and the Authorities (`rom-06`, library)
 
-> Deuteronomy repeats the Ten Commandments, including those against adultery, murder, theft, false witness and coveting. Paul lists these commandments and says they are summed up in loving one's neighbour as oneself; his verbs are the Septuagint's (below).
+> Romans 13:9 quotes Deuteronomy 5:16–21: the commandments, summed up in loving one's neighbour as oneself. Deuteronomy repeats the Ten Commandments, including those against adultery, murder, theft, false witness and coveting. Paul lists these commandments and says they are summed up in loving one's neighbour as oneself; his verbs are the Septuagint's (below).
 
 - `OpenBibleXref:L294462` Rom.13.9 → Deut.5.16-Deut.5.21, 51 votes
 - `OpenBibleXref:L39439` Deut.5.21 → Rom.13.9, 32 votes
@@ -238,11 +238,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu15` Cursed is anyone hanged on a tree
 
-- **Deut.21.22-Deut.21.23 → Gal.3.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `caf5fd96dc769f03`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.21.22-Deut.21.23 → Gal.3.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `d4f9cd17885da9cd`
+- From: Family and Neighbour (`deut-x314`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
-> Deuteronomy rules that the body of an executed man hung on a tree must not remain overnight, for he who is hanged is accursed of God. Paul quotes it to say that Christ redeemed us from the curse of the law by becoming a curse for us.
+> Galatians 3:13 quotes Deuteronomy 21:22–23: cursed is everyone hanged on a tree, said of Christ who became a curse for us. Deuteronomy rules that the body of an executed man hung on a tree must not remain overnight, for he who is hanged is accursed of God. Paul quotes it to say that Christ redeemed us from the curse of the law by becoming a curse for us.
 
 - `OpenBibleXref:L306668` Gal.3.13 → Deut.21.23, 74 votes
 - `OpenBibleXref:L43110` Deut.21.23 → Gal.3.13, 21 votes
@@ -251,11 +251,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu16` Two or three witnesses
 
-- **Deut.19.15 → 2Cor.13.1** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `fc992111c8a80efb`
-- From: Sermons and the Law Code (`deut-x3`)
+- **Deut.19.15 → 2Cor.13.1** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `e3139364dfa35e93`
+- From: Refuge, Witnesses and War (`deut-x313`)
 - To: Paul Defends His Apostleship (`2cor-05`, library)
 
-> Deuteronomy requires that a matter be established by the mouth of two or three witnesses. Paul quotes the rule as he prepares for his third visit to Corinth; the word for witnesses is the Septuagint's (below).
+> 2 Corinthians 13:1 quotes Deuteronomy 19:15: every matter is established by two or three witnesses. Deuteronomy requires that a matter be established by the mouth of two or three witnesses. Paul quotes the rule as he prepares for his third visit to Corinth; the word for witnesses is the Septuagint's (below).
 
 - `OpenBibleXref:L305461` 2Cor.13.1 → Deut.19.15, 17 votes
 - `OpenBibleXref:L42723` Deut.19.15 → 2Cor.13.1, 11 votes

@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `est01` Up to half my kingdom
 
-- **Esth.5.3 → Mark.6.22-Mark.6.23** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `e11afad229cf65a1`
+- **Esth.5.3 → Mark.6.22-Mark.6.23** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `ecae15a5496c9f42`
 - From: Esther Before the King (`esth-06`)
 - To: Rejected at Nazareth; the Twelve Sent; Five Thousand Fed (`mark-05`, library)
 
-> When Esther comes before the king unbidden, he asks her request and promises it even to half his kingdom. When Herodias' daughter dances, Herod swears to give her whatever she asks, up to half his kingdom; the words are the Septuagint's in Esther 5:3 (below).
+> Mark 6:22–23 echoes Esther 5:3: Herod swears to give the dancing girl anything, up to half his kingdom, in the Septuagint's words for the king's promise to Esther. When Esther comes before the king unbidden, he asks her request and promises it even to half his kingdom. When Herodias' daughter dances, Herod swears to give her whatever she asks, up to half his kingdom; the words are the Septuagint's in Esther 5:3 (below).
 
 - `OpenBibleXref:L98697` Esth.5.3 → Mark.6.23, 15 votes
 - `OpenBibleXref:L246033` Mark.6.23 → Esth.5.3, 9 votes

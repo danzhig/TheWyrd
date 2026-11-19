@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon01` Three days in the belly of the fish
 
-- **Jonah.1.17 → Matt.12.40** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5769e10b1018e1b5`
+- **Jonah.1.17 → Matt.12.40** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `bba74469ab95101e`
 - From: In the Belly of the Fish (`jonah-02`)
 - To: John’s Question; Sabbath Controversies (`matt-07`, library)
 
-> The LORD prepares a great fish to swallow Jonah, and he is in its belly three days and three nights. Jesus makes Jonah's three days and nights inside the fish the sign of the Son of Man's own three days and nights in the heart of the earth.
+> Matthew 12:40 quotes Jonah 1:17: Jonah's three days and nights inside the fish, the sign of the Son of Man's three days in the earth. The LORD prepares a great fish to swallow Jonah, and he is in its belly three days and three nights. Jesus makes Jonah's three days and nights inside the fish the sign of the Son of Man's own three days and nights in the heart of the earth.
 
 - `OpenBibleXref:L219962` Jonah.1.17 → Matt.12.40, 23 votes
 - `OpenBibleXref:L235984` Matt.12.40 → Jonah.1.17, 22 votes
@@ -21,11 +21,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon02` Throwing the cargo overboard
 
-- **Jonah.1.4-Jonah.1.5 → Acts.27.18-Acts.27.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `a17319f87adb4d29`
+- **Jonah.1.4-Jonah.1.5 → Acts.27.18-Acts.27.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `aae3b846538ceb0f`
 - From: Flight and Storm (`jonah-01`)
 - To: Shipwreck and Rome (`acts-14`)
 
-> When the LORD sends a great storm, the sailors on Jonah's ship throw the cargo into the sea to lighten the ship. On Paul's voyage to Rome the crew, labouring in the storm, begin to throw things overboard, and Luke's word for this, found nowhere else in the New Testament, is the Septuagint's in Jonah 1:5 (below).
+> Acts 27:18–19 echoes Jonah 1:4–5: in the storm Paul's crew throw things overboard, with the Septuagint's word for Jonah's sailors lightening the ship. When the LORD sends a great storm, the sailors on Jonah's ship throw the cargo into the sea to lighten the ship. On Paul's voyage to Rome the crew, labouring in the storm, begin to throw things overboard, and Luke's word for this, found nowhere else in the New Testament, is the Septuagint's in Jonah 1:5 (below).
 
 - `OpenBibleXref:L219834` Jonah.1.5 → Acts.27.18-Acts.27.19, 7 votes
 - `OpenBibleXref:L287488` Acts.27.18 → Jonah.1.5, 6 votes
@@ -38,11 +38,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon03` Repentance in sackcloth and ashes
 
-- **Jonah.3.5-Jonah.3.8 → Luke.10.13** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `9712eecb6319be95`
+- **Jonah.3.5-Jonah.3.8 → Luke.10.13** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `f6b55df458bdbba8`
 - From: Nineveh Repents (`jonah-03`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
-> When Jonah preaches, the people of Nineveh fast and put on sackcloth, and their king sits in ashes. Jesus says that if his mighty works had been done in Tyre and Sidon they would long ago have repented in sackcloth and ashes; the two words are the Septuagint's in Jonah 3 (below).
+> Luke 10:13 echoes Jonah 3:5–8: Tyre and Sidon would have repented in sackcloth and ashes, as Nineveh did at Jonah's preaching. When Jonah preaches, the people of Nineveh fast and put on sackcloth, and their king sits in ashes. Jesus says that if his mighty works had been done in Tyre and Sidon they would long ago have repented in sackcloth and ashes; the two words are the Septuagint's in Jonah 3 (below).
 
 - `OpenBibleXref:L220146` Jonah.3.6 → Luke.10.13, 4 votes
 - LXX Jonah.3.6 word 29: σποδοῦ (LXX 037-Jonah)
@@ -55,11 +55,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon04` Asleep in the storm
 
-- **Jonah.1.4-Jonah.1.6 → Luke.8.22-Luke.8.25** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `07b113bcce8ba21d`
+- **Jonah.1.4-Jonah.1.6 → Luke.8.22-Luke.8.25** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `00186c49f2f34a86`
 - From: Flight and Storm (`jonah-01`)
 - To: Healings, Forgiveness, Parables (`luke-08`)
 
-> A great storm threatens Jonah's ship while Jonah sleeps below, and the captain wakes him to call on his God. When a storm comes down on the lake while Jesus sleeps, the disciples wake him, and he rebukes the wind and the raging water; Luke's word for the raging water, which the New Testament has only twice, is the Septuagint's for the storm in Jonah 1:4 (below).
+> Jonah 1:4–6 and Luke 8:22–25 both tell of a storm while the one on board sleeps, and of being woken to save them. A great storm threatens Jonah's ship while Jonah sleeps below, and the captain wakes him to call on his God. When a storm comes down on the lake while Jesus sleeps, the disciples wake him, and he rebukes the wind and the raging water; Luke's word for the raging water, which the New Testament has only twice, is the Septuagint's for the storm in Jonah 1:4 (below).
 
 - LXX Jonah.1.4 word 10: κλύδων (LXX 037-Jonah)
 - TAGNT Luk.8.24 word 17: κλύδωνι (TAGNT Mat-Jhn:62650)

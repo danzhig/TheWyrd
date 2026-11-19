@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg01` A son promised to a barren wife
 
-- **Judg.13.2-Judg.13.7 → Luke.1.7-Luke.1.15** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `bf2b073a40a4718c`
+- **Judg.13.2-Judg.13.7 → Luke.1.7-Luke.1.15** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `282a33ee3188a3f8`
 - From: Samson (`judg-08`)
 - To: Two Annunciations (`luke-02`)
 
-> The LORD's angel tells Manoah's wife, barren and childless, that she will bear a son who will be set apart from the womb and that she must drink no wine nor strong drink. Gabriel tells Zechariah that his barren wife Elizabeth will bear a son who will drink no wine nor strong drink and be filled with the Holy Spirit from his mother's womb. Luke's word for barren is the Septuagint's in Judges 13 (below).
+> Judges 13:2–7 and Luke 1:7–15 both tell of an angel announcing a son to a barren couple, a son set apart from the womb who must drink no wine. The LORD's angel tells Manoah's wife, barren and childless, that she will bear a son who will be set apart from the womb and that she must drink no wine nor strong drink. Gabriel tells Zechariah that his barren wife Elizabeth will bear a son who will drink no wine nor strong drink and be filled with the Holy Spirit from his mother's womb. Luke's word for barren is the Septuagint's in Judges 13 (below).
 
 - `OpenBibleXref:L54219` Judg.13.3 → Luke.1.13, 13 votes
 - `OpenBibleXref:L250656` Luke.1.13 → Judg.13.3-Judg.13.5, 10 votes
@@ -28,11 +28,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg02` Gideon
 
-- **Judg.6.11-Judg.7.25 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `7808ebf8e6d1998b`
+- **Judg.6.11-Judg.7.25 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `7059d5a6d244e9cb`
 - From: Gideon (`judg-05`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
-> The LORD's angel finds Gideon threshing wheat in hiding and sends him against Midian, which he routs with three hundred men and trumpets. Hebrews names Gideon first among those it has no time to tell of, who through faith became mighty in war; the name is spelled as in the Septuagint (below).
+> Hebrews 11:32–34 names Judges 6:11–7:25: Gideon, among those who by faith grew strong in battle and put armies to flight. The LORD's angel finds Gideon threshing wheat in hiding and sends him against Midian, which he routs with three hundred men and trumpets. Hebrews names Gideon first among those it has no time to tell of, who through faith became mighty in war; the name is spelled as in the Septuagint (below).
 
 - `OpenBibleXref:L52914` Judg.6.14 → Heb.11.34, 11 votes
 - `OpenBibleXref:L52881` Judg.6.11 → Heb.11.32, 8 votes
@@ -45,11 +45,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg03` Jephthah
 
-- **Judg.11.1-Judg.11.33 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `61dc9d08c8136d3c`
+- **Judg.11.1-Judg.11.33 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `6f48f0c790482e3a`
 - From: Jephthah and the Minor Judges (`judg-07`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
-> Jephthah the Gileadite, son of a prostitute and driven out by his brothers, is called back to lead Israel and defeats the Ammonites. Hebrews names Jephthah among the judges whose faith it has no time to recount (his name below as in the Septuagint).
+> Hebrews 11:32–34 names Judges 11:1–33: Jephthah, among those who by faith grew strong in battle. Jephthah the Gileadite, son of a prostitute and driven out by his brothers, is called back to lead Israel and defeats the Ammonites. Hebrews names Jephthah among the judges whose faith it has no time to recount (his name below as in the Septuagint).
 
 - `OpenBibleXref:L53883` Judg.11.1 → Heb.11.32, 13 votes
 - `OpenBibleXref:L328333` Heb.11.32 → Judg.11.1-Judg.11.12, 5 votes
@@ -61,11 +61,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg04` Samson
 
-- **Judg.13.24-Judg.16.31 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `37dffbb3d65df480`
+- **Judg.13.24-Judg.16.31 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `12212dcac94de3fd`
 - From: Samson (`judg-08`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
-> Samson, promised before his birth, tears a lion apart when the Spirit comes on him and fights the Philistines to his death. Hebrews names Samson among those who through faith stopped the mouths of lions and out of weakness were made strong; name and lion are the Septuagint's words (below).
+> Hebrews 11:32–34 names Judges 13:24–16:31: Samson, among those whose weakness was turned to strength. Samson, promised before his birth, tears a lion apart when the Spirit comes on him and fights the Philistines to his death. Hebrews names Samson among those who through faith stopped the mouths of lions and out of weakness were made strong; name and lion are the Septuagint's words (below).
 
 - `OpenBibleXref:L54321` Judg.13.24 → Heb.11.32, 6 votes
 - `OpenBibleXref:L328392` Heb.11.34 → Judg.15.8, 5 votes

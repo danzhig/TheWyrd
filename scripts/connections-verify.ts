@@ -26,6 +26,7 @@ import {
 } from './connections/schema';
 import { loadTermSources } from './terms/sources';
 import { readSectionIndex, sectionFor } from './themes/taxonomy';
+import { shingleMatch, shinglesOf } from './validate';
 
 const args = process.argv.slice(2);
 const approveIdx = args.indexOf('--approve');
@@ -57,6 +58,14 @@ const fatherText = (id: string) => {
   }
   return texts.get(id)!;
 };
+
+// Check 7 also against the KJV and Brenton (threads plan §9): writers read them closely while
+// drafting, so no explanation may carry 12 of their words in a row. Verse by verse, since the
+// readers give verses; a run across two verses is still caught by the WEBC check in the build.
+const otherShingles = new Map([
+  ['KJV', shinglesOf(terms.kjv.values())],
+  ['Brenton', shinglesOf(terms.brenton.values())],
+]);
 
 const results = new Map<string, string[]>();
 const notes = new Map<string, string[]>();
@@ -107,6 +116,10 @@ for (const c of connections) {
       ok.push(
         `${e.dataset} ${e.ref} word ${e.wordIndex}${e.toWordIndex ? `–${e.toWordIndex}` : ''}: ${e.form} (${e.row})`,
       );
+  }
+  for (const [name, set] of otherShingles) {
+    const hit = shingleMatch(`${c.label}. ${c.explanation}`, set);
+    if (hit) problems.push(`12 consecutive words match the ${name}: "${hit}" (check 7)`);
   }
   results.set(c.id, problems);
   notes.set(c.id, ok);

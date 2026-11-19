@@ -92,6 +92,63 @@ export function orderErrors(c: Connection): string[] {
   return out;
 }
 
+/**
+ * The verbs a summary sentence may use for each type (threads plan §3): a use claimed, or none
+ * ("both tell", "set against", a Father's "figure of").
+ */
+export const LEAD_VERBS: Record<Connection['type'], { uses: RegExp; none: RegExp }> = {
+  quotation: { uses: /\b(quotes|cites|names|reads)\b/, none: /\btell\b/ },
+  allusion: { uses: /\b(recalls|alludes to|names)\b/, none: /\btell\b/ },
+  echo: { uses: /\bechoes\b/, none: /\btell\b/ },
+  fulfilment: { uses: /\bfulfil/, none: /\btell\b/ },
+  contrast: { uses: /\b(reverses|answers|refuses)\b/, none: /\bagainst\b/ },
+  parallel: { uses: /\bretells\b/, none: /\btell\b/ },
+  typology: { uses: /\bfigure of\b/, none: /\bfigure of\b/ },
+};
+
+/** Longest summary sentence (threads plan §3). */
+export const LEAD_MAX = 200;
+
+/**
+ * Check 14 (threads plan §3): the explanation's first sentence names both ends as the card shows
+ * them, in the order the direction gives (the later end first when it is said to use the older,
+ * the older first otherwise), with a verb for the type, in at most 200 characters.
+ */
+export function leadErrors(
+  c: Pick<Connection, 'type' | 'explanation'>,
+  ends: [Pick<ThreadEnd, 'display'>, Pick<ThreadEnd, 'display'>],
+  order: Pick<ThreadOrder, 'older' | 'uses'>,
+): string[] {
+  const lead = c.explanation.split(/(?<=[.!?])\s+(?=[A-Z0-9])/)[0]!;
+  const out: string[] = [];
+  if (lead.length > LEAD_MAX)
+    out.push(`its first sentence has ${lead.length} characters (at most ${LEAD_MAX})`);
+  const at = ends.map((e) => {
+    // A display followed by more digits is a different reference ("Luke 1:3" in "Luke 1:35").
+    const m = new RegExp(`${e.display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\d|[:–]\\d)`).exec(
+      lead,
+    );
+    return m ? m.index : -1;
+  });
+  ends.forEach((e, i) => {
+    if (at[i]! < 0) out.push(`its first sentence does not name ${e.display}`);
+  });
+  if (out.length) return out;
+  if (order.older !== null) {
+    const older = at[order.older]!;
+    const later = at[1 - order.older]!;
+    if (order.uses && later > older)
+      out.push('its first sentence names the older end first, but the later one uses it');
+    if (!order.uses && older > later) out.push('its first sentence names the later end first');
+  }
+  const verbs = LEAD_VERBS[c.type];
+  if (!(order.uses ? verbs.uses : verbs.none).test(lead))
+    out.push(
+      `its first sentence has no verb for the type ${c.type}${order.uses ? '' : ' with no use claimed'}`,
+    );
+  return out;
+}
+
 export function buildConnections(
   sectionFiles: SectionFile[],
   library: Set<string>,
@@ -209,6 +266,8 @@ export function buildConnections(
       errors.push(`${where}: joins ${pairId(from.corpus, to.corpus)}, not ${pair}`);
     // Inside one corpus the build assumes no order (threads plan §2.3): the within files state it.
     if (pair && !c.order) errors.push(`${where}: states its order (older end, use, basis)`);
+    if (from && to && order && c.status !== 'candidate')
+      for (const e of leadErrors(c, [from, to], order)) errors.push(`${where}: ${e} (check 14)`);
     const fingerprint = connectionFingerprint(c);
     const approved = !!c.approval && c.approval.fingerprint === fingerprint;
     if (c.approval && !approved)

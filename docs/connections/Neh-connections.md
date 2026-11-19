@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `neh01` Maker of heaven, earth and sea
 
-- **Neh.9.6 → Acts.4.24** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `5a9fe1612e6ad6c0`
+- **Neh.9.6 → Acts.4.24** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `8a6f87b6b340bdef`
 - From: Confession and Covenant (`neh-09`)
 - To: The Jerusalem Church (`acts-02`)
 
-> The great prayer of Nehemiah 9 opens by confessing the LORD as maker of heaven, the earth, the seas and all that is in them. After Peter and John are released, the believers pray together to God as creator of the sky, the land and the sea and everything they hold, before asking for boldness.
+> Acts 4:24 echoes Nehemiah 9:6: the believers pray to God as maker of the sky, the land, the sea and all in them, as Nehemiah 9 opens. The great prayer of Nehemiah 9 opens by confessing the LORD as maker of heaven, the earth, the seas and all that is in them. After Peter and John are released, the believers pray together to God as creator of the sky, the land and the sea and everything they hold, before asking for boldness.
 
 - `OpenBibleXref:L276702` Acts.4.24 → Neh.9.6, 17 votes
 - Neh.9.6 carries: heaven, earth, seas

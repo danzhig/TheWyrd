@@ -116,6 +116,26 @@ export function buildShingles(parsed: Map<string, ParsedBook>): Set<string> {
   return set;
 }
 
+/** Every run of 12 words in these texts (check 7 against other translations, e.g. KJV). */
+export function shinglesOf(texts: Iterable<string>): Set<string> {
+  const set = new Set<string>();
+  for (const t of texts) {
+    const w = words(t);
+    for (let i = 0; i + SHINGLE <= w.length; i++) set.add(w.slice(i, i + SHINGLE).join(' '));
+  }
+  return set;
+}
+
+/** The first run of 12 words in `text` that the set holds, or null. */
+export function shingleMatch(text: string, shingles: Set<string>): string | null {
+  const w = words(text);
+  for (let i = 0; i + SHINGLE <= w.length; i++) {
+    const s = w.slice(i, i + SHINGLE).join(' ');
+    if (shingles.has(s)) return s;
+  }
+  return null;
+}
+
 function listFiles(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
