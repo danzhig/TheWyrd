@@ -141,6 +141,110 @@ test.describe('Threads on the Vault', () => {
     await expect(a).not.toHaveAttribute('open', '');
   });
 
+  // A tap on a medallion, as the pointer would make it (labels may lie over the bubble).
+  const tapBook = (page: Page, id: string) =>
+    page
+      .locator(`[data-testid="vault-view"] a[data-book="${id}"]`)
+      .evaluate((a) =>
+        a.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 })),
+      );
+  const threaded = new Set(connections.flatMap((c) => c.ends.map((e) => e.bookId)));
+
+  test('the first tap on a book shows its threads, the second goes into the book', async ({
+    page,
+  }) => {
+    await threadsOn(page);
+    await tapBook(page, 'Luke');
+    const panel = page.getByTestId('book-panel');
+    await expect(panel).toBeVisible();
+    await expect(page.locator('#book-heading')).toBeFocused();
+    expect(new URL(page.url()).pathname).toBe('/');
+    const n = connections.filter((c) => c.ends.some((e) => e.bookId === 'Luke')).length;
+    await expect(page.locator('#book-heading')).toContainText(`${n} threads`);
+    await expect(
+      panel.locator('[data-book-group="drawsOn"] [data-book-row]').first(),
+    ).toBeVisible();
+    // Every other book's arcs dim.
+    const dimmed = await page
+      .locator('[data-arc]')
+      .evaluateAll((ps) => ps.filter((p) => getComputedStyle(p).opacity === '0.12').length);
+    expect(dimmed).toBeGreaterThan(0);
+    await panel.evaluate((el) =>
+      Promise.all(el.getAnimations({ subtree: true }).map((a) => a.finished)),
+    );
+    const results = await new AxeBuilder({ page }).include('[data-testid="book-panel"]').analyze();
+    expect(
+      results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical'),
+    ).toEqual([]);
+    await tapBook(page, 'Luke');
+    await expect(page).toHaveURL(/\/book\/Luke\/$/);
+  });
+
+  test('"Open" in the book panel goes in; Esc steps out a card, a row, then the panel', async ({
+    page,
+  }) => {
+    await threadsOn(page);
+    await tapBook(page, 'Luke');
+    const panel = page.getByTestId('book-panel');
+    const row = panel.locator('[data-book-row]').first();
+    await row.locator('> summary').click();
+    await expect(row).toHaveAttribute('open', '');
+    const card = row.locator('[data-more]').first();
+    await card.locator('summary').click();
+    await expect(card).toHaveAttribute('open', '');
+    await page.keyboard.press('Escape');
+    await expect(card).not.toHaveAttribute('open', '');
+    await expect(row).toHaveAttribute('open', '');
+    await page.keyboard.press('Escape');
+    await expect(row).not.toHaveAttribute('open', '');
+    await page.keyboard.press('Escape');
+    await expect(panel).toBeHidden();
+    await tapBook(page, 'Luke');
+    await page.getByTestId('open-book').click();
+    await expect(page).toHaveURL(/\/book\/Luke\/$/);
+  });
+
+  test('a book with no threads goes straight in, drawn dimmed', async ({ page }) => {
+    await threadsOn(page);
+    const ids = await page
+      .locator('[data-testid="vault-view"] a[data-book]')
+      .evaluateAll((as) => as.map((a) => (a as HTMLElement).dataset.book!));
+    const none = ids.find((id) => !threaded.has(id))!;
+    expect(none).toBeTruthy();
+    await expect(page.locator(`[data-testid="vault-view"] a[data-book="${none}"]`)).toHaveAttribute(
+      'data-threadless',
+      '',
+    );
+    await tapBook(page, none);
+    await expect(page).toHaveURL(new RegExp(`/book/${none}/$`));
+  });
+
+  test('with Threads off, one tap opens the book', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+    await tapBook(page, 'Luke');
+    await expect(page).toHaveURL(/\/book\/Luke\/$/);
+  });
+
+  test("an arc's panel says which way its threads run and filters by type", async ({ page }) => {
+    await threadsOn(page);
+    await page.getByRole('button', { name: 'List' }).click();
+    await page.locator(`[data-arc-item="${busiest![0]}"]`).click();
+    const panel = page.getByTestId('arc-panel');
+    await expect(page.locator('#arc-heading')).toContainText(`${busiest![1]} threads`);
+    await expect(panel.getByTestId('arc-summary')).toContainText('draws on');
+    const chip = panel.locator('[data-panel-type]').first();
+    const type = await chip.getAttribute('data-panel-type');
+    await chip.click();
+    const shown = await panel.locator('[data-panel-connection]').count();
+    expect(shown).toBe(
+      connections.filter(
+        (c) =>
+          [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === busiest![0] && c.type === type,
+      ).length,
+    );
+  });
+
   test('Themes turns Threads off', async ({ page }) => {
     await threadsOn(page);
     await page.getByTestId('view-themes').click();

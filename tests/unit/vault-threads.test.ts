@@ -1,7 +1,17 @@
 /** The Vault's Threads mode (P4.3): connections grouped into arcs between books, and their shape. */
 import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
-import { arcPath, arcsFor, arcWidth, BOW, nearestArc } from '@/components/vault/threads';
+import {
+  arcPath,
+  arcsFor,
+  arcWidth,
+  BOW,
+  bookThreads,
+  directionSummary,
+  nearestArc,
+  panelOrder,
+  threadedBooks,
+} from '@/components/vault/threads';
 import { TYPE_ORDER } from '@/lib/threads';
 import type { PublicConnection, PublicConnections, ThreadEnd } from '@/lib/types';
 
@@ -100,5 +110,45 @@ describe('Vault threads', () => {
     expect(nearestArc(arcs, exod.mid, 5)?.key).toBe('Exod|Luke');
     expect(nearestArc(arcs, { x: exod.mid.x + 3, y: exod.mid.y }, 5)?.key).toBe('Exod|Luke');
     expect(nearestArc(arcs, { x: 900, y: 900 }, 5)).toBeNull();
+  });
+});
+
+describe('panels (threads plan TD3)', () => {
+  const data = (
+    JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as PublicConnections
+  ).connections;
+  const name = (id: string) => id;
+
+  it('orders an arc strongest first, then through the later book', () => {
+    const list = data.filter((c) => c.ends.some((e) => e.bookId === 'Luke'));
+    const ordered = panelOrder(list);
+    expect(ordered).toHaveLength(list.length);
+    for (let i = 1; i < ordered.length; i++)
+      expect(ordered[i - 1]!.strength).toBeGreaterThanOrEqual(ordered[i]!.strength);
+  });
+
+  it('says which way an arc runs', () => {
+    const exLuke = data.filter(
+      (c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === 'Exod|Luke',
+    );
+    const uses = exLuke.filter((c) => c.order.uses).length;
+    expect(directionSummary(exLuke, name)).toBe(
+      `Luke draws on Exod in ${uses} of ${exLuke.length}; ${exLuke.length - uses} claim no use`,
+    );
+    const one = exLuke.filter((c) => c.order.uses).slice(0, 1);
+    expect(directionSummary(one, name)).toBe('Luke draws on Exod');
+  });
+
+  it("groups a book's threads by direction, each partner book once per group", () => {
+    const luke = bookThreads(data, 'Luke');
+    expect(luke.total).toBe(data.filter((c) => c.ends.some((e) => e.bookId === 'Luke')).length);
+    const count = (rows: { connections: unknown[] }[]) =>
+      rows.reduce((n, r) => n + r.connections.length, 0);
+    expect(count(luke.drawsOn) + count(luke.drawnOnBy) + count(luke.alongside)).toBe(luke.total);
+    expect(luke.drawnOnBy).toEqual([]); // Luke is never the older end
+    const exod = bookThreads(data, 'Exod');
+    expect(exod.drawsOn).toEqual([]);
+    expect(exod.drawnOnBy.map((r) => r.bookId)).toContain('Luke');
+    expect(threadedBooks(data).has('Luke')).toBe(true);
   });
 });

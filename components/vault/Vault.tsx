@@ -1098,6 +1098,7 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
           onOpen={() => {
             camera.last = { ...camRef.current };
           }}
+          onOpenBook={(id) => void openBook(id)}
         />
       ) : null}
 

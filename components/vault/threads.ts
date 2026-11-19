@@ -109,3 +109,111 @@ export function nearestArc(arcs: ThreadArc[], p: Point, max: number): ThreadArc 
 
 /** How far an arc's control point sits from the oculus, relative to its ends' midpoint. */
 export const BOW = 0.3;
+
+// -------------------------------------------------------------------------------------------------
+// Panels (threads plan TD3): the order of an arc's cards, its direction in words, and a book's
+// threads grouped by direction.
+// -------------------------------------------------------------------------------------------------
+
+/** "v-4-25" → [4, 25]. */
+const pos = (anchor: string) => anchor.match(/\d+/g)!.map(Number) as [number, number];
+
+/** The end that takes the other up (the later one when the order is known, else the second). */
+const laterEnd = (c: PublicConnection) => c.ends[c.order.older === null ? 1 : 1 - c.order.older]!;
+
+/** Strongest first, then through the later book in verse order. */
+export function panelOrder(list: PublicConnection[]): PublicConnection[] {
+  return [...list].sort((x, y) => {
+    if (x.strength !== y.strength) return y.strength - x.strength;
+    const [a, b] = [laterEnd(x), laterEnd(y)];
+    if (a.bookId !== b.bookId) return a.bookId.localeCompare(b.bookId);
+    const [ac, av] = pos(a.anchor);
+    const [bc, bv] = pos(b.anchor);
+    return ac - bc || av - bv;
+  });
+}
+
+/** How many of an arc's threads run each way, in words: "Luke draws on Exodus in all 8". */
+export function directionSummary(list: PublicConnection[], name: (id: string) => string): string {
+  const uses = new Map<string, { from: string; n: number }>();
+  let none = 0;
+  for (const c of list) {
+    if (c.order.older === null || !c.order.uses) {
+      none++;
+      continue;
+    }
+    const later = c.ends[1 - c.order.older]!.bookId;
+    const older = c.ends[c.order.older]!.bookId;
+    const k = `${later}|${older}`;
+    uses.set(k, { from: older, n: (uses.get(k)?.n ?? 0) + 1 });
+  }
+  const parts = [...uses].map(([k, { from, n }]) => {
+    const later = k.split('|')[0]!;
+    const of = n === list.length ? (n === 1 ? '' : ` in all ${n}`) : ` in ${n} of ${list.length}`;
+    return `${name(later)} draws on ${name(from)}${of}`;
+  });
+  if (none)
+    parts.push(
+      none === list.length
+        ? none === 1
+          ? 'No use is claimed either way'
+          : `No use is claimed either way in all ${none}`
+        : `${none} claim${none === 1 ? 's' : ''} no use`,
+    );
+  return parts.join('; ');
+}
+
+export interface BookRow {
+  /** The other book. */
+  bookId: string;
+  connections: PublicConnection[];
+}
+
+export interface BookThreads {
+  total: number;
+  /** Older books this one uses. */
+  drawsOn: BookRow[];
+  /** Later books that use this one. */
+  drawnOnBy: BookRow[];
+  /** No use claimed, or the order not given. */
+  alongside: BookRow[];
+}
+
+/** A book's threads (threads plan §2.5), grouped by direction, each partner book a row. */
+export function bookThreads(list: PublicConnection[], bookId: string): BookThreads {
+  const groups = { drawsOn: new Map(), drawnOnBy: new Map(), alongside: new Map() } as Record<
+    'drawsOn' | 'drawnOnBy' | 'alongside',
+    Map<string, PublicConnection[]>
+  >;
+  let total = 0;
+  for (const c of list) {
+    const i = c.ends.findIndex((e) => e.bookId === bookId);
+    if (i < 0) continue;
+    total++;
+    const other = c.ends[1 - i]!.bookId;
+    const { older, uses } = c.order;
+    const g =
+      older === null || !uses || other === bookId
+        ? 'alongside'
+        : older === i
+          ? 'drawnOnBy'
+          : 'drawsOn';
+    groups[g].set(other, [...(groups[g].get(other) ?? []), c]);
+  }
+  const rows = (m: Map<string, PublicConnection[]>): BookRow[] =>
+    [...m]
+      .map(([id, cs]) => ({ bookId: id, connections: panelOrder(cs) }))
+      .sort(
+        (a, b) => b.connections.length - a.connections.length || a.bookId.localeCompare(b.bookId),
+      );
+  return {
+    total,
+    drawsOn: rows(groups.drawsOn),
+    drawnOnBy: rows(groups.drawnOnBy),
+    alongside: rows(groups.alongside),
+  };
+}
+
+/** Books with at least one thread among these connections. */
+export const threadedBooks = (list: PublicConnection[]) =>
+  new Set(list.flatMap((c) => c.ends.map((e) => e.bookId)));

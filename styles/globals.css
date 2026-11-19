@@ -146,3 +146,9 @@ svg {
   margin-right: 0.45em;
   color: var(--text);
 }
+
+/* Threads mode (threads plan §2.5): a book with no threads under the filters is drawn dimmed, so
+   it is clear before the tap that it goes straight in. Set by ThreadsMode. */
+a[data-threadless] {
+  filter: saturate(0.25) brightness(0.6);
+}
