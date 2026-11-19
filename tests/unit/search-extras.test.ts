@@ -27,6 +27,13 @@ describe('search extras', () => {
     const hit = r.threads.find((t) => t.id === 'gen11')!;
     expect(hit.href).toMatch(new RegExp(`\\?thread=gen11#`));
     expect(hit.ends).toContain(c.ends[1].display);
+    // The direction line (threads plan TD6): Genesis first, then how Luke takes it up.
+    expect(hit).toMatchObject({
+      older: c.ends[0].display,
+      verb: 'alluded to in',
+      later: c.ends[1].display,
+      uses: true,
+    });
   });
 
   it('needs every word, and returns nothing for an empty query', () => {

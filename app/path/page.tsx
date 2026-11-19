@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '@/app/about/about.module.css';
 import { PathTimeline } from '@/components/path/PathTimeline';
 import { timeline } from '@/components/path/timeline';
-import { getManifest } from '@/lib/data';
+import { getManifest, getThreadCounts } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'The path · Scripture as Story',
@@ -31,7 +31,7 @@ export default function PathPage() {
           {Math.round(minutes / 60)} hours of reading. Dashed rings are optional detours.
         </p>
       </header>
-      <PathTimeline groups={groups} />
+      <PathTimeline groups={groups} threads={getThreadCounts()} />
       <p className={styles.footer}>
         <Link href="/about/">About this path</Link> · <Link href="/sources/">Sources</Link>
       </p>

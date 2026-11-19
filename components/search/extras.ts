@@ -3,7 +3,7 @@
  * or descriptions match a query, shown above the sections. Pure, unit-tested; the data is the
  * site's own `/data/themes.json` and `/data/connections.json`.
  */
-import { TYPE_LABEL, threadHref } from '@/lib/threads';
+import { TYPE_LABEL, direction, threadHref } from '@/lib/threads';
 import type { PublicConnections } from '@/lib/types';
 
 export interface ThemesFile {
@@ -29,6 +29,12 @@ export interface ThreadHit {
   label: string;
   type: string;
   ends: string; // "Exodus 3:2–6 ↔ Luke 20:37"
+  /** The direction line (threads plan TD6): older first, then how the later takes it up. */
+  older: string;
+  verb: string;
+  later: string;
+  /** A use is claimed (solid arrow) or not (dotted); false with no order too. */
+  uses: boolean;
   href: string;
 }
 
@@ -77,11 +83,16 @@ export function searchExtras(
       continue;
     // Open it at the end on the path, if one is.
     const end = c.ends.find((e) => !e.library) ?? c.ends[1];
+    const d = direction(c, c.ends);
     threadHits.push({
       id: c.id,
       label: c.label,
       type: TYPE_LABEL[c.type],
       ends,
+      older: d.older.display,
+      verb: d.verb,
+      later: d.later.display,
+      uses: d.known && d.uses,
       href: threadHref(c.id, end),
       rank: inName ? 0 : 1,
     });

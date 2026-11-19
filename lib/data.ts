@@ -209,6 +209,19 @@ export function getSectionThreads(sectionId: string): SectionThread[] {
   return threadsBySection.get(sectionId) ?? [];
 }
 
+/** How many threads touch each section, from every published threads file (the /path timeline). */
+export function getThreadCounts(): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const out_ of THREAD_FILES) {
+    const file = path.join(DATA, out_);
+    if (!fs.existsSync(file)) continue;
+    const data = JSON.parse(fs.readFileSync(file, 'utf8')) as PublicConnections;
+    for (const c of data.connections)
+      for (const e of new Set(c.ends.map((x) => x.sectionId))) out[e] = (out[e] ?? 0) + 1;
+  }
+  return out;
+}
+
 /** Counts for the About page (Phases 4 and 6): the themes and the verified connections. */
 export function getExtrasSummary(): {
   themes: number;
