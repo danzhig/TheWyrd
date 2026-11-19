@@ -302,6 +302,19 @@ One possible addition is _retelling_, for passages that retell the whole story (
 | **The Eusebian Canons** (4th-century Gospel parallel tables; the text itself is public domain)                                | An ancient, independent check on which Gospel passages are parallels                                                                                                                                                     | Only if a digital edition with a clear open licence is found. Otherwise rely on Augustine and the cross-references. |
 | **A Hebrew font** (Ezra SIL or Taamey Frank CLM, OFL; listed in PLAN §3) and **Gentium Plus** for polytonic Greek             | Cards would show "Shared Hebrew" for the first time, and Greek has no dedicated font yet (the site self-hosts only EB Garamond and Cormorant Garamond)                                                                   | `pnpm fonts` pipeline. Hebrew is right-to-left and needs `dir="rtl"`.                                               |
 
+**Approved and pinned (owner, 2026-11-19; TX1).** All the additions above were approved. Pinned now:
+
+- The rest of Swete's Septuagint: 30 more books (text and Morpheus analysis), so every book in the transcription's list is pinned. Ecclesiastes is not in that list and has no Greek here.
+- STEPBible TIPNR, at the same commit as TAHOT.
+- Augustine, _The Harmony of the Gospels_ (NPNF1-06) and _The City of God_ (NPNF1-02), from CCEL.
+
+Pinned when first needed, so nothing unused ships:
+
+- The Jerome or Ambrose volume: with the first Old ↔ Old typology candidate.
+- The public-domain dating reference: with the first `consensus` or `disputed` order that needs a checkable citation.
+- The Eusebian Canons: only if an openly licensed edition turns up.
+- The Hebrew and Greek fonts: with the first card that shows Hebrew (TX2's evidence).
+
 **Network.** On 2026-11-17 the cross-references' download host (`a.openbible.info`) was blocked in the cloud environment, so `pnpm connections:fetch` failed there. Before TX1, check the host again, then add it to that environment's allowed list or run the fetch steps locally.
 
 ## 9. Bible versions and numbering
