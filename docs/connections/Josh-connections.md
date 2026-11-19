@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos01` The walls of Jericho
 
-- **Josh.6.1-Josh.6.20 → Heb.11.30** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `8c03b4134cc4db01`
+- **Josh.6.1-Josh.6.20 → Heb.11.30** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `8c03b4134cc4db01`
 - From: Jericho (`josh-05`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos02` Rahab spared at Jericho
 
-- **Josh.6.22-Josh.6.25 → Heb.11.31** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `9a172a5439b8ef7b`
+- **Josh.6.22-Josh.6.25 → Heb.11.31** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `9a172a5439b8ef7b`
 - From: Jericho (`josh-05`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -40,7 +40,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos03` Rahab and the messengers
 
-- **Josh.2.1-Josh.2.21 → Jas.2.25** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `b2fed0aa6150373a`
+- **Josh.2.1-Josh.2.21 → Jas.2.25** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `b2fed0aa6150373a`
 - From: Rahab and the Spies (`josh-02`)
 - To: Trials; Hearing and Doing; Faith and Works (`jas-01`, library)
 
@@ -57,7 +57,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos04` If Joshua had given them rest
 
-- **Josh.1.13-Josh.1.15 → Heb.4.8** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `2da468448ddb000b`
+- **Josh.1.13-Josh.1.15 → Heb.4.8** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `2da468448ddb000b`
 - From: Joshua's Charge (`josh-01`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
@@ -71,7 +71,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos05` The land given as an inheritance
 
-- **Josh.14.1-Josh.14.2 → Acts.13.19** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `3fc3164b12167af3`
+- **Josh.14.1-Josh.14.2 → Acts.13.19** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `3fc3164b12167af3`
 - From: Caleb; the Land of Judah (`josh-x103`)
 - To: Paul's First Journey (`acts-08`)
 
@@ -83,7 +83,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos06` The ground Jacob gave to Joseph
 
-- **Josh.24.32 → John.4.5** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `2f2abfadb827a5aa`
+- **Josh.24.32 → John.4.5** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `2f2abfadb827a5aa`
 - From: Covenant at Shechem (`josh-12`)
 - To: The Samaritan Woman (`john-x107`)
 
@@ -100,7 +100,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jos07` Buried at Shechem
 
-- **Josh.24.32 → Acts.7.16** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `c126db176b2b6b9d`
+- **Josh.24.32 → Acts.7.16** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `c126db176b2b6b9d`
 - From: Covenant at Shechem (`josh-12`)
 - To: Stephen (`acts-03`)
 

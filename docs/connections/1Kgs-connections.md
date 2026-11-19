@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs01` Elijah prayed and it did not rain
 
-- **1Kgs.17.1-1Kgs.18.45 → Jas.5.17-Jas.5.18** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `3dc6777f7f0c22a5`
+- **1Kgs.17.1-1Kgs.18.45 → Jas.5.17-Jas.5.18** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `3dc6777f7f0c22a5`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: The Tongue, Humility, the Rich, Patience and Prayer (`jas-02`, library)
 
@@ -26,7 +26,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs02` Seven thousand who did not bow to Baal
 
-- **1Kgs.19.10-1Kgs.19.18 → Rom.11.2-Rom.11.4** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `e0b0584a9bc3c2d9`
+- **1Kgs.19.10-1Kgs.19.18 → Rom.11.2-Rom.11.4** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `e0b0584a9bc3c2d9`
 - From: Elijah at Horeb (`1kgs-09`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -50,7 +50,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs03` The Queen of the South
 
-- **1Kgs.10.1-1Kgs.10.13 → Luke.11.31** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `a20cd4b753ff659d`
+- **1Kgs.10.1-1Kgs.10.13 → Luke.11.31** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `a20cd4b753ff659d`
 - From: The Queen of Sheba; Solomon's Fall (`1kgs-05`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -66,7 +66,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs04` Solomon built him a house
 
-- **1Kgs.6.1-1Kgs.8.27 → Acts.7.47-Acts.7.49** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `121b97753076d6b1`
+- **1Kgs.6.1-1Kgs.8.27 → Acts.7.47-Acts.7.49** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `121b97753076d6b1`
 - From: Building the Temple and Palace (`1kgs-03`)
 - To: Stephen (`acts-03`)
 
@@ -81,7 +81,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs05` God feeds the ravens
 
-- **1Kgs.17.4-1Kgs.17.6 → Luke.12.24** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `8065b0c23da3ae95`
+- **1Kgs.17.4-1Kgs.17.6 → Luke.12.24** · echo · strength 1 · verified (approved 2026-11-19) · fingerprint `8065b0c23da3ae95`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 

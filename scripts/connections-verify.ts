@@ -102,7 +102,10 @@ for (const c of connections) {
     }
   }
   for (const e of c.evidence ?? []) {
-    const list = (e.dataset === 'LXX' ? terms.lxx : terms.greek).get(e.ref) ?? [];
+    const list =
+      (e.dataset === 'LXX' ? terms.lxx : e.dataset === 'TAHOT' ? terms.hebrew : terms.greek).get(
+        e.ref,
+      ) ?? [];
     const words = list.filter(
       (t) => t.wordIndex >= e.wordIndex && t.wordIndex <= (e.toWordIndex ?? e.wordIndex),
     );

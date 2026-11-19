@@ -22,6 +22,7 @@ import { readUsfmVerses } from './usfm-verses';
 export const LXX_BOOKS: Record<string, { file: string; abbr: string }[]> = {
   Gen: [{ file: '001-Gen', abbr: 'Gen' }],
   Exod: [{ file: '002-Exod', abbr: 'Exod' }],
+  Lev: [{ file: '003-Lev', abbr: 'Lev' }],
   Num: [{ file: '004-Num', abbr: 'Num' }],
   Deut: [{ file: '005-Deut', abbr: 'Deut' }],
   Josh: [{ file: '006-Josh', abbr: 'Josh' }],
@@ -31,15 +32,43 @@ export const LXX_BOOKS: Record<string, { file: string; abbr: string }[]> = {
   '2Sam': [{ file: '010-2Kgdms', abbr: '2Kgdms' }],
   '1Kgs': [{ file: '011-3Kgdms', abbr: '3Kgdms' }],
   '2Kgs': [{ file: '012-4Kgdms', abbr: '4Kgdms' }],
+  '1Chr': [{ file: '013-1Chr', abbr: '1Chr' }],
+  '2Chr': [{ file: '014-2Chr', abbr: '2Chr' }],
   Ezra: [{ file: '016-2Esd', abbr: '2Esd' }], // Ezra = 2 Esdras 1–10
   Neh: [{ file: '016-2Esd', abbr: '2Esd' }], // Nehemiah = 2 Esdras 11–23
   Esth: [{ file: '017-Esth', abbr: 'Esth' }],
   Jdt: [{ file: '018-Jdt', abbr: 'Jdt' }],
   Tob: [{ file: '019-Tob', abbr: 'Tob' }],
   '1Macc': [{ file: '020-1Macc', abbr: '1Macc' }],
+  '2Macc': [{ file: '021-2Macc', abbr: '2Macc' }],
+  // Threads plan TX1/TX2: the rest of the Old Testament (Swete numbers the Psalms the Greek way).
+  Ps: [{ file: '024-Ps', abbr: 'Ps' }],
+  Prov: [{ file: '026-Prov', abbr: 'Prov' }],
+  Song: [{ file: '027-Song', abbr: 'Song' }],
   Job: [{ file: '028-Job', abbr: 'Job' }],
+  Wis: [{ file: '029-Wis', abbr: 'Wis' }],
+  Sir: [{ file: '030-Sir', abbr: 'Sir' }],
+  Hos: [{ file: '032-Hos', abbr: 'Hos' }],
+  Amos: [{ file: '033-Amos', abbr: 'Amos' }],
+  Mic: [{ file: '034-Mic', abbr: 'Mic' }],
+  Joel: [{ file: '035-Joel', abbr: 'Joel' }],
+  Obad: [{ file: '036-Obad', abbr: 'Obad' }],
   Jonah: [{ file: '037-Jonah', abbr: 'Jonah' }],
+  Nah: [{ file: '038-Nah', abbr: 'Nah' }],
+  Hab: [{ file: '039-Hab', abbr: 'Hab' }],
+  Zeph: [{ file: '040-Zeph', abbr: 'Zeph' }],
+  Hag: [{ file: '041-Hag', abbr: 'Hag' }],
+  Zech: [{ file: '042-Zech', abbr: 'Zech' }],
+  Mal: [{ file: '043-Mal', abbr: 'Mal' }],
+  Isa: [{ file: '044-Isa', abbr: 'Isa' }],
   Jer: [{ file: '045-Jer', abbr: 'Jer' }],
+  // Catholic Baruch 6 is the Septuagint's Epistle of Jeremiah.
+  Bar: [
+    { file: '046-Bar', abbr: 'Bar' },
+    { file: '048-EpJer', abbr: 'EpJer' },
+  ],
+  Lam: [{ file: '047-Lam', abbr: 'Lam' }],
+  Ezek: [{ file: '049-Ezek', abbr: 'Ezek' }],
   // Catholic Daniel follows Theodotion's Greek; the Old Greek is kept for comparison.
   Dan: [
     { file: '053-DanTh', abbr: 'DanTh' },

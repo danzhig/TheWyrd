@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo01` Moses at the bush
 
-- **Exod.3.2-Exod.3.6 → Luke.20.37** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `bfa2217b8f3565a6`
+- **Exod.3.2-Exod.3.6 → Luke.20.37** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `bfa2217b8f3565a6`
 - From: The Burning Bush (`exod-02`)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo02` Stephen retells the burning bush
 
-- **Exod.3.2-Exod.3.10 → Acts.7.30-Acts.7.34** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `d17d7faa92b6b7f3`
+- **Exod.3.2-Exod.3.10 → Acts.7.30-Acts.7.34** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `d17d7faa92b6b7f3`
 - From: The Burning Bush (`exod-02`)
 - To: Stephen (`acts-03`)
 
@@ -43,7 +43,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo03` Stephen recalls the golden calf
 
-- **Exod.32.1-Exod.32.6 → Acts.7.40-Acts.7.41** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `7ae2f71f2bf81f7e`
+- **Exod.32.1-Exod.32.6 → Acts.7.40-Acts.7.41** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `7ae2f71f2bf81f7e`
 - From: The Golden Calf (`exod-11`)
 - To: Stephen (`acts-03`)
 
@@ -61,7 +61,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo04` Every firstborn male holy to the Lord
 
-- **Exod.13.2 → Luke.2.22-Luke.2.23** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `bb00b6a998cd8c5e`
+- **Exod.13.2 → Luke.2.22-Luke.2.23** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `bb00b6a998cd8c5e`
 - From: Passover and Departure (`exod-05`)
 - To: Two Births (`luke-03`)
 
@@ -79,7 +79,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo05` Not a bone broken
 
-- **Exod.12.46 → John.19.36** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1d2907696c531830`
+- **Exod.12.46 → John.19.36** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `1d2907696c531830`
 - From: Passover and Departure (`exod-05`)
 - To: The Burial (`john-x210`)
 
@@ -96,7 +96,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo06` You know the commandments
 
-- **Exod.20.12-Exod.20.16 → Luke.18.20** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `cacc6342f21e0d4a`
+- **Exod.20.12-Exod.20.16 → Luke.18.20** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `cacc6342f21e0d4a`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: Lepers, the Widow, Zacchaeus (`luke-12`)
 
@@ -114,7 +114,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo07` The first commandment with a promise
 
-- **Exod.20.12 → Eph.6.2-Eph.6.3** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `b41159b4e90ba614`
+- **Exod.20.12 → Eph.6.2-Eph.6.3** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `b41159b4e90ba614`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: Unity and the New Life; the Household; the Armour of God (`eph-02`, library)
 
@@ -131,7 +131,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo08` For this purpose I raised you up
 
-- **Exod.9.16 → Rom.9.17** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `6d391105648bf85e`
+- **Exod.9.16 → Rom.9.17** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `6d391105648bf85e`
 - From: The Plagues (`exod-04`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -146,7 +146,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo09` I will have mercy on whom I have mercy
 
-- **Exod.33.19 → Rom.9.15** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5a57f4ad9dde318a`
+- **Exod.33.19 → Rom.9.15** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `5a57f4ad9dde318a`
 - From: Moses Intercedes (`exod-12`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -162,7 +162,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo10` They sat down to eat and rose up to play
 
-- **Exod.32.6 → 1Cor.10.7** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9307d3f73a7712f5`
+- **Exod.32.6 → 1Cor.10.7** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `9307d3f73a7712f5`
 - From: The Golden Calf (`exod-11`)
 - To: Food Offered to Idols; Paul’s Freedom (`1cor-03`, library)
 
@@ -177,7 +177,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo11` The veil over Moses' face
 
-- **Exod.34.29-Exod.34.35 → 2Cor.3.7-2Cor.3.13** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `e4d47da11281edaf`
+- **Exod.34.29-Exod.34.35 → 2Cor.3.7-2Cor.3.13** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `e4d47da11281edaf`
 - From: The Covenant Renewed (`exod-13`)
 - To: Ministers of the New Covenant; Reconciliation (`2cor-02`, library)
 
@@ -195,7 +195,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo12` A royal priesthood, a holy nation
 
-- **Exod.19.5-Exod.19.6 → 1Pet.2.9** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `5782b95c30b67f78`
+- **Exod.19.5-Exod.19.6 → 1Pet.2.9** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `5782b95c30b67f78`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: New Birth and Hope; a Holy People (`1pet-01`, library)
 
@@ -211,7 +211,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo13` The pattern shown on the mountain
 
-- **Exod.25.40 → Heb.8.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `afe74d495748697a`
+- **Exod.25.40 → Heb.8.5** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `afe74d495748697a`
 - From: The Ark, the Table and the Lampstand (`exod-x201`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
@@ -224,7 +224,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo14` This is the blood of the covenant
 
-- **Exod.24.8 → Heb.9.19-Heb.9.20** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `57576e4921f934dd`
+- **Exod.24.8 → Heb.9.19-Heb.9.20** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `57576e4921f934dd`
 - From: The Covenant Sealed (`exod-10`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
@@ -237,7 +237,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo15` Manna in the wilderness
 
-- **Exod.16.4-Exod.16.31 → John.6.31-John.6.32** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `e6c0b375741539b7`
+- **Exod.16.4-Exod.16.31 → John.6.31-John.6.32** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `e6c0b375741539b7`
 - From: Bitter Water, Manna, and Amalek (`exod-07`)
 - To: The Bread of Life (`john-x111`)
 
@@ -253,7 +253,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo16` By faith Moses
 
-- **Exod.2.1-Exod.2.15 → Heb.11.23-Heb.11.27** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `6360ea0965c60c01`
+- **Exod.2.1-Exod.2.15 → Heb.11.23-Heb.11.27** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `6360ea0965c60c01`
 - From: Slavery and the Birth of Moses (`exod-01`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -271,7 +271,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exo17` The song of Moses
 
-- **Exod.15.1-Exod.15.11 → Rev.15.3-Rev.15.4** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `203bdeb0dfe0380f`
+- **Exod.15.1-Exod.15.11 → Rev.15.3-Rev.15.4** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `203bdeb0dfe0380f`
 - From: Crossing the Sea (`exod-06`)
 - To: The Seven Bowls (`rev-07`, library)
 

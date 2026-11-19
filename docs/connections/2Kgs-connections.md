@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs06` Barley loaves
 
-- **2Kgs.4.42-2Kgs.4.44 → John.6.9-John.6.13** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `4bc2990ce02d73df`
+- **2Kgs.4.42-2Kgs.4.44 → John.6.9-John.6.13** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `4bc2990ce02d73df`
 - From: Elisha's Wonders (`2kgs-02`)
 - To: Five Thousand Fed; Walking on the Sea (`john-x110`)
 
@@ -28,7 +28,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs07` They became vain
 
-- **2Kgs.17.15 → Rom.1.21** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `5b38ae39ba7633fb`
+- **2Kgs.17.15 → Rom.1.21** · echo · strength 1 · verified (approved 2026-11-19) · fingerprint `5b38ae39ba7633fb`
 - From: The Fall of Samaria (`2kgs-07`)
 - To: The Gospel; All under Sin; Righteousness through Faith (`rom-01`, library)
 
@@ -43,7 +43,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs08` A leather belt around his waist
 
-- **2Kgs.1.8 → Matt.3.4** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `61a9b628af6ebf09`
+- **2Kgs.1.8 → Matt.3.4** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `61a9b628af6ebf09`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: John the Baptist; the Temptation; the First Disciples (`matt-02`, library)
 

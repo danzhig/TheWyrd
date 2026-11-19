@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa01` Across the brook Kidron
 
-- **2Sam.15.23 → John.18.1** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `787e7fa64fa492b9`
+- **2Sam.15.23 → John.18.1** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `787e7fa64fa492b9`
 - From: Absalom's Revolt and David's Return (`2sam-08`)
 - To: Arrest and Trial (`john-x208`)
 
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa02` He went away and hanged himself
 
-- **2Sam.17.23 → Matt.27.5** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `212a63094ac6d11c`
+- **2Sam.17.23 → Matt.27.5** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `212a63094ac6d11c`
 - From: Absalom's Revolt and David's Return (`2sam-08`)
 - To: The Trial and the Crucifixion (`matt-17`, library)
 
@@ -38,7 +38,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa03` Praise among the nations
 
-- **2Sam.22.50 → Rom.15.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `08b8fcb9dc48c27d`
+- **2Sam.22.50 → Rom.15.9** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `08b8fcb9dc48c27d`
 - From: Last Things: Famine, Song, Heroes, Census (`2sam-10`)
 - To: The Weak and the Strong; Paul’s Plans and Greetings (`rom-07`, library)
 
@@ -55,7 +55,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa04` I will be his father
 
-- **2Sam.7.14 → Heb.1.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `735aaf2ec5ebaa15`
+- **2Sam.7.14 → Heb.1.5** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `735aaf2ec5ebaa15`
 - From: The Promise to David (`2sam-04`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
@@ -72,7 +72,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ssa05` One of his line on his throne
 
-- **2Sam.7.12-2Sam.7.13 → Acts.2.30** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ca9b5d49ddf91179`
+- **2Sam.7.12-2Sam.7.13 → Acts.2.30** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `ca9b5d49ddf91179`
 - From: The Promise to David (`2sam-04`)
 - To: Ascension and Pentecost (`acts-01`)
 

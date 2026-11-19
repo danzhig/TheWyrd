@@ -32,14 +32,17 @@ export const CONNECTION_TYPES = [
 
 const Osis = z.string().regex(/^[1-4A-Za-z]+\.\d+(\.\d+)?(-[1-4A-Za-z]+\.\d+(\.\d+)?)?$/);
 
-/** A Greek word (or a run of words) at its row in tagged data: the Septuagint or TAGNT. */
+/**
+ * A word (or a run of words) at its row in tagged data: Greek in the Septuagint or TAGNT, or
+ * Hebrew/Aramaic in TAHOT (threads inside the Old Testament, threads plan TX2).
+ */
 export const EvidenceSchema = z.object({
-  dataset: z.enum(['LXX', 'TAGNT']),
+  dataset: z.enum(['LXX', 'TAGNT', 'TAHOT']),
   ref: z.string(), // the dataset's own reference ("3Kgdms.17.23", "Luk.7.15")
   wordIndex: z.number().int().positive(),
   toWordIndex: z.number().int().positive().optional(),
   form: z.string(), // the tokens at those positions, as the data has them
-  row: z.string(), // "LXX 011-3Kgdms", "TAGNT Mat-Jhn:60784"
+  row: z.string(), // "LXX 011-3Kgdms", "TAGNT Mat-Jhn:60784", "TAHOT Jos-Est:1234"
 });
 
 export const CitationSchema = z.discriminatedUnion('kind', [

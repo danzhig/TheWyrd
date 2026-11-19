@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job01` He takes the wise in their craftiness
 
-- **Job.5.12-Job.5.13 → 1Cor.3.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a904b84b8c4e4752`
+- **Job.5.12-Job.5.13 → 1Cor.3.19** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `a904b84b8c4e4752`
 - From: Eliphaz Speaks (`job-x102`)
 - To: Divisions and the Wisdom of the Cross (`1cor-01`, library)
 
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job02` The endurance of Job
 
-- **Job.1.20-Job.1.22 → Jas.5.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `f65a4f42f3e8fbff`
+- **Job.1.20-Job.1.22 → Jas.5.11** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `f65a4f42f3e8fbff`
 - From: The Wager in Heaven (`job-01`)
 - To: The Tongue, Humility, the Rich, Patience and Prayer (`jas-02`, library)
 
@@ -38,7 +38,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job03` Ways past tracing out
 
-- **Job.9.10 → Rom.11.33** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `a65884fcbdfe22b7`
+- **Job.9.10 → Rom.11.33** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `a65884fcbdfe22b7`
 - From: Who Can Argue with God? (`job-x105`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -53,7 +53,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job04` Who has first given to him?
 
-- **Job.41.11 → Rom.11.35** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `b4b642a9c13dd8e0`
+- **Job.41.11 → Rom.11.35** · quotation · strength 2 · verified (approved 2026-11-19) · fingerprint `b4b642a9c13dd8e0`
 - From: God's Second Speech (`job-x3`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -66,7 +66,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job05` This will turn out for my salvation
 
-- **Job.13.16 → Phil.1.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `5f2217d7456190e0`
+- **Job.13.16 → Phil.1.19** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `5f2217d7456190e0`
 - From: Job: Man Born of Woman (`job-x107`)
 - To: Joy in Prison; Christ’s Humility (`phil-01`, library)
 
@@ -81,7 +81,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job06` Naked I came, naked I return
 
-- **Job.1.21 → 1Tim.6.7** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `0e362bbbb4a32977`
+- **Job.1.21 → 1Tim.6.7** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `0e362bbbb4a32977`
 - From: The Wager in Heaven (`job-01`)
 - To: A Good Minister; Widows, Elders and Wealth (`1tim-02`, library)
 
@@ -94,7 +94,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job07` The adversary walking the earth
 
-- **Job.1.6-Job.2.7 → 1Pet.5.8** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `0e22d4a241d84ad6`
+- **Job.1.6-Job.2.7 → 1Pet.5.8** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `0e22d4a241d84ad6`
 - From: The Wager in Heaven (`job-01`)
 - To: Suffering for Doing Good; Shepherds of the Flock (`1pet-02`, library)
 
@@ -110,7 +110,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job08` The lowly lifted up
 
-- **Job.5.11 → Luke.1.52** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `c86d18641622682c`
+- **Job.5.11 → Luke.1.52** · echo · strength 1 · verified (approved 2026-11-19) · fingerprint `c86d18641622682c`
 - From: Eliphaz Speaks (`job-x102`)
 - To: Two Annunciations (`luke-02`)
 

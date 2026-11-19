@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan01` The abomination of desolation
 
-- **Dan.9.27 → Matt.24.15** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `cbf75706cec18285`
+- **Dan.9.27 → Matt.24.15** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `cbf75706cec18285`
 - From: The Seventy Weeks (`dan-x103`)
 - To: The End of the Age (`matt-15`, library)
 
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan02` Hair white as wool, like snow
 
-- **Dan.7.9-Dan.7.13 → Rev.1.13-Rev.1.14** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `189756f1884ee922`
+- **Dan.7.9-Dan.7.13 → Rev.1.13-Rev.1.14** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `189756f1884ee922`
 - From: Four Beasts and the Son of Man (`dan-x101`)
 - To: The Vision on Patmos (`rev-01`, library)
 
@@ -43,7 +43,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan03` Michael
 
-- **Dan.10.13-Dan.12.1 → Rev.12.7** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `23c4362f215d084a`
+- **Dan.10.13-Dan.12.1 → Rev.12.7** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `23c4362f215d084a`
 - From: The Man in Linen (`dan-x104`)
 - To: The Woman, the Dragon and the Beasts (`rev-06`, library)
 
@@ -59,7 +59,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan04` Stopped the mouths of lions
 
-- **Dan.6.16-Dan.6.22 → Heb.11.33** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `ad82a3faa321354f`
+- **Dan.6.16-Dan.6.22 → Heb.11.33** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `ad82a3faa321354f`
 - From: The Lions' Den (`dan-06`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -77,7 +77,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan05` Quenched the power of fire
 
-- **Dan.3.19-Dan.3.27 → Heb.11.34** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `81f75a4273dcb983`
+- **Dan.3.19-Dan.3.27 → Heb.11.34** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `81f75a4273dcb983`
 - From: The Fiery Furnace (`dan-03`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -91,7 +91,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan06` Gabriel
 
-- **Dan.9.21 → Luke.1.19** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `10f5dd3d723404e9`
+- **Dan.9.21 → Luke.1.19** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `10f5dd3d723404e9`
 - From: The Seventy Weeks (`dan-x103`)
 - To: Two Annunciations (`luke-02`)
 
@@ -106,7 +106,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan07` A kingdom without end
 
-- **Dan.7.14 → Luke.1.33** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `bed999627a93c0ea`
+- **Dan.7.14 → Luke.1.33** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `bed999627a93c0ea`
 - From: Four Beasts and the Son of Man (`dan-x101`)
 - To: Two Annunciations (`luke-02`)
 

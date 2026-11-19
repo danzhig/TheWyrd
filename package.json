@@ -39,7 +39,8 @@
     "connections:draft": "tsx scripts/connections-draft.ts",
     "tokens": "tsx scripts/gen-tokens.ts",
     "fonts": "tsx scripts/fetch-fonts.ts",
-    "textures": "tsx scripts/render-textures.ts"
+    "textures": "tsx scripts/render-textures.ts",
+    "connections:sizing": "tsx scripts/connections-sizing.ts"
   },
   "dependencies": {
     "d3-selection": "3.0.1",

@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num01` As Moses lifted up the serpent
 
-- **Num.21.6-Num.21.9 → John.3.14-John.3.15** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `821eb436a78dde9a`
+- **Num.21.6-Num.21.9 → John.3.14-John.3.15** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `821eb436a78dde9a`
 - From: The Bronze Serpent and the March East (`num-09`)
 - To: Nicodemus (`john-x105`)
 
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num02` Bodies that fell in the wilderness
 
-- **Num.14.26-Num.14.35 → Heb.3.16-Heb.3.19** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ff6b0a663f927f45`
+- **Num.14.26-Num.14.35 → Heb.3.16-Heb.3.19** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `ff6b0a663f927f45`
 - From: The Twelve Spies (`num-04`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num03` The ashes of a heifer
 
-- **Num.19.1-Num.19.10 → Heb.9.13** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `952e2ab47a1afe37`
+- **Num.19.1-Num.19.10 → Heb.9.13** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `952e2ab47a1afe37`
 - From: Priestly Duties and the Red Heifer (`num-07`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
@@ -59,7 +59,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num04` Faithful in all his house
 
-- **Num.12.7 → Heb.3.2-Heb.3.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `f950ae8a7b5c35c0`
+- **Num.12.7 → Heb.3.2-Heb.3.5** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `f950ae8a7b5c35c0`
 - From: Miriam and Aaron Oppose Moses (`num-03`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
@@ -78,7 +78,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num05` Aaron's rod that budded
 
-- **Num.17.8-Num.17.10 → Heb.9.4** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `e90c2044524d8113`
+- **Num.17.8-Num.17.10 → Heb.9.4** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `e90c2044524d8113`
 - From: Korah's Rebellion (`num-06`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
@@ -98,7 +98,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num06` The teaching of Balaam
 
-- **Num.25.1-Num.25.3 → Rev.2.14** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `236987c286366d71`
+- **Num.25.1-Num.25.3 → Rev.2.14** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `236987c286366d71`
 - From: Apostasy at Peor (`num-11`)
 - To: Letters to the Seven Churches (`rev-02`, library)
 
@@ -113,7 +113,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num07` Balaam's donkey
 
-- **Num.22.21-Num.22.33 → 2Pet.2.15-2Pet.2.16** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ca083865e1e43eaa`
+- **Num.22.21-Num.22.33 → 2Pet.2.15-2Pet.2.16** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `ca083865e1e43eaa`
 - From: Balaam (`num-10`)
 - To: Growing in Grace; False Teachers; the Day of the Lord (`2pet-01`, library)
 
@@ -130,7 +130,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num08` Korah's rebellion
 
-- **Num.16.1-Num.16.35 → Jude.1.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `186f294b0a5b692a`
+- **Num.16.1-Num.16.35 → Jude.1.11** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `186f294b0a5b692a`
 - From: Korah's Rebellion (`num-06`)
 - To: Against the Intruders (`jude-01`, library)
 
@@ -144,7 +144,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num09` They craved evil things
 
-- **Num.11.4-Num.11.34 → 1Cor.10.6-1Cor.10.10** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `ba8416859752264b`
+- **Num.11.4-Num.11.34 → 1Cor.10.6-1Cor.10.10** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `ba8416859752264b`
 - From: Complaints, Quail, and the Seventy Elders (`num-02`)
 - To: Food Offered to Idols; Paul’s Freedom (`1cor-03`, library)
 
@@ -163,7 +163,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num10` Seventy sent out
 
-- **Num.11.16-Num.11.25 → Luke.10.1** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `35e1434e14980b08`
+- **Num.11.16-Num.11.25 → Luke.10.1** · parallel · strength 1 · verified (approved 2026-11-19) · fingerprint `35e1434e14980b08`
 - From: Complaints, Quail, and the Seventy Elders (`num-02`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 

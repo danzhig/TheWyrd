@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg01` A son promised to a barren wife
 
-- **Judg.13.2-Judg.13.7 → Luke.1.7-Luke.1.15** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `282a33ee3188a3f8`
+- **Judg.13.2-Judg.13.7 → Luke.1.7-Luke.1.15** · parallel · strength 2 · verified (approved 2026-11-19) · fingerprint `282a33ee3188a3f8`
 - From: Samson (`judg-08`)
 - To: Two Annunciations (`luke-02`)
 
@@ -28,7 +28,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg02` Gideon
 
-- **Judg.6.11-Judg.7.25 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `7059d5a6d244e9cb`
+- **Judg.6.11-Judg.7.25 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `7059d5a6d244e9cb`
 - From: Gideon (`judg-05`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -45,7 +45,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg03` Jephthah
 
-- **Judg.11.1-Judg.11.33 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `6f48f0c790482e3a`
+- **Judg.11.1-Judg.11.33 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `6f48f0c790482e3a`
 - From: Jephthah and the Minor Judges (`judg-07`)
 - To: The Witnesses of Faith (`heb-04`, library)
 
@@ -61,7 +61,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jdg04` Samson
 
-- **Judg.13.24-Judg.16.31 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `12212dcac94de3fd`
+- **Judg.13.24-Judg.16.31 → Heb.11.32-Heb.11.34** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `12212dcac94de3fd`
 - From: Samson (`judg-08`)
 - To: The Witnesses of Faith (`heb-04`, library)
 

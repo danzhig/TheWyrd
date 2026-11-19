@@ -282,7 +282,7 @@ export interface ThreadEnd {
 }
 
 export interface ThreadEvidence {
-  dataset: 'LXX' | 'TAGNT';
+  dataset: 'LXX' | 'TAGNT' | 'TAHOT';
   ref: string; // "Septuagint 3 Kingdoms 17:23" style is built from this at display
   words: string; // "11–15"
   form: string; // the tokens at those positions
