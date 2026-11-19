@@ -128,6 +128,12 @@ function ThreadGlyph({ verse, count }: { verse: VerseOut; count: number }) {
           strokeLinecap="round"
         />
       </svg>
+      {/* More than one thread from this verse: how many (threads plan §4). */}
+      {count > 1 ? (
+        <span className="thread-count" aria-hidden="true">
+          {count}
+        </span>
+      ) : null}
     </a>
   );
 }

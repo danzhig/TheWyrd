@@ -159,6 +159,15 @@
   height: auto;
 }
 
+.thread-count {
+  margin-left: 0.1em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: oldstyle-nums;
+  vertical-align: 0.35em;
+}
+
 .thread-glyph:hover,
 .thread-glyph:focus-visible {
   color: var(--accent);

@@ -4,8 +4,11 @@ import fs from 'node:fs';
 import {
   arcPath,
   arcsFor,
+  arcToward,
   arcWidth,
   BOW,
+  OUTWARD,
+  directedPath,
   bookThreads,
   directionSummary,
   nearestArc,
@@ -150,5 +153,52 @@ describe('panels (threads plan TD3)', () => {
     expect(exod.drawsOn).toEqual([]);
     expect(exod.drawnOnBy.map((r) => r.bookId)).toContain('Luke');
     expect(threadedBooks(data).has('Luke')).toBe(true);
+  });
+});
+
+describe('direction and pairs on the ceiling (threads plan TD5)', () => {
+  const data = (
+    JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as PublicConnections
+  ).connections;
+
+  it('points an arc toward its later book only when every thread says so', () => {
+    const one = data.find((c) => c.order.uses && c.order.older !== null)!;
+    expect(arcToward([one])).toBe(one.ends[1 - one.order.older!]!.bookId);
+    const none = data.find((c) => !c.order.uses)!;
+    expect(arcToward([one, none])).toBeNull();
+  });
+
+  it('draws a directed arc from the older book, with a vertex at its middle', () => {
+    const curve = [
+      { x: 0, y: 0 },
+      { x: 50, y: 40 },
+      { x: 100, y: 0 },
+    ] as [{ x: number; y: number }, { x: number; y: number }, { x: number; y: number }];
+    expect(directedPath(curve, true)).toBe('M0 0Q25 20 50 20Q75 20 100 0');
+    expect(directedPath(curve, false)).toBe('M100 0Q75 20 50 20Q25 20 0 0');
+  });
+
+  it('bows arcs inside one corpus outward, and between the Testaments inward', () => {
+    expect(OUTWARD).toBeGreaterThan(1);
+    expect(BOW).toBeLessThan(1);
+    const homes = new Map([
+      ['Gal', { x: 100, y: 0, r: 10 }],
+      ['Acts', { x: 0, y: 100, r: 10 }],
+      ['Gen', { x: -100, y: 0, r: 10 }],
+    ]);
+    const nn = data
+      .filter((c) => c.pair === 'nt-nt')
+      .map((c) => ({
+        ...c,
+        ends: [
+          { ...c.ends[0], bookId: 'Gal' },
+          { ...c.ends[1], bookId: 'Acts' },
+        ] as typeof c.ends,
+      }));
+    const [arc] = arcsFor(nn, homes, new Set(TYPE_ORDER));
+    expect(arc!.pair).toBe('nt-nt');
+    // The middle of the arc lies farther from the oculus than the chord's midpoint.
+    expect(Math.hypot(arc!.mid.x, arc!.mid.y)).toBeGreaterThan(Math.hypot(50, 50));
+    expect(arcsFor(nn, homes, new Set(TYPE_ORDER), new Set())).toEqual([]);
   });
 });

@@ -10,13 +10,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { ThreadCard, verseLabel } from '@/components/threads/ThreadCard';
 import type { SectionThread } from '@/lib/data';
+import { THREAD_GROUPS, threadGroup, type ThreadGroup } from '@/lib/threads';
 import styles from './reader.module.css';
 
-/** Group a section's threads by the verse they start from. */
-function byVerse(threads: SectionThread[]): [string, SectionThread[]][] {
-  const groups = new Map<string, SectionThread[]>();
-  for (const t of threads) groups.set(t.here.anchor, [...(groups.get(t.here.anchor) ?? []), t]);
-  return [...groups];
+/** A section's threads in the reader's three groups, each in verse order. */
+function byGroup(threads: SectionThread[]): Record<ThreadGroup, SectionThread[]> {
+  const out: Record<ThreadGroup, SectionThread[]> = { drawsOn: [], takenUpIn: [], alongside: [] };
+  for (const t of threads) out[threadGroup(t.connection.order, t.hereIndex)].push(t);
+  return out;
 }
 
 export function Threads({ threads }: { threads: SectionThread[] }) {
@@ -53,8 +54,17 @@ export function Threads({ threads }: { threads: SectionThread[] }) {
   };
 
   if (!threads.length) return null;
-  const groups = byVerse(threads);
-  const shown = groups.find(([anchor]) => anchor === open)?.[1] ?? [];
+  const groups = byGroup(threads);
+  const shown = threads.filter((t) => t.here.anchor === open);
+  const shownGroups = byGroup(shown);
+  // The glyph's link (`#threads-<verse>`) lands on the first card from that verse.
+  const first = new Set<string>();
+  const anchorFor = (t: SectionThread) => {
+    if (first.has(t.here.anchor)) return undefined;
+    first.add(t.here.anchor);
+    return `threads-${t.here.anchor}`;
+  };
+  const listed = THREAD_GROUPS.filter((g) => g.id !== 'alongside' || groups.alongside.length);
   return (
     <>
       <section
@@ -67,26 +77,57 @@ export function Threads({ threads }: { threads: SectionThread[] }) {
           Threads
         </h2>
         <p className={styles.threadsIntro}>
-          Passages elsewhere in the Bible that this one quotes, echoes or answers, each with its
+          Passages elsewhere in the Bible that this one takes up, or that take it up, each with its
           sources.
         </p>
-        {groups.map(([anchor, list]) => (
-          <div key={anchor} id={`threads-${anchor}`} className={styles.threadGroup}>
-            <h3 className={styles.threadVerse}>
-              <a href={`#${anchor}`}>From {verseLabel(anchor)}</a>
-            </h3>
-            {list.map((t) => (
-              <ThreadCard
-                key={t.connection.id}
-                c={t.connection}
-                ends={t.ends}
-                here={t.hereIndex}
-                headingLevel={4}
-                group={`threads-${anchor}`}
-              />
-            ))}
-          </div>
-        ))}
+        <nav className={styles.threadJump} aria-label="Thread groups">
+          {listed.map((g, k) => (
+            <span key={g.id}>
+              {k ? <span aria-hidden="true"> · </span> : null}
+              <a href={`#threads-group-${g.id}`}>
+                {g.title} <span className={styles.threadJumpCount}>{groups[g.id].length}</span>
+              </a>
+            </span>
+          ))}
+        </nav>
+        <div className={styles.threadGroups}>
+          {listed.map((g) => (
+            <section
+              key={g.id}
+              id={`threads-group-${g.id}`}
+              className={styles.threadGroup}
+              aria-labelledby={`threads-group-${g.id}-h`}
+              data-thread-group={g.id}
+            >
+              <h3 id={`threads-group-${g.id}-h`} className={styles.threadGroupHeading}>
+                {g.title} <span className={styles.threadGroupNote}>· {g.note}</span>
+              </h3>
+              {groups[g.id].length ? (
+                groups[g.id].map((t) => (
+                  <div
+                    key={t.connection.id}
+                    id={anchorFor(t)}
+                    className={styles.threadItem}
+                    data-from={t.here.anchor}
+                  >
+                    <p className={styles.threadVerse}>
+                      <a href={`#${t.here.anchor}`}>From {verseLabel(t.here.anchor)}</a>
+                    </p>
+                    <ThreadCard
+                      c={t.connection}
+                      ends={t.ends}
+                      here={t.hereIndex}
+                      headingLevel={4}
+                      group={`threads-${g.id}`}
+                    />
+                  </div>
+                ))
+              ) : (
+                <p className={styles.threadEmpty}>{g.empty}</p>
+              )}
+            </section>
+          ))}
+        </div>
       </section>
       <dialog
         ref={dialogRef}
@@ -113,15 +154,21 @@ export function Threads({ threads }: { threads: SectionThread[] }) {
               <span aria-hidden="true">×</span>
             </button>
           </header>
-          {shown.map((t) => (
-            <ThreadCard
-              key={t.connection.id}
-              c={t.connection}
-              ends={t.ends}
-              here={t.hereIndex}
-              group="thread-dialog"
-              onGo={close}
-            />
+          {THREAD_GROUPS.filter((g) => shownGroups[g.id].length).map((g) => (
+            <section key={g.id} data-dialog-group={g.id}>
+              <h3 className={styles.threadGroupHeading}>{g.title}</h3>
+              {shownGroups[g.id].map((t) => (
+                <ThreadCard
+                  key={t.connection.id}
+                  c={t.connection}
+                  ends={t.ends}
+                  here={t.hereIndex}
+                  headingLevel={4}
+                  group="thread-dialog"
+                  onGo={close}
+                />
+              ))}
+            </section>
           ))}
         </div>
       </dialog>
