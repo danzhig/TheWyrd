@@ -15,9 +15,17 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ThreadCard } from '@/components/threads/ThreadCard';
 import { TYPE_LABEL, TYPE_ORDER } from '@/lib/threads';
-import type { ConnectionType, PublicConnections } from '@/lib/types';
+import type { ConnectionType, PublicConnection, PublicConnections } from '@/lib/types';
 import type { Point } from './layout';
-import { arcsFor, nearestArc } from './threads';
+import {
+  arcsFor,
+  bookThreads,
+  directionSummary,
+  nearestArc,
+  panelOrder,
+  threadedBooks,
+  type BookRow,
+} from './threads';
 import s from './threads.module.css';
 
 let dataPromise: Promise<PublicConnections> | null = null;
@@ -43,6 +51,8 @@ export interface ThreadsModeProps {
   listVisible: boolean;
   /** A connection is being opened in the reader (remember the camera). */
   onOpen: () => void;
+  /** Go into a book, as a single tap does with Threads off (the Vault's flight). */
+  onOpenBook: (bookId: string) => void;
   /** An arc was chosen (from the map or the list): the camera may bring it into view. */
   onShowArc?: (mid: Point) => void;
   /** The Testaments filter: connections with an end in this testament are left out. */
@@ -56,6 +66,7 @@ export function ThreadsMode({
   nameOf,
   listVisible,
   onOpen,
+  onOpenBook,
   onShowArc,
   hidden,
   testamentOf,
@@ -63,6 +74,9 @@ export function ThreadsMode({
   const [data, setData] = useState<PublicConnections | null>(null);
   const [types, setTypes] = useState<Set<ConnectionType>>(() => new Set(TYPE_ORDER));
   const [selected, setSelected] = useState<string | null>(null);
+  /** The book whose threads the book panel shows (threads plan §2.5). */
+  const [book, setBook] = useState<string | null>(null);
+  const [full, setFull] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const opener = useRef<HTMLElement | null>(null);
 
@@ -102,20 +116,35 @@ export function ThreadsMode({
     [homes],
   );
 
+  // Books with a thread under the filters: the first tap on one opens its panel.
+  const typed = useMemo(() => shown.filter((c) => types.has(c.type)), [shown, types]);
+  const threaded = useMemo(() => threadedBooks(typed), [typed]);
+  const bookData = useMemo(() => (book ? bookThreads(typed, book) : null), [typed, book]);
+
   const open = (key: string, from?: HTMLElement | null) => {
     opener.current = from ?? null;
+    setBook(null);
+    setFull(false);
     setSelected(key);
     const a = arcs.find((x) => x.key === key);
     if (a) onShowArc?.(a.mid);
+  };
+  const close = () => {
+    setSelected(null);
+    setBook(null);
+    setFull(false);
+    if (opener.current?.isConnected) opener.current.focus({ preventScroll: true });
   };
   // A tap near an arc opens it. One path per arc (the node budget), so taps are matched to the
   // nearest arc in scene coordinates rather than by a wide hit stroke on each.
   const svgRef = useRef<SVGSVGElement>(null);
   const arcsRef = useRef(arcs);
   const openRef = useRef(open);
+  const closeRef = useRef<() => void>(() => {});
   useEffect(() => {
     arcsRef.current = arcs;
     openRef.current = open;
+    closeRef.current = close;
   });
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -129,30 +158,75 @@ export function ThreadsMode({
       // Within 14 screen pixels of the line, whatever the zoom.
       const hit = nearestArc(arcsRef.current, { x: p.x, y: p.y }, 14 / m.a);
       if (hit) openRef.current(hit.key);
+      else closeRef.current(); // a tap on the empty sky closes the panel
     };
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
   }, []);
 
-  const close = () => {
+  const openBookPanel = (id: string, from?: HTMLElement | null) => {
+    opener.current = from ?? null;
     setSelected(null);
-    if (opener.current?.isConnected) opener.current.focus();
+    setFull(false);
+    setBook(id);
   };
-
-  // The panel takes focus when it opens; Esc closes it.
+  // With Threads on, the first tap on a book opens its threads; a second tap on the same book
+  // (or "Open …" in the panel) goes in. A book with no threads under the filters goes straight
+  // in. Caught before the medallion's own handler, on the ceiling only.
+  const bookRef = useRef(book);
+  const threadedRef = useRef(threaded);
+  const openBookPanelRef = useRef(openBookPanel);
   useEffect(() => {
-    if (!arc) return;
+    bookRef.current = book;
+    threadedRef.current = threaded;
+    openBookPanelRef.current = openBookPanel;
+  });
+  useEffect(() => {
+    const onTap = (e: MouseEvent) => {
+      const a = (e.target as HTMLElement | null)?.closest<HTMLAnchorElement>('a[data-book]');
+      if (!a || !a.closest('[data-testid="vault-view"]')) return;
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const id = a.dataset.book!;
+      if (!threadedRef.current.has(id) || bookRef.current === id) return;
+      e.preventDefault();
+      e.stopPropagation();
+      openBookPanelRef.current(id, a);
+    };
+    window.addEventListener('click', onTap, true);
+    return () => window.removeEventListener('click', onTap, true);
+  }, []);
+  // Books without threads are drawn dimmed, so the difference shows before the tap.
+  useEffect(() => {
+    if (!data) return;
+    const els = document.querySelectorAll<HTMLElement>('[data-testid="vault-view"] a[data-book]');
+    for (const el of els) el.toggleAttribute('data-threadless', !threaded.has(el.dataset.book!));
+    return () => {
+      for (const el of els) el.removeAttribute('data-threadless');
+    };
+  }, [data, threaded]);
+
+  // A panel takes focus when it opens. Esc steps out one level at a time: an open card, then an
+  // open book row, then the panel.
+  const panelRef = useRef<HTMLElement>(null);
+  const panelKey = arc?.key ?? (book ? `book:${book}` : null);
+  useEffect(() => {
+    if (!panelKey) return;
     headingRef.current?.focus({ preventScroll: true });
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.stopPropagation();
-        close();
-      }
+      if (e.key !== 'Escape') return;
+      e.stopPropagation();
+      const panel = panelRef.current;
+      const openCard = panel?.querySelector<HTMLDetailsElement>('details[data-more][open]');
+      const openRow = panel?.querySelector<HTMLDetailsElement>('details[data-book-row][open]');
+      const step = openCard ?? openRow;
+      if (step) {
+        step.open = false;
+        step.querySelector('summary')?.focus({ preventScroll: true });
+      } else close();
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [arc?.key]);
+  }, [panelKey]);
 
   // A book's own name, as its passages show it ("John 1:1–3" → "John").
   const bookName = useMemo(() => {
@@ -187,7 +261,13 @@ export function ThreadsMode({
                   key={a.key}
                   d={a.d}
                   pathLength={1}
-                  className={`${s.line} ${selected === a.key ? s.selected : ''}`}
+                  className={[
+                    s.line,
+                    selected === a.key || (book && (a.a === book || a.b === book))
+                      ? s.selected
+                      : '',
+                    book && a.a !== book && a.b !== book ? s.dim : '',
+                  ].join(' ')}
                   strokeWidth={selected === a.key ? a.width * 1.6 : a.width}
                   data-arc={a.key}
                   data-count={a.connections.length}
@@ -257,30 +337,229 @@ export function ThreadsMode({
             </li>
           ))}
         </ul>
+        <h3 className={s.listHeading}>By book</h3>
+        <ul className={s.pairs}>
+          {[...threaded]
+            .sort((x, y) => name(x).localeCompare(name(y)))
+            .map((id) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  className={s.pairButton}
+                  data-book-item={id}
+                  onClick={(e) => openBookPanel(id, e.currentTarget)}
+                >
+                  {name(id)}
+                </button>
+                <span className={s.meta}>
+                  {' '}
+                  · {typed.filter((c) => c.ends.some((e) => e.bookId === id)).length} threads ·{' '}
+                </span>
+                <a href={`/book/${id}/`}>Open the book</a>
+              </li>
+            ))}
+        </ul>
       </section>
 
       {arc ? (
-        <aside className={s.panel} aria-labelledby="arc-heading" data-testid="arc-panel">
-          <header className={s.panelHead}>
-            <h2 id="arc-heading" ref={headingRef} tabIndex={-1} className={s.panelTitle}>
-              {label(arc)}
-            </h2>
-            <button type="button" className={s.close} onClick={close} aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </header>
-          <ul className={s.connections}>
-            {arc.connections.map((c) => {
-              const { ends, ...rest } = c;
-              return (
-                <li key={c.id} data-panel-connection={c.id}>
-                  <ThreadCard c={rest} ends={ends} group="arc-panel" onGo={onOpen} />
-                </li>
-              );
-            })}
-          </ul>
+        <aside
+          ref={panelRef}
+          className={`${s.panel} ${full ? s.full : ''}`}
+          aria-labelledby="arc-heading"
+          data-testid="arc-panel"
+        >
+          <PanelHead
+            id="arc-heading"
+            headingRef={headingRef}
+            title={label(arc)}
+            count={arc.connections.length}
+            full={full}
+            onFull={() => setFull((f) => !f)}
+            onClose={close}
+          />
+          <ArcCards key={arc.key} list={arc.connections} name={name} onGo={onOpen} />
+        </aside>
+      ) : null}
+      {book && bookData ? (
+        <aside
+          ref={panelRef}
+          className={`${s.panel} ${full ? s.full : ''}`}
+          aria-labelledby="book-heading"
+          data-testid="book-panel"
+          data-book-panel={book}
+        >
+          <PanelHead
+            id="book-heading"
+            headingRef={headingRef}
+            title={name(book)}
+            count={bookData.total}
+            full={full}
+            onFull={() => setFull((f) => !f)}
+            onClose={close}
+          />
+          <p className={s.openBook}>
+            <a
+              href={`/book/${book}/`}
+              data-testid="open-book"
+              onClick={(e) => {
+                if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                e.preventDefault();
+                onOpenBook(book);
+              }}
+            >
+              Open {name(book)} →
+            </a>
+          </p>
+          {(
+            [
+              ['drawsOn', 'Draws on', 'Older books it takes up'],
+              ['drawnOnBy', 'Drawn on by', 'Later books that take it up'],
+              ['alongside', 'Alongside', 'Shared with no use claimed'],
+            ] as const
+          ).map(([k, h, note]) =>
+            bookData[k].length ? (
+              <section key={k} className={s.bookGroup} data-book-group={k}>
+                <h3 className={s.groupHeading}>
+                  {h} <span className={s.groupNote}>· {note}</span>
+                </h3>
+                {bookData[k].map((row) => (
+                  <BookRowView key={row.bookId} row={row} name={name} onGo={onOpen} />
+                ))}
+              </section>
+            ) : null,
+          )}
         </aside>
       ) : null}
     </>
+  );
+}
+
+function PanelHead({
+  id,
+  headingRef,
+  title,
+  count,
+  full,
+  onFull,
+  onClose,
+}: {
+  id: string;
+  headingRef: React.RefObject<HTMLHeadingElement | null>;
+  title: string;
+  count: number;
+  full: boolean;
+  onFull: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <header className={s.panelHead}>
+      {/* Phones: the sheet opens at 60% of the screen; this lifts it to full height. */}
+      <button
+        type="button"
+        className={s.handle}
+        aria-label={full ? 'Lower the panel' : 'Raise the panel'}
+        aria-pressed={full}
+        onClick={onFull}
+        data-testid="panel-handle"
+      >
+        <span aria-hidden="true" />
+      </button>
+      <h2 id={id} ref={headingRef} tabIndex={-1} className={s.panelTitle}>
+        {title}{' '}
+        <span className={s.panelCount}>
+          · {count} {count === 1 ? 'thread' : 'threads'}
+        </span>
+      </h2>
+      <button type="button" className={s.close} onClick={onClose} aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </header>
+  );
+}
+
+/** At most this many cards before "Show all" (threads plan §2.4). */
+const FIRST = 12;
+
+function cards(list: PublicConnection[], group: string, onGo: () => void) {
+  return list.map((c) => {
+    const { ends, ...rest } = c;
+    return (
+      <li key={c.id} data-panel-connection={c.id}>
+        <ThreadCard c={rest} ends={ends} group={group} onGo={onGo} />
+      </li>
+    );
+  });
+}
+
+/** An arc's threads: how they run, chips by type, strongest first. */
+function ArcCards({
+  list,
+  name,
+  onGo,
+}: {
+  list: PublicConnection[];
+  name: (id: string) => string;
+  onGo: () => void;
+}) {
+  const [only, setOnly] = useState<ConnectionType | null>(null);
+  const [all, setAll] = useState(false);
+  const ordered = useMemo(() => panelOrder(list), [list]);
+  const counts = TYPE_ORDER.map((t) => ({ t, n: list.filter((c) => c.type === t).length })).filter(
+    (x) => x.n,
+  );
+  const picked = only ? ordered.filter((c) => c.type === only) : ordered;
+  const visible = all ? picked : picked.slice(0, FIRST);
+  return (
+    <>
+      <p className={s.summary} data-testid="arc-summary">
+        {directionSummary(list, name)}.
+      </p>
+      {counts.length > 1 ? (
+        <div className={s.panelChips} role="group" aria-label="Show one type">
+          {counts.map(({ t, n }) => (
+            <button
+              key={t}
+              type="button"
+              className={s.panelChip}
+              aria-pressed={only === t}
+              data-panel-type={t}
+              onClick={() => setOnly((o) => (o === t ? null : t))}
+            >
+              {TYPE_LABEL[t]} <span className={s.count}>{n}</span>
+            </button>
+          ))}
+        </div>
+      ) : null}
+      <ul className={s.connections}>{cards(visible, 'arc-panel', onGo)}</ul>
+      {picked.length > visible.length ? (
+        <button type="button" className={s.showAll} onClick={() => setAll(true)}>
+          Show all {picked.length}
+        </button>
+      ) : null}
+    </>
+  );
+}
+
+/** One partner book in a book's panel: a row that opens to its cards. */
+function BookRowView({
+  row,
+  name,
+  onGo,
+}: {
+  row: BookRow;
+  name: (id: string) => string;
+  onGo: () => void;
+}) {
+  const n = row.connections.length;
+  return (
+    <details className={s.bookRow} name="book-rows" data-book-row={row.bookId}>
+      <summary>
+        <span className={s.rowName}>{name(row.bookId)}</span>{' '}
+        <span className={s.count}>
+          {n} {n === 1 ? 'thread' : 'threads'}
+        </span>
+      </summary>
+      <ul className={s.connections}>{cards(row.connections, 'book-panel', onGo)}</ul>
+    </details>
   );
 }
