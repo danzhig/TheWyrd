@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs06` Barley loaves
 
-- **2Kgs.4.42-2Kgs.4.44 → John.6.9-John.6.13** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `088a444d2e7391b8`
+- **2Kgs.4.42-2Kgs.4.44 → John.6.9-John.6.13** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `4bc2990ce02d73df`
 - From: Elisha's Wonders (`2kgs-02`)
-- To: John 1–10 (`john-x1`)
+- To: Five Thousand Fed; Walking on the Sea (`john-x110`)
 
-> A man brings Elisha twenty loaves of barley, and a hundred men eat with some left over. In John's account of the feeding of the five thousand the boy's five loaves are barley loaves, and the leftover pieces fill twelve baskets; the adjective, found only here in the New Testament, is the Septuagint's (below).
+> John 6:9–13 echoes 2 Kings 4:42–44: barley loaves feed a crowd with some left over, as with Elisha's twenty loaves. A man brings Elisha twenty loaves of barley, and a hundred men eat with some left over. In John's account of the feeding of the five thousand the boy's five loaves are barley loaves, and the leftover pieces fill twelve baskets; the adjective, found only here in the New Testament, is the Septuagint's (below).
 
 - `OpenBibleXref:L265890` John.6.9 → 2Kgs.4.42-2Kgs.4.44, 15 votes
 - `OpenBibleXref:L75422` 2Kgs.4.43 → John.6.9, 6 votes
@@ -28,11 +28,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs07` They became vain
 
-- **2Kgs.17.15 → Rom.1.21** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `0b3237b46fd15cfe`
+- **2Kgs.17.15 → Rom.1.21** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `5b38ae39ba7633fb`
 - From: The Fall of Samaria (`2kgs-07`)
 - To: The Gospel; All under Sin; Righteousness through Faith (`rom-01`, library)
 
-> Kings explains the fall of the northern kingdom: the people rejected God's covenant, followed vanity and became vain. Paul says of those who knew God but did not honour him that they became vain in their reasoning, with the Septuagint's verb, found nowhere else in the New Testament (below).
+> Romans 1:21 echoes 2 Kings 17:15: those who refused to honour God became vain in their thinking. Kings explains the fall of the northern kingdom: the people rejected God's covenant, followed vanity and became vain. Paul says of those who knew God but did not honour him that they became vain in their reasoning, with the Septuagint's verb, found nowhere else in the New Testament (below).
 
 - `OpenBibleXref:L288540` Rom.1.21 → 2Kgs.17.15, 19 votes
 - `OpenBibleXref:L78358` 2Kgs.17.15 → Rom.1.21-Rom.1.23, 5 votes
@@ -43,11 +43,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `kgs08` A leather belt around his waist
 
-- **2Kgs.1.8 → Matt.3.4** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `e3aff931c66e26dc`
+- **2Kgs.1.8 → Matt.3.4** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `61a9b628af6ebf09`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: John the Baptist; the Temptation; the First Disciples (`matt-02`, library)
 
-> The king's messengers describe the man who met them as hairy and wearing a leather belt around his waist, and the king knows it is Elijah. Matthew describes John the Baptist's clothing of camel's hair with a leather belt around his waist, in the Septuagint's words (below).
+> Matthew 3:4 echoes 2 Kings 1:8: John the Baptist wears a leather belt around his waist, as Elijah did. The king's messengers describe the man who met them as hairy and wearing a leather belt around his waist, and the king knows it is Elijah. Matthew describes John the Baptist's clothing of camel's hair with a leather belt around his waist, in the Septuagint's words (below).
 
 - `OpenBibleXref:L230954` Matt.3.4 → 2Kgs.1.8, 13 votes
 - `OpenBibleXref:L74475` 2Kgs.1.8 → Matt.3.4, 6 votes

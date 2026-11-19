@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job01` He takes the wise in their craftiness
 
-- **Job.5.12-Job.5.13 → 1Cor.3.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `747f55cada1b9c7b`
-- From: The Great Debate (`job-x1`)
+- **Job.5.12-Job.5.13 → 1Cor.3.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a904b84b8c4e4752`
+- From: Eliphaz Speaks (`job-x102`)
 - To: Divisions and the Wisdom of the Cross (`1cor-01`, library)
 
-> Eliphaz tells Job that God takes the wise in their own craftiness and frustrates the plans of the cunning. Paul quotes the line as written Scripture to show that the wisdom of this world is foolishness with God; in Greek both have the same word for the wise (below).
+> 1 Corinthians 3:19 quotes Job 5:12–13: God catches the wise in their own craftiness. Eliphaz tells Job that God takes the wise in their own craftiness and frustrates the plans of the cunning. Paul quotes the line as written Scripture to show that the wisdom of this world is foolishness with God; in Greek both have the same word for the wise (below).
 
 - `OpenBibleXref:L296921` 1Cor.3.19 → Job.5.13, 50 votes
 - `OpenBibleXref:L100301` Job.5.13 → 1Cor.3.19, 11 votes
@@ -23,11 +23,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job02` The endurance of Job
 
-- **Job.1.20-Job.1.22 → Jas.5.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `a5c34c3f35b6bc91`
+- **Job.1.20-Job.1.22 → Jas.5.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `f65a4f42f3e8fbff`
 - From: The Wager in Heaven (`job-01`)
 - To: The Tongue, Humility, the Rich, Patience and Prayer (`jas-02`, library)
 
-> Having lost his children and everything he owned, Job blesses the name of the LORD, and Job 1 notes that in all this he did not sin. James names Job as the example of perseverance and of the Lord's compassion in the outcome; it is the only place the New Testament names him (below).
+> James 5:11 recalls Job 1:20–22: the endurance of Job, who blessed the LORD's name when he had lost everything. Having lost his children and everything he owned, Job blesses the name of the LORD, and Job 1 notes that in all this he did not sin. James names Job as the example of perseverance and of the Lord's compassion in the outcome; it is the only place the New Testament names him (below).
 
 - `OpenBibleXref:L331678` Jas.5.11 → Job.1.21-Job.1.22, 20 votes
 - LXX Job.1.20 word 3: Ἰὼβ (LXX 028-Job)
@@ -38,11 +38,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job03` Ways past tracing out
 
-- **Job.9.10 → Rom.11.33** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `10b2f9c3e836eff9`
-- From: The Great Debate (`job-x1`)
+- **Job.9.10 → Rom.11.33** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `a65884fcbdfe22b7`
+- From: Who Can Argue with God? (`job-x105`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
-> Job says that God does great things past finding out and wonders without number. Paul ends his long argument in Romans with praise of God's unsearchable judgements and ways past tracing out, using the Septuagint's adjective from Job 9:10, which the New Testament has only twice (below).
+> Romans 11:33 echoes Job 9:10: God's ways are past finding out. Job says that God does great things past finding out and wonders without number. Paul ends his long argument in Romans with praise of God's unsearchable judgements and ways past tracing out, using the Septuagint's adjective from Job 9:10, which the New Testament has only twice (below).
 
 - `OpenBibleXref:L101200` Job.9.10 → Rom.11.33, 15 votes
 - `OpenBibleXref:L293693` Rom.11.33 → Job.9.10, 9 votes
@@ -53,11 +53,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job04` Who has first given to him?
 
-- **Job.41.11 → Rom.11.35** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `075b17bd1bdb6bc0`
+- **Job.41.11 → Rom.11.35** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `b4b642a9c13dd8e0`
 - From: God's Second Speech (`job-x3`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
-> At the end of the LORD's speeches from the whirlwind, God asks who has first given to him that he should repay. Paul closes the same hymn of praise in Romans with the question who has first given to God and will be repaid, close to the wording WEBC gives Job 41:11.
+> Romans 11:35 quotes Job 41:11: who has first given to God, that God should repay him? At the end of the LORD's speeches from the whirlwind, God asks who has first given to him that he should repay. Paul closes the same hymn of praise in Romans with the question who has first given to God and will be repaid, close to the wording WEBC gives Job 41:11.
 
 - `OpenBibleXref:L293707` Rom.11.35 → Job.41.11, 19 votes
 - `OpenBibleXref:L108634` Job.41.11 → Rom.11.35, 17 votes
@@ -66,11 +66,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job05` This will turn out for my salvation
 
-- **Job.13.16 → Phil.1.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `90ee562744ac90b6`
-- From: The Great Debate (`job-x1`)
+- **Job.13.16 → Phil.1.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `5f2217d7456190e0`
+- From: Job: Man Born of Woman (`job-x107`)
 - To: Joy in Prison; Christ’s Humility (`phil-01`, library)
 
-> Job, defending himself before God, says that this will be his salvation. Writing from prison, Paul says he knows that this will turn out for his salvation; in Greek his words are the Septuagint's in Job 13:16, with a verb the New Testament has only four times (below).
+> Philippians 1:19 echoes Job 13:16: Paul, in prison, says this will turn out for his salvation, Job's words in the Septuagint's Greek. Job, defending himself before God, says that this will be his salvation. Writing from prison, Paul says he knows that this will turn out for his salvation; in Greek his words are the Septuagint's in Job 13:16, with a verb the New Testament has only four times (below).
 
 - LXX Job.13.16 word 4: ἀποβήσεται (LXX 028-Job)
 - TAGNT Php.1.19 word 6: ἀποβήσεται (TAGNT Act-Rev:71780)
@@ -81,11 +81,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job06` Naked I came, naked I return
 
-- **Job.1.21 → 1Tim.6.7** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `6ba1d615bab6e3be`
+- **Job.1.21 → 1Tim.6.7** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `0e362bbbb4a32977`
 - From: The Wager in Heaven (`job-01`)
 - To: A Good Minister; Widows, Elders and Wealth (`1tim-02`, library)
 
-> On losing everything, Job says that he came naked from his mother's womb and will return there naked, and blesses the LORD's name. First Timothy makes the same observation about possessions, that we brought nothing into the world and can carry nothing out, as a ground for contentment.
+> 1 Timothy 6:7 recalls Job 1:21: we brought nothing into the world and can carry nothing out. On losing everything, Job says that he came naked from his mother's womb and will return there naked, and blesses the LORD's name. First Timothy makes the same observation about possessions, that we brought nothing into the world and can carry nothing out, as a ground for contentment.
 
 - `OpenBibleXref:L99591` Job.1.21 → 1Tim.6.7, 32 votes
 - `OpenBibleXref:L320906` 1Tim.6.7 → Job.1.21, 29 votes
@@ -94,11 +94,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job07` The adversary walking the earth
 
-- **Job.1.6-Job.2.7 → 1Pet.5.8** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `c4559c17e20ba888`
+- **Job.1.6-Job.2.7 → 1Pet.5.8** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `0e22d4a241d84ad6`
 - From: The Wager in Heaven (`job-01`)
 - To: Suffering for Doing Good; Shepherds of the Flock (`1pet-02`, library)
 
-> In Job the adversary, Satan, comes before the LORD from going back and forth on the earth and walking up and down in it, and then strikes Job. First Peter warns that the adversary, the devil, walks around like a roaring lion; the Septuagint of Job calls Satan by the same Greek name, the devil (below).
+> 1 Peter 5:8 recalls Job 1:6–2:7: the adversary going about the earth, now a lion looking for someone to devour. In Job the adversary, Satan, comes before the LORD from going back and forth on the earth and walking up and down in it, and then strikes Job. First Peter warns that the adversary, the devil, walks around like a roaring lion; the Septuagint of Job calls Satan by the same Greek name, the devil (below).
 
 - `OpenBibleXref:L334239` 1Pet.5.8 → Job.2.2, 119 votes
 - `OpenBibleXref:L334222` 1Pet.5.8 → Job.1.6-Job.1.7, 30 votes
@@ -110,11 +110,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job08` The lowly lifted up
 
-- **Job.5.11 → Luke.1.52** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `60d4cd7acca7310c`
-- From: The Great Debate (`job-x1`)
+- **Job.5.11 → Luke.1.52** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `c86d18641622682c`
+- From: Eliphaz Speaks (`job-x102`)
 - To: Two Annunciations (`luke-02`)
 
-> Eliphaz praises the God who sets on high those who are low. Mary's song praises God for exalting the lowly, and the Greek for the lowly is the same word in Luke and in the Septuagint of Job 5:11 (below).
+> Luke 1:52 echoes Job 5:11: God sets on high those who are low, in Mary's song as in Eliphaz's praise. Eliphaz praises the God who sets on high those who are low. Mary's song praises God for exalting the lowly, and the Greek for the lowly is the same word in Luke and in the Septuagint of Job 5:11 (below).
 
 - `OpenBibleXref:L251101` Luke.1.52 → Job.5.11-Job.5.13, 8 votes
 - `OpenBibleXref:L100277` Job.5.11 → Luke.1.52-Luke.1.53, 5 votes

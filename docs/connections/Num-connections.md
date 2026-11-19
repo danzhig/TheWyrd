@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num01` As Moses lifted up the serpent
 
-- **Num.21.6-Num.21.9 → John.3.14-John.3.15** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `449d59898571c961`
+- **Num.21.6-Num.21.9 → John.3.14-John.3.15** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `821eb436a78dde9a`
 - From: The Bronze Serpent and the March East (`num-09`)
-- To: John 1–10 (`john-x1`)
+- To: Nicodemus (`john-x105`)
 
-> When snakes bite the people in the wilderness, the LORD tells Moses to set a bronze serpent on a pole, and whoever looks at it lives. Speaking to Nicodemus, Jesus names this act of Moses and says the Son of Man must be lifted up in the same way; the serpent is the Septuagint's word (below).
+> John 3:14–15 recalls Numbers 21:6–9: as Moses lifted up the bronze serpent, so the Son of Man must be lifted up. When snakes bite the people in the wilderness, the LORD tells Moses to set a bronze serpent on a pole, and whoever looks at it lives. Speaking to Nicodemus, Jesus names this act of Moses and says the Son of Man must be lifted up in the same way; the serpent is the Septuagint's word (below).
 
 - `OpenBibleXref:L264206` John.3.14 → Num.21.7-Num.21.9, 82 votes
 - `OpenBibleXref:L34987` Num.21.8 → John.3.14, 24 votes
@@ -25,11 +25,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num02` Bodies that fell in the wilderness
 
-- **Num.14.26-Num.14.35 → Heb.3.16-Heb.3.19** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `0e1381b0caeb6106`
+- **Num.14.26-Num.14.35 → Heb.3.16-Heb.3.19** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ff6b0a663f927f45`
 - From: The Twelve Spies (`num-04`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
-> After the spies' report, the LORD says that the bodies of the generation that grumbled will fall in the wilderness over forty years. Hebrews recalls those who came out of Egypt with Moses and whose bodies fell in the wilderness, with the Septuagint's word for their bodies, found nowhere else in the New Testament (below).
+> Hebrews 3:16–19 recalls Numbers 14:26–35: the generation whose bodies fell in the wilderness could not enter because of unbelief. After the spies' report, the LORD says that the bodies of the generation that grumbled will fall in the wilderness over forty years. Hebrews recalls those who came out of Egypt with Moses and whose bodies fell in the wilderness, with the Septuagint's word for their bodies, found nowhere else in the New Testament (below).
 
 - `OpenBibleXref:L325172` Heb.3.17 → Num.14.29, 10 votes
 - `OpenBibleXref:L325178` Heb.3.18 → Num.14.30, 7 votes
@@ -41,11 +41,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num03` The ashes of a heifer
 
-- **Num.19.1-Num.19.10 → Heb.9.13** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `fb1de430946e066a`
+- **Num.19.1-Num.19.10 → Heb.9.13** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `952e2ab47a1afe37`
 - From: Priestly Duties and the Red Heifer (`num-07`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
-> Numbers 19 prescribes a red heifer, burned outside the camp, whose ashes in water cleanse those made unclean. Hebrews names the ashes of a heifer that sanctify for the cleansing of the flesh, and its word for the heifer, found nowhere else in the New Testament, is the Septuagint's (below).
+> Hebrews 9:13 recalls Numbers 19:1–10: the ashes of a heifer that cleanse the unclean, set beside Christ's blood. Numbers 19 prescribes a red heifer, burned outside the camp, whose ashes in water cleanse those made unclean. Hebrews names the ashes of a heifer that sanctify for the cleansing of the flesh, and its word for the heifer, found nowhere else in the New Testament, is the Septuagint's (below).
 
 - `OpenBibleXref:L326914` Heb.9.13 → Num.19.2-Num.19.21, 7 votes
 - `OpenBibleXref:L34522` Num.19.9 → Heb.9.13, 5 votes
@@ -59,11 +59,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num04` Faithful in all his house
 
-- **Num.12.7 → Heb.3.2-Heb.3.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `ae4d80aa2f8c7015`
+- **Num.12.7 → Heb.3.2-Heb.3.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `f950ae8a7b5c35c0`
 - From: Miriam and Aaron Oppose Moses (`num-03`)
 - To: The Son above the Angels and Moses; the Promised Rest (`heb-01`, library)
 
-> When Miriam and Aaron speak against Moses, the LORD says that his servant Moses is faithful in all his house. Hebrews takes up the phrase twice, comparing Jesus with Moses, and keeps the Septuagint's word for a servant, which the New Testament has only here (below).
+> Hebrews 3:2–5 quotes Numbers 12:7: Moses was faithful in all God's house, set beside Jesus faithful as a son. When Miriam and Aaron speak against Moses, the LORD says that his servant Moses is faithful in all his house. Hebrews takes up the phrase twice, comparing Jesus with Moses, and keeps the Septuagint's word for a servant, which the New Testament has only here (below).
 
 - `OpenBibleXref:L324933` Heb.3.5 → Num.12.7, 11 votes
 - `OpenBibleXref:L32793` Num.12.7 → Heb.3.2-Heb.3.6, 10 votes
@@ -78,11 +78,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num05` Aaron's rod that budded
 
-- **Num.17.8-Num.17.10 → Heb.9.4** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `da4c0e007651dc20`
+- **Num.17.8-Num.17.10 → Heb.9.4** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `e90c2044524d8113`
 - From: Korah's Rebellion (`num-06`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
-> To end the people's grumbling, Aaron's rod sprouts, buds and blossoms overnight in the tent, and the LORD tells Moses to keep it before the testimony. Hebrews lists Aaron's rod that budded among the things kept in the ark, with the Septuagint's verb for budding (below).
+> Hebrews 9:4 recalls Numbers 17:8–10: Aaron's rod that budded, kept in the ark of the covenant. To end the people's grumbling, Aaron's rod sprouts, buds and blossoms overnight in the tent, and the LORD tells Moses to keep it before the testimony. Hebrews lists Aaron's rod that budded among the things kept in the ark, with the Septuagint's verb for budding (below).
 
 - `OpenBibleXref:L326749` Heb.9.4 → Num.17.10, 10 votes
 - `OpenBibleXref:L34185` Num.17.10 → Heb.9.4, 5 votes
@@ -98,11 +98,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num06` The teaching of Balaam
 
-- **Num.25.1-Num.25.3 → Rev.2.14** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `87d5c82d661d2e39`
+- **Num.25.1-Num.25.3 → Rev.2.14** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `236987c286366d71`
 - From: Apostasy at Peor (`num-11`)
 - To: Letters to the Seven Churches (`rev-02`, library)
 
-> At Shittim Israel is drawn into immorality and the worship of the Baal of Peor, and Numbers later blames the counsel of Balaam for it. The letter to Pergamum in Revelation names Balaam, who taught Balak to put a stumbling block before Israel, to eat food sacrificed to idols and commit sexual immorality.
+> Revelation 2:14 recalls Numbers 25:1–3: Balaam's counsel that drew Israel into idolatry and immorality at Peor. At Shittim Israel is drawn into immorality and the worship of the Baal of Peor, and Numbers later blames the counsel of Balaam for it. The letter to Pergamum in Revelation names Balaam, who taught Balak to put a stumbling block before Israel, to eat food sacrificed to idols and commit sexual immorality.
 
 - `OpenBibleXref:L338968` Rev.2.14 → Num.25.1-Num.25.3, 10 votes
 - `OpenBibleXref:L36009` Num.25.1 → Rev.2.14, 4 votes
@@ -113,11 +113,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num07` Balaam's donkey
 
-- **Num.22.21-Num.22.33 → 2Pet.2.15-2Pet.2.16** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `b51cde2b9ff1ed9e`
+- **Num.22.21-Num.22.33 → 2Pet.2.15-2Pet.2.16** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ca083865e1e43eaa`
 - From: Balaam (`num-10`)
 - To: Growing in Grace; False Teachers; the Day of the Lord (`2pet-01`, library)
 
-> Riding to curse Israel for Balak, Balaam is stopped by his donkey, whose mouth the LORD opens to speak to him. Second Peter names Balaam the son of Beor, who loved the wages of wrongdoing, and recalls the speechless donkey that spoke with a human voice; Balaam's name is spelled as in the Septuagint (below).
+> 2 Peter 2:15–16 recalls Numbers 22:21–33: Balaam, rebuked for his wrong by a donkey that spoke. Riding to curse Israel for Balak, Balaam is stopped by his donkey, whose mouth the LORD opens to speak to him. Second Peter names Balaam the son of Beor, who loved the wages of wrongdoing, and recalls the speechless donkey that spoke with a human voice; Balaam's name is spelled as in the Septuagint (below).
 
 - `OpenBibleXref:L335150` 2Pet.2.16 → Num.22.21-Num.22.33, 9 votes
 - `OpenBibleXref:L35362` Num.22.28 → 2Pet.2.16, 8 votes
@@ -130,11 +130,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num08` Korah's rebellion
 
-- **Num.16.1-Num.16.35 → Jude.1.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `0f75b9e0875d65d0`
+- **Num.16.1-Num.16.35 → Jude.1.11** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `186f294b0a5b692a`
 - From: Korah's Rebellion (`num-06`)
 - To: Against the Intruders (`jude-01`, library)
 
-> Korah and his followers rise against Moses and Aaron, and the earth opens and swallows them. Jude names Korah's rebellion, with the way of Cain and the error of Balaam, as the fate of those he warns against.
+> Jude 1:11 recalls Numbers 16:1–35: those who perished in Korah's rebellion. Korah and his followers rise against Moses and Aaron, and the earth opens and swallows them. Jude names Korah's rebellion, with the way of Cain and the error of Balaam, as the fate of those he warns against.
 
 - `OpenBibleXref:L33747` Num.16.1 → Jude.1.11, 10 votes
 - `OpenBibleXref:L338012` Jude.1.11 → Num.16.1-Num.16.35, 9 votes
@@ -144,11 +144,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num09` They craved evil things
 
-- **Num.11.4-Num.11.34 → 1Cor.10.6-1Cor.10.10** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `dd12a16475fec53e`
+- **Num.11.4-Num.11.34 → 1Cor.10.6-1Cor.10.10** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `ba8416859752264b`
 - From: Complaints, Quail, and the Seventy Elders (`num-02`)
 - To: Food Offered to Idols; Paul’s Freedom (`1cor-03`, library)
 
-> In the wilderness the people crave meat and complain, and the place where those who craved were buried is named for their craving. Paul says these things happened as examples so that we would not crave evil things as they did; his word for those who crave, found nowhere else in the New Testament, is the Septuagint's in Numbers 11:34 (below).
+> 1 Corinthians 10:6–10 recalls Numbers 11:4–34: Israel's craving in the wilderness, given as a warning not to desire evil. In the wilderness the people crave meat and complain, and the place where those who craved were buried is named for their craving. Paul says these things happened as examples so that we would not crave evil things as they did; his word for those who crave, found nowhere else in the New Testament, is the Septuagint's in Numbers 11:34 (below).
 
 - `OpenBibleXref:L32453` Num.11.4 → 1Cor.10.6, 12 votes
 - `OpenBibleXref:L298870` 1Cor.10.6 → Num.11.4, 7 votes
@@ -163,11 +163,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num10` Seventy sent out
 
-- **Num.11.16-Num.11.25 → Luke.10.1** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `b67b0357c83aa80e`
+- **Num.11.16-Num.11.25 → Luke.10.1** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `35e1434e14980b08`
 - From: Complaints, Quail, and the Seventy Elders (`num-02`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
-> Moses is told to gather seventy elders, and the LORD puts on them some of the Spirit that was on Moses. Luke tells how the Lord appointed seventy others and sent them out two by two; the number in Greek is the Septuagint's in Numbers 11 (below).
+> Numbers 11:16–25 and Luke 10:1 both tell of seventy chosen to share a leader's work: elders who receive Moses' spirit, and seventy Jesus sends ahead of him. Moses is told to gather seventy elders, and the LORD puts on them some of the Spirit that was on Moses. Luke tells how the Lord appointed seventy others and sent them out two by two; the number in Greek is the Septuagint's in Numbers 11 (below).
 
 - `OpenBibleXref:L255820` Luke.10.1 → Num.11.24-Num.11.26, 6 votes
 - `OpenBibleXref:L32540` Num.11.16 → Luke.10.1, 5 votes

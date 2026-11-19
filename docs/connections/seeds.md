@@ -8,11 +8,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s01a` The overshadowing cloud of glory and the overshadowing of Mary
 
-- **Exod.40.34-Exod.40.35 → Luke.1.35** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `1007be3dfb30139b`
+- **Exod.40.34-Exod.40.35 → Luke.1.35** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `9a8c634e6ef89a3a`
 - From: Glory Fills the Tabernacle (`exod-14`)
 - To: Two Annunciations (`luke-02`)
 
-> When the tabernacle is finished, the cloud covers the tent and the LORD's glory fills it, so that even Moses cannot go in. In the Septuagint the cloud overshadows the tent with the same verb Gabriel uses when he tells Mary that the power of the Most High will overshadow her (both forms are below). Luke uses the verb again for the cloud at the Transfiguration.
+> Luke 1:35 echoes Exodus 40:34–35: the verb for the cloud that overshadows the tent is the verb Gabriel uses for the power that will overshadow Mary. In the Septuagint the cloud overshadows the tent with the same verb Gabriel uses when he tells Mary that the power of the Most High will overshadow her (both forms are below). Luke uses the verb again for the cloud at the Transfiguration.
 
 - LXX Exod.40.29 word 12: ἐπεσκίαζεν (LXX 002-Exod)
 - TAGNT Luk.1.35 word 15: ἐπισκιάσει (TAGNT Mat-Jhn:52552)
@@ -21,11 +21,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s01b` The overshadowing cloud of glory and the cloud at the Transfiguration
 
-- **Exod.40.34-Exod.40.35 → Luke.9.34** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `e3dee2af8aff87bf`
+- **Exod.40.34-Exod.40.35 → Luke.9.34** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `5ff82b489c821a2a`
 - From: Glory Fills the Tabernacle (`exod-14`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
-> On the mountain a cloud comes and overshadows the disciples, and they are afraid as they enter it, where Moses could not enter the tent the cloud had covered. Luke's Greek has the Septuagint's noun for the cloud and its verb for the overshadowing (below). Moses himself is one of the two men speaking with Jesus.
+> Luke 9:34 echoes Exodus 40:34–35: the cloud that overshadows the disciples has the Septuagint's words for the cloud that covered the tent. Luke's Greek has the Septuagint's noun for the cloud and its verb for the overshadowing (below). Moses himself is one of the two men speaking with Jesus.
 
 - `OpenBibleXref:L255488` Luke.9.34 → Exod.40.34-Exod.40.38, 4 votes
 - LXX Exod.40.28 word 4: νεφέλη (LXX 002-Exod)
@@ -38,11 +38,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s02` The Shema as the greatest commandment
 
-- **Deut.6.4-Deut.6.5 → Luke.10.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `985490774e1ee6a6`
+- **Deut.6.4-Deut.6.5 → Luke.10.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c8b8740101aa67c5`
 - From: The Shema (`deut-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
-> Asked what is written in the law about inheriting eternal life, a lawyer answers with Deuteronomy's command to love the LORD with all one's heart, soul and strength, joined to the command from Leviticus to love one's neighbour as oneself. Jesus tells him he has answered correctly. Luke's wording adds the mind to Deuteronomy's three.
+> Luke 10:27 quotes Deuteronomy 6:4–5: a lawyer gives Deuteronomy's command to love God as the way to eternal life, and Jesus agrees. Asked what is written in the law about inheriting eternal life, a lawyer answers with Deuteronomy's command to love the LORD with all one's heart, soul and strength, joined to the command from Leviticus to love one's neighbour as oneself. Jesus tells him he has answered correctly. Luke's wording adds the mind to Deuteronomy's three.
 
 - `OpenBibleXref:L39605` Deut.6.5 → Luke.10.27, 105 votes
 - `OpenBibleXref:L256137` Luke.10.27 → Deut.6.5, 92 votes
@@ -53,11 +53,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s03` Hannah's song and the Magnificat
 
-- **1Sam.2.1-1Sam.2.10 → Luke.1.46-Luke.1.55** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `7af754aeff330fb4`
+- **1Sam.2.1-1Sam.2.10 → Luke.1.46-Luke.1.55** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `8684fee98756aa6c`
 - From: Hannah and the Birth of Samuel (`1sam-01`)
 - To: Two Annunciations (`luke-02`)
 
-> Two women sing of a son God has given beyond expectation: Hannah when she brings Samuel to the LORD's house at Shiloh, Mary when she visits Elizabeth after the angel's promise. Both songs praise God for overturning the order of things, bringing down the mighty, lifting up the lowly and filling the hungry. Both WEBC texts speak of princes, and in the Greek the word is the same (below).
+> 1 Samuel 2:1–10 and Luke 1:46–55 both tell of a woman's song for a son God gave beyond hope, praising God who brings down the mighty and lifts the lowly. Two women sing of a son God has given beyond expectation: Hannah when she brings Samuel to the LORD's house at Shiloh, Mary when she visits Elizabeth after the angel's promise. Both songs praise God for overturning the order of things, bringing down the mighty, lifting up the lowly and filling the hungry. Both WEBC texts speak of princes, and in the Greek the word is the same (below).
 
 - `OpenBibleXref:L251000` Luke.1.46 → 1Sam.2.1-1Sam.2.10, 31 votes
 - `OpenBibleXref:L56529` 1Sam.2.1 → Luke.1.46-Luke.1.56, 15 votes
@@ -73,11 +73,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s04` A widow's son raised and given back to his mother
 
-- **1Kgs.17.17-1Kgs.17.24 → Luke.7.11-Luke.7.17** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `089fa3f869968b4a`
+- **1Kgs.17.17-1Kgs.17.24 → Luke.7.11-Luke.7.17** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `a4bce1a96f3aa220`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: Healings, Forgiveness, Parables (`luke-08`)
 
-> Elijah meets the widow of Zarephath at the gate of her city and later raises her son; Jesus meets a widow at the gate of Nain as her only son is carried out, and raises him. Both stories close on the same act, the son handed back to his mother, and in Greek Luke's five closing words are the Septuagint's five words for Elijah's act (below). The crowd at Nain responds by calling Jesus a great prophet.
+> Luke 7:11–17 echoes 1 Kings 17:17–24: Jesus raises a widow's only son and gives him back to his mother, in the Septuagint's words for Elijah's act. Elijah meets the widow of Zarephath at the gate of her city and later raises her son; Jesus meets a widow at the gate of Nain as her only son is carried out, and raises him. Both stories close on the same act, the son handed back to his mother, and in Greek Luke's five closing words are the Septuagint's five words for Elijah's act (below). The crowd at Nain responds by calling Jesus a great prophet.
 
 - `OpenBibleXref:L254111` Luke.7.14 → 1Kgs.17.21, 5 votes
 - `OpenBibleXref:L72572` 1Kgs.17.23 → Luke.7.15, 3 votes
@@ -92,11 +92,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s05a` Jesus cites the widow of Zarephath at Nazareth
 
-- **1Kgs.17.8-1Kgs.17.16 → Luke.4.25-Luke.4.26** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `0e4506c05196e810`
+- **1Kgs.17.8-1Kgs.17.16 → Luke.4.25-Luke.4.26** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `430d056fb45d5589`
 - From: Elijah: Drought, the Widow, and Carmel (`1kgs-08`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> In the synagogue at Nazareth Jesus recalls the famine in Elijah's days and the widow of Zarephath in Sidon, a foreigner to whom the prophet was sent while the many widows in Israel were not. He names her in answer to a town that expects him to do at home what he did at Capernaum.
+> Luke 4:25–26 names 1 Kings 17:8–16: at Nazareth Jesus recalls that Elijah was sent to a foreign widow, not to the widows of Israel. In the synagogue at Nazareth Jesus recalls the famine in Elijah's days and the widow of Zarephath in Sidon, a foreigner to whom the prophet was sent while the many widows in Israel were not. He names her in answer to a town that expects him to do at home what he did at Capernaum.
 
 - `OpenBibleXref:L72429` 1Kgs.17.9 → Luke.4.26, 10 votes
 - `OpenBibleXref:L252634` Luke.4.26 → 1Kgs.17.9-1Kgs.17.24, 8 votes
@@ -107,11 +107,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s05b` Jesus cites Naaman at Nazareth
 
-- **2Kgs.5.1-2Kgs.5.14 → Luke.4.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `f01261ba1f9f42e5`
+- **2Kgs.5.1-2Kgs.5.14 → Luke.4.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `db0131526200d08f`
 - From: Elisha's Wonders (`2kgs-02`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> In the same breath Jesus names Naaman the Syrian, the army commander made clean of leprosy when he dipped himself in the Jordan at Elisha's word, though there were many lepers in Israel. Both of the examples he gives at Nazareth are foreigners.
+> Luke 4:27 names 2 Kings 5:1–14: Jesus recalls that Elisha cleansed Naaman the Syrian, though there were many lepers in Israel. In the same breath Jesus names Naaman the Syrian, the army commander made clean of leprosy when he dipped himself in the Jordan at Elisha's word, though there were many lepers in Israel. Both of the examples he gives at Nazareth are foreigners.
 
 - `OpenBibleXref:L75439` 2Kgs.5.1 → Luke.4.27, 19 votes
 - `OpenBibleXref:L75592` 2Kgs.5.14 → Luke.4.27, 14 votes
@@ -122,11 +122,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s06` Fire from heaven called down, then refused
 
-- **2Kgs.1.10-2Kgs.1.12 → Luke.9.54-Luke.9.55** · contrast · strength 3 · verified (approved 2026-11-16) · fingerprint `a4efb433878052f7`
+- **2Kgs.1.10-2Kgs.1.12 → Luke.9.54-Luke.9.55** · contrast · strength 3 · verified (approved 2026-11-16) · fingerprint `18ed0c191bca645a`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
-> When a Samaritan village will not receive Jesus, James and John offer to command fire to come down from the sky, and they name Elijah, who called it down on the king's captains and their men. Jesus turns and rebukes them. In Kings the fire falls; in Luke it is refused.
+> Luke 9:54–55 reverses 2 Kings 1:10–12: James and John offer to call down fire as Elijah did, and Jesus rebukes them. When a Samaritan village will not receive Jesus, James and John offer to command fire to come down from the sky, and they name Elijah, who called it down on the king's captains and their men. Jesus turns and rebukes them. In Kings the fire falls; in Luke it is refused.
 
 - `OpenBibleXref:L74508` 2Kgs.1.10 → Luke.9.54, 10 votes
 - `OpenBibleXref:L255728` Luke.9.54 → 2Kgs.1.10-2Kgs.1.14, 10 votes
@@ -137,11 +137,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s07` A master taken up; his spirit passes to the disciples
 
-- **2Kgs.2.9-2Kgs.2.15 → Acts.1.9-Acts.2.4** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `93f6bf0390253ff6`
+- **2Kgs.2.9-2Kgs.2.15 → Acts.1.9-Acts.2.4** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `9d98dac51475720e`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Ascension and Pentecost (`acts-01`)
 
-> Elijah is taken up while Elisha watches, and the prophets at Jericho see that Elijah's spirit now rests on his disciple. In Acts Jesus is taken up while the apostles watch, and at Pentecost they are filled with the Holy Spirit. The Septuagint and Acts use the same verb for the master being taken up (below). Chrysostom sets the two partings side by side: the angels come, he says, so that the apostles will not grieve as Elisha did when he tore his clothes.
+> Chrysostom reads 2 Kings 2:9–15 as a figure of Acts 1:9–2:4: a master taken up while his disciples watch, and his spirit passing to them. In Acts Jesus is taken up while the apostles watch, and at Pentecost they are filled with the Holy Spirit. The Septuagint and Acts use the same verb for the master being taken up (below). Chrysostom sets the two partings side by side: the angels come, he says, so that the apostles will not grieve as Elisha did when he tore his clothes.
 
 - `OpenBibleXref:L274873` Acts.1.10 → 2Kgs.2.11-2Kgs.2.12, 4 votes
 - `OpenBibleXref:L74670` 2Kgs.2.10 → Acts.1.9-Acts.1.10, 2 votes
@@ -158,11 +158,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s08` A crowd fed from little, with food left over
 
-- **2Kgs.4.42-2Kgs.4.44 → Luke.9.10-Luke.9.17** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `e3870bb33a5d917b`
+- **2Kgs.4.42-2Kgs.4.44 → Luke.9.10-Luke.9.17** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `08d5027fa0060183`
 - From: Elisha's Wonders (`2kgs-02`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
-> A man brings Elisha twenty barley loaves; his servant asks how so little can be set before a hundred men, yet they eat and some is left over. In Luke the twelve object that they have only five loaves and two fish for about five thousand men, and after all have eaten, twelve baskets of pieces remain. Both stories turn on the same objection and end with food to spare.
+> 2 Kings 4:42–44 and Luke 9:10–17 both tell of a crowd fed from too little, after the same objection, with food left over. A man brings Elisha twenty barley loaves; his servant asks how so little can be set before a hundred men, yet they eat and some is left over. In Luke the twelve object that they have only five loaves and two fish for about five thousand men, and after all have eaten, twelve baskets of pieces remain. Both stories turn on the same objection and end with food to spare.
 
 - `OpenBibleXref:L75430` 2Kgs.4.43 → Luke.9.13, 9 votes
 - `OpenBibleXref:L255256` Luke.9.13 → 2Kgs.4.42-2Kgs.4.43, 8 votes
@@ -176,11 +176,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s09` Babel's confusion of languages undone at Pentecost
 
-- **Gen.11.1-Gen.11.9 → Acts.2.1-Acts.2.11** · contrast · strength 2 · verified (approved 2026-11-16) · fingerprint `ec5a512089ae7e76`
+- **Gen.11.1-Gen.11.9 → Acts.2.1-Acts.2.11** · contrast · strength 2 · verified (approved 2026-11-16) · fingerprint `c09e3dee5caf8ce2`
 - From: The Tower of Babel (`gen-05`)
 - To: Ascension and Pentecost (`acts-01`)
 
-> At Babel the one language is confused and its speakers are scattered over the earth; at Pentecost people from every nation gather in Jerusalem and each hears the apostles in his own language. The Septuagint's verb for the confusion at Babel is the verb Acts uses for the bewildered crowd (below). Augustine and Chrysostom both read Pentecost against Babel: for Augustine, Christ's humility gathers the tongues that pride divided.
+> Acts 2:1–11 reverses Genesis 11:1–9: the languages confused at Babel are each understood at Pentecost, with the Septuagint's verb for the confusion. At Babel the one language is confused and its speakers are scattered over the earth; at Pentecost people from every nation gather in Jerusalem and each hears the apostles in his own language. The Septuagint's verb for the confusion at Babel is the verb Acts uses for the bewildered crowd (below). Augustine and Chrysostom both read Pentecost against Babel: for Augustine, Christ's humility gathers the tongues that pride divided.
 
 - `OpenBibleXref:L2596` Gen.11.1 → Acts.2.6, 16 votes
 - `OpenBibleXref:L2672` Gen.11.7 → Acts.2.4-Acts.2.11, 4 votes
@@ -198,11 +198,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s10` The beloved son
 
-- **Gen.22.2 → Luke.3.22** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `f0cb0077e662650c`
+- **Gen.22.2 → Luke.3.22** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `89a34cdc2394373a`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: John the Baptist; the Baptism (`luke-05`)
 
-> When God tells Abraham to offer Isaac, the Septuagint names Isaac with the adjective the voice from the sky uses at Jesus' baptism for the beloved Son (both forms are below). WEBC, translating the Hebrew, has Abraham's only son, whom he loves. The voice uses the same word again at the Transfiguration.
+> Luke 3:22 echoes Genesis 22:2: the voice at the baptism calls Jesus the beloved Son with the Septuagint's adjective for Isaac. When God tells Abraham to offer Isaac, the Septuagint names Isaac with the adjective the voice from the sky uses at Jesus' baptism for the beloved Son (both forms are below). WEBC, translating the Hebrew, has Abraham's only son, whom he loves. The voice uses the same word again at the Transfiguration.
 
 - LXX Gen.22.2 word 8: ἀγαπητὸν (LXX 001-Gen)
 - TAGNT Luk.3.22 word 25: ἀγαπητός, (TAGNT Mat-Jhn:55831)
@@ -212,11 +212,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s11a` Passover at the Last Supper
 
-- **Exod.12 → Luke.22.7-Luke.22.20** · typology · strength 3 · verified (approved 2026-11-16) · fingerprint `17fe3c67d87e3eb3`
+- **Exod.12 → Luke.22.7-Luke.22.20** · typology · strength 3 · verified (approved 2026-11-16) · fingerprint `68b5edb33e170b68`
 - From: Passover and Departure (`exod-05`)
 - To: The Last Supper and the Arrest (`luke-14`)
 
-> Luke sets the Last Supper on the day the Passover lamb was sacrificed, and Jesus tells the twelve he has longed to eat this Passover with them before he suffers. Exodus 12 commands the lamb, its blood on the doorposts and a meal kept as a memorial through the generations; at the supper Jesus gives the bread and tells them to do this in memory of him. Tertullian notes that of all the feasts Jesus chose the Passover for his suffering, and Chrysostom says that where the type was, Christ set the truth.
+> Tertullian and Chrysostom read Exodus 12 as a figure of Luke 22:7–20: the Passover lamb and its memorial meal, and the supper Jesus keeps before he suffers. Luke sets the Last Supper on the day the Passover lamb was sacrificed, and Jesus tells the twelve he has longed to eat this Passover with them before he suffers. Exodus 12 commands the lamb, its blood on the doorposts and a meal kept as a memorial through the generations; at the supper Jesus gives the bread and tells them to do this in memory of him. Tertullian notes that of all the feasts Jesus chose the Passover for his suffering, and Chrysostom says that where the type was, Christ set the truth.
 
 - `OpenBibleXref:L261348` Luke.22.7 → Exod.12.18, 6 votes
 - `OpenBibleXref:L261351` Luke.22.7 → Exod.12.6, 3 votes
@@ -233,11 +233,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s11b` The blood of the covenant at the Last Supper
 
-- **Exod.24.8 → Luke.22.20** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `a9228e9fd4709f76`
+- **Exod.24.8 → Luke.22.20** · typology · strength 2 · verified (approved 2026-11-16) · fingerprint `41986890454a42a3`
 - From: The Covenant Sealed (`exod-10`)
 - To: The Last Supper and the Arrest (`luke-14`)
 
-> At Sinai Moses seals the covenant by sprinkling the people with blood and calling it the blood of the covenant. Over the cup after supper Jesus speaks of the new covenant in his blood, poured out for the disciples. Commenting on the same words in Matthew, Chrysostom says Jesus recalls the former covenant because it too was dedicated with blood.
+> Chrysostom reads Exodus 24:8 as a figure of Luke 22:20: the blood of the covenant at Sinai, and the new covenant in Jesus' blood. At Sinai Moses seals the covenant by sprinkling the people with blood and calling it the blood of the covenant. Over the cup after supper Jesus speaks of the new covenant in his blood, poured out for the disciples. Commenting on the same words in Matthew, Chrysostom says Jesus recalls the former covenant because it too was dedicated with blood.
 
 - `OpenBibleXref:L261466` Luke.22.20 → Exod.24.8, 8 votes
 - `OpenBibleXref:L19470` Exod.24.8 → Luke.22.20, 5 votes
@@ -248,11 +248,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s12` The sign of Jonah
 
-- **Jonah.1-Jonah.3 → Luke.11.29-Luke.11.32** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `145f3382f0d16f53`
+- **Jonah.1-Jonah.3 → Luke.11.29-Luke.11.32** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `62f5f338658adb89`
 - From: Flight and Storm (`jonah-01`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
-> Asked for a sign, Jesus says his generation will be given none but the sign of Jonah: as Jonah was a sign to the Ninevites, so the Son of Man will be to them. He recalls that Nineveh repented at Jonah's preaching, as Jonah 3 tells, and says that one greater than Jonah is here.
+> Luke 11:29–32 names Jonah 1: Jesus offers his generation only the sign of Jonah, whose preaching brought Nineveh to repent. Asked for a sign, Jesus says his generation will be given none but the sign of Jonah: as Jonah was a sign to the Ninevites, so the Son of Man will be to them. He recalls that Nineveh repented at Jonah's preaching, as Jonah 3 tells, and says that one greater than Jonah is here.
 
 - `OpenBibleXref:L219766` Jonah.1.1 → Luke.11.32, 39 votes
 - `OpenBibleXref:L219767` Jonah.1.1 → Luke.11.29-Luke.11.30, 37 votes
@@ -264,11 +264,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s13` The throne of David promised to Mary's son
 
-- **2Sam.7.12-2Sam.7.16 → Luke.1.32-Luke.1.33** · fulfilment · strength 3 · verified (approved 2026-11-16) · fingerprint `1669c3d7b6858d67`
+- **2Sam.7.12-2Sam.7.16 → Luke.1.32-Luke.1.33** · fulfilment · strength 3 · verified (approved 2026-11-16) · fingerprint `147027e1378a51b9`
 - From: The Promise to David (`2sam-04`)
 - To: Two Annunciations (`luke-02`)
 
-> Through Nathan, God promises David an heir whose throne and kingdom will be established forever. Gabriel tells Mary that the Lord God will give her son the throne of his father David, and that his kingdom will have no end. The angel's message takes up the promise's own terms: throne, kingdom, forever.
+> Luke 1:32–33 shows 2 Samuel 7:12–16 fulfilled: Gabriel gives Mary's son the throne, kingdom and forever of Nathan's promise to David. Through Nathan, God promises David an heir whose throne and kingdom will be established forever. Gabriel tells Mary that the Lord God will give her son the throne of his father David, and that his kingdom will have no end. The angel's message takes up the promise's own terms: throne, kingdom, forever.
 
 - `OpenBibleXref:L250885` Luke.1.33 → 2Sam.7.16, 16 votes
 - `OpenBibleXref:L63498` 2Sam.7.16 → Luke.1.32-Luke.1.33, 15 votes
@@ -282,11 +282,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s14a` A companion on the road, unrecognised (proposed)
 
-- **Tob.5 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `8e2ee6a9f4675597`
+- **Tob.5 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `6f27ab83b90bbe7e`
 - From: Tobiah's Journey with Raphael (`tob-03`)
 - To: Resurrection and Emmaus (`luke-16`)
 
-> Tobias looks for a companion for his journey and finds Raphael, an angel, without knowing it; the angel offers to go with him and knows the way. On the road to Emmaus Jesus comes near and walks with two disciples whose eyes are kept from recognising him, and he opens the Scriptures to them on the way. The Greek verb for going along with someone appears in both (below). This parallel is proposed by the plan; it is not in the cross-reference data.
+> Tobit 5 and Luke 24:13–35 both tell of an unrecognised companion on a journey, an angel with Tobias and the risen Jesus with two disciples. On the road to Emmaus Jesus comes near and walks with two disciples whose eyes are kept from recognising him, and he opens the Scriptures to them on the way. The Greek verb for going along with someone appears in both (below). This parallel is proposed by the plan; it is not in the cross-reference data.
 
 - LXX Tob.5.9 word 9: συνπορεύσεταί (LXX 019-Tob)
 - TAGNT Luk.24.15 word 14: συνεπορεύετο (TAGNT Mat-Jhn:84269)
@@ -299,11 +299,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s14b` A companion revealed, then gone (proposed)
 
-- **Tob.12 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `baa4dc241a63068a`
+- **Tob.12 → Luke.24.13-Luke.24.35** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `7fec085e54818381`
 - From: Raphael Revealed (`tob-06`)
 - To: Resurrection and Emmaus (`luke-16`)
 
-> At the journey's end Raphael tells Tobit and Tobias who he is, says he is going up to the one who sent him, and they see him no more. At Emmaus the two disciples recognise Jesus as he breaks the bread, and he vanishes from their sight. In both, the companion is known only at the end and is gone at once. This parallel is proposed by the plan; it is not in the cross-reference data.
+> Tobit 12 and Luke 24:13–35 both tell of a companion made known at the journey's end, who is then gone at once. At Emmaus the two disciples recognise Jesus as he breaks the bread, and he vanishes from their sight. In both, the companion is known only at the end and is gone at once. This parallel is proposed by the plan; it is not in the cross-reference data.
 
 - Tob.12.1 carries: Tobit, Tobias
 - Tob.12.15 carries: Raphael
@@ -314,11 +314,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s15` The feast of Dedication
 
-- **1Macc.4.36-1Macc.4.59 → John.10.22** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `50fa10881bb8ae75`
+- **1Macc.4.36-1Macc.4.59 → John.10.22** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `0bc4099a7f18621d`
 - From: The Temple Rededicated (`1macc-04`)
-- To: John 1–10 (`john-x1`)
+- To: At the Feast of Dedication (`john-x117`)
 
-> John places Jesus in the temple at Jerusalem in winter, at the Feast of the Dedication. 1 Maccabees 4 tells how that feast began: after the temple was profaned, Judas and his kindred cleansed it, dedicated the new altar, and ordained that the dedication be kept every year for eight days from the twenty-fifth of Chislev.
+> John 10:22 names the feast whose beginning 1 Maccabees 4:36–59 tells: the yearly Dedication of the cleansed temple. John places Jesus in the temple at Jerusalem in winter, at the Feast of the Dedication. 1 Maccabees 4 tells how that feast began: after the temple was profaned, Judas and his kindred cleansed it, dedicated the new altar, and ordained that the dedication be kept every year for eight days from the twenty-fifth of Chislev.
 
 - John.10.22 carries: Dedication, Jerusalem
 - John.10.23 carries: winter, temple
@@ -328,11 +328,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s16` Jesus' coming exodus in Jerusalem
 
-- **Exod.19.1 → Luke.9.31** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `85afddca82bb04a7`
+- **Exod.19.1 → Luke.9.31** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `c4b2becbc70c249b`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 
-> At the Transfiguration Moses and Elijah speak with Jesus about the departure he is about to accomplish at Jerusalem. Luke's Greek word for that departure is the noun the Septuagint uses at Sinai for Israel's going out of Egypt (below), and Moses, who led that going out, is one of the two speaking with him.
+> Luke 9:31 echoes Exodus 19:1: Luke calls Jesus' coming death at Jerusalem an exodus, with the Septuagint's noun for Israel's going out of Egypt. At the Transfiguration Moses and Elijah speak with Jesus about the departure he is about to accomplish at Jerusalem. Luke's Greek word for that departure is the noun the Septuagint uses at Sinai for Israel's going out of Egypt (below), and Moses, who led that going out, is one of the two speaking with him.
 
 - LXX Exod.19.1 word 7: ἐξόδου (LXX 002-Exod)
 - TAGNT Luk.9.31 word 7: ἔξοδον (TAGNT Mat-Jhn:64682)
@@ -342,11 +342,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s17` Jesus reads his programme from Isaiah
 
-- **Isa.61.1-Isa.61.2 → Luke.4.18-Luke.4.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `236e9871344c1aed`
+- **Isa.61.1-Isa.61.2 → Luke.4.18-Luke.4.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `7360c15ab5dee022`
 - From: The Glory of Zion (`isa-19`, library)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
-> In the synagogue at Nazareth Jesus is handed the book of the prophet Isaiah and reads the passage now numbered Isaiah 61: one anointed by the Spirit to bring good news to the poor, release to captives and the year of the LORD's favour. He then tells his hearers that this Scripture has been fulfilled in their hearing. His reading stops before Isaiah's day of vengeance.
+> Luke 4:18–19 quotes Isaiah 61:1–2: Jesus reads Isaiah's words on one anointed to bring good news to the poor, and says they are fulfilled today. In the synagogue at Nazareth Jesus is handed the book of the prophet Isaiah and reads the passage now numbered Isaiah 61: one anointed by the Spirit to bring good news to the poor, release to captives and the year of the LORD's favour. He then tells his hearers that this Scripture has been fulfilled in their hearing. His reading stops before Isaiah's day of vengeance.
 
 - `OpenBibleXref:L172611` Isa.61.1 → Luke.4.18-Luke.4.19, 300 votes
 - `OpenBibleXref:L252538` Luke.4.18 → Isa.61.1, 250 votes
@@ -359,11 +359,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s18a` The Son of Man on the clouds
 
-- **Dan.7.13 → Luke.21.27** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `ce2285ca94f24559`
-- From: Daniel's Visions (`dan-x1`)
+- **Dan.7.13 → Luke.21.27** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `f9182ea5a879ce6d`
+- From: Four Beasts and the Son of Man (`dan-x101`)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
-> Speaking of the end, Jesus foretells the Son of Man's coming in a cloud, with power and great glory. The words take up Daniel's night vision of one like a son of man coming with the clouds to the Ancient of Days, who is given dominion, glory and a kingdom. Both Greek versions of Daniel have the noun Luke uses for the cloud (below).
+> Luke 21:27 quotes Daniel 7:13: Jesus foretells the Son of Man coming in a cloud, in the words of Daniel's vision. Speaking of the end, Jesus foretells the Son of Man's coming in a cloud, with power and great glory. The words take up Daniel's night vision of one like a son of man coming with the clouds to the Ancient of Days, who is given dominion, glory and a kingdom. Both Greek versions of Daniel have the noun Luke uses for the cloud (below).
 
 - `OpenBibleXref:L210846` Dan.7.13 → Luke.21.27, 66 votes
 - `OpenBibleXref:L261188` Luke.21.27 → Dan.7.13, 6 votes
@@ -376,11 +376,11 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s18b` The Son of Man at the right hand of power
 
-- **Dan.7.13 → Luke.22.69** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `9badbfc81bf264f9`
-- From: Daniel's Visions (`dan-x1`)
+- **Dan.7.13 → Luke.22.69** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `794eadb2b000a4e9`
+- From: Four Beasts and the Son of Man (`dan-x101`)
 - To: Trials and Crucifixion (`luke-15`)
 
-> Before the council Jesus declares that the Son of Man will from now on be seated at the right hand of God's power. The title comes from Daniel's vision, where one like a son of man is brought before the Ancient of Days and given dominion; the seat at the right hand recalls the first verse of Psalm 110.
+> Luke 22:69 quotes Daniel 7:13: before the council Jesus speaks of the Son of Man, the figure of Daniel's vision, at the right hand of power. Before the council Jesus declares that the Son of Man will from now on be seated at the right hand of God's power. The title comes from Daniel's vision, where one like a son of man is brought before the Ancient of Days and given dominion; the seat at the right hand recalls the first verse of Psalm 110.
 
 - `OpenBibleXref:L261905` Luke.22.69 → Dan.7.13-Dan.7.14, 8 votes
 - Luke.22.69 carries: Son, Man, right
@@ -390,11 +390,12 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `s19` Stephen retells the whole story you have read
 
-- **Gen.12.1-1Kgs.8.21 → Acts.7.2-Acts.7.50** · parallel · strength 3 · verified (approved 2026-11-16) · fingerprint `99663a2fe876188f`
+- **Gen.12.1-1Kgs.8.21 → Acts.7.2-Acts.7.50** · parallel · strength 3 · verified (approved 2026-11-16) · fingerprint `3ac00219e0e06d8e`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Stephen (`acts-03`)
+- Order: older end from; the later end uses it; basis text
 
-> Brought before the council, Stephen answers by retelling Israel's story: God's call to Abraham in Mesopotamia, Joseph sold into Egypt, Moses, the tabernacle in the wilderness, Joshua and David, and Solomon building a house for God. It is the ground the path has covered from Genesis to Kings, told as a single speech.
+> Acts 7:2–50 retells Genesis 12:1 – 1 Kings 8:21: before the council Stephen tells Israel's story from Abraham's call to Solomon's temple. Brought before the council, Stephen answers by retelling Israel's story: God's call to Abraham in Mesopotamia, Joseph sold into Egypt, Moses, the tabernacle in the wilderness, Joshua and David, and Solomon building a house for God. It is the ground the path has covered from Genesis to Kings, told as a single speech.
 
 - `OpenBibleXref:L2763` Gen.12.1 → Acts.7.2-Acts.7.6, 33 votes
 - `OpenBibleXref:L10114` Gen.39.2 → Acts.7.9-Acts.7.10, 23 votes
