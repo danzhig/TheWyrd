@@ -5,7 +5,14 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { inRange, parseXrefs } from '@/scripts/connections/xrefs';
 import { readSectionIndex, sectionFor } from '@/scripts/themes/taxonomy';
-import { buildConnections, hasWord } from '@/scripts/connections/emit-connections';
+import {
+  buildAllConnections,
+  buildConnections,
+  hasWord,
+  orderErrors,
+  resolveOrder,
+} from '@/scripts/connections/emit-connections';
+import { ALL_PAIRS, pairId, pairLabel } from '@/lib/corpora';
 import {
   connectionFingerprint,
   readConnections,
@@ -115,5 +122,131 @@ describe('candidate signals (P4.4)', () => {
     expect(
       sharedNames('Is anything too hard? Sarah laughed.', 'Is it Sarah? Remember Lot.', lower),
     ).toEqual(['Sarah']);
+  });
+});
+
+describe('the threads baseline (threads plan TD0)', () => {
+  const list = readConnections()!;
+  const pin = JSON.parse(
+    fs.readFileSync('tests/fixtures/connections/approved-fingerprints.json', 'utf8'),
+  ) as { count: number; fingerprints: Record<string, string> };
+  const sections = fs
+    .readdirSync('public/data/sections')
+    .map((f) => JSON.parse(fs.readFileSync(`public/data/sections/${f}`, 'utf8')) as SectionFile);
+  const library = new Set(sections.filter((x) => x.library).map((x) => x.id));
+  const tmp = (name: string, connections: unknown[]) => {
+    const f = path.join(os.tmpdir(), `threads-${process.pid}-${name}.json`);
+    fs.writeFileSync(f, JSON.stringify({ $comment: '', connections }));
+    return f;
+  };
+  const approve = <T extends (typeof list)[number]>(c: T): T => ({
+    ...c,
+    status: 'verified',
+    approval: { date: '2026-11-19', fingerprint: connectionFingerprint(c) },
+  });
+
+  it('keeps the approved connections exactly as pinned (only the owner changes the pin)', () => {
+    const verified = list.filter((c) => c.status === 'verified');
+    expect(verified).toHaveLength(pin.count);
+    expect(Object.fromEntries(verified.map((c) => [c.id, connectionFingerprint(c)]))).toEqual(
+      pin.fingerprints,
+    );
+  });
+
+  it('fingerprints the order only when one is stored', () => {
+    const c = list.find((x) => x.type === 'parallel')!;
+    expect(connectionFingerprint({ ...c, order: undefined })).toBe(c.approval!.fingerprint);
+    const ordered = { ...c, order: { older: 'from', uses: true, basis: 'canon' } as const };
+    expect(connectionFingerprint(ordered)).not.toBe(c.approval!.fingerprint);
+  });
+
+  it('computes the order of Old ↔ New threads from the canon and the type', () => {
+    const of = (type: (typeof list)[number]['type']) => ({ ...list[0]!, type, order: undefined });
+    expect(resolveOrder(of('quotation'), 'ot', 'nt')).toEqual({
+      older: 0,
+      uses: true,
+      basis: 'canon',
+    });
+    expect(resolveOrder(of('echo'), 'nt', 'ot')).toMatchObject({ older: 1, uses: true });
+    expect(resolveOrder(of('typology'), 'ot', 'nt')).toEqual({
+      older: 0,
+      uses: false,
+      basis: 'father',
+    });
+    expect(resolveOrder(of('parallel'), 'ot', 'nt')).toMatchObject({ uses: false });
+    // Inside one corpus nothing is assumed.
+    expect(resolveOrder(of('parallel'), 'nt', 'nt')).toEqual({
+      older: null,
+      uses: false,
+      basis: null,
+    });
+    const stored = {
+      ...of('parallel'),
+      order: { older: 'to', uses: true, basis: 'text' } as const,
+    };
+    expect(resolveOrder(stored, 'ot', 'ot')).toEqual({ older: 1, uses: true, basis: 'text' });
+  });
+
+  it('checks a stored order: sources, a note when disputed, no use without an older end', () => {
+    const c = list.find((x) => x.type === 'parallel')!;
+    const at = (order: NonNullable<(typeof list)[number]['order']>) => orderErrors({ ...c, order });
+    expect(at({ older: 'unknown', uses: true, basis: 'text' })).toHaveLength(1);
+    expect(at({ older: 'from', uses: false, basis: 'disputed' })).toHaveLength(2);
+    expect(
+      at({
+        older: 'from',
+        uses: false,
+        basis: 'disputed',
+        note: 'Most modern scholars hold one view and Augustine the other.',
+        sources: [
+          { kind: 'bibliographic', author: 'A', title: 'T', year: '2000', locator: 'p. 1' },
+        ],
+      }),
+    ).toEqual([]);
+    expect(at({ older: 'from', uses: true, basis: 'father' })).toHaveLength(1);
+  });
+
+  it('publishes every thread with its pair and order', () => {
+    const { outputs, errors } = buildAllConnections(sections, library);
+    expect(errors).toEqual([]);
+    expect(outputs.map((o) => o.out)).toEqual([
+      'connections.json',
+      'connections-within-ot.json',
+      'connections-within-nt.json',
+    ]);
+    for (const c of outputs[0]!.data.connections) {
+      expect(c.pair).toBe(pairId(c.ends[0].corpus, c.ends[1].corpus));
+      if (c.pair === 'ot-nt') expect(c.ends[c.order.older!]!.corpus).toBe('ot');
+    }
+  });
+
+  it('holds a within file to its pair, with every order stated, and ids unique across files', () => {
+    const between = list.find((c) => c.id === 'dan07')!;
+    const nn = list.find((c) => c.id === 'act12')!;
+    let f = tmp('pair', [approve(between)]);
+    let r = buildConnections(sections, library, f, 'nt-nt');
+    expect(r.errors.some((e) => e.includes('joins ot-nt, not nt-nt'))).toBe(true);
+    f = tmp('order', [approve(nn)]);
+    r = buildConnections(sections, library, f, 'nt-nt');
+    expect(r.errors.some((e) => e.includes('states its order'))).toBe(true);
+    const ordered = approve({
+      ...nn,
+      order: { older: 'from', uses: false, basis: 'consensus', sources: [nn.sources[0]!] },
+    });
+    f = tmp('ok', [ordered]);
+    r = buildConnections(sections, library, f, 'nt-nt');
+    expect(r.errors).toEqual([]);
+    expect(r.data!.connections[0]!.order).toMatchObject({ older: 0, uses: false });
+    const twice = buildAllConnections(sections, library, [
+      { file: tmp('a', [approve(between)]), out: 'a.json', pair: null },
+      { file: tmp('b', [approve(between)]), out: 'b.json', pair: null },
+    ]);
+    expect(twice.errors.some((e) => e.includes('in both'))).toBe(true);
+  });
+
+  it('names corpus pairs in table order', () => {
+    expect(pairId('nt', 'ot')).toBe('ot-nt');
+    expect(pairLabel('ot-nt')).toBe('Old ↔ New');
+    expect(ALL_PAIRS).toEqual(['ot-ot', 'ot-nt', 'nt-nt']);
   });
 });

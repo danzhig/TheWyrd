@@ -31,7 +31,10 @@ const args = process.argv.slice(2);
 const approveIdx = args.indexOf('--approve');
 const approve = approveIdx >= 0 ? (args[approveIdx + 1] ?? '').split(',') : null;
 
-const file = JSON.parse(fs.readFileSync(CONNECTIONS_FILE, 'utf8'));
+// `--file content/connections/within-ot.json` checks one of the within files (threads plan §5).
+const fileIdx = args.indexOf('--file');
+const SOURCE = fileIdx >= 0 ? args[fileIdx + 1]! : CONNECTIONS_FILE;
+const file = JSON.parse(fs.readFileSync(SOURCE, 'utf8'));
 const { connections } = ConnectionsSchema.parse(file);
 const xrefs = new Map(readXrefs(path.join(RAW_DIR, 'openbible-xrefs')).map((r) => [r.id, r]));
 const terms = loadTermSources();
@@ -120,7 +123,7 @@ if (approve && !failed.length) {
     delete c.approval;
     c.approval = { date: today, fingerprint: connectionFingerprint(c) };
   }
-  fs.writeFileSync(CONNECTIONS_FILE, JSON.stringify(file, null, 2) + '\n');
+  fs.writeFileSync(SOURCE, JSON.stringify(file, null, 2) + '\n');
   console.log(`approved: ${approve.join(', ')}`);
 }
 
@@ -137,7 +140,9 @@ const cite = (c: Connection) =>
       ? null
       : s.kind === 'verse'
         ? `${s.ref} carries: ${s.words.join(', ')}`
-        : `${s.author}, *${s.work}*, ${s.locator} (${s.edition}; \`${s.source}\`): “${s.phrase}”`,
+        : s.kind === 'bibliographic'
+          ? `**Bibliographic, not machine-checked:** ${s.author}, *${s.title}* (${s.year}), ${s.locator}`
+          : `${s.author}, *${s.work}*, ${s.locator} (${s.edition}; \`${s.source}\`): “${s.phrase}”`,
   );
 // The review documents: the plan's seeds (ids `s…`), and each book's proposals (P4.4).
 const section = (c: Connection) => [
@@ -146,6 +151,11 @@ const section = (c: Connection) => [
   `- **${c.from} → ${c.to}** · ${c.type} · strength ${c.strength} · ${c.status}${c.approval ? ` (approved ${c.approval.date})` : ''} · fingerprint \`${connectionFingerprint(c)}\``,
   `- From: ${where(c.from)}`,
   `- To: ${where(c.to)}`,
+  ...(c.order
+    ? [
+        `- Order: older end ${c.order.older}; ${c.order.uses ? 'the later end uses it' : 'no use claimed'}; basis ${c.order.basis}${c.order.note ? ` (${c.order.note})` : ''}`,
+      ]
+    : []),
   '',
   `> ${c.explanation}`,
   '',

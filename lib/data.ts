@@ -170,15 +170,22 @@ export interface SectionThread {
 }
 
 let threadsBySection: Map<string, SectionThread[]> | null = null;
+/** Every published file of threads (threads plan §5): the reader shows all pairs. */
+const THREAD_FILES = [
+  'connections.json',
+  'connections-within-ot.json',
+  'connections-within-nt.json',
+];
 /**
- * The verified connections (Phase 4) with an end in this section, from
- * public/data/connections.json, in verse order. A connection shows at both of its ends.
+ * The verified connections (Phase 4) with an end in this section, from every published threads
+ * file, in verse order. A connection shows at both of its ends.
  */
 export function getSectionThreads(sectionId: string): SectionThread[] {
   if (!threadsBySection) {
     threadsBySection = new Map();
-    const file = path.join(DATA, 'connections.json');
-    if (fs.existsSync(file)) {
+    for (const out of THREAD_FILES) {
+      const file = path.join(DATA, out);
+      if (!fs.existsSync(file)) continue;
       const data = JSON.parse(fs.readFileSync(file, 'utf8')) as PublicConnections;
       for (const { ends, ...connection } of data.connections)
         ends.forEach((here, i) => {
@@ -186,14 +193,14 @@ export function getSectionThreads(sectionId: string): SectionThread[] {
           list.push({ connection, here, there: ends[1 - i]! });
           threadsBySection!.set(here.sectionId, list);
         });
-      const pos = (t: SectionThread) => t.here.anchor.match(/\d+/g)!.map(Number);
-      for (const list of threadsBySection.values())
-        list.sort((a, b) => {
-          const [ac, av] = pos(a);
-          const [bc, bv] = pos(b);
-          return ac! - bc! || av! - bv!;
-        });
     }
+    const pos = (t: SectionThread) => t.here.anchor.match(/\d+/g)!.map(Number);
+    for (const list of threadsBySection.values())
+      list.sort((a, b) => {
+        const [ac, av] = pos(a);
+        const [bc, bv] = pos(b);
+        return ac! - bc! || av! - bv!;
+      });
   }
   return threadsBySection.get(sectionId) ?? [];
 }

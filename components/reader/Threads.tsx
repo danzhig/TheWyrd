@@ -45,6 +45,12 @@ function Source({ s }: { s: ThreadCitation }) {
         {s.display} (WEBC): {s.words.join(', ')}
       </>
     );
+  if (s.kind === 'bibliographic')
+    return (
+      <>
+        {s.author}, <cite>{s.title}</cite> ({s.year}), {s.locator}
+      </>
+    );
   return (
     <>
       {s.author}, <cite>{s.work}</cite>, {s.locator} ({s.edition}){' '}

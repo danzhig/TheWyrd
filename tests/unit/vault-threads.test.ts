@@ -12,6 +12,7 @@ const end = (bookId: string): ThreadEnd => ({
   sectionTitle: '',
   bookId,
   library: false,
+  corpus: ['Luke', 'Acts', 'Rom', 'Heb', 'Gal'].includes(bookId) ? 'nt' : 'ot',
   anchor: 'v-1-1',
   excerpt: '',
 });
@@ -23,6 +24,8 @@ const conn = (id: string, a: string, b: string, type: PublicConnection['type']) 
     label: id,
     explanation: '',
     ends: [end(a), end(b)],
+    pair: 'ot-nt',
+    order: { older: 0, uses: true, basis: 'canon' },
     evidence: [],
     sources: [],
   }) as PublicConnection;

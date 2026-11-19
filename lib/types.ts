@@ -1,3 +1,4 @@
+import type { CorpusId, PairId } from './corpora';
 import { z } from 'zod';
 
 // ---------------------------------------------------------------------------
@@ -270,6 +271,8 @@ export interface ThreadEnd {
   sectionTitle: string;
   bookId: string;
   library: boolean;
+  /** The corpus its book belongs to (`lib/corpora.ts`). */
+  corpus: CorpusId;
   /** Element id of its first verse in the section page ("v-4-25"). */
   anchor: string;
   /** The first verse's built text, cut at a word boundary (never typed). */
@@ -294,7 +297,22 @@ export type ThreadCitation =
       locator: string;
       edition: string;
       url: string;
-    };
+    }
+  | { kind: 'bibliographic'; author: string; title: string; year: string; locator: string };
+
+export type OrderBasis = 'canon' | 'text' | 'consensus' | 'father' | 'disputed';
+
+/**
+ * Which end was written first and whether the later one is said to use it (threads plan §2.3),
+ * stored or computed by the build. `older` indexes `ends`; null when the order is not given.
+ */
+export interface ThreadOrder {
+  older: 0 | 1 | null;
+  uses: boolean;
+  basis: OrderBasis | null;
+  note?: string;
+  sources?: ThreadCitation[];
+}
 
 export interface PublicConnection {
   id: string;
@@ -303,6 +321,9 @@ export interface PublicConnection {
   label: string;
   explanation: string;
   ends: [ThreadEnd, ThreadEnd]; // from, to
+  /** The corpora of the two ends, in table order ("ot-nt"). */
+  pair: PairId;
+  order: ThreadOrder;
   evidence: ThreadEvidence[];
   sources: ThreadCitation[];
 }
