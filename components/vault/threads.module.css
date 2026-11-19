@@ -30,15 +30,6 @@
   }
 }
 
-/* The chevron on an arc whose threads all run one way (threads plan §4). */
-.chevron path {
-  fill: none;
-  stroke: var(--gold-light);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
 /* Inside one corpus (Old ↔ Old, New ↔ New): paler, and bowed outward (threads.ts), so the shape
    as well as the tone tells them from the threads between the Testaments. */
 .line[data-pair='ot-ot'],

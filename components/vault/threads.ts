@@ -20,15 +20,8 @@ export interface ThreadArc {
   mid: Point;
   /** Points along the arc, to find the arc nearest a tap (`nearestArc`). */
   pts: Point[];
-  /** The quadratic's ends and control point (null for a loop), for the directed arc. */
-  curve: [Point, Point, Point] | null;
   /** The corpora it joins ("ot-nt"); arcs inside one corpus bow outward (threads plan §5). */
   pair: PairId;
-  /**
-   * The book that takes the other up, when every thread on the arc says so (a chevron on the
-   * arc points to it, threads plan §4); null when the threads run both ways or claim no use.
-   */
-  toward: string | null;
 }
 
 /** Connections of the chosen types, one arc per pair of books (both orders together). */
@@ -52,7 +45,7 @@ export function arcsFor(
     const [a, b] = key.split('|') as [string, string];
     const pair = list[0]!.pair;
     const within = pair.split('-')[0] === pair.split('-')[1];
-    const { d, mid, pts, curve } = arcPath(homes.get(a)!, homes.get(b)!, within ? OUTWARD : BOW);
+    const { d, mid, pts } = arcPath(homes.get(a)!, homes.get(b)!, within ? OUTWARD : BOW);
     return {
       key,
       a,
@@ -62,10 +55,7 @@ export function arcsFor(
       width: arcWidth(list.length),
       mid,
       pts,
-      curve,
       pair,
-      // A loop (both ends in one book) has no direction to show.
-      toward: a === b ? null : arcToward(list),
     };
   });
 }
@@ -77,11 +67,7 @@ export const arcWidth = (n: number) => 1.5 + Math.sqrt(n) * 1.8;
  * A quadratic curve between two medallions, bowed toward the oculus so arcs sweep across the
  * vault rather than along the spiral. Two ends in one book loop outward.
  */
-export function arcPath(
-  p: Point,
-  q: Point,
-  bow = BOW,
-): { d: string; mid: Point; pts: Point[]; curve: [Point, Point, Point] | null } {
+export function arcPath(p: Point, q: Point, bow = BOW): { d: string; mid: Point; pts: Point[] } {
   const r = (n: number) => Math.round(n * 10) / 10;
   if (Math.hypot(p.x - q.x, p.y - q.y) < 1) {
     const len = Math.hypot(p.x, p.y) || 1;
@@ -94,7 +80,6 @@ export function arcPath(
       d: `M${r(p.x)} ${r(p.y)}C${r(c1.x)} ${r(c1.y)} ${r(c2.x)} ${r(c2.y)} ${r(p.x)} ${r(p.y)}`,
       mid: { x: p.x + out.x * 0.75, y: p.y + out.y * 0.75 },
       pts: samples((t) => ({ x: cubic(t, p.x, c1.x, c2.x), y: cubic(t, p.y, c1.y, c2.y) })),
-      curve: null,
     };
   }
   const m = { x: (p.x + q.x) / 2, y: (p.y + q.y) / 2 };
@@ -106,7 +91,6 @@ export function arcPath(
     // The middle of a quadratic: a quarter of each end and half the control point.
     mid: { x: (p.x + q.x) / 4 + c.x / 2, y: (p.y + q.y) / 4 + c.y / 2 },
     pts: samples((t) => ({ x: quad(t, p.x, c.x, q.x), y: quad(t, p.y, c.y, q.y) })),
-    curve: [p, c, q],
   };
 }
 
@@ -254,31 +238,3 @@ export const threadedBooks = (list: PublicConnection[]) =>
 
 /** Arcs inside one corpus bow away from the oculus, so they stay readable over the others. */
 export const OUTWARD = 1.35;
-
-/** The later book, if every thread on the arc has it taking the other up (else null). */
-export function arcToward(list: PublicConnection[]): string | null {
-  let toward: string | null = null;
-  for (const c of list) {
-    if (c.order.older === null || !c.order.uses) return null;
-    const later = c.ends[1 - c.order.older]!.bookId;
-    if (toward && toward !== later) return null;
-    toward = later;
-  }
-  return toward;
-}
-
-/**
- * An arc that shows its direction (threads plan §4): the same quadratic `[p, c, q]`, split at its
- * middle into two halves so the path has a vertex there for a `marker-mid` chevron, and drawn from
- * the older book toward the one that takes it up (`toEnd`: toward q), so the chevron points that
- * way. One stroked path per arc, as cheap to draw as the plain line (a filled, tapered band cost a
- * fifth of the camera's frames on a throttled phone).
- */
-export function directedPath([p, c, q]: [Point, Point, Point], toEnd: boolean): string {
-  const r = (n: number) => Math.round(n * 10) / 10;
-  const [a, b] = toEnd ? [p, q] : [q, p];
-  const m = { x: (p.x + 2 * c.x + q.x) / 4, y: (p.y + 2 * c.y + q.y) / 4 };
-  const c1 = { x: (a.x + c.x) / 2, y: (a.y + c.y) / 2 };
-  const c2 = { x: (c.x + b.x) / 2, y: (c.y + b.y) / 2 };
-  return `M${r(a.x)} ${r(a.y)}Q${r(c1.x)} ${r(c1.y)} ${r(m.x)} ${r(m.y)}Q${r(c2.x)} ${r(c2.y)} ${r(b.x)} ${r(b.y)}`;
-}

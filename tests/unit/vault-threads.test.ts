@@ -4,11 +4,9 @@ import fs from 'node:fs';
 import {
   arcPath,
   arcsFor,
-  arcToward,
   arcWidth,
   BOW,
   OUTWARD,
-  directedPath,
   bookThreads,
   directionSummary,
   nearestArc,
@@ -160,23 +158,6 @@ describe('direction and pairs on the ceiling (threads plan TD5)', () => {
   const data = (
     JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as PublicConnections
   ).connections;
-
-  it('points an arc toward its later book only when every thread says so', () => {
-    const one = data.find((c) => c.order.uses && c.order.older !== null)!;
-    expect(arcToward([one])).toBe(one.ends[1 - one.order.older!]!.bookId);
-    const none = data.find((c) => !c.order.uses)!;
-    expect(arcToward([one, none])).toBeNull();
-  });
-
-  it('draws a directed arc from the older book, with a vertex at its middle', () => {
-    const curve = [
-      { x: 0, y: 0 },
-      { x: 50, y: 40 },
-      { x: 100, y: 0 },
-    ] as [{ x: number; y: number }, { x: number; y: number }, { x: number; y: number }];
-    expect(directedPath(curve, true)).toBe('M0 0Q25 20 50 20Q75 20 100 0');
-    expect(directedPath(curve, false)).toBe('M100 0Q75 20 50 20Q25 20 0 0');
-  });
 
   it('bows arcs inside one corpus outward, and between the Testaments inward', () => {
     expect(OUTWARD).toBeGreaterThan(1);

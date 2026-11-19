@@ -245,26 +245,11 @@ test.describe('Threads on the Vault', () => {
     );
   });
 
-  test('arcs point to the book that takes the other up; corpus pairs filter them', async ({
-    page,
-  }) => {
+  test('arcs are plain lines; corpus pairs filter them', async ({ page }) => {
     await threadsOn(page);
     const arcs = page.locator('[data-arc]');
-    // An arc whose threads all run one way points (a chevron) toward the later book.
-    const oneWay = [...pairs.keys()].find((k) =>
-      connections
-        .filter((c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === k)
-        .every((c) => c.order.older !== null && c.order.uses),
-    )!;
-    const later = connections.find(
-      (c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === oneWay,
-    )!;
-    const directed = page.locator(`[data-arc="${oneWay}"]`);
-    await expect(directed).toHaveAttribute(
-      'data-toward',
-      later.ends[1 - later.order.older!]!.bookId,
-    );
-    await expect(directed).toHaveAttribute('marker-mid', 'url(#thread-dir)');
+    // Direction is shown on the cards, not on the arcs (owner, 2026-11-19): plain lines.
+    await expect(page.locator('[data-arc][marker-mid]')).toHaveCount(0);
     // The pair chips: one per pair present, each a toggle.
     const chips = page.getByTestId('pair-filter').locator('[data-pair-chip]');
     const present = [...new Set(connections.map((c) => c.pair))];
