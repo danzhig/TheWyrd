@@ -39,7 +39,7 @@ import {
 import { estherDanielMap, pipelineReport, versificationLog } from './reports';
 import { readTvtmsCondensed } from './lib/tvtms';
 import { buildThemes, writeThemes } from './themes/emit-themes';
-import { buildConnections, writeConnections } from './connections/emit-connections';
+import { buildAllConnections, writeConnections } from './connections/emit-connections';
 import { buildDrc, writeDrc } from './drc/emit-drc';
 import {
   CONTENT_DIR,
@@ -157,11 +157,11 @@ async function main() {
   const themes = sectionFiles.length ? buildThemes(sectionFiles, libraryIds) : null;
   errors.push(...(themes?.errors ?? []));
   // Threads (Phase 4): checked against the built sections; only verified ones are published.
-  const threads = sectionFiles.length ? buildConnections(sectionFiles, libraryIds) : null;
+  const threads = sectionFiles.length ? buildAllConnections(sectionFiles, libraryIds) : null;
   errors.push(...(threads?.errors ?? []));
-  if (threads?.data)
+  if (threads?.outputs.length)
     console.log(
-      `threads: ${threads.data.connections.length} verified, ${threads.drafts} awaiting approval`,
+      `threads: ${threads.outputs.map((o) => `${o.data.connections.length} in ${o.out}`).join(', ')}; ${threads.drafts} awaiting approval`,
     );
   // The Douay-Rheims (Phase 7): each section's text in the second translation, from the alignment.
   const drc = sectionFiles.length ? buildDrc(sectionFiles, parsed) : null;
@@ -182,8 +182,8 @@ async function main() {
       writeThemes(target, themes.data);
       result.files++;
     }
-    if (threads?.data) {
-      writeConnections(target, threads.data);
+    for (const o of threads?.outputs ?? []) {
+      writeConnections(target, o.data, o.out);
       result.files++;
     }
     if (drc) result.files += writeDrc(target, drc.files);

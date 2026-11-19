@@ -3,105 +3,14 @@
 /**
  * Threads in the reader (PLAN §14, P4.2). A gold thread glyph beside a verse (VerseText) marks the
  * connections that start there. Without JavaScript it links to this section's list of threads at
- * the end of the page; with it, tapping the glyph opens that verse's cards in a dialog. Each card
- * shows the linked passage (an excerpt from the built text), the type of link, the explanation,
- * the shared Greek words and the sources, and "Go there", which carries `?thread=<id>` so the page
- * it opens offers the way back.
+ * the end of the page; with it, tapping the glyph opens that verse's cards in a dialog. Each is
+ * the shared `ThreadCard` (threads plan TD1): direction, summary, the rest on demand, and links
+ * that carry `?thread=<id>` so the page they open offers the way back.
  */
-import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { ThreadCard, verseLabel } from '@/components/threads/ThreadCard';
 import type { SectionThread } from '@/lib/data';
-import { TYPE_LABEL, threadHref } from '@/lib/threads';
-import type { ThreadCitation, ThreadEvidence } from '@/lib/types';
 import styles from './reader.module.css';
-
-const STRENGTH = { 3: 'named or quoted', 2: 'strong', 1: 'proposed' } as const;
-
-/** "3Kgdms.17.23" → "3Kgdms 17:23" (the dataset's own numbering). */
-const dataRef = (ref: string) => ref.replace(/\.(\d+)\.(\d+)$/, ' $1:$2');
-
-function Evidence({ list }: { list: ThreadEvidence[] }) {
-  if (!list.length) return null;
-  return (
-    <p className={styles.threadGreek}>
-      <span className="label">Shared Greek</span>{' '}
-      {list.map((e, i) => (
-        <span key={i}>
-          {i ? ' · ' : ''}
-          {e.dataset === 'LXX' ? 'Septuagint' : 'TAGNT'} {dataRef(e.ref)}:{' '}
-          <span lang="grc">{e.form}</span>
-        </span>
-      ))}
-    </p>
-  );
-}
-
-function Source({ s }: { s: ThreadCitation }) {
-  if (s.kind === 'xref')
-    return <>OpenBible.info cross-reference, row {s.row.replace('OpenBibleXref:', '')}</>;
-  if (s.kind === 'verse')
-    return (
-      <>
-        {s.display} (WEBC): {s.words.join(', ')}
-      </>
-    );
-  return (
-    <>
-      {s.author}, <cite>{s.work}</cite>, {s.locator} ({s.edition}){' '}
-      <a href={s.url} rel="noopener">
-        CCEL
-      </a>
-    </>
-  );
-}
-
-export function ThreadCard({
-  t,
-  headingLevel = 3,
-  onGo,
-}: {
-  t: SectionThread;
-  headingLevel?: 3 | 4;
-  /** Following the link (closes the dialog it sits in). */
-  onGo?: () => void;
-}) {
-  const { connection: c, there } = t;
-  const H = `h${headingLevel}` as const;
-  return (
-    <article className={styles.threadCard} data-thread-card={c.id}>
-      <p className={styles.threadType}>
-        <span className="label">{TYPE_LABEL[c.type]}</span>
-        <span> · {STRENGTH[c.strength]}</span>
-      </p>
-      <H className={styles.threadTitle}>{c.label}</H>
-      <p className={styles.threadThere}>
-        {there.display} · {there.sectionTitle}
-        {there.library ? ' · in the library' : ''}
-      </p>
-      <blockquote className={styles.threadExcerpt}>{there.excerpt}</blockquote>
-      <p>{c.explanation}</p>
-      <Evidence list={c.evidence} />
-      <details className={styles.threadSources}>
-        <summary>Sources</summary>
-        <ul>
-          {c.sources.map((s, i) => (
-            <li key={i}>
-              <Source s={s} />
-            </li>
-          ))}
-        </ul>
-      </details>
-      <Link
-        href={threadHref(c.id, there)}
-        className={styles.goThere}
-        data-go-there={c.id}
-        onClick={onGo}
-      >
-        Go there: {there.display}
-      </Link>
-    </article>
-  );
-}
 
 /** Group a section's threads by the verse they start from. */
 function byVerse(threads: SectionThread[]): [string, SectionThread[]][] {
@@ -109,9 +18,6 @@ function byVerse(threads: SectionThread[]): [string, SectionThread[]][] {
   for (const t of threads) groups.set(t.here.anchor, [...(groups.get(t.here.anchor) ?? []), t]);
   return [...groups];
 }
-
-/** "v-4-25" → "4:25". */
-const verseLabel = (anchor: string) => anchor.replace(/^v-(\d+)-(\d+).*$/, '$1:$2');
 
 export function Threads({ threads }: { threads: SectionThread[] }) {
   const [open, setOpen] = useState<string | null>(null);
@@ -170,7 +76,14 @@ export function Threads({ threads }: { threads: SectionThread[] }) {
               <a href={`#${anchor}`}>From {verseLabel(anchor)}</a>
             </h3>
             {list.map((t) => (
-              <ThreadCard key={t.connection.id} t={t} headingLevel={4} />
+              <ThreadCard
+                key={t.connection.id}
+                c={t.connection}
+                ends={t.ends}
+                here={t.hereIndex}
+                headingLevel={4}
+                group={`threads-${anchor}`}
+              />
             ))}
           </div>
         ))}
@@ -201,7 +114,14 @@ export function Threads({ threads }: { threads: SectionThread[] }) {
             </button>
           </header>
           {shown.map((t) => (
-            <ThreadCard key={t.connection.id} t={t} onGo={close} />
+            <ThreadCard
+              key={t.connection.id}
+              c={t.connection}
+              ends={t.ends}
+              here={t.hereIndex}
+              group="thread-dialog"
+              onGo={close}
+            />
           ))}
         </div>
       </dialog>

@@ -9,6 +9,17 @@ import { z } from 'zod';
 
 export const CONNECTIONS_FILE = 'content/connections/connections.json';
 
+/**
+ * Every file of connections, with the corpus pair its connections must join (threads plan §5).
+ * `connections.json` holds the first 170 (Old ↔ New, and two New ↔ New seeds) and any pair; the
+ * within files hold only their own pair. Each is emitted to its own file under public/data.
+ */
+export const CONNECTION_FILES = [
+  { file: CONNECTIONS_FILE, out: 'connections.json', pair: null },
+  { file: 'content/connections/within-ot.json', out: 'connections-within-ot.json', pair: 'ot-ot' },
+  { file: 'content/connections/within-nt.json', out: 'connections-within-nt.json', pair: 'nt-nt' },
+] as const;
+
 export const CONNECTION_TYPES = [
   'quotation',
   'allusion',
@@ -48,8 +59,29 @@ export const CitationSchema = z.discriminatedUnion('kind', [
     heading: z.string(),
     phrase: z.string().min(20),
   }),
+  // A published work cited by bibliography only (threads plan §2.6): not machine-checked, and
+  // listed apart in the review documents so the owner sees which claims rest on one.
+  z.object({
+    kind: z.literal('bibliographic'),
+    author: z.string(),
+    title: z.string(),
+    year: z.string(),
+    locator: z.string(),
+  }),
 ]);
 export type Citation = z.infer<typeof CitationSchema>;
+
+/** Which end is older, and whether the later one is said to use it (threads plan §2.3). */
+export const ORDER_BASES = ['canon', 'text', 'consensus', 'father', 'disputed'] as const;
+export const OrderSchema = z.object({
+  older: z.enum(['from', 'to', 'unknown']),
+  uses: z.boolean(),
+  basis: z.enum(ORDER_BASES),
+  /** One sentence of original prose, shown when the order is disputed. */
+  note: z.string().optional(),
+  sources: z.array(CitationSchema).optional(),
+});
+export type Order = z.infer<typeof OrderSchema>;
 
 export const ConnectionSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
@@ -61,6 +93,8 @@ export const ConnectionSchema = z.object({
   explanation: z.string(),
   evidence: z.array(EvidenceSchema).optional(),
   sources: z.array(CitationSchema).min(1),
+  /** Absent: computed from the corpora and the type (`resolveOrder` in emit-connections.ts). */
+  order: OrderSchema.optional(),
   status: z.enum(['candidate', 'draft', 'verified']),
   approval: z.object({ date: z.string(), fingerprint: z.string() }).optional(),
 });
@@ -71,9 +105,12 @@ export const ConnectionsSchema = z.object({
   connections: z.array(ConnectionSchema),
 });
 
-/** Everything the owner approves: ends, type, strength, wording, evidence and citations. */
+/**
+ * Everything the owner approves: ends, type, strength, wording, evidence, citations and the order.
+ * The order joins only when present, so the first 170 keep their approvals (threads plan §2.3).
+ */
 export function connectionFingerprint(c: Connection): string {
-  const canonical = [
+  const canonical: unknown[] = [
     c.id,
     c.from,
     c.to,
@@ -84,6 +121,7 @@ export function connectionFingerprint(c: Connection): string {
     c.evidence ?? [],
     c.sources,
   ];
+  if (c.order) canonical.push(c.order);
   return createHash('sha256').update(JSON.stringify(canonical)).digest('hex').slice(0, 16);
 }
 
