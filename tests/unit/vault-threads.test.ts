@@ -15,6 +15,7 @@ const end = (bookId: string): ThreadEnd => ({
   corpus: ['Luke', 'Acts', 'Rom', 'Heb', 'Gal'].includes(bookId) ? 'nt' : 'ot',
   anchor: 'v-1-1',
   excerpt: '',
+  more: 0,
 });
 const conn = (id: string, a: string, b: string, type: PublicConnection['type']) =>
   ({

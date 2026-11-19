@@ -11,10 +11,10 @@
  * the list of arcs (buttons that open the same panel), visually hidden on the map and shown by
  * List.
  */
-import Link from 'next/link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { TYPE_LABEL, TYPE_ORDER, threadHref } from '@/lib/threads';
+import { ThreadCard } from '@/components/threads/ThreadCard';
+import { TYPE_LABEL, TYPE_ORDER } from '@/lib/threads';
 import type { ConnectionType, PublicConnections } from '@/lib/types';
 import type { Point } from './layout';
 import { arcsFor, nearestArc } from './threads';
@@ -270,27 +270,14 @@ export function ThreadsMode({
             </button>
           </header>
           <ul className={s.connections}>
-            {arc.connections.map((c) => (
-              <li key={c.id} data-panel-connection={c.id}>
-                <p className={s.type}>{TYPE_LABEL[c.type]}</p>
-                <p className={s.connTitle}>{c.label}</p>
-                <p className={s.ends}>
-                  {c.ends.map((e, i) => (
-                    <span key={i}>
-                      {i ? <span aria-hidden="true"> ↔ </span> : null}
-                      <Link
-                        href={threadHref(c.id, e)}
-                        prefetch={false}
-                        onClick={onOpen}
-                        data-open-end={`${c.id}:${i}`}
-                      >
-                        {e.display}
-                      </Link>
-                    </span>
-                  ))}
-                </p>
-              </li>
-            ))}
+            {arc.connections.map((c) => {
+              const { ends, ...rest } = c;
+              return (
+                <li key={c.id} data-panel-connection={c.id}>
+                  <ThreadCard c={rest} ends={ends} group="arc-panel" onGo={onOpen} />
+                </li>
+              );
+            })}
           </ul>
         </aside>
       ) : null}

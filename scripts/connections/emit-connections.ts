@@ -145,6 +145,7 @@ export function buildConnections(
       corpus: corpusOf(sec.bookId),
       anchor: `v-${v.c}-${v.v}${v.part ?? ''}`,
       excerpt: opening(sec, i, last && last.split('.').length === 3 ? last : undefined),
+      more: 0, // counted across every file by buildAllConnections
     };
   };
 
@@ -262,6 +263,12 @@ export function buildAllConnections(
     }
     if (r.data) outputs.push({ out: f.out, data: r.data });
   }
+  // "More from here": the other published threads that start at the same verse.
+  const key = (e: ThreadEnd) => `${e.sectionId}#${e.anchor}`;
+  const ends = outputs.flatMap((o) => o.data.connections.flatMap((c) => c.ends));
+  const at = new Map<string, number>();
+  for (const e of ends) at.set(key(e), (at.get(key(e)) ?? 0) + 1);
+  for (const e of ends) e.more = at.get(key(e))! - 1;
   return { outputs, errors, drafts };
 }
 

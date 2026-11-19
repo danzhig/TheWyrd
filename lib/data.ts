@@ -165,6 +165,10 @@ export function getSectionKeys(sectionId: string, verses: { ref: string }[]): Ke
 /** A connection seen from one of its ends: the verse here, and the passage it leads to. */
 export interface SectionThread {
   connection: Omit<PublicConnection, 'ends'>;
+  /** Both ends as published (from, to); `connection.order.older` indexes them. */
+  ends: [ThreadEnd, ThreadEnd];
+  /** Which of `ends` is in this section. */
+  hereIndex: 0 | 1;
   here: ThreadEnd;
   there: ThreadEnd;
 }
@@ -190,7 +194,7 @@ export function getSectionThreads(sectionId: string): SectionThread[] {
       for (const { ends, ...connection } of data.connections)
         ends.forEach((here, i) => {
           const list = threadsBySection!.get(here.sectionId) ?? [];
-          list.push({ connection, here, there: ends[1 - i]! });
+          list.push({ connection, ends, hereIndex: i as 0 | 1, here, there: ends[1 - i]! });
           threadsBySection!.set(here.sectionId, list);
         });
     }

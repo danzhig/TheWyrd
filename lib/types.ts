@@ -277,6 +277,8 @@ export interface ThreadEnd {
   anchor: string;
   /** The first verse's built text, cut at a word boundary (never typed). */
   excerpt: string;
+  /** Other threads from the same verse, in every published file ("3 more from here"). */
+  more: number;
 }
 
 export interface ThreadEvidence {

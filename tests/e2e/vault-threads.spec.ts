@@ -119,6 +119,28 @@ test.describe('Threads on the Vault', () => {
     await expect(first).toBeFocused();
   });
 
+  test('the panel shows each thread as a closed card, one open at a time', async ({ page }) => {
+    const counts = new Map<string, number>();
+    for (const x of connections) {
+      const k = [x.ends[0].bookId, x.ends[1].bookId].sort().join('|');
+      counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+    const key = [...counts].find(([, n]) => n > 1)![0];
+    await threadsOn(page);
+    await page.getByRole('button', { name: 'List' }).click();
+    await page.locator(`[data-arc-item="${key}"]`).click();
+    const panel = page.getByTestId('arc-panel');
+    const cards = panel.locator('[data-thread-card]');
+    await expect(cards.first().locator('[data-direction]')).toBeVisible();
+    await expect(cards.first().locator('[data-summary]')).toBeVisible();
+    const [a, b] = [cards.nth(0).locator('[data-more]'), cards.nth(1).locator('[data-more]')];
+    await a.locator('summary').click();
+    await expect(a).toHaveAttribute('open', '');
+    await b.locator('summary').click();
+    await expect(b).toHaveAttribute('open', '');
+    await expect(a).not.toHaveAttribute('open', '');
+  });
+
   test('Themes turns Threads off', async ({ page }) => {
     await threadsOn(page);
     await page.getByTestId('view-themes').click();

@@ -170,45 +170,7 @@
 }
 
 .connections li {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--rule-soft);
-}
-
-.connections li:last-child {
-  border-bottom: 0;
-}
-
-.connections p {
   margin: 0;
-}
-
-.type {
-  font-variant-caps: all-small-caps;
-  letter-spacing: 0.08em;
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--accent-strong);
-}
-
-.connTitle {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.25;
-  color: var(--text-strong);
-}
-
-.ends {
-  margin-top: 0.2rem !important;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.ends a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 32px;
-  color: var(--link);
 }
 
 /* List mode: the arcs as a list (visually hidden on the map). */

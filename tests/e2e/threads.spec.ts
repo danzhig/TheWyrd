@@ -91,6 +91,35 @@ test.describe('Threads', () => {
     await expect(page.locator('html')).toHaveAttribute('data-reader', here.sectionId);
   });
 
+  test('the card: direction older first, the summary, the rest on demand, links at the foot', async ({
+    page,
+  }) => {
+    // Daniel 7:14 echoed in Luke 1:33, read from Luke (the later end).
+    const c = published.find((x) => x.id === 'dan07') ?? published[0]!;
+    const older = c.ends[c.order.older ?? 0]!;
+    const later = c.ends[1 - (c.order.older ?? 0)]!;
+    await open(page, `/read/${later.sectionId}/`);
+    const card = page.locator(`#threads-${later.anchor} [data-thread-card="${c.id}"]`);
+    const refs = card.locator('[data-direction] [data-end]');
+    await expect(refs).toHaveText([older.display, later.display]);
+    await expect(card.locator('[data-summary]')).toBeVisible();
+    const more = card.locator('[data-more]');
+    await expect(more).not.toHaveAttribute('open', '');
+    const excerpt = card.locator('blockquote').first();
+    await expect(excerpt).toBeHidden();
+    await more.locator('summary').click();
+    await expect(more).toHaveAttribute('open', '');
+    await expect(excerpt).toBeVisible();
+    await more.locator('summary').click();
+    await expect(excerpt).toBeHidden();
+    // The end on this page is named here; the other is a link along the thread.
+    await expect(card.locator('a[data-go-there]')).toHaveText(`Read ${older.display}`);
+    await expect(card.locator('a[data-go-there]')).toHaveAttribute(
+      'href',
+      `/read/${older.sectionId}/?thread=${c.id}#${older.anchor}`,
+    );
+  });
+
   test('a section with threads is accessible', async ({ page }) => {
     const c = published[0];
     test.skip(!c, 'no verified connections yet');
