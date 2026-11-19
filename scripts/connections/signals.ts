@@ -11,6 +11,8 @@
 import { parsePoint } from './xrefs';
 import { CANON_BY_ID } from '../lib/canon';
 import { LXX_BOOKS, type TermSources } from '../terms/sources';
+import type { Token } from '../terms/stepbible';
+import type { TipnrIndex } from '../terms/tipnr';
 
 /** Compare words without accents, case or punctuation. */
 export const fold = (s: string) =>
@@ -147,4 +149,154 @@ export function sharedGreek(
     out.set(k, e);
   }
   return [...out.values()].sort((a, b) => a.ntCount - b.ntCount);
+}
+
+// -------------------------------------------------------------------------------------------------
+// Inside one Testament (threads plan TX2): Hebrew and Greek words two passages share, the same
+// person or place by its TIPNR id, and parallel accounts verse by verse.
+// -------------------------------------------------------------------------------------------------
+
+/** How often each Hebrew/Aramaic lexeme (extended Strong's) occurs in TAHOT. */
+export function otFrequencies(s: TermSources): Map<string, number> {
+  const f = new Map<string, number>();
+  for (const list of s.hebrew.values())
+    for (const t of list) if (t.lexeme) f.set(t.lexeme, (f.get(t.lexeme) ?? 0) + 1);
+  return f;
+}
+
+export interface WordShared {
+  /** The lexeme (TAHOT, extended Strong's) or the folded lemma (TAGNT). */
+  key: string;
+  /** The dictionary form, as the data has it. */
+  lemma: string;
+  /** Occurrences in its Testament (rarer is stronger evidence). */
+  count: number;
+  a: { ref: string; wordIndex: number; form: string; row: string }[];
+  b: { ref: string; wordIndex: number; form: string; row: string }[];
+}
+
+/** The tokens of a single-book range in a tagged dataset keyed by TVTMS book names. */
+function tokensOf(map: Map<string, Token[]>, ref: string): Token[] {
+  const step = CANON_BY_ID.get(parsePoint(ref).book)?.tvtms;
+  if (!step) return [];
+  return versesOf(ref, (c, v) => map.has(`${step}.${c}.${v}`)).flatMap(([c, v]) =>
+    map.get(`${step}.${c}.${v}`)!,
+  );
+}
+
+function shared(
+  a: Token[],
+  b: Token[],
+  keyOf: (t: Token) => string | undefined,
+  freq: Map<string, number>,
+  max: number,
+): WordShared[] {
+  const out = new Map<string, WordShared>();
+  const bByKey = new Map<string, Token[]>();
+  for (const t of b) {
+    const k = keyOf(t);
+    if (k) bByKey.set(k, [...(bByKey.get(k) ?? []), t]);
+  }
+  const at = (t: Token) => ({
+    ref: t.ref,
+    wordIndex: t.wordIndex,
+    form: t.text,
+    row: `${t.file}:${t.line}`,
+  });
+  for (const t of a) {
+    const k = keyOf(t);
+    if (!k) continue;
+    const n = freq.get(k) ?? 0;
+    const other = bByKey.get(k);
+    if (!other || n > max) continue;
+    const e = out.get(k) ?? { key: k, lemma: t.lemma ?? k, count: n, a: [], b: other.map(at) };
+    e.a.push(at(t));
+    out.set(k, e);
+  }
+  return [...out.values()].sort((x, y) => x.count - y.count);
+}
+
+/** Uncommon Hebrew/Aramaic lexemes two Old Testament passages share (TAHOT, at their rows). */
+export function sharedHebrew(
+  s: TermSources,
+  freq: Map<string, number>,
+  aRef: string,
+  bRef: string,
+  max = 100,
+): WordShared[] {
+  // Particles and the commonest words have tiny or empty lexemes; the frequency cap drops them.
+  return shared(tokensOf(s.hebrew, aRef), tokensOf(s.hebrew, bRef), (t) => t.lexeme, freq, max);
+}
+
+/** Uncommon Greek lemmas two New Testament passages share (TAGNT, at their rows). */
+export function sharedGreekNT(
+  s: TermSources,
+  freq: Map<string, number>,
+  aRef: string,
+  bRef: string,
+  max = 150,
+): WordShared[] {
+  return shared(
+    tokensOf(s.greek, aRef),
+    tokensOf(s.greek, bRef),
+    (t) => (t.lemma ? fold(t.lemma) : undefined),
+    freq,
+    max,
+  );
+}
+
+/** The people and places (TIPNR ids) both passages name. */
+export function sharedPeople(t: TipnrIndex, aRef: string, bRef: string): string[] {
+  const ids = (ref: string) => {
+    const step = CANON_BY_ID.get(parsePoint(ref).book)?.tvtms;
+    const out = new Set<string>();
+    if (!step) return out;
+    for (const [c, v] of versesOf(ref, (c, v) => t.byVerse.has(`${step}.${c}.${v}`), 200))
+      for (const id of t.byVerse.get(`${step}.${c}.${v}`)!) out.add(id);
+    return out;
+  };
+  const b = ids(bRef);
+  return [...ids(aRef)].filter((id) => b.has(id));
+}
+
+/** Words of a verse for comparing accounts: folded, three letters or more. */
+const content = (t: string) => new Set(words(t).filter((w) => w.length >= 3));
+
+/**
+ * Parallel accounts (Kings and Chronicles, two Gospels): the verses of one passage that closely
+ * match a verse of the other (at least `min` of their content words shared, Jaccard), and the
+ * longest run of consecutive matches in order.
+ */
+export function parallelVerses(
+  a: string[],
+  b: string[],
+  min = 0.5,
+): { matched: number; longest: number } {
+  const B = b.map(content);
+  let matched = 0;
+  let longest = 0;
+  let run = 0;
+  let last = -2;
+  a.map(content).forEach((wa) => {
+    let best = -1;
+    let bestJ = 0;
+    B.forEach((wb, j) => {
+      const inter = [...wa].filter((w) => wb.has(w)).length;
+      const j_ = inter / (wa.size + wb.size - inter || 1);
+      if (j_ > bestJ) {
+        bestJ = j_;
+        best = j;
+      }
+    });
+    if (bestJ >= min) {
+      matched++;
+      run = best === last + 1 || best === last ? run + 1 : 1;
+      last = best;
+      longest = Math.max(longest, run);
+    } else {
+      run = 0;
+      last = -2;
+    }
+  });
+  return { matched, longest };
 }

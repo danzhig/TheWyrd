@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer01` A new covenant
 
-- **Jer.31.31-Jer.31.34 → Heb.8.8-Heb.8.12** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9a93d973a19dfc4d`
+- **Jer.31.31-Jer.31.34 → Heb.8.8-Heb.8.12** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `9a93d973a19dfc4d`
 - From: The Book of Consolation (`jer-x122`)
 - To: The New Covenant and the Once-for-All Sacrifice (`heb-03`, library)
 
@@ -22,7 +22,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer02` Rachel weeping for her children
 
-- **Jer.31.15 → Matt.2.17-Matt.2.18** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `8386d26d1218cdc9`
+- **Jer.31.15 → Matt.2.17-Matt.2.18** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `8386d26d1218cdc9`
 - From: The Book of Consolation (`jer-x122`)
 - To: The Genealogy and Birth of Jesus (`matt-01`, library)
 
@@ -35,7 +35,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer03` A den of robbers
 
-- **Jer.7.11 → Luke.19.46** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `7b4adbed5a317d68`
+- **Jer.7.11 → Luke.19.46** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `7b4adbed5a317d68`
 - From: The Temple Sermon (`jer-x107`)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
@@ -51,7 +51,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer04` The new covenant at the supper
 
-- **Jer.31.31 → Luke.22.20** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `35ea2573511042f1`
+- **Jer.31.31 → Luke.22.20** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `35ea2573511042f1`
 - From: The Book of Consolation (`jer-x122`)
 - To: The Last Supper and the Arrest (`luke-14`)
 
@@ -64,7 +64,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer05` Let him who boasts boast in the Lord
 
-- **Jer.9.23-Jer.9.24 → 1Cor.1.31** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `50372838196bc1e0`
+- **Jer.9.23-Jer.9.24 → 1Cor.1.31** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `50372838196bc1e0`
 - From: Weeping for the People (`jer-x108`)
 - To: Divisions and the Wisdom of the Cross (`1cor-01`, library)
 
@@ -79,7 +79,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer06` Rest for your souls
 
-- **Jer.6.16 → Matt.11.29** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `764f6c75c07f5540`
+- **Jer.6.16 → Matt.11.29** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `764f6c75c07f5540`
 - From: Jerusalem Besieged (`jer-x106`)
 - To: John’s Question; Sabbath Controversies (`matt-07`, library)
 
@@ -93,7 +93,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer07` Set apart from the womb
 
-- **Jer.1.5 → Gal.1.15** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `65cf32e4952cb8f3`
+- **Jer.1.5 → Gal.1.15** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `65cf32e4952cb8f3`
 - From: The Call of Jeremiah (`jer-x101`)
 - To: Paul’s Gospel and His Call (`gal-01`, library)
 
@@ -108,7 +108,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer08` The potter and the clay
 
-- **Jer.18.1-Jer.18.6 → Rom.9.20-Rom.9.21** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `20442c148e622985`
+- **Jer.18.1-Jer.18.6 → Rom.9.20-Rom.9.21** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `20442c148e622985`
 - From: The Potter and the Broken Jar (`jer-x114`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 

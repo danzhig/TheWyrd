@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `sam01` David and the consecrated bread
 
-- **1Sam.21.1-1Sam.21.6 → Luke.6.3-Luke.6.4** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `3961b49d47045ff9`
+- **1Sam.21.1-1Sam.21.6 → Luke.6.3-Luke.6.4** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `3961b49d47045ff9`
 - From: David the Fugitive (`1sam-10`)
 - To: The Disciples Called; Sermon on the Plain (`luke-07`)
 
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `sam02` Saul the son of Kish
 
-- **1Sam.10.1 → Acts.13.21** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `03128ef1f1a5ba95`
+- **1Sam.10.1 → Acts.13.21** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `03128ef1f1a5ba95`
 - From: Israel Demands a King (`1sam-04`)
 - To: Paul's First Journey (`acts-08`)
 
@@ -37,7 +37,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `sam03` A man after my heart
 
-- **1Sam.13.14 → Acts.13.22** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `97652660930ee5df`
+- **1Sam.13.14 → Acts.13.22** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `97652660930ee5df`
 - From: Saul's Early Reign (`1sam-05`)
 - To: Paul's First Journey (`acts-08`)
 
@@ -51,7 +51,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `sam04` Better than burnt offerings
 
-- **1Sam.15.22 → Mark.12.33** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `2c547342d8623d2f`
+- **1Sam.15.22 → Mark.12.33** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `2c547342d8623d2f`
 - From: Saul Rejected (`1sam-07`)
 - To: Entry into Jerusalem; Questions in the Temple (`mark-09`, library)
 
@@ -68,7 +68,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `sam05` Not by appearance
 
-- **1Sam.16.7 → John.7.24** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `6b75977b057a4d47`
+- **1Sam.16.7 → John.7.24** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `6b75977b057a4d47`
 - From: David Anointed; Goliath (`1sam-08`)
 - To: At the Feast of Booths (`john-x112`)
 

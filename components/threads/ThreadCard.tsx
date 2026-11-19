@@ -30,19 +30,34 @@ const dataRef = (ref: string) => ref.replace(/\.(\d+)\.(\d+)$/, ' $1:$2');
 /** "v-4-25" → "4:25". */
 export const verseLabel = (anchor: string) => anchor.replace(/^v-(\d+)-(\d+).*$/, '$1:$2');
 
+const DATASET = { LXX: 'Septuagint', TAGNT: 'TAGNT', TAHOT: 'TAHOT' } as const;
+
+/** The shared words at their rows: Greek (Septuagint, TAGNT) and Hebrew (TAHOT), each its own line. */
 function Evidence({ list }: { list: ThreadEvidence[] }) {
   if (!list.length) return null;
+  const hebrew = list.filter((e) => e.dataset === 'TAHOT');
+  const greek = list.filter((e) => e.dataset !== 'TAHOT');
+  const line = (label: string, items: ThreadEvidence[], lang: 'grc' | 'he') =>
+    items.length ? (
+      <p className={s.greek} data-evidence={lang}>
+        <span className={s.label}>{label}</span>{' '}
+        {items.map((e, i) => (
+          <span key={i}>
+            {i ? ' · ' : ''}
+            {DATASET[e.dataset]} {dataRef(e.ref)}:{' '}
+            <span lang={lang} dir={lang === 'he' ? 'rtl' : undefined}>
+              {/* TAHOT marks a word's parts with slashes; the word is shown whole. */}
+              {lang === 'he' ? e.form.replace(/[/\\]/g, '') : e.form}
+            </span>
+          </span>
+        ))}
+      </p>
+    ) : null;
   return (
-    <p className={s.greek}>
-      <span className={s.label}>Shared Greek</span>{' '}
-      {list.map((e, i) => (
-        <span key={i}>
-          {i ? ' · ' : ''}
-          {e.dataset === 'LXX' ? 'Septuagint' : 'TAGNT'} {dataRef(e.ref)}:{' '}
-          <span lang="grc">{e.form}</span>
-        </span>
-      ))}
-    </p>
+    <>
+      {line('Shared Greek', greek, 'grc')}
+      {line('Shared Hebrew', hebrew, 'he')}
+    </>
   );
 }
 

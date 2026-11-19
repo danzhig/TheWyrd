@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act01` I will pour out my Spirit on all flesh
 
-- **Joel.2.28-Joel.2.32 → Acts.2.16-Acts.2.21** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5a3964863f2ff670`
+- **Joel.2.28-Joel.2.32 → Acts.2.16-Acts.2.21** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `5a3964863f2ff670`
 - From: Restoration and the Lord’s Spirit (`joel-02`, library)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act02` You will not let your Holy One see decay
 
-- **Ps.16.8-Ps.16.11 → Acts.2.25-Acts.2.28** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `fddfd187f163aabe`
+- **Ps.16.8-Ps.16.11 → Acts.2.25-Acts.2.28** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `fddfd187f163aabe`
 - From: Psalm 16 (15) (`ps-016`, library)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -39,7 +39,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act03` Sit at my right hand
 
-- **Ps.110.1 → Acts.2.34-Acts.2.35** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `6044ff776ce43168`
+- **Ps.110.1 → Acts.2.34-Acts.2.35** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `6044ff776ce43168`
 - From: Psalm 110 (109) (`ps-110`, library)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -53,7 +53,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act04` Heaven is my throne
 
-- **Isa.66.1-Isa.66.2 → Acts.7.49-Acts.7.50** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `d36c9a566b87303f`
+- **Isa.66.1-Isa.66.2 → Acts.7.49-Acts.7.50** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `d36c9a566b87303f`
 - From: Lament and the New Creation (`isa-20`, library)
 - To: Stephen (`acts-03`)
 
@@ -66,7 +66,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act05` Hearing but not understanding
 
-- **Isa.6.9-Isa.6.10 → Acts.28.25-Acts.28.27** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `3b5e645e6d6525ce`
+- **Isa.6.9-Isa.6.10 → Acts.28.25-Acts.28.27** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `3b5e645e6d6525ce`
 - From: The Song of the Vineyard; Isaiah’s Call (`isa-02`, library)
 - To: Shipwreck and Rome (`acts-14`)
 
@@ -82,7 +82,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act06` Why do the nations rage?
 
-- **Ps.2.1-Ps.2.2 → Acts.4.25-Acts.4.26** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `2c7ddf42ccb5a073`
+- **Ps.2.1-Ps.2.2 → Acts.4.25-Acts.4.26** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `2c7ddf42ccb5a073`
 - From: Psalm 2 (`ps-002`, library)
 - To: The Jerusalem Church (`acts-02`)
 
@@ -99,7 +99,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act07` Rebuilding the fallen tent of David
 
-- **Amos.9.11-Amos.9.12 → Acts.15.15-Acts.15.17** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c143736f2fc7c276`
+- **Amos.9.11-Amos.9.12 → Acts.15.15-Acts.15.17** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `c143736f2fc7c276`
 - From: Five Visions; Amos and Amaziah (`amos-03`, library)
 - To: The Council of Jerusalem (`acts-09`)
 
@@ -115,7 +115,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act08` Let his habitation be desolate
 
-- **Ps.69.25 → Acts.1.20** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `ee7847f11e6c898d`
+- **Ps.69.25 → Acts.1.20** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `ee7847f11e6c898d`
 - From: Psalm 69 (68) (`ps-069`, library)
 - To: Ascension and Pentecost (`acts-01`)
 
@@ -130,7 +130,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act09` You are my Son; today I have become your father
 
-- **Ps.2.7 → Acts.13.33** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `b57a4b42ccb0a5bd`
+- **Ps.2.7 → Acts.13.33** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `b57a4b42ccb0a5bd`
 - From: Psalm 2 (`ps-002`, library)
 - To: Paul's First Journey (`acts-08`)
 
@@ -143,7 +143,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act10` Led as a sheep to the slaughter
 
-- **Isa.53.7-Isa.53.8 → Acts.8.32-Acts.8.33** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `0147db2d4acbfcd1`
+- **Isa.53.7-Isa.53.8 → Acts.8.32-Acts.8.33** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `0147db2d4acbfcd1`
 - From: Zion Awakes; the Suffering Servant (`isa-16`, library)
 - To: Philip, Samaria and the Ethiopian (`acts-04`)
 
@@ -159,7 +159,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act11` A light for the Gentiles
 
-- **Isa.49.6 → Acts.13.47** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `3de94324808fcdf0`
+- **Isa.49.6 → Acts.13.47** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `3de94324808fcdf0`
 - From: The Servant and Zion’s Children (`isa-15`, library)
 - To: Paul's First Journey (`acts-08`)
 
@@ -173,7 +173,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act12` Paul tells of his own turning
 
-- **Gal.1.13-Gal.1.17 → Acts.9.1-Acts.9.22** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `3e0ba2e5ed76bb6c`
+- **Gal.1.13-Gal.1.17 → Acts.9.1-Acts.9.22** · parallel · strength 2 · verified (approved 2026-11-19) · fingerprint `3e0ba2e5ed76bb6c`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: Saul's Conversion (`acts-05`)
 - Order: older end from; no use claimed; basis consensus
@@ -190,7 +190,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `act13` Peter, the Gentiles and the circumcision party
 
-- **Gal.2.11-Gal.2.14 → Acts.11.1-Acts.11.3** · parallel · strength 2 · verified (approved 2026-11-16) · fingerprint `8cd72e93ea5c4b2c`
+- **Gal.2.11-Gal.2.14 → Acts.11.1-Acts.11.3** · parallel · strength 2 · verified (approved 2026-11-19) · fingerprint `8cd72e93ea5c4b2c`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: Peter and Cornelius (`acts-06`)
 - Order: older end from; no use claimed; basis consensus

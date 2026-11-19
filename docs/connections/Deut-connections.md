@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu01` Not by bread alone
 
-- **Deut.8.3 → Luke.4.4** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `83d3cf0371187d14`
+- **Deut.8.3 → Luke.4.4** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `83d3cf0371187d14`
 - From: Remember the Wilderness (`deut-x303`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu02` Worship the Lord your God
 
-- **Deut.6.13 → Luke.4.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9513531ab98439fc`
+- **Deut.6.13 → Luke.4.8** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `9513531ab98439fc`
 - From: When You Enter the Land (`deut-x301`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -36,7 +36,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu03` Do not put the Lord your God to the test
 
-- **Deut.6.16 → Luke.4.12** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `c64bf0dcbb81132d`
+- **Deut.6.16 → Luke.4.12** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `c64bf0dcbb81132d`
 - From: When You Enter the Land (`deut-x301`)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -51,7 +51,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu04` A prophet like me
 
-- **Deut.18.15-Deut.18.19 → Acts.3.22-Acts.3.23** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `5bb2ae16b0f39b94`
+- **Deut.18.15-Deut.18.19 → Acts.3.22-Acts.3.23** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `5bb2ae16b0f39b94`
 - From: Priests and a Prophet (`deut-x312`)
 - To: The Jerusalem Church (`acts-02`)
 
@@ -69,7 +69,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu05` Stephen recalls the promised prophet
 
-- **Deut.18.15 → Acts.7.37** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1005d11e987f17db`
+- **Deut.18.15 → Acts.7.37** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `1005d11e987f17db`
 - From: Priests and a Prophet (`deut-x312`)
 - To: Stephen (`acts-03`)
 
@@ -84,7 +84,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu06` Do not muzzle the ox
 
-- **Deut.25.4 → 1Cor.9.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `df9edccbc7db7793`
+- **Deut.25.4 → 1Cor.9.9** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `df9edccbc7db7793`
 - From: Justice and First Fruits (`deut-x316`)
 - To: Food Offered to Idols; Paul’s Freedom (`1cor-03`, library)
 
@@ -104,7 +104,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu07` Cursed is everyone who does not keep the law
 
-- **Deut.27.26 → Gal.3.10** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `029aea4d93dc091b`
+- **Deut.27.26 → Gal.3.10** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `029aea4d93dc091b`
 - From: Stones on Mount Ebal (`deut-x317`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
@@ -121,7 +121,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu08` The word is near you
 
-- **Deut.30.11-Deut.30.14 → Rom.10.6-Rom.10.8** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `a4f524c7b3cd519a`
+- **Deut.30.11-Deut.30.14 → Rom.10.6-Rom.10.8** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `a4f524c7b3cd519a`
 - From: The Covenant in Moab (`deut-x4`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -139,7 +139,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu09` Provoked to jealousy by a no-people
 
-- **Deut.32.21 → Rom.10.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `9a420df81787b0ed`
+- **Deut.32.21 → Rom.10.19** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `9a420df81787b0ed`
 - From: The Song of Moses (`deut-04`)
 - To: Israel and the Nations in God’s Plan (`rom-05`, library)
 
@@ -156,7 +156,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu10` Vengeance is mine
 
-- **Deut.32.35 → Rom.12.19** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `aca830596427183f`
+- **Deut.32.35 → Rom.12.19** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `aca830596427183f`
 - From: The Song of Moses (`deut-04`)
 - To: Life in the Body; Love and the Authorities (`rom-06`, library)
 
@@ -169,7 +169,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu11` I will never leave you
 
-- **Deut.31.6-Deut.31.8 → Heb.13.5** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `277222b25655d682`
+- **Deut.31.6-Deut.31.8 → Heb.13.5** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `277222b25655d682`
 - From: Joshua Commissioned (`deut-03`)
 - To: Endurance and Discipline; Final Exhortations (`heb-05`, library)
 
@@ -185,7 +185,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu12` Remove the evil from among you
 
-- **Deut.17.7 → 1Cor.5.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1d4cec002fa9c72d`
+- **Deut.17.7 → 1Cor.5.13** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `1d4cec002fa9c72d`
 - From: Courts and the King (`deut-x311`)
 - To: Immorality, Lawsuits and Marriage (`1cor-02`, library)
 
@@ -200,7 +200,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu13` A consuming fire
 
-- **Deut.4.24 → Heb.12.29** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `802f90ccf3cc9094`
+- **Deut.4.24 → Heb.12.29** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `802f90ccf3cc9094`
 - From: Do Not Forget (`deut-x103`)
 - To: Endurance and Discipline; Final Exhortations (`heb-05`, library)
 
@@ -215,7 +215,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu14` The commandments summed up
 
-- **Deut.5.16-Deut.5.21 → Rom.13.9** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `65db3a75b8d6ceb6`
+- **Deut.5.16-Deut.5.21 → Rom.13.9** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `65db3a75b8d6ceb6`
 - From: The Ten Commandments Repeated (`deut-x104`)
 - To: Life in the Body; Love and the Authorities (`rom-06`, library)
 
@@ -238,7 +238,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu15` Cursed is anyone hanged on a tree
 
-- **Deut.21.22-Deut.21.23 → Gal.3.13** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `d4f9cd17885da9cd`
+- **Deut.21.22-Deut.21.23 → Gal.3.13** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `d4f9cd17885da9cd`
 - From: Family and Neighbour (`deut-x314`)
 - To: Faith, the Law and Sonship (`gal-02`, library)
 
@@ -251,7 +251,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deu16` Two or three witnesses
 
-- **Deut.19.15 → 2Cor.13.1** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `e3139364dfa35e93`
+- **Deut.19.15 → 2Cor.13.1** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `e3139364dfa35e93`
 - From: Refuge, Witnesses and War (`deut-x313`)
 - To: Paul Defends His Apostleship (`2cor-05`, library)
 

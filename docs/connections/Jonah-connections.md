@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon01` Three days in the belly of the fish
 
-- **Jonah.1.17 → Matt.12.40** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `bba74469ab95101e`
+- **Jonah.1.17 → Matt.12.40** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `bba74469ab95101e`
 - From: In the Belly of the Fish (`jonah-02`)
 - To: John’s Question; Sabbath Controversies (`matt-07`, library)
 
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon02` Throwing the cargo overboard
 
-- **Jonah.1.4-Jonah.1.5 → Acts.27.18-Acts.27.19** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `aae3b846538ceb0f`
+- **Jonah.1.4-Jonah.1.5 → Acts.27.18-Acts.27.19** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `aae3b846538ceb0f`
 - From: Flight and Storm (`jonah-01`)
 - To: Shipwreck and Rome (`acts-14`)
 
@@ -38,7 +38,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon03` Repentance in sackcloth and ashes
 
-- **Jonah.3.5-Jonah.3.8 → Luke.10.13** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `f6b55df458bdbba8`
+- **Jonah.3.5-Jonah.3.8 → Luke.10.13** · echo · strength 1 · verified (approved 2026-11-19) · fingerprint `f6b55df458bdbba8`
 - From: Nineveh Repents (`jonah-03`)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 
@@ -55,7 +55,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon04` Asleep in the storm
 
-- **Jonah.1.4-Jonah.1.6 → Luke.8.22-Luke.8.25** · parallel · strength 1 · verified (approved 2026-11-16) · fingerprint `00186c49f2f34a86`
+- **Jonah.1.4-Jonah.1.6 → Luke.8.22-Luke.8.25** · parallel · strength 1 · verified (approved 2026-11-19) · fingerprint `00186c49f2f34a86`
 - From: Flight and Storm (`jonah-01`)
 - To: Healings, Forgiveness, Parables (`luke-08`)
 

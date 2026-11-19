@@ -5,10 +5,22 @@
  * (`Exod.40.34-Exod.40.35`). Where the Septuagint numbers the old passage differently, give its
  * own reference with --lxx (e.g. `--lxx Exod.40.28-Exod.40.29`). Nothing is typed: every form printed is the token at its cited row
  * (the Septuagint by its verse and word position, TAGNT by its file and line).
+ *
+ * Two passages in the same Testament (threads plan TX2): two Old Testament passages are compared
+ * in TAHOT (uncommon Hebrew/Aramaic lexemes, by extended Strong's), two New Testament passages in
+ * TAGNT (uncommon Greek lemmas); `--json key,…` prints their evidence (the lexeme, e.g. H3199,
+ * or the lemma). `--span TAHOT:<ref>:<a>-<b>` prints a Hebrew phrase like the Greek ones.
  */
 import { CANON_BY_ID } from './lib/canon';
 import { parsePoint } from './connections/xrefs';
 import { loadTermSources, LXX_BOOKS } from './terms/sources';
+import {
+  fold as foldWord,
+  ntFrequencies,
+  otFrequencies,
+  sharedGreekNT,
+  sharedHebrew,
+} from './connections/signals';
 
 const args = process.argv.slice(2);
 
@@ -17,9 +29,10 @@ const args = process.argv.slice(2);
 if (args[0] === '--span') {
   const src = loadTermSources();
   const out = args.slice(1).map((spec) => {
-    const [dataset, ref, span] = spec.split(':') as ['LXX' | 'TAGNT', string, string];
+    const [dataset, ref, span] = spec.split(':') as ['LXX' | 'TAGNT' | 'TAHOT', string, string];
     const [a, b] = span.split('-').map(Number) as [number, number | undefined];
-    const list = (dataset === 'LXX' ? src.lxx : src.greek).get(ref) ?? [];
+    const list =
+      (dataset === 'LXX' ? src.lxx : dataset === 'TAHOT' ? src.hebrew : src.greek).get(ref) ?? [];
     const words = list.filter((t) => t.wordIndex >= a && t.wordIndex <= (b ?? a));
     if (!words.length) throw new Error(`no words at ${spec}`);
     const first = words[0]!;
@@ -71,6 +84,35 @@ function verses(range: string, has: (c: number, v: number) => boolean): [number,
 }
 
 const s = loadTermSources();
+const testamentOf = (ref: string) => CANON_BY_ID.get(parsePoint(ref).book)?.testament;
+
+// Inside one Testament: TAHOT ↔ TAHOT or TAGNT ↔ TAGNT.
+if (testamentOf(oldRef) === testamentOf(newRef)) {
+  const ot = testamentOf(oldRef) === 'OT';
+  const dataset = ot ? 'TAHOT' : 'TAGNT';
+  const list = ot
+    ? sharedHebrew(s, otFrequencies(s), oldRef, newRef, 400)
+    : sharedGreekNT(s, ntFrequencies(s), oldRef, newRef, 400);
+  if (jsonLemmas) {
+    const want = new Set(jsonLemmas.map((k) => (ot ? k : foldWord(k))));
+    const evidence = list
+      .filter((w) => want.has(w.key))
+      .flatMap((w) => [...w.a, ...w.b])
+      .map((w) => ({ dataset, ref: w.ref, wordIndex: w.wordIndex, form: w.form, row: w.row }));
+    console.log(JSON.stringify(evidence));
+    process.exit(0);
+  }
+  console.log(
+    `${oldRef} ↔ ${newRef} (${dataset}): ${list.length} uncommon shared ${ot ? 'lexemes' : 'lemmas'}`,
+  );
+  for (const w of list) {
+    console.log(`\n${w.lemma} [${w.key}] (${w.count} times in its Testament)`);
+    for (const x of [...w.a, ...w.b])
+      console.log(`  ${x.ref} #${x.wordIndex} ${x.form}  [${x.row}]`);
+  }
+  process.exit(0);
+}
+
 const oldBook = parsePoint(oldRef!).book;
 const newBook = parsePoint(newRef!).book;
 const lxxBooks = LXX_BOOKS[oldBook] ?? [];

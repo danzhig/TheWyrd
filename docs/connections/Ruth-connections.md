@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `rut01` Boaz, Ruth and the line of David
 
-- **Ruth.4.13-Ruth.4.22 → Matt.1.5-Matt.1.6** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `ad834312d008631b`
+- **Ruth.4.13-Ruth.4.22 → Matt.1.5-Matt.1.6** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `ad834312d008631b`
 - From: The Redeemer (`ruth-04`)
 - To: The Genealogy and Birth of Jesus (`matt-01`, library)
 
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `rut02` The generations from Perez to David
 
-- **Ruth.4.18-Ruth.4.22 → Luke.3.31-Luke.3.33** · allusion · strength 3 · verified (approved 2026-11-16) · fingerprint `4a4daa0918b0d465`
+- **Ruth.4.18-Ruth.4.22 → Luke.3.31-Luke.3.33** · allusion · strength 3 · verified (approved 2026-11-19) · fingerprint `4a4daa0918b0d465`
 - From: The Redeemer (`ruth-04`)
 - To: The Genealogy of Jesus (`luke-x1`)
 
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `rut03` Under his wings
 
-- **Ruth.2.12 → Luke.13.34** · echo · strength 1 · verified (approved 2026-11-16) · fingerprint `85a205b3cfd526f1`
+- **Ruth.2.12 → Luke.13.34** · echo · strength 1 · verified (approved 2026-11-19) · fingerprint `85a205b3cfd526f1`
 - From: The Field of Boaz (`ruth-02`)
 - To: The Narrow Door to the Prodigal Son (`luke-11`)
 

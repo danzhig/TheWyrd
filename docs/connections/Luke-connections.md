@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk01` In the spirit and power of Elijah
 
-- **Mal.4.5-Mal.4.6 → Luke.1.17** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `1fea85c83866d43c`
+- **Mal.4.5-Mal.4.6 → Luke.1.17** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `1fea85c83866d43c`
 - From: The Day Is Coming (`mal-03`, library)
 - To: Two Annunciations (`luke-02`)
 
@@ -22,7 +22,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk02` He will put his angels in charge of you
 
-- **Ps.91.11-Ps.91.12 → Luke.4.10-Luke.4.11** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `55f8b63157e67200`
+- **Ps.91.11-Ps.91.12 → Luke.4.10-Luke.4.11** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `55f8b63157e67200`
 - From: Psalm 91 (90) (`ps-091`, library)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 
@@ -37,7 +37,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk03` The stone the builders rejected
 
-- **Ps.118.22 → Luke.20.17** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `47c40d116664536d`
+- **Ps.118.22 → Luke.20.17** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `47c40d116664536d`
 - From: Psalm 118 (117) (`ps-118`, library)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
@@ -51,7 +51,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk04` Dividing his garments
 
-- **Ps.22.18 → Luke.23.34** · allusion · strength 2 · verified (approved 2026-11-16) · fingerprint `25db70a3544b1f66`
+- **Ps.22.18 → Luke.23.34** · allusion · strength 2 · verified (approved 2026-11-19) · fingerprint `25db70a3544b1f66`
 - From: Psalm 22 (21) (`ps-022`, library)
 - To: Trials and Crucifixion (`luke-15`)
 
@@ -64,7 +64,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk05` The Lord said to my Lord
 
-- **Ps.110.1 → Luke.20.42-Luke.20.43** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `eec328c14b6e8583`
+- **Ps.110.1 → Luke.20.42-Luke.20.43** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `eec328c14b6e8583`
 - From: Psalm 110 (109) (`ps-110`, library)
 - To: Entry into Jerusalem; Teaching in the Temple (`luke-13`)
 
@@ -80,7 +80,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk06` Counted with the transgressors
 
-- **Isa.53.12 → Luke.22.37** · quotation · strength 3 · verified (approved 2026-11-16) · fingerprint `27a442733186ae9b`
+- **Isa.53.12 → Luke.22.37** · quotation · strength 3 · verified (approved 2026-11-19) · fingerprint `27a442733186ae9b`
 - From: Zion Awakes; the Suffering Servant (`isa-16`, library)
 - To: The Last Supper and the Arrest (`luke-14`)
 
@@ -93,7 +93,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luk07` Into your hands I commit my spirit
 
-- **Ps.31.5 → Luke.23.46** · quotation · strength 2 · verified (approved 2026-11-16) · fingerprint `fe75fb489a304fd0`
+- **Ps.31.5 → Luke.23.46** · quotation · strength 2 · verified (approved 2026-11-19) · fingerprint `fe75fb489a304fd0`
 - From: Psalm 31 (30) (`ps-031`, library)
 - To: Trials and Crucifixion (`luke-15`)
 

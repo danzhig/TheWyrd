@@ -8,7 +8,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `est01` Up to half my kingdom
 
-- **Esth.5.3 → Mark.6.22-Mark.6.23** · echo · strength 2 · verified (approved 2026-11-16) · fingerprint `ecae15a5496c9f42`
+- **Esth.5.3 → Mark.6.22-Mark.6.23** · echo · strength 2 · verified (approved 2026-11-19) · fingerprint `ecae15a5496c9f42`
 - From: Esther Before the King (`esth-06`)
 - To: Rejected at Nazareth; the Twelve Sent; Five Thousand Fed (`mark-05`, library)
 
