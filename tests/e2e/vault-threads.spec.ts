@@ -245,6 +245,48 @@ test.describe('Threads on the Vault', () => {
     );
   });
 
+  test('arcs point to the book that takes the other up; corpus pairs filter them', async ({
+    page,
+  }) => {
+    await threadsOn(page);
+    const arcs = page.locator('[data-arc]');
+    // An arc whose threads all run one way points (a chevron) toward the later book.
+    const oneWay = [...pairs.keys()].find((k) =>
+      connections
+        .filter((c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === k)
+        .every((c) => c.order.older !== null && c.order.uses),
+    )!;
+    const later = connections.find(
+      (c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === oneWay,
+    )!;
+    const directed = page.locator(`[data-arc="${oneWay}"]`);
+    await expect(directed).toHaveAttribute(
+      'data-toward',
+      later.ends[1 - later.order.older!]!.bookId,
+    );
+    await expect(directed).toHaveAttribute('marker-mid', 'url(#thread-dir)');
+    // The pair chips: one per pair present, each a toggle.
+    const chips = page.getByTestId('pair-filter').locator('[data-pair-chip]');
+    const present = [...new Set(connections.map((c) => c.pair))];
+    await expect(chips).toHaveCount(present.length);
+    const nn = page.locator('[data-pair-chip="nt-nt"]');
+    const nnArcs = new Set(
+      connections
+        .filter((c) => c.pair === 'nt-nt')
+        .map((c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|')),
+    );
+    await expect(page.locator('[data-arc][data-pair="nt-nt"]')).toHaveCount(nnArcs.size);
+    await nn.click();
+    await expect(nn).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.locator('[data-arc][data-pair="nt-nt"]')).toHaveCount(0);
+    await nn.click();
+    // With the Old Testament hidden, only threads inside the New are left.
+    await page.getByTestId('testament-ot').click();
+    await expect(arcs).toHaveCount(nnArcs.size);
+    await expect(page.locator('[data-arc][data-pair="ot-nt"]')).toHaveCount(0);
+    await page.getByTestId('testament-ot').click();
+  });
+
   test('Themes turns Threads off', async ({ page }) => {
     await threadsOn(page);
     await page.getByTestId('view-themes').click();

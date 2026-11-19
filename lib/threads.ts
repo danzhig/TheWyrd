@@ -83,3 +83,33 @@ export function basisText(o: ThreadOrder, older?: ThreadEnd): string {
       return 'Which passage was written first is not stated for this thread.';
   }
 }
+
+/** Where a thread goes in the reader's list, seen from the end on this page (threads plan §4). */
+export type ThreadGroup = 'drawsOn' | 'takenUpIn' | 'alongside';
+
+export const THREAD_GROUPS: { id: ThreadGroup; title: string; note: string; empty: string }[] = [
+  {
+    id: 'drawsOn',
+    title: 'Draws on',
+    note: 'Older passages this reading takes up',
+    empty: 'No thread yet leads from this reading back to an older passage.',
+  },
+  {
+    id: 'takenUpIn',
+    title: 'Taken up in',
+    note: 'Later passages that take this reading up',
+    empty: 'No thread yet leads from this reading on to a later passage.',
+  },
+  {
+    id: 'alongside',
+    title: 'Alongside',
+    note: 'Passages told beside it, with no use claimed',
+    empty: '',
+  },
+];
+
+/** Draws on (the other end is older and used here), Taken up in (the other end uses this), or Alongside. */
+export function threadGroup(order: Pick<ThreadOrder, 'older' | 'uses'>, here: 0 | 1): ThreadGroup {
+  if (order.older === null || !order.uses) return 'alongside';
+  return order.older === here ? 'takenUpIn' : 'drawsOn';
+}

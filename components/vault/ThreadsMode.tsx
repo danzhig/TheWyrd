@@ -17,8 +17,10 @@ import { ThreadCard } from '@/components/threads/ThreadCard';
 import { TYPE_LABEL, TYPE_ORDER } from '@/lib/threads';
 import type { ConnectionType, PublicConnection, PublicConnections } from '@/lib/types';
 import type { Point } from './layout';
+import { ALL_PAIRS, pairLabel, type PairId } from '@/lib/corpora';
 import {
   arcsFor,
+  directedPath,
   bookThreads,
   directionSummary,
   nearestArc,
@@ -30,11 +32,21 @@ import s from './threads.module.css';
 
 let dataPromise: Promise<PublicConnections> | null = null;
 export function loadConnections(): Promise<PublicConnections> {
-  dataPromise ??= fetch('/data/connections.json')
-    .then((r) => {
+  // Every published file of threads (threads plan §5): Old ↔ New first, then the threads inside
+  // each Testament (small; a missing file counts as empty).
+  const within = (f: string) =>
+    fetch(`/data/${f}`)
+      .then((r) => (r.ok ? (r.json() as Promise<PublicConnections>) : { connections: [] }))
+      .catch(() => ({ connections: [] }));
+  dataPromise ??= Promise.all([
+    fetch('/data/connections.json').then((r) => {
       if (!r.ok) throw new Error(`connections.json ${r.status}`);
       return r.json() as Promise<PublicConnections>;
-    })
+    }),
+    within('connections-within-ot.json'),
+    within('connections-within-nt.json'),
+  ])
+    .then((files) => ({ connections: files.flatMap((f) => f.connections) }))
     .catch((err) => {
       dataPromise = null;
       throw err;
@@ -73,6 +85,8 @@ export function ThreadsMode({
 }: ThreadsModeProps) {
   const [data, setData] = useState<PublicConnections | null>(null);
   const [types, setTypes] = useState<Set<ConnectionType>>(() => new Set(TYPE_ORDER));
+  /** Corpus pairs switched off (threads plan §5); every pair present is on to begin with. */
+  const [pairsOff, setPairsOff] = useState<Set<PairId>>(() => new Set());
   const [selected, setSelected] = useState<string | null>(null);
   /** The book whose threads the book panel shows (threads plan §2.5). */
   const [book, setBook] = useState<string | null>(null);
@@ -108,7 +122,14 @@ export function ThreadsMode({
     for (const c of shown) counts.set(c.type, (counts.get(c.type) ?? 0) + 1);
     return TYPE_ORDER.filter((t) => counts.has(t)).map((t) => ({ type: t, n: counts.get(t)! }));
   }, [shown]);
-  const arcs = useMemo(() => arcsFor(shown, homes, types), [shown, homes, types]);
+  // The pairs present (shown when more than one), with their counts.
+  const pairCounts = useMemo(() => {
+    const m = new Map<PairId, number>();
+    for (const c of shown) m.set(c.pair, (m.get(c.pair) ?? 0) + 1);
+    return ALL_PAIRS.filter((p) => m.has(p)).map((p) => ({ pair: p, n: m.get(p)! }));
+  }, [shown]);
+  const pairsOn = useMemo(() => new Set(ALL_PAIRS.filter((p) => !pairsOff.has(p))), [pairsOff]);
+  const arcs = useMemo(() => arcsFor(shown, homes, types, pairsOn), [shown, homes, types, pairsOn]);
   const arc = arcs.find((a) => a.key === selected) ?? null;
   // The SVG box: every home inside it, with room for the arcs' bows.
   const R = useMemo(
@@ -117,7 +138,10 @@ export function ThreadsMode({
   );
 
   // Books with a thread under the filters: the first tap on one opens its panel.
-  const typed = useMemo(() => shown.filter((c) => types.has(c.type)), [shown, types]);
+  const typed = useMemo(
+    () => shown.filter((c) => types.has(c.type) && pairsOn.has(c.pair)),
+    [shown, types, pairsOn],
+  );
   const threaded = useMemo(() => threadedBooks(typed), [typed]);
   const bookData = useMemo(() => (book ? bookThreads(typed, book) : null), [typed, book]);
 
@@ -256,11 +280,31 @@ export function ThreadsMode({
               ref={svgRef}
               data-testid="thread-arcs"
             >
+              <defs>
+                {/* The chevron on a directed arc, sized by its stroke, pointing along it. */}
+                <marker
+                  id="thread-dir"
+                  viewBox="0 0 10 10"
+                  refX="5"
+                  refY="5"
+                  markerWidth="4"
+                  markerHeight="4"
+                  orient="auto"
+                  className={s.chevron}
+                >
+                  <path d="M2 1.5 7 5 2 8.5" />
+                </marker>
+              </defs>
               {arcs.map((a) => (
                 <path
                   key={a.key}
-                  d={a.d}
+                  // An arc whose threads all run one way widens toward the book that takes the
+                  // other up (threads plan §4); otherwise an even line.
+                  // An arc whose threads all run one way carries a chevron at its middle
+                  // pointing to the book that takes the other up (threads plan §4).
+                  d={a.toward && a.curve ? directedPath(a.curve, a.toward === a.b) : a.d}
                   pathLength={1}
+                  markerMid={a.toward && a.curve ? 'url(#thread-dir)' : undefined}
                   className={[
                     s.line,
                     selected === a.key || (book && (a.a === book || a.b === book))
@@ -271,6 +315,8 @@ export function ThreadsMode({
                   strokeWidth={selected === a.key ? a.width * 1.6 : a.width}
                   data-arc={a.key}
                   data-count={a.connections.length}
+                  data-pair={a.pair}
+                  data-toward={a.toward ?? undefined}
                 />
               ))}
             </svg>,
@@ -285,6 +331,30 @@ export function ThreadsMode({
         aria-label="Types of link"
         data-testid="thread-filter"
       >
+        {pairCounts.length > 1 ? (
+          <span className={s.pairChips} role="group" aria-label="Corpora" data-testid="pair-filter">
+            {pairCounts.map(({ pair, n }) => (
+              <button
+                key={pair}
+                type="button"
+                className={`${s.chip} ${s.pairChip}`}
+                aria-pressed={!pairsOff.has(pair)}
+                data-pair-chip={pair}
+                onClick={() => {
+                  setPairsOff((prev) => {
+                    const next = new Set(prev);
+                    if (next.has(pair)) next.delete(pair);
+                    else next.add(pair);
+                    return next;
+                  });
+                  setSelected(null);
+                }}
+              >
+                {pairLabel(pair)} <span className={s.count}>{n}</span>
+              </button>
+            ))}
+          </span>
+        ) : null}
         {present.map(({ type, n }) => (
           <button
             key={type}

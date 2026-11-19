@@ -58,9 +58,9 @@ test.describe('Threads', () => {
     const glyph = page.locator(`a.thread-glyph[data-thread="${here.anchor}"]`);
     await expect(glyph).toHaveAttribute('href', `#threads-${here.anchor}`);
     // The list at the end of the section holds the same card (it works without JavaScript).
-    await expect(page.locator(`#threads-${here.anchor} [data-thread-card="${c!.id}"]`)).toHaveCount(
-      1,
-    );
+    await expect(
+      page.locator(`[data-from="${here.anchor}"] [data-thread-card="${c!.id}"]`),
+    ).toHaveCount(1);
 
     await glyph.click();
     const dialog = page.getByTestId('thread-dialog');
@@ -99,7 +99,7 @@ test.describe('Threads', () => {
     const older = c.ends[c.order.older ?? 0]!;
     const later = c.ends[1 - (c.order.older ?? 0)]!;
     await open(page, `/read/${later.sectionId}/`);
-    const card = page.locator(`#threads-${later.anchor} [data-thread-card="${c.id}"]`);
+    const card = page.locator(`[data-from="${later.anchor}"] [data-thread-card="${c.id}"]`);
     const refs = card.locator('[data-direction] [data-end]');
     await expect(refs).toHaveText([older.display, later.display]);
     await expect(card.locator('[data-summary]')).toBeVisible();
@@ -118,6 +118,55 @@ test.describe('Threads', () => {
       'href',
       `/read/${older.sectionId}/?thread=${c.id}#${older.anchor}`,
     );
+  });
+
+  test('the list groups threads by direction; the glyph counts and lands on its verse', async ({
+    page,
+  }) => {
+    // Luke 1 (Two Annunciations): everything it takes up is older, two parallels claim no use.
+    await open(page, '/read/luke-02/');
+    const list = page.getByTestId('threads');
+    const mine = published.filter((x) => x.ends.some((e) => e.sectionId === 'luke-02'));
+    const groupOf = (x: (typeof mine)[number]) => {
+      const here = x.ends.findIndex((e) => e.sectionId === 'luke-02');
+      if (x.order.older === null || !x.order.uses) return 'alongside';
+      return x.order.older === here ? 'takenUpIn' : 'drawsOn';
+    };
+    for (const g of ['drawsOn', 'takenUpIn', 'alongside'] as const) {
+      const n = mine.filter((x) => groupOf(x) === g).length;
+      const group = list.locator(`[data-thread-group="${g}"]`);
+      if (g === 'alongside' && !n) await expect(group).toHaveCount(0);
+      else await expect(group.locator('[data-thread-card]')).toHaveCount(n);
+    }
+    // An empty group says so.
+    await expect(list.locator('[data-thread-group="takenUpIn"]')).toContainText('No thread yet');
+    // A verse with more than one thread shows the count; its link lands on its first card.
+    const counts = new Map<string, number>();
+    for (const x of mine) {
+      const e = x.ends.find((y) => y.sectionId === 'luke-02')!;
+      counts.set(e.anchor, (counts.get(e.anchor) ?? 0) + 1);
+    }
+    const busy = [...counts].find(([, n]) => n > 1);
+    if (busy) {
+      const glyph = page.locator(`a.thread-glyph[data-thread="${busy[0]}"]`);
+      await expect(glyph.locator('.thread-count')).toHaveText(String(busy[1]));
+      await expect(page.locator(`#threads-${busy[0]}`)).toHaveAttribute('data-from', busy[0]);
+      // The dialog groups the same way.
+      await glyph.click();
+      await expect(
+        page.getByTestId('thread-dialog').locator('[data-dialog-group]').first(),
+      ).toBeVisible();
+    }
+  });
+
+  test('the heaviest reading stays a reasonable size', async ({ request }) => {
+    // Threads are rendered into each page; the busiest sections must stay light (threads plan §6).
+    const per = new Map<string, number>();
+    for (const x of published)
+      for (const e of x.ends) per.set(e.sectionId, (per.get(e.sectionId) ?? 0) + 1);
+    const [heaviest] = [...per].sort((a, b) => b[1] - a[1])[0]!;
+    const html = await (await request.get(`/read/${heaviest}/`)).text();
+    expect(html.length).toBeLessThan(300_000);
   });
 
   test('a section with threads is accessible', async ({ page }) => {
