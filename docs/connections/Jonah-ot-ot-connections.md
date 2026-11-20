@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-3 connections; 0 verified; 0 failing a check.
+3 connections; 3 verified; 0 failing a check.
 
 ## `jon-o01` Who knows? He may turn and relent
 
-- **Joel.2.13-Joel.2.14 → Jonah.3.9-Jonah.4.2** · echo · strength 3 · draft · fingerprint `360c3794fb6ae74d`
+- **Joel.2.13-Joel.2.14 → Jonah.3.9-Jonah.4.2** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `360c3794fb6ae74d`
 - From: The Locusts and a Call to Mourn (`joel-01`, library)
 - To: Nineveh Repents (`jonah-03`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon-o02` All your waves and billows
 
-- **Ps.42.7 → Jonah.2.3** · echo · strength 2 · draft · fingerprint `73df93808f9e28be`
+- **Ps.42.7 → Jonah.2.3** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `73df93808f9e28be`
 - From: Psalm 42 (41) (`ps-042`, library)
 - To: In the Belly of the Fish (`jonah-02`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jon-o03` If that nation turns from its evil
 
-- **Jer.18.7-Jer.18.8 → Jonah.3.10** · echo · strength 2 · draft · fingerprint `052dcdddebbecc4f`
+- **Jer.18.7-Jer.18.8 → Jonah.3.10** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `052dcdddebbecc4f`
 - From: The Potter and the Broken Jar (`jer-x114`)
 - To: Nineveh Repents (`jonah-03`)
 - Order: older end unknown; no use claimed; basis unstated

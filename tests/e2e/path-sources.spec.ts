@@ -1,3 +1,4 @@
+import { THREAD_FILES } from '../../lib/thread-files';
 import fs from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
@@ -36,16 +37,14 @@ test.describe('the path and sources pages', () => {
   test("the timeline counts each section's threads", async ({ page }) => {
     // Luke 1 (Two Annunciations) is the busiest reading on the path for threads.
     // Counted across every published file (Old ↔ New and inside each Testament).
-    const all = ['connections.json', 'connections-within-ot.json', 'connections-within-nt.json']
-      .filter((f) => fs.existsSync(`public/data/${f}`))
-      .flatMap(
-        (f) =>
-          (
-            JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as {
-              connections: { ends: { sectionId: string }[] }[];
-            }
-          ).connections,
-      );
+    const all = THREAD_FILES.filter((f) => fs.existsSync(`public/data/${f}`)).flatMap(
+      (f) =>
+        (
+          JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as {
+            connections: { ends: { sectionId: string }[] }[];
+          }
+        ).connections,
+    );
     const n = all.filter((c) => c.ends.some((e) => e.sectionId === 'luke-02')).length;
     await page.goto('/path/');
     await expect(page.locator('[data-row="luke-02"]')).toContainText(`${n} threads`);

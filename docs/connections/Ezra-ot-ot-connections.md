@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-5 connections; 0 verified; 0 failing a check.
+5 connections; 5 verified; 0 failing a check.
 
 ## `ezra-o01` Cyrus's decree, twice
 
-- **Ezra.1.1-Ezra.1.3 → 2Chr.36.22-2Chr.36.23** · parallel · strength 3 · draft · fingerprint `e07929f6679f6b4f`
+- **Ezra.1.1-Ezra.1.3 → 2Chr.36.22-2Chr.36.23** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `e07929f6679f6b4f`
 - From: Cyrus's Decree and the First Return (`ezra-01`)
 - To: The Fall of Jerusalem and Cyrus’s Decree (`2chr-15`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ezra-o02` Cyrus, who will say of Jerusalem: let it be built
 
-- **Isa.44.28 → Ezra.1.1-Ezra.1.2** · echo · strength 2 · draft · fingerprint `c67a2b953ea8bf53`
+- **Isa.44.28 → Ezra.1.1-Ezra.1.2** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `c67a2b953ea8bf53`
 - From: Israel the Witness; Idols Mocked; Cyrus (`isa-13`, library)
 - To: Cyrus's Decree and the First Return (`ezra-01`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -36,7 +36,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ezra-o03` The peoples of the lands
 
-- **Deut.7.1-Deut.7.3 → Ezra.9.1-Ezra.9.2** · allusion · strength 3 · draft · fingerprint `b8e5435652d64368`
+- **Deut.7.1-Deut.7.3 → Ezra.9.1-Ezra.9.2** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `b8e5435652d64368`
 - From: A Holy People (`deut-x302`)
 - To: The Crisis of Mixed Marriages (`ezra-06`)
 - Order: older end from; the later end uses it; basis text
@@ -53,7 +53,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ezra-o04` The register of the returned, twice
 
-- **Ezra.2.1-Ezra.2.70 → Neh.7.6-Neh.7.73** · parallel · strength 3 · draft · fingerprint `3525cf01fcae9fb9`
+- **Ezra.2.1-Ezra.2.70 → Neh.7.6-Neh.7.73** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `3525cf01fcae9fb9`
 - From: Cyrus's Decree and the First Return (`ezra-01`)
 - To: The Register of Returnees (`neh-07`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -70,7 +70,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ezra-o05` For he is good
 
-- **Ps.136.1 → Ezra.3.10-Ezra.3.11** · echo · strength 2 · draft · fingerprint `173e532a1e28f6e4`
+- **Ps.136.1 → Ezra.3.10-Ezra.3.11** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `173e532a1e28f6e4`
 - From: Psalm 136 (135) (`ps-136`, library)
 - To: The Altar and the Foundation (`ezra-02`)
 - Order: older end unknown; no use claimed; basis unstated

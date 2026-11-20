@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-6 connections; 0 verified; 0 failing a check.
+6 connections; 6 verified; 0 failing a check.
 
 ## `1sam-o01` He raises the poor from the dust
 
-- **1Sam.2.1-1Sam.2.10 → Ps.113.7-Ps.113.9** · echo · strength 2 · draft · fingerprint `0330ec4562bbe882`
+- **1Sam.2.1-1Sam.2.10 → Ps.113.7-Ps.113.9** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `0330ec4562bbe882`
 - From: Hannah and the Birth of Samuel (`1sam-01`)
 - To: Psalm 113 (112) (`ps-113`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1sam-o02` Not sacrifice
 
-- **1Sam.15.22 → Hos.6.6** · echo · strength 2 · draft · fingerprint `938515352de1744d`
+- **1Sam.15.22 → Hos.6.6** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `938515352de1744d`
 - From: Saul Rejected (`1sam-07`)
 - To: No Knowledge of God (`hos-02`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1sam-o03` Taken from the sheepfolds
 
-- **1Sam.16.11-1Sam.16.13 → Ps.78.70-Ps.78.72** · allusion · strength 3 · draft · fingerprint `f4064f4cc2ec6fa0`
+- **1Sam.16.11-1Sam.16.13 → Ps.78.70-Ps.78.72** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `f4064f4cc2ec6fa0`
 - From: David Anointed; Goliath (`1sam-08`)
 - To: Psalm 78 (77) (`ps-078`, library)
 - Order: older end from; the later end uses it; basis text
@@ -54,7 +54,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1sam-o04` Saul's death on Gilboa, told twice
 
-- **1Sam.31.1-1Sam.31.13 → 1Chr.10.1-1Chr.10.14** · parallel · strength 3 · draft · fingerprint `8dd4b9c71408b7dc`
+- **1Sam.31.1-1Sam.31.13 → 1Chr.10.1-1Chr.10.14** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `8dd4b9c71408b7dc`
 - From: The Death of Saul (`1sam-15`)
 - To: The Death of Saul (`1chr-06`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -71,7 +71,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1sam-o05` Go to Shiloh and see
 
-- **1Sam.4.10-1Sam.4.11 → Jer.7.12-Jer.7.14** · allusion · strength 3 · draft · fingerprint `3c8471b954de3b07`
+- **1Sam.4.10-1Sam.4.11 → Jer.7.12-Jer.7.14** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `3c8471b954de3b07`
 - From: The Ark Lost and Returned (`1sam-03`)
 - To: The Temple Sermon (`jer-x107`)
 - Order: older end from; the later end uses it; basis text
@@ -84,7 +84,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1sam-o06` The glory given into captivity
 
-- **1Sam.4.10-1Sam.4.22 → Ps.78.60-Ps.78.64** · parallel · strength 2 · draft · fingerprint `a1cd87a92890b9a5`
+- **1Sam.4.10-1Sam.4.22 → Ps.78.60-Ps.78.64** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `a1cd87a92890b9a5`
 - From: The Ark Lost and Returned (`1sam-03`)
 - To: Psalm 78 (77) (`ps-078`, library)
 - Order: older end from; the later end uses it; basis text

@@ -1,4 +1,5 @@
 /** Build-time access to public/data (server components only). */
+import { THREAD_FILES } from './thread-files';
 import fs from 'node:fs';
 import path from 'node:path';
 import type {
@@ -174,12 +175,6 @@ export interface SectionThread {
 }
 
 let threadsBySection: Map<string, SectionThread[]> | null = null;
-/** Every published file of threads (threads plan §5): the reader shows all pairs. */
-const THREAD_FILES = [
-  'connections.json',
-  'connections-within-ot.json',
-  'connections-within-nt.json',
-];
 /**
  * The verified connections (Phase 4) with an end in this section, from every published threads
  * file, in verse order. A connection shows at both of its ends.

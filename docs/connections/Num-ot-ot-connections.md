@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-12 connections; 0 verified; 0 failing a check.
+12 connections; 12 verified; 0 failing a check.
 
 ## `num-o01` May his face shine on us
 
-- **Num.6.24-Num.6.26 → Ps.67.1** · echo · strength 2 · draft · fingerprint `2cac7bfcd9b5a139`
+- **Num.6.24-Num.6.26 → Ps.67.1** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `2cac7bfcd9b5a139`
 - From: The Nazirite; the Priestly Blessing (`num-x105`)
 - To: Psalm 67 (66) (`ps-067`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o02` Caleb remembers Kadesh Barnea
 
-- **Num.13.30-Num.14.24 → Josh.14.6-Josh.14.12** · allusion · strength 3 · draft · fingerprint `c07a5d6b1d4a5cb0`
+- **Num.13.30-Num.14.24 → Josh.14.6-Josh.14.12** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `c07a5d6b1d4a5cb0`
 - From: The Twelve Spies (`num-04`)
 - To: Caleb; the Land of Judah (`josh-x103`)
 - Order: older end from; the later end uses it; basis text
@@ -42,7 +42,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o03` The earth opened for Dathan and Abiram
 
-- **Num.16.31-Num.16.33 → Ps.106.16-Ps.106.18** · allusion · strength 3 · draft · fingerprint `9afd1c809684acaf`
+- **Num.16.31-Num.16.33 → Ps.106.16-Ps.106.18** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `9afd1c809684acaf`
 - From: Korah's Rebellion (`num-06`)
 - To: Psalm 106 (105) (`ps-106`, library)
 - Order: older end from; the later end uses it; basis text
@@ -57,7 +57,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o04` Moses at the waters of Meribah
 
-- **Num.20.10-Num.20.13 → Ps.106.32-Ps.106.33** · allusion · strength 3 · draft · fingerprint `66994d859673588c`
+- **Num.20.10-Num.20.13 → Ps.106.32-Ps.106.33** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `66994d859673588c`
 - From: Water from the Rock; Aaron's Death (`num-08`)
 - To: Psalm 106 (105) (`ps-106`, library)
 - Order: older end from; the later end uses it; basis text
@@ -73,7 +73,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o05` The bronze serpent broken
 
-- **Num.21.8-Num.21.9 → 2Kgs.18.4** · allusion · strength 3 · draft · fingerprint `c63390685e83f91f`
+- **Num.21.8-Num.21.9 → 2Kgs.18.4** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `c63390685e83f91f`
 - From: The Bronze Serpent and the March East (`num-09`)
 - To: Hezekiah and the Assyrian Siege (`2kgs-08`)
 - Order: older end from; the later end uses it; basis text
@@ -90,7 +90,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o06` Balaam sent for to curse
 
-- **Num.22.5-Num.22.6 → Josh.24.9-Josh.24.10** · allusion · strength 3 · draft · fingerprint `daa0e55a7dcdbfe0`
+- **Num.22.5-Num.22.6 → Josh.24.9-Josh.24.10** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `daa0e55a7dcdbfe0`
 - From: Balaam (`num-10`)
 - To: Covenant at Shechem (`josh-12`)
 - Order: older end from; the later end uses it; basis text
@@ -108,7 +108,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o07` Remember what Balak devised
 
-- **Num.22.5-Num.22.6 → Mic.6.5** · allusion · strength 3 · draft · fingerprint `0c1facdf408e054f`
+- **Num.22.5-Num.22.6 → Mic.6.5** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `0c1facdf408e054f`
 - From: Balaam (`num-10`)
 - To: The Lord’s Case; Hope after Judgment (`mic-03`, library)
 - Order: older end from; the later end uses it; basis text
@@ -124,7 +124,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o08` Phinehas stood up
 
-- **Num.25.7-Num.25.13 → Ps.106.28-Ps.106.31** · allusion · strength 3 · draft · fingerprint `8b9704d6e57317ac`
+- **Num.25.7-Num.25.13 → Ps.106.28-Ps.106.31** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `8b9704d6e57317ac`
 - From: Apostasy at Peor (`num-11`)
 - To: Psalm 106 (105) (`ps-106`, library)
 - Order: older end from; the later end uses it; basis text
@@ -142,7 +142,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o09` Birds for the craving
 
-- **Num.11.31-Num.11.34 → Ps.78.26-Ps.78.31** · parallel · strength 2 · draft · fingerprint `0b605e39c81e38ec`
+- **Num.11.31-Num.11.34 → Ps.78.26-Ps.78.31** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `0b605e39c81e38ec`
 - From: Complaints, Quail, and the Seventy Elders (`num-02`)
 - To: Psalm 78 (77) (`ps-078`, library)
 - Order: older end from; the later end uses it; basis text
@@ -155,7 +155,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o10` Moses laid his hands on Joshua
 
-- **Num.27.18-Num.27.23 → Deut.34.9** · allusion · strength 3 · draft · fingerprint `eb84d05fb96813d7`
+- **Num.27.18-Num.27.23 → Deut.34.9** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `eb84d05fb96813d7`
 - From: Zelophehad's Daughters; Joshua Appointed (`num-x202`)
 - To: The Death of Moses (`deut-07`)
 - Order: older end from; the later end uses it; basis text
@@ -170,7 +170,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o11` The cities of refuge
 
-- **Num.35.9-Num.35.15 → Josh.20.1-Josh.20.3** · allusion · strength 3 · draft · fingerprint `576a58d54cbf6421`
+- **Num.35.9-Num.35.15 → Josh.20.1-Josh.20.3** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `576a58d54cbf6421`
 - From: Levite Towns, Refuge and Inheritance (`num-x303`)
 - To: Refuge and Levite Towns (`josh-x106`)
 - Order: older end from; the later end uses it; basis text
@@ -188,7 +188,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `num-o12` The eastern tribes held to their word
 
-- **Num.32.20-Num.32.22 → Josh.1.12-Josh.1.15** · allusion · strength 3 · draft · fingerprint `4ef29c83bcd8ae53`
+- **Num.32.20-Num.32.22 → Josh.1.12-Josh.1.15** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `4ef29c83bcd8ae53`
 - From: The Eastern Tribes' Bargain (`num-12`)
 - To: Joshua's Charge (`josh-01`)
 - Order: older end from; the later end uses it; basis text

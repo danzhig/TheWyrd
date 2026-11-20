@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-nt.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-33 connections; 0 verified; 0 failing a check.
+33 connections; 33 verified; 0 failing a check.
 
 ## `luke-n01` The first book, to Theophilus
 
-- **Luke.1.1-Luke.1.4 → Acts.1.1-Acts.1.3** · allusion · strength 3 · draft · fingerprint `5856b9487713df2c`
+- **Luke.1.1-Luke.1.4 → Acts.1.1-Acts.1.3** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `5856b9487713df2c`
 - From: Prologue (`luke-01`)
 - To: Ascension and Pentecost (`acts-01`)
 - Order: older end from; the later end uses it; basis text
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n02` The ascension told twice
 
-- **Luke.24.49-Luke.24.53 → Acts.1.4-Acts.1.12** · parallel · strength 3 · draft · fingerprint `acd2d12c34ce178c`
+- **Luke.24.49-Luke.24.53 → Acts.1.4-Acts.1.12** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `acd2d12c34ce178c`
 - From: Resurrection and Emmaus (`luke-16`)
 - To: Ascension and Pentecost (`acts-01`)
 - Order: older end from; the later end uses it; basis text
@@ -36,7 +36,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n03` Water and the Holy Spirit
 
-- **Luke.3.16 → Acts.1.5** · allusion · strength 3 · draft · fingerprint `fbc3bc1689549b28`
+- **Luke.3.16 → Acts.1.5** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `fbc3bc1689549b28`
 - From: John the Baptist; the Baptism (`luke-05`)
 - To: Ascension and Pentecost (`acts-01`)
 - Order: older end from; the later end uses it; basis text
@@ -48,7 +48,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n04` Peter remembers the word
 
-- **Luke.3.16 → Acts.11.16** · allusion · strength 2 · draft · fingerprint `d1a5f5acc8606858`
+- **Luke.3.16 → Acts.11.16** · allusion · strength 2 · verified (approved 2026-11-20) · fingerprint `d1a5f5acc8606858`
 - From: John the Baptist; the Baptism (`luke-05`)
 - To: Peter and Cornelius (`acts-06`)
 - Order: older end from; the later end uses it; basis text
@@ -59,7 +59,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n05` Not worthy to untie his sandals
 
-- **Luke.3.16 → Acts.13.24-Acts.13.25** · quotation · strength 2 · draft · fingerprint `ca0064e1b2ca45c5`
+- **Luke.3.16 → Acts.13.24-Acts.13.25** · quotation · strength 2 · verified (approved 2026-11-20) · fingerprint `ca0064e1b2ca45c5`
 - From: John the Baptist; the Baptism (`luke-05`)
 - To: Paul's First Journey (`acts-08`)
 - Order: older end from; the later end uses it; basis text
@@ -70,7 +70,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n06` Stephen dies as Jesus died
 
-- **Luke.23.34-Luke.23.46 → Acts.7.59-Acts.7.60** · echo · strength 3 · draft · fingerprint `9d37f809bb123f8b`
+- **Luke.23.34-Luke.23.46 → Acts.7.59-Acts.7.60** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `9d37f809bb123f8b`
 - From: Trials and Crucifixion (`luke-15`)
 - To: Stephen (`acts-03`)
 - Order: older end from; the later end uses it; basis text
@@ -83,7 +83,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n07` The eleven named again
 
-- **Luke.6.12-Luke.6.16 → Acts.1.13** · echo · strength 2 · draft · fingerprint `0cb955c71df22a84`
+- **Luke.6.12-Luke.6.16 → Acts.1.13** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `0cb955c71df22a84`
 - From: The Disciples Called; Sermon on the Plain (`luke-07`)
 - To: Ascension and Pentecost (`acts-01`)
 - Order: older end from; the later end uses it; basis text
@@ -96,7 +96,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n08` Get up: Jairus's daughter and Tabitha
 
-- **Luke.8.49-Luke.8.56 → Acts.9.36-Acts.9.42** · echo · strength 3 · draft · fingerprint `027360bc2fedead8`
+- **Luke.8.49-Luke.8.56 → Acts.9.36-Acts.9.42** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `027360bc2fedead8`
 - From: Healings, Forgiveness, Parables (`luke-08`)
 - To: Peter and Cornelius (`acts-06`)
 - Order: older end from; the later end uses it; basis text
@@ -109,7 +109,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n09` The Lord's Prayer in two Gospels
 
-- **Matt.6.9-Matt.6.13 → Luke.11.2-Luke.11.4** · parallel · strength 3 · draft · fingerprint `923560f2654a2af3`
+- **Matt.6.9-Matt.6.13 → Luke.11.2-Luke.11.4** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `923560f2654a2af3`
 - From: The Sermon on the Mount: Prayer and Trust (`matt-04`, library)
 - To: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -123,7 +123,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n10` Three temptations in the wilderness
 
-- **Matt.4.1-Matt.4.11 → Luke.4.1-Luke.4.13** · parallel · strength 3 · draft · fingerprint `88ee044ea9ffa666`
+- **Matt.4.1-Matt.4.11 → Luke.4.1-Luke.4.13** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `88ee044ea9ffa666`
 - From: John the Baptist; the Temptation; the First Disciples (`matt-02`, library)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -137,7 +137,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n11` The Transfiguration
 
-- **Mark.9.2-Mark.9.8 → Luke.9.28-Luke.9.36** · parallel · strength 3 · draft · fingerprint `6df506c9facca437`
+- **Mark.9.2-Mark.9.8 → Luke.9.28-Luke.9.36** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `6df506c9facca437`
 - From: Peter’s Confession; the Transfiguration (`mark-07`, library)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 - Order: older end from; the later end uses it; basis consensus
@@ -151,7 +151,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n12` The Beatitudes
 
-- **Matt.5.3-Matt.5.12 → Luke.6.20-Luke.6.23** · parallel · strength 3 · draft · fingerprint `8cb58ca59cea952b`
+- **Matt.5.3-Matt.5.12 → Luke.6.20-Luke.6.23** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `8cb58ca59cea952b`
 - From: The Sermon on the Mount: the Beatitudes and the Law (`matt-03`, library)
 - To: The Disciples Called; Sermon on the Plain (`luke-07`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -165,7 +165,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n13` Two genealogies of Jesus
 
-- **Matt.1.1-Matt.1.17 → Luke.3.23-Luke.3.38** · parallel · strength 2 · draft · fingerprint `17fb8ec6d069d9fd`
+- **Matt.1.1-Matt.1.17 → Luke.3.23-Luke.3.38** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `17fb8ec6d069d9fd`
 - From: The Genealogy and Birth of Jesus (`matt-01`, library)
 - To: The Genealogy of Jesus (`luke-x1`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -179,7 +179,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n14` The annunciation to Joseph and to Mary
 
-- **Matt.1.18-Matt.1.25 → Luke.1.26-Luke.1.38** · parallel · strength 3 · draft · fingerprint `7236a146aeb5b333`
+- **Matt.1.18-Matt.1.25 → Luke.1.26-Luke.1.38** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `7236a146aeb5b333`
 - From: The Genealogy and Birth of Jesus (`matt-01`, library)
 - To: Two Annunciations (`luke-02`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -193,7 +193,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n15` Born in Bethlehem
 
-- **Matt.2.1 → Luke.2.1-Luke.2.7** · parallel · strength 2 · draft · fingerprint `3fbd624a0596af9c`
+- **Matt.2.1 → Luke.2.1-Luke.2.7** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `3fbd624a0596af9c`
 - From: The Genealogy and Birth of Jesus (`matt-01`, library)
 - To: Two Births (`luke-03`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -206,7 +206,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n16` Rejected at Nazareth
 
-- **Mark.6.1-Mark.6.6 → Luke.4.16-Luke.4.30** · parallel · strength 2 · draft · fingerprint `19f751dfb32acd90`
+- **Mark.6.1-Mark.6.6 → Luke.4.16-Luke.4.30** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `19f751dfb32acd90`
 - From: Rejected at Nazareth; the Twelve Sent; Five Thousand Fed (`mark-05`, library)
 - To: Temptation; Rejected at Nazareth (`luke-06`)
 - Order: older end from; the later end uses it; basis consensus
@@ -220,7 +220,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n17` The parable of the sower
 
-- **Mark.4.1-Mark.4.20 → Luke.8.4-Luke.8.15** · parallel · strength 3 · draft · fingerprint `9c0779fb16ffa193`
+- **Mark.4.1-Mark.4.20 → Luke.8.4-Luke.8.15** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `9c0779fb16ffa193`
 - From: Parables; the Storm Calmed (`mark-03`, library)
 - To: Healings, Forgiveness, Parables (`luke-08`)
 - Order: older end from; the later end uses it; basis consensus
@@ -234,7 +234,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n18` Who do you say that I am?
 
-- **Mark.8.27-Mark.8.31 → Luke.9.18-Luke.9.22** · parallel · strength 3 · draft · fingerprint `04da3b75e73ded10`
+- **Mark.8.27-Mark.8.31 → Luke.9.18-Luke.9.22** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `04da3b75e73ded10`
 - From: Peter’s Confession; the Transfiguration (`mark-07`, library)
 - To: Peter's Confession; the Transfiguration (`luke-09`)
 - Order: older end from; the later end uses it; basis consensus
@@ -248,7 +248,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n19` The Last Supper
 
-- **Mark.14.22-Mark.14.25 → Luke.22.14-Luke.22.20** · parallel · strength 3 · draft · fingerprint `ff185def2ca918f6`
+- **Mark.14.22-Mark.14.25 → Luke.22.14-Luke.22.20** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `ff185def2ca918f6`
 - From: The Anointing, the Supper and the Arrest (`mark-11`, library)
 - To: The Last Supper and the Arrest (`luke-14`)
 - Order: older end from; the later end uses it; basis consensus
@@ -262,7 +262,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n20` The death of Jesus
 
-- **Mark.15.33-Mark.15.41 → Luke.23.44-Luke.23.49** · parallel · strength 3 · draft · fingerprint `5017bf8c4e844ed9`
+- **Mark.15.33-Mark.15.41 → Luke.23.44-Luke.23.49** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `5017bf8c4e844ed9`
 - From: The Trial and the Crucifixion (`mark-12`, library)
 - To: Trials and Crucifixion (`luke-15`)
 - Order: older end from; the later end uses it; basis consensus
@@ -276,7 +276,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n21` The women at the empty tomb
 
-- **Mark.16.1-Mark.16.8 → Luke.24.1-Luke.24.11** · parallel · strength 3 · draft · fingerprint `a68fca5d0045e495`
+- **Mark.16.1-Mark.16.8 → Luke.24.1-Luke.24.11** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `a68fca5d0045e495`
 - From: The Resurrection (`mark-13`, library)
 - To: Resurrection and Emmaus (`luke-16`)
 - Order: older end from; the later end uses it; basis consensus
@@ -290,7 +290,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n22` The lost sheep
 
-- **Matt.18.12-Matt.18.14 → Luke.15.3-Luke.15.7** · parallel · strength 2 · draft · fingerprint `ccd1f4f6031c546b`
+- **Matt.18.12-Matt.18.14 → Luke.15.3-Luke.15.7** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `ccd1f4f6031c546b`
 - From: Life in the Community (`matt-11`, library)
 - To: The Narrow Door to the Prodigal Son (`luke-11`)
 - Order: older end unknown; no use claimed; basis disputed (Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.)
@@ -304,7 +304,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n23` Martha and Mary
 
-- **Luke.10.38-Luke.10.42 → John.11.1-John.11.5** · echo · strength 2 · draft · fingerprint `70e99c29b7f06af4`
+- **Luke.10.38-Luke.10.42 → John.11.1-John.11.5** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `70e99c29b7f06af4`
 - From: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 - To: The Raising of Lazarus (`john-01`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -317,7 +317,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n24` Two men named Lazarus
 
-- **Luke.16.19-Luke.16.31 → John.11.38-John.11.44** · contrast · strength 2 · draft · fingerprint `ee80845f90fa02e4`
+- **Luke.16.19-Luke.16.31 → John.11.38-John.11.44** · contrast · strength 2 · verified (approved 2026-11-20) · fingerprint `ee80845f90fa02e4`
 - From: The Narrow Door to the Prodigal Son (`luke-11`)
 - To: The Raising of Lazarus (`john-01`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -328,7 +328,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n25` Peter runs to the tomb
 
-- **Luke.24.12 → John.20.3-John.20.10** · parallel · strength 2 · draft · fingerprint `99499b3cb3feb4c8`
+- **Luke.24.12 → John.20.3-John.20.10** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `99499b3cb3feb4c8`
 - From: Resurrection and Emmaus (`luke-16`)
 - To: The Empty Tomb; Thomas (`john-x211`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -340,7 +340,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n26` A night without fish, then the nets full
 
-- **Luke.5.1-Luke.5.11 → John.21.1-John.21.11** · parallel · strength 3 · draft · fingerprint `41f9d1f29f0e985f`
+- **Luke.5.1-Luke.5.11 → John.21.1-John.21.11** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `41f9d1f29f0e985f`
 - From: The Disciples Called; Sermon on the Plain (`luke-07`)
 - To: By the Sea of Tiberias (`john-x212`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -353,7 +353,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n27` Peace be to you
 
-- **Luke.24.36-Luke.24.43 → John.20.19-John.20.23** · parallel · strength 3 · draft · fingerprint `5335b88da5f1535c`
+- **Luke.24.36-Luke.24.43 → John.20.19-John.20.23** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `5335b88da5f1535c`
 - From: Resurrection and Emmaus (`luke-16`)
 - To: The Empty Tomb; Thomas (`john-x211`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -366,7 +366,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n28` Five thousand fed
 
-- **Luke.9.10-Luke.9.17 → John.6.1-John.6.14** · parallel · strength 3 · draft · fingerprint `2da41739a656a7ab`
+- **Luke.9.10-Luke.9.17 → John.6.1-John.6.14** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `2da41739a656a7ab`
 - From: Peter's Confession; the Transfiguration (`luke-09`)
 - To: Five Thousand Fed; Walking on the Sea (`john-x110`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -379,7 +379,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n29` A woman anoints his feet
 
-- **Luke.7.36-Luke.7.50 → John.12.1-John.12.8** · parallel · strength 2 · draft · fingerprint `181c95fb1747fe30`
+- **Luke.7.36-Luke.7.50 → John.12.1-John.12.8** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `181c95fb1747fe30`
 - From: Healings, Forgiveness, Parables (`luke-08`)
 - To: Anointed at Bethany (`john-x201`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -392,7 +392,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n30` The arrest and the servant's ear
 
-- **Luke.22.47-Luke.22.53 → John.18.1-John.18.11** · parallel · strength 2 · draft · fingerprint `e33aec31314d73d1`
+- **Luke.22.47-Luke.22.53 → John.18.1-John.18.11** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `e33aec31314d73d1`
 - From: The Last Supper and the Arrest (`luke-14`)
 - To: Arrest and Trial (`john-x208`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -405,7 +405,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n31` Before Pilate
 
-- **Luke.23.1-Luke.23.25 → John.18.28-John.19.16** · parallel · strength 3 · draft · fingerprint `9fccdce3edc842e3`
+- **Luke.23.1-Luke.23.25 → John.18.28-John.19.16** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `9fccdce3edc842e3`
 - From: Trials and Crucifixion (`luke-15`)
 - To: Arrest and Trial (`john-x208`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -418,7 +418,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n32` This is my body: the Gospel and Paul
 
-- **Luke.22.19-Luke.22.20 → 1Cor.11.23-1Cor.11.25** · parallel · strength 3 · draft · fingerprint `3d4e13cdde7a637b`
+- **Luke.22.19-Luke.22.20 → 1Cor.11.23-1Cor.11.25** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `3d4e13cdde7a637b`
 - From: The Last Supper and the Arrest (`luke-14`)
 - To: Order in Worship; the Lord’s Supper (`1cor-04`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -431,7 +431,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `luke-n33` The laborer is worthy of his wages
 
-- **Luke.10.7 → 1Tim.5.18** · quotation · strength 2 · draft · fingerprint `3c3bbc07ebb5794c`
+- **Luke.10.7 → 1Tim.5.18** · quotation · strength 2 · verified (approved 2026-11-20) · fingerprint `3c3bbc07ebb5794c`
 - From: Toward Jerusalem: the Samaritan, Martha and Mary (`luke-10`)
 - To: A Good Minister; Widows, Elders and Wealth (`1tim-02`, library)
 - Order: older end unknown; no use claimed; basis unstated

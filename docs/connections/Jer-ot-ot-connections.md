@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-10 connections; 0 verified; 0 failing a check.
+10 connections; 10 verified; 0 failing a check.
 
 ## `jer-o01` The word by Jeremiah's mouth
 
-- **Jer.29.10 → Ezra.1.1** · fulfilment · strength 3 · draft · fingerprint `1f55c3af075fa8ba`
+- **Jer.29.10 → Ezra.1.1** · fulfilment · strength 3 · verified (approved 2026-11-20) · fingerprint `1f55c3af075fa8ba`
 - From: The Letter to the Exiles (`jer-x121`)
 - To: Cyrus's Decree and the First Return (`ezra-01`)
 - Order: older end from; the later end uses it; basis text
@@ -20,7 +20,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o02` Daniel reads Jeremiah's seventy years
 
-- **Jer.25.11-Jer.25.12 → Dan.9.2** · allusion · strength 3 · draft · fingerprint `3646be0132cc9934`
+- **Jer.25.11-Jer.25.12 → Dan.9.2** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `3646be0132cc9934`
 - From: Two Baskets of Figs; Seventy Years (`jer-x118`)
 - To: The Seventy Weeks (`dan-x103`)
 - Order: older end from; the later end uses it; basis text
@@ -38,7 +38,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o03` Seventy years of Sabbath
 
-- **Jer.25.11-Jer.25.12 → 2Chr.36.21** · allusion · strength 3 · draft · fingerprint `ec6eaa2fcd653e0e`
+- **Jer.25.11-Jer.25.12 → 2Chr.36.21** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `ec6eaa2fcd653e0e`
 - From: Two Baskets of Figs; Seventy Years (`jer-x118`)
 - To: The Fall of Jerusalem and Cyrus’s Decree (`2chr-15`, library)
 - Order: older end from; the later end uses it; basis text
@@ -53,7 +53,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o04` Micah quoted at Jeremiah's trial
 
-- **Mic.3.12 → Jer.26.18** · quotation · strength 3 · draft · fingerprint `0ceb0433a0271029`
+- **Mic.3.12 → Jer.26.18** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `0ceb0433a0271029`
 - From: Judgment on Samaria and Judah (`mic-01`, library)
 - To: The Temple Sermon on Trial (`jer-x119`)
 - Order: older end from; the later end uses it; basis text
@@ -70,7 +70,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o05` Sour grapes
 
-- **Jer.31.29-Jer.31.30 → Ezek.18.2-Ezek.18.4** · echo · strength 3 · draft · fingerprint `10bb1d3615a21916`
+- **Jer.31.29-Jer.31.30 → Ezek.18.2-Ezek.18.4** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `10bb1d3615a21916`
 - From: The Book of Consolation (`jer-x122`)
 - To: The Eagles and the Cedar; Each Answers for His Own Sin (`ezek-07`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -87,7 +87,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o06` One oracle against Edom
 
-- **Jer.49.14-Jer.49.16 → Obad.1.1-Obad.1.4** · parallel · strength 3 · draft · fingerprint `3a74c32a80551ca8`
+- **Jer.49.14-Jer.49.16 → Obad.1.1-Obad.1.4** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `3a74c32a80551ca8`
 - From: Against Ammon, Edom and Others (`jer-x204`)
 - To: Against Edom (`obad-01`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -104,7 +104,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o07` Though Moses and Samuel stood before me
 
-- **Exod.32.11-Exod.32.14 → Jer.15.1** · allusion · strength 3 · draft · fingerprint `a723e2677906cbe2`
+- **Exod.32.11-Exod.32.14 → Jer.15.1** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `a723e2677906cbe2`
 - From: The Golden Calf (`exod-11`)
 - To: Drought and Lament (`jer-x112`)
 - Order: older end from; the later end uses it; basis text
@@ -116,7 +116,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o08` Rachel weeping for her children
 
-- **Gen.35.16-Gen.35.20 → Jer.31.15** · allusion · strength 3 · draft · fingerprint `1c38b55d660010f2`
+- **Gen.35.16-Gen.35.20 → Jer.31.15** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `1c38b55d660010f2`
 - From: Jacob Returns (`gen-14`)
 - To: The Book of Consolation (`jer-x122`)
 - Order: older end from; the later end uses it; basis text
@@ -130,7 +130,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o09` The clay and the potter
 
-- **Jer.18.1-Jer.18.6 → Isa.64.8** · echo · strength 2 · draft · fingerprint `3c14e9d5bbb6013f`
+- **Jer.18.1-Jer.18.6 → Isa.64.8** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `3c14e9d5bbb6013f`
 - From: The Potter and the Broken Jar (`jer-x114`)
 - To: Lament and the New Creation (`isa-20`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -146,7 +146,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `jer-o10` The Branch
 
-- **Jer.23.5-Jer.23.6 → Zech.6.12** · echo · strength 2 · draft · fingerprint `5a516f08de440ccc`
+- **Jer.23.5-Jer.23.6 → Zech.6.12** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `5a516f08de440ccc`
 - From: The Righteous Branch; False Prophets (`jer-x117`)
 - To: Night Visions (`zech-01`, library)
 - Order: older end unknown; no use claimed; basis unstated

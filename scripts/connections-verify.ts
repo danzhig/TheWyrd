@@ -187,10 +187,10 @@ const count = (list: Connection[]) =>
   `${list.length} connections; ${list.filter((c) => c.status === 'verified').length} verified; ${list.filter((c) => results.get(c.id)!.length).length} failing a check.`;
 const docs = new Map<string, string[]>();
 const seeds = connections.filter((c) => /^s\d/.test(c.id));
-// A within file (threads plan §7) writes its own documents, `<Book>-<pair>-connections.md`, and
-// never the seeds' or the first set's.
-const within = /within-(ot|nt)\.json$/.exec(SOURCE);
-const SUFFIX = within ? `-${within[1]}-${within[1]}` : '';
+// A within file (threads plan §7) or the library's Old ↔ New file (TX7) writes its own documents,
+// `<Book>-<pair>-connections.md`, and never the seeds' or the first set's.
+const within = /(?:within-(ot|nt)|library-(ot-nt))\.json$/.exec(SOURCE);
+const SUFFIX = within ? (within[1] ? `-${within[1]}-${within[1]}` : `-library-${within[2]}`) : '';
 if (seeds.length)
   docs.set('seeds', [
     '# Threads: the seed connections',
@@ -214,7 +214,7 @@ for (const c of connections.filter((x) => !/^s\d/.test(x.id))) {
 }
 for (const [book, list] of byBook)
   docs.set(`${book}${SUFFIX}-connections`, [
-    `# Threads: connections from ${CANON_BY_ID.get(book)?.name ?? book}${within ? ` (inside the ${within[1] === 'ot' ? 'Old' : 'New'} Testament)` : ''}`,
+    `# Threads: connections from ${CANON_BY_ID.get(book)?.name ?? book}${within ? (within[1] ? ` (inside the ${within[1] === 'ot' ? 'Old' : 'New'} Testament)` : ' (Old ↔ New, between library books)') : ''}`,
     '',
     `Written by \`pnpm connections:verify\` from \`${SOURCE}\`: the connections drafted from \`docs/connections/${book}${SUFFIX}-candidates.md\` (${within ? 'threads plan §7' : 'P4.4'}), each with its type, strength (3 = explicit quotation or named reference), sections, explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS}`,
     '',

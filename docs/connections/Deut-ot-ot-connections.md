@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-9 connections; 0 verified; 0 failing a check.
+9 connections; 9 verified; 0 failing a check.
 
 ## `deut-o01` With all his heart, soul and might
 
-- **Deut.6.4-Deut.6.5 → 2Kgs.23.25** · allusion · strength 3 · draft · fingerprint `792bd393bc7be3c8`
+- **Deut.6.4-Deut.6.5 → 2Kgs.23.25** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `792bd393bc7be3c8`
 - From: The Shema (`deut-01`)
 - To: Manasseh and Josiah's Reform (`2kgs-09`)
 - Order: older end from; the later end uses it; basis text
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o02` A king like all the nations
 
-- **Deut.17.14-Deut.17.15 → 1Sam.8.5** · echo · strength 2 · draft · fingerprint `d5666f6efef656c1`
+- **Deut.17.14-Deut.17.15 → 1Sam.8.5** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `d5666f6efef656c1`
 - From: Courts and the King (`deut-x311`)
 - To: Israel Demands a King (`1sam-04`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -33,7 +33,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o03` Each shall die for his own sin
 
-- **Deut.24.16 → 2Kgs.14.6** · quotation · strength 3 · draft · fingerprint `33776fc30d2d45b0`
+- **Deut.24.16 → 2Kgs.14.6** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `33776fc30d2d45b0`
 - From: The Assembly; the Poor (`deut-x315`)
 - To: The Decline of Israel (`2kgs-06`)
 - Order: older end from; the later end uses it; basis text
@@ -47,7 +47,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o04` No Ammonite or Moabite in the assembly
 
-- **Deut.23.3-Deut.23.5 → Neh.13.1-Neh.13.2** · quotation · strength 3 · draft · fingerprint `12a6350023a029c5`
+- **Deut.23.3-Deut.23.5 → Neh.13.1-Neh.13.2** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `12a6350023a029c5`
 - From: The Assembly; the Poor (`deut-x315`)
 - To: Nehemiah's Last Reforms (`neh-12`)
 - Order: older end from; the later end uses it; basis text
@@ -65,7 +65,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o05` The curse written in the law of Moses
 
-- **Deut.28.15-Deut.28.68 → Dan.9.11-Dan.9.13** · allusion · strength 3 · draft · fingerprint `72ac9c9961f2fc32`
+- **Deut.28.15-Deut.28.68 → Dan.9.11-Dan.9.13** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `72ac9c9961f2fc32`
 - From: Blessings and Curses (`deut-02`)
 - To: The Seventy Weeks (`dan-x103`)
 - Order: older end from; the later end uses it; basis text
@@ -79,7 +79,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o06` Scatter and gather
 
-- **Deut.30.1-Deut.30.4 → Neh.1.8-Neh.1.9** · quotation · strength 3 · draft · fingerprint `ad8ab0b3a1d7d002`
+- **Deut.30.1-Deut.30.4 → Neh.1.8-Neh.1.9** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `ad8ab0b3a1d7d002`
 - From: The Covenant in Moab (`deut-x4`)
 - To: News from Jerusalem (`neh-01`)
 - Order: older end from; the later end uses it; basis text
@@ -97,7 +97,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o07` Be strong and courageous
 
-- **Deut.31.6-Deut.31.8 → Josh.1.5-Josh.1.9** · echo · strength 3 · draft · fingerprint `2ebc5cf5da3bbeab`
+- **Deut.31.6-Deut.31.8 → Josh.1.5-Josh.1.9** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `2ebc5cf5da3bbeab`
 - From: Joshua Commissioned (`deut-03`)
 - To: Joshua's Charge (`josh-01`)
 - Order: older end from; the later end uses it; basis text
@@ -115,7 +115,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o08` Admah and Zeboiim
 
-- **Deut.29.23 → Hos.11.8** · echo · strength 2 · draft · fingerprint `f21a7e0b05f0ca03`
+- **Deut.29.23 → Hos.11.8** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `f21a7e0b05f0ca03`
 - From: The Covenant in Moab (`deut-x4`)
 - To: The Lord’s Love; Return, Israel (`hos-04`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -131,7 +131,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `deut-o09` The place he chooses for his name
 
-- **Deut.12.5 → 1Kgs.8.29** · echo · strength 2 · draft · fingerprint `197244999ce6120d`
+- **Deut.12.5 → 1Kgs.8.29** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `197244999ce6120d`
 - From: One Place of Worship (`deut-x306`)
 - To: The Temple Dedicated (`1kgs-04`)
 - Order: older end unknown; no use claimed; basis unstated

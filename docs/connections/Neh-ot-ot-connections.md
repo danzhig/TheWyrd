@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-4 connections; 0 verified; 0 failing a check.
+4 connections; 4 verified; 0 failing a check.
 
 ## `neh-o01` Booths, found written in the law
 
-- **Lev.23.39-Lev.23.43 → Neh.8.14-Neh.8.17** · quotation · strength 3 · draft · fingerprint `95f7c0b8db5902d9`
+- **Lev.23.39-Lev.23.43 → Neh.8.14-Neh.8.17** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `95f7c0b8db5902d9`
 - From: The Feasts of the Year (`lev-14`, library)
 - To: Ezra Reads the Law (`neh-08`)
 - Order: older end from; the later end uses it; basis text
@@ -26,7 +26,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `neh-o02` The sea divided, confessed
 
-- **Exod.14.21-Exod.14.28 → Neh.9.9-Neh.9.11** · allusion · strength 3 · draft · fingerprint `44bbec4408238137`
+- **Exod.14.21-Exod.14.28 → Neh.9.9-Neh.9.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `44bbec4408238137`
 - From: Crossing the Sea (`exod-06`)
 - To: Confession and Covenant (`neh-09`)
 - Order: older end from; the later end uses it; basis text
@@ -44,7 +44,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `neh-o03` Sihon and Og
 
-- **Num.21.21-Num.21.35 → Neh.9.22** · allusion · strength 3 · draft · fingerprint `6b1b401609994b69`
+- **Num.21.21-Num.21.35 → Neh.9.22** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `6b1b401609994b69`
 - From: The Bronze Serpent and the March East (`num-09`)
 - To: Confession and Covenant (`neh-09`)
 - Order: older end from; the later end uses it; basis text
@@ -61,7 +61,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `neh-o04` Bread from heaven, confessed
 
-- **Exod.16.4-Exod.16.15 → Neh.9.15** · allusion · strength 3 · draft · fingerprint `b69c768e87f2a2eb`
+- **Exod.16.4-Exod.16.15 → Neh.9.15** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `b69c768e87f2a2eb`
 - From: Bitter Water, Manna, and Amalek (`exod-07`)
 - To: Confession and Covenant (`neh-09`)
 - Order: older end from; the later end uses it; basis text

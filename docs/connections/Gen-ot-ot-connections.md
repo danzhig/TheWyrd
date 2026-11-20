@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-26 connections; 0 verified; 0 failing a check.
+26 connections; 26 verified; 0 failing a check.
 
 ## `gen-o01` The Sabbath rests on the seventh day of creation
 
-- **Gen.2.1-Gen.2.3 → Exod.20.8-Exod.20.11** · allusion · strength 3 · draft · fingerprint `ad1b523af01cca5e`
+- **Gen.2.1-Gen.2.3 → Exod.20.8-Exod.20.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `ad1b523af01cca5e`
 - From: Creation (`gen-01`)
 - To: Sinai and the Ten Commandments (`exod-09`)
 - Order: older end from; the later end uses it; basis text
@@ -24,7 +24,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o02` The kings of Edom, listed twice
 
-- **Gen.36.31-Gen.36.43 → 1Chr.1.43-1Chr.1.54** · parallel · strength 3 · draft · fingerprint `9b54d4a616a14256`
+- **Gen.36.31-Gen.36.43 → 1Chr.1.43-1Chr.1.54** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `9b54d4a616a14256`
 - From: The Line of Esau (`gen-15`)
 - To: Genealogies: From Adam to the Kings of Edom (`1chr-01`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o03` Two blessings on Joseph
 
-- **Gen.49.22-Gen.49.26 → Deut.33.13-Deut.33.17** · parallel · strength 2 · draft · fingerprint `9e0b72a6e975a61e`
+- **Gen.49.22-Gen.49.26 → Deut.33.13-Deut.33.17** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `9e0b72a6e975a61e`
 - From: Jacob's Blessings and Death; Joseph's Last Days (`gen-20`)
 - To: Moses Blesses the Tribes (`deut-06`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -58,7 +58,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o04` Is anything too hard for the LORD?
 
-- **Gen.18.14 → Jer.32.17-Jer.32.27** · echo · strength 2 · draft · fingerprint `b4560ce17bdcf6c5`
+- **Gen.18.14 → Jer.32.17-Jer.32.27** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `b4560ce17bdcf6c5`
 - From: Sodom and Gomorrah (`gen-09`)
 - To: A Field Bought in Anathoth (`jer-x123`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -73,7 +73,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o05` Joseph's story sung
 
-- **Gen.37.2-Gen.41.57 → Ps.105.16-Ps.105.22** · parallel · strength 3 · draft · fingerprint `2c30cc9e711e44ed`
+- **Gen.37.2-Gen.41.57 → Ps.105.16-Ps.105.22** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `2c30cc9e711e44ed`
 - From: Joseph Sold; Judah and Tamar (`gen-16`)
 - To: Psalm 105 (104) (`ps-105`, library)
 - Order: older end from; the later end uses it; basis text
@@ -89,7 +89,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o06` Blessed who blesses, cursed who curses
 
-- **Gen.12.3 → Num.24.9** · echo · strength 2 · draft · fingerprint `1d62baacabf67948`
+- **Gen.12.3 → Num.24.9** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `1d62baacabf67948`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Balaam (`num-10`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -103,7 +103,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o07` Abram called out of Ur
 
-- **Gen.11.31-Gen.12.3 → Neh.9.7-Neh.9.8** · allusion · strength 3 · draft · fingerprint `a900284141dc32c4`
+- **Gen.11.31-Gen.12.3 → Neh.9.7-Neh.9.8** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `a900284141dc32c4`
 - From: From Ur to Haran (`gen-06`)
 - To: Confession and Covenant (`neh-09`)
 - Order: older end from; the later end uses it; basis text
@@ -119,7 +119,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o08` Moriah
 
-- **Gen.22.2 → 2Chr.3.1** · allusion · strength 2 · draft · fingerprint `4b624d7e2a62d8d2`
+- **Gen.22.2 → 2Chr.3.1** · allusion · strength 2 · verified (approved 2026-11-20) · fingerprint `4b624d7e2a62d8d2`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: The Temple and Its Furnishings (`2chr-02`, library)
 - Order: older end from; the later end uses it; basis text
@@ -134,7 +134,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o09` A priest in the order of Melchizedek
 
-- **Gen.14.18-Gen.14.20 → Ps.110.4** · allusion · strength 3 · draft · fingerprint `8dc0a4bccdc2eeef`
+- **Gen.14.18-Gen.14.20 → Ps.110.4** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `8dc0a4bccdc2eeef`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: Psalm 110 (109) (`ps-110`, library)
 - Order: older end from; the later end uses it; basis text
@@ -149,7 +149,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o10` As when God overthrew Sodom and Gomorrah
 
-- **Gen.19.24-Gen.19.25 → Amos.4.11** · allusion · strength 3 · draft · fingerprint `7a8083624774a484`
+- **Gen.19.24-Gen.19.25 → Amos.4.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `7a8083624774a484`
 - From: Sodom and Gomorrah (`gen-09`)
 - To: Words against Israel (`amos-02`, library)
 - Order: older end from; the later end uses it; basis text
@@ -166,7 +166,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o11` Rulers of Sodom, people of Gomorrah
 
-- **Gen.19.24-Gen.19.25 → Isa.1.9-Isa.1.10** · allusion · strength 3 · draft · fingerprint `afd8e3b6420dc8e9`
+- **Gen.19.24-Gen.19.25 → Isa.1.9-Isa.1.10** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `afd8e3b6420dc8e9`
 - From: Sodom and Gomorrah (`gen-09`)
 - To: Judgment and Hope for Zion (`isa-01`, library)
 - Order: older end from; the later end uses it; basis text
@@ -183,7 +183,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o12` Jacob took his brother by the heel
 
-- **Gen.25.26 → Hos.12.3** · allusion · strength 3 · draft · fingerprint `97dc1ffd020ebc6a`
+- **Gen.25.26 → Hos.12.3** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `97dc1ffd020ebc6a`
 - From: Jacob and Esau (`gen-12`)
 - To: The Lord’s Love; Return, Israel (`hos-04`, library)
 - Order: older end from; the later end uses it; basis text
@@ -196,7 +196,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o13` Jacob struggled with God and prevailed
 
-- **Gen.32.24-Gen.32.30 → Hos.12.3-Hos.12.4** · allusion · strength 3 · draft · fingerprint `726c29bcbb68b1bc`
+- **Gen.32.24-Gen.32.30 → Hos.12.3-Hos.12.4** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `726c29bcbb68b1bc`
 - From: Jacob Returns (`gen-14`)
 - To: The Lord’s Love; Return, Israel (`hos-04`, library)
 - Order: older end from; the later end uses it; basis text
@@ -212,7 +212,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o14` The waters of Noah
 
-- **Gen.9.11-Gen.9.15 → Isa.54.9** · allusion · strength 3 · draft · fingerprint `0210bfe8742fc9f7`
+- **Gen.9.11-Gen.9.15 → Isa.54.9** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `0210bfe8742fc9f7`
 - From: The Flood (`gen-04`)
 - To: Zion Renewed; an Everlasting Covenant (`isa-17`, library)
 - Order: older end from; the later end uses it; basis text
@@ -225,7 +225,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o15` Look to Abraham
 
-- **Gen.12.1-Gen.12.3 → Isa.51.2** · allusion · strength 3 · draft · fingerprint `e74fa4dc36f95d73`
+- **Gen.12.1-Gen.12.3 → Isa.51.2** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `e74fa4dc36f95d73`
 - From: The Call and Wanderings of Abram (`gen-07`)
 - To: The Servant and Zion’s Children (`isa-15`, library)
 - Order: older end from; the later end uses it; basis text
@@ -238,7 +238,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o16` Jacob loved, Esau hated
 
-- **Gen.25.23-Gen.25.34 → Mal.1.2-Mal.1.3** · allusion · strength 3 · draft · fingerprint `da2c05af2a826c85`
+- **Gen.25.23-Gen.25.34 → Mal.1.2-Mal.1.3** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `da2c05af2a826c85`
 - From: Jacob and Esau (`gen-12`)
 - To: A Polluted Table; Faithless Priests (`mal-01`, library)
 - Order: older end from; the later end uses it; basis text
@@ -251,7 +251,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o17` Rachel's tomb
 
-- **Gen.35.19-Gen.35.20 → 1Sam.10.2** · allusion · strength 2 · draft · fingerprint `4aea061c8e13a7c0`
+- **Gen.35.19-Gen.35.20 → 1Sam.10.2** · allusion · strength 2 · verified (approved 2026-11-20) · fingerprint `4aea061c8e13a7c0`
 - From: Jacob Returns (`gen-14`)
 - To: Israel Demands a King (`1sam-04`)
 - Order: older end from; the later end uses it; basis text
@@ -268,7 +268,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o18` The house of Perez
 
-- **Gen.38.27-Gen.38.30 → Ruth.4.12** · allusion · strength 3 · draft · fingerprint `65d6929f15fa829c`
+- **Gen.38.27-Gen.38.30 → Ruth.4.12** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `65d6929f15fa829c`
 - From: Joseph Sold; Judah and Tamar (`gen-16`)
 - To: The Redeemer (`ruth-04`)
 - Order: older end from; the later end uses it; basis text
@@ -283,7 +283,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o19` Joshua tells the story from Terah
 
-- **Gen.11.26-Gen.12.5 → Josh.24.2-Josh.24.4** · parallel · strength 3 · draft · fingerprint `bada467b01de5765`
+- **Gen.11.26-Gen.12.5 → Josh.24.2-Josh.24.4** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `bada467b01de5765`
 - From: From Shem to Terah (`gen-x3`)
 - To: Covenant at Shechem (`josh-12`)
 - Order: older end from; the later end uses it; basis text
@@ -299,7 +299,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o20` Joseph's bones carried up
 
-- **Gen.50.24-Gen.50.25 → Exod.13.19** · quotation · strength 3 · draft · fingerprint `f1ca3812be7c9e78`
+- **Gen.50.24-Gen.50.25 → Exod.13.19** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `f1ca3812be7c9e78`
 - From: Jacob's Blessings and Death; Joseph's Last Days (`gen-20`)
 - To: Passover and Departure (`exod-05`)
 - Order: older end from; the later end uses it; basis text
@@ -316,7 +316,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o21` The field at Shechem
 
-- **Gen.33.19 → Josh.24.32** · allusion · strength 3 · draft · fingerprint `a511ee05974056d8`
+- **Gen.33.19 → Josh.24.32** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `a511ee05974056d8`
 - From: Jacob Returns (`gen-14`)
 - To: Covenant at Shechem (`josh-12`)
 - Order: older end from; the later end uses it; basis text
@@ -333,7 +333,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o22` Formless and empty
 
-- **Gen.1.2 → Jer.4.23** · echo · strength 2 · draft · fingerprint `ee61143c8399ca76`
+- **Gen.1.2 → Jer.4.23** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `ee61143c8399ca76`
 - From: Creation (`gen-01`)
 - To: Disaster from the North (`jer-x104`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -349,7 +349,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o23` In Eden, the garden of God
 
-- **Gen.2.8-Gen.2.15 → Ezek.28.13** · allusion · strength 2 · draft · fingerprint `acb8fea45a33ce5a`
+- **Gen.2.8-Gen.2.15 → Ezek.28.13** · allusion · strength 2 · verified (approved 2026-11-20) · fingerprint `acb8fea45a33ce5a`
 - From: The Garden and the Fall (`gen-02`)
 - To: Lament for Tyre; the Prince of Tyre; Sidon (`ezek-12`, library)
 - Order: older end from; the later end uses it; basis text
@@ -367,7 +367,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o24` A king's dream, and the God who explains it
 
-- **Gen.41.1-Gen.41.40 → Dan.2.1-Dan.2.49** · parallel · strength 2 · draft · fingerprint `b152670325e3a1a7`
+- **Gen.41.1-Gen.41.40 → Dan.2.1-Dan.2.49** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `b152670325e3a1a7`
 - From: Joseph in Egypt (`gen-17`)
 - To: Nebuchadnezzar's Dream (`dan-02`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -384,7 +384,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o25` Rule over the works of God's hands
 
-- **Gen.1.26-Gen.1.28 → Ps.8.4-Ps.8.8** · echo · strength 2 · draft · fingerprint `51fe02893376122d`
+- **Gen.1.26-Gen.1.28 → Ps.8.4-Ps.8.8** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `51fe02893376122d`
 - From: Creation (`gen-01`)
 - To: Psalm 8 (`ps-008`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -397,7 +397,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `gen-o26` Noah, Daniel and Job
 
-- **Gen.6.9 → Ezek.14.14** · allusion · strength 3 · draft · fingerprint `c62bf5e1e64d22b8`
+- **Gen.6.9 → Ezek.14.14** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `c62bf5e1e64d22b8`
 - From: The Flood (`gen-04`)
 - To: The Exile Acted Out; False Prophets (`ezek-05`, library)
 - Order: older end from; the later end uses it; basis text

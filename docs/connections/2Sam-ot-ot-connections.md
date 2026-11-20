@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-7 connections; 0 verified; 0 failing a check.
+7 connections; 7 verified; 0 failing a check.
 
 ## `2sam-o01` Nathan's promise, told twice
 
-- **2Sam.7.12-2Sam.7.16 → 1Chr.17.11-1Chr.17.14** · parallel · strength 3 · draft · fingerprint `6be6e5976ac18893`
+- **2Sam.7.12-2Sam.7.16 → 1Chr.17.11-1Chr.17.14** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `6be6e5976ac18893`
 - From: The Promise to David (`2sam-04`)
 - To: God’s Promise to David (`1chr-09`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o02` Sworn to David
 
-- **2Sam.7.12-2Sam.7.16 → Ps.89.3-Ps.89.4** · allusion · strength 3 · draft · fingerprint `b65d713f84a18aa9`
+- **2Sam.7.12-2Sam.7.16 → Ps.89.3-Ps.89.4** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `b65d713f84a18aa9`
 - From: The Promise to David (`2sam-04`)
 - To: Psalm 89 (88) (`ps-089`, library)
 - Order: older end from; the later end uses it; basis text
@@ -34,7 +34,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o03` David's song, twice
 
-- **2Sam.22.1-2Sam.22.51 → Ps.18.1-Ps.18.50** · parallel · strength 3 · draft · fingerprint `6d49852bd903a888`
+- **2Sam.22.1-2Sam.22.51 → Ps.18.1-Ps.18.50** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `6d49852bd903a888`
 - From: Last Things: Famine, Song, Heroes, Census (`2sam-10`)
 - To: Psalm 18 (17) (`ps-018`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -51,7 +51,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o04` Except in the matter of Uriah
 
-- **2Sam.11.2-2Sam.11.27 → 1Kgs.15.5** · allusion · strength 3 · draft · fingerprint `f26c93fb4565e678`
+- **2Sam.11.2-2Sam.11.27 → 1Kgs.15.5** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `f26c93fb4565e678`
 - From: Bathsheba and Uriah (`2sam-06`)
 - To: Kings of Judah and Israel (`1kgs-07`)
 - Order: older end from; the later end uses it; basis text
@@ -66,7 +66,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o05` The stronghold of Zion taken
 
-- **2Sam.5.6-2Sam.5.10 → 1Chr.11.4-1Chr.11.9** · parallel · strength 3 · draft · fingerprint `f7d9498d8ec03fbc`
+- **2Sam.5.6-2Sam.5.10 → 1Chr.11.4-1Chr.11.9** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `f7d9498d8ec03fbc`
 - From: King of All Israel; the Ark to Jerusalem (`2sam-03`)
 - To: David’s Mighty Men (`1chr-07`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -83,7 +83,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o06` David's census, told twice
 
-- **2Sam.24.1-2Sam.24.25 → 1Chr.21.1-1Chr.21.30** · parallel · strength 3 · draft · fingerprint `e63ded2118aa30aa`
+- **2Sam.24.1-2Sam.24.25 → 1Chr.21.1-1Chr.21.30** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `e63ded2118aa30aa`
 - From: Last Things: Famine, Song, Heroes, Census (`2sam-10`)
 - To: The Census and the Threshing Floor (`1chr-11`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -98,7 +98,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `2sam-o07` The ark brought up with joy
 
-- **2Sam.6.12-2Sam.6.19 → 1Chr.15.25-1Chr.16.3** · parallel · strength 3 · draft · fingerprint `8e6be0453f006a2a`
+- **2Sam.6.12-2Sam.6.19 → 1Chr.15.25-1Chr.16.3** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `8e6be0453f006a2a`
 - From: King of All Israel; the Ark to Jerusalem (`2sam-03`)
 - To: Bringing the Ark to Jerusalem (`1chr-08`, library)
 - Order: older end from; the later end uses it; basis consensus

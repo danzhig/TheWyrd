@@ -7870,6 +7870,2113 @@
         "date": "2026-11-20",
         "fingerprint": "052dcdddebbecc4f"
       }
+    },
+    {
+      "id": "isa-l01",
+      "from": "Isa.2.2-Isa.2.4",
+      "to": "Mic.4.1-Mic.4.3",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Swords into ploughshares",
+      "explanation": "Isaiah 2:2–4 and Micah 4:1–3 both tell of the mountain of the LORD's house raised above the hills, the nations streaming to it to learn his ways, and swords beaten into ploughshares. The two passages run nearly word for word. Micah adds that each will sit under his own vine and fig tree, with no one to make them afraid.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154514"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154567"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L221056"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fade69e303595a95"
+      }
+    },
+    {
+      "id": "joel-l01",
+      "from": "Isa.2.4",
+      "to": "Joel.3.10",
+      "type": "contrast",
+      "strength": 3,
+      "label": "Ploughshares into swords",
+      "explanation": "Isaiah 2:4 is set against Joel 3:10: where Isaiah sees the nations beating swords into ploughshares, Joel summons them to beat ploughshares into swords. Joel's call is to the valley of judgement, where the LORD will judge the surrounding nations. The same image runs both ways.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217228"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154576"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8ee51151cc77b493"
+      }
+    },
+    {
+      "id": "joel-l02",
+      "from": "Joel.3.16",
+      "to": "Amos.1.2",
+      "type": "echo",
+      "strength": 3,
+      "label": "The LORD roars from Zion",
+      "explanation": "Joel 3:16 and Amos 1:2 both tell that the LORD roars from Zion and utters his voice from Jerusalem. Joel follows it with heaven and earth shaking and the LORD a refuge for his people; Amos opens his book with it, the shepherds' pastures mourning and the top of Carmel withering.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217295"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217411"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6da88123b7992d54"
+      }
+    },
+    {
+      "id": "joel-l03",
+      "from": "Joel.3.18",
+      "to": "Amos.9.13",
+      "type": "echo",
+      "strength": 2,
+      "label": "The mountains drip sweet wine",
+      "explanation": "Joel 3:18 and Amos 9:13 both tell of a coming day when the mountains will drip with sweet wine. Joel adds the hills flowing with milk and a fountain from the LORD's house; Amos adds the ploughman overtaking the reaper as Israel's fortunes are restored.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219420"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217347"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6609791b7fd04f65"
+      }
+    },
+    {
+      "id": "joel-l04",
+      "from": "Joel.2.31",
+      "to": "Mal.4.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "The great and terrible day of the LORD",
+      "explanation": "Joel 2:31 and Malachi 4:5 both tell of the great and terrible day of the LORD. Joel speaks of the sun turned to darkness and the moon to blood before it comes; Malachi promises that Elijah the prophet will be sent before it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217066"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230170"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c4456efe285c3d2"
+      }
+    },
+    {
+      "id": "ps-l01",
+      "from": "Ps.103.8",
+      "to": "Joel.2.13",
+      "type": "echo",
+      "strength": 2,
+      "label": "Gracious and merciful, slow to anger",
+      "explanation": "Psalms 103:8 and Joel 2:13 both tell that the LORD is gracious and full of mercy, slow to anger and rich in loving kindness, as he named himself to Moses. The psalm gives them in praise; Joel gives them as the reason to tear your heart and not your garments and return to him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L130472"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216738"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "bc84f96e36295275"
+      }
+    },
+    {
+      "id": "1chr-l01",
+      "from": "Ps.105.1-Ps.105.15",
+      "to": "1Chr.16.8-1Chr.16.22",
+      "type": "quotation",
+      "strength": 3,
+      "label": "David's psalm when the ark came: Psalm 105",
+      "explanation": "1 Chronicles 16:8–22 quotes Psalms 105:1–15: when the ark is brought to Jerusalem, David appoints the Levites to give thanks, and the song they sing begins with the opening of Psalm 105. It calls on Israel to remember the covenant with Abraham and the promise of the land, and ends with the warning not to touch the LORD's anointed.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83330"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83446"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83393"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5090509e3c50b402"
+      }
+    },
+    {
+      "id": "1chr-l02",
+      "from": "Ps.96.1-Ps.96.13",
+      "to": "1Chr.16.23-1Chr.16.33",
+      "type": "quotation",
+      "strength": 3,
+      "label": "David's psalm when the ark came: Psalm 96",
+      "explanation": "1 Chronicles 16:23–33 quotes Psalms 96:1–13: the song's middle is Psalm 96, calling all the earth to sing to the LORD and the heavens, sea and trees to rejoice as he comes to judge. Chronicles keeps the psalm nearly whole.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L129113"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83451"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83519"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0f67efcdaa5c9bf9"
+      }
+    },
+    {
+      "id": "1chr-l03",
+      "from": "Ps.106.1",
+      "to": "1Chr.16.34-1Chr.16.36",
+      "type": "quotation",
+      "strength": 2,
+      "label": "David's psalm when the ark came: Psalm 106",
+      "explanation": "1 Chronicles 16:34–36 quotes Psalms 106:1: the song closes as Psalm 106 opens and closes, with thanks to the LORD who is good, a prayer to be gathered from the nations, and a blessing. The people answer Amen and praise the LORD.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83566"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131326"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1208aae3fdf92413"
+      }
+    },
+    {
+      "id": "2chr-l01",
+      "from": "Ps.132.8-Ps.132.10",
+      "to": "2Chr.6.41-2Chr.6.42",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Arise into your resting place",
+      "explanation": "2 Chronicles 6:41–42 quotes Psalms 132:8–10: Solomon ends his prayer at the temple with the psalm's words, asking the LORD to arise into his resting place and not turn away his anointed. Chronicles adds the prayer that he remember his loving kindness to David, and the priests are to be clothed with salvation.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L137119"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86984"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L137146"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "52915c8fcda5201f"
+      }
+    },
+    {
+      "id": "2chr-l02",
+      "from": "Ps.136.1",
+      "to": "2Chr.7.3",
+      "type": "echo",
+      "strength": 2,
+      "label": "His loving kindness endures forever",
+      "explanation": "Psalms 136:1 and 2 Chronicles 7:3 both tell the refrain that the LORD is good and his loving kindness endures forever. In the psalm it answers every line; in Chronicles the people say it with their faces to the pavement when fire falls from heaven and the glory fills the temple.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L137524"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L87039"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "297fc37be227664b"
+      }
+    },
+    {
+      "id": "2chr-l03",
+      "from": "Isa.44.28-Isa.45.1",
+      "to": "2Chr.36.22-2Chr.36.23",
+      "type": "echo",
+      "strength": 3,
+      "label": "Cyrus, the LORD's shepherd",
+      "explanation": "Isaiah 44:28–45:1 and 2 Chronicles 36:22–23 both tell of Cyrus king of Persia as the LORD's instrument for rebuilding the temple. Isaiah names him the LORD's shepherd and anointed, who will say of Jerusalem that it shall be built; Chronicles ends with his decree charging him to build the house in Jerusalem, in fulfilment of the word through Jeremiah.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L167486"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93093"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "28e15b7661c8a45b"
+      }
+    },
+    {
+      "id": "2chr-l04",
+      "from": "Isa.37.36-Isa.37.38",
+      "to": "2Chr.32.21",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The angel against Assyria's camp",
+      "explanation": "Isaiah 37:36–38 and 2 Chronicles 32:21 both tell of the LORD's angel destroying the Assyrian army before Jerusalem, and of Sennacherib going home to be killed by his own sons. Isaiah counts the dead at the camp; Chronicles adds that the king went home with a shamed face.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L91949"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164751"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164765"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "aaf25efb1638e0b7"
+      }
+    },
+    {
+      "id": "obad-l01",
+      "from": "Ezek.35.1-Ezek.35.15",
+      "to": "Obad.1.10-Obad.1.15",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Against Mount Seir",
+      "explanation": "Ezekiel 35:1–15 and Obadiah 1:10–15 both tell the LORD's judgement on Edom for its part in Jerusalem's fall: its old hatred, its joy at Israel's ruin, and its repayment in kind. Ezekiel calls Edom Mount Seir and the land desolate; Obadiah dwells on the day of disaster when Edom stood aloof and joined the plunder.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219608"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L205173"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219633"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fb03504ee9e65d8e"
+      }
+    },
+    {
+      "id": "obad-l02",
+      "from": "Ps.137.7",
+      "to": "Obad.1.11-Obad.1.14",
+      "type": "echo",
+      "strength": 2,
+      "label": "Edom on Jerusalem's day",
+      "explanation": "Psalms 137:7 and Obadiah 1:11–14 both tell of Edom on the day Jerusalem fell. The psalm asks the LORD to remember the Edomites who cried to raze the city to its foundations; Obadiah charges Edom with standing by, gloating and cutting off the fugitives at the crossroads.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219585"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "563dfa5657f61eda"
+      }
+    },
+    {
+      "id": "obad-l03",
+      "from": "Lam.4.21-Lam.4.22",
+      "to": "Obad.1.10-Obad.1.15",
+      "type": "echo",
+      "strength": 2,
+      "label": "The cup passes to Edom",
+      "explanation": "Lamentations 4:21–22 and Obadiah 1:10–15 both tell that Edom, which rejoiced at Zion's fall, will in turn be punished. Lamentations tells the daughter of Edom that the cup will pass to her too, while Zion's punishment is complete; Obadiah says that as Edom has done it will be done to it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219631"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L194433"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219575"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "001c08b4ece7e00a"
+      }
+    },
+    {
+      "id": "mal-l01",
+      "from": "Obad.1.1-Obad.1.4",
+      "to": "Mal.1.2-Mal.1.4",
+      "type": "echo",
+      "strength": 2,
+      "label": "Edom brought down",
+      "explanation": "Obadiah 1:1–4 and Malachi 1:2–4 both tell of Edom brought low though it thinks itself secure. Obadiah sees it brought down though it nests among the stars; Malachi has the LORD say that if Edom builds its ruins again he will throw them down, as proof of his love for Jacob.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219477"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219491"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d14e453f1415b28c"
+      }
+    },
+    {
+      "id": "lam-l01",
+      "from": "Ps.48.2",
+      "to": "Lam.2.15",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The joy of the whole earth",
+      "explanation": "Lamentations 2:15 quotes Psalms 48:2: the passers-by hiss at fallen Jerusalem and ask whether this is the city men called the joy of the whole earth. The psalm gives that title to Mount Zion in praise, the city of the great King. Lamentations turns the praise into mockery.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L118919"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L193443"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0f83bff72136d496"
+      }
+    },
+    {
+      "id": "lam-l02",
+      "from": "Ps.74.3-Ps.74.8",
+      "to": "Lam.2.7",
+      "type": "echo",
+      "strength": 2,
+      "label": "The enemy's shout in the sanctuary",
+      "explanation": "Psalms 74:3–8 and Lamentations 2:7 both tell of the enemy in God's sanctuary, roaring where his people met and destroying it. The psalm asks God to see the ruins and remember his congregation; Lamentations says the LORD himself rejected his altar and gave the palace walls into the enemy's hand.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L124383"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L193311"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d9e755013a3e31b2"
+      }
+    },
+    {
+      "id": "hos-l01",
+      "from": "Hos.4.15",
+      "to": "Amos.5.4-Amos.5.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "Do not go to Gilgal",
+      "explanation": "Hosea 4:15 and Amos 5:4–5 both tell Israel not to go to the shrines at Gilgal and Bethel. Hosea calls Bethel Beth Aven, the house of wickedness; Amos sets against them the call to seek the LORD and live.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L218322"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L213895"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4732cec7daaa4166"
+      }
+    },
+    {
+      "id": "hos-l02",
+      "from": "Hos.6.6",
+      "to": "Mic.6.6-Mic.6.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Mercy, not sacrifice",
+      "explanation": "Hosea 6:6 and Micah 6:6–8 both tell that the LORD wants faithful love and knowledge of himself more than offerings. Hosea says it as the LORD's own word; Micah asks what to bring before the LORD, rejects thousands of rams, and answers to act justly, love mercy and walk humbly with your God.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L221664"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L214330"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L221617"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "07ab60ea6be9506e"
+      }
+    },
+    {
+      "id": "isa-l02",
+      "from": "Isa.1.11-Isa.1.17",
+      "to": "Amos.5.21-Amos.5.24",
+      "type": "parallel",
+      "strength": 3,
+      "label": "I hate your feasts",
+      "explanation": "Isaiah 1:11–17 and Amos 5:21–24 both tell the LORD refusing Israel's feasts, assemblies and offerings while injustice goes on. Isaiah calls the people to wash, cease doing evil and defend the orphan and the widow; Amos asks for justice to roll down like waters and righteousness like an ever-flowing stream.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154189"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L218586"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154224"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9f9fb1babdf26799"
+      }
+    },
+    {
+      "id": "nah-l01",
+      "from": "Isa.52.7",
+      "to": "Nah.1.15",
+      "type": "echo",
+      "strength": 3,
+      "label": "The feet of the messenger of good news",
+      "explanation": "Isaiah 52:7 and Nahum 1:15 both tell of the feet of one on the mountains bringing good news and proclaiming peace. Isaiah's messenger says to Zion that her God reigns; Nahum's tells Judah to keep its feasts, for the wicked will no more pass through it, as Nineveh falls.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170009"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L222522"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1bcb6da1c96ff56b"
+      }
+    },
+    {
+      "id": "hab-l01",
+      "from": "Isa.11.9",
+      "to": "Hab.2.14",
+      "type": "echo",
+      "strength": 3,
+      "label": "As the waters cover the sea",
+      "explanation": "Isaiah 11:9 and Habakkuk 2:14 both tell that knowledge of the LORD will fill the earth as the waters cover the sea. Isaiah gives it as the end of the peaceable kingdom on the LORD's holy mountain; Habakkuk sets it among the woes on the plunderer, adding the knowledge of the LORD's glory.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L223294"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L157497"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4ee89f4a6695f186"
+      }
+    },
+    {
+      "id": "hab-l02",
+      "from": "Ps.18.33",
+      "to": "Hab.3.19",
+      "type": "echo",
+      "strength": 3,
+      "label": "Feet like a deer's",
+      "explanation": "Psalms 18:33 and Habakkuk 3:19 both tell that God makes the singer's feet like a deer's and sets him on the heights. In the psalm it is David's thanks for victory; Habakkuk ends his prayer with it after resolving to rejoice in God though the fig tree does not blossom.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L223707"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L112174"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "383c5a37ee831c4f"
+      }
+    },
+    {
+      "id": "hab-l03",
+      "from": "Ps.77.16-Ps.77.20",
+      "to": "Hab.3.10-Hab.3.15",
+      "type": "echo",
+      "strength": 2,
+      "label": "The waters saw you",
+      "explanation": "Psalms 77:16–20 and Habakkuk 3:10–15 both tell of the waters and the deep trembling before God, his arrows flashing and his way through the sea, as at the Exodus. The psalm recalls it to comfort a sleepless night; Habakkuk sees God marching out again to save his people and his anointed.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L223647"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L124951"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L124976"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c6647e496e91367e"
+      }
+    },
+    {
+      "id": "zeph-l01",
+      "from": "Joel.2.1-Joel.2.2",
+      "to": "Zeph.1.14-Zeph.1.16",
+      "type": "echo",
+      "strength": 3,
+      "label": "A day of darkness and gloom",
+      "explanation": "Joel 2:1–2 and Zephaniah 1:14–16 both tell the day of the LORD as near, a day of darkness and gloominess, of clouds and thick darkness, with the trumpet sounding. Joel sees a great army coming like the dawn spread over the mountains; Zephaniah calls the day one of wrath, distress and alarm against the fortified cities.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216579"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216561"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216605"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "af569babb0a9a409"
+      }
+    },
+    {
+      "id": "zeph-l02",
+      "from": "Nah.3.7",
+      "to": "Zeph.2.13-Zeph.2.15",
+      "type": "echo",
+      "strength": 2,
+      "label": "Nineveh laid waste",
+      "explanation": "Nahum 3:7 and Zephaniah 2:13–15 both tell of Nineveh laid waste. Nahum asks who will mourn for her; Zephaniah sees the proud city that said there is none besides me become a dry desert where flocks lie down and passers-by hiss.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L224247"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f049c968148adc2f"
+      }
+    },
+    {
+      "id": "zech-l01",
+      "from": "Ezek.47.1-Ezek.47.12",
+      "to": "Zech.14.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Living waters from Jerusalem",
+      "explanation": "Ezekiel 47:1–12 and Zechariah 14:8 both tell of waters flowing out from Jerusalem. Ezekiel sees a river from under the temple's threshold growing deeper as it goes, bringing life to the Dead Sea and trees for food and healing; Zechariah sees living waters going out to the eastern and western seas, in summer and winter.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L208013"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228677"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ce824e9dfcee7628"
+      }
+    },
+    {
+      "id": "zech-l02",
+      "from": "Isa.4.2",
+      "to": "Zech.3.8",
+      "type": "echo",
+      "strength": 2,
+      "label": "The Branch",
+      "explanation": "Isaiah 4:2 and Zechariah 3:8 both tell of one called the Branch. Isaiah speaks of the LORD's branch beautiful and glorious for the survivors of Israel; Zechariah has the LORD promise Joshua the high priest to bring forth his servant, the Branch.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155136"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L225953"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c84cd4bae448a821"
+      }
+    },
+    {
+      "id": "zech-l03",
+      "from": "Isa.2.2-Isa.2.3",
+      "to": "Zech.8.20-Zech.8.23",
+      "type": "echo",
+      "strength": 3,
+      "label": "Many peoples will come to seek the LORD",
+      "explanation": "Isaiah 2:2–3 and Zechariah 8:20–23 both tell of many peoples and nations coming to Jerusalem to seek the LORD. Isaiah has them say let us go up to the mountain of the LORD to learn his ways; Zechariah has ten men from every language take hold of a Jew's robe, saying they have heard God is with them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154557"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L227023"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "41993936968294c6"
+      }
+    },
+    {
+      "id": "zech-l04",
+      "from": "Ezek.34.1-Ezek.34.10",
+      "to": "Zech.11.4-Zech.11.17",
+      "type": "echo",
+      "strength": 3,
+      "label": "Woe to the worthless shepherds",
+      "explanation": "Ezekiel 34:1–10 and Zechariah 11:4–17 both tell of shepherds who feed themselves and abandon the flock. Ezekiel has the LORD take his sheep from them and promise to seek the lost himself; Zechariah acts out the shepherd of a flock doomed to slaughter and ends with a woe on the worthless shepherd who deserts it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L204722"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228033"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L204769"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d624b03df367744f"
+      }
+    },
+    {
+      "id": "zech-l05",
+      "from": "Hag.2.20-Hag.2.23",
+      "to": "Zech.4.6-Zech.4.10",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Zerubbabel chosen",
+      "explanation": "Haggai 2:20–23 and Zechariah 4:6–10 both tell of Zerubbabel, governor of Judah, chosen by the LORD as the temple is rebuilt. Haggai has the LORD make him like a signet ring; Zechariah gives the word to him that it is not by might nor by power but by the Spirit, and that his hands will finish the house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L225215"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L225171"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L226112"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "36d97c1604bad348"
+      }
+    },
+    {
+      "id": "mal-l02",
+      "from": "Isa.40.3",
+      "to": "Mal.3.1",
+      "type": "echo",
+      "strength": 3,
+      "label": "Preparing the way",
+      "explanation": "Isaiah 40:3 and Malachi 3:1 both tell of one who prepares the way before the LORD's coming. Isaiah hears a voice crying to prepare the LORD's way in the wilderness; Malachi has the LORD send his messenger to prepare the way before him, and then come suddenly to his temple.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165161"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L229590"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "581177e89ef297a2"
+      }
+    },
+    {
+      "id": "zech-l06",
+      "from": "Amos.1.1",
+      "to": "Zech.14.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "The earthquake in the days of Uzziah",
+      "explanation": "Amos 1:1 and Zechariah 14:5 both tell of the earthquake in the days of Uzziah king of Judah. Amos dates his words two years before it; Zechariah looks back on it as the people fled from it, picturing the flight from the split Mount of Olives when the LORD comes.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217394"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228624"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "17448d9135ee8b09"
+      }
+    },
+    {
+      "id": "ezek-l01",
+      "from": "Isa.6.1-Isa.6.4",
+      "to": "Ezek.1.4-Ezek.1.28",
+      "type": "echo",
+      "strength": 3,
+      "label": "The LORD on his throne",
+      "explanation": "Isaiah 6:1–4 and Ezekiel 1:4–28 both tell a prophet's call by a vision of the LORD enthroned among winged beings. Isaiah sees the Lord high and lifted up in the temple, with seraphim calling holy, holy, holy; Ezekiel sees by the river Kebar four living creatures, wheels full of eyes, and above them a throne with the likeness of a man.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155747"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155793"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L194827"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ebca21e3960da82e"
+      }
+    },
+    {
+      "id": "isa-l03",
+      "from": "Ps.118.14",
+      "to": "Isa.12.2",
+      "type": "echo",
+      "strength": 3,
+      "label": "My strength and my song",
+      "explanation": "Psalms 118:14 and Isaiah 12:2 both tell that the LORD is the singer's strength and song and has become his salvation, words first sung at the sea in Exodus. The psalm says it at the gates of righteousness; Isaiah's song of thanks for comfort after anger opens with it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L157714"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133905"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c53b1030e2430e01"
+      }
+    },
+    {
+      "id": "isa-l04",
+      "from": "Isa.40.6-Isa.40.8",
+      "to": "Ps.103.15-Ps.103.16",
+      "type": "echo",
+      "strength": 3,
+      "label": "All flesh is grass",
+      "explanation": "Isaiah 40:6–8 and Psalms 103:15–16 both tell that human life is like grass and the flower of the field, gone when the wind passes over. Isaiah sets against it the word of our God that stands forever; the psalm sets against it the LORD's loving kindness from everlasting to everlasting.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165221"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L130547"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L130540"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "cac718a1f313c5f7"
+      }
+    },
+    {
+      "id": "hos-l03",
+      "from": "Hos.13.14",
+      "to": "Isa.25.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Death swallowed up",
+      "explanation": "Hosea 13:14 and Isaiah 25:8 both tell of God's power over death. Hosea asks where death's plagues are and where the grave's destruction is; Isaiah says the LORD will swallow up death forever and wipe away tears from all faces.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L160601"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216070"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6f841f929a7af6d1"
+      }
+    },
+    {
+      "id": "lev-l01",
+      "from": "Lev.26.11-Lev.26.12",
+      "to": "Ezek.37.26-Ezek.37.27",
+      "type": "echo",
+      "strength": 3,
+      "label": "I will be their God",
+      "explanation": "Leviticus 26:11–12 and Ezekiel 37:26–27 both tell the LORD's promise to set his dwelling among his people, to be their God and they his people. In Leviticus it is a blessing for keeping the covenant; Ezekiel gives it as an everlasting covenant of peace, with the sanctuary in their midst forever.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L206071"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L206050"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L29508"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1e44b698ebd48e23"
+      }
+    },
+    {
+      "id": "lev-l02",
+      "from": "Lev.18.5",
+      "to": "Ezek.20.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "Statutes by which one lives",
+      "explanation": "Leviticus 18:5 and Ezekiel 20:11 both tell of the LORD's statutes and ordinances, which if a person does, he shall live by them. Leviticus gives it as command; Ezekiel recalls it in his history of Israel, the statutes given in the wilderness that the people rejected.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L27317"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L200226"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d8bc4a66515d0df6"
+      }
+    },
+    {
+      "id": "lev-l03",
+      "from": "Lev.25.10",
+      "to": "Isa.61.1-Isa.61.2",
+      "type": "echo",
+      "strength": 2,
+      "label": "Liberty proclaimed",
+      "explanation": "Leviticus 25:10 and Isaiah 61:1–2 both tell of liberty proclaimed. Leviticus proclaims it in the fiftieth year, the jubilee, when each returns to his property and family; Isaiah's anointed one is sent to proclaim liberty to the captives and the year of the LORD's favour.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L29038"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "065ba8c200b117d6"
+      }
+    },
+    {
+      "id": "lev-l04",
+      "from": "Lev.26.4-Lev.26.6",
+      "to": "Ezek.34.25-Ezek.34.28",
+      "type": "echo",
+      "strength": 2,
+      "label": "Rain in its season and no wild beasts",
+      "explanation": "Leviticus 26:4–6 and Ezekiel 34:25–28 both tell of the LORD's blessing as rain in its season, a land that yields its fruit, and peace with no wild beasts. Leviticus promises it for obedience; Ezekiel gives it as the covenant of peace when the LORD shepherds his flock, with showers of blessing.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L205033"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L29455"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L205063"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1623784ba6d46de9"
+      }
+    },
+    {
+      "id": "2macc-l01",
+      "from": "Lev.11.7-Lev.11.8",
+      "to": "2Macc.6.18-2Macc.6.20",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Eleazar refuses pork",
+      "explanation": "2 Maccabees 6:18–20 recalls Leviticus 11:7–8: the aged scribe Eleazar, forced to open his mouth for swine's flesh, spits it out and goes to torture rather than taste what is not lawful. Leviticus names the pig unclean, not to be eaten. Second Maccabees makes the old man's refusal an example for the young.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "2Macc.6.18",
+          "words": ["Eleazar", "swine"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Lev.11.7",
+          "words": ["pig", "unclean"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Jonathan A. Goldstein",
+            "title": "II Maccabees (Anchor Bible 41A)",
+            "year": "1983",
+            "locator": "Introduction, on the date of the book"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7778afa59a1771da"
+      }
+    },
+    {
+      "id": "2macc-l02",
+      "from": "Lev.9.23-Lev.9.24",
+      "to": "2Macc.2.10-2Macc.2.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Fire from heaven for Moses",
+      "explanation": "2 Maccabees 2:10–11 names Leviticus 9:23–24: the letter at the start of Second Maccabees tells how fire came down and consumed the sacrifice when Moses prayed. Leviticus tells it at the priests' ordination, the fire from before the LORD consuming the offering and the people falling on their faces. The letter adds Moses' word about the sin offering that was not eaten.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "2Macc.2.10",
+          "words": ["Moses", "fire"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4fb2be58cbd00ff0"
+      }
+    },
+    {
+      "id": "2macc-l03",
+      "from": "2Chr.7.1",
+      "to": "2Macc.2.10-2Macc.2.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Fire from heaven for Solomon",
+      "explanation": "2 Maccabees 2:10–11 names 2 Chronicles 7:1: the letter tells that as with Moses, so when Solomon prayed, fire came down and consumed the burnt offerings. Chronicles tells it at the temple's dedication, fire falling as Solomon finished praying and the LORD's glory filling the house.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "2Macc.2.10",
+          "words": ["Solomon", "fire"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "58c82b06c03eced4"
+      }
+    },
+    {
+      "id": "eccl-l01",
+      "from": "2Chr.6.36",
+      "to": "Eccl.7.20",
+      "type": "echo",
+      "strength": 2,
+      "label": "No one who does not sin",
+      "explanation": "2 Chronicles 6:36 and Ecclesiastes 7:20 both tell that there is no one who does not sin. Solomon says it in his prayer at the temple, asking forgiveness when the people sin and are carried captive; the Preacher says no righteous man on earth always does good without sinning.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L151172"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86922"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a3940e2d98b57b61"
+      }
+    },
+    {
+      "id": "eccl-l02",
+      "from": "Ps.146.4",
+      "to": "Eccl.12.7",
+      "type": "echo",
+      "strength": 2,
+      "label": "The spirit departs, the body returns to earth",
+      "explanation": "Psalms 146:4 and Ecclesiastes 12:7 both tell of death as breath leaving and the body returning to the earth. The psalm warns not to trust princes, whose plans perish that day; the Preacher closes his counsel to remember the Creator with the dust returning to the earth and the spirit to God who gave it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L152186"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L139152"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d6069c3efd5ff11d"
+      }
+    },
+    {
+      "id": "eccl-l03",
+      "from": "Prov.10.19",
+      "to": "Eccl.5.2-Eccl.5.3",
+      "type": "echo",
+      "strength": 2,
+      "label": "Let your words be few",
+      "explanation": "Proverbs 10:19 and Ecclesiastes 5:2–3 both tell that many words bring wrongdoing and the wise restrain their lips. Proverbs says it as a saying; the Preacher applies it before God, who is in heaven while you are on earth, so let your words be few.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L150487"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L142566"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L150495"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ccae7b199f1a6edf"
+      }
+    },
+    {
+      "id": "eccl-l04",
+      "from": "Ps.39.5-Ps.39.6",
+      "to": "Eccl.1.2",
+      "type": "echo",
+      "strength": 2,
+      "label": "Every man is a breath",
+      "explanation": "Psalms 39:5–6 and Ecclesiastes 1:2 both tell that human life is a breath, a vapour. The psalmist says each person at his best is a breath and heaps up riches without knowing who will gather them; the Preacher opens with vanity of vanities, all is vanity.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L149465"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L117301"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d571d169ada3617b"
+      }
+    },
+    {
+      "id": "prov-l01",
+      "from": "Prov.1.7",
+      "to": "Ps.111.10",
+      "type": "echo",
+      "strength": 3,
+      "label": "The beginning of wisdom",
+      "explanation": "Proverbs 1:7 and Psalms 111:10 both tell that the fear of the LORD is the beginning of wisdom and knowledge. Proverbs sets it as the motto of the whole book, against fools who despise instruction; the psalm ends its praise of the LORD's works with it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L139877"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133076"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4bc305daf2bbbe8b"
+      }
+    },
+    {
+      "id": "song-l01",
+      "from": "Ps.45.7-Ps.45.8",
+      "to": "Song.1.2-Song.1.4",
+      "type": "echo",
+      "strength": 2,
+      "label": "Fragrant oils and the king",
+      "explanation": "Psalms 45:7–8 and Song of Songs 1:2–4 both tell of a king and his bride in a language of fragrant oils and gladness. The psalm, a royal wedding song, speaks of the king anointed with the oil of gladness and garments smelling of myrrh; the Song opens with a name like oil poured out and the king bringing his beloved into his rooms.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L118428"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L152314"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f47ee553e97d892a"
+      }
+    },
+    {
+      "id": "sir-l01",
+      "from": "Mal.4.5-Mal.4.6",
+      "to": "Sir.48.10",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Elijah to turn the heart of the father",
+      "explanation": "Sirach 48:10 quotes Malachi 4:5–6: in the praise of the fathers, Ben Sira says Elijah is ready for the appointed time, to turn the heart of the father to the son and restore the tribes of Jacob. Malachi ends the prophets with the promise to send Elijah before the great day of the LORD, to turn fathers' hearts to their children.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.48.10",
+          "words": ["father", "son", "Jacob"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Mal.4.5",
+          "words": ["Elijah"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Patrick W. Skehan and Alexander A. Di Lella",
+            "title": "The Wisdom of Ben Sira (Anchor Bible 39)",
+            "year": "1987",
+            "locator": "Introduction, on the date of Ben Sira and his use of the earlier Scriptures"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "cd5cd21887653cf2"
+      }
+    },
+    {
+      "id": "sir-l02",
+      "from": "Ezek.1.4-Ezek.1.28",
+      "to": "Sir.49.8",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Ezekiel's vision of glory",
+      "explanation": "Sirach 49:8 names Ezekiel 1:4–28: Ben Sira says Ezekiel saw the vision of glory that God showed him on the chariot of the cherubim. Ezekiel's book opens with that vision by the river, the four living creatures and their wheels beneath the throne. The praise names Ezekiel among the prophets after Jeremiah.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.49.8",
+          "words": ["Ezekiel", "cherubim"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "08fc04ef501914f3"
+      }
+    },
+    {
+      "id": "sir-l03",
+      "from": "Isa.61.1-Isa.61.3",
+      "to": "Sir.48.22-Sir.48.24",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Isaiah comforted those who mourned",
+      "explanation": "Sirach 48:22–24 recalls Isaiah 61:1–3: Ben Sira names Isaiah the prophet, great and faithful in his vision, who saw the last things and comforted those who mourned in Zion. Isaiah's anointed one is sent to comfort all who mourn and to give those who mourn in Zion a garland for ashes.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.48.22",
+          "words": ["Isaiah"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Sir.48.24",
+          "words": ["mourned", "Zion"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "bb23178d03c9abe8"
+      }
+    },
+    {
+      "id": "sir-l04",
+      "from": "Hag.2.23",
+      "to": "Sir.49.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Like a signet ring",
+      "explanation": "Sirach 49:11 recalls Haggai 2:23: Ben Sira asks how to praise Zerubbabel, who was like a signet ring on the right hand. Haggai ends with the LORD's promise to take Zerubbabel his servant and make him a signet ring, for he has chosen him.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.49.11",
+          "words": ["Zerubbabel", "signet"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Hag.2.23",
+          "words": ["Zerubbabel", "signet"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Patrick W. Skehan and Alexander A. Di Lella",
+            "title": "The Wisdom of Ben Sira (Anchor Bible 39)",
+            "year": "1987",
+            "locator": "Introduction, on the date of Ben Sira and his use of the earlier Scriptures"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "550a644f55e78b4f"
+      }
+    },
+    {
+      "id": "sir-l05",
+      "from": "2Chr.32.30",
+      "to": "Sir.48.17",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Hezekiah brings water into the city",
+      "explanation": "2 Chronicles 32:30 and Sirach 48:17 both tell of Hezekiah bringing water into Jerusalem. Chronicles says he stopped the upper spring of Gihon and brought it down to the west side of David's city; Ben Sira praises him for fortifying the city and cutting through rock with iron to bring water inside.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.48.17",
+          "words": ["Hezekiah", "water"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Patrick W. Skehan and Alexander A. Di Lella",
+            "title": "The Wisdom of Ben Sira (Anchor Bible 39)",
+            "year": "1987",
+            "locator": "Introduction, on the date of Ben Sira and his use of the earlier Scriptures"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c4922ae65251f645"
+      }
+    },
+    {
+      "id": "sir-l06",
+      "from": "Lev.8.7-Lev.8.9",
+      "to": "Sir.45.8-Sir.45.12",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Aaron's vestments",
+      "explanation": "Leviticus 8:7–9 and Sirach 45:8–12 both tell of Aaron clothed as high priest: robe, ephod, breastplate with the Urim and Thummim, and the holy crown on his turban. Leviticus tells Moses dressing him at the ordination; Ben Sira praises the splendour of it, adding the golden bells that sounded as he went into the temple.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.45.10",
+          "words": ["Urim", "Thummim"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Lev.8.8",
+          "words": ["Urim", "Thummim"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Patrick W. Skehan and Alexander A. Di Lella",
+            "title": "The Wisdom of Ben Sira (Anchor Bible 39)",
+            "year": "1987",
+            "locator": "Introduction, on the date of Ben Sira and his use of the earlier Scriptures"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9a9f4efa7e5f0081"
+      }
+    },
+    {
+      "id": "sir-l07",
+      "from": "Prov.8.22-Prov.8.31",
+      "to": "Sir.24.3-Sir.24.9",
+      "type": "echo",
+      "strength": 3,
+      "label": "Wisdom before creation",
+      "explanation": "Sirach 24:3–9 echoes Proverbs 8:22–31: Wisdom speaks in her own voice of being with God from the beginning, before the earth. In Proverbs she was beside him as he set the heavens and marked the sea's bounds; in Ben Sira she comes from the mouth of the Most High, covers the earth like a mist, and is told to pitch her tent in Jacob.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.24.3",
+          "words": ["Most High"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Sir.24.8",
+          "words": ["Jacob"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Patrick W. Skehan and Alexander A. Di Lella",
+            "title": "The Wisdom of Ben Sira (Anchor Bible 39)",
+            "year": "1987",
+            "locator": "Introduction, on the date of Ben Sira and his use of the earlier Scriptures"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "63cfb8719db4e825"
+      }
+    },
+    {
+      "id": "bar-l01",
+      "from": "Sir.24.23",
+      "to": "Bar.4.1",
+      "type": "echo",
+      "strength": 3,
+      "label": "Wisdom is the book of the law",
+      "explanation": "Sirach 24:23 and Baruch 4:1 both tell that the wisdom they have praised is the law of God given to Israel. Ben Sira calls it the book of the covenant of the Most High, the law Moses commanded; Baruch calls it the book of God's commandments, the law that endures forever, life to all who hold it fast.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.24.23",
+          "words": ["covenant", "law"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Bar.4.1",
+          "words": ["commandments", "law"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "45e12ef8eb740029"
+      }
+    },
+    {
+      "id": "wis-l01",
+      "from": "Prov.8.22-Prov.8.31",
+      "to": "Wis.7.22-Wis.7.27",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Wisdom, the architect of all things",
+      "explanation": "Proverbs 8:22–31 and Wisdom 7:22–27 both tell of wisdom present with God when he made the world. Proverbs has her beside him as a craftsman; Wisdom calls her the architect of all things, a breath of God's power and a reflection of eternal light.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.7.22",
+          "words": ["architect"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "David Winston",
+            "title": "The Wisdom of Solomon (Anchor Bible 43)",
+            "year": "1979",
+            "locator": "Introduction, on the date of the book and its sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ef22819cc4dee36d"
+      }
+    },
+    {
+      "id": "wis-l02",
+      "from": "Isa.44.13-Isa.44.17",
+      "to": "Wis.13.11-Wis.13.13",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The woodcutter's god",
+      "explanation": "Wisdom 13:11–13 retells Isaiah 44:13–17: a craftsman cuts down a tree, burns part of it to cook his food, and carves a useless scrap into the image of a man to worship. Isaiah mocks the carpenter who warms himself with half and bows down to the rest; Wisdom adds the knots and crooked grain, carved in the idleness of a spare hour.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.13.12",
+          "words": ["food"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Wis.13.13",
+          "words": ["image"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "David Winston",
+            "title": "The Wisdom of Solomon (Anchor Bible 43)",
+            "year": "1979",
+            "locator": "Introduction, on the date of the book and its sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "942ea9cea22056bf"
+      }
+    },
+    {
+      "id": "wis-l03",
+      "from": "1Chr.21.16",
+      "to": "Wis.18.15-Wis.18.16",
+      "type": "echo",
+      "strength": 2,
+      "label": "Standing between earth and sky",
+      "explanation": "Wisdom 18:15–16 echoes 1 Chronicles 21:16: on the night the firstborn of Egypt died, God's word leaps from heaven like a warrior with a sharp sword, touching the sky while it stands on the earth. Chronicles tells of the LORD's angel standing between earth and sky with a drawn sword stretched over Jerusalem.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.18.16",
+          "words": ["sword", "sky", "earth"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "David Winston",
+            "title": "The Wisdom of Solomon (Anchor Bible 43)",
+            "year": "1979",
+            "locator": "Introduction, on the date of the book and its sources"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7fe49fa322097570"
+      }
+    },
+    {
+      "id": "bar-l02",
+      "from": "Isa.40.4",
+      "to": "Bar.5.7",
+      "type": "echo",
+      "strength": 3,
+      "label": "Every mountain made low",
+      "explanation": "Baruch 5:7 echoes Isaiah 40:4: God has commanded every high mountain to be made low and the valleys filled, so that Israel may walk safely in his glory. Isaiah calls for every valley to be raised and every mountain and hill brought low, so that the glory of the LORD may be revealed.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Bar.5.7",
+          "words": ["mountain", "valleys"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Carey A. Moore",
+            "title": "Daniel, Esther and Jeremiah: The Additions (Anchor Bible 44)",
+            "year": "1977",
+            "locator": "the introductions to Baruch and the Letter of Jeremiah (date)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4b82fc6fb5b10122"
+      }
+    },
+    {
+      "id": "bar-l03",
+      "from": "Isa.60.4",
+      "to": "Bar.5.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "Look and see your children gathered",
+      "explanation": "Baruch 5:5 echoes Isaiah 60:4: Jerusalem is told to stand on the height and look east to see her children gathered from west and east at the word of the Holy One. Isaiah tells Zion to lift up her eyes and see her sons coming from far away and her daughters carried in arms.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Bar.5.5",
+          "words": ["Jerusalem", "children"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Carey A. Moore",
+            "title": "Daniel, Esther and Jeremiah: The Additions (Anchor Bible 44)",
+            "year": "1977",
+            "locator": "the introductions to Baruch and the Letter of Jeremiah (date)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "72954c43dfaa197d"
+      }
+    },
+    {
+      "id": "bar-l04",
+      "from": "Isa.46.6-Isa.46.7",
+      "to": "Bar.6.26",
+      "type": "echo",
+      "strength": 2,
+      "label": "Gods carried on the shoulder",
+      "explanation": "Isaiah 46:6–7 and Baruch 6:26 both tell of idols that must be carried on men's shoulders because they cannot move. Isaiah mocks the goldsmith's god borne on the shoulder and set in its place, unable to answer; the Letter of Jeremiah says the idols, having no feet, are carried, and so show how worthless they are.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Bar.6.26",
+          "words": ["feet", "shoulders"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Carey A. Moore",
+            "title": "Daniel, Esther and Jeremiah: The Additions (Anchor Bible 44)",
+            "year": "1977",
+            "locator": "the introductions to Baruch and the Letter of Jeremiah (date)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fb09e085b1a1cd5c"
+      }
     }
   ]
 }
