@@ -19,6 +19,7 @@ test.describe('performance', () => {
   });
 
   // PLAN §14 P4.3: with Threads' arcs drawn over the spiral, the camera still holds 60 fps.
+  // The arcs are a few joined paths (TX7), so the scene stays small however many there are.
   test('camera moves hold 60 fps with Threads on, on a throttled mobile profile', async ({
     page,
   }) => {
@@ -26,7 +27,16 @@ test.describe('performance', () => {
     await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
     await page.getByTestId('view-threads').click();
     await expect(page.locator('html')).toHaveAttribute('data-threads', 'ready');
-    await page.waitForTimeout(1200); // the arcs have drawn themselves in
+    // The heaviest ceiling (TX7): every corpus pair switched on, not only the default Old ↔ New.
+    const tab = page.getByTestId('thread-filter-tab');
+    if (await tab.isVisible()) await tab.click();
+    for (const pair of await page
+      .locator('[data-pair-chip][aria-pressed="false"]')
+      .evaluateAll((cs) => cs.map((c) => (c as HTMLElement).dataset.pairChip!)))
+      await page.locator(`[data-pair-chip="${pair}"]`).click();
+    await expect(page.locator('[data-pair-chip][aria-pressed="false"]')).toHaveCount(0);
+    if (await tab.isVisible()) await tab.click();
+    await page.waitForTimeout(1200); // the arcs have faded in
     judge(await timeFlights(page));
   });
 

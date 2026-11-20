@@ -2,6 +2,7 @@
 import { describe, expect, it } from 'vitest';
 import fs from 'node:fs';
 import {
+  bundleArcs,
   arcPath,
   arcsFor,
   arcWidth,
@@ -181,5 +182,38 @@ describe('direction and pairs on the ceiling (threads plan TD5)', () => {
     // The middle of the arc lies farther from the oculus than the chord's midpoint.
     expect(Math.hypot(arc!.mid.x, arc!.mid.y)).toBeGreaterThan(Math.hypot(50, 50));
     expect(arcsFor(nn, homes, new Set(TYPE_ORDER), new Set())).toEqual([]);
+  });
+});
+
+describe('bundleArcs (TX7: a few paths for every arc)', () => {
+  const arc = (key: string, width: number, pair: 'ot-nt' | 'ot-ot' | 'nt-nt') => {
+    const [a, b] = key.split('|') as [string, string];
+    return { key, a, b, d: `M${key}`, width, pair };
+  };
+  const arcs = [
+    arc('Gen|Matt', 3.3, 'ot-nt'),
+    arc('Exod|John', 3.4, 'ot-nt'),
+    arc('Gen|Ps', 3.3, 'ot-ot'),
+    arc('Luke|Matt', 6.9, 'nt-nt'),
+  ];
+  it('joins arcs of one look into one path, and skips the selected arc', () => {
+    const b = bundleArcs(arcs, null, 'Luke|Matt');
+    expect(b).toHaveLength(2);
+    expect(b.flatMap((x) => x.keys).sort()).toEqual(['Exod|John', 'Gen|Matt', 'Gen|Ps']);
+    const between = b.find((x) => !x.within)!;
+    expect(between.keys).toEqual(['Gen|Matt', 'Exod|John']);
+    expect(between.d).toBe('MGen|Matt MExod|John');
+    expect(between.width).toBe(3.5);
+  });
+  it('lights the open book and dims the rest, dimmed drawn first', () => {
+    const b = bundleArcs(arcs, 'Gen');
+    expect(b[0]!.state).toBe('dim');
+    expect(b.at(-1)!.state).toBe('lit');
+    expect(
+      b
+        .filter((x) => x.state === 'lit')
+        .flatMap((x) => x.keys)
+        .sort(),
+    ).toEqual(['Gen|Matt', 'Gen|Ps']);
   });
 });

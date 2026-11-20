@@ -157,3 +157,30 @@ export function dismiss(sectionId: string): void {
   const d = readDismissed();
   if (!d.includes(sectionId)) writeRaw('dismissed', JSON.stringify([...d, sectionId]));
 }
+
+/**
+ * The Vault's thread filters (owner, 2026-11-20): the corpus pairs switched on, and the kinds of
+ * link switched off (so a kind added later starts on). Null until the reader changes one, so the
+ * defaults (only Old ↔ New, every kind) apply. The caller checks values against what exists.
+ */
+export interface ThreadFilters {
+  pairs: string[];
+  typesOff: string[];
+}
+
+export function readThreadFilters(): ThreadFilters | null {
+  try {
+    const f = JSON.parse(readRaw('threadFilters') ?? 'null') as Partial<ThreadFilters> | null;
+    if (!f || !Array.isArray(f.pairs) || !Array.isArray(f.typesOff)) return null;
+    return {
+      pairs: f.pairs.filter((x) => typeof x === 'string'),
+      typesOff: f.typesOff.filter((x) => typeof x === 'string'),
+    };
+  } catch {
+    return null;
+  }
+}
+
+export function writeThreadFilters(f: ThreadFilters): void {
+  writeRaw('threadFilters', JSON.stringify(f));
+}

@@ -13,27 +13,24 @@
   stroke: var(--gold);
   stroke-linecap: round;
   opacity: 0.6;
-  /* Each arc draws itself in from end to end (pathLength = 1). */
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .line {
-    animation: draw-arc 0.9s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+  .line.enter {
+    animation: arcs-in 0.6s ease-out both;
   }
 }
 
-@keyframes draw-arc {
+/* The arcs are a few joined paths (the node budget), so they fade in together. */
+@keyframes arcs-in {
   from {
-    stroke-dashoffset: 1;
+    opacity: 0;
   }
 }
 
 /* Inside one corpus (Old ↔ Old, New ↔ New): paler, and bowed outward (threads.ts), so the shape
    as well as the tone tells them from the threads between the Testaments. */
-.line[data-pair='ot-ot'],
-.line[data-pair='nt-nt'] {
+.line.within {
   stroke: var(--gold-light);
   opacity: 0.45;
 }
@@ -43,42 +40,100 @@
   stroke: var(--gold-light);
 }
 
-/* The filter: a row of chips at the foot of the screen (above the view switch on phones). */
+/* The filters (owner, 2026-11-20): a sidebar at the right edge, the corpus pairs above the kinds
+   of link, each a toggle. An open arc or book panel lies over it. */
 .filter {
   position: fixed;
   z-index: 6;
-  left: 50%;
-  bottom: 1rem;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.35rem;
-  max-width: calc(100vw - 9rem);
-  overflow-x: auto;
-  padding: 3px;
-  border-radius: 999px;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: calc(100vh - 14rem);
+  overflow-y: auto;
+  padding: 0.5rem;
+  border-radius: 12px;
   background: color-mix(in srgb, var(--surface) 85%, transparent);
   border: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
+.filterBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.filterBody > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+/* The corpus pairs above the kinds, set off by a hairline. */
+.filterBody > div + div {
+  padding-top: 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+}
+
+.filterHeading {
+  margin: 0 0 0.1rem;
+  padding: 0 0.8rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.filter .chip {
+  text-align: left;
+}
+
+/* Wide screens: always open, so no tab. */
+.filterTab {
+  display: none;
+}
+
+/* Phones: folded behind a tab on the right edge, opened over the sky. */
 @media (max-width: 40rem) {
   .filter {
-    left: 0.75rem;
-    right: 4.5rem; /* clear of the zoom buttons */
-    bottom: 4.6rem;
-    transform: none;
-    max-width: none;
+    right: 0;
+    padding: 0;
+    border-right: 0;
+    border-radius: 12px 0 0 12px;
+    max-height: calc(100vh - 16rem);
   }
-}
 
-/* The corpus pairs, ahead of the types, set off by a hairline. */
-.pairChips {
-  display: flex;
-  flex: none;
-  gap: 0.35rem;
-  padding-right: 0.35rem;
-  margin-right: 0.05rem;
-  border-right: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  .filterTab {
+    display: block;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.6rem 0.4rem;
+    border: 0;
+    background: transparent;
+    color: var(--text-strong);
+    font: inherit;
+    font-size: 0.85rem;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.08em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .filter:not([data-open]) .filterBody {
+    display: none;
+  }
+
+  .filter[data-open] {
+    display: flex;
+    align-items: flex-start;
+    background: var(--surface);
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 0.45);
+  }
+
+  .filter[data-open] .filterBody {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
 }
 
 .chip {
@@ -103,6 +158,11 @@
 .count {
   font-variant-numeric: lining-nums;
   color: var(--text-muted);
+}
+
+/* On a pressed chip's gold tint the muted tone falls short of 4.5:1; the count takes the text's. */
+.chip[aria-pressed='true'] .count {
+  color: var(--text);
 }
 
 /* An arc's connections: a card at the right on wide screens, a sheet at the foot on phones. */
@@ -392,13 +452,34 @@
   cursor: pointer;
 }
 
-/* List mode: the filter sits in the page above the list instead of floating over it. */
+/* List mode: the filters sit in the page above the list instead of beside the sky. */
 .filter.filterInline {
   position: static;
   transform: none;
   margin: 1rem auto 0;
+  max-height: none;
   max-width: min(44rem, calc(100vw - 2rem));
   width: max-content;
-  flex-wrap: wrap;
+  padding: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
   border-radius: 1.2rem;
+}
+
+.filter.filterInline .filterTab {
+  display: none;
+}
+
+.filter.filterInline .filterBody,
+.filter.filterInline .filterBody > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter.filterInline .filterBody > div + div {
+  padding-top: 0;
+  border-top: 0;
+  padding-left: 0.5rem;
+  border-left: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
 }

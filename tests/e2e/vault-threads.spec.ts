@@ -17,12 +17,29 @@ const connections = [
     ? (JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as PublicConnections).connections
     : [],
 );
+// Only Old ↔ New is on at first (owner, 2026-11-20); the other pairs wait behind their chips.
+const all = connections;
+const onAtFirst = all.filter((c) => c.pair === 'ot-nt');
 const pairs = new Map<string, number>();
-for (const c of connections) {
+for (const c of onAtFirst) {
   const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
   pairs.set(k, (pairs.get(k) ?? 0) + 1);
 }
 const [busiest] = [...pairs].sort((a, b) => b[1] - a[1]);
+
+/** Every arc drawn (the arcs are a few joined paths; `__sasArcs` lists them one by one). */
+type ArcInfo = { key: string; count: number; pair: string; x: number; y: number };
+const drawn = (page: Page) =>
+  page.evaluate(() => (window as unknown as { __sasArcs?: () => ArcInfo[] }).__sasArcs?.() ?? []);
+const arcCount = (page: Page, pair?: string) =>
+  expect.poll(async () => (await drawn(page)).filter((a) => !pair || a.pair === pair).length);
+
+/** On phones the filters fold behind a tab on the right edge. */
+async function openFilters(page: Page) {
+  const tab = page.getByTestId('thread-filter-tab');
+  if ((await tab.isVisible()) && (await tab.getAttribute('aria-expanded')) !== 'true')
+    await tab.click();
+}
 
 async function threadsOn(page: Page) {
   await page.goto('/');
@@ -37,9 +54,11 @@ test.describe('Threads on the Vault', () => {
   test('draws one arc per pair of books, weighted, under 300 nodes', async ({ page }) => {
     await threadsOn(page);
     await expect(page.getByTestId('view-threads')).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.locator('[data-arc]')).toHaveCount(pairs.size);
+    await arcCount(page).toBe(pairs.size);
     const [key, n] = busiest!;
-    await expect(page.locator(`[data-arc="${key}"]`)).toHaveAttribute('data-count', String(n));
+    expect((await drawn(page)).find((a) => a.key === key)?.count).toBe(n);
+    // A few paths, whatever the number of arcs.
+    expect(await page.locator('[data-arc-bundle]').count()).toBeLessThan(40);
     const nodes = await page.evaluate(
       () => document.querySelector('[data-testid="vault-scene"]')!.querySelectorAll('*').length,
     );
@@ -48,16 +67,17 @@ test.describe('Threads on the Vault', () => {
 
   test('filters arcs by type', async ({ page }) => {
     await threadsOn(page);
-    const type = connections[0]!.type;
+    const type = onAtFirst[0]!.type;
     const without = new Set(
-      connections
+      onAtFirst
         .filter((c) => c.type !== type)
         .map((c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|')),
     );
+    await openFilters(page);
     await page.locator(`[data-testid="thread-filter"] [data-type="${type}"]`).click();
-    await expect(page.locator('[data-arc]')).toHaveCount(without.size);
+    await arcCount(page).toBe(without.size);
     await page.locator(`[data-testid="thread-filter"] [data-type="${type}"]`).click();
-    await expect(page.locator('[data-arc]')).toHaveCount(pairs.size);
+    await arcCount(page).toBe(pairs.size);
   });
 
   test('tapping an arc lists its connections, and one is followed into the reader', async ({
@@ -67,19 +87,23 @@ test.describe('Threads on the Vault', () => {
     // Tap an arc where nothing covers it: the first whose middle is open sky. (Arcs are one path
     // each; a tap is matched to the nearest arc.)
     const target = await page.evaluate(() => {
-      for (const path of document.querySelectorAll<SVGPathElement>('[data-arc]')) {
-        const m = path.getScreenCTM()!;
-        const pt = path.getPointAtLength(path.getTotalLength() / 2).matrixTransform(m);
-        const el = document.elementFromPoint(pt.x, pt.y);
+      const list =
+        (
+          window as unknown as {
+            __sasArcs?: () => { key: string; count: number; x: number; y: number }[];
+          }
+        ).__sasArcs?.() ?? [];
+      for (const a of list) {
+        const el = document.elementFromPoint(a.x, a.y);
         if (
           el &&
-          !el.closest('a, button') &&
-          pt.x > 0 &&
-          pt.y > 120 &&
-          pt.x < innerWidth &&
-          pt.y < innerHeight - 140
+          !el.closest('a, button, aside') &&
+          a.x > 0 &&
+          a.y > 120 &&
+          a.x < innerWidth &&
+          a.y < innerHeight - 140
         )
-          return { key: path.dataset.arc!, n: Number(path.dataset.count), x: pt.x, y: pt.y };
+          return { key: a.key, n: a.count, x: a.x, y: a.y };
       }
       return null;
     });
@@ -98,9 +122,7 @@ test.describe('Threads on the Vault', () => {
       results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical'),
     ).toEqual([]);
 
-    const c = connections.find(
-      (x) => [x.ends[0].bookId, x.ends[1].bookId].sort().join('|') === key,
-    )!;
+    const c = onAtFirst.find((x) => [x.ends[0].bookId, x.ends[1].bookId].sort().join('|') === key)!;
     await panel.locator(`[data-open-end="${c.id}:1"]`).click();
     await expect(page.locator('html')).toHaveAttribute('data-reader', c.ends[1].sectionId);
     expect(page.url()).toContain(`?thread=${c.id}#${c.ends[1].anchor}`);
@@ -128,7 +150,7 @@ test.describe('Threads on the Vault', () => {
 
   test('the panel shows each thread as a closed card, one open at a time', async ({ page }) => {
     const counts = new Map<string, number>();
-    for (const x of connections) {
+    for (const x of onAtFirst) {
       const k = [x.ends[0].bookId, x.ends[1].bookId].sort().join('|');
       counts.set(k, (counts.get(k) ?? 0) + 1);
     }
@@ -155,7 +177,7 @@ test.describe('Threads on the Vault', () => {
       .evaluate((a) =>
         a.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 })),
       );
-  const threaded = new Set(connections.flatMap((c) => c.ends.map((e) => e.bookId)));
+  const threaded = new Set(onAtFirst.flatMap((c) => c.ends.map((e) => e.bookId)));
 
   test('the first tap on a book shows its threads, the second goes into the book', async ({
     page,
@@ -166,16 +188,14 @@ test.describe('Threads on the Vault', () => {
     await expect(panel).toBeVisible();
     await expect(page.locator('#book-heading')).toBeFocused();
     expect(new URL(page.url()).pathname).toBe('/');
-    const n = connections.filter((c) => c.ends.some((e) => e.bookId === 'Luke')).length;
+    const n = onAtFirst.filter((c) => c.ends.some((e) => e.bookId === 'Luke')).length;
     await expect(page.locator('#book-heading')).toContainText(`${n} threads`);
     await expect(
       panel.locator('[data-book-group="drawsOn"] [data-book-row]').first(),
     ).toBeVisible();
     // Every other book's arcs dim.
-    const dimmed = await page
-      .locator('[data-arc]')
-      .evaluateAll((ps) => ps.filter((p) => getComputedStyle(p).opacity === '0.12').length);
-    expect(dimmed).toBeGreaterThan(0);
+    await expect(page.locator('[data-arc-bundle="dim"]').first()).toHaveCSS('opacity', '0.12');
+    await expect(page.locator('[data-arc-bundle="lit"]').first()).toBeAttached();
     await panel.evaluate((el) =>
       Promise.all(el.getAnimations({ subtree: true }).map((a) => a.finished)),
     );
@@ -238,7 +258,7 @@ test.describe('Threads on the Vault', () => {
     await page.getByRole('button', { name: 'List' }).click();
     // The busiest arc where a use is claimed (many threads inside a Testament claim none).
     const used = new Map<string, number>();
-    for (const c of connections.filter((c) => c.order.uses)) {
+    for (const c of onAtFirst.filter((c) => c.order.uses)) {
       const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
       used.set(k, (used.get(k) ?? 0) + 1);
     }
@@ -252,7 +272,7 @@ test.describe('Threads on the Vault', () => {
     await chip.click();
     const shown = await panel.locator('[data-panel-connection]').count();
     expect(shown).toBe(
-      connections.filter(
+      onAtFirst.filter(
         (c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === key && c.type === type,
       ).length,
     );
@@ -260,35 +280,67 @@ test.describe('Threads on the Vault', () => {
 
   test('arcs are plain lines; corpus pairs filter them', async ({ page }) => {
     await threadsOn(page);
-    const arcs = page.locator('[data-arc]');
     // Direction is shown on the cards, not on the arcs (owner, 2026-11-19): plain lines.
-    await expect(page.locator('[data-arc][marker-mid]')).toHaveCount(0);
-    // The pair chips: one per pair present, each a toggle.
+    await expect(page.locator('[data-testid="thread-arcs"] [marker-mid]')).toHaveCount(0);
+    // The pair chips: one per pair present, each a toggle; only Old ↔ New is on at first.
+    await openFilters(page);
     const chips = page.getByTestId('pair-filter').locator('[data-pair-chip]');
-    const present = [...new Set(connections.map((c) => c.pair))];
+    const present = [...new Set(all.map((c) => c.pair))];
     await expect(chips).toHaveCount(present.length);
+    await expect(page.locator('[data-pair-chip="ot-nt"]')).toHaveAttribute('aria-pressed', 'true');
     const nn = page.locator('[data-pair-chip="nt-nt"]');
+    await expect(nn).toHaveAttribute('aria-pressed', 'false');
+    await arcCount(page, 'nt-nt').toBe(0);
     const nnArcs = new Set(
-      connections
+      all
         .filter((c) => c.pair === 'nt-nt')
         .map((c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|')),
     );
-    await expect(page.locator('[data-arc][data-pair="nt-nt"]')).toHaveCount(nnArcs.size);
     await nn.click();
-    await expect(nn).toHaveAttribute('aria-pressed', 'false');
-    await expect(page.locator('[data-arc][data-pair="nt-nt"]')).toHaveCount(0);
-    await nn.click();
+    await expect(nn).toHaveAttribute('aria-pressed', 'true');
+    await arcCount(page, 'nt-nt').toBe(nnArcs.size);
     // With the Old Testament hidden, only threads inside the New are left.
     await page.getByTestId('testament-ot').click();
-    await expect(arcs).toHaveCount(nnArcs.size);
-    await expect(page.locator('[data-arc][data-pair="ot-nt"]')).toHaveCount(0);
+    await arcCount(page).toBe(nnArcs.size);
     await page.getByTestId('testament-ot').click();
+    // The choice is kept: after a reload, New ↔ New is still on.
+    await page.reload();
+    await expect(page.locator('html')).toHaveAttribute('data-vault', 'ready');
+    if ((await page.getByTestId('view-threads').getAttribute('aria-pressed')) !== 'true')
+      await page.getByTestId('view-threads').click();
+    await expect(page.locator('html')).toHaveAttribute('data-threads', 'ready');
+    await openFilters(page);
+    await expect(nn).toHaveAttribute('aria-pressed', 'true');
+    await arcCount(page, 'nt-nt').toBe(nnArcs.size);
+  });
+
+  test('the filters sit in a sidebar on the right', async ({ page }) => {
+    await threadsOn(page);
+    const bar = page.getByTestId('thread-filter');
+    const tab = page.getByTestId('thread-filter-tab');
+    // Phones fold it behind a tab on the right edge.
+    if (await tab.isVisible()) {
+      await expect(page.locator('[data-pair-chip="ot-nt"]')).toBeHidden();
+      await tab.click();
+      await expect(tab).toHaveAttribute('aria-expanded', 'true');
+    }
+    await expect(page.locator('[data-pair-chip="ot-nt"]')).toBeVisible();
+    const box = (await bar.boundingBox())!;
+    const width = page.viewportSize()!.width;
+    expect(box.x + box.width).toBeGreaterThan(width - 40);
+    expect(box.x).toBeGreaterThan(width / 2);
+    const results = await new AxeBuilder({ page })
+      .include('[data-testid="thread-filter"]')
+      .analyze();
+    expect(
+      results.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical'),
+    ).toEqual([]);
   });
 
   test('Themes turns Threads off', async ({ page }) => {
     await threadsOn(page);
     await page.getByTestId('view-themes').click();
     await expect(page.getByTestId('view-threads')).toHaveAttribute('aria-pressed', 'false');
-    await expect(page.locator('[data-arc]')).toHaveCount(0);
+    await expect(page.getByTestId('thread-arcs')).toHaveCount(0);
   });
 });
