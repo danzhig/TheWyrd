@@ -1,4 +1,2090 @@
 {
   "$comment": "Threads plan Part B: connections inside the New Testament, one book per PR, each draft until the owner approves it. Every connection states its order (older end, use, basis).",
-  "connections": []
+  "connections": [
+    {
+      "id": "luke-n01",
+      "from": "Luke.1.1-Luke.1.4",
+      "to": "Acts.1.1-Acts.1.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The first book, to Theophilus",
+      "explanation": "Acts 1:1–3 names Luke 1:1–4: Acts opens by addressing Theophilus again and calling the Gospel its first book. Luke's prologue promised Theophilus an ordered account drawn from eyewitnesses; Acts sums that book up as what Jesus began to do and teach until he was taken up. The two prefaces make the Gospel and Acts one work in two volumes.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274677"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250510"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250544"
+        },
+        {
+          "kind": "verse",
+          "ref": "Acts.1.1",
+          "words": ["first book", "Theophilus"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Luke.1.3",
+          "words": ["Theophilus"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5856b9487713df2c"
+      }
+    },
+    {
+      "id": "luke-n02",
+      "from": "Luke.24.49-Luke.24.53",
+      "to": "Acts.1.4-Acts.1.12",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The ascension told twice",
+      "explanation": "Acts 1:4–12 retells Luke 24:49–53: the second volume begins where the first ended, with the command to wait in Jerusalem for the Father's promise and Jesus taken up near the city. The Gospel closes at Bethany with a blessing and the disciples returning in joy; Acts adds the forty days, the cloud and the two men in white. Luke tells the same parting as an ending and as a beginning.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274758"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262844"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262843"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "acd2d12c34ce178c"
+      }
+    },
+    {
+      "id": "luke-n03",
+      "from": "Luke.3.16",
+      "to": "Acts.1.5",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Water and the Holy Spirit",
+      "explanation": "Acts 1:5 recalls Luke 3:16: before he is taken up, Jesus takes John the Baptist's contrast between baptism in water and baptism in the Holy Spirit and says it will come true within days. In the Gospel John spoke of one mightier than himself who would baptize with the Spirit and fire. Pentecost in the next chapter is told as that promise kept.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252212"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274778"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fbc3bc1689549b28"
+      }
+    },
+    {
+      "id": "luke-n04",
+      "from": "Luke.3.16",
+      "to": "Acts.11.16",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Peter remembers the word",
+      "explanation": "Acts 11:16 recalls Luke 3:16: defending his visit to Cornelius in Jerusalem, Peter says he remembered the Lord's word about John baptizing in water and the coming baptism in the Spirit. That word goes back to John's own answer at the Jordan, taken up by Jesus before the ascension. Peter reads the Spirit falling on Gentiles as the same promise reaching them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L280440"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d1a5f5acc8606858"
+      }
+    },
+    {
+      "id": "luke-n05",
+      "from": "Luke.3.16",
+      "to": "Acts.13.24-Acts.13.25",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Not worthy to untie his sandals",
+      "explanation": "Acts 13:24–25 quotes Luke 3:16: preaching in the synagogue at Pisidian Antioch, Paul recalls John the Baptist saying that one comes after him whose sandals he is not worthy to untie. The Gospel gives the saying at the Jordan, where John answers the crowds wondering whether he is the Christ. Paul uses it to present Jesus as the one John pointed to.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252205"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ca0064e1b2ca45c5"
+      }
+    },
+    {
+      "id": "luke-n06",
+      "from": "Luke.23.34-Luke.23.46",
+      "to": "Acts.7.59-Acts.7.60",
+      "type": "echo",
+      "strength": 3,
+      "label": "Stephen dies as Jesus died",
+      "explanation": "Acts 7:59–60 echoes Luke 23:34–46: Stephen, stoned outside the city, commits his spirit to the Lord Jesus and asks that this sin not be held against his killers. On the cross in Luke, Jesus prays for forgiveness for those who do not know what they do and commends his spirit to the Father. Luke writes the first martyr's last words on the pattern of his Lord's.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262335"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262196"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L278489"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9d37f809bb123f8b"
+      }
+    },
+    {
+      "id": "luke-n07",
+      "from": "Luke.6.12-Luke.6.16",
+      "to": "Acts.1.13",
+      "type": "echo",
+      "strength": 2,
+      "label": "The eleven named again",
+      "explanation": "Acts 1:13 echoes Luke 6:12–16: after the ascension Acts lists the apostles gathered in the upper room, the same names Luke gave when Jesus chose the twelve after a night of prayer. Judas Iscariot, named last in the Gospel as the one who became a traitor, is missing from the second list. The gap is filled later in the chapter when Matthias is chosen.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L253356"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L253370"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L253342"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0cb955c71df22a84"
+      }
+    },
+    {
+      "id": "luke-n08",
+      "from": "Luke.8.49-Luke.8.56",
+      "to": "Acts.9.36-Acts.9.42",
+      "type": "echo",
+      "strength": 3,
+      "label": "Get up: Jairus's daughter and Tabitha",
+      "explanation": "Acts 9:36–42 echoes Luke 8:49–56: at Joppa Peter sends everyone out of the room, prays, and tells the dead Tabitha to get up, and she opens her eyes and sits up. Peter had been one of the few Jesus let into the house of Jairus, where he put the mourners outside and told the dead girl to arise. Luke tells the disciple's miracle in the shape of the master's.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279591"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255126"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255099"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "027360bc2fedead8"
+      }
+    },
+    {
+      "id": "luke-n09",
+      "from": "Matt.6.9-Matt.6.13",
+      "to": "Luke.11.2-Luke.11.4",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Lord's Prayer in two Gospels",
+      "explanation": "Matthew 6:9–13 and Luke 11:2–4 both tell the prayer Jesus taught: the Father's name kept holy, the Kingdom, daily bread, forgiveness, and deliverance from temptation and the evil one. Matthew sets it in the Sermon on the Mount; Luke gives it when a disciple asks to be taught to pray, in a shorter form. Luke speaks of sins where Matthew speaks of debts.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L232826"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L232836"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256360"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "923560f2654a2af3"
+      }
+    },
+    {
+      "id": "luke-n10",
+      "from": "Matt.4.1-Matt.4.11",
+      "to": "Luke.4.1-Luke.4.13",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Three temptations in the wilderness",
+      "explanation": "Matthew 4:1–11 and Luke 4:1–13 both tell of Jesus tempted by the devil for forty days in the wilderness and answering each temptation from Deuteronomy. Bread from stones, the kingdoms of the world and the leap from the temple come in both, but Luke puts the temple last, so his account ends in Jerusalem. Luke adds that the devil left him until another time.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231271"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231218"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231260"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "88ee044ea9ffa666"
+      }
+    },
+    {
+      "id": "luke-n11",
+      "from": "Mark.9.2-Mark.9.8",
+      "to": "Luke.9.28-Luke.9.36",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Transfiguration",
+      "explanation": "Luke 9:28–36 retells Mark 9:2–8: Jesus is changed before Peter, James and John on a mountain, with Moses and Elijah, a cloud and a voice naming him the beloved Son. Luke adds that Jesus was praying and that the three spoke of the departure he would accomplish at Jerusalem. Both end with Jesus alone.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247016"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247079"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255424"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6df506c9facca437"
+      }
+    },
+    {
+      "id": "luke-n12",
+      "from": "Matt.5.3-Matt.5.12",
+      "to": "Luke.6.20-Luke.6.23",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Beatitudes",
+      "explanation": "Matthew 5:3–12 and Luke 6:20–23 both tell the blessings that open Jesus' great sermon: on the poor, the hungry, those who mourn or weep, and those reviled for his sake, like the prophets before them. Matthew has nine on a mountain and speaks of the poor in spirit; Luke has four on a level place, followed by four woes.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231629"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231747"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231901"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8cb58ca59cea952b"
+      }
+    },
+    {
+      "id": "luke-n13",
+      "from": "Matt.1.1-Matt.1.17",
+      "to": "Luke.3.23-Luke.3.38",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Two genealogies of Jesus",
+      "explanation": "Matthew 1:1–17 and Luke 3:23–38 both tell the descent of Jesus through Joseph, sharing the line from Abraham to David. Matthew runs forward from Abraham in three sets of fourteen and follows the kings through Solomon; Luke runs backward from Jesus through Nathan, David's son, to Adam and God. The two lists part between David and Joseph.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230208"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230380"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252289"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "17fb8ec6d069d9fd"
+      }
+    },
+    {
+      "id": "luke-n14",
+      "from": "Matt.1.18-Matt.1.25",
+      "to": "Luke.1.26-Luke.1.38",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The annunciation to Joseph and to Mary",
+      "explanation": "Matthew 1:18–25 and Luke 1:26–38 both tell of a virgin betrothed to Joseph of David's line, the child conceived by the Holy Spirit, and an angel giving the name Jesus. Matthew tells it from Joseph's side, in a dream that stops him from sending Mary away; Luke tells it from Mary's, with Gabriel at Nazareth and her consent.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230468"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250845"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250847"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7236a146aeb5b333"
+      }
+    },
+    {
+      "id": "luke-n15",
+      "from": "Matt.2.1",
+      "to": "Luke.2.1-Luke.2.7",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Born in Bethlehem",
+      "explanation": "Matthew 2:1 and Luke 2:1–7 both tell that Jesus was born at Bethlehem in Judea, David's town. Matthew dates it to the days of King Herod and moves on to the wise men; Luke brings Joseph and Mary from Nazareth for Augustus's census and lays the child in a manger. Neither account names the other's reason for Bethlehem.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230536"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L251477"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3fbd624a0596af9c"
+      }
+    },
+    {
+      "id": "luke-n16",
+      "from": "Mark.6.1-Mark.6.6",
+      "to": "Luke.4.16-Luke.4.30",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Rejected at Nazareth",
+      "explanation": "Luke 4:16–30 retells Mark 6:1–6: Jesus teaches in his home town's synagogue on the Sabbath, the people take offence at one they knew, and he says a prophet is not honoured in his own country. Luke moves the scene to the start of the ministry and has Jesus read from Isaiah; there the town tries to throw him from a cliff.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245853"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245822"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252622"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "19f751dfb32acd90"
+      }
+    },
+    {
+      "id": "luke-n17",
+      "from": "Mark.4.1-Mark.4.20",
+      "to": "Luke.8.4-Luke.8.15",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The parable of the sower",
+      "explanation": "Luke 8:4–15 retells Mark 4:1–20: Jesus tells of seed falling on the road, the rock, among thorns and in good soil, and explains it to the disciples as the word heard in four ways. Mark sets Jesus in a boat by the sea; Luke has a crowd from every town. Luke's good soil holds the word fast with an honest heart and bears fruit with patience.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245274"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L254616"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245155"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9c0779fb16ffa193"
+      }
+    },
+    {
+      "id": "luke-n18",
+      "from": "Mark.8.27-Mark.8.31",
+      "to": "Luke.9.18-Luke.9.22",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Who do you say that I am?",
+      "explanation": "Luke 9:18–22 retells Mark 8:27–31: Jesus asks who people say he is, Peter names him the Christ, and Jesus orders silence and first says that the Son of Man must suffer. Mark places it near Caesarea Philippi; Luke sets it while Jesus prays alone.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246788"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246804"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246809"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "04da3b75e73ded10"
+      }
+    },
+    {
+      "id": "luke-n19",
+      "from": "Mark.14.22-Mark.14.25",
+      "to": "Luke.22.14-Luke.22.20",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Last Supper",
+      "explanation": "Luke 22:14–20 retells Mark 14:22–25: at the supper Jesus breaks bread as his body, gives the cup of the covenant in his blood, and vows not to drink of the vine again until the Kingdom. Luke has two cups, one before the bread and one after supper, and adds the command to do this in memory of him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261453"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249452"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261424"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ff185def2ca918f6"
+      }
+    },
+    {
+      "id": "luke-n20",
+      "from": "Mark.15.33-Mark.15.41",
+      "to": "Luke.23.44-Luke.23.49",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The death of Jesus",
+      "explanation": "Luke 23:44–49 retells Mark 15:33–41: darkness falls from the sixth to the ninth hour, the temple veil is torn, Jesus cries out and dies, and a centurion speaks while women watch from afar. In Mark Jesus cries the opening of Psalm 22 and the centurion calls him God's Son; in Luke he commends his spirit to the Father and the centurion calls him righteous.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262337"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262323"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250146"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5017bf8c4e844ed9"
+      }
+    },
+    {
+      "id": "luke-n21",
+      "from": "Mark.16.1-Mark.16.8",
+      "to": "Luke.24.1-Luke.24.11",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The women at the empty tomb",
+      "explanation": "Luke 24:1–11 retells Mark 16:1–8: the women come with spices at dawn on the first day of the week, find the stone rolled away and the body gone, and hear that Jesus is risen. Mark has one young man in white and women who flee and say nothing; Luke has two men in dazzling clothes and women who tell the eleven, who do not believe them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262425"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250270"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262408"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a68fca5d0045e495"
+      }
+    },
+    {
+      "id": "luke-n22",
+      "from": "Matt.18.12-Matt.18.14",
+      "to": "Luke.15.3-Luke.15.7",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The lost sheep",
+      "explanation": "Matthew 18:12–14 and Luke 15:3–7 both tell the parable of the man with a hundred sheep who leaves the ninety-nine to find the one that went astray and rejoices over it. In Matthew it teaches care for the little ones within the community; in Luke it answers those who grumble that Jesus eats with sinners, and ends in joy in heaven over one who repents.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L258418"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238565"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L258351"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Matthew and Luke wrote independently, each drawing on Mark and a shared collection of sayings, while Augustine held that the Gospels were written in the order Matthew, Mark, Luke, John, so whether Luke knew Matthew is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ccd1f4f6031c546b"
+      }
+    },
+    {
+      "id": "luke-n23",
+      "from": "Luke.10.38-Luke.10.42",
+      "to": "John.11.1-John.11.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "Martha and Mary",
+      "explanation": "Luke 10:38–42 and John 11:1–5 both tell of the sisters Martha and Mary as friends of Jesus. In Luke Martha is busy serving while Mary sits at his feet listening; in John they live at Bethany with their brother Lazarus, and send word when he falls sick. John's chapter keeps the pattern, with Martha going out to meet Jesus while Mary stays in the house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256241"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L269189"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L256251"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "70e99c29b7f06af4"
+      }
+    },
+    {
+      "id": "luke-n24",
+      "from": "Luke.16.19-Luke.16.31",
+      "to": "John.11.38-John.11.44",
+      "type": "contrast",
+      "strength": 2,
+      "label": "Two men named Lazarus",
+      "explanation": "Luke 16:19–31 is set against John 11:38–44: in Jesus' parable Abraham says that those who will not hear Moses and the prophets will not be persuaded even if someone rises from the dead. In John a man of the same name, Lazarus of Bethany, is called out of his tomb after four days. The chapter goes on to show some believing and the council resolving to kill Jesus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L259156"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ee80845f90fa02e4"
+      }
+    },
+    {
+      "id": "luke-n25",
+      "from": "Luke.24.12",
+      "to": "John.20.3-John.20.10",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Peter runs to the tomb",
+      "explanation": "Luke 24:12 and John 20:3–10 both tell of Peter running to the tomb, stooping to look in, and seeing the linen cloths lying there before going home. John has a second disciple outrun Peter, and Peter go into the tomb and see the head cloth rolled up apart. In Luke Peter leaves wondering; in John the other disciple sees and believes.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274078"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262469"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "99499b3cb3feb4c8"
+      }
+    },
+    {
+      "id": "luke-n26",
+      "from": "Luke.5.1-Luke.5.11",
+      "to": "John.21.1-John.21.11",
+      "type": "parallel",
+      "strength": 3,
+      "label": "A night without fish, then the nets full",
+      "explanation": "Luke 5:1–11 and John 21:1–11 both tell of Simon Peter and his partners fishing all night and catching nothing, until Jesus tells them where to let down the nets and the catch is too great to haul. In Luke it comes at the call of the first disciples on the lake of Gennesaret; in John it comes after the resurrection at the sea of Tiberias, where Jesus waits on the shore.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252826"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274470"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L252830"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "41f9d1f29f0e985f"
+      }
+    },
+    {
+      "id": "luke-n27",
+      "from": "Luke.24.36-Luke.24.43",
+      "to": "John.20.19-John.20.23",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Peace be to you",
+      "explanation": "Luke 24:36–43 and John 20:19–23 both tell of the risen Jesus standing among the disciples on the evening of the first day, greeting them with peace and showing them his wounds. Luke has them think he is a spirit until he eats a piece of fish before them; John has him breathe on them and give them the Holy Spirit and authority to forgive sins.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L274260"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262628"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L262647"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5335b88da5f1535c"
+      }
+    },
+    {
+      "id": "luke-n28",
+      "from": "Luke.9.10-Luke.9.17",
+      "to": "John.6.1-John.6.14",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Five thousand fed",
+      "explanation": "Luke 9:10–17 and John 6:1–14 both tell of Jesus feeding five thousand men with five loaves and two fish, the people made to sit down and twelve baskets of pieces left over. Luke places it near Bethsaida after the apostles return; John puts it on a mountain across the sea near Passover, names Philip and Andrew and a boy with barley loaves, and has the crowd call Jesus the prophet.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L265880"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255255"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L255267"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2da41739a656a7ab"
+      }
+    },
+    {
+      "id": "luke-n29",
+      "from": "Luke.7.36-Luke.7.50",
+      "to": "John.12.1-John.12.8",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A woman anoints his feet",
+      "explanation": "Luke 7:36–50 and John 12:1–8 both tell of a woman at a meal who anoints Jesus' feet with costly ointment and wipes them with her hair. In Luke she is a sinner in the house of Simon the Pharisee, and Jesus answers his host with a parable of two debtors and forgives her; in John she is Mary of Bethany, Judas objects, and Jesus speaks of his burial.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L269832"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L254334"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L269838"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "181c95fb1747fe30"
+      }
+    },
+    {
+      "id": "luke-n30",
+      "from": "Luke.22.47-Luke.22.53",
+      "to": "John.18.1-John.18.11",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The arrest and the servant's ear",
+      "explanation": "Luke 22:47–53 and John 18:1–11 both tell of Judas bringing an armed party to take Jesus, and a disciple cutting off the right ear of the high priest's servant. Luke has Judas come to kiss Jesus and Jesus heal the ear; John names Peter and the servant Malchus, and has the soldiers fall back when Jesus says he is the one they seek.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L273353"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261752"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L273294"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e33aec31314d73d1"
+      }
+    },
+    {
+      "id": "luke-n31",
+      "from": "Luke.23.1-Luke.23.25",
+      "to": "John.18.28-John.19.16",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Before Pilate",
+      "explanation": "Luke 23:1–25 and John 18:28–19:16 both tell of Pilate asking Jesus if he is the King of the Jews, finding no basis for a charge, and giving in to a crowd that demands Barabbas and a crucifixion. Luke adds the hearing before Herod and Pilate's three declarations of innocence; John gives the dialogue about kingship and truth inside the Praetorium.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L273623"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261997"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261948"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9fccdce3edc842e3"
+      }
+    },
+    {
+      "id": "luke-n32",
+      "from": "Luke.22.19-Luke.22.20",
+      "to": "1Cor.11.23-1Cor.11.25",
+      "type": "parallel",
+      "strength": 3,
+      "label": "This is my body: the Gospel and Paul",
+      "explanation": "Luke 22:19–20 and 1 Corinthians 11:23–25 both tell the words over the bread and cup on the night Jesus was betrayed: his body, the new covenant in his blood, and the command to do this in his memory. Paul hands it on to the Corinthians as received from the Lord. Luke and Paul agree closely here, against Mark and Matthew, in the cup after supper.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L261451"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L299327"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L299356"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3d4e13cdde7a637b"
+      }
+    },
+    {
+      "id": "luke-n33",
+      "from": "Luke.10.7",
+      "to": "1Tim.5.18",
+      "type": "quotation",
+      "strength": 2,
+      "label": "The laborer is worthy of his wages",
+      "explanation": "Luke 10:7 and 1 Timothy 5:18 both tell the saying that a laborer deserves his pay. In Luke Jesus says it when he sends out the seventy, to let them stay and eat where they are received; in First Timothy it follows a line from Deuteronomy about the ox treading grain, both brought in as Scripture to argue that elders who teach should be paid.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L320626"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c3bbc07ebb5794c"
+      }
+    },
+    {
+      "id": "acts-n01",
+      "from": "2Cor.11.32-2Cor.11.33",
+      "to": "Acts.9.23-Acts.9.25",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Let down the wall in a basket",
+      "explanation": "2 Corinthians 11:32–33 and Acts 9:23–25 both tell of Paul escaping Damascus by night, let down through the city wall in a basket. Paul blames the governor under King Aretas, who guarded the city to seize him, and counts the flight among his humiliations; Acts says the Jews plotted to kill him and watched the gates, and his disciples lowered him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279360"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279367"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L305118"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "43477829b7a0361e"
+      }
+    },
+    {
+      "id": "acts-n02",
+      "from": "2Cor.11.25",
+      "to": "Acts.14.19-Acts.14.20",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Once I was stoned",
+      "explanation": "2 Corinthians 11:25 and Acts 14:19–20 both tell of Paul being stoned. In the list of his sufferings Paul says he was stoned once; Acts tells of it at Lystra, where Jews from Antioch and Iconium won over the crowd, and Paul was dragged out of the city as dead before he got up and went back in.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282195"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L304988"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "17fa3c19b8fdee8a"
+      }
+    },
+    {
+      "id": "acts-n03",
+      "from": "1Thess.2.2",
+      "to": "Acts.16.19-Acts.16.24",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Shamefully treated at Philippi",
+      "explanation": "1 Thessalonians 2:2 and Acts 16:19–24 both tell of the harm Paul suffered at Philippi before he came to Thessalonica. Paul reminds the Thessalonians that he had been shamefully treated there and still spoke boldly; Acts tells how he and Silas were dragged before the magistrates, beaten with rods and put in the stocks.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L283192"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L316361"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "023baf494675135a"
+      }
+    },
+    {
+      "id": "acts-n04",
+      "from": "Rom.16.3-Rom.16.4",
+      "to": "Acts.18.1-Acts.18.3",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Prisca and Aquila",
+      "explanation": "Romans 16:3–4 and Acts 18:1–3 both tell of the couple Aquila and Prisca, or Priscilla, as Paul's fellow workers. Paul greets them as having risked their necks for his life; Acts tells how he met them at Corinth after Claudius expelled the Jews from Rome, lodged with them and worked with them at their trade of tent making.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L283936"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L295393"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ff1a8ca61cc7c022"
+      }
+    },
+    {
+      "id": "acts-n05",
+      "from": "1Cor.3.4-1Cor.3.6",
+      "to": "Acts.18.24-Acts.18.28",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Apollos waters",
+      "explanation": "1 Corinthians 3:4–6 and Acts 18:24–28 both tell of Apollos following Paul at Corinth. Paul tells the Corinthians, divided between his name and Apollos's, that he planted, Apollos watered and God gave the growth; Acts introduces Apollos as an eloquent Alexandrian, taught more exactly by Priscilla and Aquila, who went on to Achaia and helped the believers there.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L284244"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296657"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296660"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0a271a3201af1fdf"
+      }
+    },
+    {
+      "id": "acts-n06",
+      "from": "Phil.3.5",
+      "to": "Acts.23.6",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A Pharisee",
+      "explanation": "Philippians 3:5 and Acts 23:6 both tell that Paul was a Pharisee. In Philippians he lists it among the credentials he now counts as loss for Christ; in Acts he cries it out before the council, a son of Pharisees on trial for the hope of the resurrection, and divides the Pharisees from the Sadducees.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L313013"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L286038"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b5fd81a734c0b7c0"
+      }
+    },
+    {
+      "id": "acts-n07",
+      "from": "Gal.1.14",
+      "to": "Acts.22.3",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Zealous for the traditions",
+      "explanation": "Galatians 1:14 and Acts 22:3 both tell of Paul's zeal in his former life. In Galatians he says he outstripped others of his age in Judaism, zealous for the traditions of his fathers; in Acts, speaking to the crowd in Jerusalem, he says he was raised there at the feet of Gamaliel in the strict law of the fathers.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L305965"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L285744"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "92493f40d0c93773"
+      }
+    },
+    {
+      "id": "acts-n08",
+      "from": "Gal.1.18-Gal.1.24",
+      "to": "Acts.9.26-Acts.9.30",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Paul's first visit to Jerusalem",
+      "explanation": "Galatians 1:18–24 and Acts 9:26–30 both tell of Paul going up to Jerusalem after his turning and then leaving for Syria and Cilicia. Galatians says he went after three years, saw only Peter and James for fifteen days, and swears to it; Acts says Barnabas brought him to the apostles, he preached boldly, and the believers sent him off to Tarsus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306061"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279417"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306076"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "36016b287518d29b"
+      }
+    },
+    {
+      "id": "acts-n09",
+      "from": "Gal.2.1-Gal.2.10",
+      "to": "Acts.15.1-Acts.15.29",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The meeting in Jerusalem",
+      "explanation": "Galatians 2:1–10 and Acts 15:1–29 both tell of Paul and Barnabas going up to Jerusalem over whether Gentile believers must be circumcised, and of Peter and James siding with them. Galatians stresses a private meeting and the request to remember the poor; Acts gives a public assembly and a letter. Whether the two tell the same visit is itself debated.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282323"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282416"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282691"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "851012af1081c6f8"
+      }
+    },
+    {
+      "id": "acts-n10",
+      "from": "1Cor.15.8",
+      "to": "Acts.9.3-Acts.9.6",
+      "type": "parallel",
+      "strength": 3,
+      "label": "He appeared to me also",
+      "explanation": "1 Corinthians 15:8 and Acts 9:3–6 both tell of the risen Jesus appearing to Paul. In First Corinthians Paul lists himself last among the witnesses, as one untimely born; Acts tells it as a light from heaven on the road to Damascus and a voice asking Saul why he persecutes him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279051"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L300614"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8c344aedf62354d8"
+      }
+    },
+    {
+      "id": "acts-n11",
+      "from": "Gal.1.15-Gal.1.16",
+      "to": "Acts.26.16-Acts.26.18",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Sent to the Gentiles",
+      "explanation": "Galatians 1:15–16 and Acts 26:16–18 both tell that Paul's call was a commission to the Gentiles. Galatians says God, who set him apart from birth, revealed his Son in him so that he would preach him among the nations; in Acts, before Agrippa, Paul gives the words of the risen Jesus sending him to open their eyes and turn them from darkness to light.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306032"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "275e32f9fd84aad5"
+      }
+    },
+    {
+      "id": "acts-n12",
+      "from": "Rom.3.28",
+      "to": "Acts.13.38-Acts.13.39",
+      "type": "echo",
+      "strength": 2,
+      "label": "Justified apart from the law",
+      "explanation": "Romans 3:28 and Acts 13:38–39 both tell that a person is justified through faith and not by the law. Romans states it as the conclusion of Paul's argument; in Acts it is the close of his first recorded sermon, at Pisidian Antioch, offering forgiveness through Jesus to everyone who believes.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289799"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Acts and on the undisputed letters of Paul (date of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "863dbb0e2a0dc9c7"
+      }
+    },
+    {
+      "id": "acts-n13",
+      "from": "Matt.27.3-Matt.27.8",
+      "to": "Acts.1.18-Acts.1.19",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The field of blood",
+      "explanation": "Matthew 27:3–8 and Acts 1:18–19 both tell of Judas's death and a field near Jerusalem called the field of blood. In Matthew he throws the silver into the temple and hangs himself, and the priests buy a potter's field with the money; in Acts he buys a field himself and falls headlong. The two accounts differ, but agree on the name.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L275030"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243286"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243299"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "905b697565ff7f48"
+      }
+    },
+    {
+      "id": "acts-n14",
+      "from": "Mark.14.57-Mark.14.58",
+      "to": "Acts.6.13-Acts.6.14",
+      "type": "parallel",
+      "strength": 2,
+      "label": "False witnesses about the temple",
+      "explanation": "Mark 14:57–58 and Acts 6:13–14 both tell of false witnesses claiming to have heard that Jesus would destroy the temple. At Jesus' trial they quote him as promising to build another not made with hands; at Stephen's they accuse him of saying Jesus would destroy this place and change the customs of Moses. Stephen's trial follows his Lord's.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249757"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L277724"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "17e883422cf2c7cb"
+      }
+    },
+    {
+      "id": "acts-n15",
+      "from": "Mark.10.38-Mark.10.39",
+      "to": "Acts.12.1-Acts.12.2",
+      "type": "fulfilment",
+      "strength": 2,
+      "label": "The cup James would drink",
+      "explanation": "Mark 10:38–39 and Acts 12:1–2 both tell what became of James, the son of Zebedee. When James and John asked for the places of honour, Jesus told them they would drink his cup and share his baptism; Acts records in one line that Herod killed James, the brother of John, with the sword.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247943"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L280689"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "79374b33e4229771"
+      }
+    },
+    {
+      "id": "acts-n16",
+      "from": "Mark.7.18-Mark.7.19",
+      "to": "Acts.10.9-Acts.10.16",
+      "type": "echo",
+      "strength": 2,
+      "label": "All foods clean",
+      "explanation": "Mark 7:18–19 and Acts 10:9–16 both tell that the food laws no longer divide. Mark notes that Jesus' saying about what goes into a man made all foods clean; in Acts Peter, shown unclean animals in a vision, refuses to eat and hears that what God has cleansed he must not call common. The vision opens the way to Cornelius's house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L279846"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246392"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem (the priority of Mark)"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "first Matthew, then Mark, thirdly Luke, lastly John"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6a5b8b091b57c883"
+      }
+    },
+    {
+      "id": "acts-n17",
+      "from": "Acts.12.12",
+      "to": "Col.4.10",
+      "type": "parallel",
+      "strength": 1,
+      "label": "John Mark",
+      "explanation": "Acts 12:12 and Colossians 4:10 both tell of the Mark who went with Paul and Barnabas. Acts names his mother Mary, whose house in Jerusalem Peter went to after his escape; Colossians calls him the cousin of Barnabas and says he is with Paul and should be welcomed.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315943"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L280837"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "28c07a7a9df0f8a4"
+      }
+    },
+    {
+      "id": "acts-n18",
+      "from": "Acts.15.36-Acts.15.40",
+      "to": "2Tim.4.11",
+      "type": "contrast",
+      "strength": 2,
+      "label": "Mark, refused and asked for",
+      "explanation": "Acts 15:36–40 is set against 2 Timothy 4:11: Paul refuses to take Mark on a second journey because he left them in Pamphylia, and parts from Barnabas over it. In Second Timothy Paul asks Timothy to bring Mark with him, as useful for the ministry.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L322864"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282837"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3705c4fd128e8bbd"
+      }
+    },
+    {
+      "id": "acts-n19",
+      "from": "Acts.16.1-Acts.16.3",
+      "to": "2Tim.1.5",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Timothy's mother",
+      "explanation": "Acts 16:1–3 and 2 Timothy 1:5 both tell of Timothy's family. Acts says he was the son of a believing Jewish woman and a Greek father, and that Paul took him along from Lystra; Second Timothy names his mother Eunice and grandmother Lois, in whom his sincere faith lived first.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L321376"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282904"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "73e82bd3e09c3315"
+      }
+    },
+    {
+      "id": "acts-n20",
+      "from": "Acts.14.19-Acts.14.20",
+      "to": "2Tim.3.11",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Antioch, Iconium and Lystra",
+      "explanation": "Acts 14:19–20 and 2 Timothy 3:11 both tell of the persecutions Paul suffered at Antioch, Iconium and Lystra. Acts gives the story, ending in his stoning at Lystra by Jews from the other two cities; Second Timothy names the three places together and says the Lord rescued him from them all.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L282192"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L322474"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2aab81d060b4bb7c"
+      }
+    }
+  ]
 }

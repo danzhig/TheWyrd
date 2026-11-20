@@ -79,6 +79,8 @@ export function basisText(o: ThreadOrder, older?: ThreadEnd): string {
       return 'Typology: the reading of one passage as a figure of the other is a Church Father’s (see the sources).';
     case 'disputed':
       return o.note ?? 'The order of writing is disputed.';
+    case 'unstated':
+      return 'No order of writing is claimed: the two passages are set side by side.';
     default:
       return 'Which passage was written first is not stated for this thread.';
   }

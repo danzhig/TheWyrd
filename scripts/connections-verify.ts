@@ -72,7 +72,7 @@ const notes = new Map<string, string[]>();
 for (const c of connections) {
   const problems: string[] = [];
   const ok: string[] = [];
-  for (const s of c.sources) {
+  for (const s of [...c.sources, ...(c.order?.sources ?? [])]) {
     if (s.kind === 'xref') {
       const r = xrefs.get(s.row);
       const links =
@@ -187,30 +187,36 @@ const count = (list: Connection[]) =>
   `${list.length} connections; ${list.filter((c) => c.status === 'verified').length} verified; ${list.filter((c) => results.get(c.id)!.length).length} failing a check.`;
 const docs = new Map<string, string[]>();
 const seeds = connections.filter((c) => /^s\d/.test(c.id));
-docs.set('seeds', [
-  '# Threads: the seed connections',
-  '',
-  `Written by \`pnpm connections:verify\` from \`content/connections/connections.json\`. Each seed from PLAN §14 with its type, strength (3 = explicit quotation or named reference), the sections its ends fall in, its explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS} Interpretive readings (typology, and the reading of Pentecost against Babel) rest on the Fathers cited; the rest describe what the texts show.`,
-  '',
-  APPROVAL,
-  '',
-  count(seeds),
-  '',
-  ...seeds.flatMap(section),
-]);
+// A within file (threads plan §7) writes its own documents, `<Book>-<pair>-connections.md`, and
+// never the seeds' or the first set's.
+const within = /within-(ot|nt)\.json$/.exec(SOURCE);
+const SUFFIX = within ? `-${within[1]}-${within[1]}` : '';
+if (seeds.length)
+  docs.set('seeds', [
+    '# Threads: the seed connections',
+    '',
+    `Written by \`pnpm connections:verify\` from \`content/connections/connections.json\`. Each seed from PLAN §14 with its type, strength (3 = explicit quotation or named reference), the sections its ends fall in, its explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS} Interpretive readings (typology, and the reading of Pentecost against Babel) rest on the Fathers cited; the rest describe what the texts show.`,
+    '',
+    APPROVAL,
+    '',
+    count(seeds),
+    '',
+    ...seeds.flatMap(section),
+  ]);
 const byBook = new Map<string, Connection[]>();
 for (const c of connections.filter((x) => !/^s\d/.test(x.id))) {
   // The book it was proposed for: the end whose book the id's prefix names (`luk…` → Luke), else
   // the first end's book.
   const ends = [c.from, c.to].map((r) => r.split('.')[0]!);
-  const b = ends.find((x) => x.toLowerCase().startsWith(c.id.slice(0, 3))) ?? ends[0]!;
+  const b =
+    ends.find((x) => x.toLowerCase().startsWith(c.id.split('-')[0]!.slice(0, 3))) ?? ends[0]!;
   byBook.set(b, [...(byBook.get(b) ?? []), c]);
 }
 for (const [book, list] of byBook)
-  docs.set(`${book}-connections`, [
-    `# Threads: connections from ${CANON_BY_ID.get(book)?.name ?? book}`,
+  docs.set(`${book}${SUFFIX}-connections`, [
+    `# Threads: connections from ${CANON_BY_ID.get(book)?.name ?? book}${within ? ` (inside the ${within[1] === 'ot' ? 'Old' : 'New'} Testament)` : ''}`,
     '',
-    `Written by \`pnpm connections:verify\` from \`content/connections/connections.json\`: the connections drafted from \`docs/connections/${book}-candidates.md\` (P4.4), each with its type, strength (3 = explicit quotation or named reference), sections, explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS}`,
+    `Written by \`pnpm connections:verify\` from \`${SOURCE}\`: the connections drafted from \`docs/connections/${book}${SUFFIX}-candidates.md\` (${within ? 'threads plan §7' : 'P4.4'}), each with its type, strength (3 = explicit quotation or named reference), sections, explanation (original prose; no scripture beyond a few words) and every citation, ${CHECKS}`,
     '',
     APPROVAL,
     '',

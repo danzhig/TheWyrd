@@ -359,6 +359,15 @@ Two cases to watch:
 
 TD1 can start as soon as TD0 lands. TD2 is content work and can run beside TD3 and TD4. TX1 and TX2 can start any time; TX5 and TX6 wait for TD2's wording rule and TX2's tools, and can run in parallel.
 
+**TX5 and TX6 done (2026-11-20, owner pre-approved, one PR for all books rather than one per book).** 153 Old ↔ Old threads (every Old Testament path book, `content/connections/within-ot.json`) and 53 New ↔ New threads (Luke, John 11 and Acts against the whole New Testament, `within-nt.json`), each approved with its fingerprint. The order of writing, as stated on each:
+
+- `text`: the later passage names, quotes or retells the earlier (Acts 1:1 names Luke's "first book", so Luke → Acts uses are `text`).
+- `consensus`: Chronicles drawing on Samuel–Kings and Genesis (Japhet); Paul's undisputed letters older than Acts, no use claimed (Brown); Luke retelling Mark (Brown, with Augustine's order, which also puts Mark before Luke).
+- `disputed`: Matthew ↔ Luke, citing Brown (independent use of Mark and a sayings source) and Augustine (_Harmony of the Gospels_ I.2, the order Matthew, Mark, Luke, John).
+- `unstated` (new basis: older end unknown, no use claimed): parallels and echoes whose order of writing the texts do not show, among them Luke ↔ John and Acts ↔ the Pastoral letters and Colossians.
+
+Review documents: `docs/connections/<Book>-ot-ot-connections.md` and `<Book>-nt-nt-connections.md`, filed by the id's book prefix. Pairs the WEBC does not support were dropped, not reworded around (for example Esther 3:1, where the WEBC reads "Bougean", not Agagite).
+
 ## 11. Rough size
 
 These are guesses until TX2's sizing report.
