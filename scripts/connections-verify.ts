@@ -72,7 +72,7 @@ const notes = new Map<string, string[]>();
 for (const c of connections) {
   const problems: string[] = [];
   const ok: string[] = [];
-  for (const s of c.sources) {
+  for (const s of [...c.sources, ...(c.order?.sources ?? [])]) {
     if (s.kind === 'xref') {
       const r = xrefs.get(s.row);
       const links =

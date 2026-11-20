@@ -7,9 +7,16 @@ import type { PublicConnections } from '../../lib/types';
  * Threads on the Vault (PLAN §14, P4.3): gold arcs between medallions weighted by connections,
  * a filter by type, an arc's connections in a panel, and each one followed into the reader.
  */
-const connections = (
-  JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as PublicConnections
-).connections;
+// Every published file: Old ↔ New and the threads inside each Testament (Threads mode loads all).
+const connections = [
+  'connections.json',
+  'connections-within-ot.json',
+  'connections-within-nt.json',
+].flatMap((f) =>
+  fs.existsSync(`public/data/${f}`)
+    ? (JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as PublicConnections).connections
+    : [],
+);
 const pairs = new Map<string, number>();
 for (const c of connections) {
   const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
@@ -229,9 +236,16 @@ test.describe('Threads on the Vault', () => {
   test("an arc's panel says which way its threads run and filters by type", async ({ page }) => {
     await threadsOn(page);
     await page.getByRole('button', { name: 'List' }).click();
-    await page.locator(`[data-arc-item="${busiest![0]}"]`).click();
+    // The busiest arc where a use is claimed (many threads inside a Testament claim none).
+    const used = new Map<string, number>();
+    for (const c of connections.filter((c) => c.order.uses)) {
+      const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
+      used.set(k, (used.get(k) ?? 0) + 1);
+    }
+    const [key] = [...used].sort((a, b) => b[1] - a[1])[0]!;
+    await page.locator(`[data-arc-item="${key}"]`).click();
     const panel = page.getByTestId('arc-panel');
-    await expect(page.locator('#arc-heading')).toContainText(`${busiest![1]} threads`);
+    await expect(page.locator('#arc-heading')).toContainText(`${pairs.get(key)} threads`);
     await expect(panel.getByTestId('arc-summary')).toContainText('draws on');
     const chip = panel.locator('[data-panel-type]').first();
     const type = await chip.getAttribute('data-panel-type');
@@ -239,8 +253,7 @@ test.describe('Threads on the Vault', () => {
     const shown = await panel.locator('[data-panel-connection]').count();
     expect(shown).toBe(
       connections.filter(
-        (c) =>
-          [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === busiest![0] && c.type === type,
+        (c) => [c.ends[0].bookId, c.ends[1].bookId].sort().join('|') === key && c.type === type,
       ).length,
     );
   });

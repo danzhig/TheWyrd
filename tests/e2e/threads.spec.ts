@@ -7,14 +7,25 @@ import type { PublicConnections } from '../../lib/types';
  * Threads in the reader (PLAN §14, P4.2): a verse's glyph opens its cards; "Go there" opens the
  * other end with the way back; only verified connections appear (drafts stay hidden, check 13).
  */
-const published = (
-  JSON.parse(fs.readFileSync('public/data/connections.json', 'utf8')) as PublicConnections
-).connections;
-const content = (
-  JSON.parse(fs.readFileSync('content/connections/connections.json', 'utf8')) as {
-    connections: { id: string; status: string }[];
-  }
-).connections;
+// Every published file: the reader shows Old ↔ New and the threads inside each Testament.
+const published = [
+  'connections.json',
+  'connections-within-ot.json',
+  'connections-within-nt.json',
+].flatMap((f) =>
+  fs.existsSync(`public/data/${f}`)
+    ? (JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as PublicConnections).connections
+    : [],
+);
+const content = ['connections.json', 'within-ot.json', 'within-nt.json'].flatMap((f) =>
+  fs.existsSync(`content/connections/${f}`)
+    ? (
+        JSON.parse(fs.readFileSync(`content/connections/${f}`, 'utf8')) as {
+          connections: { id: string; status: string }[];
+        }
+      ).connections
+    : [],
+);
 
 async function open(page: Page, path: string) {
   await page.goto(path);
@@ -123,7 +134,7 @@ test.describe('Threads', () => {
   test('the list groups threads by direction; the glyph counts and lands on its verse', async ({
     page,
   }) => {
-    // Luke 1 (Two Annunciations): everything it takes up is older, two parallels claim no use.
+    // Luke 1 (Two Annunciations): everything it takes up is older; parallels claim no use.
     await open(page, '/read/luke-02/');
     const list = page.getByTestId('threads');
     const mine = published.filter((x) => x.ends.some((e) => e.sectionId === 'luke-02'));

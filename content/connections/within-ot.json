@@ -44,11 +44,15 @@
           "words": ["six", "rested", "seventh"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ad1b523af01cca5e"
       }
     },
     {
@@ -103,7 +107,7 @@
           "row": "OpenBibleXref:L9566"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -117,6 +121,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9b54d4a616a14256"
       }
     },
     {
@@ -171,11 +179,15 @@
           "row": "OpenBibleXref:L46699"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9e0b72a6e975a61e"
       }
     },
     {
@@ -216,11 +228,15 @@
           "row": "OpenBibleXref:L4337"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b4560ce17bdcf6c5"
       }
     },
     {
@@ -266,11 +282,15 @@
           "words": ["Joseph", "sold"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2c30cc9e711e44ed"
       }
     },
     {
@@ -307,11 +327,15 @@
           "row": "OpenBibleXref:L35857"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1d62baacabf67948"
       }
     },
     {
@@ -357,11 +381,15 @@
           "words": ["Abram", "Chaldees", "Abraham"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a900284141dc32c4"
       }
     },
     {
@@ -403,11 +431,15 @@
           "words": ["Moriah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4b624d7e2a62d8d2"
       }
     },
     {
@@ -449,11 +481,15 @@
           "words": ["Melchizedek", "priest"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8dc0a4bccdc2eeef"
       }
     },
     {
@@ -509,11 +545,15 @@
           "words": ["Sodom", "Gomorrah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7a8083624774a484"
       }
     },
     {
@@ -569,11 +609,15 @@
           "words": ["Sodom", "Gomorrah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "afd8e3b6420dc8e9"
       }
     },
     {
@@ -599,11 +643,15 @@
           "words": ["womb", "heel"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "97dc1ffd020ebc6a"
       }
     },
     {
@@ -649,11 +697,15 @@
           "words": ["angel", "prevailed"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "726c29bcbb68b1bc"
       }
     },
     {
@@ -679,11 +731,15 @@
           "words": ["Noah", "sworn"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0210bfe8742fc9f7"
       }
     },
     {
@@ -709,11 +765,15 @@
           "words": ["Abraham", "Sarah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e74fa4dc36f95d73"
       }
     },
     {
@@ -739,11 +799,15 @@
           "words": ["Esau", "Jacob"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "da2c05af2a826c85"
       }
     },
     {
@@ -799,11 +863,15 @@
           "words": ["Rachel"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4aea061c8e13a7c0"
       }
     },
     {
@@ -845,11 +913,15 @@
           "words": ["Perez", "Tamar", "Judah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "65d6929f15fa829c"
       }
     },
     {
@@ -895,11 +967,15 @@
           "words": ["Terah", "Abraham"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "bada467b01de5765"
       }
     },
     {
@@ -955,11 +1031,15 @@
           "words": ["Joseph", "bones"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f1ca3812be7c9e78"
       }
     },
     {
@@ -1015,11 +1095,15 @@
           "words": ["Jacob", "Hamor"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a511ee05974056d8"
       }
     },
     {
@@ -1070,11 +1154,15 @@
           "row": "OpenBibleXref:L175923"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ee61143c8399ca76"
       }
     },
     {
@@ -1134,11 +1222,15 @@
           "words": ["Eden", "garden"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "acb8fea45a33ce5a"
       }
     },
     {
@@ -1193,11 +1285,15 @@
           "row": "OpenBibleXref:L208838"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b152670325e3a1a7"
       }
     },
     {
@@ -1222,11 +1318,15 @@
           "row": "OpenBibleXref:L110145"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "51fe02893376122d"
       }
     },
     {
@@ -1264,11 +1364,15 @@
           "words": ["Noah", "Daniel", "Job"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c62bf5e1e64d22b8"
       }
     },
     {
@@ -1290,11 +1394,15 @@
           "words": ["Passover", "fourteenth"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f3ae4436048ee004"
       }
     },
     {
@@ -1316,11 +1424,15 @@
           "words": ["Red", "Sea"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c1c713c1792b62e9"
       }
     },
     {
@@ -1346,11 +1458,15 @@
           "words": ["Jordan", "Red", "Sea"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6b51d5b41400066e"
       }
     },
     {
@@ -1401,11 +1517,15 @@
           "row": "OpenBibleXref:L133904"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "dab7d00ddef27bfc"
       }
     },
     {
@@ -1447,11 +1567,15 @@
           "words": ["manna", "Canaan"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a6327964fead5e40"
       }
     },
     {
@@ -1507,11 +1631,15 @@
           "words": ["Meribah", "Massah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fd49c898bb8aa6e0"
       }
     },
     {
@@ -1571,11 +1699,15 @@
           "words": ["Egypt"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f3aa493cf288bd42"
       }
     },
     {
@@ -1635,11 +1767,15 @@
           "words": ["calf"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "982e7577c98b5cd3"
       }
     },
     {
@@ -1695,11 +1831,15 @@
           "words": ["calf", "Horeb"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "cd773b7a55fd900b"
       }
     },
     {
@@ -1759,11 +1899,15 @@
           "words": ["spoken"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "21af69598f344796"
       }
     },
     {
@@ -1814,11 +1958,15 @@
           "row": "OpenBibleXref:L220218"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e4fa35f0deec77d1"
       }
     },
     {
@@ -1873,11 +2021,15 @@
           "row": "OpenBibleXref:L23276"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ba1996baafa099b8"
       }
     },
     {
@@ -1923,11 +2075,15 @@
           "words": ["bush"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "748be32b8eddae7e"
       }
     },
     {
@@ -1978,11 +2134,15 @@
           "row": "OpenBibleXref:L122367"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2cac7bfcd9b5a139"
       }
     },
     {
@@ -2042,11 +2202,15 @@
           "words": ["Kadesh", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c07a5d6b1d4a5cb0"
       }
     },
     {
@@ -2088,11 +2252,15 @@
           "words": ["Dathan", "Abiram"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9afd1c809684acaf"
       }
     },
     {
@@ -2138,11 +2306,15 @@
           "words": ["Meribah", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "66994d859673588c"
       }
     },
     {
@@ -2198,11 +2370,15 @@
           "words": ["bronze", "serpent", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c63390685e83f91f"
       }
     },
     {
@@ -2262,11 +2438,15 @@
           "words": ["Balaam", "Beor"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "daa0e55a7dcdbfe0"
       }
     },
     {
@@ -2318,11 +2498,15 @@
           "words": ["Balak", "Balaam"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0c1facdf408e054f"
       }
     },
     {
@@ -2382,11 +2566,15 @@
           "words": ["Phinehas"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8b9704d6e57317ac"
       }
     },
     {
@@ -2411,11 +2599,15 @@
           "row": "OpenBibleXref:L32676"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0b605e39c81e38ec"
       }
     },
     {
@@ -2457,11 +2649,15 @@
           "words": ["Joshua", "hands"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "eb84d05fb96813d7"
       }
     },
     {
@@ -2521,11 +2717,15 @@
           "words": ["refuge", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "576a58d54cbf6421"
       }
     },
     {
@@ -2555,11 +2755,15 @@
           "words": ["Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4ef29c83bcd8ae53"
       }
     },
     {
@@ -2585,11 +2789,15 @@
           "words": ["heart", "soul", "might", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "792bd393bc7be3c8"
       }
     },
     {
@@ -2610,11 +2818,15 @@
           "row": "OpenBibleXref:L42355"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d5666f6efef656c1"
       }
     },
     {
@@ -2652,11 +2864,15 @@
           "words": ["written", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "33776fc30d2d45b0"
       }
     },
     {
@@ -2716,11 +2932,15 @@
           "words": ["Moses", "Ammonite", "Moabite"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "12a6350023a029c5"
       }
     },
     {
@@ -2750,11 +2970,15 @@
           "words": ["curse", "Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "72ac9c9961f2fc32"
       }
     },
     {
@@ -2814,11 +3038,15 @@
           "words": ["Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ad8ab0b3a1d7d002"
       }
     },
     {
@@ -2878,11 +3106,15 @@
           "words": ["Moses"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2ebc5cf5da3bbeab"
       }
     },
     {
@@ -2933,11 +3165,15 @@
           "row": "OpenBibleXref:L45117"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f21a7e0b05f0ca03"
       }
     },
     {
@@ -2954,11 +3190,15 @@
           "row": "OpenBibleXref:L41172"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "197244999ce6120d"
       }
     },
     {
@@ -3014,11 +3254,15 @@
           "words": ["Joshua", "Jericho"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "75a7bdca4f9fe559"
       }
     },
     {
@@ -3064,11 +3308,15 @@
           "words": ["Achor", "hope"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "402a1e61a2be28ff"
       }
     },
     {
@@ -3120,11 +3368,15 @@
           "words": ["Carmi", "troubler"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7ce1f31b8c021ed9"
       }
     },
     {
@@ -3175,11 +3427,15 @@
           "row": "OpenBibleXref:L48995"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "06ce9f4407ff3b0c"
       }
     },
     {
@@ -3205,11 +3461,15 @@
           "words": ["Gibeonites"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "196e79cace87a18e"
       }
     },
     {
@@ -3246,11 +3506,15 @@
           "row": "OpenBibleXref:L69954"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f1ec21f964956d5a"
       }
     },
     {
@@ -3272,11 +3536,15 @@
           "words": ["Jordan"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0fab9da0608fce0b"
       }
     },
     {
@@ -3332,11 +3600,15 @@
           "words": ["Midian", "Oreb"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "748c2fbe848ff4c8"
       }
     },
     {
@@ -3396,11 +3668,15 @@
           "words": ["Oreb", "Zeeb"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ecd6a5c5cf49a551"
       }
     },
     {
@@ -3460,11 +3736,15 @@
           "words": ["Sisera", "Jabin"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "03ea3f4e6ae5ab46"
       }
     },
     {
@@ -3505,11 +3785,15 @@
           "row": "OpenBibleXref:L97100"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "228d775443083b46"
       }
     },
     {
@@ -3550,11 +3834,15 @@
           "row": "OpenBibleXref:L53556"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "db79098a9fdaba8b"
       }
     },
     {
@@ -3584,11 +3872,15 @@
           "words": ["Gibeah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "57774f9ea92f6899"
       }
     },
     {
@@ -3625,11 +3917,15 @@
           "row": "OpenBibleXref:L54231"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e2a46d4150f0bdba"
       }
     },
     {
@@ -3684,11 +3980,15 @@
           "row": "OpenBibleXref:L81012"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a8214b0b7fc96202"
       }
     },
     {
@@ -3744,11 +4044,15 @@
           "words": ["Rachel", "Leah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "500f0c3101ea888f"
       }
     },
     {
@@ -3785,11 +4089,15 @@
           "row": "OpenBibleXref:L56179"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d30d1ad15a40dd21"
       }
     },
     {
@@ -3844,11 +4152,15 @@
           "row": "OpenBibleXref:L133343"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0330ec4562bbe882"
       }
     },
     {
@@ -3899,11 +4211,15 @@
           "row": "OpenBibleXref:L214333"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "938515352de1744d"
       }
     },
     {
@@ -3929,11 +4245,15 @@
           "words": ["David", "sheepfolds"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f4064f4cc2ec6fa0"
       }
     },
     {
@@ -3988,7 +4308,7 @@
           "row": "OpenBibleXref:L82314"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4002,6 +4322,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8dd4b9c71408b7dc"
       }
     },
     {
@@ -4027,11 +4351,15 @@
           "words": ["Shiloh"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c8471b954de3b07"
       }
     },
     {
@@ -4072,11 +4400,15 @@
           "row": "OpenBibleXref:L57222"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a1cd87a92890b9a5"
       }
     },
     {
@@ -4101,7 +4433,7 @@
           "row": "OpenBibleXref:L63441"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4115,6 +4447,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6be6e5976ac18893"
       }
     },
     {
@@ -4140,11 +4476,15 @@
           "words": ["David"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b65d713f84a18aa9"
       }
     },
     {
@@ -4199,11 +4539,15 @@
           "row": "OpenBibleXref:L111878"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6d49852bd903a888"
       }
     },
     {
@@ -4245,11 +4589,15 @@
           "words": ["Uriah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f26c93fb4565e678"
       }
     },
     {
@@ -4304,7 +4652,7 @@
           "row": "OpenBibleXref:L82463"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4318,6 +4666,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f7d9498d8ec03fbc"
       }
     },
     {
@@ -4358,7 +4710,7 @@
           "row": "OpenBibleXref:L67407"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4372,6 +4724,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e63ded2118aa30aa"
       }
     },
     {
@@ -4426,7 +4782,7 @@
           "row": "OpenBibleXref:L83255"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4440,6 +4796,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8e6be0453f006a2a"
       }
     },
     {
@@ -4494,7 +4854,7 @@
           "row": "OpenBibleXref:L86416"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4508,6 +4868,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "72298563a04d98f5"
       }
     },
     {
@@ -4562,7 +4926,7 @@
           "row": "OpenBibleXref:L68404"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4576,6 +4940,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e721d7896789f41f"
       }
     },
     {
@@ -4630,7 +4998,7 @@
           "row": "OpenBibleXref:L70397"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4644,6 +5012,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c0f3f77de7a2914a"
       }
     },
     {
@@ -4698,7 +5070,7 @@
           "row": "OpenBibleXref:L70977"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4712,6 +5084,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "334c9a5150d1d515"
       }
     },
     {
@@ -4771,11 +5147,15 @@
           "words": ["bones", "altar"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "405e5828693d59ac"
       }
     },
     {
@@ -4800,11 +5180,15 @@
           "row": "OpenBibleXref:L73188"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d8c5d2bba76c0189"
       }
     },
     {
@@ -4850,11 +5234,15 @@
           "words": ["Naboth"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "86ea058ed5550caa"
       }
     },
     {
@@ -4906,11 +5294,15 @@
           "words": ["Elijah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1b1dd56cf5858c19"
       }
     },
     {
@@ -4965,7 +5357,7 @@
           "row": "OpenBibleXref:L74117"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -4979,6 +5371,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5cabbddd9b634177"
       }
     },
     {
@@ -5020,11 +5416,15 @@
           "words": ["Solomon"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "102fbb96fa3aaf99"
       }
     },
     {
@@ -5079,11 +5479,15 @@
           "row": "OpenBibleXref:L164682"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d8d9bcb19e83e9e3"
       }
     },
     {
@@ -5138,11 +5542,15 @@
           "row": "OpenBibleXref:L164777"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "82849f39692e9fe3"
       }
     },
     {
@@ -5197,7 +5605,7 @@
           "row": "OpenBibleXref:L79917"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
@@ -5211,6 +5619,10 @@
             "locator": "Introduction, on the Chronicler's sources"
           }
         ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c8bd7747aba22e76"
       }
     },
     {
@@ -5265,11 +5677,15 @@
           "row": "OpenBibleXref:L192619"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "57b6e5d10706d608"
       }
     },
     {
@@ -5320,11 +5736,15 @@
           "row": "OpenBibleXref:L80768"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "80bd36fb9b337825"
       }
     },
     {
@@ -5350,11 +5770,15 @@
           "words": ["vessels", "Nebuchadnezzar"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2697f5befffdc193"
       }
     },
     {
@@ -5377,11 +5801,15 @@
           "words": ["Elijah", "whirlwind"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1724bab21e8ef463"
       }
     },
     {
@@ -5437,11 +5865,15 @@
           "words": ["Jonah", "Amittai"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "22072c330790cf53"
       }
     },
     {
@@ -5467,11 +5899,15 @@
           "words": ["Nebuchadnezzar", "Jerusalem"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "03ad5ad715ff6ce5"
       }
     },
     {
@@ -5493,11 +5929,15 @@
           "words": ["Jeremiah", "Cyrus"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1f55c3af075fa8ba"
       }
     },
     {
@@ -5557,11 +5997,15 @@
           "words": ["Jeremiah", "seventy"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3646be0132cc9934"
       }
     },
     {
@@ -5603,11 +6047,15 @@
           "words": ["Jeremiah", "seventy"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ec6eaa2fcd653e0e"
       }
     },
     {
@@ -5658,11 +6106,15 @@
           "row": "OpenBibleXref:L93099"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e07929f6679f6b4f"
       }
     },
     {
@@ -5685,11 +6137,15 @@
           "words": ["Cyrus", "Jerusalem"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c67a2b953ea8bf53"
       }
     },
     {
@@ -5745,11 +6201,15 @@
           "words": ["Canaanites", "Hittites"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b8e5435652d64368"
       }
     },
     {
@@ -5804,11 +6264,15 @@
           "row": "OpenBibleXref:L96278"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3525cf01fcae9fb9"
       }
     },
     {
@@ -5868,11 +6332,15 @@
           "words": ["written", "booths"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "95f7c0b8db5902d9"
       }
     },
     {
@@ -5932,11 +6400,15 @@
           "words": ["sea"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "44bbec4408238137"
       }
     },
     {
@@ -5992,11 +6464,15 @@
           "words": ["Sihon", "Og"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6b1b401609994b69"
       }
     },
     {
@@ -6026,11 +6502,15 @@
           "words": ["bread"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b69c768e87f2a2eb"
       }
     },
     {
@@ -6051,11 +6531,15 @@
           "row": "OpenBibleXref:L93542"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "173e532a1e28f6e4"
       }
     },
     {
@@ -6078,11 +6562,15 @@
           "words": ["alone", "helper"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fe225824a60c19fc"
       }
     },
     {
@@ -6105,11 +6593,15 @@
           "words": ["feasts", "mourning"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7d681a22c3f559c4"
       }
     },
     {
@@ -6127,11 +6619,15 @@
           "words": ["Jonah", "Nineveh"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2fa2019fe5dffcea"
       }
     },
     {
@@ -6149,11 +6645,15 @@
           "words": ["Abraham"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4742c4fcb5368a1b"
       }
     },
     {
@@ -6171,11 +6671,15 @@
           "words": ["Joseph", "Egypt"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "97a5efe46f02cea0"
       }
     },
     {
@@ -6193,11 +6697,15 @@
           "words": ["Phinehas"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "90379b27b0116a86"
       }
     },
     {
@@ -6215,11 +6723,15 @@
           "words": ["Elijah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b2c4557a2778273d"
       }
     },
     {
@@ -6237,11 +6749,15 @@
           "words": ["Hananiah"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "83d7b4f4767bb788"
       }
     },
     {
@@ -6259,11 +6775,15 @@
           "words": ["Daniel", "lions"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3805e12727ab8a53"
       }
     },
     {
@@ -6281,11 +6801,15 @@
           "words": ["Simeon"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "06f7683e9cd76835"
       }
     },
     {
@@ -6303,11 +6827,15 @@
           "words": ["Abraham", "Isaac", "Jacob"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e9fe9d4dcee5604a"
       }
     },
     {
@@ -6325,11 +6853,15 @@
           "words": ["Mordecai", "Adar"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9909fa5c1ce74df1"
       }
     },
     {
@@ -6377,11 +6909,15 @@
           "words": ["Mordecai", "horse"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "529c97b3a8df599e"
       }
     },
     {
@@ -6423,11 +6959,15 @@
           "words": ["Job"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "25a1b7eaab9789c4"
       }
     },
     {
@@ -6464,11 +7004,15 @@
           "row": "OpenBibleXref:L100823"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a033408ed29a243d"
       }
     },
     {
@@ -6523,11 +7067,15 @@
           "row": "OpenBibleXref:L181504"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2151bc549f733d26"
       }
     },
     {
@@ -6578,11 +7126,15 @@
           "row": "OpenBibleXref:L105513"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9684e1a9a76a7117"
       }
     },
     {
@@ -6603,11 +7155,15 @@
           "row": "OpenBibleXref:L165882"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a62f1390bf76e11d"
       }
     },
     {
@@ -6658,11 +7214,15 @@
           "row": "OpenBibleXref:L150682"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a8071ee1a1bca4e8"
       }
     },
     {
@@ -6683,11 +7243,15 @@
           "row": "OpenBibleXref:L108025"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "44f5e16e30dfe1f7"
       }
     },
     {
@@ -6743,11 +7307,15 @@
           "words": ["Micah", "Zion"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0ceb0433a0271029"
       }
     },
     {
@@ -6802,11 +7370,15 @@
           "row": "OpenBibleXref:L185527"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "10bb1d3615a21916"
       }
     },
     {
@@ -6861,11 +7433,15 @@
           "row": "OpenBibleXref:L190479"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3a74c32a80551ca8"
       }
     },
     {
@@ -6887,11 +7463,15 @@
           "words": ["Moses", "Samuel"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a723e2677906cbe2"
       }
     },
     {
@@ -6929,11 +7509,15 @@
           "words": ["Rachel"]
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "from",
         "uses": true,
         "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1c38b55d660010f2"
       }
     },
     {
@@ -6984,11 +7568,15 @@
           "row": "OpenBibleXref:L173480"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c14e9d5bbb6013f"
       }
     },
     {
@@ -7025,11 +7613,15 @@
           "row": "OpenBibleXref:L226406"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5a516f08de440ccc"
       }
     },
     {
@@ -7046,11 +7638,15 @@
           "row": "OpenBibleXref:L194937"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "52d5955eba403fc2"
       }
     },
     {
@@ -7101,11 +7697,15 @@
           "row": "OpenBibleXref:L212813"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "befe455f3a1aa918"
       }
     },
     {
@@ -7160,11 +7760,15 @@
           "row": "OpenBibleXref:L216726"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "360c3794fb6ae74d"
       }
     },
     {
@@ -7215,11 +7819,15 @@
           "row": "OpenBibleXref:L220001"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "73df93808f9e28be"
       }
     },
     {
@@ -7252,11 +7860,15 @@
           "row": "OpenBibleXref:L220183"
         }
       ],
-      "status": "draft",
+      "status": "verified",
       "order": {
         "older": "unknown",
         "uses": false,
         "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "052dcdddebbecc4f"
       }
     }
   ]
