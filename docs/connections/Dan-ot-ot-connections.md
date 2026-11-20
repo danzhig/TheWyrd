@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-2 connections; 0 verified; 0 failing a check.
+2 connections; 2 verified; 0 failing a check.
 
 ## `dan-o01` The throne of fire
 
-- **Ezek.1.26-Ezek.1.28 → Dan.7.9-Dan.7.10** · echo · strength 2 · draft · fingerprint `52d5955eba403fc2`
+- **Ezek.1.26-Ezek.1.28 → Dan.7.9-Dan.7.10** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `52d5955eba403fc2`
 - From: The Vision of God’s Glory; the Prophet’s Call (`ezek-01`, library)
 - To: Four Beasts and the Son of Man (`dan-x101`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -19,7 +19,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `dan-o02` Those who sleep in the dust will awake
 
-- **Isa.26.19 → Dan.12.2** · echo · strength 2 · draft · fingerprint `befe455f3a1aa918`
+- **Isa.26.19 → Dan.12.2** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `befe455f3a1aa918`
 - From: The Earth Judged; a Feast on the Mountain (`isa-08`, library)
 - To: The Time of the End (`dan-x106`)
 - Order: older end unknown; no use claimed; basis unstated

@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-3 connections; 0 verified; 0 failing a check.
+3 connections; 3 verified; 0 failing a check.
 
 ## `ruth-o01` From Perez to David
 
-- **Ruth.4.18-Ruth.4.22 → 1Chr.2.4-1Chr.2.15** · parallel · strength 2 · draft · fingerprint `a8214b0b7fc96202`
+- **Ruth.4.18-Ruth.4.22 → 1Chr.2.4-1Chr.2.15** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `a8214b0b7fc96202`
 - From: The Redeemer (`ruth-04`)
 - To: The Line of Judah and of David (`1chr-02`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ruth-o02` Like Rachel and Leah
 
-- **Gen.29.31-Gen.30.24 → Ruth.4.11** · allusion · strength 3 · draft · fingerprint `500f0c3101ea888f`
+- **Gen.29.31-Gen.30.24 → Ruth.4.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `500f0c3101ea888f`
 - From: Jacob in Haran (`gen-13`)
 - To: The Redeemer (`ruth-04`)
 - Order: older end from; the later end uses it; basis text
@@ -42,7 +42,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `ruth-o03` The sandal at the gate
 
-- **Deut.25.7-Deut.25.10 → Ruth.4.7-Ruth.4.8** · echo · strength 2 · draft · fingerprint `d30d1ad15a40dd21`
+- **Deut.25.7-Deut.25.10 → Ruth.4.7-Ruth.4.8** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `d30d1ad15a40dd21`
 - From: Justice and First Fruits (`deut-x316`)
 - To: The Redeemer (`ruth-04`)
 - Order: older end unknown; no use claimed; basis unstated

@@ -1,5 +1,6 @@
 'use client';
 
+import { THREAD_FILES } from '@/lib/thread-files';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import type { PublicConnections } from '@/lib/types';
@@ -52,12 +53,8 @@ function loadExtras() {
       .then((r) => (r.ok ? (r.json() as Promise<T>) : null))
       .catch(() => null);
   // Every published file of threads (threads plan §6): approved only, loaded only here.
-  const threads = Promise.all(
-    ['connections.json', 'connections-within-ot.json', 'connections-within-nt.json'].map((f) =>
-      get<PublicConnections>(`/data/${f}`),
-    ),
-  ).then((files) =>
-    files[0] ? { connections: files.flatMap((f) => f?.connections ?? []) } : null,
+  const threads = Promise.all(THREAD_FILES.map((f) => get<PublicConnections>(`/data/${f}`))).then(
+    (files) => (files[0] ? { connections: files.flatMap((f) => f?.connections ?? []) } : null),
   );
   extrasData ??= Promise.all([get<ThemesFile>('/data/themes.json'), threads]);
   return extrasData;

@@ -1,4 +1,5 @@
 /** Phase 4: the cross-reference parser, range matching, and the seed connections with their checks. */
+import { THREAD_FILES } from '@/lib/thread-files';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -209,11 +210,8 @@ describe('the threads baseline (threads plan TD0)', () => {
   it('publishes every thread with its pair and order', () => {
     const { outputs, errors } = buildAllConnections(sections, library);
     expect(errors).toEqual([]);
-    expect(outputs.map((o) => o.out)).toEqual([
-      'connections.json',
-      'connections-within-ot.json',
-      'connections-within-nt.json',
-    ]);
+    // The site reads exactly the files the build writes.
+    expect(outputs.map((o) => o.out)).toEqual([...THREAD_FILES]);
     for (const c of outputs[0]!.data.connections) {
       expect(c.pair).toBe(pairId(c.ends[0].corpus, c.ends[1].corpus));
       if (c.pair === 'ot-nt') expect(c.ends[c.order.older!]!.corpus).toBe('ot');

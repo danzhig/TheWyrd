@@ -1,3 +1,4 @@
+import { THREAD_FILES } from '../../lib/thread-files';
 import fs from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
@@ -8,16 +9,17 @@ import type { PublicConnections } from '../../lib/types';
  * other end with the way back; only verified connections appear (drafts stay hidden, check 13).
  */
 // Every published file: the reader shows Old ↔ New and the threads inside each Testament.
-const published = [
-  'connections.json',
-  'connections-within-ot.json',
-  'connections-within-nt.json',
-].flatMap((f) =>
+const published = THREAD_FILES.flatMap((f) =>
   fs.existsSync(`public/data/${f}`)
     ? (JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as PublicConnections).connections
     : [],
 );
-const content = ['connections.json', 'within-ot.json', 'within-nt.json'].flatMap((f) =>
+const content = [
+  'connections.json',
+  'within-ot.json',
+  'within-nt.json',
+  'library-ot-nt.json',
+].flatMap((f) =>
   fs.existsSync(`content/connections/${f}`)
     ? (
         JSON.parse(fs.readFileSync(`content/connections/${f}`, 'utf8')) as {

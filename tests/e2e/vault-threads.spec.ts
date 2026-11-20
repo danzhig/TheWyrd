@@ -1,3 +1,4 @@
+import { THREAD_FILES } from '../../lib/thread-files';
 import fs from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
@@ -8,11 +9,7 @@ import type { PublicConnections } from '../../lib/types';
  * a filter by type, an arc's connections in a panel, and each one followed into the reader.
  */
 // Every published file: Old ↔ New and the threads inside each Testament (Threads mode loads all).
-const connections = [
-  'connections.json',
-  'connections-within-ot.json',
-  'connections-within-nt.json',
-].flatMap((f) =>
+const connections = THREAD_FILES.flatMap((f) =>
   fs.existsSync(`public/data/${f}`)
     ? (JSON.parse(fs.readFileSync(`public/data/${f}`, 'utf8')) as PublicConnections).connections
     : [],
@@ -256,13 +253,19 @@ test.describe('Threads on the Vault', () => {
   test("an arc's panel says which way its threads run and filters by type", async ({ page }) => {
     await threadsOn(page);
     await page.getByRole('button', { name: 'List' }).click();
-    // The busiest arc where a use is claimed (many threads inside a Testament claim none).
+    // The busiest arc where a use is claimed and more than one kind of link meets (the panel shows
+    // its type chips only then).
     const used = new Map<string, number>();
+    const kinds = new Map<string, Set<string>>();
     for (const c of onAtFirst.filter((c) => c.order.uses)) {
       const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
       used.set(k, (used.get(k) ?? 0) + 1);
     }
-    const [key] = [...used].sort((a, b) => b[1] - a[1])[0]!;
+    for (const c of onAtFirst) {
+      const k = [c.ends[0].bookId, c.ends[1].bookId].sort().join('|');
+      kinds.set(k, (kinds.get(k) ?? new Set()).add(c.type));
+    }
+    const [key] = [...used].filter(([k]) => kinds.get(k)!.size > 1).sort((a, b) => b[1] - a[1])[0]!;
     await page.locator(`[data-arc-item="${key}"]`).click();
     const panel = page.getByTestId('arc-panel');
     await expect(page.locator('#arc-heading')).toContainText(`${pairs.get(key)} threads`);

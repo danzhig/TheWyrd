@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-7 connections; 0 verified; 0 failing a check.
+7 connections; 7 verified; 0 failing a check.
 
 ## `judg-o01` As at the rock of Oreb
 
-- **Judg.7.19-Judg.7.25 → Isa.10.26** · allusion · strength 3 · draft · fingerprint `748c2fbe848ff4c8`
+- **Judg.7.19-Judg.7.25 → Isa.10.26** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `748c2fbe848ff4c8`
 - From: Gideon (`judg-05`)
 - To: Assyria Judged; the Shoot from Jesse (`isa-04`, library)
 - Order: older end from; the later end uses it; basis text
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o02` Like Oreb and Zeeb
 
-- **Judg.7.19-Judg.7.25 → Ps.83.9-Ps.83.11** · allusion · strength 3 · draft · fingerprint `ecd6a5c5cf49a551`
+- **Judg.7.19-Judg.7.25 → Ps.83.9-Ps.83.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `ecd6a5c5cf49a551`
 - From: Gideon (`judg-05`)
 - To: Psalm 83 (82) (`ps-083`, library)
 - Order: older end from; the later end uses it; basis text
@@ -43,7 +43,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o03` As to Sisera and Jabin
 
-- **Judg.4.15-Judg.4.21 → Ps.83.9-Ps.83.10** · allusion · strength 3 · draft · fingerprint `03ea3f4e6ae5ab46`
+- **Judg.4.15-Judg.4.21 → Ps.83.9-Ps.83.10** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `03ea3f4e6ae5ab46`
 - From: Deborah and Barak (`judg-04`)
 - To: Psalm 83 (82) (`ps-083`, library)
 - Order: older end from; the later end uses it; basis text
@@ -61,7 +61,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o04` The cycle of the judges, confessed
 
-- **Judg.2.11-Judg.2.19 → Neh.9.26-Neh.9.28** · parallel · strength 2 · draft · fingerprint `228d775443083b46`
+- **Judg.2.11-Judg.2.19 → Neh.9.26-Neh.9.28** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `228d775443083b46`
 - From: The Cycle Begins (`judg-02`)
 - To: Confession and Covenant (`neh-09`)
 - Order: older end from; the later end uses it; basis text
@@ -76,7 +76,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o05` Fables of trees and thistles
 
-- **Judg.9.8-Judg.9.15 → 2Kgs.14.9** · parallel · strength 2 · draft · fingerprint `db79098a9fdaba8b`
+- **Judg.9.8-Judg.9.15 → 2Kgs.14.9** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `db79098a9fdaba8b`
 - From: Abimelech (`judg-06`)
 - To: The Decline of Israel (`2kgs-06`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -91,7 +91,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o06` As in the days of Gibeah
 
-- **Judg.19.22-Judg.19.30 → Hos.9.9** · allusion · strength 3 · draft · fingerprint `57774f9ea92f6899`
+- **Judg.19.22-Judg.19.30 → Hos.9.9** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `57774f9ea92f6899`
 - From: The Levite's Concubine and Civil War (`judg-10`)
 - To: Ephraim’s Sin (`hos-03`, library)
 - Order: older end from; the later end uses it; basis text
@@ -105,7 +105,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `judg-o07` No razor on his head
 
-- **Judg.13.5 → 1Sam.1.11** · echo · strength 2 · draft · fingerprint `e2a46d4150f0bdba`
+- **Judg.13.5 → 1Sam.1.11** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `e2a46d4150f0bdba`
 - From: Samson (`judg-08`)
 - To: Hannah and the Birth of Samuel (`1sam-01`)
 - Order: older end unknown; no use claimed; basis unstated

@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-2 connections; 0 verified; 0 failing a check.
+2 connections; 2 verified; 0 failing a check.
 
 ## `esth-o01` The day before Mordecai's day
 
-- **Esth.9.20-Esth.9.22 → 2Macc.15.36** · allusion · strength 3 · draft · fingerprint `9909fa5c1ce74df1`
+- **Esth.9.20-Esth.9.22 → 2Macc.15.36** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `9909fa5c1ce74df1`
 - From: Purim; the Dream Explained (`esth-10`)
 - To: Nicanor and the Final Victory (`2macc-13`, library)
 - Order: older end from; the later end uses it; basis text
@@ -19,7 +19,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `esth-o02` Robed, mounted and proclaimed
 
-- **Gen.41.42-Gen.41.43 → Esth.6.11** · parallel · strength 2 · draft · fingerprint `529c97b3a8df599e`
+- **Gen.41.42-Gen.41.43 → Esth.6.11** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `529c97b3a8df599e`
 - From: Joseph in Egypt (`gen-17`)
 - To: The Sleepless King (`esth-07`)
 - Order: older end unknown; no use claimed; basis unstated

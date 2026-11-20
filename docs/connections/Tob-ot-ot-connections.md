@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-3 connections; 0 verified; 0 failing a check.
+3 connections; 3 verified; 0 failing a check.
 
 ## `tob-o01` Not good for the man to be alone
 
-- **Gen.2.18 → Tob.8.6** · quotation · strength 3 · draft · fingerprint `fe225824a60c19fc`
+- **Gen.2.18 → Tob.8.6** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `fe225824a60c19fc`
 - From: The Garden and the Fall (`gen-02`)
 - To: The Wedding at Ecbatana (`tob-04`)
 - Order: older end from; the later end uses it; basis text
@@ -20,7 +20,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `tob-o02` Feasts turned into mourning
 
-- **Amos.8.10 → Tob.2.6** · quotation · strength 3 · draft · fingerprint `7d681a22c3f559c4`
+- **Amos.8.10 → Tob.2.6** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `7d681a22c3f559c4`
 - From: Five Visions; Amos and Amaziah (`amos-03`, library)
 - To: Tobit's Piety and Blindness (`tob-01`)
 - Order: older end from; the later end uses it; basis text
@@ -32,7 +32,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `tob-o03` What Jonah said of Nineveh
 
-- **Jonah.3.4 → Tob.14.4** · allusion · strength 3 · draft · fingerprint `2fa2019fe5dffcea`
+- **Jonah.3.4 → Tob.14.4** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `2fa2019fe5dffcea`
 - From: Nineveh Repents (`jonah-03`)
 - To: Tobit's Song and Last Words (`tob-07`)
 - Order: older end from; the later end uses it; basis text

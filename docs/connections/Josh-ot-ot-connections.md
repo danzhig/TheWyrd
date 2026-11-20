@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-7 connections; 0 verified; 0 failing a check.
+7 connections; 7 verified; 0 failing a check.
 
 ## `josh-o01` Jericho rebuilt at a cost
 
-- **Josh.6.26 → 1Kgs.16.34** · fulfilment · strength 3 · draft · fingerprint `75a7bdca4f9fe559`
+- **Josh.6.26 → 1Kgs.16.34** · fulfilment · strength 3 · verified (approved 2026-11-20) · fingerprint `75a7bdca4f9fe559`
 - From: Jericho (`josh-05`)
 - To: Kings of Judah and Israel (`1kgs-07`)
 - Order: older end from; the later end uses it; basis text
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o02` The valley of Achor, a door of hope
 
-- **Josh.7.24-Josh.7.26 → Hos.2.15** · allusion · strength 3 · draft · fingerprint `402a1e61a2be28ff`
+- **Josh.7.24-Josh.7.26 → Hos.2.15** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `402a1e61a2be28ff`
 - From: Achan and Ai (`josh-06`)
 - To: Hosea’s Marriage (`hos-01`, library)
 - Order: older end from; the later end uses it; basis text
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o03` Achar, the troubler of Israel
 
-- **Josh.7.1 → 1Chr.2.7** · allusion · strength 3 · draft · fingerprint `7ce1f31b8c021ed9`
+- **Josh.7.1 → 1Chr.2.7** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `7ce1f31b8c021ed9`
 - From: Achan and Ai (`josh-06`)
 - To: The Line of Judah and of David (`1chr-02`, library)
 - Order: older end from; the later end uses it; basis text
@@ -57,7 +57,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o04` Sun and moon stood still
 
-- **Josh.10.12-Josh.10.14 → Hab.3.11** · echo · strength 2 · draft · fingerprint `06ce9f4407ff3b0c`
+- **Josh.10.12-Josh.10.14 → Hab.3.11** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `06ce9f4407ff3b0c`
 - From: The Southern Campaign (`josh-08`)
 - To: Habakkuk’s Prayer (`hab-02`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -73,7 +73,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o05` The oath to the Gibeonites
 
-- **Josh.9.15-Josh.9.20 → 2Sam.21.1-2Sam.21.2** · allusion · strength 3 · draft · fingerprint `196e79cace87a18e`
+- **Josh.9.15-Josh.9.20 → 2Sam.21.1-2Sam.21.2** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `196e79cace87a18e`
 - From: The Gibeonite Ruse (`josh-07`)
 - To: Last Things: Famine, Song, Heroes, Census (`2sam-10`)
 - Order: older end from; the later end uses it; basis text
@@ -86,7 +86,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o06` Not one good word failed
 
-- **Josh.21.43-Josh.21.45 → 1Kgs.8.56** · echo · strength 2 · draft · fingerprint `f1ec21f964956d5a`
+- **Josh.21.43-Josh.21.45 → 1Kgs.8.56** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `f1ec21f964956d5a`
 - From: Refuge and Levite Towns (`josh-x106`)
 - To: The Temple Dedicated (`1kgs-04`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -100,7 +100,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `josh-o07` The Jordan driven back
 
-- **Josh.3.14-Josh.3.17 → Ps.114.3-Ps.114.5** · allusion · strength 2 · draft · fingerprint `0fab9da0608fce0b`
+- **Josh.3.14-Josh.3.17 → Ps.114.3-Ps.114.5** · allusion · strength 2 · verified (approved 2026-11-20) · fingerprint `0fab9da0608fce0b`
 - From: Crossing the Jordan (`josh-03`)
 - To: Psalm 114 (113) (`ps-114`, library)
 - Order: older end from; the later end uses it; basis text

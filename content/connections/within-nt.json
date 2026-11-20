@@ -2085,6 +2085,2413 @@
         "date": "2026-11-20",
         "fingerprint": "2aab81d060b4bb7c"
       }
+    },
+    {
+      "id": "matt-l01",
+      "from": "Matt.3.13-Matt.3.17",
+      "to": "Mark.1.9-Mark.1.11",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The baptism of Jesus",
+      "explanation": "Matthew 3:13–17 and Mark 1:9–11 both tell of Jesus baptized by John in the Jordan, the Spirit coming down like a dove, and a voice from heaven naming him the beloved Son. Matthew adds John's protest that he needs to be baptized by Jesus. In Mark the voice speaks to Jesus himself; in Matthew it speaks of him to those present.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231193"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231195"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L244145"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c69cf60b5b8d0c0"
+      }
+    },
+    {
+      "id": "matt-l02",
+      "from": "Matt.4.18-Matt.4.22",
+      "to": "Mark.1.16-Mark.1.20",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Fishers of men",
+      "explanation": "Matthew 4:18–22 and Mark 1:16–20 both tell of Jesus calling Simon and Andrew from their nets to be fishers of men, then James and John from their father Zebedee's boat. All four leave at once. Mark adds that the brothers left their father in the boat with the hired servants.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231486"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L244200"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231468"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0fd9f22aee504013"
+      }
+    },
+    {
+      "id": "matt-l03",
+      "from": "Matt.9.1-Matt.9.8",
+      "to": "Mark.2.1-Mark.2.12",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The paralysed man forgiven and healed",
+      "explanation": "Matthew 9:1–8 and Mark 2:1–12 both tell of a paralysed man whose sins Jesus forgives, the scribes' charge of blasphemy, and the healing that shows the Son of Man's authority. Mark has the friends open the roof and let the man down through it. Matthew ends with the crowds praising God for giving such authority to men.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L234132"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L234088"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L244455"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6ca658de7d5ebba3"
+      }
+    },
+    {
+      "id": "matt-l04",
+      "from": "Matt.8.23-Matt.8.27",
+      "to": "Mark.4.35-Mark.4.41",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The storm stilled",
+      "explanation": "Matthew 8:23–27 and Mark 4:35–41 both tell of a great storm on the lake while Jesus sleeps, the disciples waking him in fear, his rebuke of the wind and sea, and their wonder at who he is. In Mark he sleeps on a cushion in the stern and they ask if he does not care that they are perishing. Matthew has Jesus reproach their little faith before he calms the sea.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245485"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245427"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L233948"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6375bb2f0a39adee"
+      }
+    },
+    {
+      "id": "matt-l05",
+      "from": "Matt.8.28-Matt.8.34",
+      "to": "Mark.5.1-Mark.5.20",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The demons sent into the pigs",
+      "explanation": "Matthew 8:28–34 and Mark 5:1–20 both tell of demons cast out among the tombs across the lake, sent into a herd of pigs that rushes into the sea, and the townspeople asking Jesus to leave. Matthew has two men; Mark has one, who gives his name as Legion, and tells of about two thousand pigs. Mark ends with the healed man telling his story in the Decapolis.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L234002"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245509"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L245538"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "328bebd2cc329b3b"
+      }
+    },
+    {
+      "id": "matt-l06",
+      "from": "Matt.14.1-Matt.14.12",
+      "to": "Mark.6.14-Mark.6.29",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The death of John the Baptist",
+      "explanation": "Matthew 14:1–12 and Mark 6:14–29 both tell of Herod fearing that Jesus is John raised, and of John's death: imprisoned over Herodias and beheaded after her daughter danced for Herod. Mark tells it at greater length, adding that Herod feared John as a holy man and liked to listen to him. In Matthew John's disciples bury him and go to tell Jesus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L236970"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L236994"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246040"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "aae045ca37faeb26"
+      }
+    },
+    {
+      "id": "matt-l07",
+      "from": "Matt.14.13-Matt.14.21",
+      "to": "Mark.6.30-Mark.6.44",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Five thousand fed",
+      "explanation": "Matthew 14:13–21 and Mark 6:30–44 both tell of Jesus moved with compassion for the crowd in a deserted place, five loaves and two fish blessed and broken, everyone fed and twelve baskets left. Mark adds that the people were like sheep without a shepherd and sat in groups on the green grass. Matthew counts five thousand men besides women and children.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246152"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246079"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237070"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "60b88ea5bbcd6008"
+      }
+    },
+    {
+      "id": "matt-l08",
+      "from": "Matt.14.22-Matt.14.33",
+      "to": "Mark.6.45-Mark.6.52",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Walking on the sea",
+      "explanation": "Matthew 14:22–33 and Mark 6:45–52 both tell of Jesus coming to the disciples across the sea in the night, their fear that he is a ghost, his word of comfort and the wind ceasing as he enters the boat. Matthew adds Peter walking on the water and sinking, and the disciples worshipping Jesus as the Son of God. Mark ends instead with their hearts hardened, not understanding about the loaves.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237148"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246163"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246193"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b0b1f55b1897691f"
+      }
+    },
+    {
+      "id": "matt-l09",
+      "from": "Matt.15.21-Matt.15.28",
+      "to": "Mark.7.24-Mark.7.30",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The crumbs under the table",
+      "explanation": "Matthew 15:21–28 and Mark 7:24–30 both tell of a Gentile woman near Tyre begging help for her daughter, Jesus' saying about the children's bread, and her answer that dogs eat the crumbs. Matthew calls her a Canaanite and has Jesus praise her great faith; Mark calls her a Syrophoenician Greek. In both her daughter is healed.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237519"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246468"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237570"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d5f5c554d5b3ffa4"
+      }
+    },
+    {
+      "id": "matt-l10",
+      "from": "Matt.16.13-Matt.16.23",
+      "to": "Mark.8.27-Mark.8.33",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Peter's confession at Caesarea Philippi",
+      "explanation": "Matthew 16:13–23 and Mark 8:27–33 both tell of Jesus asking at Caesarea Philippi who he is, Peter naming him the Christ, the first word of his suffering, and his rebuke of Peter as Satan. Matthew adds the Son of the living God, Jesus' blessing on Peter, the rock on which he will build his church, and the keys of the Kingdom.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237812"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L237997"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246789"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fd42f7b9a163e850"
+      }
+    },
+    {
+      "id": "matt-l11",
+      "from": "Matt.17.1-Matt.17.8",
+      "to": "Mark.9.2-Mark.9.8",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Transfiguration",
+      "explanation": "Matthew 17:1–8 and Mark 9:2–8 both tell of Jesus changed before Peter, James and John on a high mountain, with Moses and Elijah, and a voice from the cloud naming the beloved Son. Mark says his clothes were whiter than any launderer could make them; Matthew adds the disciples falling on their faces and Jesus touching them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238171"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247013"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238137"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "bed017869ac20a6f"
+      }
+    },
+    {
+      "id": "matt-l12",
+      "from": "Matt.19.16-Matt.19.30",
+      "to": "Mark.10.17-Mark.10.31",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The rich man and the eye of a needle",
+      "explanation": "Matthew 19:16–30 and Mark 10:17–31 both tell of a rich man asking about eternal life, told to sell what he has and follow Jesus, going away sad, and the saying about a camel and the eye of a needle. Matthew calls him young; Mark says Jesus looked at him and loved him. Both end with a hundredfold reward and the first who will be last.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239105"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239167"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247782"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7c877bc2364e9d4c"
+      }
+    },
+    {
+      "id": "matt-l13",
+      "from": "Matt.21.1-Matt.21.11",
+      "to": "Mark.11.1-Mark.11.11",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The entry into Jerusalem",
+      "explanation": "Matthew 21:1–11 and Mark 11:1–11 both tell of two disciples sent from Bethphage for a colt, garments and branches spread on the road, and crowds crying Hosanna as Jesus rides into Jerusalem. Mark has one colt that no one had ridden; Matthew has a donkey with her colt and quotes the prophet, in words from Zechariah. Matthew adds the city stirred and asking who he is.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248081"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239642"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239647"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c1280f2f678dd9b8"
+      }
+    },
+    {
+      "id": "matt-l14",
+      "from": "Matt.22.34-Matt.22.40",
+      "to": "Mark.12.28-Mark.12.34",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The great commandment",
+      "explanation": "Matthew 22:34–40 and Mark 12:28–34 both tell of a question about the greatest commandment and Jesus' answer: love God with all your heart, soul and mind, and your neighbour as yourself. In Matthew a lawyer asks to test him, and Jesus says the whole law and the prophets hang on these two. In Mark a scribe agrees, and Jesus tells him he is not far from the Kingdom.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L240586"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L240585"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L240593"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5414464827442869"
+      }
+    },
+    {
+      "id": "matt-l15",
+      "from": "Matt.24.1-Matt.24.35",
+      "to": "Mark.13.1-Mark.13.31",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The discourse on the Mount of Olives",
+      "explanation": "Matthew 24:1–35 and Mark 13:1–31 both tell Jesus' words on the temple thrown down, wars, false christs, the abomination of desolation, and the Son of Man coming on the clouds. Both end with the fig tree and the saying that heaven and earth will pass away but his words will not. Matthew carries the discourse on with parables of readiness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241252"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241367"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241490"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d66e2289a7b31e5e"
+      }
+    },
+    {
+      "id": "matt-l16",
+      "from": "Matt.26.36-Matt.26.46",
+      "to": "Mark.14.32-Mark.14.42",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Gethsemane",
+      "explanation": "Matthew 26:36–46 and Mark 14:32–42 both tell of Jesus praying in Gethsemane that the cup pass from him, yet as the Father wills, and finding Peter, James and John asleep three times. Both give his warning that the spirit is willing but the flesh weak. Mark keeps the Aramaic word Abba in his prayer.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L242847"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249617"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L242807"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "01854979f69ce37b"
+      }
+    },
+    {
+      "id": "matt-l17",
+      "from": "Matt.26.69-Matt.26.75",
+      "to": "Mark.14.66-Mark.14.72",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Peter's three denials",
+      "explanation": "Matthew 26:69–75 and Mark 14:66–72 both tell of Peter in the high priest's courtyard denying Jesus three times, the last with curses, and weeping when the rooster crows and he remembers Jesus' words. In Mark the rooster crows twice, as Jesus had foretold. Matthew says he went out and wept bitterly.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249850"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243198"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249863"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c05d5f0d3d74009b"
+      }
+    },
+    {
+      "id": "matt-l18",
+      "from": "Matt.28.1-Matt.28.8",
+      "to": "Mark.16.1-Mark.16.8",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The women at the tomb",
+      "explanation": "Matthew 28:1–8 and Mark 16:1–8 both tell of women coming to the tomb at dawn after the Sabbath, an angel's message that Jesus is risen and goes before them to Galilee, and the women leaving in fear. Matthew adds an earthquake, the angel rolling back the stone, and the women running with great joy to tell the disciples. Mark ends with them saying nothing to anyone.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243839"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243775"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243864"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "disputed",
+        "note": "Most modern scholars hold that Mark wrote first and Matthew used his Gospel, while Augustine held that Matthew wrote first and Mark followed him as an abridger, so which drew on which is disputed.",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "chapter 6, the Synoptic Problem"
+          },
+          {
+            "kind": "father",
+            "source": "ccel-npnf106",
+            "author": "Augustine",
+            "work": "The Harmony of the Gospels",
+            "locator": "Book I, Chapter II",
+            "edition": "NPNF, first series, vol. 6",
+            "heading": "Chapter II.",
+            "phrase": "Mark follows him closely, and looks like his attendant and epitomizer."
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4e09e3e6e4950134"
+      }
+    },
+    {
+      "id": "eph-l01",
+      "from": "Col.3.18-Col.4.1",
+      "to": "Eph.5.22-Eph.6.9",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The household: wives, children, servants",
+      "explanation": "Ephesians 5:22–6:9 retells Colossians 3:18–4:1: wives and husbands, children and parents, servants and masters in that order, servants working as for the Lord and masters under a Master in heaven. Ephesians enlarges the word to husbands into Christ's love for the church, and quotes the commandment to honour father and mother.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315740"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311283"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311228"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on Ephesians (its relation to Colossians)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f681b9a67f238c73"
+      }
+    },
+    {
+      "id": "eph-l02",
+      "from": "Col.3.9-Col.3.10",
+      "to": "Eph.4.22-Eph.4.24",
+      "type": "echo",
+      "strength": 2,
+      "label": "The old self and the new",
+      "explanation": "Ephesians 4:22–24 echoes Colossians 3:9–10: the old self is put off and the new put on, renewed after God's likeness. Colossians speaks of a new self renewed in knowledge after its Creator's image; Ephesians speaks of being renewed in the spirit of the mind and of a new self created in righteousness and holiness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315389"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L310369"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L310348"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on Ephesians (its relation to Colossians)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "996fe8eecfaca3a6"
+      }
+    },
+    {
+      "id": "eph-l03",
+      "from": "Col.3.16-Col.3.17",
+      "to": "Eph.5.19-Eph.5.20",
+      "type": "echo",
+      "strength": 2,
+      "label": "Psalms, hymns and spiritual songs",
+      "explanation": "Ephesians 5:19–20 echoes Colossians 3:16–17: believers are to sing psalms, hymns and spiritual songs from the heart and give thanks to God in the name of the Lord Jesus. In Colossians the singing comes from Christ's word dwelling richly among them; in Ephesians it comes from being filled with the Spirit.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315629"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315639"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311045"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on Ephesians (its relation to Colossians)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2f04a009a0d94447"
+      }
+    },
+    {
+      "id": "eph-l04",
+      "from": "Col.4.7-Col.4.8",
+      "to": "Eph.6.21-Eph.6.22",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Tychicus carries the letter",
+      "explanation": "Ephesians 6:21–22 retells Colossians 4:7–8: both letters close by commending Tychicus, the beloved brother and faithful servant, sent so that the readers may know how Paul is and be comforted. The two passages run almost word for word, one of the longest stretches of shared wording between two New Testament letters.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315916"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315935"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311650"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on Ephesians (its relation to Colossians)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2a5f4b743048b324"
+      }
+    },
+    {
+      "id": "eph-l05",
+      "from": "Col.1.18",
+      "to": "Eph.1.22-Eph.1.23",
+      "type": "echo",
+      "strength": 2,
+      "label": "The head of the body, the church",
+      "explanation": "Ephesians 1:22–23 echoes Colossians 1:18: Christ is the head of the body, which is the church. Colossians adds that he is the beginning and the firstborn from the dead; Ephesians that God has put all things under his feet, and that the church is his fullness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L314339"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L308840"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L308866"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on Ephesians (its relation to Colossians)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7e9282570198ed75"
+      }
+    },
+    {
+      "id": "jude-l01",
+      "from": "Jude.1.6-Jude.1.7",
+      "to": "2Pet.2.4-2Pet.2.6",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Fallen angels and Sodom",
+      "explanation": "2 Peter 2:4–6 retells Jude 1:6–7: the angels who sinned are kept in darkness for the judgement, and Sodom and Gomorrah stand as an example of what comes to the ungodly. Jude speaks of angels who left their proper dwelling and of cities that suffer eternal fire; Second Peter adds Noah, preserved with seven others when the flood came on the ungodly.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334953"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L337933"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334997"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on 2 Peter (its use of Jude)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b5b53a237ebfbf94"
+      }
+    },
+    {
+      "id": "jude-l02",
+      "from": "Jude.1.11",
+      "to": "2Pet.2.15-2Pet.2.16",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The way of Balaam",
+      "explanation": "2 Peter 2:15–16 retells Jude 1:11: the false teachers have gone the way of Balaam, who loved the wages of wrongdoing. Jude sets Balaam beside Cain and Korah; Second Peter tells how a speechless donkey spoke with a man's voice and stopped the prophet's madness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338014"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335137"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on 2 Peter (its use of Jude)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "aa374626a3218e46"
+      }
+    },
+    {
+      "id": "jude-l03",
+      "from": "Jude.1.17-Jude.1.18",
+      "to": "2Pet.3.2-2Pet.3.3",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Scoffers in the last days",
+      "explanation": "2 Peter 3:2–3 retells Jude 1:17–18: readers are to remember what the apostles said beforehand, that scoffers would come in the last days following their own desires. Second Peter adds what the scoffers say, asking where the promise of his coming is.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338156"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335256"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338148"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapter on 2 Peter (its use of Jude)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c53c9b2ad930083d"
+      }
+    },
+    {
+      "id": "gal-l01",
+      "from": "Gal.3.6-Gal.3.9",
+      "to": "Rom.4.1-Rom.4.3",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Abraham believed God",
+      "explanation": "Galatians 3:6–9 and Romans 4:1–3 both tell that Abraham believed God and it was counted to him as righteousness, quoting Genesis to show that righteousness comes through faith. Galatians draws from it that those of faith are Abraham's children and that the nations are blessed in him; Romans asks what Abraham gained and answers that it was not by works.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289910"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306572"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9b3d6735a22e83f8"
+      }
+    },
+    {
+      "id": "gal-l02",
+      "from": "Gal.4.6-Gal.4.7",
+      "to": "Rom.8.15-Rom.8.17",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Abba, Father",
+      "explanation": "Galatians 4:6–7 and Romans 8:15–17 both tell that the Spirit makes believers God's children, crying Abba, Father, and so heirs. Galatians says they are no longer slaves but sons; Romans adds that they are joint heirs with Christ, suffering with him so as to be glorified with him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L291882"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307134"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307151"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "419f820a1c76490a"
+      }
+    },
+    {
+      "id": "gal-l03",
+      "from": "Gal.5.14",
+      "to": "Rom.13.8-Rom.13.10",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The whole law in one word",
+      "explanation": "Galatians 5:14 and Romans 13:8–10 both tell that the law is fulfilled in one command, to love your neighbour as yourself. Romans names the commandments against adultery, murder, theft and coveting as summed up in it, and adds that love does no harm to a neighbour.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294450"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307697"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8d9071aebface2aa"
+      }
+    },
+    {
+      "id": "gal-l04",
+      "from": "Gal.2.16",
+      "to": "Rom.3.20-Rom.3.28",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Not by works of the law",
+      "explanation": "Galatians 2:16 and Romans 3:20–28 both tell that a person is put right with God through faith in Jesus Christ and not by doing what the law commands. In Galatians Paul says it to Peter at Antioch; in Romans it closes his argument that all have sinned and are justified freely by God's grace.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289619"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289673"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289791"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "307a81c47b240547"
+      }
+    },
+    {
+      "id": "1cor-l01",
+      "from": "1Cor.12.12-1Cor.12.27",
+      "to": "Rom.12.4-Rom.12.8",
+      "type": "parallel",
+      "strength": 3,
+      "label": "One body with many members",
+      "explanation": "1 Corinthians 12:12–27 and Romans 12:4–8 both tell that believers are one body in Christ with many members, each with its own gift. First Corinthians plays out the figure with the foot, the hand, the eye and the ear; Romans lists prophecy, serving, teaching, exhortation, giving, leading and mercy.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L299628"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293898"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293897"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "df3475bfc9c63900"
+      }
+    },
+    {
+      "id": "1cor-l02",
+      "from": "1Cor.15.20-1Cor.15.22",
+      "to": "Rom.5.12-Rom.5.19",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Adam and Christ",
+      "explanation": "1 Corinthians 15:20–22 and Romans 5:12–19 both tell of Adam and Christ as the two men through whom death and life came. First Corinthians says that as all die in Adam, all will be made alive in Christ; Romans sets one man's trespass against one man's obedience and the gift of grace.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L290519"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L290592"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L300742"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "56d3d1c1f1056155"
+      }
+    },
+    {
+      "id": "1thess-l01",
+      "from": "1Thess.4.15-1Thess.4.17",
+      "to": "1Cor.15.51-1Cor.15.52",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The trumpet and the raising of the dead",
+      "explanation": "1 Thessalonians 4:15–17 and 1 Corinthians 15:51–52 both tell that at the sound of the trumpet the dead will be raised and those still living will not be left behind. First Thessalonians says the living will be caught up with them in the clouds to meet the Lord; First Corinthians that all will be changed in the twinkling of an eye.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L317377"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L317417"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L301043"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9f4382b11728d966"
+      }
+    },
+    {
+      "id": "1thess-l02",
+      "from": "1Thess.5.8",
+      "to": "Eph.6.13-Eph.6.17",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The armour of God",
+      "explanation": "1 Thessalonians 5:8 and Ephesians 6:13–17 both tell of the believer armed for the fight, with a breastplate and the hope of salvation for a helmet. First Thessalonians names the breastplate faith and love; Ephesians gives the whole armour, with truth as a belt, righteousness as a breastplate, faith as a shield and the word of God as the Spirit's sword.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311494"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L311527"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L317562"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters (their order and dates)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "292c84bdef75bdd0"
+      }
+    },
+    {
+      "id": "2cor-l01",
+      "from": "2Cor.5.17",
+      "to": "Gal.6.15",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A new creation",
+      "explanation": "2 Corinthians 5:17 and Galatians 6:15 both tell that in Christ there is a new creation. Second Corinthians adds that the old things have passed away; Galatians says that neither circumcision nor uncircumcision counts for anything, but only the new creation.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L302987"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L308208"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c5000caa1a422d49"
+      }
+    },
+    {
+      "id": "2cor-l02",
+      "from": "2Cor.11.22",
+      "to": "Phil.3.4-Phil.3.6",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A Hebrew of Hebrews",
+      "explanation": "2 Corinthians 11:22 and Philippians 3:4–6 both tell Paul's own descent when others boast of theirs: a Hebrew, an Israelite, of Abraham's line. Philippians adds his circumcision on the eighth day, his tribe of Benjamin, his life as a Pharisee and a persecutor, and then counts all of it as loss for Christ.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L313020"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L304940"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a472a8d19881f0a6"
+      }
+    },
+    {
+      "id": "1cor-l03",
+      "from": "1Cor.11.23-1Cor.11.25",
+      "to": "Matt.26.26-Matt.26.28",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The words over the bread and cup",
+      "explanation": "1 Corinthians 11:23–25 and Matthew 26:26–28 both tell the words of Jesus at the supper: the bread his body, the cup the covenant in his blood. Paul hands it on as received from the Lord, with the command to do this in memory of him; Matthew has the blood poured out for many for the forgiveness of sins.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L242631"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L299328"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L242646"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters and on Matthew and Mark (dates of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e66a2c52fee038c1"
+      }
+    },
+    {
+      "id": "1cor-l04",
+      "from": "1Cor.7.10-1Cor.7.11",
+      "to": "Mark.10.9-Mark.10.12",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Not I, but the Lord",
+      "explanation": "1 Corinthians 7:10–11 and Mark 10:9–12 both tell the Lord's command against divorce. Paul marks it as the Lord's word rather than his own, that a wife should not leave her husband nor a husband his wife; Mark gives Jesus' saying that what God has joined no one should separate, and his answer to the disciples in the house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247575"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L297936"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247578"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on Paul's undisputed letters and on Matthew and Mark (dates of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4b592ab7de4b3287"
+      }
+    },
+    {
+      "id": "1thess-l03",
+      "from": "1Thess.5.2",
+      "to": "Matt.24.42-Matt.24.44",
+      "type": "echo",
+      "strength": 2,
+      "label": "Like a thief in the night",
+      "explanation": "1 Thessalonians 5:2 and Matthew 24:42–44 both tell that the Lord's coming will be like a thief's, at an hour no one expects. Paul reminds the Thessalonians that they already know the Lord's day will come as a thief does, by night; Matthew gives the saying about the householder who would have watched had he known the hour.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L317439"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241581"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on 1 Thessalonians and on Matthew (dates of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a721a00105d087e1"
+      }
+    },
+    {
+      "id": "1thess-l04",
+      "from": "1Thess.5.2",
+      "to": "Rev.3.3",
+      "type": "echo",
+      "strength": 2,
+      "label": "I will come as a thief",
+      "explanation": "1 Thessalonians 5:2 and Revelation 3:3 both tell that the Lord will come like a thief to those who are not awake. Paul tells the Thessalonians the Lord's day will come as a thief comes, by night; in Revelation the risen Christ warns the church in Sardis that if it does not watch, he will come as a thief at an hour it will not know.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L317443"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339254"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Raymond E. Brown",
+            "title": "An Introduction to the New Testament",
+            "year": "1997",
+            "locator": "the chapters on 1 Thessalonians and on Revelation (dates of writing)"
+          }
+        ]
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f871fecea855342e"
+      }
+    },
+    {
+      "id": "rom-l01",
+      "from": "Rom.4.1-Rom.4.3",
+      "to": "Jas.2.21-Jas.2.24",
+      "type": "contrast",
+      "strength": 3,
+      "label": "Abraham justified by faith, or by works",
+      "explanation": "Romans 4:1–3 is set against James 2:21–24: both cite the word that Abraham believed God and it was counted to him as righteousness. Romans says Abraham was not justified by works, or he would have something to boast of; James says he was justified by works when he offered Isaac, faith working with his deeds. Readers since have weighed how the two fit together.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289906"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L330699"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L330677"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4911ad26682302c9"
+      }
+    },
+    {
+      "id": "jas-l01",
+      "from": "Jas.4.6-Jas.4.10",
+      "to": "1Pet.5.5-1Pet.5.9",
+      "type": "parallel",
+      "strength": 3,
+      "label": "God resists the proud",
+      "explanation": "James 4:6–10 and 1 Peter 5:5–9 both tell that God resists the proud but gives grace to the humble, and call readers to humble themselves before God and resist the devil. James promises that the devil will flee and that God will lift up the humble; First Peter pictures the devil as a roaring lion looking for someone to devour.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334260"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L331270"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334182"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "58da3d20908cbc88"
+      }
+    },
+    {
+      "id": "col-l01",
+      "from": "Col.1.15-Col.1.17",
+      "to": "Heb.1.2-Heb.1.3",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The image of God, through whom all was made",
+      "explanation": "Colossians 1:15–17 and Hebrews 1:2–3 both tell of the Son as the image of God through whom all things were made and in whom they hold together. Colossians calls him the image of the invisible God and the firstborn of all creation; Hebrews calls him the radiance of God's glory and the very image of his substance, upholding all things by his word.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L314273"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324254"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L314325"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f3a9d623af40609c"
+      }
+    },
+    {
+      "id": "matt-l19",
+      "from": "Matt.24.30",
+      "to": "Rev.1.7",
+      "type": "echo",
+      "strength": 3,
+      "label": "Coming with the clouds",
+      "explanation": "Matthew 24:30 and Revelation 1:7 both tell of the Son of Man coming with the clouds and all the tribes of the earth mourning when they see him. Matthew gives it as Jesus' word on the Mount of Olives; Revelation opens with it, adding that those who pierced him will see him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338457"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L241435"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d4b8726580b59ed0"
+      }
+    },
+    {
+      "id": "matt-l20",
+      "from": "Matt.5.34-Matt.5.37",
+      "to": "Jas.5.12",
+      "type": "echo",
+      "strength": 3,
+      "label": "Let your yes be yes",
+      "explanation": "Matthew 5:34–37 and James 5:12 both tell the command not to swear at all, neither by heaven nor by earth, but to let a yes be yes and a no be no. Matthew gives it in the Sermon on the Mount; James repeats it above all things, so that his readers do not fall under judgement.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L232418"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L232399"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6989aa45edc0f656"
+      }
+    },
+    {
+      "id": "matt-l21",
+      "from": "Matt.5.10-Matt.5.12",
+      "to": "1Pet.3.14",
+      "type": "echo",
+      "strength": 2,
+      "label": "Blessed when you suffer for righteousness",
+      "explanation": "Matthew 5:10–12 and 1 Peter 3:14 both tell that those who suffer for righteousness' sake are blessed. Matthew gives it among the Beatitudes, with the promise of the Kingdom; First Peter applies it to believers slandered for doing good, and tells them not to fear what others fear.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333448"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "704ffcfc276d8b90"
+      }
+    },
+    {
+      "id": "rom-l02",
+      "from": "Rom.13.1-Rom.13.7",
+      "to": "1Pet.2.13-1Pet.2.17",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Subject to the governing authorities",
+      "explanation": "Romans 13:1–7 and 1 Peter 2:13–17 both tell believers to submit to the governing authorities, who punish wrongdoers and praise those who do good. Romans says every authority is from God and that taxes and honour are owed to whom they are due; First Peter tells readers to honour all people, love the brothers, fear God and honour the king.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294353"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332904"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332914"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d1e3f420f0272508"
+      }
+    },
+    {
+      "id": "rom-l03",
+      "from": "Rom.2.4",
+      "to": "2Pet.3.15-2Pet.3.16",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Our beloved brother Paul",
+      "explanation": "2 Peter 3:15–16 names Romans 2:4: Second Peter tells readers to count the Lord's patience as salvation, as Paul wrote in all his letters. Romans speaks in those terms, asking whether the reader despises God's kindness and patience, which lead to repentance. Second Peter adds that some things in Paul's letters are hard to understand, and are twisted by the unstable.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335448"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L288812"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "00598a973795e130"
+      }
+    },
+    {
+      "id": "col-l02",
+      "from": "Col.4.10-Col.4.14",
+      "to": "Phlm.1.23-Phlm.1.24",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The same names in two letters",
+      "explanation": "Colossians 4:10–14 and Philemon 1:23–24 both tell of the same companions sending greetings with Paul: Epaphras, Mark, Aristarchus, Demas and Luke. Colossians adds that Epaphras wrestles in prayer for them and that Luke is the beloved physician. The shared names tie the two letters to one time and place.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L316003"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315985"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324147"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "44adceed1105ccb5"
+      }
+    },
+    {
+      "id": "col-l03",
+      "from": "Col.4.9",
+      "to": "Phlm.1.10-Phlm.1.12",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Onesimus sent back",
+      "explanation": "Colossians 4:9 and Philemon 1:10–12 both tell of Onesimus going back to Colossae. Colossians sends him with Tychicus as a faithful and beloved brother who is one of them; Philemon tells his story, a once useless servant who became Paul's child in prison and is now useful, sent back to be received as Paul himself.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324030"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L315939"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "bde0a44f6db194ea"
+      }
+    },
+    {
+      "id": "1john-l01",
+      "from": "1John.4.2-1John.4.3",
+      "to": "2John.1.7",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Jesus Christ come in the flesh",
+      "explanation": "1 John 4:2–3 and 2 John 1:7 both tell that whoever does not confess Jesus Christ come in the flesh is not of God, and name that spirit the antichrist. First John gives it as the test of every spirit; Second John warns of many deceivers gone out into the world.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L336817"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "590d2dde53384fa1"
+      }
+    },
+    {
+      "id": "1john-l02",
+      "from": "1John.2.7-1John.2.8",
+      "to": "2John.1.5-2John.1.6",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Not a new commandment",
+      "explanation": "1 John 2:7–8 and 2 John 1:5–6 both tell that the commandment they write is no new one but the one held from the beginning. First John adds that it is new too, since the darkness is passing; Second John says plainly that the commandment is to love one another, and that love is walking in his commandments.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335881"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L337579"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9b93c6c7f4210347"
+      }
+    },
+    {
+      "id": "1john-l03",
+      "from": "1John.3.10",
+      "to": "3John.1.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "Whoever does good is of God",
+      "explanation": "1 John 3:10 and 3 John 1:11 both tell that what a person does shows whether he is of God. First John says whoever does not do righteousness or love his brother is not of God; Third John urges Gaius to imitate the good, since whoever does good is of God and whoever does evil has not seen him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L336512"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "57413b12a3518776"
+      }
+    },
+    {
+      "id": "1tim-l01",
+      "from": "1Tim.3.1-1Tim.3.7",
+      "to": "Titus.1.5-Titus.1.9",
+      "type": "parallel",
+      "strength": 3,
+      "label": "What an overseer must be",
+      "explanation": "1 Timothy 3:1–7 and Titus 1:5–9 both tell what is asked of an overseer: blameless, the husband of one wife, hospitable, not given to wine, violence or greed, ruling his household well. First Timothy adds that he must not be a new convert; Titus that he must hold to sound teaching, as elders are appointed in every city of Crete.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L319656"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L319635"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L319667"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1a8f9d0101a3f660"
+      }
+    },
+    {
+      "id": "jude-l04",
+      "from": "Jude.1.11",
+      "to": "Rev.2.14",
+      "type": "echo",
+      "strength": 2,
+      "label": "The teaching of Balaam",
+      "explanation": "Jude 1:11 and Revelation 2:14 both tell of Balaam as the pattern of those who lead God's people astray. Jude sets him beside Cain and Korah as one who erred for reward; in Revelation the risen Christ warns Pergamum about those who hold the teaching of Balaam, who taught Balak to entice Israel to idol feasts and sexual immorality.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338004"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338952"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1062f6afa51fa1c3"
+      }
+    },
+    {
+      "id": "2pet-l01",
+      "from": "2Pet.3.13",
+      "to": "Rev.21.1",
+      "type": "echo",
+      "strength": 3,
+      "label": "A new heaven and a new earth",
+      "explanation": "2 Peter 3:13 and Revelation 21:1 both tell of the new heavens and new earth that believers wait for. Second Peter says righteousness dwells there after the present heavens are dissolved; Revelation sees them, the first heaven and earth passed away and the sea no more.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L344100"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335409"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "80a9e2738935795c"
+      }
+    },
+    {
+      "id": "1cor-l05",
+      "from": "1Cor.3.1-1Cor.3.2",
+      "to": "Heb.5.12-Heb.5.14",
+      "type": "echo",
+      "strength": 2,
+      "label": "Milk, not solid food",
+      "explanation": "1 Corinthians 3:1–2 and Hebrews 5:12–14 both tell of believers who still need milk, not solid food. Paul says he could not speak to the Corinthians as spiritual but as infants in Christ; Hebrews says its readers ought to be teachers by now, and that solid food is for the mature, trained to tell good from evil.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325612"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296601"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325640"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "63c9f3737427b747"
+      }
+    },
+    {
+      "id": "matt-l22",
+      "from": "Matt.17.1-Matt.17.5",
+      "to": "2Pet.1.16-2Pet.1.18",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The voice on the holy mountain",
+      "explanation": "Matthew 17:1–5 and 2 Peter 1:16–18 both tell of the voice that named Jesus the beloved Son on the mountain. Matthew tells the Transfiguration itself; Second Peter appeals to it as eyewitness testimony, saying that the writer heard the voice from heaven while with him on the holy mountain.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334724"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L334725"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L238094"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ff1490de51bf6c83"
+      }
+    },
+    {
+      "id": "1thess-l05",
+      "from": "1Thess.4.11-1Thess.4.12",
+      "to": "2Thess.3.10-2Thess.3.12",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Work with your own hands",
+      "explanation": "1 Thessalonians 4:11–12 and 2 Thessalonians 3:10–12 both tell the Thessalonians to live quietly and earn their own bread. The first letter asks them to mind their own business and work with their hands; the second recalls the rule that whoever will not work should not eat, and rebukes those who have turned busybodies.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L318760"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L318763"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L318769"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6aa835e663e6ca5b"
+      }
     }
   ]
 }

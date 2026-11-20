@@ -12,12 +12,19 @@ export const CONNECTIONS_FILE = 'content/connections/connections.json';
 /**
  * Every file of connections, with the corpus pair its connections must join (threads plan §5).
  * `connections.json` holds the first 170 (Old ↔ New, and two New ↔ New seeds) and any pair; the
- * within files hold only their own pair. Each is emitted to its own file under public/data.
+ * other files hold only their own pair, every order stated. Each is emitted to its own file under
+ * public/data (the list the site reads is `THREAD_FILES` in lib/thread-files.ts).
  */
 export const CONNECTION_FILES = [
   { file: CONNECTIONS_FILE, out: 'connections.json', pair: null },
   { file: 'content/connections/within-ot.json', out: 'connections-within-ot.json', pair: 'ot-ot' },
   { file: 'content/connections/within-nt.json', out: 'connections-within-nt.json', pair: 'nt-nt' },
+  // TX7 (owner, 2026-11-20): Old ↔ New threads between two library books, apart from the 170.
+  {
+    file: 'content/connections/library-ot-nt.json',
+    out: 'connections-library-ot-nt.json',
+    pair: 'ot-nt',
+  },
 ] as const;
 
 export const CONNECTION_TYPES = [

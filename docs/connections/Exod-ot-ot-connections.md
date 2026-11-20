@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-13 connections; 0 verified; 0 failing a check.
+13 connections; 13 verified; 0 failing a check.
 
 ## `exod-o01` The first Passover in the land
 
-- **Exod.12.6 → Josh.5.10-Josh.5.11** · allusion · strength 3 · draft · fingerprint `f3ae4436048ee004`
+- **Exod.12.6 → Josh.5.10-Josh.5.11** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `f3ae4436048ee004`
 - From: Passover and Departure (`exod-05`)
 - To: Gilgal and the Commander of the Army (`josh-04`)
 - Order: older end from; the later end uses it; basis text
@@ -20,7 +20,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o02` Jericho heard of the Red Sea
 
-- **Exod.14.21-Exod.14.22 → Josh.2.10** · allusion · strength 3 · draft · fingerprint `c1c713c1792b62e9`
+- **Exod.14.21-Exod.14.22 → Josh.2.10** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `c1c713c1792b62e9`
 - From: Crossing the Sea (`exod-06`)
 - To: Rahab and the Spies (`josh-02`)
 - Order: older end from; the later end uses it; basis text
@@ -32,7 +32,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o03` The Jordan dried up as the Red Sea was
 
-- **Exod.14.21-Exod.14.22 → Josh.4.23** · allusion · strength 3 · draft · fingerprint `6b51d5b41400066e`
+- **Exod.14.21-Exod.14.22 → Josh.4.23** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `6b51d5b41400066e`
 - From: Crossing the Sea (`exod-06`)
 - To: Crossing the Jordan (`josh-03`)
 - Order: older end from; the later end uses it; basis text
@@ -45,7 +45,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o04` The LORD is my strength and song
 
-- **Exod.15.2 → Ps.118.14** · echo · strength 3 · draft · fingerprint `dab7d00ddef27bfc`
+- **Exod.15.2 → Ps.118.14** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `dab7d00ddef27bfc`
 - From: Crossing the Sea (`exod-06`)
 - To: Psalm 118 (117) (`ps-118`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -61,7 +61,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o05` The manna ceased
 
-- **Exod.16.35 → Josh.5.12** · allusion · strength 3 · draft · fingerprint `a6327964fead5e40`
+- **Exod.16.35 → Josh.5.12** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `a6327964fead5e40`
 - From: Bitter Water, Manna, and Amalek (`exod-07`)
 - To: Gilgal and the Commander of the Army (`josh-04`)
 - Order: older end from; the later end uses it; basis text
@@ -76,7 +76,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o06` As at Meribah, as at Massah
 
-- **Exod.17.7 → Ps.95.8-Ps.95.9** · allusion · strength 3 · draft · fingerprint `fd49c898bb8aa6e0`
+- **Exod.17.7 → Ps.95.8-Ps.95.9** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `fd49c898bb8aa6e0`
 - From: Bitter Water, Manna, and Amalek (`exod-07`)
 - To: Psalm 95 (94) (`ps-095`, library)
 - Order: older end from; the later end uses it; basis text
@@ -93,7 +93,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o07` The Ten Commandments, given twice
 
-- **Exod.20.1-Exod.20.17 → Deut.5.6-Deut.5.21** · parallel · strength 3 · draft · fingerprint `f3aa493cf288bd42`
+- **Exod.20.1-Exod.20.17 → Deut.5.6-Deut.5.21** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `f3aa493cf288bd42`
 - From: Sinai and the Ten Commandments (`exod-09`)
 - To: The Ten Commandments Repeated (`deut-x104`)
 - Order: older end from; the later end uses it; basis text
@@ -111,7 +111,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o08` The golden calf, remembered
 
-- **Exod.32.1-Exod.32.20 → Deut.9.8-Deut.9.21** · parallel · strength 3 · draft · fingerprint `982e7577c98b5cd3`
+- **Exod.32.1-Exod.32.20 → Deut.9.8-Deut.9.21** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `982e7577c98b5cd3`
 - From: The Golden Calf (`exod-11`)
 - To: The Golden Calf Remembered (`deut-x304`)
 - Order: older end from; the later end uses it; basis text
@@ -129,7 +129,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o09` A calf in Horeb
 
-- **Exod.32.4 → Ps.106.19-Ps.106.20** · allusion · strength 3 · draft · fingerprint `cd773b7a55fd900b`
+- **Exod.32.4 → Ps.106.19-Ps.106.20** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `cd773b7a55fd900b`
 - From: The Golden Calf (`exod-11`)
 - To: Psalm 106 (105) (`ps-106`, library)
 - Order: older end from; the later end uses it; basis text
@@ -146,7 +146,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o10` Moses prays God's own words back
 
-- **Exod.34.6-Exod.34.7 → Num.14.17-Num.14.19** · quotation · strength 3 · draft · fingerprint `21af69598f344796`
+- **Exod.34.6-Exod.34.7 → Num.14.17-Num.14.19** · quotation · strength 3 · verified (approved 2026-11-20) · fingerprint `21af69598f344796`
 - From: The Covenant Renewed (`exod-13`)
 - To: The Twelve Spies (`num-04`)
 - Order: older end from; the later end uses it; basis text
@@ -164,7 +164,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o11` Merciful and gracious, slow to anger
 
-- **Exod.34.6 → Jonah.4.2** · echo · strength 3 · draft · fingerprint `e4fa35f0deec77d1`
+- **Exod.34.6 → Jonah.4.2** · echo · strength 3 · verified (approved 2026-11-20) · fingerprint `e4fa35f0deec77d1`
 - From: The Covenant Renewed (`exod-13`)
 - To: The Vine (`jonah-04`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -180,7 +180,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o12` The cloud fills the dwelling
 
-- **Exod.40.34-Exod.40.35 → 1Kgs.8.10-1Kgs.8.11** · echo · strength 2 · draft · fingerprint `ba1996baafa099b8`
+- **Exod.40.34-Exod.40.35 → 1Kgs.8.10-1Kgs.8.11** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `ba1996baafa099b8`
 - From: Glory Fills the Tabernacle (`exod-14`)
 - To: The Temple Dedicated (`1kgs-04`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -197,7 +197,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `exod-o13` Him who lived in the bush
 
-- **Exod.3.2-Exod.3.4 → Deut.33.16** · allusion · strength 3 · draft · fingerprint `748be32b8eddae7e`
+- **Exod.3.2-Exod.3.4 → Deut.33.16** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `748be32b8eddae7e`
 - From: The Burning Bush (`exod-02`)
 - To: Moses Blesses the Tribes (`deut-06`)
 - Order: older end from; the later end uses it; basis text

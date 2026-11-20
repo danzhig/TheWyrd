@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-6 connections; 0 verified; 0 failing a check.
+6 connections; 6 verified; 0 failing a check.
 
 ## `1macc-o01` Abraham found faithful when tested
 
-- **Gen.22.1-Gen.22.14 → 1Macc.2.52** · allusion · strength 3 · draft · fingerprint `4742c4fcb5368a1b`
+- **Gen.22.1-Gen.22.14 → 1Macc.2.52** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `4742c4fcb5368a1b`
 - From: Isaac Born, Abraham Tested (`gen-10`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text
@@ -19,7 +19,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1macc-o02` Joseph became lord of Egypt
 
-- **Gen.41.39-Gen.41.43 → 1Macc.2.53** · allusion · strength 3 · draft · fingerprint `97a5efe46f02cea0`
+- **Gen.41.39-Gen.41.43 → 1Macc.2.53** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `97a5efe46f02cea0`
 - From: Joseph in Egypt (`gen-17`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text
@@ -30,7 +30,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1macc-o03` Phinehas our father
 
-- **Num.25.7-Num.25.13 → 1Macc.2.54** · allusion · strength 3 · draft · fingerprint `90379b27b0116a86`
+- **Num.25.7-Num.25.13 → 1Macc.2.54** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `90379b27b0116a86`
 - From: Apostasy at Peor (`num-11`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text
@@ -41,7 +41,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1macc-o04` Elijah, zealous for the law
 
-- **2Kgs.2.11 → 1Macc.2.58** · allusion · strength 3 · draft · fingerprint `b2c4557a2778273d`
+- **2Kgs.2.11 → 1Macc.2.58** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `b2c4557a2778273d`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text
@@ -52,7 +52,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1macc-o05` Saved out of the flame
 
-- **Dan.3.19-Dan.3.27 → 1Macc.2.59** · allusion · strength 3 · draft · fingerprint `83d7b4f4767bb788`
+- **Dan.3.19-Dan.3.27 → 1Macc.2.59** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `83d7b4f4767bb788`
 - From: The Fiery Furnace (`dan-03`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text
@@ -63,7 +63,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1macc-o06` Delivered from the lions
 
-- **Dan.6.16-Dan.6.22 → 1Macc.2.60** · allusion · strength 3 · draft · fingerprint `3805e12727ab8a53`
+- **Dan.6.16-Dan.6.22 → 1Macc.2.60** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `3805e12727ab8a53`
 - From: The Lions' Den (`dan-06`)
 - To: Mattathias Revolts (`1macc-02`)
 - Order: older end from; the later end uses it; basis text

@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-7 connections; 0 verified; 0 failing a check.
+7 connections; 7 verified; 0 failing a check.
 
 ## `job-o01` Job, among the righteous three
 
-- **Job.1.1 → Ezek.14.14** · allusion · strength 3 · draft · fingerprint `25a1b7eaab9789c4`
+- **Job.1.1 → Ezek.14.14** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `25a1b7eaab9789c4`
 - From: The Wager in Heaven (`job-01`)
 - To: The Exile Acted Out; False Prophets (`ezek-05`, library)
 - Order: older end from; the later end uses it; basis text
@@ -23,7 +23,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o02` What is man?
 
-- **Job.7.17-Job.7.18 → Ps.8.4** · echo · strength 2 · draft · fingerprint `a033408ed29a243d`
+- **Job.7.17-Job.7.18 → Ps.8.4** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `a033408ed29a243d`
 - From: Job Answers Eliphaz (`job-x103`)
 - To: Psalm 8 (`ps-008`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -37,7 +37,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o03` Cursed be the day I was born
 
-- **Job.3.3-Job.3.10 → Jer.20.14-Jer.20.18** · echo · strength 2 · draft · fingerprint `2151bc549f733d26`
+- **Job.3.3-Job.3.10 → Jer.20.14-Jer.20.18** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `2151bc549f733d26`
 - From: Job Curses His Day (`job-x101`)
 - To: In the Stocks (`jer-x115`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -54,7 +54,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o04` The fear of the Lord
 
-- **Job.28.28 → Prov.1.7** · echo · strength 2 · draft · fingerprint `9684e1a9a76a7117`
+- **Job.28.28 → Prov.1.7** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `9684e1a9a76a7117`
 - From: Job's Oath; Where Wisdom Is Found (`job-x117`)
 - To: Wisdom’s Call and a Father’s Warnings (`prov-01`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -70,7 +70,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o05` The LORD's hand has done this
 
-- **Job.12.9 → Isa.41.20** · echo · strength 2 · draft · fingerprint `a62f1390bf76e11d`
+- **Job.12.9 → Isa.41.20** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `a62f1390bf76e11d`
 - From: Job: Man Born of Woman (`job-x107`)
 - To: Comfort for the Exiles; the Servant (`isa-12`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -82,7 +82,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o06` Naked from the womb
 
-- **Job.1.21 → Eccl.5.15** · echo · strength 2 · draft · fingerprint `a8071ee1a1bca4e8`
+- **Job.1.21 → Eccl.5.15** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `a8071ee1a1bca4e8`
 - From: The Wager in Heaven (`job-01`)
 - To: Vows, Wealth and What Is Good (`eccl-03`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -98,7 +98,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `job-o07` Who measured the world?
 
-- **Job.38.4-Job.38.11 → Isa.40.12** · echo · strength 2 · draft · fingerprint `44f5e16e30dfe1f7`
+- **Job.38.4-Job.38.11 → Isa.40.12** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `44f5e16e30dfe1f7`
 - From: The Voice from the Whirlwind (`job-02`)
 - To: Comfort for the Exiles; the Servant (`isa-12`, library)
 - Order: older end unknown; no use claimed; basis unstated

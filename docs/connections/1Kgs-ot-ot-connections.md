@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-10 connections; 0 verified; 0 failing a check.
+10 connections; 10 verified; 0 failing a check.
 
 ## `1kgs-o01` The temple dedicated, told twice
 
-- **1Kgs.8.1-1Kgs.8.21 → 2Chr.5.2-2Chr.6.11** · parallel · strength 3 · draft · fingerprint `72298563a04d98f5`
+- **1Kgs.8.1-1Kgs.8.21 → 2Chr.5.2-2Chr.6.11** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `72298563a04d98f5`
 - From: The Temple Dedicated (`1kgs-04`)
 - To: The Ark, the Prayer and the Glory (`2chr-03`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -25,7 +25,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o02` Solomon asks for wisdom
 
-- **1Kgs.3.4-1Kgs.3.15 → 2Chr.1.3-2Chr.1.13** · parallel · strength 3 · draft · fingerprint `e721d7896789f41f`
+- **1Kgs.3.4-1Kgs.3.15 → 2Chr.1.3-2Chr.1.13** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `e721d7896789f41f`
 - From: Solomon's Wisdom and Splendour (`1kgs-02`)
 - To: Solomon’s Wisdom and His Builders (`2chr-01`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -42,7 +42,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o03` The queen of Sheba, told twice
 
-- **1Kgs.10.1-1Kgs.10.13 → 2Chr.9.1-2Chr.9.12** · parallel · strength 3 · draft · fingerprint `c0f3f77de7a2914a`
+- **1Kgs.10.1-1Kgs.10.13 → 2Chr.9.1-2Chr.9.12** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `c0f3f77de7a2914a`
 - From: The Queen of Sheba; Solomon's Fall (`1kgs-05`)
 - To: Solomon’s Reign; the Queen of Sheba (`2chr-04`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -59,7 +59,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o04` The kingdom divided, told twice
 
-- **1Kgs.12.1-1Kgs.12.20 → 2Chr.10.1-2Chr.10.19** · parallel · strength 3 · draft · fingerprint `334c9a5150d1d515`
+- **1Kgs.12.1-1Kgs.12.20 → 2Chr.10.1-2Chr.10.19** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `334c9a5150d1d515`
 - From: The Kingdom Splits (`1kgs-06`)
 - To: The Kingdom Divides under Rehoboam (`2chr-05`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -76,7 +76,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o05` Josiah, named before his birth
 
-- **1Kgs.13.1-1Kgs.13.2 → 2Kgs.23.15-2Kgs.23.18** · fulfilment · strength 3 · draft · fingerprint `405e5828693d59ac`
+- **1Kgs.13.1-1Kgs.13.2 → 2Kgs.23.15-2Kgs.23.18** · fulfilment · strength 3 · verified (approved 2026-11-20) · fingerprint `405e5828693d59ac`
 - From: The Kingdom Splits (`1kgs-06`)
 - To: Manasseh and Josiah's Reform (`2kgs-09`)
 - Order: older end from; the later end uses it; basis text
@@ -94,7 +94,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o06` In the rock, as the LORD passes by
 
-- **Exod.33.21-Exod.33.23 → 1Kgs.19.9-1Kgs.19.13** · parallel · strength 2 · draft · fingerprint `d8c5d2bba76c0189`
+- **Exod.33.21-Exod.33.23 → 1Kgs.19.9-1Kgs.19.13** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `d8c5d2bba76c0189`
 - From: Moses Intercedes (`exod-12`)
 - To: Elijah at Horeb (`1kgs-09`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -107,7 +107,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o07` The blood of Naboth repaid
 
-- **1Kgs.21.17-1Kgs.21.24 → 2Kgs.9.25-2Kgs.9.26** · fulfilment · strength 3 · draft · fingerprint `86ea058ed5550caa`
+- **1Kgs.21.17-1Kgs.21.24 → 2Kgs.9.25-2Kgs.9.26** · fulfilment · strength 3 · verified (approved 2026-11-20) · fingerprint `86ea058ed5550caa`
 - From: Ahab's Wars; Naboth's Vineyard (`1kgs-10`)
 - To: Jehu's Coup (`2kgs-03`)
 - Order: older end from; the later end uses it; basis text
@@ -123,7 +123,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o08` The dogs at Jezreel
 
-- **1Kgs.21.23 → 2Kgs.9.36-2Kgs.9.37** · fulfilment · strength 3 · draft · fingerprint `1b1dd56cf5858c19`
+- **1Kgs.21.23 → 2Kgs.9.36-2Kgs.9.37** · fulfilment · strength 3 · verified (approved 2026-11-20) · fingerprint `1b1dd56cf5858c19`
 - From: Ahab's Wars; Naboth's Vineyard (`1kgs-10`)
 - To: Jehu's Coup (`2kgs-03`)
 - Order: older end from; the later end uses it; basis text
@@ -139,7 +139,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o09` Micaiah against the four hundred
 
-- **1Kgs.22.1-1Kgs.22.40 → 2Chr.18.1-2Chr.18.34** · parallel · strength 3 · draft · fingerprint `5cabbddd9b634177`
+- **1Kgs.22.1-1Kgs.22.40 → 2Chr.18.1-2Chr.18.34** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `5cabbddd9b634177`
 - From: Micaiah and the Death of Ahab (`1kgs-11`)
 - To: Jehoshaphat (`2chr-07`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -156,7 +156,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `1kgs-o10` Even Solomon
 
-- **1Kgs.11.1-1Kgs.11.8 → Neh.13.26** · allusion · strength 3 · draft · fingerprint `102fbb96fa3aaf99`
+- **1Kgs.11.1-1Kgs.11.8 → Neh.13.26** · allusion · strength 3 · verified (approved 2026-11-20) · fingerprint `102fbb96fa3aaf99`
 - From: The Queen of Sheba; Solomon's Fall (`1kgs-05`)
 - To: Nehemiah's Last Reforms (`neh-12`)
 - Order: older end from; the later end uses it; basis text

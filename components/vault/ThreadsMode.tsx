@@ -19,6 +19,7 @@ import type { ConnectionType, PublicConnection, PublicConnections } from '@/lib/
 import type { Point } from './layout';
 import { ALL_PAIRS, pairLabel, type PairId } from '@/lib/corpora';
 import { readThreadFilters, writeThreadFilters } from '@/lib/store';
+import { THREAD_FILES } from '@/lib/thread-files';
 
 /** On at first (owner, 2026-11-20): the threads between the Testaments. */
 const DEFAULT_PAIRS: PairId[] = ['ot-nt'];
@@ -47,8 +48,7 @@ export function loadConnections(): Promise<PublicConnections> {
       if (!r.ok) throw new Error(`connections.json ${r.status}`);
       return r.json() as Promise<PublicConnections>;
     }),
-    within('connections-within-ot.json'),
-    within('connections-within-nt.json'),
+    ...THREAD_FILES.slice(1).map(within),
   ])
     .then((files) => ({ connections: files.flatMap((f) => f.connections) }))
     .catch((err) => {

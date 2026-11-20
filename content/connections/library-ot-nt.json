@@ -1,0 +1,3071 @@
+{
+  "$comment": "Threads plan TX7 (owner, 2026-11-20: every book counts the same): Old ↔ New threads between two library books, kept apart from the first 170. Every connection states its order.",
+  "connections": [
+    {
+      "id": "ps-x01",
+      "from": "Ps.110.1",
+      "to": "Mark.12.35-Mark.12.37",
+      "type": "quotation",
+      "strength": 3,
+      "label": "David calls him Lord",
+      "explanation": "Mark 12:35–37 quotes Psalms 110:1: teaching in the temple, Jesus asks how the scribes can call the Christ David's son when David, by the Holy Spirit, calls him Lord. The psalm has the LORD tell David's lord to sit at his right hand until his enemies are his footstool. The crowd hears him gladly.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L132799"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248747"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e405f3058fb5c0f0"
+      }
+    },
+    {
+      "id": "ps-x02",
+      "from": "Ps.110.4",
+      "to": "Heb.7.15-Heb.7.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A priest after the order of Melchizedek",
+      "explanation": "Hebrews 7:15–17 quotes Psalms 110:4: Hebrews rests its case for Christ's priesthood on the oath that he is a priest forever after the order of Melchizedek. The psalm makes the king a priest by God's sworn word; Hebrews argues that such a priest rises by the power of an endless life, not by descent from Levi.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L132861"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326315"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L326300"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "eeba7f632e1e7239"
+      }
+    },
+    {
+      "id": "ps-x03",
+      "from": "Ps.2.7",
+      "to": "Heb.1.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "You are my Son",
+      "explanation": "Hebrews 1:5 quotes Psalms 2:7: to show the Son greater than the angels, Hebrews asks to which of them God ever said, you are my Son, today I have become your father. In the psalm the LORD says it to his anointed king on Zion.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324294"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109124"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d538a5bef8fdd83b"
+      }
+    },
+    {
+      "id": "ps-x04",
+      "from": "Ps.8.4-Ps.8.6",
+      "to": "Heb.2.6-Heb.2.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "What is man, that you think of him?",
+      "explanation": "Hebrews 2:6–8 quotes Psalms 8:4–6: the psalm's wonder that God made man a little lower than the angels and put all things under his feet. Hebrews notes that we do not yet see all things subject to man, but we see Jesus, made lower for a little while and now crowned with glory.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110106"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324612"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110135"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b8a22dead51b9950"
+      }
+    },
+    {
+      "id": "ps-x05",
+      "from": "Ps.95.7-Ps.95.11",
+      "to": "Heb.3.7-Heb.3.11",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Today, if you hear his voice",
+      "explanation": "Hebrews 3:7–11 quotes Psalms 95:7–11: Hebrews gives the psalm's warning as the Holy Spirit's word, not to harden hearts as in the wilderness. There the fathers tested God for forty years, and he swore they would not enter his rest. Hebrews goes on to argue that a rest remains for God's people.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325003"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L129070"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L325081"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e197f1b006c1d906"
+      }
+    },
+    {
+      "id": "ps-x06",
+      "from": "Ps.22.1",
+      "to": "Mark.15.34",
+      "type": "quotation",
+      "strength": 3,
+      "label": "My God, why have you forsaken me?",
+      "explanation": "Mark 15:34 quotes Psalms 22:1: at the ninth hour Jesus cries out in Aramaic the opening of the psalm, and Mark gives its meaning. The psalm goes on from abandonment and mockery to praise among the congregation. Some who stand by mishear it as a call to Elijah.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L112916"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L250160"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b76b0e38303a5cf7"
+      }
+    },
+    {
+      "id": "ps-x07",
+      "from": "Ps.118.22-Ps.118.23",
+      "to": "Mark.12.10-Mark.12.11",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The stone the builders rejected",
+      "explanation": "Mark 12:10–11 quotes Psalms 118:22–23: Jesus ends the parable of the wicked tenants with the psalm's rejected stone that became the head of the corner. The psalm calls it the LORD's doing, marvellous in our eyes. The priests and scribes see that he told the parable against them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133977"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248481"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248496"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3a55cd3778bd435a"
+      }
+    },
+    {
+      "id": "ps-x08",
+      "from": "Ps.118.26",
+      "to": "Mark.11.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Blessed is he who comes in the name of the Lord",
+      "explanation": "Mark 11:9 quotes Psalms 118:26: the crowds going before and after Jesus into Jerusalem cry Hosanna and the psalm's blessing on the one who comes in the LORD's name. In the psalm it greets the one entering the temple gates in procession.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L134006"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6a561c4a5869348c"
+      }
+    },
+    {
+      "id": "ps-x09",
+      "from": "Ps.40.6-Ps.40.8",
+      "to": "Heb.10.5-Heb.10.7",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A body you prepared for me",
+      "explanation": "Hebrews 10:5–7 quotes Psalms 40:6–8: Hebrews puts the psalm in Christ's mouth as he comes into the world: sacrifices and offerings God did not desire, and the speaker comes to do God's will. Hebrews follows the Greek, a body prepared, where the Hebrew speaks of ears opened.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L327305"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L327272"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L117494"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "43d8d44d5e203672"
+      }
+    },
+    {
+      "id": "ps-x10",
+      "from": "Ps.34.12-Ps.34.16",
+      "to": "1Pet.3.10-1Pet.3.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Whoever would love life",
+      "explanation": "1 Peter 3:10–12 quotes Psalms 34:12–16: First Peter grounds its call not to repay evil for evil in the psalm. Whoever wants good days must keep his tongue from evil, turn from evil, and seek peace and pursue it, for the Lord's eyes are on the righteous.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333420"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333368"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L115912"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "09845f63b12f58db"
+      }
+    },
+    {
+      "id": "ps-x11",
+      "from": "Ps.14.1-Ps.14.3",
+      "to": "Rom.3.10-Rom.3.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "None righteous, no, not one",
+      "explanation": "Romans 3:10–12 quotes Psalms 14:1–3: Paul opens his chain of Scriptures on universal sin with the psalm's verdict that there is none who does good, not even one; all have turned aside together. In the psalm it is God's view of the earth from heaven, where the fool says there is no God.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111218"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289494"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289516"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1c47281750e2087c"
+      }
+    },
+    {
+      "id": "ps-x12",
+      "from": "Ps.32.1-Ps.32.2",
+      "to": "Rom.4.7-Rom.4.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Blessed is he whose sin is forgiven",
+      "explanation": "Romans 4:7–8 quotes Psalms 32:1–2: Paul cites David's blessing on those whose sins are covered and to whom the LORD does not count iniquity, as a picture of righteousness counted apart from works. The psalm goes on to tell of the relief of confessing.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289972"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L289984"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "515f3b477b5c491c"
+      }
+    },
+    {
+      "id": "ps-x13",
+      "from": "Ps.69.9",
+      "to": "Rom.15.3",
+      "type": "quotation",
+      "strength": 2,
+      "label": "The reproaches of those who reproached you",
+      "explanation": "Romans 15:3 quotes Psalms 69:9: Paul urges the strong to bear with the weak because Christ did not please himself, but as written, the reproaches of those who reproached God fell on him. The psalm says it of one consumed by zeal for God's house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294925"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L123003"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3c658807e2245ed4"
+      }
+    },
+    {
+      "id": "ps-x14",
+      "from": "Ps.116.10",
+      "to": "2Cor.4.13",
+      "type": "quotation",
+      "strength": 2,
+      "label": "I believed, therefore I spoke",
+      "explanation": "2 Corinthians 4:13 quotes Psalms 116:10: Paul claims the psalmist's spirit of faith, I believed and therefore I spoke, for his own preaching in the face of death. The psalm is thanks for rescue from the cords of death.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L302582"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133700"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "213dd0d16a740224"
+      }
+    },
+    {
+      "id": "ps-x15",
+      "from": "Ps.68.18",
+      "to": "Eph.4.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "He ascended on high",
+      "explanation": "Ephesians 4:8 quotes Psalms 68:18: Ephesians reads the psalm of God going up on high and leading captives as Christ's ascension, adding that he gave gifts to men. The Hebrew psalm speaks of receiving gifts among men; Ephesians draws from it the gifts of apostles, prophets, evangelists, shepherds and teachers.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L310012"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L122699"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "8c385c0f3ba506b5"
+      }
+    },
+    {
+      "id": "ps-x16",
+      "from": "Ps.2.8-Ps.2.9",
+      "to": "Rev.2.26-Rev.2.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A rod of iron",
+      "explanation": "Revelation 2:26–27 quotes Psalms 2:8–9: the risen Christ promises the one who overcomes in Thyatira authority over the nations, to rule them with a rod of iron. In the psalm God gives the nations to his anointed king, to break them like a potter's vessel.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339176"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109136"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339163"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "cd350275728daa93"
+      }
+    },
+    {
+      "id": "ps-x17",
+      "from": "Ps.78.2",
+      "to": "Matt.13.35",
+      "type": "quotation",
+      "strength": 2,
+      "label": "I will open my mouth in parables",
+      "explanation": "Matthew 13:35 quotes Psalms 78:2: Matthew says Jesus spoke to the crowds in parables to fulfil the psalm's I will open my mouth in parables. Matthew names the speaker a prophet; the psalm is Asaph's retelling of Israel's history, things hidden from of old.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L236623"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c2a566879939e5dd"
+      }
+    },
+    {
+      "id": "ps-x18",
+      "from": "Ps.8.2",
+      "to": "Matt.21.16",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Out of the mouths of babies",
+      "explanation": "Matthew 21:16 quotes Psalms 8:2: when the chief priests object to children crying Hosanna in the temple, Jesus answers with the psalm's praise from the mouths of babies. Matthew follows the Greek, praise, where the Hebrew has strength.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239811"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110078"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "25251d8275ba70b4"
+      }
+    },
+    {
+      "id": "ps-x19",
+      "from": "Ps.45.6-Ps.45.7",
+      "to": "Heb.1.8-Heb.1.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Your throne, O God, is forever",
+      "explanation": "Hebrews 1:8–9 quotes Psalms 45:6–7: Hebrews takes the royal wedding psalm as God's word to the Son, whose throne is forever and whose sceptre is righteousness. It sets this against what God says of the angels, who are servants.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324350"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324386"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L118414"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b293ba23b20806a1"
+      }
+    },
+    {
+      "id": "ps-x20",
+      "from": "Ps.102.25-Ps.102.27",
+      "to": "Heb.1.10-Heb.1.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "They will perish, but you remain",
+      "explanation": "Hebrews 1:10–12 quotes Psalms 102:25–27: Hebrews gives as said to the Son the psalm's praise of the Lord who laid the earth's foundations. His works wear out like a garment and are changed, but he remains the same and his years have no end.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324394"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L324433"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L130305"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6e22cfb94f165954"
+      }
+    },
+    {
+      "id": "ps-x21",
+      "from": "Ps.19.4",
+      "to": "Rom.10.18",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Their voice has gone out into all the earth",
+      "explanation": "Romans 10:18 quotes Psalms 19:4: asking whether Israel has not heard, Paul answers with the psalm, whose voice reaches through all the earth and whose words reach the world's ends. The psalm says it of the heavens declaring God's glory; Paul applies it to the preaching of the gospel.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293184"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L112384"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "cd7423f7d36bd6f8"
+      }
+    },
+    {
+      "id": "ps-x22",
+      "from": "Ps.44.22",
+      "to": "Rom.8.36",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Sheep for the slaughter",
+      "explanation": "Romans 8:36 quotes Psalms 44:22: in naming what cannot part believers from Christ's love, Paul cites the psalm's for your sake we are killed all day long. In the psalm Israel protests that this has come on them though they have not forgotten God.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292299"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L118244"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f73dcefe6c1100bf"
+      }
+    },
+    {
+      "id": "ps-x23",
+      "from": "Ps.91.11-Ps.91.12",
+      "to": "Matt.4.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "He will give his angels charge",
+      "explanation": "Matthew 4:6 quotes Psalms 91:11–12: in the wilderness the devil sets Jesus on the temple's pinnacle and quotes the psalm's promise that angels will bear him up lest he strike his foot against a stone. Jesus answers with Deuteronomy: do not test the Lord your God.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231292"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L128215"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L128222"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "43d7b83caa689a31"
+      }
+    },
+    {
+      "id": "ps-x24",
+      "from": "Ps.6.8",
+      "to": "Matt.7.23",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Depart from me, you who work iniquity",
+      "explanation": "Matthew 7:23 quotes Psalms 6:8: at the end of the Sermon on the Mount Jesus says he will tell those who called him Lord but did not do the Father's will, depart from me, you who work iniquity. In the psalm the sufferer says it to his enemies when the LORD has heard his weeping.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L233549"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109748"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0cb26c4027a1139b"
+      }
+    },
+    {
+      "id": "ps-x25",
+      "from": "Ps.37.11",
+      "to": "Matt.5.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The meek shall inherit the earth",
+      "explanation": "Matthew 5:5 quotes Psalms 37:11: the third Beatitude blesses the gentle, who will inherit the earth. The psalm promises it to the humble who wait for the LORD and do not fret over evildoers, who will soon be gone.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231722"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L116699"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9854085eb77f88bf"
+      }
+    },
+    {
+      "id": "ps-x26",
+      "from": "Ps.24.1",
+      "to": "1Cor.10.26",
+      "type": "quotation",
+      "strength": 2,
+      "label": "The earth is the Lord's",
+      "explanation": "1 Corinthians 10:26 quotes Psalms 24:1: Paul tells the Corinthians they may eat whatever is sold in the market without asking questions, for the earth is the Lord's and all its fullness. The psalm opens with it before asking who may ascend the LORD's hill.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L113412"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L299123"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b59cc859b9695341"
+      }
+    },
+    {
+      "id": "ps-x27",
+      "from": "Ps.4.4",
+      "to": "Eph.4.26",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Be angry and do not sin",
+      "explanation": "Ephesians 4:26 quotes Psalms 4:4: Ephesians takes up the psalm's be angry and do not sin, and adds don't let the sun go down on your wrath, nor give the devil a foothold. The psalm goes on to bid the angry search their hearts on their beds and be still.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L310421"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L109375"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d6db88ec7c675a92"
+      }
+    },
+    {
+      "id": "ps-x28",
+      "from": "Ps.112.9",
+      "to": "2Cor.9.9",
+      "type": "quotation",
+      "strength": 2,
+      "label": "He has scattered, he has given to the poor",
+      "explanation": "2 Corinthians 9:9 quotes Psalms 112:9: urging generous giving for the saints in Jerusalem, Paul cites the psalm of the righteous man who has given to the poor. His righteousness endures forever; Paul adds that God supplies seed to the sower.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L304295"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133237"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7eebd1e0dbb70a83"
+      }
+    },
+    {
+      "id": "isa-x01",
+      "from": "Isa.7.14",
+      "to": "Matt.1.22-Matt.1.23",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The virgin will conceive",
+      "explanation": "Matthew 1:22–23 quotes Isaiah 7:14: Matthew says the birth of Jesus fulfilled the word to Ahaz that the virgin will conceive and bear a son, called Immanuel. He translates the name as God with us. Matthew follows the Greek, virgin, where the Hebrew word means a young woman.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230501"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L156098"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9327bdb6008eb61f"
+      }
+    },
+    {
+      "id": "isa-x02",
+      "from": "Isa.40.3",
+      "to": "Mark.1.2-Mark.1.3",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A voice crying in the wilderness",
+      "explanation": "Mark 1:2–3 quotes Isaiah 40:3: Mark opens his Gospel with the voice crying in the wilderness to prepare the Lord's way, under the name of Isaiah. He joins Malachi's messenger sent ahead to it. John the Baptist then appears in the wilderness preaching.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165165"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L244074"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f7c83a86543ab186"
+      }
+    },
+    {
+      "id": "isa-x03",
+      "from": "Isa.53.4",
+      "to": "Matt.8.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "He took our infirmities",
+      "explanation": "Matthew 8:17 quotes Isaiah 53:4: after an evening of healing, Matthew says this fulfilled Isaiah: he took our infirmities and bore our diseases. Isaiah says it of the servant who bore the griefs and sorrows of others.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L233892"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170266"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "e55e718c14c1f84b"
+      }
+    },
+    {
+      "id": "isa-x04",
+      "from": "Isa.53.4-Isa.53.9",
+      "to": "1Pet.2.22-1Pet.2.25",
+      "type": "quotation",
+      "strength": 3,
+      "label": "By his wounds you were healed",
+      "explanation": "1 Peter 2:22–25 quotes Isaiah 53:4–9: First Peter holds up Christ's suffering to servants in the servant song's words. He did no sin and no deceit was in his mouth; he bore our sins, and by his wounds you were healed. The readers had been going astray like sheep.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170275"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333118"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333143"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "38a941eef1539f70"
+      }
+    },
+    {
+      "id": "isa-x05",
+      "from": "Isa.6.9-Isa.6.10",
+      "to": "Matt.13.14-Matt.13.15",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Hearing, they will not understand",
+      "explanation": "Matthew 13:14–15 quotes Isaiah 6:9–10: Jesus explains why he speaks in parables with the word given at Isaiah's call, that this people will hear and not understand, see and not perceive. Their heart has grown dull. He then blesses the disciples' eyes and ears.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155889"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L236299"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L236303"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ce42ea3d2d76ea7f"
+      }
+    },
+    {
+      "id": "isa-x06",
+      "from": "Isa.29.13",
+      "to": "Mark.7.6-Mark.7.7",
+      "type": "quotation",
+      "strength": 3,
+      "label": "This people honours me with their lips",
+      "explanation": "Mark 7:6–7 quotes Isaiah 29:13: when Pharisees fault the disciples for unwashed hands, Jesus calls them hypocrites in Isaiah's words. This people honours God with their lips while their heart is far from him, teaching human commands as doctrine.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246286"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L246293"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "178e2f64cf22b386"
+      }
+    },
+    {
+      "id": "isa-x07",
+      "from": "Isa.42.1-Isa.42.4",
+      "to": "Matt.12.17-Matt.12.21",
+      "type": "quotation",
+      "strength": 3,
+      "label": "My servant whom I have chosen",
+      "explanation": "Matthew 12:17–21 quotes Isaiah 42:1–4: when Jesus tells those he heals not to make him known, Matthew quotes the servant song at length. God's chosen servant will not quarrel or cry out, nor break a bruised reed, and in his name the Gentiles will hope.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235719"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165995"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235698"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "70e93b4b3d1b41f3"
+      }
+    },
+    {
+      "id": "isa-x08",
+      "from": "Isa.9.1-Isa.9.2",
+      "to": "Matt.4.14-Matt.4.16",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The people who sat in darkness",
+      "explanation": "Matthew 4:14–16 quotes Isaiah 9:1–2: as Jesus settles in Capernaum, Matthew cites Isaiah's word to Galilee of the nations, that the people who sat in darkness have seen a great light. From then on Jesus begins to preach.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L156525"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231426"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L231412"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "abe02bd44134c7cd"
+      }
+    },
+    {
+      "id": "isa-x09",
+      "from": "Isa.28.16",
+      "to": "1Pet.2.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A chief cornerstone in Zion",
+      "explanation": "1 Peter 2:6 quotes Isaiah 28:16: First Peter calls Christ the living stone and quotes Isaiah's cornerstone laid in Zion, chosen and precious, on which whoever believes will not be put to shame. It goes on to the stone the builders rejected.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L161619"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332740"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9e7b7be3ed116a44"
+      }
+    },
+    {
+      "id": "isa-x10",
+      "from": "Isa.8.14",
+      "to": "Rom.9.33",
+      "type": "quotation",
+      "strength": 2,
+      "label": "A stone of stumbling",
+      "explanation": "Romans 9:33 quotes Isaiah 8:14: Paul joins two of Isaiah's stones, laying in Zion a stone of stumbling and a rock of offence, and whoever believes in him will not be put to shame. He uses it to explain why Israel, pursuing righteousness by works, stumbled.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292884"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "29f4985f8d8c96b2"
+      }
+    },
+    {
+      "id": "isa-x11",
+      "from": "Isa.52.7",
+      "to": "Rom.10.15",
+      "type": "quotation",
+      "strength": 3,
+      "label": "How beautiful are the feet",
+      "explanation": "Romans 10:15 quotes Isaiah 52:7: Paul asks how anyone can preach unless sent, and answers with Isaiah: how beautiful are the feet of those who bring good news. In Isaiah the messenger brings Zion word that her God reigns.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293105"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9b2d1506095a2ee8"
+      }
+    },
+    {
+      "id": "isa-x12",
+      "from": "Isa.59.20",
+      "to": "Rom.11.26",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The Deliverer will come out of Zion",
+      "explanation": "Romans 11:26 quotes Isaiah 59:20: Paul ends his argument that all Israel will be saved with Isaiah's promise of a deliverer for Zion who will turn away ungodliness from Jacob. Paul follows the Greek, out of Zion, where the Hebrew has to Zion.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293594"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L172231"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "714d2cf257c5529f"
+      }
+    },
+    {
+      "id": "isa-x13",
+      "from": "Isa.22.13",
+      "to": "1Cor.15.32",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Let us eat and drink, for tomorrow we die",
+      "explanation": "1 Corinthians 15:32 quotes Isaiah 22:13: Paul argues that if the dead are not raised, the reckless saying might as well be true: let us eat and drink, for tomorrow we die. In Isaiah it is Jerusalem's revelry when the LORD called for weeping.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L300861"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L159748"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "94bf3bf16f365aab"
+      }
+    },
+    {
+      "id": "isa-x14",
+      "from": "Isa.25.8",
+      "to": "1Cor.15.54",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Death is swallowed up in victory",
+      "explanation": "1 Corinthians 15:54 quotes Isaiah 25:8: Paul says that when the perishable puts on the imperishable, the saying will come true that death is swallowed up in victory. Isaiah promises it at the LORD's feast on his mountain for all peoples.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L301075"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L160598"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "894d7864f88d5e92"
+      }
+    },
+    {
+      "id": "hos-x01",
+      "from": "Hos.13.14",
+      "to": "1Cor.15.55",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Death, where is your sting?",
+      "explanation": "1 Corinthians 15:55 quotes Hosea 13:14: straight after Isaiah, Paul taunts death in Hosea's words: death, where is your sting, grave, where is your victory? Hosea asks where death's plagues are; Paul answers that the sting of death is sin, and thanks God for the victory through Christ.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L301091"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "87e7574e7c441ef3"
+      }
+    },
+    {
+      "id": "isa-x15",
+      "from": "Isa.64.4",
+      "to": "1Cor.2.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "No eye has seen",
+      "explanation": "1 Corinthians 2:9 quotes Isaiah 64:4: Paul speaks of God's hidden wisdom in words close to Isaiah's: things no eye has seen and no ear heard, which God prepared for those who love him. Isaiah says it of the God who acts for those who wait for him.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L296472"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L173386"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "98c224d1654dc832"
+      }
+    },
+    {
+      "id": "isa-x16",
+      "from": "Isa.54.1",
+      "to": "Gal.4.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Rejoice, barren woman",
+      "explanation": "Galatians 4:27 quotes Isaiah 54:1: in his figure of Sarah and Hagar, Paul cites Isaiah's call to the barren woman to rejoice, for her children are more than those of the married wife. He reads the Jerusalem above as the free mother of believers.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170460"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L307436"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9c17de3ab650451f"
+      }
+    },
+    {
+      "id": "isa-x17",
+      "from": "Isa.40.6-Isa.40.8",
+      "to": "1Pet.1.24-1Pet.1.25",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The word of the Lord endures forever",
+      "explanation": "1 Peter 1:24–25 quotes Isaiah 40:6–8: First Peter grounds the new birth through the living word in Isaiah's contrast between grass that withers and the word of the Lord that endures forever. It adds that this word is the good news preached to them.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165232"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332564"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332579"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6908e8d2309c4dbd"
+      }
+    },
+    {
+      "id": "isa-x18",
+      "from": "Isa.65.17",
+      "to": "Rev.21.1",
+      "type": "echo",
+      "strength": 3,
+      "label": "A new heaven and a new earth",
+      "explanation": "Revelation 21:1 echoes Isaiah 65:17: John sees a new heaven and a new earth, the first having passed away. Isaiah has the LORD create new heavens and a new earth, where the former things are not remembered and Jerusalem is made a joy.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L344095"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L173833"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "168b0bb0caba9547"
+      }
+    },
+    {
+      "id": "isa-x19",
+      "from": "Isa.6.1-Isa.6.3",
+      "to": "Rev.4.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Holy, holy, holy",
+      "explanation": "Revelation 4:8 echoes Isaiah 6:1–3: around the throne in heaven, four living creatures with six wings each cry day and night, holy, holy, holy is the Lord God, the Almighty. Isaiah saw the seraphim with six wings above the throne calling holy, holy, holy.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339765"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155803"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L155795"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6351131662dae9f2"
+      }
+    },
+    {
+      "id": "isa-x20",
+      "from": "Isa.22.22",
+      "to": "Rev.3.7",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The key of David",
+      "explanation": "Revelation 3:7 quotes Isaiah 22:22: the risen Christ introduces himself to Philadelphia as the one who has the key of David, who opens and no one shuts. In Isaiah the key of David's house is laid on the steward Eliakim's shoulder.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339321"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L159801"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a068049d1d579316"
+      }
+    },
+    {
+      "id": "isa-x21",
+      "from": "Isa.25.8",
+      "to": "Rev.21.4",
+      "type": "echo",
+      "strength": 3,
+      "label": "He will wipe away every tear",
+      "explanation": "Revelation 21:4 echoes Isaiah 25:8: in the new Jerusalem God will wipe away every tear, and death will be no more. Isaiah promised that the LORD will swallow up death and wipe away tears from all faces.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L344157"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L160606"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6e706a7f598ac8fc"
+      }
+    },
+    {
+      "id": "isa-x22",
+      "from": "Isa.49.8",
+      "to": "2Cor.6.2",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Now is the day of salvation",
+      "explanation": "2 Corinthians 6:2 quotes Isaiah 49:8: Paul urges the Corinthians not to receive God's grace in vain, quoting Isaiah's acceptable time and day of salvation. He adds that now is that time and now that day. Isaiah says it to the servant given as a covenant for the people.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L303134"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L168950"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4adaa48fb0907ac8"
+      }
+    },
+    {
+      "id": "isa-x23",
+      "from": "Isa.52.11",
+      "to": "2Cor.6.17",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Come out from among them",
+      "explanation": "2 Corinthians 6:17 quotes Isaiah 52:11: Paul joins Isaiah's call to go out and touch no unclean thing to the promise that God will receive them. Isaiah addresses those who carry the LORD's vessels out of Babylon.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L303544"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170089"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f233473b47b89343"
+      }
+    },
+    {
+      "id": "isa-x24",
+      "from": "Isa.45.23",
+      "to": "Phil.2.10-Phil.2.11",
+      "type": "echo",
+      "strength": 3,
+      "label": "Every knee shall bow",
+      "explanation": "Philippians 2:10–11 echoes Isaiah 45:23: at the name of Jesus every knee will bow and every tongue confess that he is Lord. In Isaiah the LORD swears by himself that every knee will bow to him and every tongue swear allegiance.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L312524"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L167907"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3565ebe939c1e823"
+      }
+    },
+    {
+      "id": "isa-x25",
+      "from": "Isa.11.10",
+      "to": "Rom.15.12",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The root of Jesse",
+      "explanation": "Romans 15:12 quotes Isaiah 11:10: Paul ends his chain of Scriptures on the Gentiles praising God with Isaiah's root of Jesse, who arises to rule the nations, in whom they will hope. Isaiah sets it after the peaceable kingdom.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L295046"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "547eee753bc64d25"
+      }
+    },
+    {
+      "id": "isa-x26",
+      "from": "Isa.56.7",
+      "to": "Mark.11.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "A house of prayer for all nations",
+      "explanation": "Mark 11:17 quotes Isaiah 56:7: driving the traders from the temple, Jesus cites Isaiah's house of prayer for all nations and adds that they have made it a den of robbers. Isaiah promises the temple to foreigners who hold fast the covenant.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248164"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L171188"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "053bbd504723dcb5"
+      }
+    },
+    {
+      "id": "isa-x27",
+      "from": "Isa.13.10",
+      "to": "Mark.13.24-Mark.13.25",
+      "type": "echo",
+      "strength": 2,
+      "label": "The sun darkened",
+      "explanation": "Mark 13:24–25 echoes Isaiah 13:10: Jesus says that after the tribulation sun and moon will fail and the stars fall from the sky. Isaiah says it of the day of the LORD against Babylon.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L157942"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249077"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "27ed295846628410"
+      }
+    },
+    {
+      "id": "isa-x28",
+      "from": "Isa.66.24",
+      "to": "Mark.9.47-Mark.9.48",
+      "type": "quotation",
+      "strength": 2,
+      "label": "Their worm does not die",
+      "explanation": "Mark 9:47–48 quotes Isaiah 66:24: Jesus warns that it is better to enter the Kingdom with one eye than to be thrown into Gehenna, where the worm does not die and the fire is not quenched. Isaiah ends his book with that image of the rebels' corpses.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L247472"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f18d2345491e4c44"
+      }
+    },
+    {
+      "id": "hos-x02",
+      "from": "Hos.11.1",
+      "to": "Matt.2.15",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Out of Egypt I called my son",
+      "explanation": "Matthew 2:15 quotes Hosea 11:1: Matthew says the holy family's stay in Egypt until Herod's death fulfilled the word, out of Egypt I called my son. Hosea says it of Israel, the child the LORD loved and called at the Exodus.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230764"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L215454"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "699e34569c61cf62"
+      }
+    },
+    {
+      "id": "hos-x03",
+      "from": "Hos.6.6",
+      "to": "Matt.9.13",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I desire mercy and not sacrifice",
+      "explanation": "Matthew 9:13 quotes Hosea 6:6: when Pharisees object to Jesus eating with tax collectors and sinners, he tells them to go and learn what this means: I desire mercy, not sacrifice. He came to call sinners. Matthew gives the saying again in the grainfields.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L234238"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L214335"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "734d5c795942c59a"
+      }
+    },
+    {
+      "id": "hos-x04",
+      "from": "Hos.2.23",
+      "to": "Rom.9.25-Rom.9.26",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Not my people",
+      "explanation": "Romans 9:25–26 quotes Hosea 2:23: Paul reads Hosea's promise, those who were not my people I will call my people, as God calling the Gentiles. In Hosea it is the restoration of Israel after the names given to his children.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L213496"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292781"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f18d058c2ea8791b"
+      }
+    },
+    {
+      "id": "mic-x01",
+      "from": "Mic.5.2",
+      "to": "Matt.2.5-Matt.2.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Bethlehem, least among the rulers of Judah",
+      "explanation": "Matthew 2:5–6 quotes Micah 5:2: asked by Herod where the Christ is to be born, the chief priests and scribes answer Bethlehem of Judea, citing Micah's ruler who will come from there. Matthew adds that he will shepherd God's people Israel.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230634"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L221283"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fb98d3ecc933125f"
+      }
+    },
+    {
+      "id": "mic-x02",
+      "from": "Mic.7.6",
+      "to": "Matt.10.35-Matt.10.36",
+      "type": "quotation",
+      "strength": 2,
+      "label": "A man's enemies, his own household",
+      "explanation": "Matthew 10:35–36 quotes Micah 7:6: sending out the twelve, Jesus says he came to set a son against his father and a daughter against her mother. A man's foes will be those of his own household. Micah laments a society where no one can trust even family.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L221896"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L234991"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9629291f827fb0d4"
+      }
+    },
+    {
+      "id": "zech-x01",
+      "from": "Zech.9.9",
+      "to": "Matt.21.4-Matt.21.5",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Your King comes, riding on a donkey",
+      "explanation": "Matthew 21:4–5 quotes Zechariah 9:9: Matthew says the entry into Jerusalem fulfilled the prophet: tell the daughter of Zion, your King comes to you, humble and riding on a donkey. Zechariah's king comes righteous and bringing salvation.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239676"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L227215"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L239666"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "05122d1ed70c07cd"
+      }
+    },
+    {
+      "id": "zech-x02",
+      "from": "Zech.13.7",
+      "to": "Mark.14.27",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Strike the shepherd",
+      "explanation": "Mark 14:27 quotes Zechariah 13:7: on the way to the Mount of Olives Jesus tells the disciples that all will fall away, as Scripture says of the shepherd struck and the flock scattered. He promises to go before them to Galilee.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L249501"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228425"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "f5f50bdb6692ec4f"
+      }
+    },
+    {
+      "id": "zech-x03",
+      "from": "Zech.11.12-Zech.11.13",
+      "to": "Matt.27.9-Matt.27.10",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Thirty pieces of silver and the potter",
+      "explanation": "Matthew 27:9–10 quotes Zechariah 11:12–13: when the priests buy the potter's field with Judas's silver, Matthew cites a prophecy he names as Jeremiah's, of thirty pieces of silver for that field. The words are closest to Zechariah, where the shepherd's thirty pieces are thrown to the potter in the LORD's house.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243307"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L243310"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "467fc8aa13f230b3"
+      }
+    },
+    {
+      "id": "zech-x04",
+      "from": "Zech.12.10",
+      "to": "Rev.1.7",
+      "type": "quotation",
+      "strength": 3,
+      "label": "They will look on him whom they pierced",
+      "explanation": "Revelation 1:7 quotes Zechariah 12:10: Revelation says that every eye will see the one coming with the clouds, including those who pierced him, and all the tribes will mourn. Zechariah has the house of David look on the one they pierced and mourn as for an only son.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L338455"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228273"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "45ba80bb71a294c9"
+      }
+    },
+    {
+      "id": "mal-x01",
+      "from": "Mal.3.1",
+      "to": "Matt.11.10",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I send my messenger before your face",
+      "explanation": "Matthew 11:10 quotes Malachi 3:1: Jesus tells the crowds that John the Baptist is the one of whom it is written, I send my messenger before your face to prepare your way. In Malachi the LORD sends the messenger to prepare the way before himself.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235229"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L229572"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "29263ed5ce534aef"
+      }
+    },
+    {
+      "id": "mal-x02",
+      "from": "Mal.4.5",
+      "to": "Matt.11.14",
+      "type": "allusion",
+      "strength": 3,
+      "label": "He is Elijah who is to come",
+      "explanation": "Matthew 11:14 recalls Malachi 4:5: Jesus says of John the Baptist that, if they will receive it, he is Elijah who is to come. Malachi ends by promising that Elijah the prophet will come before the LORD's great and terrible day.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L235276"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1f4525ed64817c05"
+      }
+    },
+    {
+      "id": "mal-x03",
+      "from": "Mal.1.2-Mal.1.3",
+      "to": "Rom.9.13",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Jacob I loved, Esau I hated",
+      "explanation": "Romans 9:13 quotes Malachi 1:2–3: Paul cites Malachi's Jacob I loved, but Esau I hated, to show that God's choice stands not by works but by him who calls. In Malachi it answers Israel's question of how God has loved them, set against Edom's ruin.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L292590"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5981c91da57fafe1"
+      }
+    },
+    {
+      "id": "hab-x01",
+      "from": "Hab.2.4",
+      "to": "Rom.1.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The righteous shall live by faith",
+      "explanation": "Romans 1:17 quotes Habakkuk 2:4: Paul states the theme of Romans, God's righteousness revealed from faith to faith, with Habakkuk's word that the righteous will live by faith. In Habakkuk it is the answer to the prophet watching for the end of violence.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L288462"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L223132"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ef08a0cc26529619"
+      }
+    },
+    {
+      "id": "hab-x02",
+      "from": "Hab.2.4",
+      "to": "Gal.3.11",
+      "type": "quotation",
+      "strength": 3,
+      "label": "No one is justified by the law",
+      "explanation": "Galatians 3:11 quotes Habakkuk 2:4: Paul argues that no one is justified by the law before God, since the righteous will live by faith. He then sets Leviticus's word about living by doing the law against it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L223123"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306643"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "2697069610d01544"
+      }
+    },
+    {
+      "id": "joel-x01",
+      "from": "Joel.2.32",
+      "to": "Rom.10.13",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Whoever calls on the name of the Lord",
+      "explanation": "Romans 10:13 quotes Joel 2:32: Paul says there is no distinction between Jew and Greek, for whoever calls on the name of the Lord will be saved. Joel says it of the day of the LORD, when deliverance will be in Mount Zion.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L293078"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "df37c315533287ec"
+      }
+    },
+    {
+      "id": "joel-x02",
+      "from": "Joel.2.31",
+      "to": "Rev.6.12",
+      "type": "echo",
+      "strength": 2,
+      "label": "The sun black, the moon like blood",
+      "explanation": "Revelation 6:12 echoes Joel 2:31: at the opening of the sixth seal there is a great earthquake, the sun becomes black as sackcloth and the whole moon like blood. Joel said the sun would be turned to darkness and the moon to blood before the day of the LORD.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L217075"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "7c7eff17dbb14d82"
+      }
+    },
+    {
+      "id": "hag-x01",
+      "from": "Hag.2.6",
+      "to": "Heb.12.26",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Once more I will shake the heavens",
+      "explanation": "Hebrews 12:26 quotes Haggai 2:6: Hebrews contrasts the shaking of the earth at Sinai with the promise that God will once more shake not only the earth but heaven. Haggai gives it to encourage the builders of the second temple, as nations' treasures come in.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L329124"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L225008"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "b1289d3e90eab131"
+      }
+    },
+    {
+      "id": "zeph-x01",
+      "from": "Zeph.3.13",
+      "to": "Rev.14.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "No lie found in their mouth",
+      "explanation": "Revelation 14:5 echoes Zephaniah 3:13: the hundred and forty-four thousand with the Lamb on Mount Zion have no lie found in their mouth and are blameless. Zephaniah says the remnant of Israel will do no wrong, speak no lies, and have no deceitful tongue.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L224529"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L342221"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "3a980774c7b9dcc9"
+      }
+    },
+    {
+      "id": "ezek-x01",
+      "from": "Ezek.37.27",
+      "to": "2Cor.6.16",
+      "type": "quotation",
+      "strength": 3,
+      "label": "I will dwell among them",
+      "explanation": "2 Corinthians 6:16 quotes Ezekiel 37:27: Paul calls believers the temple of the living God, as God said, I will dwell among them and be their God, and they will be my people. Ezekiel gives it as the everlasting covenant with the sanctuary in their midst, as Leviticus had promised.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L206073"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "39bd3866eadb184e"
+      }
+    },
+    {
+      "id": "ezek-x02",
+      "from": "Ezek.1.5-Ezek.1.10",
+      "to": "Rev.4.6-Rev.4.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Four living creatures",
+      "explanation": "Revelation 4:6–8 echoes Ezekiel 1:5–10: around the throne are four living creatures full of eyes, like a lion, a calf, a man and a flying eagle. Ezekiel's four living creatures each had four faces: a man's, a lion's, an ox's and an eagle's.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339734"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L339753"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L194806"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "9e43d6449cece671"
+      }
+    },
+    {
+      "id": "ezek-x03",
+      "from": "Ezek.47.12",
+      "to": "Rev.22.2",
+      "type": "echo",
+      "strength": 3,
+      "label": "Leaves for healing",
+      "explanation": "Revelation 22:2 echoes Ezekiel 47:12: beside the river of the water of life stands the tree of life, bearing twelve kinds of fruit, one each month, with leaves for healing the nations. Ezekiel's trees by the temple river bear fresh fruit every month, with leaves for healing.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L208127"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5a11dba86db7aa3a"
+      }
+    },
+    {
+      "id": "ezek-x04",
+      "from": "Ezek.38.2",
+      "to": "Rev.20.8",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Gog and Magog",
+      "explanation": "Revelation 20:8 recalls Ezekiel 38:2: after the thousand years Satan is released to gather the nations from the four corners of the earth, Gog and Magog, to war. Ezekiel prophesies against Gog of the land of Magog, who comes against restored Israel and falls.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L206106"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6a4589cc4963701b"
+      }
+    },
+    {
+      "id": "ezek-x05",
+      "from": "Ezek.3.1-Ezek.3.3",
+      "to": "Rev.10.9-Rev.10.10",
+      "type": "echo",
+      "strength": 3,
+      "label": "Eat the scroll",
+      "explanation": "Revelation 10:9–10 echoes Ezekiel 3:1–3: John takes the little scroll from the angel and eats it, sweet as honey in his mouth but bitter in his stomach, and is told to prophesy again. Ezekiel eats the scroll given him and finds it sweet as honey.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L341089"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L341098"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L195142"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "fa460343651318e1"
+      }
+    },
+    {
+      "id": "ezek-x06",
+      "from": "Ezek.34.17",
+      "to": "Matt.25.32",
+      "type": "echo",
+      "strength": 3,
+      "label": "Separating sheep from goats",
+      "explanation": "Matthew 25:32 echoes Ezekiel 34:17: when the Son of Man comes in glory, all nations will be gathered and he will separate them as a shepherd separates sheep from goats. In Ezekiel the LORD as shepherd judges between sheep and sheep, rams and goats.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L242066"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L204947"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "257c5f9d34249a5b"
+      }
+    },
+    {
+      "id": "lev-x01",
+      "from": "Lev.19.18",
+      "to": "Mark.12.31",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Love your neighbour as yourself",
+      "explanation": "Mark 12:31 quotes Leviticus 19:18: asked for the first commandment, Jesus gives the Shema and then a second, you shall love your neighbour as yourself; no other commandment is greater than these. In Leviticus it closes a run of laws against grudges and revenge.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L27712"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L248680"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "207dc99e649d444b"
+      }
+    },
+    {
+      "id": "lev-x02",
+      "from": "Lev.19.18",
+      "to": "Jas.2.8",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The royal law",
+      "explanation": "James 2:8 quotes Leviticus 19:18: James calls love of neighbour as oneself the royal law of Scripture, and warns that favouring the rich breaks it. Leviticus gives it among the laws of holiness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L27717"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L330494"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "08d84f8525c3f5f7"
+      }
+    },
+    {
+      "id": "lev-x03",
+      "from": "Lev.11.44-Lev.11.45",
+      "to": "1Pet.1.15-1Pet.1.16",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Be holy, for I am holy",
+      "explanation": "1 Peter 1:15–16 quotes Leviticus 11:44–45: First Peter calls believers to be holy in all their conduct, as the God who called them is holy. Leviticus says it at the end of the food laws, from the God who brought Israel out of Egypt.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L332366"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L25918"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L25922"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "576fc08daf0972fd"
+      }
+    },
+    {
+      "id": "lev-x04",
+      "from": "Lev.16.2-Lev.16.15",
+      "to": "Heb.9.7",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Once a year, not without blood",
+      "explanation": "Hebrews 9:7 recalls Leviticus 16:2–15: Hebrews says that into the second tent the high priest alone goes once a year, not without blood, for himself and for the people. Leviticus gives the rite of the Day of Atonement; Hebrews sets Christ's entrance by his own blood against it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L26964"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L26846"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L26888"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "68429720ac3e64bb"
+      }
+    },
+    {
+      "id": "lev-x05",
+      "from": "Lev.18.5",
+      "to": "Gal.3.12",
+      "type": "quotation",
+      "strength": 2,
+      "label": "He who does them shall live by them",
+      "explanation": "Galatians 3:12 quotes Leviticus 18:5: Paul sets Leviticus's whoever does the statutes shall live by them against Habakkuk's the righteous shall live by faith, to argue that the law is not of faith. Leviticus gives it as the promise of keeping the LORD's ways.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L306661"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L27318"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0505a88c103c6a44"
+      }
+    },
+    {
+      "id": "lev-x06",
+      "from": "Lev.24.20",
+      "to": "Matt.5.38",
+      "type": "quotation",
+      "strength": 2,
+      "label": "An eye for an eye",
+      "explanation": "Matthew 5:38 quotes Leviticus 24:20: in the Sermon on the Mount Jesus recalls the saying an eye for an eye and a tooth for a tooth. He tells his hearers not to resist the evildoer but to turn the other cheek. Leviticus gives the law of equal penalty for injury.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L28959"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "12a78e6e57f01aba"
+      }
+    },
+    {
+      "id": "prov-x01",
+      "from": "Prov.3.11-Prov.3.12",
+      "to": "Heb.12.5-Heb.12.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "The Lord disciplines those he loves",
+      "explanation": "Hebrews 12:5–6 quotes Proverbs 3:11–12: Hebrews reminds its readers of the exhortation that addresses them as sons: do not despise the Lord's discipline, for he disciplines the one he loves. It goes on to say that discipline yields the peaceful fruit of righteousness.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328719"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L328736"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L140595"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ad38f3cb041997cf"
+      }
+    },
+    {
+      "id": "prov-x02",
+      "from": "Prov.3.34",
+      "to": "Jas.4.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "God resists the proud",
+      "explanation": "James 4:6 quotes Proverbs 3:34: James says God gives more grace, as Scripture says, God resists the proud but gives grace to the humble. James follows the Greek; the Hebrew proverb speaks of mocking the mockers. First Peter cites it too.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L331255"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L140832"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "c39171f59edd128b"
+      }
+    },
+    {
+      "id": "prov-x03",
+      "from": "Prov.25.21-Prov.25.22",
+      "to": "Rom.12.20",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Coals of fire on his head",
+      "explanation": "Romans 12:20 quotes Proverbs 25:21–22: Paul tells believers never to avenge themselves but, as the proverb says, to feed a hungry enemy and give him drink, heaping coals of fire on his head. He ends: overcome evil with good.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L294343"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L147688"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "d57cce955df909d1"
+      }
+    },
+    {
+      "id": "prov-x04",
+      "from": "Prov.26.11",
+      "to": "2Pet.2.22",
+      "type": "quotation",
+      "strength": 2,
+      "label": "A dog returns to its vomit",
+      "explanation": "2 Peter 2:22 quotes Proverbs 26:11: Second Peter says of those who turn back after knowing the way of righteousness that the proverb has come true of them: the dog turns to its own vomit. It adds a second saying about a washed sow.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L335218"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L147825"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5b685117db263b45"
+      }
+    },
+    {
+      "id": "prov-x05",
+      "from": "Prov.11.31",
+      "to": "1Pet.4.18",
+      "type": "quotation",
+      "strength": 2,
+      "label": "If the righteous is scarcely saved",
+      "explanation": "1 Peter 4:18 quotes Proverbs 11:31: First Peter says judgement begins with God's household and asks, with the proverb, what will become of the ungodly if the righteous are scarcely saved. It follows the Greek of the proverb.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333985"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "6813b9487eb8d239"
+      }
+    },
+    {
+      "id": "prov-x06",
+      "from": "Prov.10.12",
+      "to": "1Pet.4.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "Love covers a multitude of sins",
+      "explanation": "1 Peter 4:8 echoes Proverbs 10:12: above all, First Peter says, keep your love for one another fervent, for love covers a multitude of sins. The proverb says that hatred stirs up strife but love covers all wrongs.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L333762"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L142466"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0153fc7b69c51f00"
+      }
+    },
+    {
+      "id": "eccl-x01",
+      "from": "Eccl.1.2",
+      "to": "Rom.8.20",
+      "type": "echo",
+      "strength": 2,
+      "label": "Subjected to vanity",
+      "explanation": "Romans 8:20 echoes Ecclesiastes 1:2: Paul says creation was subjected to vanity, not willingly, but in hope of being freed into the glory of God's children. The Preacher opens and closes his book with vanity of vanities; the Greek of both uses the same word.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L149466"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L291905"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "a87a840e426f4cde"
+      }
+    },
+    {
+      "id": "1chr-x01",
+      "from": "1Chr.2.1-1Chr.2.15",
+      "to": "Matt.1.2-Matt.1.6",
+      "type": "parallel",
+      "strength": 3,
+      "label": "From Judah to David",
+      "explanation": "1 Chronicles 2:1–15 and Matthew 1:2–6 both tell the line from Judah through Perez, Hezron, Ram, Amminadab, Nahshon, Salmon, Boaz, Obed and Jesse to David. Matthew follows the list and names Rahab and Ruth among the mothers, beside Tamar, whom Chronicles also names. Chronicles places it among the sons of Israel at the head of its history.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80998"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L81037"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L230289"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": false,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "27e91d3b3858a1f3"
+      }
+    },
+    {
+      "id": "2chr-x01",
+      "from": "2Chr.24.20-2Chr.24.22",
+      "to": "Matt.23.35",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The blood of Zechariah",
+      "explanation": "Matthew 23:35 recalls 2 Chronicles 24:20–22: Jesus warns that all the righteous blood shed on earth will come on his generation, from Abel to Zechariah, killed between the sanctuary and the altar. Chronicles tells of Zechariah son of Jehoiada stoned in the court of the LORD's house; Matthew calls him son of Barachiah, the name of the prophet Zechariah's father.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L240980"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L90351"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0184635c2ac4c4e6"
+      }
+    },
+    {
+      "id": "wis-x01",
+      "from": "Wis.7.26",
+      "to": "Heb.1.3",
+      "type": "echo",
+      "strength": 3,
+      "label": "The radiance of his glory",
+      "explanation": "Hebrews 1:3 echoes Wisdom 7:26: Hebrews calls the Son the radiance of God's glory and the exact image of his being. Wisdom calls wisdom a reflection of everlasting light, a spotless mirror of God's working and an image of his goodness, words close to Hebrews in Greek.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.7.26",
+          "words": ["reflection", "image"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "4855387381a1f3c5"
+      }
+    },
+    {
+      "id": "wis-x02",
+      "from": "Wis.2.17-Wis.2.18",
+      "to": "Matt.27.43",
+      "type": "echo",
+      "strength": 3,
+      "label": "If he is God's son, let God deliver him",
+      "explanation": "Matthew 27:43 echoes Wisdom 2:17–18: at the cross the chief priests mock Jesus, saying he trusted in God, so let God deliver him now, since he said he was God's Son. In Wisdom the ungodly plot against the righteous man, saying if he is God's son, God will help him and deliver him from his enemies.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.2.18",
+          "words": ["son", "deliver"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "ca75cea741ca6329"
+      }
+    },
+    {
+      "id": "wis-x03",
+      "from": "Wis.13.1-Wis.13.5",
+      "to": "Rom.1.20-Rom.1.23",
+      "type": "echo",
+      "strength": 3,
+      "label": "Known from the things that are made",
+      "explanation": "Romans 1:20–23 echoes Wisdom 13:1–5: Paul says God's invisible power is seen through the things he made, so those who exchanged his glory for images are without excuse. Wisdom says those who did not know the maker from the greatness and beauty of creation were foolish by nature, and partly to blame.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Wis.13.1",
+          "words": ["foolish", "works"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Wis.13.5",
+          "words": ["beauty"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "0cfeaec2b1207134"
+      }
+    },
+    {
+      "id": "sir-x01",
+      "from": "Sir.28.2",
+      "to": "Matt.6.12-Matt.6.14",
+      "type": "echo",
+      "strength": 3,
+      "label": "Forgive, and you will be forgiven",
+      "explanation": "Matthew 6:12–14 echoes Sirach 28:2: in the Lord's Prayer the disciples ask to be forgiven as they forgive, and Jesus adds that the Father forgives those who forgive others. Ben Sira ties the pardon of one's own sins in prayer to forgiving a neighbour's wrong first.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.28.2",
+          "words": ["Forgive", "pray"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "db0cfc09798f4063"
+      }
+    },
+    {
+      "id": "sir-x02",
+      "from": "Sir.5.11",
+      "to": "Jas.1.19",
+      "type": "echo",
+      "strength": 2,
+      "label": "Swift to hear",
+      "explanation": "James 1:19 echoes Sirach 5:11: James tells every believer to be swift to hear, slow to speak and slow to anger. Ben Sira says be swift to hear and answer with patience.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.5.11",
+          "words": ["swift", "hear"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "78c215ed373f5eb0"
+      }
+    },
+    {
+      "id": "sir-x03",
+      "from": "Sir.51.23-Sir.51.27",
+      "to": "Matt.11.28-Matt.11.30",
+      "type": "echo",
+      "strength": 3,
+      "label": "The yoke and rest",
+      "explanation": "Matthew 11:28–30 echoes Sirach 51:23–27: Jesus calls the weary to come to him and take his yoke, and find rest for their souls. Ben Sira ends his book calling the untaught to draw near, put their necks under wisdom's yoke, and see how little he laboured to find much rest.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.51.26",
+          "words": ["yoke"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Sir.51.27",
+          "words": ["rest"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5cc1bfd2efb89314"
+      }
+    },
+    {
+      "id": "2macc-x01",
+      "from": "2Macc.7.9-2Macc.7.14",
+      "to": "Heb.11.35",
+      "type": "allusion",
+      "strength": 3,
+      "label": "A better resurrection",
+      "explanation": "Hebrews 11:35 recalls 2 Maccabees 7:9–14: among the heroes of faith Hebrews names those who were tortured and refused release, so as to gain a better resurrection. Second Maccabees tells of the seven brothers who died under torture for God's laws, the second saying the King of the world will raise them to everlasting life.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "2Macc.7.9",
+          "words": ["raise", "laws"]
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "5e4b5a992954fbf9"
+      }
+    },
+    {
+      "id": "isa-x29",
+      "from": "Isa.11.4",
+      "to": "2Thess.2.8",
+      "type": "echo",
+      "strength": 3,
+      "label": "The breath of his mouth",
+      "explanation": "2 Thessalonians 2:8 echoes Isaiah 11:4: the lawless one will be revealed, and the Lord will slay him with the breath of his mouth and the brightness of his coming. Isaiah says the shoot of Jesse will strike the earth with the rod of his mouth and kill the wicked with the breath of his lips.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L157428"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L318378"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "1398efd2cfd8aa5b"
+      }
+    },
+    {
+      "id": "ps-x29",
+      "from": "Ps.130.8",
+      "to": "Titus.2.14",
+      "type": "echo",
+      "strength": 2,
+      "label": "Redeemed from all iniquity",
+      "explanation": "Titus 2:14 echoes Psalms 130:8: Titus says Christ gave himself to redeem us from all iniquity and purify a people of his own, zealous for good works. The psalm ends its cry from the depths with the hope that the LORD will redeem Israel from all their sins.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L323618"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L137006"
+        }
+      ],
+      "status": "verified",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "canon"
+      },
+      "approval": {
+        "date": "2026-11-20",
+        "fingerprint": "20e923f3544a55a2"
+      }
+    }
+  ]
+}

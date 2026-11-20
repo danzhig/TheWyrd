@@ -4,11 +4,11 @@ Written by `pnpm connections:verify` from `content/connections/within-nt.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-20 connections; 0 verified; 0 failing a check.
+20 connections; 20 verified; 0 failing a check.
 
 ## `acts-n01` Let down the wall in a basket
 
-- **2Cor.11.32-2Cor.11.33 → Acts.9.23-Acts.9.25** · parallel · strength 3 · draft · fingerprint `43477829b7a0361e`
+- **2Cor.11.32-2Cor.11.33 → Acts.9.23-Acts.9.25** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `43477829b7a0361e`
 - From: Paul Defends His Apostleship (`2cor-05`, library)
 - To: Saul's Conversion (`acts-05`)
 - Order: older end from; no use claimed; basis consensus
@@ -21,7 +21,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n02` Once I was stoned
 
-- **2Cor.11.25 → Acts.14.19-Acts.14.20** · parallel · strength 2 · draft · fingerprint `17fa3c19b8fdee8a`
+- **2Cor.11.25 → Acts.14.19-Acts.14.20** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `17fa3c19b8fdee8a`
 - From: Paul Defends His Apostleship (`2cor-05`, library)
 - To: Paul's First Journey (`acts-08`)
 - Order: older end from; no use claimed; basis consensus
@@ -33,7 +33,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n03` Shamefully treated at Philippi
 
-- **1Thess.2.2 → Acts.16.19-Acts.16.24** · parallel · strength 2 · draft · fingerprint `023baf494675135a`
+- **1Thess.2.2 → Acts.16.19-Acts.16.24** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `023baf494675135a`
 - From: Paul’s Thanks and His Work in Thessalonica (`1thess-01`, library)
 - To: The Second Journey (`acts-10`)
 - Order: older end from; no use claimed; basis consensus
@@ -45,7 +45,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n04` Prisca and Aquila
 
-- **Rom.16.3-Rom.16.4 → Acts.18.1-Acts.18.3** · parallel · strength 2 · draft · fingerprint `ff1a8ca61cc7c022`
+- **Rom.16.3-Rom.16.4 → Acts.18.1-Acts.18.3** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `ff1a8ca61cc7c022`
 - From: The Weak and the Strong; Paul’s Plans and Greetings (`rom-07`, library)
 - To: The Second Journey (`acts-10`)
 - Order: older end from; no use claimed; basis consensus
@@ -57,7 +57,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n05` Apollos waters
 
-- **1Cor.3.4-1Cor.3.6 → Acts.18.24-Acts.18.28** · parallel · strength 2 · draft · fingerprint `0a271a3201af1fdf`
+- **1Cor.3.4-1Cor.3.6 → Acts.18.24-Acts.18.28** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `0a271a3201af1fdf`
 - From: Divisions and the Wisdom of the Cross (`1cor-01`, library)
 - To: The Third Journey (`acts-11`)
 - Order: older end from; no use claimed; basis consensus
@@ -70,7 +70,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n06` A Pharisee
 
-- **Phil.3.5 → Acts.23.6** · parallel · strength 2 · draft · fingerprint `b5fd81a734c0b7c0`
+- **Phil.3.5 → Acts.23.6** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `b5fd81a734c0b7c0`
 - From: Paul’s Goal; Peace and Thanks (`phil-02`, library)
 - To: Arrest in Jerusalem (`acts-12`)
 - Order: older end from; no use claimed; basis consensus
@@ -82,7 +82,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n07` Zealous for the traditions
 
-- **Gal.1.14 → Acts.22.3** · parallel · strength 2 · draft · fingerprint `92493f40d0c93773`
+- **Gal.1.14 → Acts.22.3** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `92493f40d0c93773`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: Arrest in Jerusalem (`acts-12`)
 - Order: older end from; no use claimed; basis consensus
@@ -94,7 +94,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n08` Paul's first visit to Jerusalem
 
-- **Gal.1.18-Gal.1.24 → Acts.9.26-Acts.9.30** · parallel · strength 2 · draft · fingerprint `36016b287518d29b`
+- **Gal.1.18-Gal.1.24 → Acts.9.26-Acts.9.30** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `36016b287518d29b`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: Saul's Conversion (`acts-05`)
 - Order: older end from; no use claimed; basis consensus
@@ -107,7 +107,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n09` The meeting in Jerusalem
 
-- **Gal.2.1-Gal.2.10 → Acts.15.1-Acts.15.29** · parallel · strength 3 · draft · fingerprint `851012af1081c6f8`
+- **Gal.2.1-Gal.2.10 → Acts.15.1-Acts.15.29** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `851012af1081c6f8`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: The Council of Jerusalem (`acts-09`)
 - Order: older end from; no use claimed; basis consensus
@@ -120,7 +120,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n10` He appeared to me also
 
-- **1Cor.15.8 → Acts.9.3-Acts.9.6** · parallel · strength 3 · draft · fingerprint `8c344aedf62354d8`
+- **1Cor.15.8 → Acts.9.3-Acts.9.6** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `8c344aedf62354d8`
 - From: The Resurrection of the Dead (`1cor-06`, library)
 - To: Saul's Conversion (`acts-05`)
 - Order: older end from; no use claimed; basis consensus
@@ -132,7 +132,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n11` Sent to the Gentiles
 
-- **Gal.1.15-Gal.1.16 → Acts.26.16-Acts.26.18** · parallel · strength 2 · draft · fingerprint `275e32f9fd84aad5`
+- **Gal.1.15-Gal.1.16 → Acts.26.16-Acts.26.18** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `275e32f9fd84aad5`
 - From: Paul’s Gospel and His Call (`gal-01`, library)
 - To: Before Felix, Festus and Agrippa (`acts-13`)
 - Order: older end from; no use claimed; basis consensus
@@ -143,7 +143,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n12` Justified apart from the law
 
-- **Rom.3.28 → Acts.13.38-Acts.13.39** · echo · strength 2 · draft · fingerprint `863dbb0e2a0dc9c7`
+- **Rom.3.28 → Acts.13.38-Acts.13.39** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `863dbb0e2a0dc9c7`
 - From: The Gospel; All under Sin; Righteousness through Faith (`rom-01`, library)
 - To: Paul's First Journey (`acts-08`)
 - Order: older end from; no use claimed; basis consensus
@@ -154,7 +154,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n13` The field of blood
 
-- **Matt.27.3-Matt.27.8 → Acts.1.18-Acts.1.19** · parallel · strength 3 · draft · fingerprint `905b697565ff7f48`
+- **Matt.27.3-Matt.27.8 → Acts.1.18-Acts.1.19** · parallel · strength 3 · verified (approved 2026-11-20) · fingerprint `905b697565ff7f48`
 - From: The Trial and the Crucifixion (`matt-17`, library)
 - To: Ascension and Pentecost (`acts-01`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -167,7 +167,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n14` False witnesses about the temple
 
-- **Mark.14.57-Mark.14.58 → Acts.6.13-Acts.6.14** · parallel · strength 2 · draft · fingerprint `17e883422cf2c7cb`
+- **Mark.14.57-Mark.14.58 → Acts.6.13-Acts.6.14** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `17e883422cf2c7cb`
 - From: The Anointing, the Supper and the Arrest (`mark-11`, library)
 - To: Stephen (`acts-03`)
 - Order: older end from; no use claimed; basis consensus
@@ -180,7 +180,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n15` The cup James would drink
 
-- **Mark.10.38-Mark.10.39 → Acts.12.1-Acts.12.2** · fulfilment · strength 2 · draft · fingerprint `79374b33e4229771`
+- **Mark.10.38-Mark.10.39 → Acts.12.1-Acts.12.2** · fulfilment · strength 2 · verified (approved 2026-11-20) · fingerprint `79374b33e4229771`
 - From: On the Way to Jerusalem (`mark-08`, library)
 - To: Antioch; Herod's Persecution (`acts-07`)
 - Order: older end from; no use claimed; basis consensus
@@ -193,7 +193,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n16` All foods clean
 
-- **Mark.7.18-Mark.7.19 → Acts.10.9-Acts.10.16** · echo · strength 2 · draft · fingerprint `6a5b8b091b57c883`
+- **Mark.7.18-Mark.7.19 → Acts.10.9-Acts.10.16** · echo · strength 2 · verified (approved 2026-11-20) · fingerprint `6a5b8b091b57c883`
 - From: Clean and Unclean; Four Thousand Fed (`mark-06`, library)
 - To: Peter and Cornelius (`acts-06`)
 - Order: older end from; no use claimed; basis consensus
@@ -206,7 +206,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n17` John Mark
 
-- **Acts.12.12 → Col.4.10** · parallel · strength 1 · draft · fingerprint `28c07a7a9df0f8a4`
+- **Acts.12.12 → Col.4.10** · parallel · strength 1 · verified (approved 2026-11-20) · fingerprint `28c07a7a9df0f8a4`
 - From: Antioch; Herod's Persecution (`acts-07`)
 - To: The New Life; the Household; Greetings (`col-02`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -218,7 +218,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n18` Mark, refused and asked for
 
-- **Acts.15.36-Acts.15.40 → 2Tim.4.11** · contrast · strength 2 · draft · fingerprint `3705c4fd128e8bbd`
+- **Acts.15.36-Acts.15.40 → 2Tim.4.11** · contrast · strength 2 · verified (approved 2026-11-20) · fingerprint `3705c4fd128e8bbd`
 - From: The Second Journey (`acts-10`)
 - To: Guard the Gospel; Paul’s Last Charge (`2tim-01`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -230,7 +230,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n19` Timothy's mother
 
-- **Acts.16.1-Acts.16.3 → 2Tim.1.5** · parallel · strength 2 · draft · fingerprint `73e82bd3e09c3315`
+- **Acts.16.1-Acts.16.3 → 2Tim.1.5** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `73e82bd3e09c3315`
 - From: The Second Journey (`acts-10`)
 - To: Guard the Gospel; Paul’s Last Charge (`2tim-01`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -242,7 +242,7 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 ## `acts-n20` Antioch, Iconium and Lystra
 
-- **Acts.14.19-Acts.14.20 → 2Tim.3.11** · parallel · strength 2 · draft · fingerprint `2aab81d060b4bb7c`
+- **Acts.14.19-Acts.14.20 → 2Tim.3.11** · parallel · strength 2 · verified (approved 2026-11-20) · fingerprint `2aab81d060b4bb7c`
 - From: Paul's First Journey (`acts-08`)
 - To: Guard the Gospel; Paul’s Last Charge (`2tim-01`, library)
 - Order: older end unknown; no use claimed; basis unstated
