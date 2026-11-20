@@ -359,6 +359,8 @@ Two cases to watch:
 
 TD1 can start as soon as TD0 lands. TD2 is content work and can run beside TD3 and TD4. TX1 and TX2 can start any time; TX5 and TX6 wait for TD2's wording rule and TX2's tools, and can run in parallel.
 
+**TX7 under way (owner, 2026-11-20: every book counts the same, as in Themes).** Library ↔ library threads in all three pairs, Old ↔ New between library books included. First the Vault: the arcs are drawn as a few joined paths (`bundleArcs`), so the 300-node budget holds at any size; the filters move to a sidebar on the right with only Old ↔ New on at first, the reader's choice kept in `localStorage`; the perf test times the camera with every pair on.
+
 **TX5 and TX6 done (2026-11-20, owner pre-approved, one PR for all books rather than one per book).** 153 Old ↔ Old threads (every Old Testament path book, `content/connections/within-ot.json`) and 53 New ↔ New threads (Luke, John 11 and Acts against the whole New Testament, `within-nt.json`), each approved with its fingerprint. The order of writing, as stated on each:
 
 - `text`: the later passage names, quotes or retells the earlier (Acts 1:1 names Luke's "first book", so Luke → Acts uses are `text`).

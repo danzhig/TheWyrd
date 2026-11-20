@@ -18,8 +18,13 @@ import { TYPE_LABEL, TYPE_ORDER } from '@/lib/threads';
 import type { ConnectionType, PublicConnection, PublicConnections } from '@/lib/types';
 import type { Point } from './layout';
 import { ALL_PAIRS, pairLabel, type PairId } from '@/lib/corpora';
+import { readThreadFilters, writeThreadFilters } from '@/lib/store';
+
+/** On at first (owner, 2026-11-20): the threads between the Testaments. */
+const DEFAULT_PAIRS: PairId[] = ['ot-nt'];
 import {
   arcsFor,
+  bundleArcs,
   bookThreads,
   directionSummary,
   nearestArc,
@@ -83,9 +88,32 @@ export function ThreadsMode({
   testamentOf,
 }: ThreadsModeProps) {
   const [data, setData] = useState<PublicConnections | null>(null);
-  const [types, setTypes] = useState<Set<ConnectionType>>(() => new Set(TYPE_ORDER));
-  /** Corpus pairs switched off (threads plan §5); every pair present is on to begin with. */
-  const [pairsOff, setPairsOff] = useState<Set<PairId>>(() => new Set());
+  // The filters, as the reader last left them (owner, 2026-11-20): only Old ↔ New and every kind
+  // of link at first. ThreadsMode is loaded only on the client, so storage is read here.
+  const [saved] = useState(() => readThreadFilters());
+  const [types, setTypes] = useState<Set<ConnectionType>>(
+    () => new Set(saved ? TYPE_ORDER.filter((t) => !saved.typesOff.includes(t)) : TYPE_ORDER),
+  );
+  const [pairsOn, setPairsOn] = useState<Set<PairId>>(
+    () => new Set(saved ? ALL_PAIRS.filter((p) => saved.pairs.includes(p)) : DEFAULT_PAIRS),
+  );
+  const setFilters = (pairs: Set<PairId>, kinds: Set<ConnectionType>) => {
+    setPairsOn(pairs);
+    setTypes(kinds);
+    writeThreadFilters({
+      pairs: [...pairs],
+      typesOff: TYPE_ORDER.filter((t) => !kinds.has(t)),
+    });
+  };
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  // The arcs fade in once, when Threads comes on; later regrouping (a book opened) is instant.
+  const [entering, setEntering] = useState(true);
+  const loaded = data !== null;
+  useEffect(() => {
+    if (!loaded) return;
+    const t = window.setTimeout(() => setEntering(false), 700);
+    return () => window.clearTimeout(t);
+  }, [loaded]);
   const [selected, setSelected] = useState<string | null>(null);
   /** The book whose threads the book panel shows (threads plan §2.5). */
   const [book, setBook] = useState<string | null>(null);
@@ -127,9 +155,10 @@ export function ThreadsMode({
     for (const c of shown) m.set(c.pair, (m.get(c.pair) ?? 0) + 1);
     return ALL_PAIRS.filter((p) => m.has(p)).map((p) => ({ pair: p, n: m.get(p)! }));
   }, [shown]);
-  const pairsOn = useMemo(() => new Set(ALL_PAIRS.filter((p) => !pairsOff.has(p))), [pairsOff]);
   const arcs = useMemo(() => arcsFor(shown, homes, types, pairsOn), [shown, homes, types, pairsOn]);
   const arc = arcs.find((a) => a.key === selected) ?? null;
+  // A few paths for all the arcs (the node budget), the selected one drawn on its own.
+  const bundles = useMemo(() => bundleArcs(arcs, book, selected), [arcs, book, selected]);
   // The SVG box: every home inside it, with room for the arcs' bows.
   const R = useMemo(
     () => Math.max(...[...homes.values()].map((h) => Math.hypot(h.x, h.y) + h.r)) + 40,
@@ -185,6 +214,23 @@ export function ThreadsMode({
     };
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
+  }, []);
+
+  // For the tests: every arc drawn, with its count, pair and middle on screen (the arcs are a few
+  // joined paths, so there is no element per arc to query).
+  useEffect(() => {
+    const w = window as unknown as { __sasArcs?: () => unknown };
+    w.__sasArcs = () => {
+      const m = svgRef.current?.getScreenCTM();
+      if (!m) return [];
+      return arcsRef.current.map((a) => {
+        const p = new DOMPoint(a.mid.x, a.mid.y).matrixTransform(m);
+        return { key: a.key, count: a.connections.length, pair: a.pair, x: p.x, y: p.y };
+      });
+    };
+    return () => {
+      delete w.__sasArcs;
+    };
   }, []);
 
   const openBookPanel = (id: string, from?: HTMLElement | null) => {
@@ -279,81 +325,105 @@ export function ThreadsMode({
               ref={svgRef}
               data-testid="thread-arcs"
             >
-              {arcs.map((a) => (
+              {bundles.map((b) => (
                 <path
-                  key={a.key}
-                  d={a.d}
-                  pathLength={1}
+                  key={b.key}
+                  d={b.d}
                   className={[
                     s.line,
-                    selected === a.key || (book && (a.a === book || a.b === book))
-                      ? s.selected
-                      : '',
-                    book && a.a !== book && a.b !== book ? s.dim : '',
+                    entering ? s.enter : '',
+                    b.within ? s.within : '',
+                    b.state === 'lit' ? s.selected : '',
+                    b.state === 'dim' ? s.dim : '',
                   ].join(' ')}
-                  strokeWidth={selected === a.key ? a.width * 1.6 : a.width}
-                  data-arc={a.key}
-                  data-count={a.connections.length}
-                  data-pair={a.pair}
+                  strokeWidth={b.width}
+                  data-arc-bundle={b.state}
+                  data-arcs={b.keys.length}
                 />
               ))}
+              {arc ? (
+                <path
+                  d={arc.d}
+                  className={`${s.line} ${s.selected}`}
+                  strokeWidth={arc.width * 1.6}
+                  data-arc-selected={arc.key}
+                />
+              ) : null}
             </svg>,
             arcHost,
           )
         : null}
 
-      {/* The filter: one chip per type of link present. */}
-      <div
+      {/* The filters (owner, 2026-11-20): a sidebar on the right, the corpus pairs above the
+          kinds of link. Only Old ↔ New is on at first; the reader's own choice is kept
+          (lib/store.ts). On phones it folds behind a tab on the right edge. */}
+      <aside
         className={`${s.filter} ${listVisible ? s.filterInline : ''}`}
-        role="group"
-        aria-label="Types of link"
+        aria-label="Thread filters"
         data-testid="thread-filter"
+        data-open={filtersOpen || undefined}
       >
-        {pairCounts.length > 1 ? (
-          <span className={s.pairChips} role="group" aria-label="Corpora" data-testid="pair-filter">
-            {pairCounts.map(({ pair, n }) => (
-              <button
-                key={pair}
-                type="button"
-                className={`${s.chip} ${s.pairChip}`}
-                aria-pressed={!pairsOff.has(pair)}
-                data-pair-chip={pair}
-                onClick={() => {
-                  setPairsOff((prev) => {
-                    const next = new Set(prev);
+        <button
+          type="button"
+          className={s.filterTab}
+          aria-expanded={filtersOpen}
+          aria-controls="thread-filter-body"
+          onClick={() => setFiltersOpen((o) => !o)}
+          data-testid="thread-filter-tab"
+        >
+          Filters
+        </button>
+        <div id="thread-filter-body" className={s.filterBody}>
+          {pairCounts.length > 1 ? (
+            <div role="group" aria-labelledby="thread-filter-pairs" data-testid="pair-filter">
+              <p id="thread-filter-pairs" className={s.filterHeading}>
+                Between
+              </p>
+              {pairCounts.map(({ pair, n }) => (
+                <button
+                  key={pair}
+                  type="button"
+                  className={s.chip}
+                  aria-pressed={pairsOn.has(pair)}
+                  data-pair-chip={pair}
+                  onClick={() => {
+                    const next = new Set(pairsOn);
                     if (next.has(pair)) next.delete(pair);
                     else next.add(pair);
-                    return next;
-                  });
+                    setFilters(next, types);
+                    setSelected(null);
+                  }}
+                >
+                  {pairLabel(pair)} <span className={s.count}>{n}</span>
+                </button>
+              ))}
+            </div>
+          ) : null}
+          <div role="group" aria-labelledby="thread-filter-types">
+            <p id="thread-filter-types" className={s.filterHeading}>
+              Kinds of link
+            </p>
+            {present.map(({ type, n }) => (
+              <button
+                key={type}
+                type="button"
+                className={s.chip}
+                aria-pressed={types.has(type)}
+                data-type={type}
+                onClick={() => {
+                  const next = new Set(types);
+                  if (next.has(type)) next.delete(type);
+                  else next.add(type);
+                  setFilters(pairsOn, next);
                   setSelected(null);
                 }}
               >
-                {pairLabel(pair)} <span className={s.count}>{n}</span>
+                {TYPE_LABEL[type]} <span className={s.count}>{n}</span>
               </button>
             ))}
-          </span>
-        ) : null}
-        {present.map(({ type, n }) => (
-          <button
-            key={type}
-            type="button"
-            className={s.chip}
-            aria-pressed={types.has(type)}
-            data-type={type}
-            onClick={() => {
-              setTypes((prev) => {
-                const next = new Set(prev);
-                if (next.has(type)) next.delete(type);
-                else next.add(type);
-                return next;
-              });
-              setSelected(null);
-            }}
-          >
-            {TYPE_LABEL[type]} <span className={s.count}>{n}</span>
-          </button>
-        ))}
-      </div>
+          </div>
+        </div>
+      </aside>
 
       {/* The arcs as a list: the accessible structure of Threads, shown by List. */}
       <section

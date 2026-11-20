@@ -60,6 +60,44 @@ export function arcsFor(
   });
 }
 
+/**
+ * Arcs drawn as a few paths (TX7: the library's threads take the arcs past what one path each
+ * allows under the scene's 300-node budget). Arcs sharing a look are joined into one path of
+ * several subpaths: the same state (plain, lit for the open book, dimmed), the same class (between
+ * the Testaments, or inside one) and the same width, rounded to half a scene unit. The selected
+ * arc is drawn on its own, by the caller. Pure.
+ */
+export type ArcState = 'plain' | 'lit' | 'dim';
+export interface ArcBundle {
+  key: string;
+  state: ArcState;
+  within: boolean;
+  width: number;
+  d: string;
+  keys: string[];
+}
+export function bundleArcs(
+  arcs: Pick<ThreadArc, 'key' | 'a' | 'b' | 'd' | 'width' | 'pair'>[],
+  book: string | null,
+  skip: string | null = null,
+): ArcBundle[] {
+  const out = new Map<string, ArcBundle>();
+  for (const a of arcs) {
+    if (a.key === skip) continue;
+    const state: ArcState = !book ? 'plain' : a.a === book || a.b === book ? 'lit' : 'dim';
+    const within = a.pair !== 'ot-nt';
+    const width = Math.round(a.width * 2) / 2;
+    const key = `${state}|${within ? 'w' : 'b'}|${width}`;
+    const b = out.get(key) ?? { key, state, within, width, d: '', keys: [] };
+    b.d += (b.d ? ' ' : '') + a.d;
+    b.keys.push(a.key);
+    out.set(key, b);
+  }
+  // Dimmed first, lit last, so the open book's arcs lie on top; thin under thick.
+  const rank = { dim: 0, plain: 1, lit: 2 } as const;
+  return [...out.values()].sort((x, y) => rank[x.state] - rank[y.state] || x.width - y.width);
+}
+
 /** 1 connection → 3.3 scene units, growing gently (4 → 5.1, 9 → 6.9). */
 export const arcWidth = (n: number) => 1.5 + Math.sqrt(n) * 1.8;
 
