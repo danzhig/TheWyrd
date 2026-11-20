@@ -607,8 +607,13 @@ export function Vault({ data, books, bridges, sections }: VaultProps) {
       const before = { x: now.x, y: now.y, k: now.k };
       setLifted(id);
       setDimmed(true);
+      // Navigation never waits on an animation that may not finish (as `settle` in
+      // lib/transition.ts): the camera's lean-in counts as done at its end plus 300 ms.
       await Promise.all([
-        flyTo(target(m, now.k * 1.12), 700),
+        Promise.race([
+          flyTo(target(m, now.k * 1.12), 700),
+          new Promise<void>((r) => window.setTimeout(r, 1000)),
+        ]),
         bookIn(id, b.name, b.tagline, el.getBoundingClientRect()),
       ]);
       // The lean-in is only a gesture: coming back, the ceiling returns to where it was.

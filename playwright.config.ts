@@ -10,6 +10,13 @@ const PORT = 4173;
  */
 const CROSS = /(qa|smoke|search|threads|vault-threads|threads-qa)\.spec\.ts/;
 
+/**
+ * Firefox, WebKit and the iPhone run emulated in CI's container, two workers at a time, and are
+ * slower there than Chromium: their waits get 10 s instead of 5 (TX8; a book's flight alone takes
+ * two to three seconds before the page changes).
+ */
+const SLOWER = { timeout: 10_000 };
+
 export default defineConfig({
   testDir: 'tests/e2e',
   fullyParallel: true,
@@ -40,16 +47,19 @@ export default defineConfig({
           {
             name: 'iphone',
             testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['iPhone 14'] },
           },
           {
             name: 'safari',
             testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['Desktop Safari'], viewport: { width: 1440, height: 900 } },
           },
           {
             name: 'firefox',
             testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['Desktop Firefox'], viewport: { width: 1440, height: 900 } },
           },
         ]
