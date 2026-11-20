@@ -89,6 +89,8 @@ export function orderErrors(c: Connection): string[] {
   if (o.basis === 'father' && !c.sources.some((s) => s.kind === 'father'))
     out.push('an order on "father" cites a Father among the sources');
   if (o.note && sentenceCount(o.note) !== 1) out.push('the order note is one sentence');
+  if (o.basis === 'unstated' && (o.older !== 'unknown' || o.uses))
+    out.push('an unstated order has no older end and claims no use');
   return out;
 }
 

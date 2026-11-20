@@ -75,7 +75,15 @@ export const CitationSchema = z.discriminatedUnion('kind', [
 export type Citation = z.infer<typeof CitationSchema>;
 
 /** Which end is older, and whether the later one is said to use it (threads plan §2.3). */
-export const ORDER_BASES = ['canon', 'text', 'consensus', 'father', 'disputed'] as const;
+export const ORDER_BASES = [
+  'canon',
+  'text',
+  'consensus',
+  'father',
+  'disputed',
+  // No order of writing is claimed (two passages told beside each other, order unknown).
+  'unstated',
+] as const;
 export const OrderSchema = z.object({
   older: z.enum(['from', 'to', 'unknown']),
   uses: z.boolean(),

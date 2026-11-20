@@ -302,7 +302,7 @@ export type ThreadCitation =
     }
   | { kind: 'bibliographic'; author: string; title: string; year: string; locator: string };
 
-export type OrderBasis = 'canon' | 'text' | 'consensus' | 'father' | 'disputed';
+export type OrderBasis = 'canon' | 'text' | 'consensus' | 'father' | 'disputed' | 'unstated';
 
 /**
  * Which end was written first and whether the later one is said to use it (threads plan §2.3),

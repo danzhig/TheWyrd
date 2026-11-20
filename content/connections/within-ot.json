@@ -1,4 +1,4446 @@
 {
   "$comment": "Threads plan Part B: connections inside the Old Testament, one book per PR, each draft until the owner approves it. Every connection states its order (older end, use, basis).",
-  "connections": []
+  "connections": [
+    {
+      "id": "gen-o01",
+      "from": "Gen.2.1-Gen.2.3",
+      "to": "Exod.20.8-Exod.20.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The Sabbath rests on the seventh day of creation",
+      "explanation": "Exodus 20:8–11 recalls Genesis 2:1–3: the Sabbath commandment gives as its reason the six days of making and God's rest on the seventh. Genesis says God finished his work, rested on the seventh day, blessed it and made it holy. The commandment says the LORD made heaven and earth in six days and rested, and therefore blessed the Sabbath and made it holy, with the same Hebrew word for the seventh day (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.2.2",
+          "wordIndex": 4,
+          "form": "הַ/שְּׁבִיעִ֔י",
+          "row": "TAHOT Gen-Deu:861"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.20.10",
+          "wordIndex": 2,
+          "form": "הַ/שְּׁבִיעִ֔֜י",
+          "row": "TAHOT Gen-Deu:49599"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18229"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18261"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L485"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.20.11",
+          "words": ["six", "rested", "seventh"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o02",
+      "from": "Gen.36.31-Gen.36.43",
+      "to": "1Chr.1.43-1Chr.1.54",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The kings of Edom, listed twice",
+      "explanation": "1 Chronicles 1:43–54 retells Genesis 36:31–43: the kings who reigned in Edom before Israel had a king, and the chiefs of Esau, name by name. The list opens with the same words in both books and runs through the same kings and cities, beginning with Bela son of Beor at Dinhabah, almost line for line. Rare names such as Dinhabah and Masrekah occur only in these two passages (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.36.32",
+          "wordIndex": 8,
+          "form": "דִּנְהָֽבָה\\׃",
+          "row": "TAHOT Gen-Deu:25217"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.1.43",
+          "wordIndex": 17,
+          "form": "דִּנְהָֽבָה\\׃",
+          "row": "TAHOT Jos-Est:121309"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.36.36",
+          "wordIndex": 6,
+          "form": "מִ/מַּשְׂרֵקָֽה\\׃",
+          "row": "TAHOT Gen-Deu:25285"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.1.47",
+          "wordIndex": 6,
+          "form": "מִ/מַּשְׂרֵקָֽה\\׃",
+          "row": "TAHOT Jos-Est:121377"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80977"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L9548"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L9566"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gen-o03",
+      "from": "Gen.49.22-Gen.49.26",
+      "to": "Deut.33.13-Deut.33.17",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Two blessings on Joseph",
+      "explanation": "Genesis 49:22–26 and Deuteronomy 33:13–17 both tell of a dying leader's blessing on Joseph, Jacob's and then Moses', in shared words. Both call down blessings of the heavens and of the deep that lies beneath, and both end on the same line: on the head of Joseph, on the crown of the one set apart from his brothers. The Hebrew words for the crown of the head and for the one set apart are shared (below); which blessing was written first is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.49.26",
+          "wordIndex": 14,
+          "form": "וּ/לְ/קָדְקֹ֖ד",
+          "row": "TAHOT Gen-Deu:35436"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.33.16",
+          "wordIndex": 10,
+          "form": "וּ/לְ/קָדְקֹ֖ד",
+          "row": "TAHOT Gen-Deu:139449"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.49.26",
+          "wordIndex": 15,
+          "form": "נְזִ֥יר",
+          "row": "TAHOT Gen-Deu:35437"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.33.16",
+          "wordIndex": 11,
+          "form": "נְזִ֥יר",
+          "row": "TAHOT Gen-Deu:139450"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13054"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13038"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L46699"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o04",
+      "from": "Gen.18.14",
+      "to": "Jer.32.17-Jer.32.27",
+      "type": "echo",
+      "strength": 2,
+      "label": "Is anything too hard for the LORD?",
+      "explanation": "Genesis 18:14 and Jeremiah 32:17–27 both tell that nothing is too hard for the LORD, once as his question to Abraham and once in Jeremiah's prayer and God's reply. In Genesis the LORD asks it when Sarah laughs at the promise of a son in her old age. In Jeremiah the prophet confesses it after buying a field, and the LORD answers with the same question; the Hebrew verb for being too hard is the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.18.14",
+          "wordIndex": 1,
+          "form": "הֲ/יִפָּלֵ֥א",
+          "row": "TAHOT Gen-Deu:10097"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.32.17",
+          "wordIndex": 16,
+          "form": "יִפָּלֵ֥א",
+          "row": "TAHOT Isa-Mal:51263"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185875"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4338"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4337"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o05",
+      "from": "Gen.37.2-Gen.41.57",
+      "to": "Ps.105.16-Ps.105.22",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Joseph's story sung",
+      "explanation": "Psalms 105:16–22 retells Genesis 37:2–41:57: Joseph sold as a slave, his feet in shackles, freed by the king and made ruler of his house. The psalm names Joseph and follows the story step by step: a famine, a man sent ahead, the word that proved him true, the king who set him free and put him over all his possessions. It tells each step as the LORD's own act: he called the famine and he sent the man.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.37.27",
+          "wordIndex": 2,
+          "form": "וְ/נִמְכְּרֶ֣/נּוּ",
+          "row": "TAHOT Gen-Deu:26053"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.105.17",
+          "wordIndex": 5,
+          "form": "נִמְכַּ֥ר",
+          "row": "TAHOT Job-Sng:43756"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131137"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L10105"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131114"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.105.17",
+          "words": ["Joseph", "sold"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o06",
+      "from": "Gen.12.3",
+      "to": "Num.24.9",
+      "type": "echo",
+      "strength": 2,
+      "label": "Blessed who blesses, cursed who curses",
+      "explanation": "Genesis 12:3 and Numbers 24:9 both tell that whoever blesses is blessed and whoever curses is cursed, first in God's promise to Abram and then in Balaam's oracle over Israel. Balaam, brought to curse Israel, ends his third oracle on the same pairing of blessing and curse. The Hebrew verb for cursing is the same in both (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.12.3",
+          "wordIndex": 4,
+          "form": "אָאֹ֑ר",
+          "row": "TAHOT Gen-Deu:6873"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.24.9",
+          "wordIndex": 9,
+          "form": "וְ/אֹרְרֶ֖י/ךָ",
+          "row": "TAHOT Gen-Deu:106101"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2819"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35857"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o07",
+      "from": "Gen.11.31-Gen.12.3",
+      "to": "Neh.9.7-Neh.9.8",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Abram called out of Ur",
+      "explanation": "Nehemiah 9:7–8 recalls Genesis 11:31–12:3: the great prayer of Nehemiah 9 confesses the LORD who chose Abram and brought him out of Ur of the Chaldees. Genesis tells of Terah leaving Ur with Abram and of the LORD's call to leave country and kindred for the land he would show. The prayer gathers this, the new name Abraham and the covenant to give the land into one confession; Ur of the Chaldees is named in both (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.11.31",
+          "wordIndex": 20,
+          "form": "מֵ/א֣וּר",
+          "row": "TAHOT Gen-Deu:6796"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.7",
+          "wordIndex": 9,
+          "form": "מֵ/א֣וּר",
+          "row": "TAHOT Jos-Est:174734"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2761"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2751"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96776"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.9.7",
+          "words": ["Abram", "Chaldees", "Abraham"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o08",
+      "from": "Gen.22.2",
+      "to": "2Chr.3.1",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Moriah",
+      "explanation": "2 Chronicles 3:1 names the place of Genesis 22:2: Solomon builds the LORD's house on Mount Moriah. Genesis sends Abraham to the land of Moriah to offer Isaac on one of its mountains; Chronicles places the temple on Mount Moriah, at the threshing floor where the LORD appeared to David. Moriah is named in these two verses alone (below), and Chronicles does not mention Abraham, so the link is the place itself.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.22.2",
+          "wordIndex": 16,
+          "form": "הַ/מֹּרִיָּ֑ה",
+          "row": "TAHOT Gen-Deu:12852"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.3.1",
+          "wordIndex": 9,
+          "form": "הַ/מּ֣וֹרִיָּ֔ה",
+          "row": "TAHOT Jos-Est:141220"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86225"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L5506"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Chr.3.1",
+          "words": ["Moriah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o09",
+      "from": "Gen.14.18-Gen.14.20",
+      "to": "Ps.110.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "A priest in the order of Melchizedek",
+      "explanation": "Psalms 110:4 names Melchizedek of Genesis 14:18–20: the LORD swears that the psalm's king is a priest forever in the order of Melchizedek. Genesis gives Melchizedek three verses, as king of Salem and priest of God Most High, who brings bread and wine and blesses Abram. Outside Genesis, the Old Testament names him only in this psalm (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.14.18",
+          "wordIndex": 1,
+          "form": "וּ/מַלְכִּי\\־",
+          "row": "TAHOT Gen-Deu:8169"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.110.4",
+          "wordIndex": 10,
+          "form": "מַלְכִּי\\־",
+          "row": "TAHOT Job-Sng:46141"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L3391"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L132851"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.110.4",
+          "words": ["Melchizedek", "priest"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o10",
+      "from": "Gen.19.24-Gen.19.25",
+      "to": "Amos.4.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As when God overthrew Sodom and Gomorrah",
+      "explanation": "Amos 4:11 names the overthrow of Genesis 19:24–25: some of Israel were overthrown as when God overthrew Sodom and Gomorrah. Genesis tells how the LORD rained sulfur and fire on the two cities and overthrew them and all the plain. Amos uses the same verb for overthrowing (below), in a list of judgements after each of which Israel still did not return.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.19.25",
+          "wordIndex": 1,
+          "form": "וַֽ/יַּהֲפֹךְ֙",
+          "row": "TAHOT Gen-Deu:11205"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Amo.4.11",
+          "wordIndex": 1,
+          "form": "הָפַ֣כְתִּי",
+          "row": "TAHOT Isa-Mal:119654"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.19.24",
+          "wordIndex": 4,
+          "form": "סְדֹ֛ם",
+          "row": "TAHOT Gen-Deu:11185"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Amo.4.11",
+          "wordIndex": 6,
+          "form": "סְדֹ֣ם",
+          "row": "TAHOT Isa-Mal:119659"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4813"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L218199"
+        },
+        {
+          "kind": "verse",
+          "ref": "Amos.4.11",
+          "words": ["Sodom", "Gomorrah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o11",
+      "from": "Gen.19.24-Gen.19.25",
+      "to": "Isa.1.9-Isa.1.10",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Rulers of Sodom, people of Gomorrah",
+      "explanation": "Isaiah 1:9–10 names the cities of Genesis 19:24–25: only a small remnant kept Judah from becoming like Sodom and Gomorrah, and its rulers are then addressed as rulers of Sodom. Genesis tells of the two cities overthrown by fire. Isaiah turns their names first into a measure of near destruction and then into a charge against Jerusalem's leaders and people (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.19.24",
+          "wordIndex": 4,
+          "form": "סְדֹ֛ם",
+          "row": "TAHOT Gen-Deu:11185"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.1.9",
+          "wordIndex": 8,
+          "form": "כִּ/סְדֹ֣ם",
+          "row": "TAHOT Isa-Mal:291"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.19.24",
+          "wordIndex": 6,
+          "form": "עֲמֹרָ֖ה",
+          "row": "TAHOT Gen-Deu:11187"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.1.9",
+          "wordIndex": 10,
+          "form": "לַ/עֲמֹרָ֖ה",
+          "row": "TAHOT Isa-Mal:293"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L154153"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L4826"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.1.10",
+          "words": ["Sodom", "Gomorrah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o12",
+      "from": "Gen.25.26",
+      "to": "Hos.12.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jacob took his brother by the heel",
+      "explanation": "Hosea 12:3 recalls Genesis 25:26: in the womb Jacob took his brother by the heel. Genesis tells it at the twins' birth, the second child coming out with his hand on Esau's heel and being named Jacob. Hosea recalls it in a charge against Jacob's descendants, setting their ancestor's grasping at birth beside his struggle with God.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L6650"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L215703"
+        },
+        {
+          "kind": "verse",
+          "ref": "Hos.12.3",
+          "words": ["womb", "heel"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o13",
+      "from": "Gen.32.24-Gen.32.30",
+      "to": "Hos.12.3-Hos.12.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jacob struggled with God and prevailed",
+      "explanation": "Hosea 12:3–4 recalls Genesis 32:24–30: in his manhood Jacob contended with God; he struggled with the angel and prevailed. Genesis tells of the night Jacob wrestled a man until daybreak, would not let him go without a blessing and was given the name Israel. Hosea adds that he wept and pleaded, and the verb for his struggling (below) occurs only in these two passages.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.32.28",
+          "wordIndex": 11,
+          "form": "שָׂרִ֧יתָ",
+          "row": "TAHOT Gen-Deu:22546"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.12.3",
+          "wordIndex": 6,
+          "form": "שָׂרָ֥ה",
+          "row": "TAHOT Isa-Mal:115859"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L8638"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L8671"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L8691"
+        },
+        {
+          "kind": "verse",
+          "ref": "Hos.12.4",
+          "words": ["angel", "prevailed"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o14",
+      "from": "Gen.9.11-Gen.9.15",
+      "to": "Isa.54.9",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The waters of Noah",
+      "explanation": "Isaiah 54:9 recalls Genesis 9:11–15: as God swore that the waters of Noah would never again cover the earth, so he swears not to be angry with Zion. Genesis tells of the covenant after the flood, sealed with the rainbow in the cloud. Isaiah takes that oath as the pattern for God's own oath to his people.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2260"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L170578"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.54.9",
+          "words": ["Noah", "sworn"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o15",
+      "from": "Gen.12.1-Gen.12.3",
+      "to": "Isa.51.2",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Look to Abraham",
+      "explanation": "Isaiah 51:2 recalls Genesis 12:1–3: Zion is told to look to Abraham and Sarah, for God called Abraham when he was one man, blessed him and made him many. Genesis tells of the call to leave country and kindred and the promise of a great nation and a blessing. Isaiah offers that beginning as a reason to trust that God can do the same again.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2767"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L169495"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.51.2",
+          "words": ["Abraham", "Sarah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o16",
+      "from": "Gen.25.23-Gen.25.34",
+      "to": "Mal.1.2-Mal.1.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jacob loved, Esau hated",
+      "explanation": "Malachi 1:2–3 recalls Genesis 25:23–34: Esau was Jacob's brother, yet the LORD loved Jacob and hated Esau. Genesis tells of the word to Rebekah that two nations were in her womb and the elder would serve the younger, and of Esau selling his birthright. Malachi answers Israel's question of how God has loved them by pointing to that choice and to the desolation of Esau's mountains.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L6644"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L228952"
+        },
+        {
+          "kind": "verse",
+          "ref": "Mal.1.2",
+          "words": ["Esau", "Jacob"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o17",
+      "from": "Gen.35.19-Gen.35.20",
+      "to": "1Sam.10.2",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Rachel's tomb",
+      "explanation": "1 Samuel 10:2 names the grave of Genesis 35:19–20: Samuel tells Saul he will meet two men by Rachel's tomb, on the border of Benjamin. Genesis tells of Rachel dying on the way to Ephrath and of Jacob setting up a pillar on her grave that stood to the writer's day. Samuel uses the tomb as a landmark on Saul's road home, with the same Hebrew word for the grave (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.35.20",
+          "wordIndex": 5,
+          "form": "קְבֻרָתָ֑/הּ",
+          "row": "TAHOT Gen-Deu:24362"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.10.2",
+          "wordIndex": 8,
+          "form": "קְבֻרַ֥ת",
+          "row": "TAHOT Jos-Est:42048"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.35.19",
+          "wordIndex": 2,
+          "form": "רָחֵ֑ל",
+          "row": "TAHOT Gen-Deu:24340"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.10.2",
+          "wordIndex": 9,
+          "form": "רָחֵ֛ל",
+          "row": "TAHOT Jos-Est:42049"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L9337"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L58015"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Sam.10.2",
+          "words": ["Rachel"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o18",
+      "from": "Gen.38.27-Gen.38.30",
+      "to": "Ruth.4.12",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The house of Perez",
+      "explanation": "Ruth 4:12 names the birth of Genesis 38:27–30: the elders bless Boaz's house to be like the house of Perez, whom Tamar bore to Judah. Genesis tells of the twins born to Tamar, the second breaking out first and named Perez. The book of Ruth ends with the line from Perez to David, so the blessing points to the family Ruth is joining (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.38.29",
+          "wordIndex": 14,
+          "form": "פָּֽרֶץ\\׃",
+          "row": "TAHOT Gen-Deu:26963"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.12",
+          "wordIndex": 4,
+          "form": "פֶּ֔רֶץ",
+          "row": "TAHOT Jos-Est:36126"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56214"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L10095"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.12",
+          "words": ["Perez", "Tamar", "Judah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o19",
+      "from": "Gen.11.26-Gen.12.5",
+      "to": "Josh.24.2-Josh.24.4",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Joshua tells the story from Terah",
+      "explanation": "Joshua 24:2–4 retells Genesis 11:26–12:5: Terah beyond the River, Abraham taken from there and led through Canaan, then Isaac, Jacob and Esau. At Shechem Joshua opens the covenant by telling the story of Genesis in the LORD's own voice, down to Jacob's family going down into Egypt. Genesis does not say that Terah served other gods; Joshua's retelling adds it.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.11.26",
+          "wordIndex": 2,
+          "form": "תֶ֖רַח",
+          "row": "TAHOT Gen-Deu:6666"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.24.2",
+          "wordIndex": 16,
+          "form": "תֶּ֛רַח",
+          "row": "TAHOT Jos-Est:16442"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2759"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2753"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L2718"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.24.2",
+          "words": ["Terah", "Abraham"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o20",
+      "from": "Gen.50.24-Gen.50.25",
+      "to": "Exod.13.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Joseph's bones carried up",
+      "explanation": "Exodus 13:19 quotes Genesis 50:24–25: Moses takes Joseph's bones, because Joseph had made Israel swear that when God visited them they would carry his bones up. Exodus repeats Joseph's words almost exactly, so the oath sworn at his death is kept as Israel leaves Egypt. The Hebrew words for the visiting and for the bones are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.50.24",
+          "wordIndex": 8,
+          "form": "פָּקֹ֧ד",
+          "row": "TAHOT Gen-Deu:36203"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.13.19",
+          "wordIndex": 14,
+          "form": "פָּקֹ֨ד",
+          "row": "TAHOT Gen-Deu:45252"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.50.25",
+          "wordIndex": 13,
+          "form": "עַצְמֹתַ֖/י",
+          "row": "TAHOT Gen-Deu:36241"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.13.19",
+          "wordIndex": 4,
+          "form": "עַצְמ֥וֹת",
+          "row": "TAHOT Gen-Deu:45242"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13319"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16334"
+        },
+        {
+          "kind": "verse",
+          "ref": "Exod.13.19",
+          "words": ["Joseph", "bones"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o21",
+      "from": "Gen.33.19",
+      "to": "Josh.24.32",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The field at Shechem",
+      "explanation": "Joshua 24:32 recalls Genesis 33:19: Joseph's bones are buried at Shechem in the plot Jacob bought from the sons of Hamor for a hundred pieces of money. Genesis tells of Jacob buying the ground where he had spread his tent; Joshua names the same field, the same sellers and the same price, and it becomes the inheritance of Joseph's children. The rare word for the pieces of money (below) occurs only three times in the Old Testament.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.33.19",
+          "wordIndex": 15,
+          "form": "קְשִׂיטָֽה\\׃",
+          "row": "TAHOT Gen-Deu:23113"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.24.32",
+          "wordIndex": 22,
+          "form": "קְשִׂיטָ֑ה",
+          "row": "TAHOT Jos-Est:17308"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.33.19",
+          "wordIndex": 11,
+          "form": "חֲמ֖וֹר",
+          "row": "TAHOT Gen-Deu:23109"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.24.32",
+          "wordIndex": 18,
+          "form": "חֲמ֥וֹר",
+          "row": "TAHOT Jos-Est:17304"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L51617"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L8878"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.24.32",
+          "words": ["Jacob", "Hamor"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o22",
+      "from": "Gen.1.2",
+      "to": "Jer.4.23",
+      "type": "echo",
+      "strength": 2,
+      "label": "Formless and empty",
+      "explanation": "Genesis 1:2 and Jeremiah 4:23 both tell of the earth formless and empty, once before the first day and once in the prophet's vision of a land undone. Jeremiah adds that the heavens had no light, as before light was made. The second of the two Hebrew words occurs only three times in the Old Testament, twice here (below); which passage is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.1.2",
+          "wordIndex": 4,
+          "form": "וָ/בֹ֔הוּ",
+          "row": "TAHOT Gen-Deu:104"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.4.23",
+          "wordIndex": 6,
+          "form": "וָ/בֹ֑הוּ",
+          "row": "TAHOT Isa-Mal:32540"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.1.2",
+          "wordIndex": 3,
+          "form": "תֹ֙הוּ֙",
+          "row": "TAHOT Gen-Deu:103"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.4.23",
+          "wordIndex": 5,
+          "form": "תֹ֖הוּ",
+          "row": "TAHOT Isa-Mal:32539"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L175923"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o23",
+      "from": "Gen.2.8-Gen.2.15",
+      "to": "Ezek.28.13",
+      "type": "allusion",
+      "strength": 2,
+      "label": "In Eden, the garden of God",
+      "explanation": "Ezekiel 28:13 names the garden of Genesis 2:8–15: the king of Tyre was in Eden, the garden of God, adorned with precious stones. Genesis places the garden in Eden, watered by a river that runs toward a land of gold, bdellium and onyx. Ezekiel's lament gives Tyre's king that garden's splendour before his fall, and Eden and the onyx are named in both (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.2.8",
+          "wordIndex": 5,
+          "form": "בְ/עֵ֖דֶן",
+          "row": "TAHOT Gen-Deu:1017"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.28.13",
+          "wordIndex": 1,
+          "form": "בְּ/עֵ֨דֶן",
+          "row": "TAHOT Isa-Mal:87529"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.2.12",
+          "wordIndex": 8,
+          "form": "הַ/שֹּֽׁהַם\\׃",
+          "row": "TAHOT Gen-Deu:1114"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.28.13",
+          "wordIndex": 13,
+          "form": "שֹׁ֙הַם֙",
+          "row": "TAHOT Isa-Mal:87541"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L558"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L203128"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L587"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezek.28.13",
+          "words": ["Eden", "garden"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "gen-o24",
+      "from": "Gen.41.1-Gen.41.40",
+      "to": "Dan.2.1-Dan.2.49",
+      "type": "parallel",
+      "strength": 2,
+      "label": "A king's dream, and the God who explains it",
+      "explanation": "Genesis 41:1–40 and Daniel 2:1–49 both tell of a foreign king troubled by a dream, his magicians unable to explain it, and a Hebrew captive who credits God and is raised to high office. Pharaoh's spirit is troubled and so is Nebuchadnezzar's; Joseph says the answer belongs to God, and Daniel says there is a God in heaven who reveals secrets. The Hebrew words for the troubled spirit and for the magicians are shared (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.41.8",
+          "wordIndex": 3,
+          "form": "וַ/תִּפָּ֣עֶם",
+          "row": "TAHOT Gen-Deu:28297"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.2.1",
+          "wordIndex": 8,
+          "form": "וַ/תִּתְפָּ֣עֶם",
+          "row": "TAHOT Isa-Mal:102886"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.41.8",
+          "wordIndex": 9,
+          "form": "חַרְטֻמֵּ֥י",
+          "row": "TAHOT Gen-Deu:28303"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.2.2",
+          "wordIndex": 4,
+          "form": "לַֽ/חַרְטֻמִּ֜ים",
+          "row": "TAHOT Isa-Mal:102905"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L10605"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L10660"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L208838"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o25",
+      "from": "Gen.1.26-Gen.1.28",
+      "to": "Ps.8.4-Ps.8.8",
+      "type": "echo",
+      "strength": 2,
+      "label": "Rule over the works of God's hands",
+      "explanation": "Genesis 1:26–28 and Psalms 8:4–8 both tell of humankind given rule over the creatures: the flocks and herds, the animals of the field, the birds of the sky and the fish of the sea. Genesis gives that rule at creation, with the image of God. The psalm marvels that God should care for so small a creature and has put all things under his feet.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L340"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110144"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110145"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "gen-o26",
+      "from": "Gen.6.9",
+      "to": "Ezek.14.14",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Noah, Daniel and Job",
+      "explanation": "Ezekiel 14:14 names Noah of Genesis 6:9: even Noah, Daniel and Job, were they in a guilty land, would save only themselves by their righteousness. Genesis calls Noah righteous and blameless among the people of his time. Ezekiel sets him beside two other righteous men to say that a land will not be spared for the sake of a few (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.6.9",
+          "wordIndex": 3,
+          "form": "נֹ֔חַ",
+          "row": "TAHOT Gen-Deu:3516"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.14.14",
+          "wordIndex": 6,
+          "form": "נֹ֖חַ",
+          "row": "TAHOT Isa-Mal:77230"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L1651"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezek.14.14",
+          "words": ["Noah", "Daniel", "Job"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o01",
+      "from": "Exod.12.6",
+      "to": "Josh.5.10-Josh.5.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The first Passover in the land",
+      "explanation": "Joshua 5:10–11 names the feast of Exodus 12:6: in Gilgal Israel keeps the Passover on the fourteenth day of the month at evening, as the law set it. Exodus fixes the lamb for the fourteenth day, killed at evening; Joshua records the first Passover kept in the land, on that day and at that hour, on the plains of Jericho. On the next day they eat the produce of the land.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47825"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.5.10",
+          "words": ["Passover", "fourteenth"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o02",
+      "from": "Exod.14.21-Exod.14.22",
+      "to": "Josh.2.10",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jericho heard of the Red Sea",
+      "explanation": "Joshua 2:10 recalls Exodus 14:21–22: Rahab tells the spies that Jericho has heard of the LORD drying up the Red Sea before Israel. Exodus tells of the east wind that drove the sea back all night and made it dry ground. In Jericho the story has travelled ahead of Israel and is told back to them by a Canaanite woman.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47295"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.2.10",
+          "words": ["Red", "Sea"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o03",
+      "from": "Exod.14.21-Exod.14.22",
+      "to": "Josh.4.23",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The Jordan dried up as the Red Sea was",
+      "explanation": "Joshua 4:23 recalls Exodus 14:21–22: the LORD dried up the Jordan before Israel as he had dried up the Red Sea. Exodus tells of the sea driven back and Israel crossing on dry ground with the waters a wall on either side. Joshua makes the crossing of the Jordan its second telling, so that children who ask about the stones will hear of both.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16555"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47720"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.4.23",
+          "words": ["Jordan", "Red", "Sea"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o04",
+      "from": "Exod.15.2",
+      "to": "Ps.118.14",
+      "type": "echo",
+      "strength": 3,
+      "label": "The LORD is my strength and song",
+      "explanation": "Exodus 15:2 and Psalms 118:14 both tell that the LORD is my strength and song and has become my salvation, once in the Song of the Sea and once in a psalm of thanksgiving. The line is the same in the Hebrew, including a rare word for song (below), and Isaiah 12:2 has it too. Which was sung first is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.15.2",
+          "wordIndex": 2,
+          "form": "וְ/זִמְרָת֙",
+          "row": "TAHOT Gen-Deu:46172"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.118.14",
+          "wordIndex": 2,
+          "form": "וְ/זִמְרָ֣ת",
+          "row": "TAHOT Job-Sng:47472"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.15.2",
+          "wordIndex": 6,
+          "form": "לִֽ/ישׁוּעָ֑ה",
+          "row": "TAHOT Gen-Deu:46176"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.118.14",
+          "wordIndex": 6,
+          "form": "לִֽ/ישׁוּעָֽה\\׃",
+          "row": "TAHOT Job-Sng:47476"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16734"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133904"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "exod-o05",
+      "from": "Exod.16.35",
+      "to": "Josh.5.12",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The manna ceased",
+      "explanation": "Joshua 5:12 recalls Exodus 16:35: the manna ceased the day after Israel ate the produce of Canaan. Exodus says Israel ate manna for forty years, until they came to the borders of the land of Canaan. Joshua records the day it stopped, at Gilgal, and the word for the manna is the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.16.35",
+          "wordIndex": 5,
+          "form": "הַ/מָּן֙",
+          "row": "TAHOT Gen-Deu:47615"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.5.12",
+          "wordIndex": 2,
+          "form": "הַ/מָּ֜ן",
+          "row": "TAHOT Jos-Est:2793"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47833"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17297"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.5.12",
+          "words": ["manna", "Canaan"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o06",
+      "from": "Exod.17.7",
+      "to": "Ps.95.8-Ps.95.9",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As at Meribah, as at Massah",
+      "explanation": "Psalms 95:8–9 names the places of Exodus 17:7: the psalm warns against a hardened heart like Israel's at Meribah and Massah. Exodus names the place Massah and Meribah because the people quarrelled and tested the LORD, asking whether he was among them or not. The psalm turns the two names back into what they mean, testing and quarrelling, as a warning to those who sing it (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.17.7",
+          "wordIndex": 4,
+          "form": "מַסָּ֖ה",
+          "row": "TAHOT Gen-Deu:47831"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.95.8",
+          "wordIndex": 6,
+          "form": "מַ֝סָּ֗ה",
+          "row": "TAHOT Job-Sng:41223"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.17.7",
+          "wordIndex": 5,
+          "form": "וּ/מְרִיבָ֑ה",
+          "row": "TAHOT Gen-Deu:47832"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.95.8",
+          "wordIndex": 4,
+          "form": "כִּ/מְרִיבָ֑ה",
+          "row": "TAHOT Job-Sng:41221"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L129061"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17377"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.95.8",
+          "words": ["Meribah", "Massah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o07",
+      "from": "Exod.20.1-Exod.20.17",
+      "to": "Deut.5.6-Deut.5.21",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The Ten Commandments, given twice",
+      "explanation": "Deuteronomy 5:6–21 retells Exodus 20:1–17: Moses repeats the Ten Commandments to the people about to enter the land. The commandments run in the same order with nearly the same words, and the Hebrew shares rare words such as those for the image and for coveting (below). Two differences stand out: Deuteronomy grounds the Sabbath in Israel's slavery in Egypt, where Exodus grounds it in the six days of creation, and it names the neighbour's wife before his house.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.20.4",
+          "wordIndex": 6,
+          "form": "תְּמוּנָ֡֔ה",
+          "row": "TAHOT Gen-Deu:49474"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.5.8",
+          "wordIndex": 6,
+          "form": "תְּמוּנָ֔֡ה",
+          "row": "TAHOT Gen-Deu:119777"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.20.17",
+          "wordIndex": 2,
+          "form": "תַחְמֹ֖ד",
+          "row": "TAHOT Gen-Deu:49734"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.5.21",
+          "wordIndex": 2,
+          "form": "תַחְמֹ֖ד",
+          "row": "TAHOT Gen-Deu:120061"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18093"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18270"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L18085"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.5.15",
+          "words": ["Egypt"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o08",
+      "from": "Exod.32.1-Exod.32.20",
+      "to": "Deut.9.8-Deut.9.21",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The golden calf, remembered",
+      "explanation": "Deuteronomy 9:8–21 retells Exodus 32:1–20: Moses reminds Israel of the calf they made at Horeb while he stayed forty days on the mountain. Both tell of the molten calf, the LORD's anger and his word to let him destroy them, the tablets broken, and the calf burnt and ground to dust; the Hebrew for the molten image and for the grinding is shared (below). Deuteronomy adds that Moses fasted forty days and nights and prayed for Aaron too.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.32.4",
+          "wordIndex": 8,
+          "form": "מַסֵּכָ֑ה",
+          "row": "TAHOT Gen-Deu:58229"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.9.12",
+          "wordIndex": 22,
+          "form": "מַסֵּכָֽה\\׃",
+          "row": "TAHOT Gen-Deu:122584"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.32.20",
+          "wordIndex": 8,
+          "form": "וַ/יִּטְחַ֖ן",
+          "row": "TAHOT Gen-Deu:58653"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.9.21",
+          "wordIndex": 13,
+          "form": "טָחוֹן֙",
+          "row": "TAHOT Gen-Deu:122818"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21428"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21310"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21345"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.9.16",
+          "words": ["calf"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o09",
+      "from": "Exod.32.4",
+      "to": "Ps.106.19-Ps.106.20",
+      "type": "allusion",
+      "strength": 3,
+      "label": "A calf in Horeb",
+      "explanation": "Psalms 106:19–20 recalls Exodus 32:4: they made a calf in Horeb and worshipped a molten image. Exodus tells how Aaron fashioned the molten calf and the people hailed it as the gods who brought them out of Egypt. The psalm says that so they exchanged their glory for the image of a bull that eats grass, with the same words for the calf and the molten image (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.32.4",
+          "wordIndex": 8,
+          "form": "מַסֵּכָ֑ה",
+          "row": "TAHOT Gen-Deu:58229"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.19",
+          "wordIndex": 5,
+          "form": "לְ/מַסֵּכָֽה\\׃",
+          "row": "TAHOT Job-Sng:44400"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.32.4",
+          "wordIndex": 7,
+          "form": "עֵ֣גֶל",
+          "row": "TAHOT Gen-Deu:58228"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.19",
+          "wordIndex": 2,
+          "form": "עֵ֥גֶל",
+          "row": "TAHOT Job-Sng:44397"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21348"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131529"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.106.19",
+          "words": ["calf", "Horeb"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o10",
+      "from": "Exod.34.6-Exod.34.7",
+      "to": "Num.14.17-Num.14.19",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Moses prays God's own words back",
+      "explanation": "Numbers 14:17–19 quotes Exodus 34:6–7: after the spies' report Moses prays back to God the words God proclaimed of himself, slow to anger and abundant in loving kindness. Moses introduces them as what the LORD has spoken, keeps the line about forgiving iniquity and visiting it to the third and fourth generation, and asks pardon by the greatness of that loving kindness. The Hebrew for slow to anger and for clearing the guilty is the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.34.6",
+          "wordIndex": 11,
+          "form": "אֶ֥רֶךְ",
+          "row": "TAHOT Gen-Deu:59829"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.14.18",
+          "wordIndex": 2,
+          "form": "אֶ֤רֶךְ",
+          "row": "TAHOT Gen-Deu:97987"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.34.7",
+          "wordIndex": 8,
+          "form": "וְ/נַקֵּה֙",
+          "row": "TAHOT Gen-Deu:59856"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.14.18",
+          "wordIndex": 9,
+          "form": "וְ/נַקֵּה֙",
+          "row": "TAHOT Gen-Deu:97994"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21980"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33296"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L22025"
+        },
+        {
+          "kind": "verse",
+          "ref": "Num.14.17",
+          "words": ["spoken"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "exod-o11",
+      "from": "Exod.34.6",
+      "to": "Jonah.4.2",
+      "type": "echo",
+      "strength": 3,
+      "label": "Merciful and gracious, slow to anger",
+      "explanation": "Exodus 34:6 and Jonah 4:2 both tell of a God merciful and gracious, slow to anger and abundant in loving kindness, once proclaimed at Sinai and once thrown back at God by an angry prophet. Jonah says he fled to Tarshish because he knew God was like this and would relent of doing harm. The Hebrew words for merciful and gracious are the same (below); which passage is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.34.6",
+          "wordIndex": 9,
+          "form": "רַח֖וּם",
+          "row": "TAHOT Gen-Deu:59827"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.4.2",
+          "wordIndex": 25,
+          "form": "וְ/רַח֔וּם",
+          "row": "TAHOT Isa-Mal:123286"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.34.6",
+          "wordIndex": 10,
+          "form": "וְ/חַנּ֑וּן",
+          "row": "TAHOT Gen-Deu:59828"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.4.2",
+          "wordIndex": 24,
+          "form": "חַנּ֣וּן",
+          "row": "TAHOT Isa-Mal:123285"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L21988"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220218"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "exod-o12",
+      "from": "Exod.40.34-Exod.40.35",
+      "to": "1Kgs.8.10-1Kgs.8.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "The cloud fills the dwelling",
+      "explanation": "Exodus 40:34–35 and 1 Kings 8:10–11 both tell of the cloud filling God's dwelling once it is finished, so that no one can go in. At the tabernacle Moses cannot enter because the cloud rests on it and the LORD's glory fills it; at the temple the priests cannot stand to minister because of the cloud, for the LORD's glory fills the house. The Hebrew words for the cloud and the glory are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.40.34",
+          "wordIndex": 2,
+          "form": "הֶ/עָנָ֖ן",
+          "row": "TAHOT Gen-Deu:65334"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.8.10",
+          "wordIndex": 6,
+          "form": "וְ/הֶ/עָנָ֥ן",
+          "row": "TAHOT Jos-Est:84962"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.40.34",
+          "wordIndex": 6,
+          "form": "וּ/כְב֣וֹד",
+          "row": "TAHOT Gen-Deu:65338"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.8.11",
+          "wordIndex": 10,
+          "form": "כְבוֹד\\־",
+          "row": "TAHOT Jos-Est:84987"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L23280"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L69335"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L23276"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "exod-o13",
+      "from": "Exod.3.2-Exod.3.4",
+      "to": "Deut.33.16",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Him who lived in the bush",
+      "explanation": "Deuteronomy 33:16 names the bush of Exodus 3:2–4: Moses blesses Joseph with the good will of him who lived in the bush. Exodus tells of the bush that burned and was not consumed, from which God called Moses. In his last blessing Moses names the LORD by that meeting, and the Hebrew word for this bush occurs only in these two passages (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.3.2",
+          "wordIndex": 8,
+          "form": "הַ/סְּנֶ֑ה",
+          "row": "TAHOT Gen-Deu:37350"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.33.16",
+          "wordIndex": 6,
+          "form": "סְנֶ֑ה",
+          "row": "TAHOT Gen-Deu:139445"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13729"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L13755"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L46727"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.33.16",
+          "words": ["bush"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o01",
+      "from": "Num.6.24-Num.6.26",
+      "to": "Ps.67.1",
+      "type": "echo",
+      "strength": 2,
+      "label": "May his face shine on us",
+      "explanation": "Numbers 6:24–26 and Psalms 67:1 both tell of a prayer that God will bless and make his face shine, in the priests' blessing and in a psalm's opening. The psalm turns the blessing into the people's own request and goes on to ask that God's way be known on earth. The Hebrew words for shining and for being gracious are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.6.25",
+          "wordIndex": 1,
+          "form": "יָאֵ֨ר",
+          "row": "TAHOT Gen-Deu:91678"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.67.1",
+          "wordIndex": 4,
+          "form": "יָ֤אֵ֥ר",
+          "row": "TAHOT Job-Sng:32332"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.6.25",
+          "wordIndex": 5,
+          "form": "וִֽ/יחֻנֶּֽ/ךָּ\\׃\\ \\ס",
+          "row": "TAHOT Gen-Deu:91682"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.67.1",
+          "wordIndex": 2,
+          "form": "יְחָנֵּ֥/נוּ",
+          "row": "TAHOT Job-Sng:32330"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L31538"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L122367"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "num-o02",
+      "from": "Num.13.30-Num.14.24",
+      "to": "Josh.14.6-Josh.14.12",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Caleb remembers Kadesh Barnea",
+      "explanation": "Joshua 14:6–12 recalls Numbers 13:30–14:24: Caleb reminds Joshua of what the LORD said at Kadesh Barnea when the spies came back. Numbers tells of the twelve sent out, the frightened report of the many, Caleb's word that they could take the land, and the LORD's promise that Caleb, who followed him fully, would enter it. Forty-five years later Caleb, still strong, asks for the hill country that promise gave him.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.13.30",
+          "wordIndex": 2,
+          "form": "כָּלֵ֛ב",
+          "row": "TAHOT Gen-Deu:97435"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.14.6",
+          "wordIndex": 9,
+          "form": "כָּלֵ֥ב",
+          "row": "TAHOT Jos-Est:9635"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.14.6",
+          "wordIndex": 6,
+          "form": "יְפֻנֶּ֔ה",
+          "row": "TAHOT Gen-Deu:97676"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.14.6",
+          "wordIndex": 11,
+          "form": "יְפֻנֶּ֖ה",
+          "row": "TAHOT Jos-Est:9637"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33371"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33072"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L49809"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.14.6",
+          "words": ["Kadesh", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o03",
+      "from": "Num.16.31-Num.16.33",
+      "to": "Ps.106.16-Ps.106.18",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The earth opened for Dathan and Abiram",
+      "explanation": "Psalms 106:16–18 recalls Numbers 16:31–33: the earth opened for Dathan and Abiram, who had envied Moses and Aaron. Numbers tells of the ground splitting under Korah's men and their households, who went down alive to Sheol. The psalm names Dathan and Abiram and the fire that burned the wicked, in its long confession of Israel's sins, with the same verb for swallowing (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.16.32",
+          "wordIndex": 5,
+          "form": "וַ/תִּבְלַ֥ע",
+          "row": "TAHOT Gen-Deu:100335"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.17",
+          "wordIndex": 3,
+          "form": "וַ/תִּבְלַ֣ע",
+          "row": "TAHOT Job-Sng:44370"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33995"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L33993"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.106.17",
+          "words": ["Dathan", "Abiram"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o04",
+      "from": "Num.20.10-Num.20.13",
+      "to": "Ps.106.32-Ps.106.33",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Moses at the waters of Meribah",
+      "explanation": "Psalms 106:32–33 recalls Numbers 20:10–13: at the waters of Meribah Moses was troubled for Israel's sake and spoke rashly. Numbers tells of Moses striking the rock twice and of the LORD's word that, because he did not believe or honour him, he would not lead the people into the land. The psalm lays the cause on the people's rebellion, which made Moses speak rashly with his lips (the place's name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.20.13",
+          "wordIndex": 3,
+          "form": "מְרִיבָ֔ה",
+          "row": "TAHOT Gen-Deu:102885"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.32",
+          "wordIndex": 4,
+          "form": "מְרִיבָ֑ה",
+          "row": "TAHOT Job-Sng:44576"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131662"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34742"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34792"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.106.32",
+          "words": ["Meribah", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o05",
+      "from": "Num.21.8-Num.21.9",
+      "to": "2Kgs.18.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The bronze serpent broken",
+      "explanation": "2 Kings 18:4 names the serpent of Numbers 21:8–9: Hezekiah broke in pieces the bronze serpent Moses had made, because Israel burned incense to it. Numbers tells how Moses set a bronze serpent on a pole so that whoever was bitten and looked at it lived. Kings records its end long after, when it had become an object of worship called Nehushtan, with the same words for serpent and bronze (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.21.9",
+          "wordIndex": 3,
+          "form": "נְחַ֣שׁ",
+          "row": "TAHOT Gen-Deu:103518"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.18.4",
+          "wordIndex": 12,
+          "form": "נְחַ֨שׁ",
+          "row": "TAHOT Jos-Est:114092"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.21.9",
+          "wordIndex": 4,
+          "form": "נְחֹ֔שֶׁת",
+          "row": "TAHOT Gen-Deu:103519"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.18.4",
+          "wordIndex": 13,
+          "form": "הַ/נְּחֹ֜שֶׁת",
+          "row": "TAHOT Jos-Est:114093"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L34989"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L78665"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.18.4",
+          "words": ["bronze", "serpent", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o06",
+      "from": "Num.22.5-Num.22.6",
+      "to": "Josh.24.9-Josh.24.10",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Balaam sent for to curse",
+      "explanation": "Joshua 24:9–10 recalls Numbers 22:5–6: Balak king of Moab sent for Balaam son of Beor to curse Israel, but the LORD would not listen to Balaam. Numbers tells of the messengers sent to Pethor by the River and of Balak's plea for a curse on a people too mighty for him. In Joshua's covenant speech the LORD tells the outcome in a line, that Balaam blessed Israel instead (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.22.5",
+          "wordIndex": 4,
+          "form": "בִּלְעָ֣ם",
+          "row": "TAHOT Gen-Deu:104226"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.24.9",
+          "wordIndex": 11,
+          "form": "לְ/בִלְעָ֥ם",
+          "row": "TAHOT Jos-Est:16646"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.22.5",
+          "wordIndex": 6,
+          "form": "בְּע֗וֹר",
+          "row": "TAHOT Gen-Deu:104228"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.24.9",
+          "wordIndex": 13,
+          "form": "בְּע֖וֹר",
+          "row": "TAHOT Jos-Est:16648"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35214"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L51394"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35231"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.24.9",
+          "words": ["Balaam", "Beor"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o07",
+      "from": "Num.22.5-Num.22.6",
+      "to": "Mic.6.5",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Remember what Balak devised",
+      "explanation": "Micah 6:5 recalls Numbers 22:5–6: Israel is told to remember what Balak devised and what Balaam son of Beor answered him. Numbers tells of the king of Moab sending for the seer to curse a people too mighty for him. Micah sets the story among the LORD's righteous acts, in his case against his own people (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.22.5",
+          "wordIndex": 4,
+          "form": "בִּלְעָ֣ם",
+          "row": "TAHOT Gen-Deu:104226"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Mic.6.5",
+          "wordIndex": 12,
+          "form": "בִּלְעָ֣ם",
+          "row": "TAHOT Isa-Mal:125312"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.22.5",
+          "wordIndex": 6,
+          "form": "בְּע֗וֹר",
+          "row": "TAHOT Gen-Deu:104228"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Mic.6.5",
+          "wordIndex": 14,
+          "form": "בְּע֑וֹר",
+          "row": "TAHOT Isa-Mal:125314"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35217"
+        },
+        {
+          "kind": "verse",
+          "ref": "Mic.6.5",
+          "words": ["Balak", "Balaam"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o08",
+      "from": "Num.25.7-Num.25.13",
+      "to": "Ps.106.28-Ps.106.31",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Phinehas stood up",
+      "explanation": "Psalms 106:28–31 recalls Numbers 25:7–13: when Israel joined Baal Peor and a plague broke out, Phinehas stood up and the plague was stopped. Numbers tells of Phinehas's spear and of the covenant of a lasting priesthood given him for his zeal. The psalm says the act was credited to him as righteousness for all generations, and names him with the same word for the plague (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.25.7",
+          "wordIndex": 2,
+          "form": "פִּֽינְחָס֙",
+          "row": "TAHOT Gen-Deu:106615"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.30",
+          "wordIndex": 2,
+          "form": "פִּֽ֭ינְחָס",
+          "row": "TAHOT Job-Sng:44548"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.25.8",
+          "wordIndex": 18,
+          "form": "הַ/מַּגֵּפָ֔ה",
+          "row": "TAHOT Gen-Deu:106659"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.106.29",
+          "wordIndex": 5,
+          "form": "מַגֵּפָֽה\\׃",
+          "row": "TAHOT Job-Sng:44539"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L131651"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L36097"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L36154"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.106.30",
+          "words": ["Phinehas"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o09",
+      "from": "Num.11.31-Num.11.34",
+      "to": "Ps.78.26-Ps.78.31",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Birds for the craving",
+      "explanation": "Psalms 78:26–31 retells Numbers 11:31–34: God sent a wind that brought birds down around the camp, and while the food was still in their mouths his anger struck them. Numbers tells of the quail let fall around the camp and gathered for two days, and of the plague that named the place for the graves of those who craved. The psalm keeps the order and makes it a lesson about desire that was granted and then judged.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L125238"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L32685"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L32676"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o10",
+      "from": "Num.27.18-Num.27.23",
+      "to": "Deut.34.9",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Moses laid his hands on Joshua",
+      "explanation": "Deuteronomy 34:9 recalls Numbers 27:18–23: Joshua, on whom Moses had laid his hands, is filled with wisdom and Israel listens to him. Numbers tells of the LORD's command to take Joshua, a man in whom is the Spirit, lay a hand on him and commission him before Eleazar and the congregation so that Israel would obey him. At Moses' death Deuteronomy records that it was so, with the same verb for laying on hands (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.27.18",
+          "wordIndex": 15,
+          "form": "וְ/סָמַכְתָּ֥",
+          "row": "TAHOT Gen-Deu:108564"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.34.9",
+          "wordIndex": 8,
+          "form": "סָמַ֥ךְ",
+          "row": "TAHOT Gen-Deu:139956"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L36536"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L46993"
+        },
+        {
+          "kind": "verse",
+          "ref": "Deut.34.9",
+          "words": ["Joshua", "hands"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o11",
+      "from": "Num.35.9-Num.35.15",
+      "to": "Josh.20.1-Josh.20.3",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The cities of refuge",
+      "explanation": "Joshua 20:1–3 recalls Numbers 35:9–15: the LORD tells Joshua to assign the cities of refuge of which he spoke by Moses. Numbers sets out cities to which one who killed a person unintentionally could flee from the avenger until judged. Joshua repeats the law's terms, the unwitting killer and the avenger of blood, and then names the cities (the words below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.35.11",
+          "wordIndex": 5,
+          "form": "מִקְלָ֖ט",
+          "row": "TAHOT Gen-Deu:114439"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.20.2",
+          "wordIndex": 10,
+          "form": "הַ/מִּקְלָ֔ט",
+          "row": "TAHOT Jos-Est:13471"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.35.11",
+          "wordIndex": 13,
+          "form": "בִּ/שְׁגָגָֽה\\׃",
+          "row": "TAHOT Gen-Deu:114447"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.20.3",
+          "wordIndex": 6,
+          "form": "בִּ/שְׁגָגָ֖ה",
+          "row": "TAHOT Jos-Est:13493"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L50605"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L37732"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L37736"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.20.2",
+          "words": ["refuge", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "num-o12",
+      "from": "Num.32.20-Num.32.22",
+      "to": "Josh.1.12-Josh.1.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The eastern tribes held to their word",
+      "explanation": "Joshua 1:12–15 recalls Numbers 32:20–22: Joshua reminds Reuben, Gad and half of Manasseh of the word Moses commanded them. In Numbers they ask to settle east of the Jordan, and Moses agrees on condition that their armed men cross over and fight until the land is subdued. Before the crossing Joshua holds them to it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47166"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L37363"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L37351"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.1.13",
+          "words": ["Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o01",
+      "from": "Deut.6.4-Deut.6.5",
+      "to": "2Kgs.23.25",
+      "type": "allusion",
+      "strength": 3,
+      "label": "With all his heart, soul and might",
+      "explanation": "2 Kings 23:25 recalls Deuteronomy 6:4–5: Josiah turned to the LORD with all his heart, soul and might, according to all the law of Moses. Deuteronomy commands Israel to love the LORD with heart, soul and might; Kings gives Josiah the same three, and says no king before or after was like him. The full three-part phrase, ending with might, occurs nowhere else in the Old Testament.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39615"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80338"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.23.25",
+          "words": ["heart", "soul", "might", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o02",
+      "from": "Deut.17.14-Deut.17.15",
+      "to": "1Sam.8.5",
+      "type": "echo",
+      "strength": 2,
+      "label": "A king like all the nations",
+      "explanation": "Deuteronomy 17:14–15 and 1 Samuel 8:5 both tell of Israel asking for a king like all the nations around. Deuteronomy foresees the request and allows a king of the LORD's choosing, one of their own brothers. In Samuel the elders make the request, and the LORD tells Samuel that it is he they have rejected.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L57723"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L42355"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "deut-o03",
+      "from": "Deut.24.16",
+      "to": "2Kgs.14.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Each shall die for his own sin",
+      "explanation": "2 Kings 14:6 quotes Deuteronomy 24:16: Amaziah spared the children of his father's murderers, as written in the book of the law of Moses. Kings gives the law in full, that fathers shall not die for their children nor children for their fathers, but each for his own sin. It names the book of the law of Moses as its source (the word for sin below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.24.16",
+          "wordIndex": 12,
+          "form": "בְּ/חֶטְא֖/וֹ",
+          "row": "TAHOT Gen-Deu:132303"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.14.6",
+          "wordIndex": 27,
+          "form": "בְּ/חֶטְא֖/וֹ",
+          "row": "TAHOT Jos-Est:110564"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L77595"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.14.6",
+          "words": ["written", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o04",
+      "from": "Deut.23.3-Deut.23.5",
+      "to": "Neh.13.1-Neh.13.2",
+      "type": "quotation",
+      "strength": 3,
+      "label": "No Ammonite or Moabite in the assembly",
+      "explanation": "Nehemiah 13:1–2 quotes Deuteronomy 23:3–5: the book of Moses, read to the people, says no Ammonite or Moabite may enter the assembly of God. Deuteronomy gives the reasons, that they did not meet Israel with bread and water and hired Balaam to curse them, and adds that God turned the curse into a blessing. Nehemiah repeats all three, with the same Hebrew words (below), and the people separate from those of foreign descent.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.23.3",
+          "wordIndex": 3,
+          "form": "עַמּוֹנִ֛י",
+          "row": "TAHOT Gen-Deu:131359"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.13.1",
+          "wordIndex": 14,
+          "form": "עַמֹּנִ֧י",
+          "row": "TAHOT Jos-Est:177947"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.23.4",
+          "wordIndex": 13,
+          "form": "שָׂכַ֨ר",
+          "row": "TAHOT Gen-Deu:131400"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.13.2",
+          "wordIndex": 9,
+          "form": "וַ/יִּשְׂכֹּ֨ר",
+          "row": "TAHOT Jos-Est:177972"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L97870"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L97889"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L43252"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.13.1",
+          "words": ["Moses", "Ammonite", "Moabite"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o05",
+      "from": "Deut.28.15-Deut.28.68",
+      "to": "Dan.9.11-Dan.9.13",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The curse written in the law of Moses",
+      "explanation": "Daniel 9:11–13 names the curse of Deuteronomy 28:15–68: Daniel confesses that the curse and the oath written in the law of Moses have been poured out on Israel. Deuteronomy sets out the curses that will overtake Israel if it does not listen to the LORD's voice. Daniel's prayer confesses that this has happened, the great evil that came on Jerusalem coming as Moses wrote.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L211654"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L44379"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L211600"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.9.11",
+          "words": ["curse", "Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o06",
+      "from": "Deut.30.1-Deut.30.4",
+      "to": "Neh.1.8-Neh.1.9",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Scatter and gather",
+      "explanation": "Nehemiah 1:8–9 quotes Deuteronomy 30:1–4: Nehemiah asks God to remember his word to Moses, to scatter Israel if they sinned and to gather them if they returned. Deuteronomy promises that if the scattered return to the LORD with all their heart he will gather them even from the farthest parts of heaven. Nehemiah prays it back in the words of the promise (below), ending at the place God chose for his name.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.30.3",
+          "wordIndex": 8,
+          "form": "וְ/קִבֶּצְ/ךָ֙",
+          "row": "TAHOT Gen-Deu:136584"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.1.9",
+          "wordIndex": 13,
+          "form": "אֲקַבְּצֵ֔/ם",
+          "row": "TAHOT Jos-Est:169593"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.30.1",
+          "wordIndex": 19,
+          "form": "הִדִּיחֲ/ךָ֛",
+          "row": "TAHOT Gen-Deu:136534"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.1.9",
+          "wordIndex": 9,
+          "form": "נִֽדַּחֲ/כֶ֜ם",
+          "row": "TAHOT Jos-Est:169589"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L95217"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45250"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45212"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.1.8",
+          "words": ["Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o07",
+      "from": "Deut.31.6-Deut.31.8",
+      "to": "Josh.1.5-Josh.1.9",
+      "type": "echo",
+      "strength": 3,
+      "label": "Be strong and courageous",
+      "explanation": "Joshua 1:5–9 echoes Deuteronomy 31:6–8: the LORD tells Joshua what Moses had told him, to be strong and courageous, for God will not fail or forsake him. In Deuteronomy Moses charges Joshua before all Israel. In Joshua the LORD repeats the charge after Moses' death and adds that he will be with Joshua as he was with Moses, in the same Hebrew words (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.31.6",
+          "wordIndex": 2,
+          "form": "וְ/אִמְצ֔וּ",
+          "row": "TAHOT Gen-Deu:137204"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.1.6",
+          "wordIndex": 2,
+          "form": "וֶ/אֱמָ֑ץ",
+          "row": "TAHOT Jos-Est:232"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.31.6",
+          "wordIndex": 6,
+          "form": "תַּעַרְצ֖וּ",
+          "row": "TAHOT Gen-Deu:137208"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.1.9",
+          "wordIndex": 6,
+          "form": "תַּעֲרֹ֖ץ",
+          "row": "TAHOT Jos-Est:337"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45504"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47145"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45544"
+        },
+        {
+          "kind": "verse",
+          "ref": "Josh.1.5",
+          "words": ["Moses"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "deut-o08",
+      "from": "Deut.29.23",
+      "to": "Hos.11.8",
+      "type": "echo",
+      "strength": 2,
+      "label": "Admah and Zeboiim",
+      "explanation": "Deuteronomy 29:23 and Hosea 11:8 both tell of Admah and Zeboiim, cities overthrown with Sodom and Gomorrah. Deuteronomy holds up their overthrow as what a faithless land will become; Hosea has God ask how he can make Ephraim like them, and his compassion is stirred. The two names are rare (below); which passage is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.29.23",
+          "wordIndex": 18,
+          "form": "אַדְמָ֣ה",
+          "row": "TAHOT Gen-Deu:136343"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.11.8",
+          "wordIndex": 8,
+          "form": "כְ/אַדְמָ֔ה",
+          "row": "TAHOT Isa-Mal:115690"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.29.23",
+          "wordIndex": 19,
+          "form": "וּ/צְבוֹיִ֔ם",
+          "row": "TAHOT Gen-Deu:136344"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.11.8",
+          "wordIndex": 10,
+          "form": "כִּ/צְבֹאיִ֑ם",
+          "row": "TAHOT Isa-Mal:115692"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L215571"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L45117"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "deut-o09",
+      "from": "Deut.12.5",
+      "to": "1Kgs.8.29",
+      "type": "echo",
+      "strength": 2,
+      "label": "The place he chooses for his name",
+      "explanation": "Deuteronomy 12:5 and 1 Kings 8:29 both tell of the place the LORD chooses for his name. Deuteronomy commands Israel to seek the place God will choose out of all their tribes to put his name there. At the temple's dedication Solomon prays toward the house of which God said that his name would be there.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L41172"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "josh-o01",
+      "from": "Josh.6.26",
+      "to": "1Kgs.16.34",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "Jericho rebuilt at a cost",
+      "explanation": "1 Kings 16:34 shows Joshua 6:26 fulfilled: Hiel of Bethel rebuilt Jericho at the cost of his firstborn and his youngest son, according to the LORD's word spoken by Joshua. Joshua laid a curse on whoever rebuilt the city, that he would lose his firstborn when he laid its foundation and his youngest son when he hung its gates. Kings records it in the same terms, naming the sons Abiram and Segub, with the same words for foundation and youngest (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.6.26",
+          "wordIndex": 19,
+          "form": "יְיַסְּדֶ֔/נָּה",
+          "row": "TAHOT Jos-Est:3709"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.16.34",
+          "wordIndex": 10,
+          "form": "יִסְּדָ֗/הּ",
+          "row": "TAHOT Jos-Est:94031"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.6.26",
+          "wordIndex": 20,
+          "form": "וּ/בִ/צְעִיר֖/וֹ",
+          "row": "TAHOT Jos-Est:3710"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.16.34",
+          "wordIndex": 12,
+          "form": "צְעִיר/וֹ֙",
+          "row": "TAHOT Jos-Est:94033"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L72341"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48125"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.16.34",
+          "words": ["Joshua", "Jericho"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "josh-o02",
+      "from": "Josh.7.24-Josh.7.26",
+      "to": "Hos.2.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The valley of Achor, a door of hope",
+      "explanation": "Hosea 2:15 names the valley of Joshua 7:24–26: God will make the valley of Achor a door of hope. Joshua tells how Achan, who took the devoted things, was stoned in that valley, named for the trouble he brought on Israel. Hosea promises that the place of that trouble will become an entrance to hope, as in the day Israel came up out of Egypt (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.7.24",
+          "wordIndex": 36,
+          "form": "עָכֽוֹר\\׃",
+          "row": "TAHOT Jos-Est:4479"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.2.15",
+          "wordIndex": 8,
+          "form": "עָכ֖וֹר",
+          "row": "TAHOT Isa-Mal:112956"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L213407"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48418"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48393"
+        },
+        {
+          "kind": "verse",
+          "ref": "Hos.2.15",
+          "words": ["Achor", "hope"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "josh-o03",
+      "from": "Josh.7.1",
+      "to": "1Chr.2.7",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Achar, the troubler of Israel",
+      "explanation": "1 Chronicles 2:7 names Achan of Joshua 7:1: in Judah's genealogy the son of Carmi is Achar, the troubler of Israel, who trespassed in the devoted thing. Joshua names him Achan son of Carmi, of the tribe of Judah, who took some of the devoted things. Chronicles spells his name to match the trouble he caused and keeps only that deed, with the same words for Carmi and the trespass (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.7.1",
+          "wordIndex": 9,
+          "form": "כַּרְמִי֩",
+          "row": "TAHOT Jos-Est:3751"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.2.7",
+          "wordIndex": 2,
+          "form": "כַּרְמִ֑י",
+          "row": "TAHOT Jos-Est:121614"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.7.1",
+          "wordIndex": 1,
+          "form": "וַ/יִּמְעֲל֧וּ",
+          "row": "TAHOT Jos-Est:3743"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.2.7",
+          "wordIndex": 7,
+          "form": "מָעַ֖ל",
+          "row": "TAHOT Jos-Est:121619"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L81024"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Chr.2.7",
+          "words": ["Carmi", "troubler"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "josh-o04",
+      "from": "Josh.10.12-Josh.10.14",
+      "to": "Hab.3.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "Sun and moon stood still",
+      "explanation": "Joshua 10:12–14 and Habakkuk 3:11 both tell of the sun and moon standing still in the sky at the LORD's battle. In Joshua it is the answer to Joshua's word at Gibeon, so that the day lasted until Israel had defeated its enemies. Habakkuk's prayer sees sun and moon halted at the light of God's arrows, with the same words for sun and moon (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.10.12",
+          "wordIndex": 16,
+          "form": "שֶׁ֚מֶשׁ",
+          "row": "TAHOT Jos-Est:6655"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hab.3.11",
+          "wordIndex": 1,
+          "form": "שֶׁ֥מֶשׁ",
+          "row": "TAHOT Isa-Mal:128043"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.10.12",
+          "wordIndex": 19,
+          "form": "וְ/יָרֵ֖חַ",
+          "row": "TAHOT Jos-Est:6658"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hab.3.11",
+          "wordIndex": 2,
+          "form": "יָרֵ֖חַ",
+          "row": "TAHOT Isa-Mal:128044"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48983"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48995"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "josh-o05",
+      "from": "Josh.9.15-Josh.9.20",
+      "to": "2Sam.21.1-2Sam.21.2",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The oath to the Gibeonites",
+      "explanation": "2 Samuel 21:1–2 recalls Joshua 9:15–20: a three-year famine comes because Saul put the Gibeonites to death, though Israel had sworn to them. Joshua tells how the princes of Israel, deceived, swore an oath to let the Gibeonites live and kept it once the truth came out. Samuel explains that the Gibeonites were not Israelites but a remnant of the Amorites, protected by that oath.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48792"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L48819"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Sam.21.2",
+          "words": ["Gibeonites"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "josh-o06",
+      "from": "Josh.21.43-Josh.21.45",
+      "to": "1Kgs.8.56",
+      "type": "echo",
+      "strength": 2,
+      "label": "Not one good word failed",
+      "explanation": "Joshua 21:43–45 and 1 Kings 8:56 both tell that not one of the LORD's good promises to Israel failed, once at the end of the conquest and once at the temple's dedication. Joshua says the LORD gave the land and rest all around, and every word came to pass. Solomon blesses the LORD for giving rest to his people, for not one word of his promise by Moses has failed, with the same verb for failing (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jos.21.45",
+          "wordIndex": 2,
+          "form": "נָפַ֣ל",
+          "row": "TAHOT Jos-Est:14739"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.8.56",
+          "wordIndex": 12,
+          "form": "נָפַ֞ל",
+          "row": "TAHOT Jos-Est:86296"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L50829"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L69954"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "josh-o07",
+      "from": "Josh.3.14-Josh.3.17",
+      "to": "Ps.114.3-Ps.114.5",
+      "type": "allusion",
+      "strength": 2,
+      "label": "The Jordan driven back",
+      "explanation": "Psalms 114:3–5 recalls Joshua 3:14–17: the sea saw and fled, the Jordan was driven back. Joshua tells of the waters of the Jordan standing up in a heap when the priests' feet touched them. The psalm sets the Jordan beside the sea of the exodus and asks them both what made them turn back.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L47569"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.114.3",
+          "words": ["Jordan"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o01",
+      "from": "Judg.7.19-Judg.7.25",
+      "to": "Isa.10.26",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As at the rock of Oreb",
+      "explanation": "Isaiah 10:26 recalls Judges 7:19–25: the LORD will strike Assyria as in the slaughter of Midian at the rock of Oreb. Judges tells of Gideon's night attack with trumpets and torches, the rout of Midian and the death of its prince Oreb at the rock that bears his name. Isaiah makes it a pattern for God's judgement on Assyria, beside the rod lifted over the sea (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.7.25",
+          "wordIndex": 6,
+          "form": "עֹרֵ֣ב",
+          "row": "TAHOT Jos-Est:22966"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.10.26",
+          "wordIndex": 9,
+          "form": "עוֹרֵ֑ב",
+          "row": "TAHOT Isa-Mal:4988"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.7.23",
+          "wordIndex": 12,
+          "form": "מִדְיָֽן\\׃",
+          "row": "TAHOT Jos-Est:22895"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.10.26",
+          "wordIndex": 7,
+          "form": "מִדְיָ֖ן",
+          "row": "TAHOT Isa-Mal:4986"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53277"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L157280"
+        },
+        {
+          "kind": "verse",
+          "ref": "Isa.10.26",
+          "words": ["Midian", "Oreb"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o02",
+      "from": "Judg.7.19-Judg.7.25",
+      "to": "Ps.83.9-Ps.83.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Like Oreb and Zeeb",
+      "explanation": "Psalms 83:9–11 recalls Judges 7:19–25: the psalm asks God to make Israel's enemies like Oreb and Zeeb, princes of Midian. Judges tells of Midian's defeat and of the princes Oreb and Zeeb killed at the rock and the winepress named for them. The psalm prays for the same end to a new alliance gathered against Israel (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.7.25",
+          "wordIndex": 8,
+          "form": "זְאֵ֗ב",
+          "row": "TAHOT Jos-Est:22968"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.83.11",
+          "wordIndex": 4,
+          "form": "וְ/כִ/זְאֵ֑ב",
+          "row": "TAHOT Job-Sng:37977"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.7.25",
+          "wordIndex": 6,
+          "form": "עֹרֵ֣ב",
+          "row": "TAHOT Jos-Est:22966"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.83.11",
+          "wordIndex": 3,
+          "form": "כְּ/עֹרֵ֣ב",
+          "row": "TAHOT Job-Sng:37976"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L126314"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53262"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53276"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.83.11",
+          "words": ["Oreb", "Zeeb"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o03",
+      "from": "Judg.4.15-Judg.4.21",
+      "to": "Ps.83.9-Ps.83.10",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As to Sisera and Jabin",
+      "explanation": "Psalms 83:9–10 recalls Judges 4:15–21: do to them as to Sisera and Jabin at the river Kishon. Judges tells how the LORD threw Sisera's chariots into confusion before Barak and how Sisera, fleeing on foot, died in Jael's tent. The psalm sets that victory beside Gideon's over Midian (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.4.15",
+          "wordIndex": 4,
+          "form": "סִֽיסְרָ֨א",
+          "row": "TAHOT Jos-Est:20101"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.83.9",
+          "wordIndex": 4,
+          "form": "כְּֽ/סִֽיסְרָ֥א",
+          "row": "TAHOT Job-Sng:37950"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.4.17",
+          "wordIndex": 13,
+          "form": "יָבִ֣ין",
+          "row": "TAHOT Jos-Est:20171"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.83.9",
+          "wordIndex": 5,
+          "form": "כְ֝/יָבִ֗ין",
+          "row": "TAHOT Job-Sng:37951"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52469"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L126301"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52475"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.83.9",
+          "words": ["Sisera", "Jabin"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o04",
+      "from": "Judg.2.11-Judg.2.19",
+      "to": "Neh.9.26-Neh.9.28",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The cycle of the judges, confessed",
+      "explanation": "Nehemiah 9:26–28 retells Judges 2:11–19: Israel rebelled, God gave them into their enemies' hands, they cried out and he sent saviours, and again they did evil. Judges sets out the cycle at the start of the book, from serving the Baals to the judges raised up and the people turning back once each judge died. The prayer of Nehemiah 9 tells the same cycle in the same order as part of its confession, with the same word for their distress (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.2.15",
+          "wordIndex": 16,
+          "form": "וַ/יֵּ֥צֶר",
+          "row": "TAHOT Jos-Est:18648"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.27",
+          "wordIndex": 4,
+          "form": "וַ/יָּצֵ֖רוּ",
+          "row": "TAHOT Jos-Est:175313"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L97076"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L52017"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L97100"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o05",
+      "from": "Judg.9.8-Judg.9.15",
+      "to": "2Kgs.14.9",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Fables of trees and thistles",
+      "explanation": "Judges 9:8–15 and 2 Kings 14:9 both tell of a fable in which plants speak, told to put an overreaching ruler in his place. Jotham tells of the trees seeking a king and the bramble that accepts; Jehoash king of Israel answers Amaziah's challenge with a thistle in Lebanon that asks a cedar for his daughter. They are the two plant fables of the historical books, with the cedars of Lebanon in both (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.9.15",
+          "wordIndex": 23,
+          "form": "אַרְזֵ֥י",
+          "row": "TAHOT Jos-Est:24302"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.14.9",
+          "wordIndex": 15,
+          "form": "הָ/אֶ֜רֶז",
+          "row": "TAHOT Jos-Est:110656"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L77614"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53589"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L53556"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "judg-o06",
+      "from": "Judg.19.22-Judg.19.30",
+      "to": "Hos.9.9",
+      "type": "allusion",
+      "strength": 3,
+      "label": "As in the days of Gibeah",
+      "explanation": "Hosea 9:9 recalls Judges 19:22–30: Israel has corrupted itself as in the days of Gibeah. Judges tells of the crime at Gibeah, the abuse and death of the Levite's concubine, which the Israelites said had no equal since the exodus. Hosea makes the days of Gibeah the measure of Israel's corruption in his own time.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L55241"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L55264"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L55279"
+        },
+        {
+          "kind": "verse",
+          "ref": "Hos.9.9",
+          "words": ["Gibeah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "judg-o07",
+      "from": "Judg.13.5",
+      "to": "1Sam.1.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "No razor on his head",
+      "explanation": "Judges 13:5 and 1 Samuel 1:11 both tell of a child given to God from birth, on whose head no razor shall come. The angel tells Samson's mother that her son will be a Nazirite from the womb; Hannah vows that if the LORD gives her a son, he will be the LORD's all his days, with the same promise about the razor. The word for the razor occurs only three times in the Old Testament (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jdg.13.5",
+          "wordIndex": 6,
+          "form": "וּ/מוֹרָה֙",
+          "row": "TAHOT Jos-Est:27477"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.1.11",
+          "wordIndex": 25,
+          "form": "וּ/מוֹרָ֖ה",
+          "row": "TAHOT Jos-Est:36626"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56376"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L54231"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "ruth-o01",
+      "from": "Ruth.4.18-Ruth.4.22",
+      "to": "1Chr.2.4-1Chr.2.15",
+      "type": "parallel",
+      "strength": 2,
+      "label": "From Perez to David",
+      "explanation": "Ruth 4:18–22 and 1 Chronicles 2:4–15 both tell of the line from Perez to David: Hezron, Ram, Amminadab, Nahshon, Salmon, Boaz, Obed and Jesse. Ruth closes with these ten generations as the book's last word; Chronicles sets them inside the larger family of Judah. The names match generation by generation (below); which list is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.19",
+          "wordIndex": 4,
+          "form": "רָ֔ם",
+          "row": "TAHOT Jos-Est:36288"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.2.9",
+          "wordIndex": 9,
+          "form": "רָ֖ם",
+          "row": "TAHOT Jos-Est:121650"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.20",
+          "wordIndex": 4,
+          "form": "נַחְשׁ֔וֹן",
+          "row": "TAHOT Jos-Est:36303"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.2.10",
+          "wordIndex": 8,
+          "form": "נַחְשׁ֔וֹן",
+          "row": "TAHOT Jos-Est:121671"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56255"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L81039"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L81012"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "ruth-o02",
+      "from": "Gen.29.31-Gen.30.24",
+      "to": "Ruth.4.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Like Rachel and Leah",
+      "explanation": "Ruth 4:11 names the mothers of Genesis 29:31–30:24: the elders bless Ruth to be like Rachel and Leah, who both built the house of Israel. Genesis tells of the sons born to Leah and Rachel and their maids, the rivalry between the sisters, and the LORD who opened their wombs. Ruth's blessing joins the two rivals as the builders of one house (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.29.31",
+          "wordIndex": 5,
+          "form": "לֵאָ֔ה",
+          "row": "TAHOT Gen-Deu:19412"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.11",
+          "wordIndex": 16,
+          "form": "וּ/כְ/לֵאָה֙",
+          "row": "TAHOT Jos-Est:36098"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.29.31",
+          "wordIndex": 9,
+          "form": "וְ/רָחֵ֖ל",
+          "row": "TAHOT Gen-Deu:19416"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.11",
+          "wordIndex": 15,
+          "form": "כְּ/רָחֵ֤ל\\׀",
+          "row": "TAHOT Jos-Est:36097"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56209"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L7812"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ruth.4.11",
+          "words": ["Rachel", "Leah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "ruth-o03",
+      "from": "Deut.25.7-Deut.25.10",
+      "to": "Ruth.4.7-Ruth.4.8",
+      "type": "echo",
+      "strength": 2,
+      "label": "The sandal at the gate",
+      "explanation": "Deuteronomy 25:7–10 and Ruth 4:7–8 both tell of a sandal taken off to settle a kinsman's duty before the elders at the town gate. Deuteronomy sets the shame of the sandal on a brother who refuses to raise up a name for his dead brother. In Ruth the nearer kinsman gives up his right to redeem by drawing off his own sandal, a custom of former times, with the same word for sandal (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.25.9",
+          "wordIndex": 7,
+          "form": "נַעֲל/וֹ֙",
+          "row": "TAHOT Gen-Deu:132672"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Rut.4.7",
+          "wordIndex": 13,
+          "form": "נַעֲל֖/וֹ",
+          "row": "TAHOT Jos-Est:35972"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L43697"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56179"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "sam1-o01",
+      "from": "1Sam.2.1-1Sam.2.10",
+      "to": "Ps.113.7-Ps.113.9",
+      "type": "echo",
+      "strength": 2,
+      "label": "He raises the poor from the dust",
+      "explanation": "1 Samuel 2:1–10 and Psalms 113:7–9 both tell of the LORD who lifts the poor from the dust and the needy from the ash heap to sit with princes. Hannah sings it when Samuel is born, after years of barrenness; the psalm adds that God gives the barren woman a home as a joyful mother of children. The word for the ash heap occurs only three times in the Old Testament, twice here (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.2.8",
+          "wordIndex": 4,
+          "form": "מֵֽ/אַשְׁפֹּת֙",
+          "row": "TAHOT Jos-Est:37198"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.113.7",
+          "wordIndex": 4,
+          "form": "מֵֽ֝/אַשְׁפֹּ֗ת",
+          "row": "TAHOT Job-Sng:46576"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.2.5",
+          "wordIndex": 7,
+          "form": "עֲקָרָה֙",
+          "row": "TAHOT Jos-Est:37152"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.113.9",
+          "wordIndex": 2,
+          "form": "עֲקֶ֬רֶת",
+          "row": "TAHOT Job-Sng:46600"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L56659"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133327"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L133343"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "sam1-o02",
+      "from": "1Sam.15.22",
+      "to": "Hos.6.6",
+      "type": "echo",
+      "strength": 2,
+      "label": "Not sacrifice",
+      "explanation": "1 Samuel 15:22 and Hosea 6:6 both tell that God wants more than sacrifice: obedience in Samuel's rebuke of Saul, mercy and the knowledge of God in Hosea. Samuel asks whether the LORD delights in burnt offerings as much as in obeying his voice. Hosea has God say he desires mercy rather than sacrifice and the knowledge of himself more than burnt offerings, with the same two words (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.15.22",
+          "wordIndex": 6,
+          "form": "וּ/זְבָחִ֔ים",
+          "row": "TAHOT Jos-Est:46568"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.6.6",
+          "wordIndex": 5,
+          "form": "זָ֑בַח",
+          "row": "TAHOT Isa-Mal:114101"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.15.22",
+          "wordIndex": 5,
+          "form": "בְּ/עֹל֣וֹת",
+          "row": "TAHOT Jos-Est:46567"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Hos.6.6",
+          "wordIndex": 8,
+          "form": "מֵ/עֹלֽוֹת\\׃",
+          "row": "TAHOT Isa-Mal:114104"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L59181"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L214333"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "sam1-o03",
+      "from": "1Sam.16.11-1Sam.16.13",
+      "to": "Ps.78.70-Ps.78.72",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Taken from the sheepfolds",
+      "explanation": "Psalms 78:70–72 recalls 1 Samuel 16:11–13: God chose David his servant and took him from the sheepfolds to shepherd his people. Samuel tells how the youngest son, out keeping the sheep, was sent for and anointed. The psalm ends its long history at that point, with the shepherd boy made Israel's shepherd.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L59418"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L125576"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.78.70",
+          "words": ["David", "sheepfolds"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "sam1-o04",
+      "from": "1Sam.31.1-1Sam.31.13",
+      "to": "1Chr.10.1-1Chr.10.14",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Saul's death on Gilboa, told twice",
+      "explanation": "1 Chronicles 10:1–14 retells 1 Samuel 31:1–13: the Philistines defeat Israel on Mount Gilboa, Saul's sons fall, and Saul dies by his own sword. Chronicles follows Samuel almost word for word, down to the men of Jabesh who recover the bodies, with the same names and places (below). It then adds its own judgement: Saul died for his unfaithfulness and for consulting a medium instead of the LORD.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.31.1",
+          "wordIndex": 12,
+          "form": "הַ/גִּלְבֹּֽעַ\\׃",
+          "row": "TAHOT Jos-Est:58584"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.10.1",
+          "wordIndex": 12,
+          "form": "גִּלְבֹּֽעַ\\׃",
+          "row": "TAHOT Jos-Est:128088"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.31.2",
+          "wordIndex": 14,
+          "form": "מַלְכִּי\\־",
+          "row": "TAHOT Jos-Est:58609"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.10.2",
+          "wordIndex": 14,
+          "form": "מַלְכִּי\\־",
+          "row": "TAHOT Jos-Est:128113"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L62138"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L82287"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L82314"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sam1-o05",
+      "from": "1Sam.4.10-1Sam.4.11",
+      "to": "Jer.7.12-Jer.7.14",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Go to Shiloh and see",
+      "explanation": "Jeremiah 7:12–14 recalls 1 Samuel 4:10–11: go to Shiloh, where God first set his name, and see what he did to it. Samuel tells of the battle in which the ark was taken and Eli's sons were killed. Jeremiah, standing in the temple, warns that this house can go the way of Shiloh.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L177117"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L177160"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.7.12",
+          "words": ["Shiloh"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "sam1-o06",
+      "from": "1Sam.4.10-1Sam.4.22",
+      "to": "Ps.78.60-Ps.78.64",
+      "type": "parallel",
+      "strength": 2,
+      "label": "The glory given into captivity",
+      "explanation": "Psalms 78:60–64 retells 1 Samuel 4:10–22: God abandoned the tent of Shiloh and gave his strength into captivity, his glory into the enemy's hand. Samuel tells of the ark taken, Eli's sons killed and the child named for the glory departed from Israel. The psalm tells it as God's judgement, priests falling by the sword and widows unable to weep (the place below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Sa.4.12",
+          "wordIndex": 6,
+          "form": "שִׁלֹ֖ה",
+          "row": "TAHOT Jos-Est:38863"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.78.60",
+          "wordIndex": 3,
+          "form": "שִׁל֑וֹ",
+          "row": "TAHOT Job-Sng:36732"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L57264"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L57262"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L57222"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "sam2-o01",
+      "from": "2Sam.7.12-2Sam.7.16",
+      "to": "1Chr.17.11-1Chr.17.14",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Nathan's promise, told twice",
+      "explanation": "1 Chronicles 17:11–14 retells 2 Samuel 7:12–16: Nathan's word to David that God will raise up his offspring, establish his throne forever and be a father to him. Chronicles follows Samuel closely but leaves out the warning that the son will be punished with the rod of men if he does wrong. It also speaks of God's own house and kingdom where Samuel speaks of David's.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63475"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63502"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63441"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sam2-o02",
+      "from": "2Sam.7.12-2Sam.7.16",
+      "to": "Ps.89.3-Ps.89.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Sworn to David",
+      "explanation": "Psalms 89:3–4 recalls 2 Samuel 7:12–16: God has sworn to David his servant to establish his offspring forever and build up his throne. Samuel tells of Nathan's promise of a house, a kingdom and a throne forever. The psalm calls it a covenant sworn to David and later holds God to it when the king is defeated.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63452"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L127357"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ps.89.3",
+          "words": ["David"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "sam2-o03",
+      "from": "2Sam.22.1-2Sam.22.51",
+      "to": "Ps.18.1-Ps.18.50",
+      "type": "parallel",
+      "strength": 3,
+      "label": "David's song, twice",
+      "explanation": "2 Samuel 22:1–51 and Psalms 18:1–50 both tell David's song of deliverance from his enemies and from Saul: the same song twice. Line by line they are almost the same, from the LORD as rock, fortress and deliverer to the cords of death and God riding on a cherub, and they share even rare words (below). They differ in small wordings, and the psalm opens with a line of love for the LORD.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.22.37",
+          "wordIndex": 6,
+          "form": "קַרְסֻלָּֽ/י\\׃",
+          "row": "TAHOT Jos-Est:75939"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.18.36",
+          "wordIndex": 6,
+          "form": "קַרְסֻלָּֽ/י\\׃",
+          "row": "TAHOT Job-Sng:19929"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.22.17",
+          "wordIndex": 4,
+          "form": "יַֽמְשֵׁ֖/נִי",
+          "row": "TAHOT Jos-Est:75652"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.18.16",
+          "wordIndex": 4,
+          "form": "יַֽ֝מְשֵׁ֗/נִי",
+          "row": "TAHOT Job-Sng:19639"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111828"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111806"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L111878"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "sam2-o04",
+      "from": "2Sam.11.2-2Sam.11.27",
+      "to": "1Kgs.15.5",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Except in the matter of Uriah",
+      "explanation": "1 Kings 15:5 recalls 2 Samuel 11:2–27: David did right in the LORD's eyes all his days, except in the matter of Uriah the Hittite. Samuel tells of David taking Bathsheba, Uriah's wife, and sending Uriah to die in battle. Kings, measuring David's heirs against him, names that one exception (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.11.3",
+          "wordIndex": 13,
+          "form": "אוּרִיָּ֥ה",
+          "row": "TAHOT Jos-Est:65416"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.15.5",
+          "wordIndex": 18,
+          "form": "אוּרִיָּ֥ה",
+          "row": "TAHOT Jos-Est:92357"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L71925"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L71932"
+        },
+        {
+          "kind": "verse",
+          "ref": "1Kgs.15.5",
+          "words": ["Uriah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "sam2-o05",
+      "from": "2Sam.5.6-2Sam.5.10",
+      "to": "1Chr.11.4-1Chr.11.9",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The stronghold of Zion taken",
+      "explanation": "1 Chronicles 11:4–9 retells 2 Samuel 5:6–10: David takes the stronghold of Zion from the Jebusites, and it becomes the city of David. Chronicles follows Samuel closely, with the same rare words for the stronghold and the Millo (below). It adds that Joab went up first and became chief, and leaves out the saying about the blind and the lame.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.5.9",
+          "wordIndex": 12,
+          "form": "הַ/מִּלּ֖וֹא",
+          "row": "TAHOT Jos-Est:62183"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.11.8",
+          "wordIndex": 5,
+          "form": "הַ/מִּלּ֖וֹא",
+          "row": "TAHOT Jos-Est:128623"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.5.7",
+          "wordIndex": 4,
+          "form": "מְצֻדַ֣ת",
+          "row": "TAHOT Jos-Est:62116"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.11.5",
+          "wordIndex": 11,
+          "form": "מְצֻדַ֣ת",
+          "row": "TAHOT Jos-Est:128560"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L82475"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L62970"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L82463"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sam2-o06",
+      "from": "2Sam.24.1-2Sam.24.25",
+      "to": "1Chr.21.1-1Chr.21.30",
+      "type": "parallel",
+      "strength": 3,
+      "label": "David's census, told twice",
+      "explanation": "1 Chronicles 21:1–30 retells 2 Samuel 24:1–25: David's census, the plague and the threshing floor bought for an altar. The two accounts differ at the start: in Samuel the LORD's anger moves David to count Israel, and in Chronicles Satan moves him. Chronicles names the owner of the threshing floor Ornan and gives a higher price, and the seer Gad is named in both (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.24.11",
+          "wordIndex": 8,
+          "form": "גָּ֣ד",
+          "row": "TAHOT Jos-Est:77270"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.21.9",
+          "wordIndex": 4,
+          "form": "גָּ֔ד",
+          "row": "TAHOT Jos-Est:134522"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L67177"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L84290"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L67407"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sam2-o07",
+      "from": "2Sam.6.12-2Sam.6.19",
+      "to": "1Chr.15.25-1Chr.16.3",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The ark brought up with joy",
+      "explanation": "1 Chronicles 15:25–16:3 retells 2 Samuel 6:12–19: David brings the ark up from the house of Obed-Edom with joy and dancing, while Michal looks down from a window. Chronicles follows Samuel's account, down to a rare word for the portion each person received (below). It adds the Levites who carried the ark and the singers, in keeping with its interest in the temple's service.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.6.16",
+          "wordIndex": 7,
+          "form": "וּ/מִיכַ֨ל",
+          "row": "TAHOT Jos-Est:62947"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.15.29",
+          "wordIndex": 9,
+          "form": "וּ/מִיכַ֨ל",
+          "row": "TAHOT Jos-Est:131611"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Sa.6.19",
+          "wordIndex": 14,
+          "form": "וְ/אֶשְׁפָּ֣ר",
+          "row": "TAHOT Jos-Est:63044"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ch.16.3",
+          "wordIndex": 11,
+          "form": "וְ/אֶשְׁפָּ֖ר",
+          "row": "TAHOT Jos-Est:131692"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63211"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L63171"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L83255"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    }
+  ]
 }
