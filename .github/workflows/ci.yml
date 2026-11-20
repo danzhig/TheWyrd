@@ -36,7 +36,8 @@ jobs:
     # package download can stall it (Ubuntu's mirror held the job for an hour on 2026-11-18). The
     # image's version must match @playwright/test in package.json.
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 40 minutes since TX8 added every Threads suite to the three engines.
+    timeout-minutes: 40
     container:
       image: mcr.microsoft.com/playwright:v1.63.0-noble
       options: --user 1001
