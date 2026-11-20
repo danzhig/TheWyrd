@@ -4441,6 +4441,1622 @@
           }
         ]
       }
+    },
+    {
+      "id": "kgs1-o01",
+      "from": "1Kgs.8.1-1Kgs.8.21",
+      "to": "2Chr.5.2-2Chr.6.11",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The temple dedicated, told twice",
+      "explanation": "2 Chronicles 5:2–6:11 retells 1 Kings 8:1–21: the ark brought into the temple, the cloud that filled the house, and Solomon's words at its dedication. Chronicles follows Kings closely, keeping its rare words for the inner sanctuary and for the thick darkness where the LORD dwells (below). It adds the Levite singers, whose praise comes just before the cloud fills the house.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.8.6",
+          "wordIndex": 10,
+          "form": "דְּבִ֥יר",
+          "row": "TAHOT Jos-Est:84856"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.5.7",
+          "wordIndex": 10,
+          "form": "דְּבִ֥יר",
+          "row": "TAHOT Jos-Est:142331"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.8.12",
+          "wordIndex": 7,
+          "form": "בָּ/עֲרָפֶֽל\\׃",
+          "row": "TAHOT Jos-Est:85005"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.6.1",
+          "wordIndex": 7,
+          "form": "בָּ/עֲרָפֶֽל\\׃",
+          "row": "TAHOT Jos-Est:142564"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86514"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L69353"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86416"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs1-o02",
+      "from": "1Kgs.3.4-1Kgs.3.15",
+      "to": "2Chr.1.3-2Chr.1.13",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Solomon asks for wisdom",
+      "explanation": "2 Chronicles 1:3–13 retells 1 Kings 3:4–15: at Gibeon God tells Solomon to ask for what he wants, and Solomon asks for wisdom to govern. Both give God's answer that since he did not ask for riches, honour or a long life, he will have wisdom and the rest besides, with the same Hebrew for Gibeon and the riches (below). Chronicles explains why Gibeon, where the tent of meeting stood, and does not call the meeting a dream.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.3.4",
+          "wordIndex": 3,
+          "form": "גִּבְעֹ֙נָ/ה֙",
+          "row": "TAHOT Jos-Est:80552"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.1.3",
+          "wordIndex": 8,
+          "form": "בְּ/גִבְע֑וֹן",
+          "row": "TAHOT Jos-Est:140246"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.3.11",
+          "wordIndex": 18,
+          "form": "עֹ֔שֶׁר",
+          "row": "TAHOT Jos-Est:80772"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.1.11",
+          "wordIndex": 12,
+          "form": "עֹ֣שֶׁר",
+          "row": "TAHOT Jos-Est:140468"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L68294"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L86073"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L68404"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs1-o03",
+      "from": "1Kgs.10.1-1Kgs.10.13",
+      "to": "2Chr.9.1-2Chr.9.12",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The queen of Sheba, told twice",
+      "explanation": "2 Chronicles 9:1–12 retells 1 Kings 10:1–13: the queen of Sheba tests Solomon with hard questions, sees his wisdom and his house, and blesses his God. Chronicles keeps the account almost word for word, down to rare words for the attendants' standing and their clothing (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.10.5",
+          "wordIndex": 5,
+          "form": "וּ/מַעֲמַ֨ד",
+          "row": "TAHOT Jos-Est:87533"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.9.4",
+          "wordIndex": 5,
+          "form": "וּ/מַעֲמַ֨ד",
+          "row": "TAHOT Jos-Est:145052"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.10.5",
+          "wordIndex": 7,
+          "form": "וּ/מַלְבֻּֽשֵׁי/הֶם֙",
+          "row": "TAHOT Jos-Est:87535"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.9.4",
+          "wordIndex": 7,
+          "form": "וּ/מַלְבּֽוּשֵׁי/הֶ֗ם",
+          "row": "TAHOT Jos-Est:145054"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70336"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L87387"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70397"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs1-o04",
+      "from": "1Kgs.12.1-1Kgs.12.20",
+      "to": "2Chr.10.1-2Chr.10.19",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The kingdom divided, told twice",
+      "explanation": "2 Chronicles 10:1–19 retells 1 Kings 12:1–20: Rehoboam refuses to lighten the yoke Solomon laid on Israel, and the northern tribes break away. Both keep the young men's advice, scorpions in place of whips, and both say the turn came from God to fulfil Ahijah's word to Jeroboam (the rare words below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.12.11",
+          "wordIndex": 18,
+          "form": "בָּ/עַקְרַבִּֽים\\׃",
+          "row": "TAHOT Jos-Est:89687"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.10.11",
+          "wordIndex": 16,
+          "form": "בָּֽ/עֲקְרַבִּֽים\\׃\\ \\ס",
+          "row": "TAHOT Jos-Est:146073"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.12.15",
+          "wordIndex": 20,
+          "form": "הַ/שִּׁילֹנִ֔י",
+          "row": "TAHOT Jos-Est:89807"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.10.15",
+          "wordIndex": 20,
+          "form": "הַ/שִּֽׁלוֹנִ֔י",
+          "row": "TAHOT Jos-Est:146179"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L71096"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70988"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70977"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs1-o05",
+      "from": "1Kgs.13.1-1Kgs.13.2",
+      "to": "2Kgs.23.15-2Kgs.23.18",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "Josiah, named before his birth",
+      "explanation": "2 Kings 23:15–18 shows 1 Kings 13:1–2 fulfilled: Josiah burns bones on the altar at Bethel, as the man of God from Judah had cried out against it. Kings tells of a man of God who, in Jeroboam's day, named a future king of David's house, Josiah, who would burn human bones on that altar. About three centuries later Josiah does it and spares only the tomb of the man of God who foretold it (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.13.2",
+          "wordIndex": 17,
+          "form": "יֹאשִׁיָּ֣הוּ",
+          "row": "TAHOT Jos-Est:90405"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.23.16",
+          "wordIndex": 2,
+          "form": "יֹאשִׁיָּ֗הוּ",
+          "row": "TAHOT Jos-Est:118570"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.13.1",
+          "wordIndex": 9,
+          "form": "בֵּֽית\\־",
+          "row": "TAHOT Jos-Est:90367"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.23.15",
+          "wordIndex": 5,
+          "form": "בְּ/בֵֽית\\־",
+          "row": "TAHOT Jos-Est:118528"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80276"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L71287"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80281"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.23.16",
+          "words": ["bones", "altar"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs1-o06",
+      "from": "Exod.33.21-Exod.33.23",
+      "to": "1Kgs.19.9-1Kgs.19.13",
+      "type": "parallel",
+      "strength": 2,
+      "label": "In the rock, as the LORD passes by",
+      "explanation": "Exodus 33:21–23 and 1 Kings 19:9–13 both tell of the LORD passing by a prophet sheltered in the rock at God's mountain. Moses is set in a cleft of the rock and covered by God's hand while his glory passes. Elijah, in a cave at Horeb, hears the LORD pass by not in the wind, the earthquake or the fire but in a still small voice, and covers his face with his mantle.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L73113"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L73154"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L73188"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "kgs1-o07",
+      "from": "1Kgs.21.17-1Kgs.21.24",
+      "to": "2Kgs.9.25-2Kgs.9.26",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "The blood of Naboth repaid",
+      "explanation": "2 Kings 9:25–26 shows 1 Kings 21:17–24 fulfilled: Jehu has Joram's body thrown into Naboth's field, to repay the blood of Naboth as the LORD had said. Kings tells how Elijah, after Naboth was killed for his vineyard, met Ahab there and declared the LORD's sentence on his house. Jehu recalls hearing that word himself, riding behind Ahab, and carries it out on Ahab's son (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.21.18",
+          "wordIndex": 11,
+          "form": "נָב֔וֹת",
+          "row": "TAHOT Jos-Est:98310"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.9.25",
+          "wordIndex": 9,
+          "form": "נָב֣וֹת",
+          "row": "TAHOT Jos-Est:107111"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L76692"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L76690"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L76699"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.9.26",
+          "words": ["Naboth"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs1-o08",
+      "from": "1Kgs.21.23",
+      "to": "2Kgs.9.36-2Kgs.9.37",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "The dogs at Jezreel",
+      "explanation": "2 Kings 9:36–37 shows 1 Kings 21:23 fulfilled: the dogs eat Jezebel's flesh at Jezreel, as the LORD spoke by Elijah. Elijah's sentence on Ahab's house includes the queen who arranged Naboth's death. After Jehu has her thrown from a window, he recalls the word and says it has come to pass (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.21.23",
+          "wordIndex": 2,
+          "form": "לְ/אִיזֶ֔בֶל",
+          "row": "TAHOT Jos-Est:98448"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.9.36",
+          "wordIndex": 21,
+          "form": "אִיזָֽבֶל\\׃",
+          "row": "TAHOT Jos-Est:107416"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.21.23",
+          "wordIndex": 6,
+          "form": "הַ/כְּלָבִ֛ים",
+          "row": "TAHOT Jos-Est:98452"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.9.36",
+          "wordIndex": 18,
+          "form": "הַ/כְּלָבִ֖ים",
+          "row": "TAHOT Jos-Est:107413"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L76763"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.9.36",
+          "words": ["Elijah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs1-o09",
+      "from": "1Kgs.22.1-1Kgs.22.40",
+      "to": "2Chr.18.1-2Chr.18.34",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Micaiah against the four hundred",
+      "explanation": "2 Chronicles 18:1–34 retells 1 Kings 22:1–40: Micaiah, alone against four hundred prophets, foretells Ahab's death at Ramoth Gilead, and Ahab dies in disguise. Chronicles copies Kings closely, the vision of the LORD's host and the lying spirit included, with rare words found only in these chapters (below). It tells the story within Jehoshaphat's reign and adds that God helped Jehoshaphat when he cried out.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.22.8",
+          "wordIndex": 25,
+          "form": "יִמְלָ֑ה",
+          "row": "TAHOT Jos-Est:98809"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.18.7",
+          "wordIndex": 27,
+          "form": "יִמְלָ֑א",
+          "row": "TAHOT Jos-Est:149738"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.22.34",
+          "wordIndex": 10,
+          "form": "הַ/דְּבָקִ֖ים",
+          "row": "TAHOT Jos-Est:99520"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.18.33",
+          "wordIndex": 10,
+          "form": "הַ/דְּבָקִ֖ים",
+          "row": "TAHOT Jos-Est:150453"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L73956"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74245"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L74117"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs1-o10",
+      "from": "1Kgs.11.1-1Kgs.11.8",
+      "to": "Neh.13.26",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Even Solomon",
+      "explanation": "Nehemiah 13:26 recalls 1 Kings 11:1–8: Solomon, loved by his God, was led into sin by foreign women. Kings tells of Solomon's many foreign wives, from nations the LORD had forbidden, who turned his heart to other gods in his old age. Nehemiah uses the warning against men of his own day who had married women of Ashdod, Ammon and Moab (the word for foreign below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "1Ki.11.1",
+          "wordIndex": 5,
+          "form": "נָכְרִיּ֛וֹת",
+          "row": "TAHOT Jos-Est:88213"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.13.26",
+          "wordIndex": 27,
+          "form": "הַ/נָּכְרִיּֽוֹת\\׃",
+          "row": "TAHOT Jos-Est:178642"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L98100"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L70627"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.13.26",
+          "words": ["Solomon"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs2-o01",
+      "from": "2Kgs.18.13-2Kgs.19.37",
+      "to": "Isa.36.1-Isa.37.38",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Sennacherib at the gates, told twice",
+      "explanation": "2 Kings 18:13–19:37 and Isaiah 36:1–37:38 both tell of Sennacherib's siege, the Rabshakeh's speech at the wall, Hezekiah's prayer and Isaiah's answer, and the Assyrian army struck in the night. The two accounts are almost word for word the same and share names found only here (below). Kings also records that Hezekiah first paid tribute, which Isaiah's account leaves out; which account is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.19.9",
+          "wordIndex": 3,
+          "form": "תִּרְהָ֤קָה",
+          "row": "TAHOT Jos-Est:115357"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.37.9",
+          "wordIndex": 3,
+          "form": "תִּרְהָ֤קָה",
+          "row": "TAHOT Isa-Mal:16106"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.19.12",
+          "wordIndex": 16,
+          "form": "בִּ/תְלַאשָּֽׂר\\׃",
+          "row": "TAHOT Jos-Est:115457"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.37.12",
+          "wordIndex": 16,
+          "form": "בִּ/תְלַשָּֽׂר\\׃",
+          "row": "TAHOT Isa-Mal:16204"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164322"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164738"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164682"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "kgs2-o02",
+      "from": "2Kgs.20.1-2Kgs.20.11",
+      "to": "Isa.38.1-Isa.38.8",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Hezekiah's illness, told twice",
+      "explanation": "2 Kings 20:1–11 and Isaiah 38:1–8 both tell of Hezekiah's illness, his prayer with tears, fifteen more years, and the shadow turned back on the steps. Kings has Isaiah order a cake of figs and Hezekiah ask for the sign; Isaiah's book places those details at the end and adds the psalm Hezekiah wrote when he recovered. The words for the tears and for the shadow going backward are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.20.5",
+          "wordIndex": 18,
+          "form": "דִּמְעָתֶ֑/ךָ",
+          "row": "TAHOT Jos-Est:116230"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.38.5",
+          "wordIndex": 16,
+          "form": "דִּמְעָתֶ֑/ךָ",
+          "row": "TAHOT Isa-Mal:16963"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.20.10",
+          "wordIndex": 12,
+          "form": "אֲחֹרַנִּ֖ית",
+          "row": "TAHOT Jos-Est:116377"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.38.8",
+          "wordIndex": 11,
+          "form": "אֲחֹרַנִּ֖ית",
+          "row": "TAHOT Isa-Mal:17038"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L79463"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L79399"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L164777"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "kgs2-o03",
+      "from": "2Kgs.22.1-2Kgs.23.30",
+      "to": "2Chr.34.1-2Chr.35.27",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Josiah's reform, told twice",
+      "explanation": "2 Chronicles 34:1–35:27 retells 2 Kings 22:1–23:30: Josiah's reform, the book of the law found in the temple, Huldah's word, the covenant, the Passover and his death at Megiddo. Chronicles follows Kings, with names found only in these chapters (below), but puts Josiah's purge of idols before the finding of the book. It gives his Passover at great length and says he died for not listening to God's word through Pharaoh Neco.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.22.14",
+          "wordIndex": 9,
+          "form": "חֻלְדָּ֨ה",
+          "row": "TAHOT Jos-Est:117784"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.34.22",
+          "wordIndex": 6,
+          "form": "חֻלְדָּ֨ה",
+          "row": "TAHOT Jos-Est:161008"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.22.14",
+          "wordIndex": 14,
+          "form": "תִּקְוָ֗ה",
+          "row": "TAHOT Jos-Est:117789"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.34.22",
+          "wordIndex": 11,
+          "form": "תָּקְהַ֗ת",
+          "row": "TAHOT Jos-Est:161013"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80374"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L79866"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L79917"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "consensus",
+        "sources": [
+          {
+            "kind": "bibliographic",
+            "author": "Sara Japhet",
+            "title": "I & II Chronicles: A Commentary (Old Testament Library)",
+            "year": "1993",
+            "locator": "Introduction, on the Chronicler's sources"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kgs2-o04",
+      "from": "2Kgs.25.1-2Kgs.25.21",
+      "to": "Jer.52.4-Jer.52.27",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Jerusalem's fall, told twice",
+      "explanation": "2 Kings 25:1–21 and Jeremiah 52:4–27 both tell of Jerusalem's fall: the siege and famine, Zedekiah blinded at Riblah, the temple burnt and its bronze carried to Babylon. The two accounts match almost word for word and share rare words found only in these chapters (below). Jeremiah's chapter goes on to count those taken into exile; which account is the older is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.25.12",
+          "wordIndex": 7,
+          "form": "וּ/לְ/יֹגְבִֽים\\׃",
+          "row": "TAHOT Jos-Est:120098"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.52.16",
+          "wordIndex": 8,
+          "form": "וּ/לְ/יֹגְבִֽים\\׃",
+          "row": "TAHOT Isa-Mal:66580"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.25.14",
+          "wordIndex": 6,
+          "form": "הַֽ/מְזַמְּר֣וֹת",
+          "row": "TAHOT Jos-Est:120146"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.52.18",
+          "wordIndex": 6,
+          "form": "הַֽ/מְזַמְּר֜וֹת",
+          "row": "TAHOT Isa-Mal:66633"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L192515"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L192609"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L192619"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "kgs2-o05",
+      "from": "2Kgs.25.27-2Kgs.25.30",
+      "to": "Jer.52.31-Jer.52.34",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Jehoiachin released",
+      "explanation": "2 Kings 25:27–30 and Jeremiah 52:31–34 both tell, at the end of their books, of Jehoiachin released from prison in Babylon in the thirty-seventh year of his exile and seated at the king's table. The two accounts differ only in the day of the month: the twenty-seventh in Kings, the twenty-fifth in Jeremiah. The name of the king who freed him occurs only in these passages (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.25.27",
+          "wordIndex": 16,
+          "form": "אֱוִ֣יל",
+          "row": "TAHOT Jos-Est:120575"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.52.31",
+          "wordIndex": 16,
+          "form": "אֱוִ֣יל",
+          "row": "TAHOT Isa-Mal:67027"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.25.27",
+          "wordIndex": 6,
+          "form": "יְהוֹיָכִ֣ין",
+          "row": "TAHOT Jos-Est:120565"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.52.31",
+          "wordIndex": 6,
+          "form": "יְהוֹיָכִ֣ן",
+          "row": "TAHOT Isa-Mal:67017"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L192664"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80768"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "kgs2-o06",
+      "from": "2Kgs.24.13",
+      "to": "Ezra.1.7-Ezra.1.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The temple vessels returned",
+      "explanation": "Ezra 1:7–11 recalls 2 Kings 24:13: Cyrus brings out the vessels of the LORD's house that Nebuchadnezzar had carried away. Kings tells how Nebuchadnezzar carried off the treasures of the temple and cut up the gold vessels Solomon had made. Ezra lists the vessels Cyrus returned, counted out to Sheshbazzar for the journey home.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93187"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80522"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezra.1.7",
+          "words": ["vessels", "Nebuchadnezzar"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs2-o07",
+      "from": "2Kgs.2.1-2Kgs.2.12",
+      "to": "Sir.48.9-Sir.48.12",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Taken up in a storm of fire",
+      "explanation": "Sirach 48:9–12 recalls 2 Kings 2:1–12: Elijah was taken up in a storm of fire by a chariot with horses of fire. Kings tells of Elijah's last walk with Elisha from Gilgal to the Jordan and of the chariot and whirlwind that took him. Sirach's praise of the ancestors recalls it and joins it to the hope that Elijah will come to turn the hearts of fathers to their sons.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Sir.48.9",
+          "words": ["taken", "fire"]
+        },
+        {
+          "kind": "verse",
+          "ref": "2Kgs.2.11",
+          "words": ["Elijah", "whirlwind"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs2-o08",
+      "from": "2Kgs.14.25",
+      "to": "Jonah.1.1",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Jonah son of Amittai",
+      "explanation": "Jonah 1:1 names the prophet of 2 Kings 14:25: the LORD's word comes to Jonah son of Amittai. Kings mentions Jonah son of Amittai, the prophet from Gath Hepher, whose word was fulfilled when Jeroboam the second restored Israel's border. The book of Jonah opens with the same name and father, and Amittai is named only in these two verses (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.14.25",
+          "wordIndex": 21,
+          "form": "אֲמִתַּי֙",
+          "row": "TAHOT Jos-Est:111103"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.1.1",
+          "wordIndex": 7,
+          "form": "אֲמִתַּ֖י",
+          "row": "TAHOT Isa-Mal:122354"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ki.14.25",
+          "wordIndex": 19,
+          "form": "יוֹנָ֤ה",
+          "row": "TAHOT Jos-Est:111101"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.1.1",
+          "wordIndex": 5,
+          "form": "יוֹנָ֥ה",
+          "row": "TAHOT Isa-Mal:122352"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219763"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L77750"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jonah.1.1",
+          "words": ["Jonah", "Amittai"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "kgs2-o09",
+      "from": "2Kgs.24.14-2Kgs.24.15",
+      "to": "Esth.2.5-Esth.2.6",
+      "type": "allusion",
+      "strength": 2,
+      "label": "Mordecai among the exiles",
+      "explanation": "Esther 2:5–6 recalls 2 Kings 24:14–15: Mordecai, a Benjamite in Susa, had been carried away from Jerusalem by Nebuchadnezzar. Kings tells of Nebuchadnezzar deporting Jehoiachin, the princes and the craftsmen to Babylon. Esther places Mordecai's family among those exiles.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L98322"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L80546"
+        },
+        {
+          "kind": "verse",
+          "ref": "Esth.2.6",
+          "words": ["Nebuchadnezzar", "Jerusalem"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o01",
+      "from": "Jer.29.10",
+      "to": "Ezra.1.1",
+      "type": "fulfilment",
+      "strength": 3,
+      "label": "The word by Jeremiah's mouth",
+      "explanation": "Ezra 1:1 shows Jeremiah 29:10 fulfilled: Cyrus's decree comes so that the LORD's word by Jeremiah's mouth might be accomplished. Jeremiah's letter to the exiles promises that after seventy years for Babylon God will visit them and bring them back to this place. Ezra opens the return by naming Jeremiah as the word now coming true.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93121"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezra.1.1",
+          "words": ["Jeremiah", "Cyrus"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o02",
+      "from": "Jer.25.11-Jer.25.12",
+      "to": "Dan.9.2",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Daniel reads Jeremiah's seventy years",
+      "explanation": "Daniel 9:2 names the prophecy of Jeremiah 25:11–12: Daniel understands from the books the seventy years of Jerusalem's desolations, as the LORD's word came to Jeremiah. Jeremiah foretells that the land will be a desolation and the nations will serve Babylon seventy years. Daniel, reading it in the first year of Darius, turns to prayer, and the angel answers with seventy weeks of years (the shared words below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.25.11",
+          "wordIndex": 13,
+          "form": "שִׁבְעִ֥ים",
+          "row": "TAHOT Isa-Mal:45583"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.9.2",
+          "wordIndex": 20,
+          "form": "שִׁבְעִ֥ים",
+          "row": "TAHOT Isa-Mal:109654"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.25.11",
+          "wordIndex": 5,
+          "form": "לְ/חָרְבָּ֖ה",
+          "row": "TAHOT Isa-Mal:45575"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.9.2",
+          "wordIndex": 18,
+          "form": "לְ/חָרְב֥וֹת",
+          "row": "TAHOT Isa-Mal:109652"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L211435"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L183025"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L183027"
+        },
+        {
+          "kind": "verse",
+          "ref": "Dan.9.2",
+          "words": ["Jeremiah", "seventy"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o03",
+      "from": "Jer.25.11-Jer.25.12",
+      "to": "2Chr.36.21",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Seventy years of Sabbath",
+      "explanation": "2 Chronicles 36:21 names the prophecy of Jeremiah 25:11–12: the land lay desolate and kept its Sabbaths to fulfil seventy years, by the word of the LORD through Jeremiah. Jeremiah foretells seventy years of desolation and of service to Babylon. Chronicles reads them as the Sabbaths the land had not been given, the rest the law had warned the land would take while Israel was in exile.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.25.11",
+          "wordIndex": 13,
+          "form": "שִׁבְעִ֥ים",
+          "row": "TAHOT Isa-Mal:45583"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.36.21",
+          "wordIndex": 16,
+          "form": "שִׁבְעִ֥ים",
+          "row": "TAHOT Jos-Est:162659"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93084"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L183019"
+        },
+        {
+          "kind": "verse",
+          "ref": "2Chr.36.21",
+          "words": ["Jeremiah", "seventy"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "ezra-o01",
+      "from": "Ezra.1.1-Ezra.1.3",
+      "to": "2Chr.36.22-2Chr.36.23",
+      "type": "parallel",
+      "strength": 3,
+      "label": "Cyrus's decree, twice",
+      "explanation": "Ezra 1:1–3 and 2 Chronicles 36:22–23 both tell of Cyrus's decree in the first year of his reign: the LORD stirred his spirit to build him a house in Jerusalem, and his people may go up. Chronicles ends with the decree, breaking off in mid-sentence at let him go up, and Ezra begins with it in full, word for word (below). Which book took it from the other is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.1.1",
+          "wordIndex": 3,
+          "form": "לְ/כ֙וֹרֶשׁ֙",
+          "row": "TAHOT Jos-Est:162762"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.36.22",
+          "wordIndex": 3,
+          "form": "לְ/כ֙וֹרֶשׁ֙",
+          "row": "TAHOT Jos-Est:162678"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.1.1",
+          "wordIndex": 23,
+          "form": "בְּ/מִכְתָּ֖ב",
+          "row": "TAHOT Jos-Est:162782"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "2Ch.36.22",
+          "wordIndex": 23,
+          "form": "בְּ/מִכְתָּ֖ב",
+          "row": "TAHOT Jos-Est:162698"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93131"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93099"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "ezra-o02",
+      "from": "Isa.44.28",
+      "to": "Ezra.1.1-Ezra.1.2",
+      "type": "echo",
+      "strength": 2,
+      "label": "Cyrus, who will say of Jerusalem: let it be built",
+      "explanation": "Isaiah 44:28 and Ezra 1:1–2 both tell of Cyrus as the one through whom Jerusalem and its temple will be built. Isaiah has the LORD call Cyrus his shepherd, who will say of Jerusalem that it shall be built and of the temple that its foundation shall be laid. Ezra records Cyrus's decree that the LORD has charged him to build him a house in Jerusalem.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Isa.44.28",
+          "words": ["Cyrus", "shepherd"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezra.1.2",
+          "words": ["Cyrus", "Jerusalem"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "ezra-o03",
+      "from": "Deut.7.1-Deut.7.3",
+      "to": "Ezra.9.1-Ezra.9.2",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The peoples of the lands",
+      "explanation": "Ezra 9:1–2 recalls Deuteronomy 7:1–3: the leaders report that Israel has not kept itself apart from the peoples of the lands, the Canaanites, Hittites, Perizzites, Jebusites and others. Deuteronomy lists the nations of the land and forbids marrying with them. Ezra's report names the same peoples (below) and says the holy offspring have mixed with them.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.7.1",
+          "wordIndex": 20,
+          "form": "וְ/הַ/פְּרִזִּ֗י",
+          "row": "TAHOT Gen-Deu:121022"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.9.1",
+          "wordIndex": 18,
+          "form": "הַ/פְּרִזִּ֣י",
+          "row": "TAHOT Jos-Est:168028"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Deu.7.1",
+          "wordIndex": 22,
+          "form": "וְ/הַ/יְבוּסִ֔י",
+          "row": "TAHOT Gen-Deu:121024"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.9.1",
+          "wordIndex": 19,
+          "form": "הַ/יְבוּסִ֗י",
+          "row": "TAHOT Jos-Est:168029"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L39883"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L94657"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezra.9.1",
+          "words": ["Canaanites", "Hittites"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "ezra-o04",
+      "from": "Ezra.2.1-Ezra.2.70",
+      "to": "Neh.7.6-Neh.7.73",
+      "type": "parallel",
+      "strength": 3,
+      "label": "The register of the returned, twice",
+      "explanation": "Ezra 2:1–70 and Nehemiah 7:6–73 both tell the list of those who returned from exile with Zerubbabel, family by family and town by town. Nehemiah says he found the register of those who came up first and sets it out; the two lists match name for name, with small differences in some of the numbers (rare names below). Which book holds the earlier copy is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.2.2",
+          "wordIndex": 10,
+          "form": "בִּלְשָׁ֛ן",
+          "row": "TAHOT Jos-Est:163116"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.7.7",
+          "wordIndex": 10,
+          "form": "בִּלְשָׁ֛ן",
+          "row": "TAHOT Jos-Est:172914"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezr.2.2",
+          "wordIndex": 12,
+          "form": "בִּגְוַ֖י",
+          "row": "TAHOT Jos-Est:163118"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.7.7",
+          "wordIndex": 12,
+          "form": "בִּגְוַ֖י",
+          "row": "TAHOT Jos-Est:172916"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96288"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96387"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96278"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "neh-o01",
+      "from": "Lev.23.39-Lev.23.43",
+      "to": "Neh.8.14-Neh.8.17",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Booths, found written in the law",
+      "explanation": "Nehemiah 8:14–17 quotes Leviticus 23:39–43: the people find written in the law that Israel should live in booths during the feast of the seventh month. Leviticus commands the feast with branches of trees, as a memorial that Israel lived in booths after the exodus. Nehemiah tells how the people gathered branches, built booths on roofs and in courtyards, and kept the feast as they had not since Joshua's day (the shared words below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Lev.23.42",
+          "wordIndex": 1,
+          "form": "בַּ/סֻּכֹּ֥ת",
+          "row": "TAHOT Gen-Deu:82664"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.8.14",
+          "wordIndex": 13,
+          "form": "בַּ/סֻּכּ֛וֹת",
+          "row": "TAHOT Jos-Est:174382"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Lev.23.40",
+          "wordIndex": 9,
+          "form": "תְּמָרִ֔ים",
+          "row": "TAHOT Gen-Deu:82620"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.8.15",
+          "wordIndex": 20,
+          "form": "תְמָרִ֔ים",
+          "row": "TAHOT Jos-Est:174420"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96632"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96637"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L28774"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.8.14",
+          "words": ["written", "booths"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "neh-o02",
+      "from": "Exod.14.21-Exod.14.28",
+      "to": "Neh.9.9-Neh.9.11",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The sea divided, confessed",
+      "explanation": "Nehemiah 9:9–11 recalls Exodus 14:21–28: God divided the sea before Israel so that they passed through on dry ground, and threw their pursuers into the depths. Exodus tells of the east wind, the dry ground and the waters returning on Pharaoh's army. The prayer of Nehemiah 9 tells it with the same words for the dry ground and the dividing (below), the pursuers thrown like a stone into mighty waters.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.14.22",
+          "wordIndex": 6,
+          "form": "בַּ/יַּבָּשָׁ֑ה",
+          "row": "TAHOT Gen-Deu:45882"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.11",
+          "wordIndex": 7,
+          "form": "בַּ/יַּבָּשָׁ֑ה",
+          "row": "TAHOT Jos-Est:174848"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Exo.14.21",
+          "wordIndex": 20,
+          "form": "וַ/יִּבָּקְע֖וּ",
+          "row": "TAHOT Gen-Deu:45864"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.11",
+          "wordIndex": 2,
+          "form": "בָּקַ֣עְתָּ",
+          "row": "TAHOT Jos-Est:174843"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L16554"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96850"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96854"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.9.11",
+          "words": ["sea"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "neh-o03",
+      "from": "Num.21.21-Num.21.35",
+      "to": "Neh.9.22",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Sihon and Og",
+      "explanation": "Nehemiah 9:22 recalls Numbers 21:21–35: Israel took the land of Sihon king of Heshbon and the land of Og king of Bashan. Numbers tells of the two kings who would not let Israel pass and were defeated east of the Jordan. The prayer of Nehemiah 9 counts their lands among the kingdoms God gave (the names below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.21.21",
+          "wordIndex": 5,
+          "form": "סִיחֹ֥ן",
+          "row": "TAHOT Gen-Deu:103752"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.22",
+          "wordIndex": 10,
+          "form": "סִיח֗וֹן",
+          "row": "TAHOT Jos-Est:175162"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Num.21.33",
+          "wordIndex": 6,
+          "form": "עוֹג֩",
+          "row": "TAHOT Gen-Deu:104037"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Neh.9.22",
+          "wordIndex": 17,
+          "form": "ע֥וֹג",
+          "row": "TAHOT Jos-Est:175169"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L97039"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L35072"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.9.22",
+          "words": ["Sihon", "Og"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "neh-o04",
+      "from": "Exod.16.4-Exod.16.15",
+      "to": "Neh.9.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Bread from heaven, confessed",
+      "explanation": "Nehemiah 9:15 recalls Exodus 16:4–15: God gave Israel bread from heaven for their hunger. Exodus tells of the LORD raining bread from heaven, the manna the people did not recognise. The prayer of Nehemiah 9 joins it to the water brought out of the rock and the command to go in and possess the land.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96899"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L96912"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L17186"
+        },
+        {
+          "kind": "verse",
+          "ref": "Neh.9.15",
+          "words": ["bread"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "ezra-o05",
+      "from": "Ps.136.1",
+      "to": "Ezra.3.10-Ezra.3.11",
+      "type": "echo",
+      "strength": 2,
+      "label": "For he is good",
+      "explanation": "Psalms 136:1 and Ezra 3:10–11 both tell the same refrain of thanks: the LORD is good, and his loving kindness endures forever. Psalm 136 repeats the second half after every line of Israel's story. At the founding of the second temple the priests and Levites sing it to one another, the people shout, and some who had seen the first house weep.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L137526"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L93542"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
     }
   ]
 }

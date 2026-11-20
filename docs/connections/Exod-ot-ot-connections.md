@@ -4,7 +4,7 @@ Written by `pnpm connections:verify` from `content/connections/within-ot.json`: 
 
 Nothing here is on the site until the owner approves it: then each approved connection is `verified` with a fingerprint of its content (`pnpm connections:verify --approve <ids|all>`), and any later edit hides it until approved again.
 
-13 connections; 0 verified; 0 failing a check.
+14 connections; 0 verified; 0 failing a check.
 
 ## `exod-o01` The first Passover in the land
 
@@ -210,3 +210,16 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT Exo.3.2 word 8: הַ/סְּנֶ֑ה (TAHOT Gen-Deu:37350)
 - TAHOT Deu.33.16 word 6: סְנֶ֑ה (TAHOT Gen-Deu:139445)
 - Deut.33.16 carries: bush
+
+## `kgs1-o06` In the rock, as the LORD passes by
+
+- **Exod.33.21-Exod.33.23 → 1Kgs.19.9-1Kgs.19.13** · parallel · strength 2 · draft · fingerprint `bb05fcb038e23b5c`
+- From: Moses Intercedes (`exod-12`)
+- To: Elijah at Horeb (`1kgs-09`)
+- Order: older end unknown; no use claimed; basis unstated
+
+> Exodus 33:21–23 and 1 Kings 19:9–13 both tell of the LORD passing by a prophet sheltered in the rock at God's mountain. Moses is set in a cleft of the rock and covered by God's hand while his glory passes. Elijah, in a cave at Horeb, hears the LORD pass by not in the wind, the earthquake or the fire but in a still small voice, and covers his face with his mantle.
+
+- `OpenBibleXref:L73113` 1Kgs.19.9 → Exod.33.21-Exod.33.22, 4 votes
+- `OpenBibleXref:L73154` 1Kgs.19.11 → Exod.33.21-Exod.33.23, 3 votes
+- `OpenBibleXref:L73188` 1Kgs.19.13 → Exod.33.23, 2 votes
