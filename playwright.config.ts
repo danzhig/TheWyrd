@@ -2,6 +2,21 @@ import { defineConfig, devices } from '@playwright/test';
 
 const PORT = 4173;
 
+/**
+ * What the other engines and device profiles run (M7, and threads plan TX8): the QA sweep, the
+ * smoke and search checks, and every Threads suite (the reader's threads, the Vault's, and the
+ * sweep with every pair on, threads-qa). The frame-timing perf tests stay on Chromium, which alone
+ * can slow the CPU through the DevTools protocol.
+ */
+const CROSS = /(qa|smoke|search|threads|vault-threads|threads-qa)\.spec\.ts/;
+
+/**
+ * Firefox, WebKit and the iPhone run emulated in CI's container, two workers at a time, and are
+ * slower there than Chromium: their waits get 10 s instead of 5 (TX8; a book's flight alone takes
+ * two to three seconds before the page changes).
+ */
+const SLOWER = { timeout: 10_000 };
+
 export default defineConfig({
   testDir: 'tests/e2e',
   fullyParallel: true,
@@ -24,24 +39,27 @@ export default defineConfig({
     // Firefox and WebKit run in CI's "browsers" job (ALL_BROWSERS=1), where they are installed.
     {
       name: 'android',
-      testMatch: /(qa|smoke|search)\.spec\.ts/,
+      testMatch: CROSS,
       use: { ...devices['Pixel 7'] },
     },
     ...(process.env.ALL_BROWSERS
       ? [
           {
             name: 'iphone',
-            testMatch: /(qa|smoke|search)\.spec\.ts/,
+            testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['iPhone 14'] },
           },
           {
             name: 'safari',
-            testMatch: /(qa|smoke|search)\.spec\.ts/,
+            testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['Desktop Safari'], viewport: { width: 1440, height: 900 } },
           },
           {
             name: 'firefox',
-            testMatch: /(qa|smoke|search)\.spec\.ts/,
+            testMatch: CROSS,
+            expect: SLOWER,
             use: { ...devices['Desktop Firefox'], viewport: { width: 1440, height: 900 } },
           },
         ]

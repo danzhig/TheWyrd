@@ -18,3 +18,22 @@ preview, and note anything odd in the PR.
 | 9   | Open a private / incognito tab and repeat 1–4.                                                             | Everything works; progress is simply not remembered after closing.                                          |
 | 10  | Open The path, About and Sources from the map.                                                             | Each page reads well at phone width with no sideways scrolling.                                             |
 | 11  | Rotate the phone on the map and on a book.                                                                 | The layout adapts; nothing is cut off.                                                                      |
+
+## Threads (threads plan TX8)
+
+Automated: `tests/e2e/threads-qa.spec.ts` runs the whole of Threads with every corpus pair on
+(every arc drawn and listed, each pair's busiest arc followed into the reader and back, a library
+book's panel, the reader's list and dialog, search, storage blocked, reduced motion, with axe at
+each stop), together with `threads.spec.ts` and `vault-threads.spec.ts`, on Chromium (phone,
+desktop, Pixel 7) and in CI on Firefox, desktop Safari and an iPhone 14. Frame timing with every
+pair on (`perf.spec.ts`) runs on Chromium only. On a real phone:
+
+| #   | Do this                                                                         | Expect                                                                                                             |
+| --- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 12  | On the map, tap Threads.                                                        | Gold arcs fade in between the books; only Old ↔ New at first. A "Filters" tab sits on the right edge.              |
+| 13  | Open Filters; turn on Old ↔ Old and New ↔ New.                                  | Paler arcs bowing outward join the others; the map still pans and zooms smoothly.                                  |
+| 14  | Reload the page and turn Threads on again.                                      | The same pairs are still on.                                                                                       |
+| 15  | Tap Isaiah once, then once more.                                                | The first tap opens Isaiah's threads in a sheet (Draws on · Drawn on by · Alongside); the second opens the book.   |
+| 16  | Back on the map, tap an arc; open a card's arrow; tap "Read …".                 | The arc's threads list; the card opens to its explanation; the reading opens at the verse with a "Back to …" pill. |
+| 17  | In a reading with threads (e.g. Luke 1), tap a gold thread mark beside a verse. | Its threads open in a dialog grouped by direction; closing it returns to the verse.                                |
+| 18  | Repeat 12–16 with Reduce Motion on, and in a private tab.                       | Arcs appear without fading; in a private tab the filters start at Old ↔ New after each reload.                     |
