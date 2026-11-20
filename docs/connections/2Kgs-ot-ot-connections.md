@@ -6,9 +6,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 
 9 connections; 0 verified; 0 failing a check.
 
-## `kgs2-o01` Sennacherib at the gates, told twice
+## `2kgs-o01` Sennacherib at the gates, told twice
 
-- **2Kgs.18.13-2Kgs.19.37 → Isa.36.1-Isa.37.38** · parallel · strength 3 · draft · fingerprint `3f29b2b2e8e38ff5`
+- **2Kgs.18.13-2Kgs.19.37 → Isa.36.1-Isa.37.38** · parallel · strength 3 · draft · fingerprint `d8d9bcb19e83e9e3`
 - From: Hezekiah and the Assyrian Siege (`2kgs-08`)
 - To: Hezekiah, Sennacherib and Isaiah (`isa-11`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -23,9 +23,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT 2Ki.19.12 word 16: בִּ/תְלַאשָּֽׂר\׃ (TAHOT Jos-Est:115457)
 - TAHOT Isa.37.12 word 16: בִּ/תְלַשָּֽׂר\׃ (TAHOT Isa-Mal:16204)
 
-## `kgs2-o02` Hezekiah's illness, told twice
+## `2kgs-o02` Hezekiah's illness, told twice
 
-- **2Kgs.20.1-2Kgs.20.11 → Isa.38.1-Isa.38.8** · parallel · strength 3 · draft · fingerprint `3cb35ee2c83379bf`
+- **2Kgs.20.1-2Kgs.20.11 → Isa.38.1-Isa.38.8** · parallel · strength 3 · draft · fingerprint `82849f39692e9fe3`
 - From: Hezekiah and the Assyrian Siege (`2kgs-08`)
 - To: Hezekiah, Sennacherib and Isaiah (`isa-11`, library)
 - Order: older end unknown; no use claimed; basis unstated
@@ -40,9 +40,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT 2Ki.20.10 word 12: אֲחֹרַנִּ֖ית (TAHOT Jos-Est:116377)
 - TAHOT Isa.38.8 word 11: אֲחֹרַנִּ֖ית (TAHOT Isa-Mal:17038)
 
-## `kgs2-o03` Josiah's reform, told twice
+## `2kgs-o03` Josiah's reform, told twice
 
-- **2Kgs.22.1-2Kgs.23.30 → 2Chr.34.1-2Chr.35.27** · parallel · strength 3 · draft · fingerprint `ff580d207238e3dd`
+- **2Kgs.22.1-2Kgs.23.30 → 2Chr.34.1-2Chr.35.27** · parallel · strength 3 · draft · fingerprint `c8bd7747aba22e76`
 - From: Manasseh and Josiah's Reform (`2kgs-09`)
 - To: Josiah and the Book of the Law (`2chr-14`, library)
 - Order: older end from; the later end uses it; basis consensus
@@ -57,9 +57,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT 2Ki.22.14 word 14: תִּקְוָ֗ה (TAHOT Jos-Est:117789)
 - TAHOT 2Ch.34.22 word 11: תָּקְהַ֗ת (TAHOT Jos-Est:161013)
 
-## `kgs2-o04` Jerusalem's fall, told twice
+## `2kgs-o04` Jerusalem's fall, told twice
 
-- **2Kgs.25.1-2Kgs.25.21 → Jer.52.4-Jer.52.27** · parallel · strength 3 · draft · fingerprint `20f35c513da46c46`
+- **2Kgs.25.1-2Kgs.25.21 → Jer.52.4-Jer.52.27** · parallel · strength 3 · draft · fingerprint `57b6e5d10706d608`
 - From: The Fall of Jerusalem (`2kgs-10`)
 - To: The Fall of Jerusalem Retold (`jer-x207`)
 - Order: older end unknown; no use claimed; basis unstated
@@ -74,14 +74,14 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT 2Ki.25.14 word 6: הַֽ/מְזַמְּר֣וֹת (TAHOT Jos-Est:120146)
 - TAHOT Jer.52.18 word 6: הַֽ/מְזַמְּר֜וֹת (TAHOT Isa-Mal:66633)
 
-## `kgs2-o05` Jehoiachin released
+## `2kgs-o05` Jehoiachin released
 
-- **2Kgs.25.27-2Kgs.25.30 → Jer.52.31-Jer.52.34** · parallel · strength 3 · draft · fingerprint `67afab5bf6887861`
+- **2Kgs.25.27-2Kgs.25.30 → Jer.52.31-Jer.52.34** · parallel · strength 3 · draft · fingerprint `80bd36fb9b337825`
 - From: The Fall of Jerusalem (`2kgs-10`)
 - To: The Fall of Jerusalem Retold (`jer-x207`)
 - Order: older end unknown; no use claimed; basis unstated
 
-> 2 Kings 25:27–30 and Jeremiah 52:31–34 both end their books with Jehoiachin released from prison in Babylon in the thirty-seventh year of his exile and given a place at the king's table. The two accounts differ only in the day of the month: the twenty-seventh in Kings, the twenty-fifth in Jeremiah. The name of the king who freed him occurs only in these passages (below).
+> 2 Kings 25:27–30 and Jeremiah 52:31–34 both tell, at the end of their books, of Jehoiachin released from prison in Babylon in the thirty-seventh year of his exile and seated at the king's table. The two accounts differ only in the day of the month: the twenty-seventh in Kings, the twenty-fifth in Jeremiah. The name of the king who freed him occurs only in these passages (below).
 
 - `OpenBibleXref:L192664` Jer.52.31 → 2Kgs.25.27-2Kgs.25.30, 11 votes
 - `OpenBibleXref:L80768` 2Kgs.25.27 → Jer.52.31-Jer.52.34, 7 votes
@@ -90,9 +90,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT 2Ki.25.27 word 6: יְהוֹיָכִ֣ין (TAHOT Jos-Est:120565)
 - TAHOT Jer.52.31 word 6: יְהוֹיָכִ֣ן (TAHOT Isa-Mal:67017)
 
-## `kgs2-o06` The temple vessels returned
+## `2kgs-o06` The temple vessels returned
 
-- **2Kgs.24.13 → Ezra.1.7-Ezra.1.11** · allusion · strength 3 · draft · fingerprint `af441d1083d91198`
+- **2Kgs.24.13 → Ezra.1.7-Ezra.1.11** · allusion · strength 3 · draft · fingerprint `2697f5befffdc193`
 - From: The Fall of Jerusalem (`2kgs-10`)
 - To: Cyrus's Decree and the First Return (`ezra-01`)
 - Order: older end from; the later end uses it; basis text
@@ -103,9 +103,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - `OpenBibleXref:L80522` 2Kgs.24.13 → Ezra.1.7-Ezra.1.11, 2 votes
 - Ezra.1.7 carries: vessels, Nebuchadnezzar
 
-## `kgs2-o07` Taken up in a storm of fire
+## `2kgs-o07` Taken up in a storm of fire
 
-- **2Kgs.2.1-2Kgs.2.12 → Sir.48.9-Sir.48.12** · allusion · strength 3 · draft · fingerprint `8b6339d4d1dafcdf`
+- **2Kgs.2.1-2Kgs.2.12 → Sir.48.9-Sir.48.12** · allusion · strength 3 · draft · fingerprint `1724bab21e8ef463`
 - From: Elijah's Last Acts; the Chariot of Fire (`2kgs-01`)
 - To: Praise of the Ancestors: Joshua to Nehemiah (`sir-18`, library)
 - Order: older end from; the later end uses it; basis text
@@ -115,9 +115,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - Sir.48.9 carries: taken, fire
 - 2Kgs.2.11 carries: Elijah, whirlwind
 
-## `kgs2-o08` Jonah son of Amittai
+## `2kgs-o08` Jonah son of Amittai
 
-- **2Kgs.14.25 → Jonah.1.1** · allusion · strength 3 · draft · fingerprint `14e7f64723e7a7ef`
+- **2Kgs.14.25 → Jonah.1.1** · allusion · strength 3 · draft · fingerprint `22072c330790cf53`
 - From: The Decline of Israel (`2kgs-06`)
 - To: Flight and Storm (`jonah-01`)
 - Order: older end from; the later end uses it; basis text
@@ -132,9 +132,9 @@ Nothing here is on the site until the owner approves it: then each approved conn
 - TAHOT Jon.1.1 word 5: יוֹנָ֥ה (TAHOT Isa-Mal:122352)
 - Jonah.1.1 carries: Jonah, Amittai
 
-## `kgs2-o09` Mordecai among the exiles
+## `2kgs-o09` Mordecai among the exiles
 
-- **2Kgs.24.14-2Kgs.24.15 → Esth.2.5-Esth.2.6** · allusion · strength 2 · draft · fingerprint `50e4657f7b15cfb3`
+- **2Kgs.24.14-2Kgs.24.15 → Esth.2.5-Esth.2.6** · allusion · strength 2 · draft · fingerprint `03ad5ad715ff6ce5`
 - From: The Fall of Jerusalem (`2kgs-10`)
 - To: Esther Becomes Queen (`esth-03`)
 - Order: older end from; the later end uses it; basis text

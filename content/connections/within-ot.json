@@ -3793,7 +3793,7 @@
       }
     },
     {
-      "id": "sam1-o01",
+      "id": "1sam-o01",
       "from": "1Sam.2.1-1Sam.2.10",
       "to": "Ps.113.7-Ps.113.9",
       "type": "echo",
@@ -3852,7 +3852,7 @@
       }
     },
     {
-      "id": "sam1-o02",
+      "id": "1sam-o02",
       "from": "1Sam.15.22",
       "to": "Hos.6.6",
       "type": "echo",
@@ -3907,7 +3907,7 @@
       }
     },
     {
-      "id": "sam1-o03",
+      "id": "1sam-o03",
       "from": "1Sam.16.11-1Sam.16.13",
       "to": "Ps.78.70-Ps.78.72",
       "type": "allusion",
@@ -3937,7 +3937,7 @@
       }
     },
     {
-      "id": "sam1-o04",
+      "id": "1sam-o04",
       "from": "1Sam.31.1-1Sam.31.13",
       "to": "1Chr.10.1-1Chr.10.14",
       "type": "parallel",
@@ -4005,7 +4005,7 @@
       }
     },
     {
-      "id": "sam1-o05",
+      "id": "1sam-o05",
       "from": "1Sam.4.10-1Sam.4.11",
       "to": "Jer.7.12-Jer.7.14",
       "type": "allusion",
@@ -4035,7 +4035,7 @@
       }
     },
     {
-      "id": "sam1-o06",
+      "id": "1sam-o06",
       "from": "1Sam.4.10-1Sam.4.22",
       "to": "Ps.78.60-Ps.78.64",
       "type": "parallel",
@@ -4080,7 +4080,7 @@
       }
     },
     {
-      "id": "sam2-o01",
+      "id": "2sam-o01",
       "from": "2Sam.7.12-2Sam.7.16",
       "to": "1Chr.17.11-1Chr.17.14",
       "type": "parallel",
@@ -4118,7 +4118,7 @@
       }
     },
     {
-      "id": "sam2-o02",
+      "id": "2sam-o02",
       "from": "2Sam.7.12-2Sam.7.16",
       "to": "Ps.89.3-Ps.89.4",
       "type": "allusion",
@@ -4148,7 +4148,7 @@
       }
     },
     {
-      "id": "sam2-o03",
+      "id": "2sam-o03",
       "from": "2Sam.22.1-2Sam.22.51",
       "to": "Ps.18.1-Ps.18.50",
       "type": "parallel",
@@ -4207,7 +4207,7 @@
       }
     },
     {
-      "id": "sam2-o04",
+      "id": "2sam-o04",
       "from": "2Sam.11.2-2Sam.11.27",
       "to": "1Kgs.15.5",
       "type": "allusion",
@@ -4253,7 +4253,7 @@
       }
     },
     {
-      "id": "sam2-o05",
+      "id": "2sam-o05",
       "from": "2Sam.5.6-2Sam.5.10",
       "to": "1Chr.11.4-1Chr.11.9",
       "type": "parallel",
@@ -4321,7 +4321,7 @@
       }
     },
     {
-      "id": "sam2-o06",
+      "id": "2sam-o06",
       "from": "2Sam.24.1-2Sam.24.25",
       "to": "1Chr.21.1-1Chr.21.30",
       "type": "parallel",
@@ -4375,7 +4375,7 @@
       }
     },
     {
-      "id": "sam2-o07",
+      "id": "2sam-o07",
       "from": "2Sam.6.12-2Sam.6.19",
       "to": "1Chr.15.25-1Chr.16.3",
       "type": "parallel",
@@ -4443,7 +4443,7 @@
       }
     },
     {
-      "id": "kgs1-o01",
+      "id": "1kgs-o01",
       "from": "1Kgs.8.1-1Kgs.8.21",
       "to": "2Chr.5.2-2Chr.6.11",
       "type": "parallel",
@@ -4511,7 +4511,7 @@
       }
     },
     {
-      "id": "kgs1-o02",
+      "id": "1kgs-o02",
       "from": "1Kgs.3.4-1Kgs.3.15",
       "to": "2Chr.1.3-2Chr.1.13",
       "type": "parallel",
@@ -4579,7 +4579,7 @@
       }
     },
     {
-      "id": "kgs1-o03",
+      "id": "1kgs-o03",
       "from": "1Kgs.10.1-1Kgs.10.13",
       "to": "2Chr.9.1-2Chr.9.12",
       "type": "parallel",
@@ -4647,7 +4647,7 @@
       }
     },
     {
-      "id": "kgs1-o04",
+      "id": "1kgs-o04",
       "from": "1Kgs.12.1-1Kgs.12.20",
       "to": "2Chr.10.1-2Chr.10.19",
       "type": "parallel",
@@ -4715,7 +4715,7 @@
       }
     },
     {
-      "id": "kgs1-o05",
+      "id": "1kgs-o05",
       "from": "1Kgs.13.1-1Kgs.13.2",
       "to": "2Kgs.23.15-2Kgs.23.18",
       "type": "fulfilment",
@@ -4779,7 +4779,7 @@
       }
     },
     {
-      "id": "kgs1-o06",
+      "id": "1kgs-o06",
       "from": "Exod.33.21-Exod.33.23",
       "to": "1Kgs.19.9-1Kgs.19.13",
       "type": "parallel",
@@ -4808,7 +4808,7 @@
       }
     },
     {
-      "id": "kgs1-o07",
+      "id": "1kgs-o07",
       "from": "1Kgs.21.17-1Kgs.21.24",
       "to": "2Kgs.9.25-2Kgs.9.26",
       "type": "fulfilment",
@@ -4858,7 +4858,7 @@
       }
     },
     {
-      "id": "kgs1-o08",
+      "id": "1kgs-o08",
       "from": "1Kgs.21.23",
       "to": "2Kgs.9.36-2Kgs.9.37",
       "type": "fulfilment",
@@ -4914,7 +4914,7 @@
       }
     },
     {
-      "id": "kgs1-o09",
+      "id": "1kgs-o09",
       "from": "1Kgs.22.1-1Kgs.22.40",
       "to": "2Chr.18.1-2Chr.18.34",
       "type": "parallel",
@@ -4982,7 +4982,7 @@
       }
     },
     {
-      "id": "kgs1-o10",
+      "id": "1kgs-o10",
       "from": "1Kgs.11.1-1Kgs.11.8",
       "to": "Neh.13.26",
       "type": "allusion",
@@ -5028,7 +5028,7 @@
       }
     },
     {
-      "id": "kgs2-o01",
+      "id": "2kgs-o01",
       "from": "2Kgs.18.13-2Kgs.19.37",
       "to": "Isa.36.1-Isa.37.38",
       "type": "parallel",
@@ -5087,7 +5087,7 @@
       }
     },
     {
-      "id": "kgs2-o02",
+      "id": "2kgs-o02",
       "from": "2Kgs.20.1-2Kgs.20.11",
       "to": "Isa.38.1-Isa.38.8",
       "type": "parallel",
@@ -5146,7 +5146,7 @@
       }
     },
     {
-      "id": "kgs2-o03",
+      "id": "2kgs-o03",
       "from": "2Kgs.22.1-2Kgs.23.30",
       "to": "2Chr.34.1-2Chr.35.27",
       "type": "parallel",
@@ -5214,7 +5214,7 @@
       }
     },
     {
-      "id": "kgs2-o04",
+      "id": "2kgs-o04",
       "from": "2Kgs.25.1-2Kgs.25.21",
       "to": "Jer.52.4-Jer.52.27",
       "type": "parallel",
@@ -5273,7 +5273,7 @@
       }
     },
     {
-      "id": "kgs2-o05",
+      "id": "2kgs-o05",
       "from": "2Kgs.25.27-2Kgs.25.30",
       "to": "Jer.52.31-Jer.52.34",
       "type": "parallel",
@@ -5328,7 +5328,7 @@
       }
     },
     {
-      "id": "kgs2-o06",
+      "id": "2kgs-o06",
       "from": "2Kgs.24.13",
       "to": "Ezra.1.7-Ezra.1.11",
       "type": "allusion",
@@ -5358,7 +5358,7 @@
       }
     },
     {
-      "id": "kgs2-o07",
+      "id": "2kgs-o07",
       "from": "2Kgs.2.1-2Kgs.2.12",
       "to": "Sir.48.9-Sir.48.12",
       "type": "allusion",
@@ -5385,7 +5385,7 @@
       }
     },
     {
-      "id": "kgs2-o08",
+      "id": "2kgs-o08",
       "from": "2Kgs.14.25",
       "to": "Jonah.1.1",
       "type": "allusion",
@@ -5445,7 +5445,7 @@
       }
     },
     {
-      "id": "kgs2-o09",
+      "id": "2kgs-o09",
       "from": "2Kgs.24.14-2Kgs.24.15",
       "to": "Esth.2.5-Esth.2.6",
       "type": "allusion",
@@ -6049,6 +6049,1207 @@
         {
           "kind": "xref",
           "row": "OpenBibleXref:L93542"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "tob-o01",
+      "from": "Gen.2.18",
+      "to": "Tob.8.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Not good for the man to be alone",
+      "explanation": "Tobit 8:6 quotes Genesis 2:18: on his wedding night Tobias prays to the God who made Adam and gave him Eve, and repeats God's word that it is not good for the man to be alone. Genesis gives that word before the woman is made, as the reason for a helper comparable to the man. Tobias's prayer names Adam and Eve and asks God's mercy on his marriage to Sarah.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Tob.8.6",
+          "words": ["Adam", "Eve"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Gen.2.18",
+          "words": ["alone", "helper"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "tob-o02",
+      "from": "Amos.8.10",
+      "to": "Tob.2.6",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Feasts turned into mourning",
+      "explanation": "Tobit 2:6 quotes Amos 8:10: at the feast of Pentecost, after finding a murdered kinsman in the street, Tobit remembers the prophecy of Amos that feasts will be turned into mourning. Amos speaks of feasts turned to mourning and songs to lamentation, as for an only son. Tobit names the prophet and applies the line as his own feast ends in tears.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Tob.2.6",
+          "words": ["Amos"]
+        },
+        {
+          "kind": "verse",
+          "ref": "Amos.8.10",
+          "words": ["feasts", "mourning"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "tob-o03",
+      "from": "Jonah.3.4",
+      "to": "Tob.14.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "What Jonah said of Nineveh",
+      "explanation": "Tobit 14:4 names the prophecy of Jonah 3:4: dying, Tobit tells his son to go to Media, for he believes what Jonah the prophet said of Nineveh, that it will be overthrown. Jonah tells of the warning that Nineveh would be overthrown in forty days, and of the city's repentance. Tobit, living in Nineveh, trusts that the word will yet come true.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Tob.14.4",
+          "words": ["Jonah", "Nineveh"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o01",
+      "from": "Gen.22.1-Gen.22.14",
+      "to": "1Macc.2.52",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Abraham found faithful when tested",
+      "explanation": "1 Maccabees 2:52 recalls Genesis 22:1–14: in his last words Mattathias asks whether Abraham was not found faithful when tested, and it was counted to him as righteousness. Genesis tells of God testing Abraham by asking him to offer Isaac. Mattathias joins that test to the words Genesis uses of Abraham's faith, as the first of a line of ancestors he holds up to his sons.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.52",
+          "words": ["Abraham"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o02",
+      "from": "Gen.41.39-Gen.41.43",
+      "to": "1Macc.2.53",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Joseph became lord of Egypt",
+      "explanation": "1 Maccabees 2:53 recalls Genesis 41:39–43: Joseph kept the commandment when he was in distress, and became lord of Egypt. Genesis tells how Pharaoh set Joseph over all Egypt after he interpreted the dreams. Mattathias names the reason he sees in the story, faithfulness under trial, as he urges his sons to keep the law.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.53",
+          "words": ["Joseph", "Egypt"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o03",
+      "from": "Num.25.7-Num.25.13",
+      "to": "1Macc.2.54",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Phinehas our father",
+      "explanation": "1 Maccabees 2:54 recalls Numbers 25:7–13: Phinehas, for his zeal, received the covenant of an everlasting priesthood. Numbers tells of Phinehas's spear at Peor and of the LORD's covenant of a lasting priesthood for his zeal. Mattathias, who has just killed an apostate at Modein in the same zeal, calls Phinehas our father.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.54",
+          "words": ["Phinehas"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o04",
+      "from": "2Kgs.2.11",
+      "to": "1Macc.2.58",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Elijah, zealous for the law",
+      "explanation": "1 Maccabees 2:58 recalls 2 Kings 2:11: Elijah was taken up into heaven for his zeal for the law. Kings tells of the chariot of fire and the whirlwind that took Elijah. Mattathias gives the reason in his own words, zeal, the virtue his whole speech commends.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.58",
+          "words": ["Elijah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o05",
+      "from": "Dan.3.19-Dan.3.27",
+      "to": "1Macc.2.59",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Saved out of the flame",
+      "explanation": "1 Maccabees 2:59 recalls Daniel 3:19–27: the three who believed, Hananiah, Azariah and Mishael, were saved from the fire. Daniel tells of the three young men thrown bound into the furnace, heated seven times more than usual, and coming out unharmed. Mattathias names them by their Hebrew names, as the book of Daniel does at its start.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.59",
+          "words": ["Hananiah"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "1macc-o06",
+      "from": "Dan.6.16-Dan.6.22",
+      "to": "1Macc.2.60",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Delivered from the lions",
+      "explanation": "1 Maccabees 2:60 recalls Daniel 6:16–22: Daniel was delivered from the mouth of lions for his innocence. Daniel tells of the night in the lions' den and of the angel God sent to shut their mouths, because Daniel was found innocent. Mattathias ends his list of the faithful there.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "1Macc.2.60",
+          "words": ["Daniel", "lions"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jdt-o01",
+      "from": "Gen.34.25-Gen.34.31",
+      "to": "Jdt.9.2-Jdt.9.4",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The God of my father Simeon",
+      "explanation": "Judith 9:2–4 recalls Genesis 34:25–31: Judith prays to the God of her father Simeon, who gave him a sword to avenge his sister's defilement. Genesis tells how Simeon and Levi killed the men of Shechem after Dinah was taken, and how Jacob rebuked them. Judith, about to go out against Holofernes, praises the deed and asks for strength to act.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Jdt.9.2",
+          "words": ["Simeon"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jdt-o02",
+      "from": "Gen.22.1",
+      "to": "Jdt.8.26",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Remember how he tried the fathers",
+      "explanation": "Judith 8:26 recalls Genesis 22:1: Judith reminds the elders of all God did to Abraham and how he tried Isaac and Jacob. Genesis tells how God tested Abraham. Judith, rebuking the elders for setting God a deadline, says the trials of the ancestors were for their good, as the siege is for the town's.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Jdt.8.26",
+          "words": ["Abraham", "Isaac", "Jacob"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "esth-o01",
+      "from": "Esth.9.20-Esth.9.22",
+      "to": "2Macc.15.36",
+      "type": "allusion",
+      "strength": 3,
+      "label": "The day before Mordecai's day",
+      "explanation": "2 Maccabees 15:36 names the feast of Esther 9:20–22: the day of victory over Nicanor falls on the thirteenth of Adar, the day before Mordecai's day. Esther tells how Mordecai wrote to the Jews to keep the fourteenth and fifteenth of Adar as days of joy. Second Maccabees sets a new feast beside it and calls the older one by Mordecai's name.",
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "2Macc.15.36",
+          "words": ["Mordecai", "Adar"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "esth-o02",
+      "from": "Gen.41.42-Gen.41.43",
+      "to": "Esth.6.11",
+      "type": "parallel",
+      "strength": 2,
+      "label": "Robed, mounted and proclaimed",
+      "explanation": "Genesis 41:42–43 and Esther 6:11 both tell of a Hebrew in a foreign court honoured by the king with royal clothing, a ride through the city and a herald crying out before him. Pharaoh dresses Joseph in fine linen, puts his ring on his hand and has him ride in the second chariot; the king has Haman robe Mordecai, mount him on the royal horse and proclaim his honour, and later gives Mordecai his ring. The words for clothing and riding are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.41.42",
+          "wordIndex": 12,
+          "form": "וַ/יַּלְבֵּ֤שׁ",
+          "row": "TAHOT Gen-Deu:29091"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Est.6.11",
+          "wordIndex": 7,
+          "form": "וַ/יַּלְבֵּ֖שׁ",
+          "row": "TAHOT Jos-Est:181835"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.41.43",
+          "wordIndex": 1,
+          "form": "וַ/יַּרְכֵּ֣ב",
+          "row": "TAHOT Gen-Deu:29111"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Est.6.11",
+          "wordIndex": 10,
+          "form": "וַ/יַּרְכִּיבֵ֙/הוּ֙",
+          "row": "TAHOT Jos-Est:181838"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "verse",
+          "ref": "Esth.6.11",
+          "words": ["Mordecai", "horse"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o01",
+      "from": "Job.1.1",
+      "to": "Ezek.14.14",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Job, among the righteous three",
+      "explanation": "Ezekiel 14:14 names Job of Job 1:1: Noah, Daniel and Job, even if all three were in a guilty land, would save only themselves. Job is introduced as blameless and upright, fearing God and turning from evil. Ezekiel counts him among three men known for their righteousness (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.1.1",
+          "wordIndex": 5,
+          "form": "אִיּ֣וֹב",
+          "row": "TAHOT Job-Sng:92"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.14.14",
+          "wordIndex": 8,
+          "form": "וְ/אִיּ֑וֹב",
+          "row": "TAHOT Isa-Mal:77232"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L99318"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L198055"
+        },
+        {
+          "kind": "verse",
+          "ref": "Ezek.14.14",
+          "words": ["Job"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "job-o02",
+      "from": "Job.7.17-Job.7.18",
+      "to": "Ps.8.4",
+      "type": "echo",
+      "strength": 2,
+      "label": "What is man?",
+      "explanation": "Job 7:17–18 and Psalms 8:4 both tell of the question what man is, that God should take note of him. The psalm asks it in wonder at God's care for so small a creature; Job asks it in complaint, wishing God would stop visiting and testing him every moment. The verb for God's visiting is the same (below); which was written first is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.7.18",
+          "wordIndex": 1,
+          "form": "וַ/תִּפְקְדֶ֥/נּוּ",
+          "row": "TAHOT Job-Sng:2805"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.8.4",
+          "wordIndex": 8,
+          "form": "תִפְקְדֶֽ/נּוּ\\׃",
+          "row": "TAHOT Job-Sng:17605"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L110115"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L100823"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o03",
+      "from": "Job.3.3-Job.3.10",
+      "to": "Jer.20.14-Jer.20.18",
+      "type": "echo",
+      "strength": 2,
+      "label": "Cursed be the day I was born",
+      "explanation": "Job 3:3–10 and Jeremiah 20:14–18 both tell of a man cursing the day he was born and the news of a boy's birth. Job, after his losses, wishes his day had never come and calls darkness down on it; Jeremiah, after a night in the stocks, curses the day and the man who brought his father the news. The words for cursing and for trouble are shared (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.3.8",
+          "wordIndex": 2,
+          "form": "אֹרְרֵי\\־",
+          "row": "TAHOT Job-Sng:1143"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.20.14",
+          "wordIndex": 1,
+          "form": "אָר֣וּר",
+          "row": "TAHOT Isa-Mal:42566"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.3.10",
+          "wordIndex": 7,
+          "form": "עָ֝מָ֗ל",
+          "row": "TAHOT Job-Sng:1178"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.20.18",
+          "wordIndex": 6,
+          "form": "עָמָ֖ל",
+          "row": "TAHOT Isa-Mal:42662"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L99779"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L181532"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L181504"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o04",
+      "from": "Job.28.28",
+      "to": "Prov.1.7",
+      "type": "echo",
+      "strength": 2,
+      "label": "The fear of the Lord",
+      "explanation": "Job 28:28 and Proverbs 1:7 both tell that the fear of the Lord is where wisdom begins. Job's poem on wisdom ends with God's word to humankind that the fear of the Lord is wisdom and turning from evil is understanding; Proverbs opens its collection with the fear of the LORD as the beginning of knowledge. The words for fear and for wisdom are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.28.28",
+          "wordIndex": 4,
+          "form": "יִרְאַ֣ת",
+          "row": "TAHOT Job-Sng:10171"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Pro.1.7",
+          "wordIndex": 1,
+          "form": "יִרְאַ֣ת",
+          "row": "TAHOT Job-Sng:55286"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.28.28",
+          "wordIndex": 7,
+          "form": "חָכְמָ֑ה",
+          "row": "TAHOT Job-Sng:10174"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Pro.1.7",
+          "wordIndex": 5,
+          "form": "חָכְמָ֥ה",
+          "row": "TAHOT Job-Sng:55290"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L139869"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L105513"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o05",
+      "from": "Job.12.9",
+      "to": "Isa.41.20",
+      "type": "echo",
+      "strength": 2,
+      "label": "The LORD's hand has done this",
+      "explanation": "Job 12:9 and Isaiah 41:20 both tell, in the same words, that the LORD's hand has done this. Job says even the animals know that the LORD's hand made them. Isaiah says the nations will see the desert made green and know that the LORD's hand has done it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L101933"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165882"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o06",
+      "from": "Job.1.21",
+      "to": "Eccl.5.15",
+      "type": "echo",
+      "strength": 2,
+      "label": "Naked from the womb",
+      "explanation": "Job 1:21 and Ecclesiastes 5:15 both tell that a person comes from his mother's womb naked and will go back naked. Job says it while blessing the LORD who gave and took away; the Preacher says it of the rich man who can carry nothing of his labour away in his hand. The words for naked and for the womb are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.1.21",
+          "wordIndex": 2,
+          "form": "עָרֹ֨ם",
+          "row": "TAHOT Job-Sng:633"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ecc.5.15",
+          "wordIndex": 5,
+          "form": "עָר֛וֹם",
+          "row": "TAHOT Job-Sng:70927"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Job.1.21",
+          "wordIndex": 4,
+          "form": "מִ/בֶּ֣טֶן",
+          "row": "TAHOT Job-Sng:635"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ecc.5.15",
+          "wordIndex": 3,
+          "form": "מִ/בֶּ֣טֶן",
+          "row": "TAHOT Job-Sng:70925"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L99575"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L150682"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "job-o07",
+      "from": "Job.38.4-Job.38.11",
+      "to": "Isa.40.12",
+      "type": "echo",
+      "strength": 2,
+      "label": "Who measured the world?",
+      "explanation": "Job 38:4–11 and Isaiah 40:12 both tell of God's questions about who measured and laid out the world. The LORD asks Job where he was when the earth's foundations were laid and who stretched the measuring line on it. Isaiah asks who has measured the waters in his hand, marked off the sky and weighed the mountains in scales.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L165317"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L108025"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jer-o04",
+      "from": "Mic.3.12",
+      "to": "Jer.26.18",
+      "type": "quotation",
+      "strength": 3,
+      "label": "Micah quoted at Jeremiah's trial",
+      "explanation": "Jeremiah 26:18 quotes Micah 3:12: elders at Jeremiah's trial recall that Micah of Moresheth prophesied that Zion would be ploughed like a field. Micah's word, that Jerusalem would become heaps and the temple mount a wooded height, had been spoken in Hezekiah's day. The elders cite it to show that a prophet who foretold the temple's ruin was not put to death, and Jeremiah's life is spared (shared words below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Mic.3.12",
+          "wordIndex": 7,
+          "form": "עִיִּ֣ין",
+          "row": "TAHOT Isa-Mal:124508"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.26.18",
+          "wordIndex": 23,
+          "form": "עִיִּ֣ים",
+          "row": "TAHOT Isa-Mal:46845"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Mic.3.12",
+          "wordIndex": 5,
+          "form": "תֵֽחָרֵ֑שׁ",
+          "row": "TAHOT Isa-Mal:124506"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.26.18",
+          "wordIndex": 21,
+          "form": "תֵֽחָרֵשׁ֙",
+          "row": "TAHOT Isa-Mal:46843"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220958"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L183584"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.26.18",
+          "words": ["Micah", "Zion"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o05",
+      "from": "Jer.31.29-Jer.31.30",
+      "to": "Ezek.18.2-Ezek.18.4",
+      "type": "echo",
+      "strength": 3,
+      "label": "Sour grapes",
+      "explanation": "Jeremiah 31:29–30 and Ezekiel 18:2–4 both tell of the proverb about fathers eating sour grapes and children's teeth set on edge, and of its end. Jeremiah promises days when it will no longer be said, for each will die for his own iniquity; Ezekiel has God forbid the proverb at once, since every soul is his. The rare words for sour grapes and for teeth set on edge are shared (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.31.29",
+          "wordIndex": 8,
+          "form": "בֹ֑סֶר",
+          "row": "TAHOT Isa-Mal:50435"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.18.2",
+          "wordIndex": 14,
+          "form": "בֹ֔סֶר",
+          "row": "TAHOT Isa-Mal:79843"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.31.29",
+          "wordIndex": 11,
+          "form": "תִּקְהֶֽינָה\\׃",
+          "row": "TAHOT Isa-Mal:50438"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Ezk.18.2",
+          "wordIndex": 17,
+          "form": "תִּקְהֶֽינָה\\׃",
+          "row": "TAHOT Isa-Mal:79846"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L199352"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185517"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185527"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jer-o06",
+      "from": "Jer.49.14-Jer.49.16",
+      "to": "Obad.1.1-Obad.1.4",
+      "type": "parallel",
+      "strength": 3,
+      "label": "One oracle against Edom",
+      "explanation": "Jeremiah 49:14–16 and Obadiah 1:1–4 both tell the same oracle against Edom: news from the LORD, an envoy sent among the nations, and Edom brought down from its rocky heights. The verses run almost word for word, the pride of Edom's heart deceiving those who live in the clefts of the rock (shared words below). Which prophet's words came first is not stated.",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.49.16",
+          "wordIndex": 7,
+          "form": "בְּ/חַגְוֵ֣י",
+          "row": "TAHOT Isa-Mal:62797"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Oba.1.3",
+          "wordIndex": 5,
+          "form": "בְ/חַגְוֵי\\־",
+          "row": "TAHOT Isa-Mal:121889"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.49.16",
+          "wordIndex": 14,
+          "form": "כַּ/נֶּ֙שֶׁר֙",
+          "row": "TAHOT Isa-Mal:62804"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Oba.1.4",
+          "wordIndex": 3,
+          "form": "כַּ/נֶּ֔שֶׁר",
+          "row": "TAHOT Isa-Mal:121911"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219488"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L219504"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L190479"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jer-o07",
+      "from": "Exod.32.11-Exod.32.14",
+      "to": "Jer.15.1",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Though Moses and Samuel stood before me",
+      "explanation": "Jeremiah 15:1 names Moses of Exodus 32:11–14: even if Moses and Samuel stood before the LORD, he would not turn toward this people. Exodus tells how Moses pleaded for Israel after the golden calf and the LORD relented. Jeremiah hears that the time for such pleading has passed, naming the two great intercessors to say so.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L179750"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.15.1",
+          "words": ["Moses", "Samuel"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o08",
+      "from": "Gen.35.16-Gen.35.20",
+      "to": "Jer.31.15",
+      "type": "allusion",
+      "strength": 3,
+      "label": "Rachel weeping for her children",
+      "explanation": "Jeremiah 31:15 names Rachel of Genesis 35:16–20: a voice is heard in Ramah, Rachel weeping for her children. Genesis tells how Rachel died giving birth on the road to Ephrath and was buried there. Jeremiah hears her weeping for children taken away, before God promises that they will return (the name below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Gen.35.16",
+          "wordIndex": 11,
+          "form": "רָחֵ֖ל",
+          "row": "TAHOT Gen-Deu:24281"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.31.15",
+          "wordIndex": 10,
+          "form": "רָחֵ֖ל",
+          "row": "TAHOT Isa-Mal:50083"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L185281"
+        },
+        {
+          "kind": "verse",
+          "ref": "Jer.31.15",
+          "words": ["Rachel"]
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "from",
+        "uses": true,
+        "basis": "text"
+      }
+    },
+    {
+      "id": "jer-o09",
+      "from": "Jer.18.1-Jer.18.6",
+      "to": "Isa.64.8",
+      "type": "echo",
+      "strength": 2,
+      "label": "The clay and the potter",
+      "explanation": "Jeremiah 18:1–6 and Isaiah 64:8 both tell of God as the potter and his people as the clay. Jeremiah watches a potter remake a spoiled vessel and hears that Israel is in God's hand as clay in the potter's. Isaiah's lament turns the image into a plea from the clay to its maker, with the same words for clay and potter (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.18.4",
+          "wordIndex": 6,
+          "form": "בַּ/חֹ֖מֶר",
+          "row": "TAHOT Isa-Mal:41206"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.64.8",
+          "wordIndex": 6,
+          "form": "הַ/חֹ֙מֶר֙",
+          "row": "TAHOT Isa-Mal:28588"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.18.2",
+          "wordIndex": 4,
+          "form": "הַ/יּוֹצֵ֑ר",
+          "row": "TAHOT Isa-Mal:41170"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.64.8",
+          "wordIndex": 8,
+          "form": "יֹצְרֵ֔/נוּ",
+          "row": "TAHOT Isa-Mal:28590"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L180793"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L173480"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jer-o10",
+      "from": "Jer.23.5-Jer.23.6",
+      "to": "Zech.6.12",
+      "type": "echo",
+      "strength": 2,
+      "label": "The Branch",
+      "explanation": "Jeremiah 23:5–6 and Zechariah 6:12 both tell of a man called the Branch, raised up for David's line. Jeremiah promises a righteous Branch for David who will reign wisely and whose name will be the LORD our righteousness; Zechariah is told to crown the man whose name is the Branch, who will build the LORD's temple. The word for the Branch is the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.23.5",
+          "wordIndex": 8,
+          "form": "צֶ֣מַח",
+          "row": "TAHOT Isa-Mal:44031"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Zec.6.12",
+          "wordIndex": 11,
+          "form": "צֶ֤מַח",
+          "row": "TAHOT Isa-Mal:132541"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L182270"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L226406"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "dan-o01",
+      "from": "Ezek.1.26-Ezek.1.28",
+      "to": "Dan.7.9-Dan.7.10",
+      "type": "echo",
+      "strength": 2,
+      "label": "The throne of fire",
+      "explanation": "Ezekiel 1:26–28 and Daniel 7:9–10 both tell of a vision of God enthroned, with fire, wheels and a figure on the throne. Ezekiel sees the likeness of a throne above the living creatures, with one like a man on it, wrapped in fire and brightness. Daniel sees the Ancient of Days take his seat, his throne flames of fire with wheels of burning fire and a stream of fire flowing from it.",
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L194937"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "dan-o02",
+      "from": "Isa.26.19",
+      "to": "Dan.12.2",
+      "type": "echo",
+      "strength": 2,
+      "label": "Those who sleep in the dust will awake",
+      "explanation": "Isaiah 26:19 and Daniel 12:2 both tell of those who lie in the dust awaking. Isaiah promises that God's dead will live and those who dwell in the dust will wake and sing; Daniel says many asleep in the earth's dust will wake, some to everlasting life and some to shame. The words for awaking and for the dust are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.26.19",
+          "wordIndex": 5,
+          "form": "הָקִ֨יצוּ",
+          "row": "TAHOT Isa-Mal:11024"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.12.2",
+          "wordIndex": 5,
+          "form": "יָקִ֑יצוּ",
+          "row": "TAHOT Isa-Mal:112074"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Isa.26.19",
+          "wordIndex": 8,
+          "form": "עָפָ֗ר",
+          "row": "TAHOT Isa-Mal:11027"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Dan.12.2",
+          "wordIndex": 4,
+          "form": "עָפָ֖ר",
+          "row": "TAHOT Isa-Mal:112073"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L161050"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L212813"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jon-o01",
+      "from": "Joel.2.13-Joel.2.14",
+      "to": "Jonah.3.9-Jonah.4.2",
+      "type": "echo",
+      "strength": 3,
+      "label": "Who knows? He may turn and relent",
+      "explanation": "Joel 2:13–14 and Jonah 3:9–4:2 both tell of a God gracious and merciful who may turn and relent of the disaster, and both ask who knows. Joel calls Judah to tear their hearts and return, for perhaps God will leave a blessing; in Jonah the king of Nineveh hopes the same, God relents, and Jonah complains with the same confession Joel makes (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jol.2.13",
+          "wordIndex": 17,
+          "form": "וְ/נִחָ֖ם",
+          "row": "TAHOT Isa-Mal:117317"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.3.9",
+          "wordIndex": 4,
+          "form": "וְ/נִחַ֖ם",
+          "row": "TAHOT Isa-Mal:123193"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jol.2.13",
+          "wordIndex": 10,
+          "form": "חַנּ֤וּן",
+          "row": "TAHOT Isa-Mal:117310"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.4.2",
+          "wordIndex": 24,
+          "form": "חַנּ֣וּן",
+          "row": "TAHOT Isa-Mal:123285"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220207"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216763"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L216726"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jon-o02",
+      "from": "Ps.42.7",
+      "to": "Jonah.2.3",
+      "type": "echo",
+      "strength": 2,
+      "label": "All your waves and billows",
+      "explanation": "Psalms 42:7 and Jonah 2:3 both tell the same line: all your waves and your billows have gone over me. In the psalm the waters are the singer's despair far from the temple; in Jonah they are the sea itself, into which he was thrown. The words for the breakers and the waves are the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.42.7",
+          "wordIndex": 8,
+          "form": "מִשְׁבָּרֶ֥י/ךָ",
+          "row": "TAHOT Job-Sng:26688"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.2.3",
+          "wordIndex": 8,
+          "form": "מִשְׁבָּרֶ֥י/ךָ",
+          "row": "TAHOT Isa-Mal:122856"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Psa.42.7",
+          "wordIndex": 9,
+          "form": "וְ֝/גַלֶּ֗י/ךָ",
+          "row": "TAHOT Job-Sng:26689"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.2.3",
+          "wordIndex": 9,
+          "form": "וְ/גַלֶּ֖י/ךָ",
+          "row": "TAHOT Isa-Mal:122857"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L117873"
+        },
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220001"
+        }
+      ],
+      "status": "draft",
+      "order": {
+        "older": "unknown",
+        "uses": false,
+        "basis": "unstated"
+      }
+    },
+    {
+      "id": "jon-o03",
+      "from": "Jer.18.7-Jer.18.8",
+      "to": "Jonah.3.10",
+      "type": "echo",
+      "strength": 2,
+      "label": "If that nation turns from its evil",
+      "explanation": "Jeremiah 18:7–8 and Jonah 3:10 both tell of God relenting of the disaster he had spoken against a nation that turns from its evil. Jeremiah states it as a rule at the potter's house; Jonah shows it happening to Nineveh, a foreign city, when its people turn from their evil ways. The verb for relenting is the same (below).",
+      "evidence": [
+        {
+          "dataset": "TAHOT",
+          "ref": "Jer.18.8",
+          "wordIndex": 8,
+          "form": "וְ/נִֽחַמְתִּי֙",
+          "row": "TAHOT Isa-Mal:41294"
+        },
+        {
+          "dataset": "TAHOT",
+          "ref": "Jon.3.10",
+          "wordIndex": 9,
+          "form": "וַ/יִּנָּ֣חֶם",
+          "row": "TAHOT Isa-Mal:123219"
+        }
+      ],
+      "sources": [
+        {
+          "kind": "xref",
+          "row": "OpenBibleXref:L220183"
         }
       ],
       "status": "draft",
